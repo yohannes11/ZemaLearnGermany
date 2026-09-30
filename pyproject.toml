@@ -1,0 +1,22 @@
+[project]
+name = "zema-learn-german"
+version = "2.0.0"
+description = "German A1.1 course: vocabulary, grammar, audio and speaking practice, with learner accounts and an admin dashboard."
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["*/migrations/*", "tools/course_content.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "DJ", "S", "SIM", "RUF"]
+ignore = [
+    "RUF012",  # Django's Meta/choices class attributes are not mutable-default bugs
+]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/*" = ["S101", "S105", "S106"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["apps", "config"]

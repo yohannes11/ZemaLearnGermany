@@ -1,14 +1,8 @@
-# The live website (server.py + german-a1-course.html) needs NO packages: it uses only Python's
-# standard library (Python 3.10+). Nothing here has to be installed on the VPS to run the site.
-#
-# These packages are for the development tools and the older Django version in learning/:
+# Runtime dependencies (production and development). Install into a virtual environment:
 #   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-
-# Audio generator (tools/gen_course_audio.py) and the Django app's online voice
-edge-tts==7.2.8
-
-# Earlier Django version of the app (learning/)
-Django==5.2.17
-
-# Optional offline voice for the Django app (learning/tts.py, TTS engine "piper")
-piper-tts==1.8.0
+Django==5.2.17              # LTS release, supported until April 2028
+django-environ==0.14.0      # settings from environment variables / .env
+django-axes==8.3.1          # locks out repeated failed logins
+argon2-cffi==25.1.0         # Argon2 password hashing (Django's recommended hasher)
+whitenoise==6.12.0          # serves static files with far-future caching
+gunicorn==26.2.0            # production WSGI server

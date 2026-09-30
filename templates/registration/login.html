@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Sign in · Zema German{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'dashboard/css/dashboard.css' %}">
+{% endblock %}
+
+{% block body %}
+  <div class="band" aria-hidden="true"></div>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Course admin</h1>
+        <p class="sub">German A1 course · <a href="{% url 'course:index' %}">Open the course</a></p>
+      </div>
+    </header>
+
+    <section class="card gate">
+      <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next|default:'' }}">
+        <div>
+          <h2>Admin sign in</h2>
+          <p>Sign in with an admin account to see the usage report and manage users.</p>
+        </div>
+        {% if form.non_field_errors %}
+          <p class="form-error" role="alert">{{ form.non_field_errors|first }}</p>
+        {% endif %}
+        <label class="field">Email
+          <input type="email" name="username" autocomplete="email" required autofocus value="{{ form.username.value|default:'' }}">
+        </label>
+        <label class="field">Password
+          <input type="password" name="password" autocomplete="current-password" required>
+        </label>
+        <button class="btn btn-primary" type="submit">Sign in</button>
+      </form>
+    </section>
+  </div>
+{% endblock %}

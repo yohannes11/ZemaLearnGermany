@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{% block code %}{% endblock %} · Zema German{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'dashboard/css/dashboard.css' %}">
+{% endblock %}
+
+{% block body %}
+  <div class="band" aria-hidden="true"></div>
+  <div class="wrap">
+    <section class="card gate">
+      <h2>{% block heading %}{% endblock %}</h2>
+      <p>{% block message %}{% endblock %}</p>
+      <a class="btn btn-primary" href="/">Go to the course</a>
+    </section>
+  </div>
+{% endblock %}

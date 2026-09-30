@@ -1,0 +1,5 @@
+# Development tools, on top of the runtime dependencies:
+#   .venv/bin/pip install -r requirements-dev.txt
+-r requirements.txt
+ruff==0.16.9                # linter and formatter
+edge-tts==7.2.8             # tools/gen_course_audio.py: records audio for new words

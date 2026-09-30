@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Course admin · Zema German{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'dashboard/css/dashboard.css' %}">
+{% endblock %}
+
+{% block body %}
+  <div class="band" aria-hidden="true"></div>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Course admin</h1>
+        <p class="sub">German A1 course · <a href="{% url 'course:index' %}">Open the course</a> · <a href="{% url 'admin:index' %}">Django admin</a></p>
+      </div>
+      <div class="who">
+        <span class="avatar" aria-hidden="true">{{ request.user.name|first|upper }}</span><span>{{ request.user.name }}</span>
+        <form method="post" action="{% url 'logout' %}">
+          {% csrf_token %}
+          <button class="btn" type="submit">Sign out</button>
+        </form>
+      </div>
+    </header>
+
+    <div id="app">
+      <nav class="admin-tabs" aria-label="Admin sections">
+        <button type="button" data-tab="report">Usage report</button>
+        <button type="button" data-tab="users">Users</button>
+      </nav>
+
+      <div class="error" id="error" hidden></div>
+
+      <div id="report-view">
+        <div class="report-bar">
+          <p class="sub" style="margin:0">All visitors, signed in or not · <span id="updated">loading…</span></p>
+          <div class="controls">
+            <div class="segmented" role="group" aria-label="Report period" id="periods">
+              <button data-period="day">Daily</button>
+              <button data-period="week">Weekly</button>
+              <button data-period="month">Monthly</button>
+              <button data-period="year">Yearly</button>
+            </div>
+            <a class="btn" id="csv" href="{% url 'analytics:stats-csv' %}?period=day" download>Download CSV</a>
+          </div>
+        </div>
+
+        <section class="tiles" id="tiles" aria-label="Summary"></section>
+
+        <section class="card">
+          <div class="card-head">
+            <div>
+              <h2 id="chart-title">Active users per day</h2>
+              <p id="chart-sub"></p>
+            </div>
+            <div class="segmented" role="group" aria-label="Metric" id="metrics">
+              <button data-metric="users">Active users</button>
+              <button data-metric="new_users">New visitors</button>
+              <button data-metric="signups">Sign-ups</button>
+              <button data-metric="sessions">Visits</button>
+              <button data-metric="minutes">Study minutes</button>
+            </div>
+          </div>
+          <div class="chart" id="chart"><div class="tip" id="tip" role="status"></div></div>
+        </section>
+
+        <div class="grid3">
+          <section class="card">
+            <div class="card-head"><div><h2>Study modes</h2><p>Learners who opened each mode</p></div></div>
+            <div class="hbars" id="modes"></div>
+          </section>
+          <section class="card">
+            <div class="card-head"><div><h2>Units</h2><p>Learners who studied each unit</p></div></div>
+            <div class="hbars" id="units"></div>
+          </section>
+          <section class="card">
+            <div class="card-head"><div><h2>Devices</h2><p>Learners by device type</p></div></div>
+            <div class="hbars" id="devices"></div>
+          </section>
+        </div>
+
+        <section class="card">
+          <div class="card-head"><div><h2 id="table-title">Report</h2><p>Newest first. Returning = active in the period but first seen earlier.</p></div></div>
+          <div class="table-wrap"><table id="table"></table></div>
+        </section>
+      </div>
+
+      <div id="users-view" hidden>
+        <section class="tiles" id="user-tiles" aria-label="Accounts summary"></section>
+        <div id="user-notice"></div>
+        <section class="card">
+          <div class="users-bar">
+            <div><h2>Accounts</h2><p class="sub" style="margin:0">Learners who created an account. Guests only appear in the usage report.</p></div>
+            <input class="search" id="user-search" type="search" placeholder="Search name or email" aria-label="Search users">
+          </div>
+          <div class="table-wrap"><table id="users-table"></table></div>
+        </section>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ urls|json_script:"dashboard-urls" }}
+  <script src="{% static 'dashboard/js/dashboard.js' %}"></script>
+{% endblock %}

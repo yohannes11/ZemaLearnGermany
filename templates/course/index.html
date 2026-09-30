@@ -1,0 +1,361 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Deutsch A1 · Zema German{% endblock %}
+
+{% block head %}
+  <meta name="description" content="Learn German A1.1 step by step: vocabulary, grammar, listening and speaking practice.">
+  <link rel="stylesheet" href="{% static 'course/css/course.css' %}">
+{% endblock %}
+
+{% block body %}
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-learn" viewBox="0 0 24 24"><path d="M3 5.5c2.8-1 5.8-1 9 .8 3.2-1.8 6.2-1.8 9-.8v13c-2.8-1-5.8-1-9 .8-3.2-1.8-6.2-1.8-9-.8zM12 6.3v13"/></symbol>
+    <symbol id="i-practice" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4zM13.5 6.5l4 4"/></symbol>
+    <symbol id="i-cards" viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="13" rx="2"/><path d="M8 7V5a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-4"/></symbol>
+    <symbol id="i-match" viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="7" rx="1.5"/><rect x="14" y="13" width="7" height="7" rx="1.5"/><path d="M10 7.5h4.5a2 2 0 0 1 2 2V13"/></symbol>
+    <symbol id="i-speaker" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.6 6a8.6 8.6 0 0 1 0 12"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-3.6 4.4-5.5 8-5.5s6.5 1.9 8 5.5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-dash" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4zM8 6H5v1a3 3 0 0 0 3 3M16 6h3v1a3 3 0 0 1-3 3M12 13v4M8 20h8M10 17h4v3h-4z"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></symbol>
+  </svg>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="btn btn-ghost menu-btn" type="button" onclick="openSidebar()" aria-label="Open chapters" style="padding:0 10px">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span>De</span></div>
+        <div style="min-width:0">
+          <div class="brand-name">Deutsch A1</div>
+          <div class="brand-sub" id="brand-sub"></div>
+        </div>
+      </div>
+      <div class="overall" title="Words learned in this unit">
+        <span class="label"><strong id="learned-count">0</strong> / <span id="total-count">0</span> words</span>
+        <div class="bar"><i id="progress-fill"></i></div>
+        <strong id="progress-percent">0%</strong>
+      </div>
+      <button class="btn account-btn" type="button" id="account-btn" onclick="openAccount()" aria-label="Sign in">
+        <svg class="icon"><use href="#i-user"/></svg><span id="account-label">Sign in</span>
+      </button>
+      <button class="btn btn-ghost" type="button" onclick="openSettings()" aria-label="Settings" style="padding:0 10px">
+        <svg class="icon"><use href="#i-settings"/></svg>
+      </button>
+    </div>
+    <div class="tibeb" aria-hidden="true"></div>
+  </header>
+
+  <nav class="units" id="units" aria-label="Units"></nav>
+
+  <nav class="parts" aria-label="Parts of this unit">
+    <button class="part" type="button" data-part="vocab" onclick="goToPart('vocab')">
+      <span class="part-icon"><svg class="icon"><use href="#i-learn"/></svg></span>
+      <span class="part-kicker">Part 1</span>
+      <span class="part-name">Vocabulary</span>
+      <span class="part-meta" id="part-vocab-meta"></span>
+    </button>
+    <button class="part" type="button" data-part="grammar" onclick="goToPart('grammar')">
+      <span class="part-icon"><svg class="icon"><use href="#i-practice"/></svg></span>
+      <span class="part-kicker">Part 2</span>
+      <span class="part-name">Grammar</span>
+      <span class="part-meta" id="part-grammar-meta"></span>
+    </button>
+  </nav>
+
+  <div class="scrim" id="scrim" onclick="closeSidebar()"></div>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Chapters">
+      <div class="sidebar-title">
+        <span id="sidebar-heading">Vocabulary</span>
+        <button class="btn btn-ghost sidebar-close" type="button" onclick="closeSidebar()" aria-label="Close chapters" style="min-height:34px;padding:0 8px">
+          <svg class="icon"><use href="#i-close"/></svg>
+        </button>
+      </div>
+      <ul class="chapter-list" id="toc"></ul>
+      <div class="ad-slot ad-sidebar" data-ad="sidebar"></div>
+    </aside>
+
+    <main>
+      <div class="ad-slot ad-top" data-ad="top"></div>
+      <section class="page-head">
+        <div class="ribbon" id="ribbon" aria-hidden="true"></div>
+        <div class="page-head-body">
+          <div class="eyebrow">
+            <span id="eyebrow"></span>
+            <button class="btn btn-ghost chapter-picker" type="button" onclick="openSidebar()" style="min-height:28px;padding:0 8px;font-size:0.78rem;gap:0.2rem">
+              Change <svg class="icon" style="width:14px;height:14px"><use href="#i-down"/></svg>
+            </button>
+          </div>
+          <h1 class="page-title" id="page-title"></h1>
+          <div class="page-stats">
+            <span id="page-stat"></span>
+            <div class="bar"><i id="page-fill"></i></div>
+          </div>
+          <nav class="tabs" role="tablist" aria-label="Ways to study">
+            <button class="tab" role="tab" data-mode="learn" onclick="goTo({ mode: 'learn' })"><svg class="icon"><use href="#i-learn"/></svg>Learn</button>
+            <button class="tab" role="tab" data-mode="speak" onclick="goTo({ mode: 'speak' })"><svg class="icon"><use href="#i-mic"/></svg>Speak</button>
+            <button class="tab" role="tab" data-mode="practice" onclick="goTo({ mode: 'practice' })"><svg class="icon"><use href="#i-practice"/></svg>Practice</button>
+            <button class="tab" role="tab" data-mode="flashcards" onclick="goTo({ mode: 'flashcards' })"><svg class="icon"><use href="#i-cards"/></svg>Flashcards</button>
+            <button class="tab" role="tab" data-mode="match" onclick="goTo({ mode: 'match' })"><svg class="icon"><use href="#i-match"/></svg>Match</button>
+          </nav>
+          <nav class="tabs" id="grammar-tabs" role="tablist" aria-label="Grammar" hidden>
+            <button class="tab" role="tab" data-gview="lesson" onclick="setGrammarView('lesson')"><svg class="icon"><use href="#i-learn"/></svg>Lesson</button>
+            <button class="tab" role="tab" data-gview="exercise" onclick="setGrammarView('exercise')"><svg class="icon"><use href="#i-practice"/></svg>Exercise</button>
+          </nav>
+        </div>
+        <div class="tibeb" aria-hidden="true"></div>
+      </section>
+
+      <section id="learn" class="content" aria-label="Learn">
+        <div class="toolbar">
+          <div class="segmented" role="group" aria-label="Learn view">
+            <button class="learn-view-btn" data-view="single" onclick="setLearnView('single')">One word</button>
+            <button class="learn-view-btn" data-view="grid" onclick="setLearnView('grid')">All words</button>
+          </div>
+          <button class="btn" type="button" id="reveal-all"><svg class="icon"><use href="#i-eye"/></svg><span>Reveal all</span></button>
+        </div>
+        <div id="learn-grammar"></div>
+        <div id="learn-content"></div>
+      </section>
+
+      <section id="grammar" class="content" aria-label="Grammar">
+        <div id="grammar-content"></div>
+      </section>
+
+      <section id="speak" class="content" aria-label="Speak">
+        <div class="toolbar">
+          <span class="toolbar-note">Listen three times, then say the word out loud three times.</span>
+          <span class="badge" id="sp-mic" title=""><span class="dot"></span><span>Microphone needed</span></span>
+        </div>
+        <div class="narrow" style="max-width:860px">
+          <div class="fc-progress"><span id="sp-pos"></span><div class="bar"><i id="sp-fill"></i></div></div>
+          <div class="panel speak-stage view-enter" id="sp-stage">
+            <div>
+              <div class="coach-wrap" id="coach-wrap">
+              <svg class="coach female" id="coach" viewBox="0 0 240 262" role="img" aria-label="Your speaking coach">
+                <defs>
+                  <pattern id="tibeb-pat" width="12" height="8" patternUnits="userSpaceOnUse">
+                    <rect width="12" height="8" fill="#fffaf0"/>
+                    <path d="M0 4L3 1L6 4L3 7Z" fill="#b4442b"/><path d="M6 4L9 1L12 4L9 7Z" fill="#2e6b4f"/>
+                    <circle cx="6" cy="4" r="1" fill="#c98f22"/><circle cx="0" cy="4" r="1" fill="#2f4a7a"/><circle cx="12" cy="4" r="1" fill="#2f4a7a"/>
+                  </pattern>
+                  <clipPath id="coach-clip"><circle cx="120" cy="131" r="118"/></clipPath>
+                </defs>
+                <circle class="coach-bg" cx="120" cy="131" r="118"/>
+                <g clip-path="url(#coach-clip)">
+                  <g class="coach-body">
+                    <!-- braids falling behind the shoulders -->
+                    <path class="hair f-only" d="M80 100 C70 150 72 188 84 208 L100 202 C92 172 92 134 96 104Z"/>
+                    <path class="hair f-only" d="M160 100 C170 150 168 188 156 208 L140 202 C148 172 148 134 144 104Z"/>
+                    <!-- habesha kemis with a tibeb border -->
+                    <path class="cloth" d="M38 264 C42 216 70 192 120 188 C170 192 198 216 202 264Z"/>
+                    <path class="skin" d="M106 158 L106 190 C112 197 128 197 134 190 L134 158Z"/>
+                    <path d="M97 190 L120 224 L143 190" fill="none" stroke="url(#tibeb-pat)" stroke-width="9"/>
+                    <rect x="113" y="222" width="14" height="42" fill="url(#tibeb-pat)"/>
+                    <!-- netela (her) or gabi (his) shawl, edged with tibeb -->
+                    <path class="cloth f-only" d="M40 264 C44 224 62 200 92 192 L101 208 C80 216 70 238 68 264Z" opacity="0.95"/>
+                    <path class="f-only" d="M101 208 C80 216 70 238 68 264" fill="none" stroke="url(#tibeb-pat)" stroke-width="7"/>
+                    <path class="cloth f-only" d="M200 264 C196 224 178 200 148 192 L139 208 C160 216 170 238 172 264Z" opacity="0.95"/>
+                    <path class="f-only" d="M139 208 C160 216 170 238 172 264" fill="none" stroke="url(#tibeb-pat)" stroke-width="7"/>
+                    <path class="cloth m-only" d="M38 264 C44 222 68 198 104 191 L180 252 L182 264Z"/>
+                    <path class="m-only" d="M104 191 L180 252" fill="none" stroke="url(#tibeb-pat)" stroke-width="8"/>
+                    <g class="head">
+                      <ellipse class="skin" cx="82" cy="122" rx="6" ry="9"/>
+                      <ellipse class="skin" cx="158" cy="122" rx="6" ry="9"/>
+                      <circle class="f-only" cx="82" cy="134" r="3.2" fill="#c98f22"/>
+                      <circle class="f-only" cx="158" cy="134" r="3.2" fill="#c98f22"/>
+                      <ellipse class="skin" cx="120" cy="118" rx="38" ry="44"/>
+                      <!-- shuruba braids (her) / short hair and beard (his) -->
+                      <path class="hair f-only" d="M80 116 C76 74 98 58 120 58 C142 58 164 74 160 116 C154 94 140 82 120 82 C100 82 86 94 80 116Z"/>
+                      <path class="braid f-only" d="M104 62 C98 72 92 86 86 104M114 59 C110 70 106 80 104 84M126 59 C130 70 134 80 136 84M136 62 C142 72 148 86 154 104M120 58 L120 82"/>
+                      <path class="hair m-only" d="M82 110 C80 76 100 64 120 64 C140 64 160 76 158 110 C150 90 138 83 120 83 C102 83 90 90 82 110Z"/>
+                      <path class="hair m-only" d="M86 128 C88 160 104 168 120 168 C136 168 152 160 154 128 C148 150 136 157 120 157 C104 157 92 150 86 128Z" opacity="0.92"/>
+                      <g class="brows" fill="none" stroke="#2a1a12" stroke-width="3" stroke-linecap="round">
+                        <path d="M97 104 Q105 99 113 103"/><path d="M127 103 Q135 99 143 104"/>
+                      </g>
+                      <g class="eyes">
+                        <ellipse cx="106" cy="117" rx="4.3" ry="5.4" fill="#1f130d"/><ellipse cx="134" cy="117" rx="4.3" ry="5.4" fill="#1f130d"/>
+                        <circle cx="107.6" cy="115" r="1.4" fill="#fff"/><circle cx="135.6" cy="115" r="1.4" fill="#fff"/>
+                      </g>
+                      <path d="M120 120 C118 129 116 133 120 135 C123 136 125 134 125 134" fill="none" stroke="#5e3520" stroke-width="2" stroke-linecap="round"/>
+                      <circle cx="97" cy="133" r="6" fill="#e0876a" opacity="0.35"/><circle cx="143" cy="133" r="6" fill="#e0876a" opacity="0.35"/>
+                      <path class="smile" d="M107 143 Q120 154 133 143" fill="none" stroke="#5a2418" stroke-width="3.2" stroke-linecap="round"/>
+                      <g class="mouth-open">
+                        <path d="M106 142 Q120 139 134 142 Q132 156 120 157 Q108 156 106 142Z" fill="#5a1b12" stroke="#7a3522" stroke-width="1.6"/>
+                        <path d="M109 142.4 Q120 140.2 131 142.4 L130 145.4 Q120 143.8 110 145.4Z" fill="#fffaf0"/>
+                        <ellipse cx="120" cy="152.5" rx="7" ry="3.2" fill="#d9695a"/>
+                      </g>
+                    </g>
+                    <g class="waves"><path d="M170 138 q7 8 0 16"/><path d="M180 131 q13 15 0 30"/></g>
+                    <!-- raised arm: cups an ear to listen, lifts to cheer -->
+                    <g class="arm">
+                      <rect class="cloth" x="150" y="198" width="20" height="56" rx="10"/>
+                      <rect x="150" y="238" width="20" height="7" fill="url(#tibeb-pat)"/>
+                      <circle class="skin" cx="160" cy="258" r="10.5"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              </div>
+              <span class="coach-name" id="coach-name">Selam</span>
+            </div>
+            <div>
+              <div class="bubble" id="sp-bubble"><div class="de"></div><div class="en"></div></div>
+              <div class="sp-word-box">
+                <div class="sp-word" id="sp-word"></div>
+                <div class="sp-meaning" id="sp-meaning"></div>
+              </div>
+              <div class="sp-steps">
+                <div class="sp-row" id="sp-listen-row"><span>Listen</span><i></i><i></i><i></i></div>
+                <div class="sp-row" id="sp-say-row"><span>Say it</span><i></i><i></i><i></i></div>
+              </div>
+              <div class="sp-heard" id="sp-heard" aria-live="polite"></div>
+              <div class="sp-actions" id="sp-actions"></div>
+            </div>
+          </div>
+          <div class="wv-nav">
+            <button class="btn" type="button" id="sp-prev">← Previous word</button>
+            <button class="btn" type="button" id="sp-next">Next word →</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="practice" class="content" aria-label="Practice">
+        <div class="toolbar">
+          <div class="segmented" role="group" aria-label="Translation direction">
+            <button class="pr-dir" data-dir="de-en" onclick="setPracticeDirection('de-en')">German → English</button>
+            <button class="pr-dir" data-dir="en-de" onclick="setPracticeDirection('en-de')">English → German</button>
+          </div>
+          <span class="badge" id="pr-ai"><span class="dot"></span><span>Checking for AI…</span></span>
+        </div>
+        <div id="pr-area"></div>
+      </section>
+
+      <section id="flashcards" class="content" aria-label="Flashcards">
+        <div class="toolbar">
+          <div class="segmented" role="group" aria-label="Card direction">
+            <button class="fc-dir" data-dir="de-en" onclick="setDirection('de-en')">German → English</button>
+            <button class="fc-dir" data-dir="en-de" onclick="setDirection('en-de')">English → German</button>
+            <button class="fc-dir" data-dir="mixed" onclick="setDirection('mixed')">Mixed</button>
+          </div>
+        </div>
+        <div id="fc-area"></div>
+      </section>
+
+      <section id="match" class="content" aria-label="Match">
+        <div class="toolbar">
+          <span class="toolbar-note">Drag a word onto its meaning, or tap one and then its partner.</span>
+          <button class="btn" type="button" onclick="startMatchQuiz()">New set</button>
+        </div>
+        <div id="mq-area"></div>
+      </section>
+      <div class="ad-slot ad-bottom" data-ad="bottom"></div>
+    </main>
+  </div>
+
+  <dialog id="settings" aria-labelledby="settings-title">
+    <div class="dialog-head">
+      <h2 id="settings-title">Settings</h2>
+      <button class="btn btn-ghost" type="button" onclick="document.getElementById('settings').close()" aria-label="Close settings" style="min-height:36px;padding:0 8px">
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <div class="dialog-body">
+      <div class="setting">
+        <label for="voice-select">Voice</label>
+        <select class="select" id="voice-select" onchange="setVoice(this.value)">
+          <option value="katja">Katja (female)</option>
+          <option value="conrad">Conrad (male)</option>
+        </select>
+      </div>
+      <div class="setting">
+        <span class="setting-label">Speaking speed</span>
+        <div class="segmented" role="group" aria-label="Speaking speed">
+          <button class="pace-btn" data-speed="slow" onclick="setSpeed('slow')">Slow</button>
+          <button class="pace-btn" data-speed="normal" onclick="setSpeed('normal')">Learner</button>
+          <button class="pace-btn" data-speed="natural" onclick="setSpeed('natural')">Natural</button>
+        </div>
+        <p>Each speed is recorded at that pace, so pronunciation stays natural.</p>
+      </div>
+      <div class="setting">
+        <span class="setting-label">Appearance</span>
+        <div class="segmented" role="group" aria-label="Appearance">
+          <button class="theme-btn" data-theme="light" onclick="setTheme('light')">Light</button>
+          <button class="theme-btn" data-theme="dark" onclick="setTheme('dark')">Dark</button>
+        </div>
+      </div>
+      <div class="setting">
+        <label class="check-row"><input type="checkbox" id="usage-toggle" onchange="usage.setEnabled(this.checked)"> Share anonymous usage statistics</label>
+        <p>Counts visits, study time and which parts of the course are used, under a random ID. No name, email or address is collected.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="account" aria-labelledby="account-title">
+    <div class="dialog-head">
+      <h2 id="account-title">Sign in</h2>
+      <button class="btn btn-ghost" type="button" onclick="document.getElementById('account').close()" aria-label="Close" style="min-height:36px;padding:0 8px">
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <div class="dialog-body">
+      <p class="form-error" id="account-error" role="alert" hidden></p>
+
+      <form class="auth-form" id="signin-form" data-view="signin" onsubmit="return submitAuth(event, 'login')">
+        <p class="auth-intro">Sign in to keep your progress safe and continue on any device.</p>
+        <label class="field">Email<input type="email" name="email" autocomplete="email" required></label>
+        <label class="field">Password<input type="password" name="password" autocomplete="current-password" required></label>
+        <button class="btn btn-primary" type="submit">Sign in</button>
+        <p class="auth-switch">New here? <button type="button" class="link-btn" onclick="showAccountView('register')">Create a free account</button></p>
+      </form>
+
+      <form class="auth-form" id="register-form" data-view="register" onsubmit="return submitAuth(event, 'register')" hidden>
+        <p class="auth-intro">Your words and grammar results are saved to your account. The progress on this device is kept.</p>
+        <label class="field">Your name<input type="text" name="name" autocomplete="name" maxlength="60" required></label>
+        <label class="field">Email<input type="email" name="email" autocomplete="email" required></label>
+        <label class="field">Password<input type="password" name="password" autocomplete="new-password" minlength="8" required><small>At least 8 characters.</small></label>
+        <button class="btn btn-primary" type="submit">Create account</button>
+        <p class="auth-switch">Already have an account? <button type="button" class="link-btn" onclick="showAccountView('signin')">Sign in</button></p>
+      </form>
+
+      <div class="auth-form" data-view="profile" hidden>
+        <div class="profile">
+          <span class="avatar" id="profile-avatar"></span>
+          <div style="min-width:0">
+            <div class="profile-name" id="profile-name"></div>
+            <div class="profile-email" id="profile-email"></div>
+          </div>
+        </div>
+        <p class="sync-note" id="sync-note">Your progress is saved to your account.</p>
+        <a class="btn" id="admin-link" href="{% url 'analytics:dashboard' %}" hidden>Open the admin area</a>
+        <details class="change-pw">
+          <summary>Change password</summary>
+          <form onsubmit="return changePassword(event)">
+            <label class="field">Current password<input type="password" name="current" autocomplete="current-password" required></label>
+            <label class="field">New password<input type="password" name="new" autocomplete="new-password" minlength="8" required></label>
+            <button class="btn" type="submit">Save new password</button>
+          </form>
+        </details>
+        <button class="btn btn-danger" type="button" onclick="signOut()">Sign out</button>
+      </div>
+    </div>
+  </dialog>
+{% endblock %}
+
+{% block scripts %}
+  {{ app_config|json_script:"app-config" }}
+  <script src="{% static 'course/js/course-data.js' %}"></script>
+  <script src="{% static 'course/js/course.js' %}"></script>
+{% endblock %}

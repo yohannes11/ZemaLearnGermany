@@ -1,0 +1,34 @@
+# systemd service for the Django app (gunicorn). Install:
+#   cp deploy/zema.service /etc/systemd/system/ && systemctl daemon-reload && systemctl enable --now zema
+[Unit]
+Description=Zema German (Django via gunicorn)
+After=network.target
+
+[Service]
+Type=notify
+User=zema
+Group=www-data
+WorkingDirectory=/srv/zema/app
+EnvironmentFile=/srv/zema/.env
+Environment=DJANGO_SETTINGS_MODULE=config.settings.prod
+RuntimeDirectory=zema
+ExecStart=/srv/zema/venv/bin/gunicorn config.wsgi:application \
+    --bind unix:/run/zema/gunicorn.sock \
+    --umask 007 \
+    --workers 3 \
+    --timeout 30 \
+    --access-logfile - \
+    --error-logfile -
+ExecReload=/bin/kill -s HUP $MAINPID
+Restart=on-failure
+RestartSec=3
+
+# Hardening: the app may only write to its data folder.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/zema/data
+
+[Install]
+WantedBy=multi-user.target

@@ -1,6 +1,6 @@
 """Source for course-data.js: German A1.1 Units 1-7 (vocabulary sheets + unit recaps from 11percent.de).
 
-Run this file to regenerate /Users/jo/Documents/LearnGerman/course-data.js.
+Run this file to regenerate static/course/js/course-data.js, then tools/gen_course_audio.py for new audio.
 """
 import json
 from pathlib import Path
@@ -930,7 +930,7 @@ def check(course):
 
 if __name__ == '__main__':
     check(COURSE)
-    out = Path('/Users/jo/Documents/LearnGerman/course-data.js')
+    out = Path(__file__).resolve().parent.parent / 'static' / 'course' / 'js' / 'course-data.js'
     out.write_text('/* German A1.1, Units 1-7. Generated from course_content.py: vocabulary sheets and unit recaps (11percent.de). */\n'
                    'window.COURSE = ' + json.dumps(COURSE, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')
     words = sum(len(s['words']) for u in COURSE['units'] for s in u['sections'])
