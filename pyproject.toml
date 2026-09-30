@@ -17,6 +17,8 @@ ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 "**/tests/*" = ["S101", "S105", "S106"]
+# Page copy: typographic dashes ("B2–C1") are intended, and prose lines stay whole for easy editing.
+"apps/landing/content.py" = ["RUF001", "E501"]
 
 [tool.ruff.lint.isort]
 known-first-party = ["apps", "config"]

@@ -2234,6 +2234,16 @@ function showPracticeSummary() {
 
 /* ---------------- Start ---------------- */
 
+// The landing page links to /learn/#signup and /learn/#signin to open the right dialog straight away.
+function openAccountFromLink() {
+  const view = { '#signup': 'register', '#signin': 'signin' }[location.hash];
+  if (!view) return;
+  history.replaceState(null, '', location.pathname + location.search);
+  if (account) return;
+  openAccount();
+  showAccountView(view);
+}
+
 (function start() {
   setTheme(store.get('app-theme', 'light'));
   currentVoice = store.get('book-voice', 'katja');
@@ -2241,7 +2251,7 @@ function showPracticeSummary() {
   setSpeed(store.get('book-pace', 'normal'));
   document.getElementById('usage-toggle').checked = usage.enabled;
   renderAds();
-  loadAccount();
+  loadAccount().then(openAccountFromLink);
   renderUnits();
   updateProgress();
   renderPage();

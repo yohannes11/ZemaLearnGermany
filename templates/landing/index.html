@@ -1,0 +1,290 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Learn German in Ethiopia · Study, work and live in Germany · ZemaLearn{% endblock %}
+
+{% block head %}
+  <meta name="description" content="Learn German for free with a course made for Ethiopian learners. See what German can open for you: tuition-free study, careers in Germany's skilled professions and a new life, with facts from official sources.">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ZemaLearn">
+  <meta property="og:title" content="Every journey to Germany begins with a single word · ZemaLearn">
+  <meta property="og:description" content="A free German course made for learners in Ethiopia, with audio, speaking practice and grammar.">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{{ img.berlin.src }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f4ecdc">
+  <link rel="preload" as="image" href="{{ img.scribes.src }}" imagesrcset="{{ img.scribes.srcset }}" imagesizes="(max-width: 900px) 60vw, 360px">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="{% static 'landing/css/landing.css' %}">
+  <script type="application/ld+json">{{ structured_data|safe }}</script>
+{% endblock %}
+
+{% block body %}
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="brand" href="{% url 'landing:index' %}" aria-label="ZemaLearn home">
+      <span class="brand-mark" aria-hidden="true">De</span>
+      <span class="brand-name">ZemaLearn</span>
+    </a>
+    <nav class="nav-links" aria-label="Page sections">
+      <a href="#why">Why German</a>
+      <a href="#paths">Your paths</a>
+      <a href="#journey">Journey</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="{{ learn_url }}#signin">Sign in</a>
+      <a class="btn btn-primary" href="{{ learn_url }}#signup" data-cta="nav">Start learning</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  {# ------------------------------------------------------------------ Hero #}
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span lang="am">ጀርመንኛ ይማሩ</span> · <span lang="de">Deutsch lernen</span> · Learn German</p>
+      <h1 id="hero-title">Every journey to Germany begins with a <em>single word</em>.</h1>
+      <p class="hero-quote" lang="de">„Jede Reise beginnt mit einem Wort.“</p>
+      <p class="lede">
+        Germany needs skilled people, and most of its public universities charge no tuition.
+        German is what turns those doors from “maybe” into “yes”. Begin today, free, with a course
+        made for learners in Ethiopia.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="{{ learn_url }}#signup" data-cta="hero" data-continue-label="Continue learning">Start learning German <span aria-hidden="true">→</span></a>
+        <a class="btn btn-outline btn-lg" href="{{ learn_url }}">Explore the course</a>
+      </div>
+      <ul class="hero-proof">
+        <li>Free to start</li>
+        <li>Works on your phone</li>
+        <li>Audio for every word</li>
+      </ul>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <figure class="folio folio-ethiopia">
+        <img src="{{ img.scribes.src }}" srcset="{{ img.scribes.srcset }}" sizes="(max-width: 900px) 60vw, 360px"
+             width="{{ img.scribes.width }}" height="{{ img.scribes.height }}" alt="" fetchpriority="high">
+        <figcaption><span lang="am">አዲስ አበባ</span> · Addis Ababa</figcaption>
+      </figure>
+      <figure class="folio folio-germany">
+        <span class="ribbon"></span>
+        <img src="{{ img.berlin.src }}" srcset="{{ img.berlin.srcset }}" sizes="(max-width: 900px) 70vw, 420px"
+             width="{{ img.berlin.width }}" height="{{ img.berlin.height }}" alt="" fetchpriority="high">
+        <figcaption>Berlin</figcaption>
+      </figure>
+      <svg class="route" viewBox="0 0 400 300" preserveAspectRatio="none">
+        <path id="route-path" d="M70 262 C 150 300, 250 250, 300 150 S 350 60, 380 40" />
+        <circle class="route-dot" r="5"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto"><mpath href="#route-path"/></animateMotion></circle>
+      </svg>
+      <p class="route-label">≈ 5,350 km · one word at a time</p>
+      <span class="chip chip-1" lang="de">Hallo!</span>
+      <span class="chip chip-2" lang="de">Ich lerne Deutsch.</span>
+      <span class="chip chip-3" lang="de">Danke</span>
+    </div>
+  </section>
+
+  <div class="tibeb-band" role="presentation"></div>
+
+  {# ------------------------------------------------------------------ Why German #}
+  <section class="chapter" id="why" aria-labelledby="why-title">
+    <header class="chapter-head reveal">
+      <p class="chapter-no"><span lang="am">ምዕራፍ ፩</span> · Chapter one</p>
+      <h2 id="why-title">Why German? Look at the numbers.</h2>
+      <p>Every figure comes from an official German or international source. The small numbers link to them.</p>
+    </header>
+    <div class="stats">
+      {% for s in stats %}
+        <article class="stat reveal" style="--i: {{ forloop.counter0 }}">
+          <p class="stat-value" data-count="{{ s.value }}" data-display="{{ s.display }}">{{ s.display }}</p>
+          <h3 class="stat-label">{{ s.label }}</h3>
+          <p class="stat-detail">{{ s.detail }}{% for n in s.notes %}<a class="note" href="#source-{{ n.n }}" aria-label="Source {{ n.n }}">{{ n.n }}</a>{% endfor %}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ------------------------------------------------------------------ Paths #}
+  <section class="chapter chapter-leaf" id="paths" aria-labelledby="paths-title">
+    <header class="chapter-head reveal">
+      <p class="chapter-no"><span lang="am">ምዕራፍ ፪</span> · Chapter two</p>
+      <h2 id="paths-title">What can German open for you?</h2>
+      <p>Different goals need different levels. Here is what official sources say each path asks of you.</p>
+    </header>
+    <div class="paths">
+      {% for p in paths %}
+        <article class="path path-{{ p.key }}{% if p.img %} path-photo{% endif %} reveal" style="--i: {{ forloop.counter0 }}">
+          {% if p.img %}
+            <img class="path-img" src="{{ p.img.src }}" srcset="{{ p.img.srcset }}" sizes="(max-width: 900px) 100vw, 33vw"
+                 width="{{ p.img.width }}" height="{{ p.img.height }}" alt="{{ p.alt }}" loading="lazy" decoding="async">
+          {% else %}
+            <span class="path-icon" aria-hidden="true">{% include "landing/icon.html" with name=p.icon %}</span>
+          {% endif %}
+          <div class="path-body">
+            <h3>{{ p.title }}</h3>
+            <p>{{ p.body }}{% for n in p.notes %}<a class="note" href="#source-{{ n.n }}" aria-label="Source {{ n.n }}">{{ n.n }}</a>{% endfor %}</p>
+            {% if p.needs %}<p class="needs">{{ p.needs }}</p>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ------------------------------------------------------------------ Why now #}
+  <section class="chapter chapter-dark" id="now" aria-labelledby="now-title">
+    <header class="chapter-head reveal">
+      <p class="chapter-no"><span lang="am">ምዕራፍ ፫</span> · Chapter three</p>
+      <h2 id="now-title">Why start today, not “one day”?</h2>
+    </header>
+    <div class="reasons">
+      {% for r in reasons %}
+        <article class="reason reveal" style="--i: {{ forloop.counter0 }}">
+          <span class="reason-no" aria-hidden="true">{% cycle "፩" "፪" "፫" %}</span>
+          <h3>{{ r.title }}</h3>
+          <p>{{ r.body }}{% for n in r.notes %}<a class="note" href="#source-{{ n.n }}" aria-label="Source {{ n.n }}">{{ n.n }}</a>{% endfor %}</p>
+          {% if r.calculator %}
+            <div class="calc" data-words="{{ facts.words }}">
+              <label for="calc-range">New words a day: <output id="calc-out" for="calc-range">10</output></label>
+              <input id="calc-range" type="range" min="5" max="40" step="5" value="10">
+              <p class="calc-result" aria-live="polite">About <strong id="calc-weeks">11 weeks</strong> to learn all {{ facts.words }} words of A1.1.</p>
+            </div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+    <div class="mid-cta reveal">
+      <p>Your first word takes less than a minute.</p>
+      <a class="btn btn-gold btn-lg" href="{{ learn_url }}#signup" data-cta="mid">Start learning German <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  {# ------------------------------------------------------------------ Why ZemaLearn #}
+  <section class="chapter" id="zemalearn" aria-labelledby="zema-title">
+    <div class="zema">
+      <figure class="zema-photo reveal">
+        <img src="{{ img.aau.src }}" srcset="{{ img.aau.srcset }}" sizes="(max-width: 900px) 100vw, 45vw"
+             width="{{ img.aau.width }}" height="{{ img.aau.height }}" alt="Students walking under tall trees on a university campus in Addis Ababa" loading="lazy" decoding="async">
+        <figcaption>University campus, Addis Ababa</figcaption>
+      </figure>
+      <div class="zema-copy">
+        <header class="chapter-head reveal">
+          <p class="chapter-no"><span lang="am">ምዕራፍ ፬</span> · Chapter four</p>
+          <h2 id="zema-title">Made for learners in Ethiopia.</h2>
+          <p>ZemaLearn helps Ethiopians learn foreign languages in a way that feels familiar: warm, clear and built around listening and speaking. German is our first language, starting with A1.1: {{ facts.units }} units, {{ facts.words }} words and {{ facts.lessons }} grammar lessons.</p>
+        </header>
+        <div class="sample reveal" aria-label="Listen to the course">
+          <p class="sample-title">Hear it for yourself</p>
+          {% for s in samples %}
+            <button class="sample-word" type="button" data-src="{{ s.src }}" aria-label="Play “{{ s.german }}”, which means {{ s.english }}">
+              <span class="play" aria-hidden="true">{% include "landing/icon.html" with name="sound" %}</span>
+              <span lang="de" class="de">{{ s.german }}</span>
+              <span class="en">{{ s.english }}</span>
+            </button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      {% for f in features %}
+        <article class="feature reveal" style="--i: {{ forloop.counter0 }}">
+          <span class="feature-icon" aria-hidden="true">{% include "landing/icon.html" with name=f.icon %}</span>
+          <h3>{{ f.title }}</h3>
+          <p>{{ f.body }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ------------------------------------------------------------------ Journey #}
+  <section class="chapter chapter-leaf" id="journey" aria-labelledby="journey-title">
+    <header class="chapter-head reveal">
+      <p class="chapter-no"><span lang="am">ምዕራፍ ፭</span> · Chapter five</p>
+      <h2 id="journey-title">Your journey, one level at a time.</h2>
+      <p>The six European levels (A1 to C2) build on each other. You don't climb them all at once: each one is a clear, reachable step.</p>
+    </header>
+    <ol class="journey">
+      {% for lv in levels %}
+        <li class="station station-{{ lv.status }} reveal" style="--i: {{ forloop.counter0 }}">
+          <span class="station-code">{{ lv.code }}</span>
+          <div class="station-card">
+            <p class="station-name">{{ lv.name }}</p>
+            <p class="station-can">{{ lv.can }}</p>
+            <p class="station-opens"><strong>Opens:</strong> {{ lv.opens }}{% for n in lv.notes %}<a class="note" href="#source-{{ n.n }}" aria-label="Source {{ n.n }}">{{ n.n }}</a>{% endfor %}</p>
+            <span class="status">{{ lv.status_label }}</span>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  {# ------------------------------------------------------------------ FAQ #}
+  <section class="chapter" id="faq" aria-labelledby="faq-title">
+    <header class="chapter-head reveal">
+      <p class="chapter-no"><span lang="am">ምዕራፍ ፮</span> · Chapter six</p>
+      <h2 id="faq-title">Questions you might have</h2>
+    </header>
+    <div class="faq">
+      {% for item in faq %}
+        <details class="reveal">
+          <summary>{{ item.q }}</summary>
+          <p>{{ item.a }}</p>
+        </details>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ------------------------------------------------------------------ Final CTA #}
+  <section class="final" aria-labelledby="final-title">
+    <img class="final-bg" src="{{ img.addis.src }}" srcset="{{ img.addis.srcset }}" sizes="100vw"
+         width="{{ img.addis.width }}" height="{{ img.addis.height }}" alt="" loading="lazy" decoding="async">
+    <div class="final-inner reveal">
+      <p class="eyebrow"><span lang="am">ዛሬ ይጀምሩ</span> · Start today</p>
+      <h2 id="final-title">Your first German word is one click away.</h2>
+      <p>Create a free account to keep your progress, or try a lesson first. Either way, your journey from Addis Ababa starts here.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold btn-lg" href="{{ learn_url }}#signup" data-cta="final">Create a free account</a>
+        <a class="btn btn-light btn-lg" href="{{ learn_url }}">Try a lesson first</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">De</span><span class="brand-name">ZemaLearn</span></a>
+      <p>ZemaLearn is an independent project. It is not affiliated with the German government, the DAAD or the Goethe-Institut, and does not replace an official language exam.</p>
+    </div>
+    <section aria-labelledby="sources-title">
+      <h2 id="sources-title">Sources</h2>
+      <ol class="sources">
+        {% for s in sources %}
+          <li id="source-{{ s.n }}"><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.title }}</a>. {{ s.publisher }}, {{ s.date }}.</li>
+        {% endfor %}
+      </ol>
+    </section>
+    <section aria-labelledby="credits-title">
+      <h2 id="credits-title">Image credits</h2>
+      <ul class="credits">
+        {% for c in credits %}
+          <li><a href="{{ c.page }}" rel="noopener" target="_blank">{{ c.title }}</a>, {{ c.author }}.
+            {% if c.license_url %}<a href="{{ c.license_url }}" rel="license noopener" target="_blank">{{ c.license }}</a>, resized.{% else %}{{ c.license }}.{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+  <p class="copyright">© {% now "Y" %} ZemaLearn · <a href="{{ learn_url }}">Open the course</a></p>
+</footer>
+
+<div class="sticky-cta" id="sticky-cta" hidden>
+  <a class="btn btn-primary" href="{{ learn_url }}#signup" data-cta="sticky">Start learning German, free</a>
+</div>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{% static 'landing/js/landing.js' %}" defer></script>
+{% endblock %}

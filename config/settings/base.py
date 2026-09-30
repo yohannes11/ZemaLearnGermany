@@ -26,11 +26,13 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
+    "django.contrib.sitemaps",
     "axes",
     "apps.core",
     "apps.accounts",
     "apps.course",
     "apps.analytics",
+    "apps.landing",
 ]
 
 MIDDLEWARE = [
@@ -103,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LOGIN_URL = "login"
 LOGIN_REDIRECT_URL = "analytics:dashboard"
-LOGOUT_REDIRECT_URL = "course:index"
+LOGOUT_REDIRECT_URL = "landing:index"
 
 SESSION_COOKIE_AGE = timedelta(days=30).total_seconds()
 SESSION_COOKIE_HTTPONLY = True
