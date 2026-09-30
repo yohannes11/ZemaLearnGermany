@@ -301,7 +301,7 @@ function renderUsers(updateTiles) {
         ['delete', 'Delete account'],
       ].filter(([a]) => !(self && ['make_learner', 'disable', 'delete'].includes(a)));
       return `<tr>
-        <td><div class="user-cell"><span class="avatar${u.status === 'disabled' ? ' off' : ''}">${esc(u.name.trim()[0].toUpperCase())}</span><div style="min-width:0"><b>${esc(u.name)}</b>${self ? ' <span class="you">(you)</span>' : ''}<small>${esc(u.email)}</small></div></div></td>
+        <td><div class="user-cell"><span class="avatar${u.status === 'disabled' ? ' off' : ''}">${esc(u.name.trim()[0].toUpperCase())}</span><div style="min-width:0"><b>${esc(u.name)}</b>${self ? ' <span class="you">(you)</span>' : ''}<small>@${esc(u.username)} · ${esc(u.email)}</small></div></div></td>
         <td>${u.role === 'admin' ? '<span class="badge admin">Admin</span>' : '<span class="badge">Learner</span>'}${u.status === 'disabled' ? ' <span class="badge disabled">Disabled</span>' : ''}</td>
         <td>${when(u.created)}</td>
         <td>${when(u.last_active)}</td>
@@ -325,7 +325,7 @@ document.getElementById('users-table').addEventListener('change', async e => {
   select.value = '';
   const u = users.find(x => x.id === Number(select.dataset.id));
   const confirmText = {
-    delete: `Delete the account of ${u.name} (${u.email})? Their saved progress is removed for good. Usage statistics stay, anonymously.`,
+    delete: `Delete the account of ${u.name} (@${u.username}, ${u.email})? Their saved progress is removed for good. Usage statistics stay, anonymously.`,
     disable: `Disable ${u.name}? They are signed out and cannot sign in until you enable the account again.`,
     reset_password: `Reset the password of ${u.name}? They are signed out, and you get a temporary password to give them.`,
     make_admin: `Make ${u.name} an admin? Admins can see the usage report and manage all users.`,

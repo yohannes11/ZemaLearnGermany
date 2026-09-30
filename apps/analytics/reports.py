@@ -146,7 +146,7 @@ def user_rows(search: str = "", limit: int = 500) -> list[dict]:
         .order_by("-date_joined")
     )
     if search:
-        users = users.filter(Q(email__icontains=search) | Q(name__icontains=search))
+        users = users.filter(Q(username__icontains=search) | Q(email__icontains=search) | Q(name__icontains=search))
 
     def stamp(moment):
         return int(moment.timestamp()) if moment else None
@@ -158,6 +158,7 @@ def user_rows(search: str = "", limit: int = 500) -> list[dict]:
         rows.append(
             {
                 "id": user.pk,
+                "username": user.username,
                 "email": user.email,
                 "name": user.name,
                 "role": user.role,

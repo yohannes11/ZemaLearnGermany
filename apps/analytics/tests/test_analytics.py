@@ -50,7 +50,7 @@ class EventApiTests(TestCase):
         self.assertIsNone(recorded.user)
 
     def test_links_signed_in_user(self):
-        user = User.objects.create_user("liya@example.com", PASSWORD, name="Liya")
+        user = User.objects.create_user("liya", "liya@example.com", PASSWORD, name="Liya")
         self.client.force_login(user)
         post_json(self.client, self.url, {"uid": "abcdef12-3456", "sid": "sess1234-5678", "type": "active"})
         self.assertEqual(Event.objects.get().user, user)
@@ -74,7 +74,7 @@ class ReportTests(TestCase):
         event(type=Event.Type.ACTIVE)
         event(visitor_id="visitor-0002", session_id="session-0002", created_at=now - timedelta(days=1))
         event(visitor_id="visitor-0002", session_id="session-0003", type=Event.Type.GRAMMAR, value=7)
-        User.objects.create_user("liya@example.com", PASSWORD, name="Liya")
+        User.objects.create_user("liya", "liya@example.com", PASSWORD, name="Liya")
 
         report = usage_report("day")
         today, yesterday = report["series"][-1], report["series"][-2]
@@ -97,8 +97,8 @@ class ReportTests(TestCase):
 
 class DashboardAccessTests(TestCase):
     def setUp(self):
-        self.admin = User.objects.create_user("admin@example.com", PASSWORD, name="Jo Admin", is_staff=True)
-        self.learner = User.objects.create_user("liya@example.com", PASSWORD, name="Liya")
+        self.admin = User.objects.create_user("admin", "admin@example.com", PASSWORD, name="Jo Admin", is_staff=True)
+        self.learner = User.objects.create_user("liya", "liya@example.com", PASSWORD, name="Liya")
 
     def test_page_redirects_signed_out_visitors_to_login(self):
         response = self.client.get(reverse("analytics:dashboard"))
@@ -130,8 +130,8 @@ class DashboardAccessTests(TestCase):
 
 class UserActionTests(TestCase):
     def setUp(self):
-        self.admin = User.objects.create_user("admin@example.com", PASSWORD, name="Jo Admin", is_staff=True)
-        self.learner = User.objects.create_user("liya@example.com", PASSWORD, name="Liya")
+        self.admin = User.objects.create_user("admin", "admin@example.com", PASSWORD, name="Jo Admin", is_staff=True)
+        self.learner = User.objects.create_user("liya", "liya@example.com", PASSWORD, name="Liya")
         self.client.force_login(self.admin)
 
     def act(self, user, action):
@@ -142,7 +142,7 @@ class UserActionTests(TestCase):
             self.assertEqual(self.act(self.admin, action).status_code, 400)
 
     def test_keeps_at_least_one_admin(self):
-        other = User.objects.create_user("boss@example.com", PASSWORD, name="Boss", is_staff=True)
+        other = User.objects.create_user("boss", "boss@example.com", PASSWORD, name="Boss", is_staff=True)
         self.assertEqual(self.act(other, "make_learner").status_code, 200)
         self.client.force_login(other)  # other is no longer staff
         self.assertEqual(self.act(self.admin, "disable").status_code, 403)
@@ -210,6 +210,7 @@ class ImportLegacyUsageTests(TestCase):
             path = self.make_legacy_db(folder)
             call_command("import_legacy_usage", path, stdout=io.StringIO())
             user = User.objects.get(email="old@example.com")
+            self.assertEqual(user.username, "old")
             self.assertTrue(user.is_staff)
             self.assertTrue(user.check_password(PASSWORD))
             self.assertEqual(user.progress.learned, ["Hallo"])

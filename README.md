@@ -32,7 +32,7 @@ config/                 project package
   settings/base.py      shared settings        dev.py / prod.py / test.py per environment
   urls.py  wsgi.py  asgi.py
 apps/
-  accounts/             custom User (email sign-in), JSON auth API, legacy password hasher
+  accounts/             custom User (sign in with username or email), JSON auth API, legacy password hasher
   course/               the course page and each learner's saved progress (Progress model)
   analytics/            usage events, the report, the staff dashboard, user management
   core/                 shared helpers, static storage, /healthz/ and /ads.txt
@@ -66,6 +66,7 @@ Imported passwords keep working and are upgraded to Argon2 the next time each pe
 
 ## Security notes
 
+- People sign in with their username or email address (both matched regardless of capitals).
 - Passwords are hashed with Argon2; Django's password validators apply to sign-ups.
 - Every write is CSRF-protected; the course page sends Django's token in `X-CSRFToken`.
 - Failed logins are throttled per address with django-axes (10 attempts, then 15 minutes).

@@ -30,7 +30,7 @@ def register(request):
     if not form.is_valid():
         return form_error(form)
     user = form.save()
-    login(request, user, backend="django.contrib.auth.backends.ModelBackend")
+    login(request, user, backend="apps.accounts.backends.UsernameOrEmailBackend")
     return JsonResponse({"user": user.as_public_dict()})
 
 
@@ -41,17 +41,17 @@ def login_view(request):
     except BadJSON as error:
         return json_error(str(error), 400)
     if not form.is_valid():
-        return json_error("Email or password is not correct.", 401)
-    email, password = form.cleaned_data["email"], form.cleaned_data["password"]
+        return json_error("Username, email or password is not correct.", 401)
+    login_name, password = form.cleaned_data["login"], form.cleaned_data["password"]
 
-    user = authenticate(request, email=email, password=password)
+    user = authenticate(request, username=login_name, password=password)
     if user is None:
         if getattr(request, "axes_locked_out", False):
             return json_error("Too many attempts. Please wait 15 minutes and try again.", 429)
-        inactive = User.objects.filter(email__iexact=email, is_active=False).first()
-        if inactive and inactive.check_password(password):
+        account = User.objects.find_by_login(login_name)
+        if account and not account.is_active and account.check_password(password):
             return json_error("This account has been disabled. Please contact the site admin.", 403)
-        return json_error("Email or password is not correct.", 401)
+        return json_error("Username, email or password is not correct.", 401)
 
     login(request, user)
     return JsonResponse({"user": user.as_public_dict()})

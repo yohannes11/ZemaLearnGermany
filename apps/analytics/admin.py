@@ -7,7 +7,7 @@ from .models import Event
 class EventAdmin(admin.ModelAdmin):
     list_display = ("created_at", "type", "unit", "mode", "scope", "device", "user")
     list_filter = ("type", "mode", "device", "unit")
-    search_fields = ("visitor_id", "session_id", "user__email")
+    search_fields = ("visitor_id", "session_id", "user__username", "user__email")
     date_hierarchy = "created_at"
     list_select_related = ("user",)
     raw_id_fields = ("user",)

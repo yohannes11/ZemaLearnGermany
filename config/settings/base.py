@@ -81,7 +81,8 @@ AUTH_USER_MODEL = "accounts.User"
 AUTHENTICATION_BACKENDS = [
     # Axes first: it refuses to authenticate while an address is locked out.
     "axes.backends.AxesStandaloneBackend",
-    "django.contrib.auth.backends.ModelBackend",
+    # Username or email address, plus Django's usual permission checks.
+    "apps.accounts.backends.UsernameOrEmailBackend",
 ]
 
 PASSWORD_HASHERS = [
@@ -115,7 +116,7 @@ AXES_COOLOFF_TIME = timedelta(minutes=15)
 AXES_LOCKOUT_PARAMETERS = ["ip_address"]
 AXES_RESET_ON_SUCCESS = True
 AXES_CLIENT_IP_CALLABLE = "apps.core.utils.client_ip"
-AXES_USERNAME_FORM_FIELD = "email"
+AXES_USERNAME_FORM_FIELD = "username"
 
 # Only trust X-Real-IP when a reverse proxy (nginx) that sets it sits in front of Django.
 TRUST_PROXY_IP_HEADER = env.bool("DJANGO_TRUST_PROXY_IP_HEADER", default=False)

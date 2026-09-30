@@ -46,7 +46,7 @@ class ProgressApiTests(TestCase):
     url = reverse("course:progress")
 
     def setUp(self):
-        self.user = User.objects.create_user("liya@example.com", "learning-german-26", name="Liya")
+        self.user = User.objects.create_user("liya", "liya@example.com", "learning-german-26", name="Liya")
 
     def put(self, data):
         return self.client.put(self.url, json.dumps(data), content_type="application/json")

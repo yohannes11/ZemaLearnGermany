@@ -10,6 +10,7 @@ from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
 
+from apps.accounts.validators import unique_username
 from apps.analytics.models import Event
 from apps.course.models import Progress
 
@@ -36,6 +37,7 @@ class Command(BaseCommand):
 
         User = get_user_model()
         user_ids = {}
+        taken = {name.lower() for name in User.objects.values_list("username", flat=True)}
         created = skipped = 0
         if "users" in tables:
             for row in source.execute("SELECT * FROM users ORDER BY id"):
@@ -44,7 +46,10 @@ class Command(BaseCommand):
                     user_ids[row["id"]] = existing.pk
                     skipped += 1
                     continue
+                username = unique_username(row["email"], taken)
+                taken.add(username.lower())
                 user = User(
+                    username=username,
                     email=row["email"],
                     name=row["name"],
                     # Old hashes keep working through the legacy hasher and are upgraded at next sign-in.

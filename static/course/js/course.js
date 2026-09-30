@@ -272,7 +272,7 @@ function showAccountView(view) {
   if (view === 'profile') {
     document.getElementById('profile-avatar').textContent = account.name.trim()[0].toUpperCase();
     document.getElementById('profile-name').textContent = account.name;
-    document.getElementById('profile-email').textContent = account.email;
+    document.getElementById('profile-email').textContent = `@${account.username} · ${account.email}`;
     document.getElementById('admin-link').hidden = account.role !== 'admin';
     document.getElementById('sync-note').textContent = lastSynced
       ? `Your progress is saved to your account · last saved ${lastSynced.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}.`

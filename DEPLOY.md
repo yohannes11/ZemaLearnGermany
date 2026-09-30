@@ -59,7 +59,7 @@ run() { sudo -u zema env $(grep -v '^#' /srv/zema/.env | xargs) DJANGO_SETTINGS_
 run migrate
 run collectstatic --noinput
 run check --deploy
-run createsuperuser          # asks for your email, name and password
+run createsuperuser          # asks for a username, email, name and password
 ```
 
 `check --deploy` should say "no issues (2 silenced)".
