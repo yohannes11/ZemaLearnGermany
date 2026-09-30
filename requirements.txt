@@ -1,5 +1,14 @@
-# The website (server.py) uses only Python's standard library, so nothing needs to be installed
-# on the server — just Python 3.10 or newer (Ubuntu's python3 is fine).
+# The live website (server.py + german-a1-course.html) needs NO packages: it uses only Python's
+# standard library (Python 3.10+). Nothing here has to be installed on the VPS to run the site.
 #
-# The audio tool (tools/gen_course_audio.py), used on your Mac when you add new words, needs:
+# These packages are for the development tools and the older Django version in learning/:
+#   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+
+# Audio generator (tools/gen_course_audio.py) and the Django app's online voice
 edge-tts==7.2.8
+
+# Earlier Django version of the app (learning/)
+Django==5.2.17
+
+# Optional offline voice for the Django app (learning/tts.py, TTS engine "piper")
+piper-tts==1.8.0
