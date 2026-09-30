@@ -1,0 +1,111 @@
+{% extends 'learning/base.html' %}
+{% block title %}{{ t.quiz_title }}{% endblock %}
+{% block content %}
+<style>
+    .result-banner {
+        animation: resultPulse 0.55s ease-out;
+        border-radius: 16px;
+        padding: 1rem 1.15rem;
+        border: 1px solid transparent;
+        margin-bottom: 1.25rem;
+    }
+    .result-banner.very-good {
+        background: rgba(34,197,94,0.14);
+        border-color: rgba(34,197,94,0.6);
+        color: #14532d;
+    }
+    .result-banner.good {
+        background: rgba(59,130,246,0.12);
+        border-color: rgba(59,130,246,0.5);
+        color: #1d4ed8;
+    }
+    .result-banner.decent {
+        background: rgba(250,204,21,0.12);
+        border-color: rgba(250,204,21,0.5);
+        color: #854d0e;
+    }
+    .result-banner.try-again {
+        background: rgba(239,68,68,0.12);
+        border-color: rgba(239,68,68,0.5);
+        color: #7f1d1d;
+    }
+    .result-banner h3 {
+        margin: 0 0 0.35rem;
+        font-size: 1.5rem;
+    }
+    .quiz-option.correct {
+        border-color: rgba(34,197,94,0.75) !important;
+        background: rgba(34,197,94,0.10) !important;
+    }
+    .quiz-option.wrong {
+        border-color: rgba(239,68,68,0.75) !important;
+        background: rgba(239,68,68,0.10) !important;
+    }
+    @keyframes resultPulse {
+        0% { transform: scale(0.96); opacity: 0.4; }
+        60% { transform: scale(1.02); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+</style>
+<div class="surface">
+    <div class="section-header">
+        <div>
+            <div class="pill">Vocabulary quiz</div>
+            <h1 style="margin-top: 0.7rem;">Choose the correct meaning</h1>
+        </div>
+        <a href="{% url 'matching-quiz' %}" class="btn secondary small">Try Matching quiz</a>
+    </div>
+    <p class="muted" style="margin: 0 0 1rem;">Select the correct English meaning for each German word.</p>
+
+    {% if result_banner %}
+    <div class="result-banner {{ result_summary.tone }}" aria-live="polite">
+        <h3>{{ result_summary.emoji }} {{ result_summary.title }}</h3>
+        <div><strong>{{ score_percent }}%</strong> — {{ result_summary.message }}</div>
+    </div>
+    {% endif %}
+
+    <form method="post" action="{% url 'quiz' %}">
+        {% csrf_token %}
+        {% for item in quiz_words %}
+        {% with result=item.result %}
+        <div class="quiz-box" style="margin-bottom: 16px;">
+            <p><strong>{{ forloop.counter }}.</strong> {{ item.word.german }}</p>
+            <div style="display: grid; gap: 0.7rem; margin-top: 0.9rem;">
+                {% for option in item.options %}
+                {% if result %}
+                    {% if option == result.correct %}
+                        <label class="quiz-option correct" style="display: flex; align-items: center; gap: 0.7rem; cursor: pointer; padding: 0.5rem 0.65rem; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.35);">
+                    {% elif option == result.selected and result.selected != result.correct %}
+                        <label class="quiz-option wrong" style="display: flex; align-items: center; gap: 0.7rem; cursor: pointer; padding: 0.5rem 0.65rem; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.35);">
+                    {% else %}
+                        <label style="display: flex; align-items: center; gap: 0.7rem; cursor: pointer; padding: 0.5rem 0.65rem; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.35);">
+                    {% endif %}
+                {% else %}
+                    <label style="display: flex; align-items: center; gap: 0.7rem; cursor: pointer; padding: 0.5rem 0.65rem; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.35);">
+                {% endif %}
+                    <input type="radio" name="answer-{{ item.word.id }}" value="{{ option }}" id="quiz-answer-{{ item.word.id }}-{{ forloop.counter }}" style="width: 1.1rem; height: 1.1rem; margin: 0; accent-color: var(--accent);" {% if result and option == result.selected %}checked{% endif %} {% if result %}disabled{% endif %}>
+                    <span>{{ option }}</span>
+                </label>
+                {% endfor %}
+            </div>
+            {% if result %}
+            <div style="margin-top: 0.8rem; font-size: 0.95rem;">
+                {% if result.is_correct %}
+                    <span style="color: #15803d; font-weight: 700;">Correct!</span>
+                {% else %}
+                    <span style="color: #b91c1c; font-weight: 700;">Incorrect.</span> Correct answer: {{ result.correct }}
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+        {% endwith %}
+        {% empty %}
+            <p>No quiz words available.</p>
+        {% endfor %}
+
+        <div style="margin-top: 1rem;">
+            <button type="submit" class="btn">Check answers</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

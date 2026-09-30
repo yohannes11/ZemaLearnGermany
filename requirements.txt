@@ -1,0 +1,5 @@
+# The website (server.py) uses only Python's standard library, so nothing needs to be installed
+# on the server — just Python 3.10 or newer (Ubuntu's python3 is fine).
+#
+# The audio tool (tools/gen_course_audio.py), used on your Mac when you add new words, needs:
+edge-tts==7.2.8

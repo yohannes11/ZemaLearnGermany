@@ -1,0 +1,272 @@
+{% extends 'learning/base.html' %}
+{% block title %}{{ t.matching_title }}{% endblock %}
+{% block content %}
+<div class="card">
+    <div class="pill">Matching quiz</div>
+    <h1>Match the German words to the correct English meaning</h1>
+    <p class="muted">Drag each German word onto its matching meaning, or click a pair to match them.</p>
+
+    <style>
+        .matching-pair {
+            padding: 0.7rem 0.9rem;
+            margin-bottom: 0.6rem;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: rgba(255,255,255,0.3);
+            cursor: pointer;
+            transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+            user-select: none;
+        }
+        .matching-pair:hover {
+            transform: translateY(-1px);
+            border-color: rgba(15,118,110,0.5);
+        }
+        .matching-pair.selected {
+            border-color: rgba(15,118,110,0.7);
+            box-shadow: 0 0 0 3px rgba(15,118,110,0.1);
+        }
+        .matching-pair.matched {
+            background: rgba(34,197,94,0.18) !important;
+            border-color: rgba(34,197,94,0.8) !important;
+            color: #14532d;
+            font-weight: 700;
+            pointer-events: none;
+        }
+        body.dark .matching-pair.matched {
+            color: #bbf7d0;
+        }
+        .matching-pair.wrong {
+            background: rgba(239,68,68,0.12) !important;
+            border-color: rgba(239,68,68,0.7) !important;
+            color: #7f1d1d;
+            animation: shake 0.25s ease-in-out 2;
+        }
+        body.dark .matching-pair.wrong {
+            color: #fecaca;
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-4px); }
+            75% { transform: translateX(4px); }
+        }
+        .matching-pair.dragging {
+            opacity: 0.6;
+        }
+        .matching-pair.drop-target {
+            border-color: rgba(34,197,94,0.8);
+            box-shadow: 0 0 0 3px rgba(34,197,94,0.12);
+        }
+        .celebration-banner {
+            position: fixed;
+            inset: 25% 50% auto 50%;
+            transform: translateX(-50%) scale(0.8);
+            opacity: 0;
+            pointer-events: none;
+            background: linear-gradient(135deg, rgba(34,197,94,0.16), rgba(250,204,21,0.16));
+            border: 1px solid rgba(34,197,94,0.4);
+            color: var(--text);
+            border-radius: 24px;
+            padding: 1.2rem 1.6rem;
+            box-shadow: 0 24px 70px rgba(15,118,110,0.16);
+            text-align: center;
+            min-width: min(80vw, 420px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 30;
+        }
+        .celebration-banner.show {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+        }
+        .celebration-banner h3 {
+            margin: 0 0 0.35rem;
+            font-size: clamp(1.5rem, 3vw, 2.6rem);
+            letter-spacing: -0.05em;
+        }
+        .celebration-banner p {
+            margin: 0;
+            font-weight: 700;
+            color: var(--muted);
+        }
+        @keyframes confetti-burst {
+            0% { transform: scale(0.65) translateY(10px); opacity: 0; }
+            30% { opacity: 1; }
+            100% { transform: scale(1.1) translateY(-18px); opacity: 0; }
+        }
+        .celebration-confetti {
+            position: fixed;
+            top: 18%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 29;
+            animation: confetti-burst 0.9s ease-out forwards;
+        }
+    </style>
+
+    <div id="celebration-banner" class="celebration-banner" aria-live="polite">
+        <h3>Very good! 🏆</h3>
+        <p>You matched every word correctly.</p>
+    </div>
+
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 1.5rem;">
+        <div class="quiz-box">
+            <h3>German</h3>
+            {% for pair in pairs %}
+                <div class="matching-pair" data-pair-id="{{ pair.pair_id }}" data-german="{{ pair.german }}" data-type="german" draggable="true">
+                    {{ pair.german }}
+                </div>
+            {% empty %}
+                <p>No words available.</p>
+            {% endfor %}
+        </div>
+
+        <div class="quiz-box">
+            <h3>English</h3>
+            {% for pair in english_pairs %}
+                <div class="matching-pair" data-pair-id="{{ pair.pair_id }}" data-english="{{ pair.english }}" data-type="english" draggable="true">
+                    {{ pair.english }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div style="margin-top: 1.2rem;">
+        <button type="button" class="btn" onclick="window.location.reload()">New quiz (10 words)</button>
+        <button type="button" class="btn secondary" onclick="window.location.href='/quiz/'">Back to standard quiz</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const allItems = [...document.querySelectorAll('.matching-pair')];
+        const germanItems = allItems.filter((item) => item.dataset.type === 'german');
+        const englishItems = allItems.filter((item) => item.dataset.type === 'english');
+        let draggedItem = null;
+
+        function markSelected(el) {
+            document.querySelectorAll('.matching-pair.selected').forEach((item) => item.classList.remove('selected'));
+            el.classList.add('selected');
+        }
+
+        function flashWrong(el) {
+            if (!el || el.classList.contains('matched')) return;
+            el.classList.add('wrong');
+            setTimeout(() => el.classList.remove('wrong'), 450);
+        }
+
+        function showCelebration(scoreText = 'Very good!') {
+            const banner = document.getElementById('celebration-banner');
+            if (!banner) return;
+            const title = banner.querySelector('h3');
+            const subtitle = banner.querySelector('p');
+            if (title) title.textContent = scoreText + ' ' + (scoreText === 'Very good!' ? '🏆' : scoreText === 'Good job!' ? '✨' : scoreText === 'Nice work!' ? '👍' : '💪');
+            if (subtitle) {
+                subtitle.textContent = scoreText === 'Try again!' ? 'Keep practising and you will improve quickly.' : 'You matched every word correctly.';
+            }
+            banner.classList.add('show');
+            const colors = ['#22c55e', '#f59e0b', '#e879f9', '#60a5fa', '#f97316'];
+            for (let i = 0; i < 18; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'celebration-confetti';
+                confetti.style.background = colors[i % colors.length];
+                confetti.style.left = (50 + (Math.random() * 30 - 15)) + '%';
+                confetti.style.top = (30 + Math.random() * 18) + '%';
+                confetti.style.transform = 'translate(-50%, 0)';
+                document.body.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 900);
+            }
+            setTimeout(() => banner.classList.remove('show'), 1800);
+        }
+
+        function computeMatchScore() {
+            const matchedCount = document.querySelectorAll('.matching-pair.matched').length;
+            const totalPairs = document.querySelectorAll('.matching-pair[data-type="german"]').length;
+            return totalPairs ? (matchedCount / (totalPairs * 2)) * 100 : 0;
+        }
+
+        function markMatched(germanEl, englishEl) {
+            if (!germanEl || !englishEl) return;
+            germanEl.classList.add('matched');
+            englishEl.classList.add('matched');
+            germanEl.classList.remove('selected');
+            englishEl.classList.remove('selected');
+            document.querySelectorAll('.matching-pair.drop-target').forEach((item) => item.classList.remove('drop-target'));
+
+            const totalMatched = document.querySelectorAll('.matching-pair.matched').length;
+            if (totalMatched === allItems.length) {
+                const score = computeMatchScore();
+                const summary = score >= 95 ? 'Very good!' : score >= 85 ? 'Good job!' : score >= 70 ? 'Nice work!' : 'Try again!';
+                showCelebration(summary);
+            }
+        }
+
+        function isCorrectMatch(germanEl, englishEl) {
+            if (!germanEl || !englishEl) return false;
+            return germanEl.dataset.pairId && englishEl.dataset.pairId && germanEl.dataset.pairId === englishEl.dataset.pairId;
+        }
+
+        function attemptMatch(sourceEl, targetEl) {
+            if (!sourceEl || !targetEl || sourceEl === targetEl || sourceEl.dataset.type === targetEl.dataset.type) return;
+            const germanEl = sourceEl.dataset.type === 'german' ? sourceEl : targetEl;
+            const englishEl = sourceEl.dataset.type === 'english' ? sourceEl : targetEl;
+            if (isCorrectMatch(germanEl, englishEl)) {
+                markMatched(germanEl, englishEl);
+            } else {
+                flashWrong(sourceEl);
+                flashWrong(targetEl);
+            }
+        }
+
+        allItems.forEach((item) => {
+            item.addEventListener('dragstart', function (event) {
+                if (item.classList.contains('matched')) return;
+                draggedItem = item;
+                item.classList.add('dragging');
+                if (event.dataTransfer) {
+                    event.dataTransfer.effectAllowed = 'move';
+                    event.dataTransfer.setData('text/plain', item.dataset.pairId);
+                }
+            });
+
+            item.addEventListener('dragend', function () {
+                draggedItem = null;
+                item.classList.remove('dragging');
+                document.querySelectorAll('.matching-pair.drop-target').forEach((dropItem) => dropItem.classList.remove('drop-target'));
+            });
+
+            item.addEventListener('dragover', function (event) {
+                event.preventDefault();
+                if (!item.classList.contains('matched') && draggedItem && draggedItem !== item && draggedItem.dataset.type !== item.dataset.type) {
+                    item.classList.add('drop-target');
+                }
+            });
+
+            item.addEventListener('dragleave', function () {
+                item.classList.remove('drop-target');
+            });
+
+            item.addEventListener('drop', function (event) {
+                event.preventDefault();
+                item.classList.remove('drop-target');
+                if (draggedItem && !item.classList.contains('matched')) {
+                    attemptMatch(draggedItem, item);
+                }
+                draggedItem = null;
+            });
+
+            item.addEventListener('click', function () {
+                if (item.classList.contains('matched')) return;
+                const selected = document.querySelector('.matching-pair.selected');
+                if (selected && selected !== item && selected.dataset.type !== item.dataset.type) {
+                    attemptMatch(selected, item);
+                    document.querySelectorAll('.matching-pair.selected').forEach((selectedItem) => selectedItem.classList.remove('selected'));
+                    return;
+                }
+                markSelected(item);
+            });
+        });
+    });
+</script>
+{% endblock %}

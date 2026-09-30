@@ -1,0 +1,110 @@
+{% extends 'learning/base.html' %}
+{% block title %}{{ t.flashcard_title }}{% endblock %}
+{% block content %}
+<div class="surface">
+    <div class="pill">{{ t.flashcard_deck }}</div>
+    <h1>{{ t.flashcard_title }}</h1>
+    <p class="muted">{{ t.flashcard_learning }}</p>
+
+    <div class="direction-toggle" role="group" aria-label="Card direction">
+        <button type="button" class="voice-btn" data-direction="de-en">DE → EN</button>
+        <button type="button" class="voice-btn" data-direction="en-de">EN → DE</button>
+    </div>
+
+    <div class="deck-list" data-deck data-direction="de-en">
+    {% for word in words %}
+        <article class="flashcard-entry">
+            <div class="flashcard-shell" data-flip-card data-german="{{ word.german }}" tabindex="0" role="button" aria-label="Flip flashcard">
+                <div class="flashcard-inner flashcard">
+                    <div class="flashcard-face flashcard-front">
+                        <div class="side-de">
+                            <div class="flashcard-subtitle">German</div>
+                            <div class="flashcard-title">{{ word.german }}</div>
+                        </div>
+                        <div class="side-en">
+                            <div class="flashcard-subtitle">Meaning</div>
+                            <div class="flashcard-title" style="font-size: clamp(1.7rem, 3vw, 2.2rem);">{{ word.english }}</div>
+                        </div>
+                        <div class="muted" style="margin-top: 0.9rem;">Tap to reveal</div>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div class="side-en">
+                            <div class="flashcard-subtitle">Meaning</div>
+                            <div class="flashcard-title" style="font-size: clamp(1.7rem, 3vw, 2.2rem);">{{ word.english }}</div>
+                        </div>
+                        <div class="side-de">
+                            <div class="flashcard-subtitle">German</div>
+                            <div class="flashcard-title">{{ word.german }}</div>
+                        </div>
+                        <div class="flashcard-meta">
+                            <div><strong>Article:</strong> {{ word.article|default:'-' }}</div>
+                            <div><strong>Plural:</strong> {{ word.plural|default:'-' }}</div>
+                            <div><strong>Example:</strong> {{ word.example_sentence|default:'-' }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="voice-panel">
+                <button class="voice-btn" data-speak="{{ word.german }}">🔊 Listen</button>
+                <button class="voice-btn" data-record="voice-status-{{ forloop.counter }}">🎙️ Record</button>
+            </div>
+            <div id="voice-status-{{ forloop.counter }}" class="muted" style="margin-top:8px; min-height:22px;">Ready to practice.</div>
+        </article>
+    {% empty %}
+        <p>No vocabulary available.</p>
+    {% endfor %}
+    </div>
+</div>
+
+<style>
+    .direction-toggle { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0; }
+    .direction-toggle .is-active { outline: 2px solid currentColor; }
+    [data-direction="de-en"] .flashcard-front .side-en,
+    [data-direction="de-en"] .flashcard-back .side-de,
+    [data-direction="en-de"] .flashcard-front .side-de,
+    [data-direction="en-de"] .flashcard-back .side-en { display: none; }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const deck = document.querySelector('[data-deck]');
+        const directionButtons = document.querySelectorAll('.direction-toggle [data-direction]');
+
+        function setDirection(direction) {
+            deck.dataset.direction = direction;
+            directionButtons.forEach(function (button) {
+                button.classList.toggle('is-active', button.dataset.direction === direction);
+            });
+            document.querySelectorAll('[data-flip-card].is-flipped').forEach(function (card) {
+                card.classList.remove('is-flipped');
+            });
+            try { localStorage.setItem('flashcard-direction', direction); } catch (e) {}
+        }
+
+        directionButtons.forEach(function (button) {
+            button.addEventListener('click', function () { setDirection(button.dataset.direction); });
+        });
+        let savedDirection = 'de-en';
+        try { savedDirection = localStorage.getItem('flashcard-direction') || 'de-en'; } catch (e) {}
+        setDirection(savedDirection === 'en-de' ? 'en-de' : 'de-en');
+
+        document.querySelectorAll('[data-flip-card]').forEach(function (card) {
+            function toggleCard() {
+                card.classList.toggle('is-flipped');
+                // When recalling German from English, say the German answer as it is revealed.
+                if (deck.dataset.direction === 'en-de' && card.classList.contains('is-flipped')) {
+                    speakGerman(card.dataset.german);
+                }
+            }
+            card.addEventListener('click', toggleCard);
+            card.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    toggleCard();
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

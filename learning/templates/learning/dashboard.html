@@ -1,0 +1,101 @@
+{% extends 'learning/base.html' %}
+{% load learning_extras %}
+{% block title %}{{ t.dashboard_title }}{% endblock %}
+{% block content %}
+<div class="grid">
+    <div class="surface">
+        <div class="section-header">
+            <div>
+                <div class="pill">{{ selected_chapter|default:'1'|title }} {{ t.vocab_chapter }}</div>
+                <h1 style="margin-top: 0.8rem;">{{ t.msg_welcome }}</h1>
+            </div>
+            <a href="/vocabulary/?chapter={{ selected_chapter }}" class="btn small">{{ t.btn_continue }}</a>
+        </div>
+
+        <p class="muted" style="max-width: 52rem; font-size: 1.04rem; line-height: 1.7; margin: 0;">Your German vocabulary plan is built from the source PDF and supports structured beginner-friendly A1–A2 study.</p>
+
+        <form method="get" id="chapter-form" style="margin: 1.4rem 0; display:flex; gap:0.75rem; flex-wrap:wrap; align-items:center;">
+            <label class="muted" for="chapter-select">{{ t.label_chapter }}</label>
+            <select id="chapter-select" name="chapter" onchange="this.form.submit()" style="max-width: 340px; border-radius: 14px; background: rgba(255,255,255,0.9);">
+                {% for value, label in chapter_choices %}
+                    <option value="{{ value }}" {% if selected_chapter == value %}selected{% endif %}>{{ label }}</option>
+                {% endfor %}
+            </select>
+        </form>
+
+        <div class="metric-row">
+            <div class="metric-item">
+                <div class="label">{{ t.dashboard_total_words }}</div>
+                <div class="value">{{ total_words }}</div>
+            </div>
+            <div class="metric-item">
+                <div class="label">{{ t.dashboard_recent_activity }}</div>
+                <div class="value">{{ learned_words }}</div>
+            </div>
+            <div class="metric-item">
+                <div class="label">{{ t.flashcard_learning }}</div>
+                <div class="value">{{ learning_words }}</div>
+            </div>
+            <div class="metric-item">
+                <div class="label">{{ t.vocab_difficulty }}</div>
+                <div class="value">{{ difficult_words }}</div>
+            </div>
+        </div>
+
+        <div class="soft-divider"></div>
+
+        <div class="stack">
+            <div class="goal-row">
+                <h3 style="margin: 0;">{{ t.dashboard_study_goals }}</h3>
+            </div>
+            {% for stage_key, stage_label in learning_flow_stages %}
+            <div class="stack">
+                <div class="goal-row" style="font-size: 0.94rem;">
+                    <strong>{{ stage_label }}</strong>
+                    <span class="muted">{% if learning_flow|get_item:stage_key %}{{ t.flashcard_correct }}{% else %}Pending{% endif %}</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" style="width: {% if learning_flow|get_item:stage_key %}100%{% else %}0%{% endif %};"></div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="surface">
+        <div class="section-header">
+            <h3 style="margin: 0;">{{ t.dashboard_progress }}</h3>
+        </div>
+        <div class="action-list">
+            <a href="/vocabulary/?chapter={{ selected_chapter }}" class="action-link"><span>{{ t.vocab_title }}</span><span>→</span></a>
+            <a href="/quiz/?chapter={{ selected_chapter }}" class="action-link"><span>{{ t.quiz_title }}</span><span>→</span></a>
+            <a href="/quiz/matching/?chapter={{ selected_chapter }}" class="action-link"><span>{{ t.matching_title }}</span><span>→</span></a>
+            <a href="/flashcards/?chapter={{ selected_chapter }}" class="action-link"><span>{{ t.flashcard_title }}</span><span>→</span></a>
+            <a href="/challenge/?chapter={{ selected_chapter }}" class="action-link"><span>{{ t.challenge_title }}</span><span>→</span></a>
+            <a href="/review/?chapter={{ selected_chapter }}" class="action-link"><span>{{ t.review_title }}</span><span>→</span></a>
+        </div>
+    </div>
+
+    <div class="surface">
+        <div class="section-header">
+            <h3 style="margin: 0;">{{ t.dashboard_recent_activity }}</h3>
+        </div>
+        <div class="stack">
+            <div class="goal-row"><span class="muted">{{ t.time_today }}</span><strong>{{ today_minutes }} min</strong></div>
+            <div class="goal-row"><span class="muted">{{ t.dashboard_current_streak }}</span><strong>5 days</strong></div>
+            <div class="goal-row"><span class="muted">{{ t.quiz_accuracy }}</span><strong>86%</strong></div>
+        </div>
+        <div class="soft-divider"></div>
+        <h4 style="margin: 0 0 0.8rem;">{{ t.review_quiz_history }}</h4>
+        {% if quiz_results %}
+            <ul style="padding-left: 1.1rem; margin: 0; display:grid; gap:0.45rem; color: var(--muted);">
+            {% for result in quiz_results %}
+                <li>{{ result.quiz_type }} — {{ result.score_percent|floatformat:0 }}%</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p class="muted" style="margin: 0;">{{ t.msg_no_words }}</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

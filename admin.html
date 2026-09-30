@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <style>
+    :root {
+      --bg: #f4ecdc;
+      --surface: #fffaf0;
+      --surface-2: #f3e9d6;
+      --border: #e5d6ba;
+      --text: #1f1a16;
+      --muted: #6b6159;
+      --subtle: #9a8f85;
+      --brand: #b4442b;
+      --brand-soft: #fbece7;
+      --bar: #b4442b;
+      --bar-hover: #983621;
+      --grid: #eadfca;
+      --good: #2e6b4f;
+      --bad: #c2412d;
+      --radius: 10px;
+      --shadow: 0 1px 2px rgba(31, 26, 22, 0.05), 0 4px 16px rgba(31, 26, 22, 0.06);
+      --font: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      --serif: 'Fraunces', Georgia, serif;
+      --tibeb: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='10' viewBox='0 0 48 10'%3E%3Cpath d='M0 5L6 0L12 5L6 10Z' fill='%23b4442b'/%3E%3Cpath d='M12 5L18 0L24 5L18 10Z' fill='%23c98f22'/%3E%3Cpath d='M24 5L30 0L36 5L30 10Z' fill='%232e6b4f'/%3E%3Cpath d='M36 5L42 0L48 5L42 10Z' fill='%232f4a7a'/%3E%3C/svg%3E");
+      color-scheme: light;
+    }
+    :root[data-theme="dark"] {
+      --bg: #14110f;
+      --surface: #1c1815;
+      --surface-2: #25201b;
+      --border: #332c25;
+      --text: #f3eee8;
+      --muted: #b2a79c;
+      --subtle: #857a70;
+      --brand: #e0694c;
+      --brand-soft: rgba(224, 105, 76, 0.14);
+      --bar: #e0694c;
+      --bar-hover: #ea8064;
+      --grid: #2a241f;
+      --good: #6cc49a;
+      --bad: #ef7a66;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.3);
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 15px; line-height: 1.5; min-height: 100vh; }
+    .band { height: 10px; background: var(--tibeb) repeat-x; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 16px 64px; }
+    header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+    h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.15; }
+    .sub { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+    .sub a { color: var(--brand); font-weight: 600; text-decoration: none; }
+    .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .segmented { display: inline-flex; background: var(--surface-2); border: 1px solid var(--border); border-radius: 999px; padding: 3px; }
+    .segmented button { border: 0; background: none; font: inherit; font-size: 0.85rem; font-weight: 600; color: var(--muted); padding: 6px 14px; border-radius: 999px; cursor: pointer; }
+    .segmented button.active { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+    .segmented button:focus-visible, .btn:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+    .btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: inherit; font-size: 0.85rem; font-weight: 600; padding: 7px 14px; border-radius: 999px; cursor: pointer; text-decoration: none; }
+    .btn:hover { border-color: var(--brand); color: var(--brand); }
+
+    .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 16px; }
+    .tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; box-shadow: var(--shadow); }
+    .tile .k { font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+    .tile .v { font-family: var(--serif); font-size: 2rem; font-weight: 600; line-height: 1.2; margin-top: 4px; font-variant-numeric: tabular-nums; }
+    @media (max-width: 520px) { .tiles { grid-template-columns: 1fr 1fr; } .tile { padding: 12px 14px; } .tile .v { font-size: 1.6rem; } }
+    .tile .d { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+    .tile .d b { font-weight: 700; }
+    .tile .d .up { color: var(--good); }
+    .tile .d .down { color: var(--bad); }
+
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 18px 14px; box-shadow: var(--shadow); margin-bottom: 16px; min-width: 0; }
+    .card-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; }
+    h2 { font-size: 1rem; font-weight: 700; }
+    .card-head p { color: var(--muted); font-size: 0.82rem; }
+    .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    @media (max-width: 860px) { .grid3 { grid-template-columns: 1fr; } }
+
+    .chart { position: relative; width: 100%; height: 280px; }
+    .chart svg { display: block; width: 100%; height: 100%; overflow: visible; }
+    .chart .gridline { stroke: var(--grid); stroke-width: 1; }
+    .chart .axis-label { fill: var(--subtle); font-size: 11px; font-family: var(--font); }
+    .chart .bar { fill: var(--bar); }
+    .chart .hit:hover + .bar, .chart .bar.on { fill: var(--bar-hover); }
+    .chart .hit { fill: transparent; cursor: default; }
+    .chart .value-label { fill: var(--muted); font-size: 11px; font-weight: 600; font-family: var(--font); }
+    .tip { position: absolute; pointer-events: none; background: var(--text); color: var(--bg); font-size: 0.8rem; padding: 7px 10px; border-radius: 8px; white-space: nowrap; transform: translate(-50%, calc(-100% - 10px)); opacity: 0; transition: opacity .1s; z-index: 2; }
+    .tip b { font-weight: 700; }
+
+    .hbars { display: grid; gap: 10px; }
+    .hbar { display: grid; grid-template-columns: 96px 1fr 36px; align-items: center; gap: 10px; font-size: 0.85rem; }
+    .hbar .name { color: var(--text); font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .hbar .track { height: 10px; border-radius: 0 4px 4px 0; }
+    .hbar .fill { height: 100%; background: var(--bar); border-radius: 0 4px 4px 0; min-width: 2px; }
+    .hbar .num { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .none { color: var(--subtle); font-size: 0.85rem; padding: 8px 0; }
+
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.86rem; font-variant-numeric: tabular-nums; }
+    th, td { padding: 8px 10px; text-align: right; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    th:first-child, td:first-child { text-align: left; }
+    th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); font-weight: 700; }
+    tbody tr:hover { background: var(--surface-2); }
+    td.zero { color: var(--subtle); }
+
+    .empty { text-align: center; padding: 48px 16px; color: var(--muted); }
+    .empty h2 { font-family: var(--serif); font-size: 1.3rem; color: var(--text); margin-bottom: 6px; }
+    .error { background: var(--brand-soft); border: 1px solid var(--brand); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 16px; font-size: 0.9rem; }
+    [hidden] { display: none !important; }
+    .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  
+    /* ---- admin shell */
+    .avatar { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--brand); color: #fff; font-weight: 800; font-size: 0.85rem; flex-shrink: 0; }
+    .who { display: flex; align-items: center; gap: 10px; font-size: 0.88rem; font-weight: 600; }
+    .admin-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
+    .admin-tabs button { border: 0; background: none; font: inherit; font-weight: 700; font-size: 0.95rem; color: var(--muted); padding: 10px 14px 12px; cursor: pointer; border-bottom: 2.5px solid transparent; margin-bottom: -1px; }
+    .admin-tabs button.active { color: var(--text); border-bottom-color: var(--brand); }
+    .admin-tabs button:focus-visible { outline: 2px solid var(--brand); outline-offset: -2px; }
+    .report-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; }
+
+    .gate { max-width: 420px; margin: 40px auto; }
+    .gate h2 { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; margin-bottom: 6px; }
+    .gate p { color: var(--muted); font-size: 0.9rem; margin-bottom: 16px; }
+    .gate form { display: grid; gap: 14px; }
+    .field { display: grid; gap: 6px; font-size: 0.86rem; font-weight: 700; }
+    .field input, .search { height: 42px; padding: 0 12px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: inherit; font-weight: 500; }
+    .field input:focus, .search:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
+    .btn-primary { background: var(--brand); border-color: var(--brand); color: #fff; justify-content: center; min-height: 42px; }
+    .btn-primary:hover { color: #fff; filter: brightness(0.95); }
+    .form-error { background: var(--brand-soft); color: var(--bad); border-radius: 10px; padding: 10px 12px; font-size: 0.86rem; font-weight: 600; }
+
+    /* ---- users */
+    .users-bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+    .search { width: min(320px, 100%); }
+    .badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 0.75rem; font-weight: 700; background: var(--surface-2); color: var(--muted); border: 1px solid var(--border); }
+    .badge.admin { background: var(--brand-soft); color: var(--brand); border-color: transparent; }
+    .badge.disabled { color: var(--bad); border-color: currentColor; background: none; }
+    .user-cell { display: flex; align-items: center; gap: 10px; text-align: left; }
+    .user-cell .avatar { width: 30px; height: 30px; font-size: 0.8rem; }
+    .user-cell .avatar.off { background: var(--subtle); }
+    .user-cell small { display: block; color: var(--muted); font-size: 0.78rem; }
+    #users-table td:first-child { max-width: 280px; }
+    #users-table td:first-child b { font-weight: 700; }
+    .you { color: var(--subtle); font-weight: 500; font-size: 0.78rem; }
+    .actions-select { height: 34px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: inherit; font-size: 0.82rem; padding: 0 8px; cursor: pointer; }
+    .notice { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--good); border-radius: var(--radius); padding: 12px 16px; margin-bottom: 14px; font-size: 0.9rem; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .notice.bad { border-left-color: var(--bad); }
+    .notice code { font-size: 1rem; font-weight: 700; background: var(--surface-2); padding: 3px 8px; border-radius: 6px; user-select: all; }
+    .notice .x { margin-left: auto; }
+  </style>
+</head>
+<body>
+  <div class="band" aria-hidden="true"></div>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Course admin</h1>
+        <p class="sub">German A1 course · <a href="german-a1-course.html">Open the course</a></p>
+      </div>
+      <div class="who" id="who" hidden>
+        <span class="avatar" id="who-avatar"></span><span id="who-name"></span>
+        <button class="btn" type="button" onclick="signOut()">Sign out</button>
+      </div>
+    </header>
+
+    <section class="card gate" id="gate" hidden>
+      <form id="gate-form">
+        <div><h2 id="gate-title">Sign in</h2><p id="gate-text"></p></div>
+        <p class="form-error" id="gate-error" role="alert" hidden></p>
+        <label class="field" id="gate-name-field">Your name<input type="text" name="name" autocomplete="name" maxlength="60"></label>
+        <label class="field">Email<input type="email" name="email" autocomplete="email" required></label>
+        <label class="field">Password<input type="password" name="password" autocomplete="current-password" required></label>
+        <button class="btn btn-primary" type="submit" id="gate-submit">Sign in</button>
+      </form>
+    </section>
+
+    <div id="app" hidden>
+      <nav class="admin-tabs" aria-label="Admin sections">
+        <button type="button" data-tab="report">Usage report</button>
+        <button type="button" data-tab="users">Users</button>
+      </nav>
+
+      <div class="error" id="error" hidden></div>
+
+      <div id="report-view">
+        <div class="report-bar">
+          <p class="sub" style="margin:0">All visitors, signed in or not · <span id="updated">loading…</span></p>
+          <div class="controls">
+            <div class="segmented" role="group" aria-label="Report period" id="periods">
+              <button data-period="day">Daily</button>
+              <button data-period="week">Weekly</button>
+              <button data-period="month">Monthly</button>
+              <button data-period="year">Yearly</button>
+            </div>
+            <a class="btn" id="csv" href="api/stats.csv?period=day" download>Download CSV</a>
+          </div>
+        </div>
+
+        <section class="tiles" id="tiles" aria-label="Summary"></section>
+
+        <section class="card">
+          <div class="card-head">
+            <div>
+              <h2 id="chart-title">Active users per day</h2>
+              <p id="chart-sub"></p>
+            </div>
+            <div class="segmented" role="group" aria-label="Metric" id="metrics">
+              <button data-metric="users">Active users</button>
+              <button data-metric="new_users">New visitors</button>
+              <button data-metric="signups">Sign-ups</button>
+              <button data-metric="sessions">Visits</button>
+              <button data-metric="minutes">Study minutes</button>
+            </div>
+          </div>
+          <div class="chart" id="chart"><div class="tip" id="tip" role="status"></div></div>
+        </section>
+
+        <div class="grid3">
+          <section class="card">
+            <div class="card-head"><div><h2>Study modes</h2><p>Learners who opened each mode</p></div></div>
+            <div class="hbars" id="modes"></div>
+          </section>
+          <section class="card">
+            <div class="card-head"><div><h2>Units</h2><p>Learners who studied each unit</p></div></div>
+            <div class="hbars" id="units"></div>
+          </section>
+          <section class="card">
+            <div class="card-head"><div><h2>Devices</h2><p>Learners by device type</p></div></div>
+            <div class="hbars" id="devices"></div>
+          </section>
+        </div>
+
+        <section class="card">
+          <div class="card-head"><div><h2 id="table-title">Report</h2><p>Newest first. Returning = active in the period but first seen earlier.</p></div></div>
+          <div class="table-wrap"><table id="table"></table></div>
+        </section>
+      </div>
+
+      <div id="users-view" hidden>
+        <section class="tiles" id="user-tiles" aria-label="Accounts summary"></section>
+        <div id="user-notice"></div>
+        <section class="card">
+          <div class="users-bar">
+            <div><h2>Accounts</h2><p class="sub" style="margin:0">Learners who created an account. Guests only appear in the usage report.</p></div>
+            <input class="search" id="user-search" type="search" placeholder="Search name or email" aria-label="Search users">
+          </div>
+          <div class="table-wrap"><table id="users-table"></table></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const PERIOD_WORDS = {
+      day: { unit: 'day', current: 'Today', previous: 'yesterday', per: 'per day', range: 'last 30 days' },
+      week: { unit: 'week', current: 'This week', previous: 'last week', per: 'per week', range: 'last 12 weeks' },
+      month: { unit: 'month', current: 'This month', previous: 'last month', per: 'per month', range: 'last 12 months' },
+      year: { unit: 'year', current: 'This year', previous: 'last year', per: 'per year', range: 'last 5 years' },
+    };
+    const METRICS = {
+      users: 'Active users', new_users: 'New visitors', signups: 'Sign-ups', sessions: 'Visits', minutes: 'Study minutes',
+    };
+    const MODE_NAMES = { learn: 'Learn', speak: 'Speak', practice: 'Practice', flashcards: 'Flashcards', match: 'Match', grammar: 'Grammar' };
+
+    const saved = (k, d) => { try { return localStorage.getItem(k) ?? d; } catch (e) { return d; } };
+    const save = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+
+    // Follow the course's own light/dark setting.
+    try { if (JSON.parse(localStorage.getItem('app-theme')) === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}
+
+    let period = saved('stats-period', 'day');
+    let metric = saved('stats-metric', 'users');
+    let data = null;
+
+    const fmt = n => n.toLocaleString();
+    const minutes = m => m < 60 ? `${m} min` : `${Math.floor(m / 60)} h ${String(m % 60).padStart(2, '0')} min`;
+    const shortLabel = (start, p) => {
+      const d = new Date(start + 'T00:00');
+      if (p === 'day') return d.toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
+      if (p === 'week') return d.toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
+      if (p === 'month') return d.toLocaleDateString(undefined, { month: 'short', year: '2-digit' });
+      return String(d.getFullYear());
+    };
+
+    function setActive(groupId, attr, value) {
+      document.querySelectorAll(`#${groupId} button`).forEach(b => {
+        const on = b.dataset[attr] === value;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-pressed', on);
+      });
+    }
+
+    async function load() {
+      try {
+        const res = await fetch(`api/stats?period=${period}`, { cache: 'no-store', credentials: 'same-origin' });
+        if (res.status === 403) return checkAccess();
+        if (!res.ok) throw new Error(`The server answered ${res.status}.`);
+        data = await res.json();
+        document.getElementById('error').hidden = true;
+        render();
+      } catch (err) {
+        showError(err instanceof TypeError || /JSON/.test(err.message)
+          ? 'Could not reach the server. Start the course with "python3 server.py".'
+          : err.message);
+      }
+    }
+
+    function showError(text) {
+      const box = document.getElementById('error');
+      box.hidden = !text;
+      box.textContent = text || '';
+    }
+
+    function render() {
+      const w = PERIOD_WORDS[period];
+      setActive('periods', 'period', period);
+      setActive('metrics', 'metric', metric);
+      document.getElementById('csv').href = `api/stats.csv?period=${period}`;
+      document.getElementById('csv').setAttribute('download', `usage-${period}.csv`);
+      document.getElementById('updated').textContent = `updated ${new Date(data.generated).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
+      renderTiles(w);
+      renderChart(w);
+      renderBars('modes', Object.entries(data.modes).map(([k, v]) => [MODE_NAMES[k] || k, v]));
+      renderBars('units', Object.entries(data.units).map(([k, v]) => [`Unit ${k}`, v]), true);
+      renderBars('devices', Object.entries(data.devices).map(([k, v]) => [k === 'phone' ? 'Phone / tablet' : 'Computer', v]));
+      renderTable(w);
+    }
+
+    function delta(now, before, label) {
+      if (!before && !now) return `No change from ${label}`;
+      if (!before) return `<b class="up">▲ new</b> vs ${label}`;
+      const pct = Math.round((now - before) / before * 100);
+      if (pct === 0) return `Same as ${label}`;
+      return `<b class="${pct > 0 ? 'up' : 'down'}">${pct > 0 ? '▲' : '▼'} ${Math.abs(pct)}%</b> vs ${label} (${fmt(before)})`;
+    }
+
+    function renderTiles(w) {
+      const s = data.series;
+      const cur = s[s.length - 1];
+      const prev = s[s.length - 2] || { users: 0, new_users: 0, sessions: 0, minutes: 0 };
+      const tiles = [
+        [`${w.current} · active users`, fmt(cur.users), delta(cur.users, prev.users, w.previous)],
+        [`${w.current} · new visitors`, fmt(cur.new_users), delta(cur.new_users, prev.new_users, w.previous)],
+        [`${w.current} · visits`, fmt(cur.sessions), delta(cur.sessions, prev.sessions, w.previous)],
+        [`${w.current} · study time`, minutes(cur.minutes), delta(cur.minutes, prev.minutes, w.previous)],
+        [`${w.current} · sign-ups`, fmt(cur.signups), `${fmt(data.accounts)} account${data.accounts === 1 ? '' : 's'} in total`],
+        ['All-time visitors', fmt(data.total_users), `${fmt(data.range_users)} in the ${w.range} · ${minutes(data.total_minutes)} studied in total`],
+      ];
+      document.getElementById('tiles').innerHTML = tiles.map(([k, v, d]) =>
+        `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join('');
+    }
+
+    function renderChart(w) {
+      const box = document.getElementById('chart');
+      const tip = document.getElementById('tip');
+      box.querySelector('svg')?.remove();
+      document.getElementById('chart-title').textContent = `${METRICS[metric]} ${w.per}`;
+      const total = data.series.reduce((a, r) => a + r[metric], 0);
+      document.getElementById('chart-sub').textContent = metric === 'users'
+        ? `Each learner counts once per ${w.unit} · ${w.range}`
+        : `${metric === 'minutes' ? minutes(total) : fmt(total)} in the ${w.range}`;
+
+      const rows = data.series;
+      const W = box.clientWidth, H = box.clientHeight;
+      const pad = { l: 34, r: 4, t: 18, b: 26 };
+      const iw = W - pad.l - pad.r, ih = H - pad.t - pad.b;
+      const max = Math.max(...rows.map(r => r[metric]));
+      const niceMax = max <= 4 ? 4 : (() => { const p = 10 ** Math.floor(Math.log10(max)); const m = max / p; return (m <= 2 ? 2 : m <= 5 ? 5 : 10) * p; })();
+      const ticks = 4;
+      const slot = iw / rows.length;
+      const bw = Math.max(2, Math.min(48, slot - 2));
+      const y = v => pad.t + ih - (v / niceMax) * ih;
+      const ns = 'http://www.w3.org/2000/svg';
+      const svg = document.createElementNS(ns, 'svg');
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      svg.setAttribute('role', 'img');
+      svg.setAttribute('aria-label', `${METRICS[metric]} ${w.per}, ${w.range}. The table below lists every value.`);
+      const add = (tag, attrs, text) => {
+        const n = document.createElementNS(ns, tag);
+        Object.entries(attrs).forEach(([k, v]) => n.setAttribute(k, v));
+        if (text !== undefined) n.textContent = text;
+        svg.appendChild(n);
+        return n;
+      };
+      for (let i = 0; i <= ticks; i++) {
+        const v = niceMax / ticks * i;
+        add('line', { class: 'gridline', x1: pad.l, x2: W - pad.r, y1: y(v), y2: y(v) });
+        add('text', { class: 'axis-label', x: pad.l - 8, y: y(v) + 4, 'text-anchor': 'end' }, metric === 'minutes' && v >= 60 && niceMax >= 120 ? `${Math.round(v / 60)}h` : fmt(Math.round(v * 10) / 10));
+      }
+      const every = Math.ceil(rows.length / Math.max(1, Math.floor(iw / 64)));
+      let peak = -1;
+      rows.forEach((r, i) => { if (r[metric] === max && max > 0) peak = i; });
+      rows.forEach((r, i) => {
+        const v = r[metric];
+        const x = pad.l + slot * i + (slot - bw) / 2;
+        const top = y(v);
+        const h = pad.t + ih - top;
+        const hit = add('rect', { class: 'hit', x: pad.l + slot * i, y: pad.t, width: slot, height: ih });
+        if (h > 0) {
+          const rr = Math.min(4, bw / 2, h);
+          add('path', { class: 'bar', d: `M${x},${top + h}V${top + rr}Q${x},${top} ${x + rr},${top}H${x + bw - rr}Q${x + bw},${top} ${x + bw},${top + rr}V${top + h}Z` });
+        } else {
+          add('rect', { class: 'bar', x, y: top - 1, width: bw, height: 1, opacity: 0.35 });
+        }
+        if (i === peak || i === rows.length - 1 && v > 0) {
+          add('text', { class: 'value-label', x: x + bw / 2, y: top - 6, 'text-anchor': 'middle' }, metric === 'minutes' ? minutes(v) : fmt(v));
+        }
+        if ((rows.length - 1 - i) % every === 0) {
+          add('text', { class: 'axis-label', x: pad.l + slot * i + slot / 2, y: H - 6, 'text-anchor': 'middle' }, shortLabel(r.start, period));
+        }
+        const show = () => {
+          tip.innerHTML = `${r.label}<br><b>${metric === 'minutes' ? minutes(v) : fmt(v)}</b> ${METRICS[metric].toLowerCase()}`
+            + (metric === 'users' ? ` · ${fmt(r.new_users)} new, ${fmt(r.returning_users)} returning` : '');
+          tip.style.left = `${Math.min(Math.max(pad.l + slot * i + slot / 2, 90), W - 90)}px`;
+          tip.style.top = `${Math.max(top, pad.t + 30)}px`;
+          tip.style.opacity = 1;
+        };
+        hit.addEventListener('pointerenter', show);
+        hit.addEventListener('pointerleave', () => { tip.style.opacity = 0; });
+      });
+      add('line', { class: 'gridline', x1: pad.l, x2: W - pad.r, y1: pad.t + ih, y2: pad.t + ih, style: 'stroke:var(--subtle)' });
+      box.appendChild(svg);
+    }
+
+    function renderBars(id, entries, keepOrder = false) {
+      const box = document.getElementById(id);
+      if (!entries.length) { box.innerHTML = '<p class="none">No activity in this range yet.</p>'; return; }
+      if (!keepOrder) entries.sort((a, b) => b[1] - a[1]);
+      const max = Math.max(...entries.map(e => e[1]));
+      box.innerHTML = entries.map(([name, v]) =>
+        `<div class="hbar" title="${name}: ${v} learner${v === 1 ? '' : 's'}"><span class="name">${name}</span><span class="track"><span class="fill" style="width:${v / max * 100}%;display:block"></span></span><span class="num">${fmt(v)}</span></div>`).join('');
+    }
+
+    function renderTable(w) {
+      document.getElementById('table-title').textContent = `Report ${w.per} · ${w.range}`;
+      const cols = [['label', PERIOD_WORDS[period].unit[0].toUpperCase() + PERIOD_WORDS[period].unit.slice(1)], ['users', 'Active users'], ['new_users', 'New visitors'], ['returning_users', 'Returning'], ['signups', 'Sign-ups'], ['sessions', 'Visits'], ['minutes', 'Study time'], ['grammar_quizzes', 'Grammar quizzes']];
+      const rows = [...data.series].reverse();
+      const cell = (r, k) => k === 'label' ? `<td>${r.label}</td>` : `<td class="${r[k] ? '' : 'zero'}">${k === 'minutes' ? minutes(r[k]) : fmt(r[k])}</td>`;
+      document.getElementById('table').innerHTML =
+        `<thead><tr>${cols.map(c => `<th scope="col">${c[1]}</th>`).join('')}</tr></thead>` +
+        `<tbody>${rows.map(r => `<tr>${cols.map(c => cell(r, c[0])).join('')}</tr>`).join('')}</tbody>`;
+    }
+
+    document.getElementById('periods').addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      period = b.dataset.period; save('stats-period', period); load();
+    });
+    document.getElementById('metrics').addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b || !data) return;
+      metric = b.dataset.metric; save('stats-metric', metric); render();
+    });
+    let resizeTimer;
+    addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => data && renderChart(PERIOD_WORDS[period]), 120); });
+    setInterval(() => { if (me && tab === 'report') load(); }, 60 * 1000);
+  
+    /* ---------------- Access ---------------- */
+
+    let me = null;
+    let tab = saved('admin-tab', 'report');
+    let gateMode = 'login';
+
+    async function api(path, method = 'GET', body) {
+      const res = await fetch(path, {
+        method,
+        credentials: 'same-origin',
+        cache: 'no-store',
+        headers: { 'Content-Type': 'application/json', 'X-Requested-With': 'fetch' },
+        body: body ? JSON.stringify(body) : undefined,
+      });
+      let json = {};
+      try { json = await res.json(); } catch (e) {}
+      if (!res.ok) { const err = new Error(json.error || `The server answered ${res.status}.`); err.status = res.status; throw err; }
+      return json;
+    }
+
+    function showGate(mode, text) {
+      gateMode = mode;
+      me = null;
+      document.getElementById('app').hidden = true;
+      document.getElementById('who').hidden = true;
+      document.getElementById('gate').hidden = false;
+      const setup = mode === 'setup';
+      document.getElementById('gate-title').textContent = setup ? 'Create the admin account' : 'Admin sign in';
+      document.getElementById('gate-text').textContent = text || (setup
+        ? 'This is the first visit, so set up the account that manages the course. You can add more admins later.'
+        : 'Sign in with an admin account to see the usage report and manage users.');
+      document.getElementById('gate-name-field').hidden = !setup;
+      document.querySelector('#gate-name-field input').required = setup;
+      document.querySelector('#gate-form [name=password]').autocomplete = setup ? 'new-password' : 'current-password';
+      document.querySelector('#gate-form [name=password]').minLength = setup ? 8 : 0;
+      document.getElementById('gate-submit').textContent = setup ? 'Create admin account' : 'Sign in';
+    }
+
+    function gateError(text) {
+      const box = document.getElementById('gate-error');
+      box.hidden = !text;
+      box.textContent = text || '';
+    }
+
+    async function checkAccess() {
+      try {
+        const [{ user }, setup] = await Promise.all([api('api/auth/me'), api('api/setup')]);
+        if (setup.needed) {
+          return setup.local
+            ? showGate('setup')
+            : showGate('blocked', 'No admin account exists yet. Open this page on the computer that runs the server to create one.');
+        }
+        if (!user) return showGate('login');
+        if (user.role !== 'admin') {
+          showGate('login', `You are signed in as ${user.name}, which is not an admin account. Sign in with an admin account.`);
+          return;
+        }
+        me = user;
+        document.getElementById('gate').hidden = true;
+        document.getElementById('app').hidden = false;
+        document.getElementById('who').hidden = false;
+        document.getElementById('who-avatar').textContent = user.name.trim()[0].toUpperCase();
+        document.getElementById('who-name').textContent = user.name;
+        showTab(tab);
+      } catch (err) {
+        showGate('blocked', 'Could not reach the server. Start the course with "python3 server.py".');
+      }
+    }
+
+    document.getElementById('gate-form').addEventListener('submit', async e => {
+      e.preventDefault();
+      if (gateMode === 'blocked') return;
+      const btn = document.getElementById('gate-submit');
+      btn.disabled = true;
+      gateError('');
+      try {
+        const body = Object.fromEntries(new FormData(e.target));
+        await api(gateMode === 'setup' ? 'api/setup' : 'api/auth/login', 'POST', body);
+        e.target.reset();
+        await checkAccess();
+      } catch (err) {
+        gateError(err.message);
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    async function signOut() {
+      try { await api('api/auth/logout', 'POST', {}); } catch (e) {}
+      showGate('login');
+    }
+
+    function showTab(name) {
+      tab = name;
+      save('admin-tab', name);
+      document.querySelectorAll('.admin-tabs button').forEach(b => {
+        const on = b.dataset.tab === name;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-current', on ? 'page' : 'false');
+      });
+      document.getElementById('report-view').hidden = name !== 'report';
+      document.getElementById('users-view').hidden = name !== 'users';
+      showError('');
+      if (name === 'report') load(); else loadUsers();
+    }
+    document.querySelector('.admin-tabs').addEventListener('click', e => {
+      const b = e.target.closest('button');
+      if (b) showTab(b.dataset.tab);
+    });
+
+    /* ---------------- Users ---------------- */
+
+    let users = [];
+    let myId = null;
+    let searchTimer;
+
+    const when = ts => {
+      if (!ts) return '—';
+      const d = new Date(ts * 1000);
+      const days = Math.floor((Date.now() - d) / 86400000);
+      if (days < 1 && new Date().toDateString() === d.toDateString()) return `Today ${d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
+      if (days < 2) return 'Yesterday';
+      if (days < 7) return `${days} days ago`;
+      return d.toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });
+    };
+    const esc = t => String(t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+    async function loadUsers() {
+      try {
+        const q = document.getElementById('user-search').value;
+        const res = await api(`api/admin/users?q=${encodeURIComponent(q)}`);
+        users = res.users;
+        myId = res.me;
+        renderUsers(!q);
+      } catch (err) {
+        if (err.status === 403) return checkAccess();
+        showError(err.message);
+      }
+    }
+
+    function renderUsers(updateTiles) {
+      if (updateTiles) {
+        const week = Date.now() / 1000 - 7 * 86400;
+        const tiles = [
+          ['Accounts', fmt(users.length), `${fmt(users.filter(u => u.status === 'disabled').length)} disabled`],
+          ['New this week', fmt(users.filter(u => u.created >= week).length), 'Accounts created in the last 7 days'],
+          ['Active this week', fmt(users.filter(u => u.last_active >= week).length), 'Signed-in learners who studied'],
+          ['Admins', fmt(users.filter(u => u.role === 'admin').length), 'Can see this page'],
+        ];
+        document.getElementById('user-tiles').innerHTML = tiles.map(([k, v, d]) =>
+          `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join('');
+      }
+      const table = document.getElementById('users-table');
+      if (!users.length) {
+        table.innerHTML = `<tbody><tr><td class="zero" style="text-align:center;padding:28px">${document.getElementById('user-search').value ? 'No accounts match that search.' : 'No accounts yet. Learners can create one with the Sign in button in the course.'}</td></tr></tbody>`;
+        return;
+      }
+      table.innerHTML = `<thead><tr><th scope="col">Learner</th><th scope="col">Role</th><th scope="col">Joined</th><th scope="col">Last active</th><th scope="col">Words</th><th scope="col">Lessons</th><th scope="col">Study time</th><th scope="col"><span class="sr">Actions</span></th></tr></thead><tbody>` +
+        users.map(u => {
+          const self = u.id === myId;
+          const options = [
+            u.role === 'admin' ? ['make_learner', 'Remove admin rights'] : ['make_admin', 'Make admin'],
+            u.status === 'active' ? ['disable', 'Disable account'] : ['enable', 'Enable account'],
+            ['reset_password', 'Reset password'],
+            ['delete', 'Delete account'],
+          ].filter(([a]) => !(self && ['make_learner', 'disable', 'delete'].includes(a)));
+          return `<tr>
+            <td><div class="user-cell"><span class="avatar${u.status === 'disabled' ? ' off' : ''}">${esc(u.name.trim()[0].toUpperCase())}</span><div style="min-width:0"><b>${esc(u.name)}</b>${self ? ' <span class="you">(you)</span>' : ''}<small>${esc(u.email)}</small></div></div></td>
+            <td>${u.role === 'admin' ? '<span class="badge admin">Admin</span>' : '<span class="badge">Learner</span>'}${u.status === 'disabled' ? ' <span class="badge disabled">Disabled</span>' : ''}</td>
+            <td>${when(u.created)}</td>
+            <td>${when(u.last_active)}</td>
+            <td class="${u.words ? '' : 'zero'}">${fmt(u.words)}</td>
+            <td class="${u.lessons ? '' : 'zero'}">${fmt(u.lessons)}</td>
+            <td class="${u.minutes ? '' : 'zero'}">${minutes(u.minutes)}</td>
+            <td><select class="actions-select" data-id="${u.id}" aria-label="Actions for ${esc(u.name)}"><option value="">Manage…</option>${options.map(([a, l]) => `<option value="${a}">${l}</option>`).join('')}</select></td>
+          </tr>`;
+        }).join('') + '</tbody>';
+    }
+
+    function notice(html, bad = false) {
+      const box = document.getElementById('user-notice');
+      box.innerHTML = html ? `<div class="notice${bad ? ' bad' : ''}" role="status">${html}<button class="btn x" type="button" onclick="notice('')">Dismiss</button></div>` : '';
+    }
+
+    document.getElementById('users-table').addEventListener('change', async e => {
+      const select = e.target.closest('.actions-select');
+      if (!select || !select.value) return;
+      const action = select.value;
+      select.value = '';
+      const u = users.find(x => x.id === Number(select.dataset.id));
+      const confirmText = {
+        delete: `Delete the account of ${u.name} (${u.email})? Their saved progress is removed for good. Usage statistics stay, anonymously.`,
+        disable: `Disable ${u.name}? They are signed out and cannot sign in until you enable the account again.`,
+        reset_password: `Reset the password of ${u.name}? They are signed out, and you get a temporary password to give them.`,
+        make_admin: `Make ${u.name} an admin? Admins can see the usage report and manage all users.`,
+        make_learner: `Remove admin rights from ${u.name}?`,
+      }[action];
+      if (confirmText && !confirm(confirmText)) return;
+      try {
+        const res = await api(`api/admin/users/${u.id}`, 'POST', { action });
+        if (action === 'reset_password') {
+          notice(`Temporary password for <b>${esc(u.name)}</b>: <code>${esc(res.temporary_password)}</code> Give it to them privately; they can change it under Account → Change password.`);
+        } else {
+          notice({ delete: `The account of <b>${esc(u.name)}</b> was deleted.`, disable: `<b>${esc(u.name)}</b> is now disabled.`, enable: `<b>${esc(u.name)}</b> can sign in again.`, make_admin: `<b>${esc(u.name)}</b> is now an admin.`, make_learner: `<b>${esc(u.name)}</b> is no longer an admin.` }[action]);
+        }
+        loadUsers();
+      } catch (err) {
+        if (err.status === 403) return checkAccess();
+        notice(esc(err.message), true);
+      }
+    });
+
+    document.getElementById('user-search').addEventListener('input', () => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(loadUsers, 250);
+    });
+
+    checkAccess();
+  </script>
+</body>
+</html>

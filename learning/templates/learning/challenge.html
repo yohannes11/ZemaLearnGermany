@@ -1,0 +1,149 @@
+{% extends 'learning/base.html' %}
+{% block title %}{{ t.challenge_title }}{% endblock %}
+{% block content %}
+<style>
+    .result-banner {
+        animation: resultPulse 0.55s ease-out;
+        border-radius: 16px;
+        padding: 1rem 1.1rem;
+    }
+    .result-banner.very-good {
+        background: rgba(34,197,94,0.14);
+        border: 1px solid rgba(34,197,94,0.5);
+        color: #14532d;
+    }
+    .result-banner.good {
+        background: rgba(59,130,246,0.12);
+        border: 1px solid rgba(59,130,246,0.45);
+        color: #1d4ed8;
+    }
+    .result-banner.decent {
+        background: rgba(250,204,21,0.12);
+        border: 1px solid rgba(250,204,21,0.45);
+        color: #854d0e;
+    }
+    .result-banner.try-again {
+        background: rgba(239,68,68,0.12);
+        border: 1px solid rgba(239,68,68,0.45);
+        color: #7f1d1d;
+    }
+    body.dark .result-banner.very-good {
+        color: #bbf7d0;
+    }
+    body.dark .result-banner.good {
+        color: #bfdbfe;
+    }
+    body.dark .result-banner.decent {
+        color: #fde68a;
+    }
+    body.dark .result-banner.try-again {
+        color: #fecaca;
+    }
+    @keyframes resultPulse {
+        0% { transform: scale(0.96); opacity: 0.4; }
+        60% { transform: scale(1.02); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+</style>
+<div class="surface">
+    <div class="section-header">
+        <div>
+            <div class="pill">Challenge Chapter</div>
+            <h1 style="margin-top: 0.7rem;">Vocabulary challenge</h1>
+        </div>
+    </div>
+
+    {% if no_words %}
+        <p class="muted">No vocabulary entries are available yet. Import the course content to begin.</p>
+        <a href="/" class="btn secondary">Back to dashboard</a>
+    {% endif %}
+
+    <div class="metric-row" style="margin-top: 1.2rem; margin-bottom: 1.2rem;">
+        <div class="metric-item">
+            <div class="label">Progress</div>
+            <div class="value">{{ progress }}%</div>
+            <div class="muted" style="font-size: 0.82rem; margin-top: 0.25rem;">Word {{ current_index }} of {{ total_words }}</div>
+        </div>
+        <div class="metric-item">
+            <div class="label">Score</div>
+            <div class="value">{{ score_percent }}%</div>
+            <div class="muted" style="font-size: 0.82rem; margin-top: 0.25rem;">{{ stats.correct_answers }} correct / {{ stats.incorrect_answers }} incorrect</div>
+        </div>
+    </div>
+
+    <div class="focused-panel" style="margin-bottom: 1.25rem;">
+        <div style="display:flex; justify-content:space-between; gap:1rem; align-items:center; flex-wrap:wrap;">
+            <div>
+                <div class="muted">Direction</div>
+                <strong>{{ direction_label }}</strong>
+            </div>
+            <form method="post" style="display:flex; gap:0.75rem; align-items:center; flex-wrap:wrap;">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="change_direction">
+                <select name="direction">
+                    {% for value, label in direction_choices %}
+                        <option value="{{ value }}" {% if value == direction %}selected{% endif %}>{{ label }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="btn secondary small">Switch</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="focused-panel">
+        <div class="muted">Prompt</div>
+        <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-top: 0.5rem; margin-bottom: 1.25rem;">{{ prompt }}</h2>
+
+        {% if hint %}
+            <div class="quiz-box" style="margin-bottom: 1rem;">
+                <strong>Hint:</strong> {{ hint }}
+            </div>
+        {% endif %}
+
+        {% if revealed_answer %}
+            <div class="quiz-box" style="margin-bottom: 1rem; background: rgba(248,113,113,0.08); border-color: rgba(248,113,113,0.2);">
+                <strong>Correct answer:</strong> {{ answer }}
+            </div>
+        {% endif %}
+
+            {% if last_message %}
+            <div class="quiz-box result-banner {{ result_summary.tone }}" style="margin-bottom: 1rem;">
+                <div style="font-size:1.2rem; font-weight:700; margin-bottom:0.35rem;">{{ result_summary.emoji }} {{ result_summary.title }}</div>
+                <div>{{ last_message }}</div>
+            </div>
+        {% endif %}
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="submit">
+            <label for="answer" class="muted">Type the translation</label>
+            <input id="answer" name="answer" type="text" autocomplete="off" value="" placeholder="Type your answer..." style="margin-top: 0.5rem; margin-bottom: 1rem;">
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                <button type="submit" class="btn">Check answer</button>
+                <button type="submit" class="btn secondary" name="action" value="hint">Get hint</button>
+                <button type="submit" class="btn secondary" name="action" value="next_word">Next word</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="metric-row" style="margin-top: 1.25rem;">
+        <div class="metric-item">
+            <div class="label">Performance</div>
+            <div style="font-size: 0.95rem; line-height: 1.8; color: var(--muted);">
+                <div>Correct: {{ stats.correct_answers }}</div>
+                <div>Incorrect: {{ stats.incorrect_answers }}</div>
+                <div>Hints used: {{ stats.words_with_hints }}</div>
+                <div>Fully revealed: {{ stats.fully_revealed }}</div>
+            </div>
+        </div>
+        <div class="metric-item">
+            <div class="label">Rules</div>
+            <div style="font-size: 0.95rem; line-height: 1.8; color: var(--muted);">
+                <div>• Type the correct translation</div>
+                <div>• Use hints progressively</div>
+                <div>• Advance when ready</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

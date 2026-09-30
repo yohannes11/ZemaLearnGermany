@@ -1,0 +1,30 @@
+# Live data: accounts (with password hashes) and usage statistics — never commit
+usage.db
+*.db
+*.db-journal
+*.sqlite3
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Generated audio cache of the old Django app (158 MB, can be regenerated)
+learning/tts_cache/
+
+# Logs and editor/OS files
+*.log
+.DS_Store
+.vscode/
+.idea/
+.claude/settings.local.json
+
+# Secrets, if you add any later
+.env
+
+# Source PDFs (11percent material, copyrighted) — kept locally, not published
+*.pdf
+
+# Local Claude Code settings
+.claude/
