@@ -1670,3 +1670,57 @@ dialog[open] { animation: dialog-in 0.22s cubic-bezier(0.2, 0.7, 0.2, 1); }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ------------------------------------------------------------------
+   Phones and touch screens
+   ------------------------------------------------------------------ */
+.btn-close { min-height: 40px; min-width: 40px; padding: 0 8px; }
+.chapter-picker { min-height: 32px; padding: 0 10px; font-size: 0.78rem; gap: 0.2rem; }
+
+/* Dialogs stay usable when the on-screen keyboard takes half the screen. */
+dialog { max-height: calc(100dvh - 24px); overflow-y: auto; overscroll-behavior: contain; }
+
+/* Keep content clear of the notch and rounded corners in landscape. */
+body { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+
+@media (max-width: 1000px) {
+  /* Text fields of 16px or more stop iPhones from zooming the page when they are tapped. */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea { font-size: max(16px, 1em); }
+  .chapter-picker { min-height: 40px; }
+}
+
+@media (pointer: coarse), (max-width: 1000px) {
+  /* Thumbs need bigger targets than mouse pointers: at least 40px. */
+  .ex-row .icon-btn, .conj-table .icon-btn, .icon-btn { width: 40px; height: 40px; }
+  .btn { min-height: 44px; }
+  .segmented button, .pace-btn, .theme-btn { min-height: 40px; }
+  button, a, [role="button"], summary { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+}
+
+@media (hover: none) {
+  /* No sticky hover lifts after a tap on touch screens. */
+  .btn:hover, .icon-btn:hover { transform: none; }
+}
+
+/* Study-mode tabs on phones: all five fit on most phones; on the smallest screens the row scrolls,
+   and faded edges show there is more. */
+.tab-short { display: none; }
+@media (max-width: 640px) {
+  .tabs { gap: 0; margin-left: -6px; margin-right: -6px; padding: 0 6px; scroll-snap-type: x proximity; }
+  .tab { flex: 1 0 auto; justify-content: center; padding: 0.75rem 0.45rem 0.9rem; font-size: 0.82rem; scroll-snap-align: center; }
+  .tab.active::after { left: 0.35rem; right: 0.35rem; }
+}
+@media (max-width: 420px) {
+  .tab-long { display: none; }
+  .tab-short { display: inline; }
+}
+@media (max-width: 359px) {
+  .tab { padding: 0.75rem 0.3rem 0.9rem; font-size: 0.78rem; }
+  .page-head-body { padding-left: 14px; padding-right: 14px; }
+}
+
+@media (max-width: 359px) {
+  /* The smallest phones: keep the header on one line. */
+  .brand-name { white-space: nowrap; font-size: 0.98rem; }
+  .overall { display: none; }
+}

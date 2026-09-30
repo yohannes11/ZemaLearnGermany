@@ -493,6 +493,7 @@ function renderPage() {
     b.classList.toggle('active', on);
     b.setAttribute('aria-selected', on);
   });
+  revealActiveTab();
   document.getElementById('eyebrow').innerHTML = grammar
     ? `Unit ${unit.id} · Grammar · Lesson ${grammar.code}`
     : currentScope === 'all'
@@ -2233,6 +2234,16 @@ function showPracticeSummary() {
 }
 
 /* ---------------- Start ---------------- */
+
+// On narrow phones the tab row scrolls sideways: keep the chosen tab in view.
+function revealActiveTab() {
+  const tab = document.querySelector('.tabs:not([hidden]) .tab.active');
+  if (!tab) return;
+  const bar = tab.parentElement;
+  if (bar.scrollWidth <= bar.clientWidth) return;
+  const left = tab.offsetLeft - bar.offsetLeft - (bar.clientWidth - tab.offsetWidth) / 2;
+  bar.scrollLeft = left;
+}
 
 // The landing page links to /learn/#signup and /learn/#signin to open the right dialog straight away.
 function openAccountFromLink() {

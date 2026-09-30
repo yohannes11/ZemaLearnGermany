@@ -44,6 +44,9 @@ body {
   overflow-x: hidden;
 }
 img { display: block; max-width: 100%; height: auto; }
+/* The tilted hero pages may poke past the screen edge; never let that scroll the page sideways. */
+html, body { overflow-x: clip; }
+body { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
 a { color: inherit; }
 [hidden] { display: none !important; }
 [lang="am"] { font-family: var(--ethiopic); }
@@ -165,8 +168,10 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 .note {
   display: inline-grid; place-items: center; min-width: 18px; height: 18px; padding: 0 4px; margin-left: 4px;
   border-radius: 999px; background: var(--gold-soft); color: #7a5400; font-size: .68rem; font-weight: 800;
-  text-decoration: none; vertical-align: super; line-height: 1;
+  text-decoration: none; vertical-align: super; line-height: 1; position: relative;
 }
+/* A 40px invisible tap area around each small footnote number. */
+.note::before { content: ''; position: absolute; inset: -11px; }
 .note:hover { background: var(--gold); color: #fff; }
 
 /* stats */
@@ -296,7 +301,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 .copyright { max-width: var(--wrap); margin: 36px auto 0; padding-top: 20px; border-top: 1px solid var(--border); }
 
 .sticky-cta {
-  position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60; display: none;
+  position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 60; display: none;
   transform: translateY(140%); transition: transform .3s ease;
 }
 .sticky-cta.show { transform: none; }
@@ -314,6 +319,14 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 }
 
 /* ------------------------------------------------------------------ responsive */
+@media (hover: none) {
+  .path:hover, .sample-word:hover, .btn-primary:hover, .btn-gold:hover { transform: none; }
+  .path:hover .path-img { transform: none; }
+}
+@media (pointer: coarse) {
+  a, button, summary { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+  .calc input { height: 40px; }
+}
 @media (max-width: 1000px) {
   .nav-links { display: none; }
   .nav-actions { margin-left: auto; }
@@ -347,5 +360,13 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
   .mid-cta { padding: 22px; }
   .mid-cta .btn { width: 100%; }
   .final { padding: 88px 16px 110px; }
-  .footer { padding: 44px 16px 96px; }
+  .footer { padding: 44px 16px calc(96px + env(safe-area-inset-bottom)); }
+}
+
+@media (max-width: 374px) {
+  /* The smallest phones: the logo mark alone, and slimmer header buttons. */
+  .brand-name { display: none; }
+  .nav-actions { gap: 4px; }
+  .nav-actions .btn { padding: 0 12px; font-size: 0.84rem; }
+  .hero h1 { font-size: 2.2rem; }
 }

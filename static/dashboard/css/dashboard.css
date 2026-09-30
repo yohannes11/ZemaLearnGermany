@@ -137,8 +137,47 @@ td.zero { color: var(--subtle); }
 #users-table td:first-child { max-width: 280px; }
 #users-table td:first-child b { font-weight: 700; }
 .you { color: var(--subtle); font-weight: 500; font-size: 0.78rem; }
-.actions-select { height: 34px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: inherit; font-size: 0.82rem; padding: 0 8px; cursor: pointer; }
+.actions-select { height: 40px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: inherit; font-size: 0.82rem; padding: 0 8px; cursor: pointer; }
 .notice { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--good); border-radius: var(--radius); padding: 12px 16px; margin-bottom: 14px; font-size: 0.9rem; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .notice.bad { border-left-color: var(--bad); }
 .notice code { font-size: 1rem; font-weight: 700; background: var(--surface-2); padding: 3px 8px; border-radius: 6px; user-select: all; }
 .notice .x { margin-left: auto; }
+
+/* ------------------------------------------------------------------ phones and touch screens */
+body { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+
+@media (max-width: 640px) {
+  .wrap { padding: 20px 16px 48px; }
+  header { align-items: flex-start; }
+  /* Button groups scroll sideways instead of pushing the page wider than the screen. */
+  .controls, .card-head > .segmented { width: 100%; }
+  .segmented { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .segmented::-webkit-scrollbar { display: none; }
+  .segmented button { white-space: nowrap; flex-shrink: 0; }
+  .users-bar .search { width: 100%; }
+  .tile .v { font-size: 1.6rem; }
+}
+
+@media (max-width: 1000px) {
+  /* 16px text stops iPhones from zooming in when a field is tapped. */
+  .search, .actions-select, .field input { font-size: 16px; }
+}
+
+@media (pointer: coarse) {
+  .segmented button { min-height: 40px; }
+  .btn { min-height: 44px; }
+  a, button, summary, select { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+}
+
+@media (max-width: 640px) {
+  /* The user list becomes one card per learner instead of a table that scrolls sideways. */
+  #users-table thead { display: none; }
+  #users-table, #users-table tbody, #users-table tr, #users-table td { display: block; width: 100%; }
+  #users-table tr { border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; background: var(--surface); }
+  #users-table tbody tr:hover { background: var(--surface); }
+  #users-table td { border: 0; padding: 5px 0; text-align: left; display: flex; justify-content: space-between; align-items: center; gap: 12px; white-space: normal; }
+  #users-table td[data-label]::before { content: attr(data-label); color: var(--muted); font-size: 0.8rem; font-weight: 700; }
+  #users-table td:first-child { max-width: none; padding-bottom: 10px; margin-bottom: 4px; border-bottom: 1px solid var(--border); }
+  #users-table .actions-cell { padding-top: 10px; }
+  #users-table .actions-select { width: 100%; }
+}

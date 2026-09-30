@@ -302,13 +302,13 @@ function renderUsers(updateTiles) {
       ].filter(([a]) => !(self && ['make_learner', 'disable', 'delete'].includes(a)));
       return `<tr>
         <td><div class="user-cell"><span class="avatar${u.status === 'disabled' ? ' off' : ''}">${esc(u.name.trim()[0].toUpperCase())}</span><div style="min-width:0"><b>${esc(u.name)}</b>${self ? ' <span class="you">(you)</span>' : ''}<small>@${esc(u.username)} · ${esc(u.email)}</small></div></div></td>
-        <td>${u.role === 'admin' ? '<span class="badge admin">Admin</span>' : '<span class="badge">Learner</span>'}${u.status === 'disabled' ? ' <span class="badge disabled">Disabled</span>' : ''}</td>
-        <td>${when(u.created)}</td>
-        <td>${when(u.last_active)}</td>
-        <td class="${u.words ? '' : 'zero'}">${fmt(u.words)}</td>
-        <td class="${u.lessons ? '' : 'zero'}">${fmt(u.lessons)}</td>
-        <td class="${u.minutes ? '' : 'zero'}">${minutes(u.minutes)}</td>
-        <td><select class="actions-select" data-id="${u.id}" aria-label="Actions for ${esc(u.name)}"><option value="">Manage…</option>${options.map(([a, l]) => `<option value="${a}">${l}</option>`).join('')}</select></td>
+        <td data-label="Role">${u.role === 'admin' ? '<span class="badge admin">Admin</span>' : '<span class="badge">Learner</span>'}${u.status === 'disabled' ? ' <span class="badge disabled">Disabled</span>' : ''}</td>
+        <td data-label="Joined">${when(u.created)}</td>
+        <td data-label="Last active">${when(u.last_active)}</td>
+        <td data-label="Words" class="${u.words ? '' : 'zero'}">${fmt(u.words)}</td>
+        <td data-label="Lessons" class="${u.lessons ? '' : 'zero'}">${fmt(u.lessons)}</td>
+        <td data-label="Study time" class="${u.minutes ? '' : 'zero'}">${minutes(u.minutes)}</td>
+        <td class="actions-cell"><select class="actions-select" data-id="${u.id}" aria-label="Actions for ${esc(u.name)}"><option value="">Manage…</option>${options.map(([a, l]) => `<option value="${a}">${l}</option>`).join('')}</select></td>
       </tr>`;
     }).join('') + '</tbody>';
 }
