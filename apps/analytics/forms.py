@@ -11,7 +11,7 @@ class EventForm(forms.Form):
     uid = forms.RegexField(regex=ID_PATTERN)
     sid = forms.RegexField(regex=ID_PATTERN)
     type = forms.ChoiceField(choices=Event.Type.choices)
-    unit = forms.IntegerField(required=False, min_value=1, max_value=20)
+    unit = forms.IntegerField(required=False, min_value=0, max_value=20)  # 0 is the Start unit
     mode = forms.ChoiceField(choices=Event.Mode.choices, required=False)
     scope = forms.CharField(required=False, max_length=60)
     value = forms.IntegerField(required=False, min_value=0, max_value=1000)

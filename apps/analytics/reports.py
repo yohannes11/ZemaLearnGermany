@@ -87,7 +87,7 @@ def usage_report(period: str) -> dict:
         elif kind == Event.Type.VIEW:
             if mode:
                 modes[mode].add(visitor)
-            if unit:
+            if unit is not None:
                 units[unit].add(visitor)
         devices[device].add(visitor)
 

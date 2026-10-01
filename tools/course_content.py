@@ -1,4 +1,5 @@
-"""Source for course-data.js: German A1.1 Units 1-7 (vocabulary sheets + unit recaps from 11percent.de).
+"""Source for course-data.js: German A1.1, a Start unit (pronunciation, numbers 1-12) and Units 1-7
+(vocabulary sheets + unit recaps from 11percent.de).
 
 Run this file to regenerate static/course/js/course-data.js, then tools/gen_course_audio.py for new audio.
 """
@@ -34,6 +35,272 @@ def conj(verb_forms, en=None):
 
 
 PERSONS = ['ich', 'du', 'er / sie / es', 'wir', 'ihr', 'sie / Sie']
+
+def listen(answer, options, say=None, why='', hint='Press play as often as you like, then choose.'):
+    """Listening item: the learner hears `say` (default: the answer) and picks what they heard."""
+    return {'type': 'listen', 'prompt': 'Which one do you hear?', 'answer': answer, 'options': options,
+            'hint': hint, 'say': say or answer, 'why': why}
+
+
+def sound(prompt, answer, options, say, why=''):
+    """A question about how a word is pronounced; `say` is the word, played after answering."""
+    return {'type': 'choose', 'prompt': prompt, 'answer': answer, 'options': options, 'hint': 'Choose the right sound.',
+            'say': say, 'why': why}
+
+
+def spell(before, answer, after, options, hint, why=''):
+    """Dictation gap: the learner hears the whole word, then fills in the missing letters."""
+    return {**gap(before, answer, after, options, hint=hint, why=why), 'listen': True}
+
+
+# ---------------------------------------------------------------- Start: pronunciation & numbers 1-12
+UNIT0 = {
+    'id': 0,
+    'label': 'Start',
+    'title': 'Pronunciation & numbers',
+    'lessonsLabel': 'Pronunciation',
+    'sections': [
+        sec('0.1', 'Long & short vowels', [
+            ('der Name', 'the name (m.)'), ('der Mann', 'the man (m.)'), ('der Tee', 'the tea (m.)'),
+            ('das Bett', 'the bed (n.)'), ('wir', 'we'), ('bitte', 'please'), ('rot', 'red'), ('oft', 'often'),
+            ('gut', 'good'), ('die Mutter', 'the mother (f.)'), ('das Jahr', 'the year (n.)'), ('kommen', 'to come')]),
+        sec('0.2', 'The umlauts ä, ö, ü', [
+            ('der Käse', 'the cheese (m.)'), ('das Mädchen', 'the girl (n.)'), ('spät', 'late'), ('schön', 'beautiful'),
+            ('hören', 'to hear'), ('der Löffel', 'the spoon (m.)'), ('die Tür', 'the door (f.)'), ('müde', 'tired'),
+            ('die Übung', 'the exercise (f.)'), ('Tschüss!', 'Bye!')]),
+        sec('0.3', 'Vowel pairs: ei, ie, eu, au', [
+            ('mein', 'my'), ('nein', 'no'), ('die Zeit', 'the time (f.)'), ('Wie?', 'How?'), ('die Liebe', 'the love (f.)'),
+            ('viel', 'much, a lot'), ('heute', 'today'), ('neu', 'new'), ('die Häuser', 'the houses (pl.)'),
+            ('das Haus', 'the house (n.)'), ('die Frau', 'the woman (f.)'), ('auch', 'also, too')]),
+        sec('0.4', 'w, v, z, j, s, ß', [
+            ('das Wasser', 'the water (n.)'), ('der Wein', 'the wine (m.)'), ('der Vater', 'the father (m.)'),
+            ('die Zahl', 'the number (f.)'), ('der Zug', 'the train (m.)'), ('ja', 'yes'), ('jetzt', 'now'),
+            ('die Sonne', 'the sun (f.)'), ('die Straße', 'the street (f.)'), ('der Tag', 'the day (m.)'),
+            ('und', 'and'), ('gelb', 'yellow')]),
+        sec('0.5', 'sch, sp, st & ch', [
+            ('die Schule', 'the school (f.)'), ('schnell', 'fast'), ('sprechen', 'to speak'), ('spielen', 'to play'),
+            ('die Stadt', 'the city (f.)'), ('ich', 'I'), ('nicht', 'not'), ('die Milch', 'the milk (f.)'),
+            ('die Nacht', 'the night (f.)'), ('das Buch', 'the book (n.)'), ('kochen', 'to cook'),
+            ('der Apfel', 'the apple (m.)'), ('das Brot', 'the bread (n.)')]),
+        sec('0.6', 'Numbers 1–12', [
+            ('eins', 'one (1)'), ('zwei', 'two (2)'), ('drei', 'three (3)'), ('vier', 'four (4)'), ('fünf', 'five (5)'),
+            ('sechs', 'six (6)'), ('sieben', 'seven (7)'), ('acht', 'eight (8)'), ('neun', 'nine (9)'),
+            ('zehn', 'ten (10)'), ('elf', 'eleven (11)'), ('zwölf', 'twelve (12)')]),
+    ],
+    'grammar': [
+        {'key': 'g0-vowels', 'code': 'P1', 'title': 'Long and short vowels', 'chapters': ['0.1'],
+         'intro': [
+             'Good news: German is written almost exactly as it is spoken. Once you know the sounds of the letters, '
+             'you can read any word aloud, even one you have never seen before.',
+             'Each vowel (<em class="de">a, e, i, o, u</em>) has a <strong>long</strong> and a <strong>short</strong> '
+             'sound. The spelling around the vowel tells you which one to use.'],
+         'blocks': [
+             {'step': 'The sounds', 'title': 'Five vowels, two lengths',
+              'text': 'Press a speaker to hear the long word, then the short one.',
+              'table': {'head': ['Vowel', 'Long', 'Short'],
+                        'rows': [['a', 'Name', 'Mann'], ['e', 'Tee', 'Bett'], ['i', 'wir', 'bitte'],
+                                 ['o', 'rot', 'oft'], ['u', 'gut', 'Mutter']],
+                        'say': ['Name, Mann', 'Tee, Bett', 'wir, bitte', 'rot, oft', 'gut, Mutter'], 'highlight': 0}},
+             {'step': 'The spelling', 'title': 'How to tell long from short', 'examples': [
+                 ('der Tee', 'Double vowel: long.'), ('das Jahr', 'Vowel + h: long. The h itself is silent.'),
+                 ('der Name', 'One vowel + one consonant: usually long.'),
+                 ('der Mann', 'Double consonant: short.'), ('oft', 'Two different consonants: usually short.')]},
+             {'step': 'Every letter counts', 'title': 'Nothing is silent at the end', 'examples': [
+                 ('der Name', 'The final e is spoken: NAH-meh.'), ('bitte', 'BIT-teh, never "bit".'),
+                 ('der Vater', 'A final -er sounds like a short "ah": FAH-tah.')]},
+         ],
+         'rules': [('Double vowel or vowel + h', 'long: Tee, Jahr'), ('Double consonant', 'short: Mann, Bett'),
+                   ('Final -e is spoken', 'Name = NAH-meh, never silent'), ('Final -er', 'a short "ah": Vater, Mutter')],
+         'quiz': {'title': 'Long or short?', 'items': [
+             sound('In "Tee", is the e long or short?', 'long', ['long', 'short'], 'der Tee', 'Double vowel: long.'),
+             sound('In "Mann", is the a long or short?', 'short', ['long', 'short'], 'der Mann', 'Double consonant: short.'),
+             sound('In "Jahr", is the a long or short?', 'long', ['long', 'short'], 'das Jahr', 'Vowel + h: long.'),
+             sound('In "bitte", is the i long or short?', 'short', ['long', 'short'], 'bitte', 'Double consonant: short.'),
+             sound('In "gut", is the u long or short?', 'long', ['long', 'short'], 'gut', 'One vowel + one consonant: long.'),
+             sound('How do you end the word "Name"?', 'NAH-meh', ['NAH-meh', 'NAYM', 'NAHM'], 'der Name',
+                   'The final e is always spoken.'),
+             listen('Stadt', ['Stadt', 'Staat'], why='Stadt (city) has a short a, Staat (state) a long one.'),
+             listen('Bett', ['Bett', 'Beet'], why='Bett (bed) is short, Beet (flower bed) is long.'),
+             listen('offen', ['offen', 'Ofen'], why='offen (open) is short, Ofen (oven) is long.'),
+             listen('Miete', ['Miete', 'Mitte'], why='Miete (rent) has a long ie, Mitte (middle) a short i.'),
+         ]}},
+        {'key': 'g0-umlauts', 'code': 'P2', 'title': 'The umlauts ä, ö, ü', 'chapters': ['0.2'],
+         'intro': [
+             'The two dots change the sound. <em class="de">ä</em>, <em class="de">ö</em> and <em class="de">ü</em> '
+             'are vowels of their own, so <em class="de">schon</em> (already) and <em class="de">schön</em> '
+             '(beautiful) are two different words.',
+             'No umlaut on your keyboard? Write <strong>ae, oe, ue</strong>: <em class="de">Mädchen</em> → '
+             '<em class="de">Maedchen</em>. You will also see this in email addresses and on forms.'],
+         'blocks': [
+             {'step': 'The sounds', 'title': 'How to make them',
+              'text': 'The trick for ö and ü: say a sound you know, then round your lips without moving your tongue.',
+              'table': {'head': ['Letter', 'How to say it', 'Example'],
+                        'rows': [['ä', 'like the e in "bed"', 'Käse'],
+                                 ['ö', 'say "eh", then round your lips', 'schön'],
+                                 ['ü', 'say "ee", then round your lips as if to whistle', 'Tür']],
+                        'say': ['Käse', 'schön', 'Tür'], 'highlight': 2}},
+             {'step': 'Listen', 'title': 'Two dots, a different word', 'examples': [
+                 ('schon, schön', 'already, beautiful'), ('die Mutter, die Mütter', 'the mother, the mothers'),
+                 ('der Vater, die Väter', 'the father, the fathers'), ('zahlen, zählen', 'to pay, to count')]},
+         ],
+         'rules': [('ä', 'like the e in "bed"'), ('ö', '"eh" with round lips'), ('ü', '"ee" with round lips'),
+                   ('No umlaut key?', 'write ae, oe, ue')],
+         'quiz': {'title': 'With or without the dots?', 'items': [
+             listen('schön', ['schön', 'schon'], why='schön = beautiful, schon = already.'),
+             listen('schon', ['schon', 'schön'], why='schon = already, schön = beautiful.'),
+             listen('Mütter', ['Mütter', 'Mutter'], why='die Mütter = the mothers.'),
+             listen('Väter', ['Väter', 'Vater'], why='die Väter = the fathers.'),
+             listen('Brüder', ['Brüder', 'Bruder'], why='die Brüder = the brothers.'),
+             listen('zählen', ['zählen', 'zahlen'], why='zählen = to count, zahlen = to pay.'),
+             listen('können', ['können', 'kennen'], why='können = can, kennen = to know (someone).'),
+             sound('How do you write "Mädchen" without ä?', 'Maedchen', ['Maedchen', 'Madchen', 'Mädchen'],
+                   'das Mädchen', 'ä → ae.'),
+             sound('How do you write "schön" without ö?', 'schoen', ['schoen', 'schon', 'schöen'], 'schön', 'ö → oe.'),
+             sound('How do you write "Tschüss" without ü?', 'Tschuess', ['Tschuess', 'Tschuss', 'Tschüs'],
+                   'Tschüss!', 'ü → ue.'),
+         ]}},
+        {'key': 'g0-pairs', 'code': 'P3', 'title': 'Vowel pairs: ei, ie, eu, au', 'chapters': ['0.3'],
+         'intro': [
+             'Some vowels come in pairs and make a single sound. The famous trap is <em class="de">ei</em> and '
+             '<em class="de">ie</em>, which sound nothing alike.',
+             'The trick: say the <strong>second</strong> letter the English way. In <em class="de">ei</em> you say '
+             'English "i" (eye): <em class="de">mein</em>. In <em class="de">ie</em> you say English "e" (ee): '
+             '<em class="de">die</em>.'],
+         'blocks': [
+             {'step': 'The sounds', 'title': 'Four pairs to know',
+              'text': 'Press a speaker to hear the examples.',
+              'table': {'head': ['Letters', 'Sound', 'Examples'],
+                        'rows': [['ei', '"eye"', 'mein, nein, drei'], ['ie', '"ee" in "see"', 'die, vier, Liebe'],
+                                 ['eu / äu', '"oy" in "boy"', 'neu, heute, Häuser'], ['au', '"ow" in "how"', 'Haus, Frau, auch']],
+                        'say': ['mein, nein, drei', 'die, vier, Liebe', 'neu, heute, Häuser', 'Haus, Frau, auch'],
+                        'highlight': 0}},
+             {'step': 'Listen', 'title': 'In real words', 'examples': [
+                 ('der Wein, Wien', 'the wine, Vienna'), ('das Bier', 'the beer'), ('Deutsch', 'German'),
+                 ('Auf Wiedersehen!', 'Goodbye!')]},
+         ],
+         'rules': [('ei = "eye"', 'mein, drei'), ('ie = "ee"', 'die, vier'), ('eu = äu = "oy"', 'neu, Häuser'),
+                   ('au = "ow"', 'Haus, Frau')],
+         'quiz': {'title': 'Listen and fill in the letters', 'items': [
+             spell('dr', 'ei', '', ['ei', 'ie'], 'three'),
+             spell('v', 'ie', 'r', ['ei', 'ie'], 'four'),
+             spell('s', 'ie', 'ben', ['ei', 'ie'], 'seven'),
+             spell('n', 'ei', 'n', ['ei', 'ie'], 'no'),
+             spell('m', 'ei', 'n', ['ei', 'ie'], 'my'),
+             spell('die Z', 'ei', 't', ['ei', 'ie'], 'the time'),
+             spell('die L', 'ie', 'be', ['ei', 'ie'], 'the love'),
+             spell('h', 'eu', 'te', ['eu', 'au', 'ei'], 'today'),
+             spell('das H', 'au', 's', ['au', 'eu', 'ei'], 'the house'),
+             spell('n', 'eu', 'n', ['eu', 'au', 'ie'], 'nine'),
+             spell('die Fr', 'au', '', ['au', 'eu', 'ei'], 'the woman'),
+         ]}},
+        {'key': 'g0-consonants', 'code': 'P4', 'title': 'Letters that sound different: w, v, z, j, s, ß',
+         'chapters': ['0.4'],
+         'intro': [
+             'Most consonants sound just as they do in English. A few letters follow German rules, and they appear '
+             'in many everyday words.'],
+         'blocks': [
+             {'step': 'The sounds', 'title': 'Six letters to watch',
+              'text': 'Press a speaker to hear each example.',
+              'table': {'head': ['Letter', 'Sounds like', 'Example'],
+                        'rows': [['w', 'English v', 'Wasser'], ['v', 'English f', 'Vater'],
+                                 ['z', '"ts" as in "cats"', 'Zeit'], ['j', 'English y', 'ja'],
+                                 ['s + vowel', 'English z', 'Sonne'], ['ß', '"ss"', 'Straße']],
+                        'say': ['Wasser', 'Vater', 'Zeit', 'ja', 'Sonne', 'Straße'], 'highlight': 2}},
+             {'step': 'At the end of a word', 'title': 'b, d, g go quiet',
+              'text': 'At the end of a word, b, d and g sound like p, t and k.',
+              'examples': [('gelb', 'yellow: the b sounds like p'), ('und', 'and: the d sounds like t'),
+                           ('der Tag', 'the day: the g sounds like k')]},
+         ],
+         'rules': [('w → v', 'Wasser, Wein'), ('v → f', 'Vater, vier'), ('z → ts', 'Zeit, zwei'), ('j → y', 'ja, jetzt'),
+                   ('Final b, d, g → p, t, k', 'gelb, und, Tag')],
+         'quiz': {'title': 'How does it sound?', 'items': [
+             sound('How does the w in "Wasser" sound?', 'like English v', ['like English v', 'like English w', 'like English f'], 'das Wasser'),
+             sound('How does the w in "Wein" sound?', 'like English v', ['like English v', 'like English w', 'like English f'], 'der Wein'),
+             sound('How does the v in "Vater" sound?', 'like English f', ['like English f', 'like English v', 'like English w'], 'der Vater'),
+             sound('How does the v in "vier" sound?', 'like English f', ['like English f', 'like English v', 'like English w'], 'vier'),
+             sound('How does the z in "Zeit" sound?', 'like "ts"', ['like "ts"', 'like English z', 'like "s"'], 'die Zeit'),
+             sound('How does the z in "zwei" sound?', 'like "ts"', ['like "ts"', 'like English z', 'like "s"'], 'zwei'),
+             sound('How does the j in "ja" sound?', 'like English y', ['like English y', 'like English j', 'like "h"'], 'ja'),
+             sound('How does the s in "Sonne" sound?', 'like English z', ['like English z', 'like English s', 'like "sh"'], 'die Sonne',
+                   's before a vowel sounds like z.'),
+             sound('How does the ß in "Straße" sound?', 'like "ss"', ['like "ss"', 'like "b"', 'like "sh"'], 'die Straße'),
+             sound('How does the d in "und" sound?', 'like t', ['like t', 'like d'], 'und', 'A final d sounds like t.'),
+             sound('How does the g in "Tag" sound?', 'like k', ['like k', 'like g'], 'der Tag', 'A final g sounds like k.'),
+         ]}},
+        {'key': 'g0-sch-ch', 'code': 'P5', 'title': 'sch, sp, st and the two ch sounds', 'chapters': ['0.5'],
+         'intro': [
+             '<em class="de">sch</em> is simply English "sh": <em class="de">Schule</em>. At the start of a word, '
+             '<em class="de">sp</em> and <em class="de">st</em> sound like "shp" and "sht": <em class="de">sprechen</em>, '
+             '<em class="de">Stadt</em>.',
+             '<em class="de">ch</em> has two sounds, and the letter just before it decides which one you use.'],
+         'blocks': [
+             {'step': 'The sounds', 'title': 'The two ch sounds',
+              'table': {'head': ['After', 'Sound', 'Examples'],
+                        'rows': [['a, o, u, au', 'throaty, at the back', 'Nacht, Buch, auch'],
+                                 ['any other', 'soft, like the h in "huge"', 'ich, nicht, Milch']],
+                        'say': ['Nacht, Buch, auch', 'ich, nicht, Milch'], 'highlight': 2}},
+             {'step': 'Listen', 'title': 'More letter groups', 'examples': [
+                 ('die Schule', 'the school: sch = sh'), ('sprechen', 'to speak: sp = shp'),
+                 ('die Stadt', 'the city: st = sht'), ('sechs', 'six: chs = ks'),
+                 ('der Apfel', 'the apple: pf, both letters are spoken'),
+                 ('das Brot', 'the bread: r comes from the back of the throat')]},
+         ],
+         'rules': [('sch = sh', 'Schule'), ('sp-, st- = shp-, sht-', 'sprechen, Stadt'),
+                   ('ch after a, o, u, au', 'throaty: Buch'), ('ch after other letters', 'soft: ich'),
+                   ('chs = ks', 'sechs')],
+         'quiz': {'title': 'Which sound is it?', 'items': [
+             sound('Which ch is in "Buch"?', 'throaty', ['throaty', 'soft'], 'das Buch', 'After u: throaty.'),
+             sound('Which ch is in "nicht"?', 'soft', ['throaty', 'soft'], 'nicht', 'After i: soft.'),
+             sound('Which ch is in "Milch"?', 'soft', ['throaty', 'soft'], 'die Milch', 'After l: soft.'),
+             sound('Which ch is in "auch"?', 'throaty', ['throaty', 'soft'], 'auch', 'After au: throaty.'),
+             sound('Which ch is in "Küche"?', 'soft', ['throaty', 'soft'], 'die Küche', 'After ü: soft.'),
+             sound('Which ch is in "kochen"?', 'throaty', ['throaty', 'soft'], 'kochen', 'After o: throaty.'),
+             sound('Which ch is in "Mädchen"?', 'soft', ['throaty', 'soft'], 'das Mädchen', 'After ä: soft.'),
+             sound('How do you say the st in "Stadt"?', 'sht', ['sht', 'st'], 'die Stadt', 'At the start of a word: sht.'),
+             sound('How do you say the sp in "spielen"?', 'shp', ['shp', 'sp'], 'spielen', 'At the start of a word: shp.'),
+             sound('How do you say the chs in "sechs"?', 'ks', ['ks', 'sh', 'ch'], 'sechs'),
+         ]}},
+        {'key': 'g0-numbers', 'code': 'P6', 'title': 'Numbers 1–12', 'chapters': ['0.6'],
+         'intro': [
+             'You need numbers from day one: phone numbers, prices, times, your age, your house number.',
+             'The numbers 1 to 12 each have their own name. From 13 on, German builds numbers out of these, '
+             'so learn these twelve well.'],
+         'blocks': [
+             {'step': 'The numbers', 'title': 'One to twelve',
+              'text': 'Press a speaker to hear each number. The last column gives a rough English guide.',
+              'table': {'head': ['Number', 'German', 'Say it like'],
+                        'rows': [['1', 'eins', '"eye-ns"'], ['2', 'zwei', '"tsvy"'], ['3', 'drei', '"dry"'],
+                                 ['4', 'vier', '"feer"'], ['5', 'fünf', 'round lips for ü'],
+                                 ['6', 'sechs', '"zeks"'], ['7', 'sieben', '"ZEE-ben"'],
+                                 ['8', 'acht', '"ahkht", throaty ch'], ['9', 'neun', '"noyn"'],
+                                 ['10', 'zehn', '"tsayn"'], ['11', 'elf', '"elf"'],
+                                 ['12', 'zwölf', '"tsv-" + round lips for ö']],
+                        'say': ['eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn',
+                                'elf', 'zwölf'], 'highlight': 1}},
+             {'step': 'In use', 'title': 'Numbers in sentences', 'examples': [
+                 ('Ich bin zwölf.', 'I am twelve.'), ('Ich habe zwei Kinder.', 'I have two children.'),
+                 ('Zimmer elf, bitte.', 'Room eleven, please.'),
+                 ('zwo', 'two: often used on the phone so that zwei and drei are not mixed up')]},
+         ],
+         'rules': [('eins', 'one; when counting: eins, zwei, drei'), ('zwei or zwo', 'zwo on the phone'),
+                   ('sechs', 'chs = ks: "zeks"'), ('sieben', 'two syllables: ZEE-ben')],
+         'quiz': {'title': 'Hear it, count it', 'items': [
+             listen('2', ['2', '3', '10'], say='zwei'),
+             listen('3', ['3', '2', '8'], say='drei'),
+             listen('6', ['6', '7', '5'], say='sechs'),
+             listen('7', ['7', '6', '11'], say='sieben'),
+             listen('11', ['11', '12', '8'], say='elf'),
+             listen('12', ['12', '2', '11'], say='zwölf'),
+             listen('9', ['9', '10', '4'], say='neun'),
+             gap('drei + vier = ', 'sieben', '', ['sieben', 'sechs', 'acht'], hint='3 + 4',
+                 say='drei plus vier ist sieben'),
+             gap('zehn + zwei = ', 'zwölf', '', ['zwölf', 'elf', 'zehn'], hint='10 + 2', say='zehn plus zwei ist zwölf'),
+             gap('acht − fünf = ', 'drei', '', ['drei', 'zwei', 'vier'], hint='8 − 5', say='acht minus fünf ist drei'),
+             gap('neun + zwei = ', 'elf', '', ['elf', 'zwölf', 'zehn'], hint='9 + 2', say='neun plus zwei ist elf'),
+             gap('eins + drei = ', 'vier', '', ['vier', 'fünf', 'zwei'], hint='1 + 3', say='eins plus drei ist vier'),
+         ]}},
+    ],
+}
 
 # ---------------------------------------------------------------- Unit 1 (unchanged from the original course)
 UNIT1 = {
@@ -907,7 +1174,7 @@ UNIT7 = {
     ],
 }
 
-COURSE = {'units': [UNIT1, UNIT2, UNIT3, UNIT4, UNIT5, UNIT6, UNIT7]}
+COURSE = {'units': [UNIT0, UNIT1, UNIT2, UNIT3, UNIT4, UNIT5, UNIT6, UNIT7]}
 
 
 def check(course):
@@ -931,7 +1198,7 @@ def check(course):
 if __name__ == '__main__':
     check(COURSE)
     out = Path(__file__).resolve().parent.parent / 'static' / 'course' / 'js' / 'course-data.js'
-    out.write_text('/* German A1.1, Units 1-7. Generated from course_content.py: vocabulary sheets and unit recaps (11percent.de). */\n'
+    out.write_text('/* German A1.1, Start unit and Units 1-7. Generated from course_content.py: vocabulary sheets and unit recaps (11percent.de). */\n'
                    'window.COURSE = ' + json.dumps(COURSE, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')
     words = sum(len(s['words']) for u in COURSE['units'] for s in u['sections'])
     lessons = sum(len(u['grammar']) for u in COURSE['units'])

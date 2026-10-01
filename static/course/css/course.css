@@ -347,7 +347,7 @@ svg.icon {
 /* The unit's two parts: Vocabulary and Grammar */
 .parts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
   max-width: 1320px;
   margin: 0 auto;
@@ -388,7 +388,7 @@ svg.icon {
 .part[data-part="grammar"].active .part-icon { background: var(--indigo); color: #fff; }
 
 .part-kicker { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--subtle); }
-.part-name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; line-height: 1.2; }
+.part-name { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; line-height: 1.2; overflow-wrap: anywhere; }
 .part-meta { display: flex; align-items: center; gap: 10px; margin-top: 4px; font-size: 0.82rem; color: var(--muted); }
 .part-meta .bar { flex: 1; max-width: 160px; height: 5px; }
 .part[data-part="grammar"] .bar > i { background: var(--indigo); }
@@ -1069,6 +1069,7 @@ svg.icon {
 .g-q-prompt { font-family: var(--serif); font-size: clamp(1.6rem, 4vw, 2.1rem); font-weight: 600; margin-top: 18px; }
 .g-q-prompt .blank { display: inline-block; min-width: 1.8em; border-bottom: 3px solid var(--brand); color: var(--brand); text-align: center; }
 .g-q-hint { color: var(--muted); margin-top: 2px; }
+.g-q-prompt + .listen-btn { margin-top: 12px; }
 
 .exercise-cta {
   display: flex;
@@ -1716,6 +1717,14 @@ body { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-ins
 }
 @media (max-width: 359px) {
   .tab { padding: 0.75rem 0.3rem 0.9rem; font-size: 0.78rem; }
+  /* Room for long part names such as "Pronunciation". */
+  .part { grid-template-columns: minmax(0, 1fr); }
+  .part-icon { display: none; }
+  .part-name { font-size: 1rem; }
+  .conj-table td:first-child { white-space: normal; }
+  .conj-table td.form { font-size: 1rem !important; }
+  .conj-table th { letter-spacing: 0; font-size: 0.68rem; }
+  .conj-table td:last-child { width: 40px; }
   .page-head-body { padding-left: 14px; padding-right: 14px; }
 }
 

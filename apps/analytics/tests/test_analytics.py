@@ -49,6 +49,11 @@ class EventApiTests(TestCase):
         self.assertEqual((recorded.unit, recorded.mode, recorded.device), (3, "speak", "phone"))
         self.assertIsNone(recorded.user)
 
+    def test_accepts_the_start_unit(self):
+        payload = {"uid": "abcdef12-3456", "sid": "sess1234-5678", "type": "view", "unit": 0, "scope": "0.1"}
+        self.assertEqual(post_json(self.client, self.url, payload).status_code, 204)
+        self.assertEqual(Event.objects.get().unit, 0)
+
     def test_links_signed_in_user(self):
         user = User.objects.create_user("liya", "liya@example.com", PASSWORD, name="Liya")
         self.client.force_login(user)
@@ -87,6 +92,10 @@ class ReportTests(TestCase):
         self.assertEqual(report["modes"], {"learn": 1})
         self.assertEqual(report["units"], {"2": 1})
         self.assertEqual(report["total_users"], 2)
+
+    def test_start_unit_is_counted(self):
+        event(type=Event.Type.VIEW, mode="learn", unit=0)
+        self.assertEqual(usage_report("day")["units"], {"0": 1})
 
     def test_bucket_starts(self):
         day = timezone.localdate().replace(year=2026, month=9, day=30)  # a Wednesday

@@ -1,6 +1,1842 @@
-/* German A1.1, Units 1-7. Generated from course_content.py: vocabulary sheets and unit recaps (11percent.de). */
+/* German A1.1, Start unit and Units 1-7. Generated from course_content.py: vocabulary sheets and unit recaps (11percent.de). */
 window.COURSE = {
  "units": [
+  {
+   "id": 0,
+   "label": "Start",
+   "title": "Pronunciation & numbers",
+   "lessonsLabel": "Pronunciation",
+   "sections": [
+    {
+     "key": "0.1",
+     "title": "Long & short vowels",
+     "words": [
+      {
+       "german": "der Name",
+       "english": "the name (m.)"
+      },
+      {
+       "german": "der Mann",
+       "english": "the man (m.)"
+      },
+      {
+       "german": "der Tee",
+       "english": "the tea (m.)"
+      },
+      {
+       "german": "das Bett",
+       "english": "the bed (n.)"
+      },
+      {
+       "german": "wir",
+       "english": "we"
+      },
+      {
+       "german": "bitte",
+       "english": "please"
+      },
+      {
+       "german": "rot",
+       "english": "red"
+      },
+      {
+       "german": "oft",
+       "english": "often"
+      },
+      {
+       "german": "gut",
+       "english": "good"
+      },
+      {
+       "german": "die Mutter",
+       "english": "the mother (f.)"
+      },
+      {
+       "german": "das Jahr",
+       "english": "the year (n.)"
+      },
+      {
+       "german": "kommen",
+       "english": "to come"
+      }
+     ]
+    },
+    {
+     "key": "0.2",
+     "title": "The umlauts ä, ö, ü",
+     "words": [
+      {
+       "german": "der Käse",
+       "english": "the cheese (m.)"
+      },
+      {
+       "german": "das Mädchen",
+       "english": "the girl (n.)"
+      },
+      {
+       "german": "spät",
+       "english": "late"
+      },
+      {
+       "german": "schön",
+       "english": "beautiful"
+      },
+      {
+       "german": "hören",
+       "english": "to hear"
+      },
+      {
+       "german": "der Löffel",
+       "english": "the spoon (m.)"
+      },
+      {
+       "german": "die Tür",
+       "english": "the door (f.)"
+      },
+      {
+       "german": "müde",
+       "english": "tired"
+      },
+      {
+       "german": "die Übung",
+       "english": "the exercise (f.)"
+      },
+      {
+       "german": "Tschüss!",
+       "english": "Bye!"
+      }
+     ]
+    },
+    {
+     "key": "0.3",
+     "title": "Vowel pairs: ei, ie, eu, au",
+     "words": [
+      {
+       "german": "mein",
+       "english": "my"
+      },
+      {
+       "german": "nein",
+       "english": "no"
+      },
+      {
+       "german": "die Zeit",
+       "english": "the time (f.)"
+      },
+      {
+       "german": "Wie?",
+       "english": "How?"
+      },
+      {
+       "german": "die Liebe",
+       "english": "the love (f.)"
+      },
+      {
+       "german": "viel",
+       "english": "much, a lot"
+      },
+      {
+       "german": "heute",
+       "english": "today"
+      },
+      {
+       "german": "neu",
+       "english": "new"
+      },
+      {
+       "german": "die Häuser",
+       "english": "the houses (pl.)"
+      },
+      {
+       "german": "das Haus",
+       "english": "the house (n.)"
+      },
+      {
+       "german": "die Frau",
+       "english": "the woman (f.)"
+      },
+      {
+       "german": "auch",
+       "english": "also, too"
+      }
+     ]
+    },
+    {
+     "key": "0.4",
+     "title": "w, v, z, j, s, ß",
+     "words": [
+      {
+       "german": "das Wasser",
+       "english": "the water (n.)"
+      },
+      {
+       "german": "der Wein",
+       "english": "the wine (m.)"
+      },
+      {
+       "german": "der Vater",
+       "english": "the father (m.)"
+      },
+      {
+       "german": "die Zahl",
+       "english": "the number (f.)"
+      },
+      {
+       "german": "der Zug",
+       "english": "the train (m.)"
+      },
+      {
+       "german": "ja",
+       "english": "yes"
+      },
+      {
+       "german": "jetzt",
+       "english": "now"
+      },
+      {
+       "german": "die Sonne",
+       "english": "the sun (f.)"
+      },
+      {
+       "german": "die Straße",
+       "english": "the street (f.)"
+      },
+      {
+       "german": "der Tag",
+       "english": "the day (m.)"
+      },
+      {
+       "german": "und",
+       "english": "and"
+      },
+      {
+       "german": "gelb",
+       "english": "yellow"
+      }
+     ]
+    },
+    {
+     "key": "0.5",
+     "title": "sch, sp, st & ch",
+     "words": [
+      {
+       "german": "die Schule",
+       "english": "the school (f.)"
+      },
+      {
+       "german": "schnell",
+       "english": "fast"
+      },
+      {
+       "german": "sprechen",
+       "english": "to speak"
+      },
+      {
+       "german": "spielen",
+       "english": "to play"
+      },
+      {
+       "german": "die Stadt",
+       "english": "the city (f.)"
+      },
+      {
+       "german": "ich",
+       "english": "I"
+      },
+      {
+       "german": "nicht",
+       "english": "not"
+      },
+      {
+       "german": "die Milch",
+       "english": "the milk (f.)"
+      },
+      {
+       "german": "die Nacht",
+       "english": "the night (f.)"
+      },
+      {
+       "german": "das Buch",
+       "english": "the book (n.)"
+      },
+      {
+       "german": "kochen",
+       "english": "to cook"
+      },
+      {
+       "german": "der Apfel",
+       "english": "the apple (m.)"
+      },
+      {
+       "german": "das Brot",
+       "english": "the bread (n.)"
+      }
+     ]
+    },
+    {
+     "key": "0.6",
+     "title": "Numbers 1–12",
+     "words": [
+      {
+       "german": "eins",
+       "english": "one (1)"
+      },
+      {
+       "german": "zwei",
+       "english": "two (2)"
+      },
+      {
+       "german": "drei",
+       "english": "three (3)"
+      },
+      {
+       "german": "vier",
+       "english": "four (4)"
+      },
+      {
+       "german": "fünf",
+       "english": "five (5)"
+      },
+      {
+       "german": "sechs",
+       "english": "six (6)"
+      },
+      {
+       "german": "sieben",
+       "english": "seven (7)"
+      },
+      {
+       "german": "acht",
+       "english": "eight (8)"
+      },
+      {
+       "german": "neun",
+       "english": "nine (9)"
+      },
+      {
+       "german": "zehn",
+       "english": "ten (10)"
+      },
+      {
+       "german": "elf",
+       "english": "eleven (11)"
+      },
+      {
+       "german": "zwölf",
+       "english": "twelve (12)"
+      }
+     ]
+    }
+   ],
+   "grammar": [
+    {
+     "key": "g0-vowels",
+     "code": "P1",
+     "title": "Long and short vowels",
+     "chapters": [
+      "0.1"
+     ],
+     "intro": [
+      "Good news: German is written almost exactly as it is spoken. Once you know the sounds of the letters, you can read any word aloud, even one you have never seen before.",
+      "Each vowel (<em class=\"de\">a, e, i, o, u</em>) has a <strong>long</strong> and a <strong>short</strong> sound. The spelling around the vowel tells you which one to use."
+     ],
+     "blocks": [
+      {
+       "step": "The sounds",
+       "title": "Five vowels, two lengths",
+       "text": "Press a speaker to hear the long word, then the short one.",
+       "table": {
+        "head": [
+         "Vowel",
+         "Long",
+         "Short"
+        ],
+        "rows": [
+         [
+          "a",
+          "Name",
+          "Mann"
+         ],
+         [
+          "e",
+          "Tee",
+          "Bett"
+         ],
+         [
+          "i",
+          "wir",
+          "bitte"
+         ],
+         [
+          "o",
+          "rot",
+          "oft"
+         ],
+         [
+          "u",
+          "gut",
+          "Mutter"
+         ]
+        ],
+        "say": [
+         "Name, Mann",
+         "Tee, Bett",
+         "wir, bitte",
+         "rot, oft",
+         "gut, Mutter"
+        ],
+        "highlight": 0
+       }
+      },
+      {
+       "step": "The spelling",
+       "title": "How to tell long from short",
+       "examples": [
+        [
+         "der Tee",
+         "Double vowel: long."
+        ],
+        [
+         "das Jahr",
+         "Vowel + h: long. The h itself is silent."
+        ],
+        [
+         "der Name",
+         "One vowel + one consonant: usually long."
+        ],
+        [
+         "der Mann",
+         "Double consonant: short."
+        ],
+        [
+         "oft",
+         "Two different consonants: usually short."
+        ]
+       ]
+      },
+      {
+       "step": "Every letter counts",
+       "title": "Nothing is silent at the end",
+       "examples": [
+        [
+         "der Name",
+         "The final e is spoken: NAH-meh."
+        ],
+        [
+         "bitte",
+         "BIT-teh, never \"bit\"."
+        ],
+        [
+         "der Vater",
+         "A final -er sounds like a short \"ah\": FAH-tah."
+        ]
+       ]
+      }
+     ],
+     "rules": [
+      [
+       "Double vowel or vowel + h",
+       "long: Tee, Jahr"
+      ],
+      [
+       "Double consonant",
+       "short: Mann, Bett"
+      ],
+      [
+       "Final -e is spoken",
+       "Name = NAH-meh, never silent"
+      ],
+      [
+       "Final -er",
+       "a short \"ah\": Vater, Mutter"
+      ]
+     ],
+     "quiz": {
+      "title": "Long or short?",
+      "items": [
+       {
+        "type": "choose",
+        "prompt": "In \"Tee\", is the e long or short?",
+        "answer": "long",
+        "options": [
+         "long",
+         "short"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "der Tee",
+        "why": "Double vowel: long."
+       },
+       {
+        "type": "choose",
+        "prompt": "In \"Mann\", is the a long or short?",
+        "answer": "short",
+        "options": [
+         "long",
+         "short"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "der Mann",
+        "why": "Double consonant: short."
+       },
+       {
+        "type": "choose",
+        "prompt": "In \"Jahr\", is the a long or short?",
+        "answer": "long",
+        "options": [
+         "long",
+         "short"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "das Jahr",
+        "why": "Vowel + h: long."
+       },
+       {
+        "type": "choose",
+        "prompt": "In \"bitte\", is the i long or short?",
+        "answer": "short",
+        "options": [
+         "long",
+         "short"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "bitte",
+        "why": "Double consonant: short."
+       },
+       {
+        "type": "choose",
+        "prompt": "In \"gut\", is the u long or short?",
+        "answer": "long",
+        "options": [
+         "long",
+         "short"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "gut",
+        "why": "One vowel + one consonant: long."
+       },
+       {
+        "type": "choose",
+        "prompt": "How do you end the word \"Name\"?",
+        "answer": "NAH-meh",
+        "options": [
+         "NAH-meh",
+         "NAYM",
+         "NAHM"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "der Name",
+        "why": "The final e is always spoken."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "Stadt",
+        "options": [
+         "Stadt",
+         "Staat"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "Stadt",
+        "why": "Stadt (city) has a short a, Staat (state) a long one."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "Bett",
+        "options": [
+         "Bett",
+         "Beet"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "Bett",
+        "why": "Bett (bed) is short, Beet (flower bed) is long."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "offen",
+        "options": [
+         "offen",
+         "Ofen"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "offen",
+        "why": "offen (open) is short, Ofen (oven) is long."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "Miete",
+        "options": [
+         "Miete",
+         "Mitte"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "Miete",
+        "why": "Miete (rent) has a long ie, Mitte (middle) a short i."
+       }
+      ]
+     }
+    },
+    {
+     "key": "g0-umlauts",
+     "code": "P2",
+     "title": "The umlauts ä, ö, ü",
+     "chapters": [
+      "0.2"
+     ],
+     "intro": [
+      "The two dots change the sound. <em class=\"de\">ä</em>, <em class=\"de\">ö</em> and <em class=\"de\">ü</em> are vowels of their own, so <em class=\"de\">schon</em> (already) and <em class=\"de\">schön</em> (beautiful) are two different words.",
+      "No umlaut on your keyboard? Write <strong>ae, oe, ue</strong>: <em class=\"de\">Mädchen</em> → <em class=\"de\">Maedchen</em>. You will also see this in email addresses and on forms."
+     ],
+     "blocks": [
+      {
+       "step": "The sounds",
+       "title": "How to make them",
+       "text": "The trick for ö and ü: say a sound you know, then round your lips without moving your tongue.",
+       "table": {
+        "head": [
+         "Letter",
+         "How to say it",
+         "Example"
+        ],
+        "rows": [
+         [
+          "ä",
+          "like the e in \"bed\"",
+          "Käse"
+         ],
+         [
+          "ö",
+          "say \"eh\", then round your lips",
+          "schön"
+         ],
+         [
+          "ü",
+          "say \"ee\", then round your lips as if to whistle",
+          "Tür"
+         ]
+        ],
+        "say": [
+         "Käse",
+         "schön",
+         "Tür"
+        ],
+        "highlight": 2
+       }
+      },
+      {
+       "step": "Listen",
+       "title": "Two dots, a different word",
+       "examples": [
+        [
+         "schon, schön",
+         "already, beautiful"
+        ],
+        [
+         "die Mutter, die Mütter",
+         "the mother, the mothers"
+        ],
+        [
+         "der Vater, die Väter",
+         "the father, the fathers"
+        ],
+        [
+         "zahlen, zählen",
+         "to pay, to count"
+        ]
+       ]
+      }
+     ],
+     "rules": [
+      [
+       "ä",
+       "like the e in \"bed\""
+      ],
+      [
+       "ö",
+       "\"eh\" with round lips"
+      ],
+      [
+       "ü",
+       "\"ee\" with round lips"
+      ],
+      [
+       "No umlaut key?",
+       "write ae, oe, ue"
+      ]
+     ],
+     "quiz": {
+      "title": "With or without the dots?",
+      "items": [
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "schön",
+        "options": [
+         "schön",
+         "schon"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "schön",
+        "why": "schön = beautiful, schon = already."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "schon",
+        "options": [
+         "schon",
+         "schön"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "schon",
+        "why": "schon = already, schön = beautiful."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "Mütter",
+        "options": [
+         "Mütter",
+         "Mutter"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "Mütter",
+        "why": "die Mütter = the mothers."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "Väter",
+        "options": [
+         "Väter",
+         "Vater"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "Väter",
+        "why": "die Väter = the fathers."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "Brüder",
+        "options": [
+         "Brüder",
+         "Bruder"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "Brüder",
+        "why": "die Brüder = the brothers."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "zählen",
+        "options": [
+         "zählen",
+         "zahlen"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "zählen",
+        "why": "zählen = to count, zahlen = to pay."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "können",
+        "options": [
+         "können",
+         "kennen"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "können",
+        "why": "können = can, kennen = to know (someone)."
+       },
+       {
+        "type": "choose",
+        "prompt": "How do you write \"Mädchen\" without ä?",
+        "answer": "Maedchen",
+        "options": [
+         "Maedchen",
+         "Madchen",
+         "Mädchen"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "das Mädchen",
+        "why": "ä → ae."
+       },
+       {
+        "type": "choose",
+        "prompt": "How do you write \"schön\" without ö?",
+        "answer": "schoen",
+        "options": [
+         "schoen",
+         "schon",
+         "schöen"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "schön",
+        "why": "ö → oe."
+       },
+       {
+        "type": "choose",
+        "prompt": "How do you write \"Tschüss\" without ü?",
+        "answer": "Tschuess",
+        "options": [
+         "Tschuess",
+         "Tschuss",
+         "Tschüs"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "Tschüss!",
+        "why": "ü → ue."
+       }
+      ]
+     }
+    },
+    {
+     "key": "g0-pairs",
+     "code": "P3",
+     "title": "Vowel pairs: ei, ie, eu, au",
+     "chapters": [
+      "0.3"
+     ],
+     "intro": [
+      "Some vowels come in pairs and make a single sound. The famous trap is <em class=\"de\">ei</em> and <em class=\"de\">ie</em>, which sound nothing alike.",
+      "The trick: say the <strong>second</strong> letter the English way. In <em class=\"de\">ei</em> you say English \"i\" (eye): <em class=\"de\">mein</em>. In <em class=\"de\">ie</em> you say English \"e\" (ee): <em class=\"de\">die</em>."
+     ],
+     "blocks": [
+      {
+       "step": "The sounds",
+       "title": "Four pairs to know",
+       "text": "Press a speaker to hear the examples.",
+       "table": {
+        "head": [
+         "Letters",
+         "Sound",
+         "Examples"
+        ],
+        "rows": [
+         [
+          "ei",
+          "\"eye\"",
+          "mein, nein, drei"
+         ],
+         [
+          "ie",
+          "\"ee\" in \"see\"",
+          "die, vier, Liebe"
+         ],
+         [
+          "eu / äu",
+          "\"oy\" in \"boy\"",
+          "neu, heute, Häuser"
+         ],
+         [
+          "au",
+          "\"ow\" in \"how\"",
+          "Haus, Frau, auch"
+         ]
+        ],
+        "say": [
+         "mein, nein, drei",
+         "die, vier, Liebe",
+         "neu, heute, Häuser",
+         "Haus, Frau, auch"
+        ],
+        "highlight": 0
+       }
+      },
+      {
+       "step": "Listen",
+       "title": "In real words",
+       "examples": [
+        [
+         "der Wein, Wien",
+         "the wine, Vienna"
+        ],
+        [
+         "das Bier",
+         "the beer"
+        ],
+        [
+         "Deutsch",
+         "German"
+        ],
+        [
+         "Auf Wiedersehen!",
+         "Goodbye!"
+        ]
+       ]
+      }
+     ],
+     "rules": [
+      [
+       "ei = \"eye\"",
+       "mein, drei"
+      ],
+      [
+       "ie = \"ee\"",
+       "die, vier"
+      ],
+      [
+       "eu = äu = \"oy\"",
+       "neu, Häuser"
+      ],
+      [
+       "au = \"ow\"",
+       "Haus, Frau"
+      ]
+     ],
+     "quiz": {
+      "title": "Listen and fill in the letters",
+      "items": [
+       {
+        "type": "gap",
+        "before": "dr",
+        "answer": "ei",
+        "after": "",
+        "options": [
+         "ei",
+         "ie"
+        ],
+        "hint": "three",
+        "say": "drei",
+        "why": "",
+        "listen": true
+       },
+       {
+        "type": "gap",
+        "before": "v",
+        "answer": "ie",
+        "after": "r",
+        "options": [
+         "ei",
+         "ie"
+        ],
+        "hint": "four",
+        "say": "vier",
+        "why": "",
+        "listen": true
+       },
+       {
+        "type": "gap",
+        "before": "s",
+        "answer": "ie",
+        "after": "ben",
+        "options": [
+         "ei",
+         "ie"
+        ],
+        "hint": "seven",
+        "say": "sieben",
+        "why": "",
+        "listen": true
+       },
+       {
+        "type": "gap",
+        "before": "n",
+        "answer": "ei",
+        "after": "n",
+        "options": [
+         "ei",
+         "ie"
+        ],
+        "hint": "no",
+        "say": "nein",
+        "why": "",
+        "listen": true
+       },
+       {
+        "type": "gap",
+        "before": "m",
+        "answer": "ei",
+        "after": "n",
+        "options": [
+         "ei",
+         "ie"
+        ],
+        "hint": "my",
+        "say": "mein",
+        "why": "",
+        "listen": true
+       },
+       {
+        "type": "gap",
+        "before": "die Z",
+        "answer": "ei",
+        "after": "t",
+        "options": [
+         "ei",
+         "ie"
+        ],
+        "hint": "the time",
+        "say": "die Zeit",
+        "why": "",
+        "listen": true
+       },
+       {
+        "type": "gap",
+        "before": "die L",
+        "answer": "ie",
+        "after": "be",
+        "options": [
+         "ei",
+         "ie"
+        ],
+        "hint": "the love",
+        "say": "die Liebe",
+        "why": "",
+        "listen": true
+       },
+       {
+        "type": "gap",
+        "before": "h",
+        "answer": "eu",
+        "after": "te",
+        "options": [
+         "eu",
+         "au",
+         "ei"
+        ],
+        "hint": "today",
+        "say": "heute",
+        "why": "",
+        "listen": true
+       },
+       {
+        "type": "gap",
+        "before": "das H",
+        "answer": "au",
+        "after": "s",
+        "options": [
+         "au",
+         "eu",
+         "ei"
+        ],
+        "hint": "the house",
+        "say": "das Haus",
+        "why": "",
+        "listen": true
+       },
+       {
+        "type": "gap",
+        "before": "n",
+        "answer": "eu",
+        "after": "n",
+        "options": [
+         "eu",
+         "au",
+         "ie"
+        ],
+        "hint": "nine",
+        "say": "neun",
+        "why": "",
+        "listen": true
+       },
+       {
+        "type": "gap",
+        "before": "die Fr",
+        "answer": "au",
+        "after": "",
+        "options": [
+         "au",
+         "eu",
+         "ei"
+        ],
+        "hint": "the woman",
+        "say": "die Frau",
+        "why": "",
+        "listen": true
+       }
+      ]
+     }
+    },
+    {
+     "key": "g0-consonants",
+     "code": "P4",
+     "title": "Letters that sound different: w, v, z, j, s, ß",
+     "chapters": [
+      "0.4"
+     ],
+     "intro": [
+      "Most consonants sound just as they do in English. A few letters follow German rules, and they appear in many everyday words."
+     ],
+     "blocks": [
+      {
+       "step": "The sounds",
+       "title": "Six letters to watch",
+       "text": "Press a speaker to hear each example.",
+       "table": {
+        "head": [
+         "Letter",
+         "Sounds like",
+         "Example"
+        ],
+        "rows": [
+         [
+          "w",
+          "English v",
+          "Wasser"
+         ],
+         [
+          "v",
+          "English f",
+          "Vater"
+         ],
+         [
+          "z",
+          "\"ts\" as in \"cats\"",
+          "Zeit"
+         ],
+         [
+          "j",
+          "English y",
+          "ja"
+         ],
+         [
+          "s + vowel",
+          "English z",
+          "Sonne"
+         ],
+         [
+          "ß",
+          "\"ss\"",
+          "Straße"
+         ]
+        ],
+        "say": [
+         "Wasser",
+         "Vater",
+         "Zeit",
+         "ja",
+         "Sonne",
+         "Straße"
+        ],
+        "highlight": 2
+       }
+      },
+      {
+       "step": "At the end of a word",
+       "title": "b, d, g go quiet",
+       "text": "At the end of a word, b, d and g sound like p, t and k.",
+       "examples": [
+        [
+         "gelb",
+         "yellow: the b sounds like p"
+        ],
+        [
+         "und",
+         "and: the d sounds like t"
+        ],
+        [
+         "der Tag",
+         "the day: the g sounds like k"
+        ]
+       ]
+      }
+     ],
+     "rules": [
+      [
+       "w → v",
+       "Wasser, Wein"
+      ],
+      [
+       "v → f",
+       "Vater, vier"
+      ],
+      [
+       "z → ts",
+       "Zeit, zwei"
+      ],
+      [
+       "j → y",
+       "ja, jetzt"
+      ],
+      [
+       "Final b, d, g → p, t, k",
+       "gelb, und, Tag"
+      ]
+     ],
+     "quiz": {
+      "title": "How does it sound?",
+      "items": [
+       {
+        "type": "choose",
+        "prompt": "How does the w in \"Wasser\" sound?",
+        "answer": "like English v",
+        "options": [
+         "like English v",
+         "like English w",
+         "like English f"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "das Wasser",
+        "why": ""
+       },
+       {
+        "type": "choose",
+        "prompt": "How does the w in \"Wein\" sound?",
+        "answer": "like English v",
+        "options": [
+         "like English v",
+         "like English w",
+         "like English f"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "der Wein",
+        "why": ""
+       },
+       {
+        "type": "choose",
+        "prompt": "How does the v in \"Vater\" sound?",
+        "answer": "like English f",
+        "options": [
+         "like English f",
+         "like English v",
+         "like English w"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "der Vater",
+        "why": ""
+       },
+       {
+        "type": "choose",
+        "prompt": "How does the v in \"vier\" sound?",
+        "answer": "like English f",
+        "options": [
+         "like English f",
+         "like English v",
+         "like English w"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "vier",
+        "why": ""
+       },
+       {
+        "type": "choose",
+        "prompt": "How does the z in \"Zeit\" sound?",
+        "answer": "like \"ts\"",
+        "options": [
+         "like \"ts\"",
+         "like English z",
+         "like \"s\""
+        ],
+        "hint": "Choose the right sound.",
+        "say": "die Zeit",
+        "why": ""
+       },
+       {
+        "type": "choose",
+        "prompt": "How does the z in \"zwei\" sound?",
+        "answer": "like \"ts\"",
+        "options": [
+         "like \"ts\"",
+         "like English z",
+         "like \"s\""
+        ],
+        "hint": "Choose the right sound.",
+        "say": "zwei",
+        "why": ""
+       },
+       {
+        "type": "choose",
+        "prompt": "How does the j in \"ja\" sound?",
+        "answer": "like English y",
+        "options": [
+         "like English y",
+         "like English j",
+         "like \"h\""
+        ],
+        "hint": "Choose the right sound.",
+        "say": "ja",
+        "why": ""
+       },
+       {
+        "type": "choose",
+        "prompt": "How does the s in \"Sonne\" sound?",
+        "answer": "like English z",
+        "options": [
+         "like English z",
+         "like English s",
+         "like \"sh\""
+        ],
+        "hint": "Choose the right sound.",
+        "say": "die Sonne",
+        "why": "s before a vowel sounds like z."
+       },
+       {
+        "type": "choose",
+        "prompt": "How does the ß in \"Straße\" sound?",
+        "answer": "like \"ss\"",
+        "options": [
+         "like \"ss\"",
+         "like \"b\"",
+         "like \"sh\""
+        ],
+        "hint": "Choose the right sound.",
+        "say": "die Straße",
+        "why": ""
+       },
+       {
+        "type": "choose",
+        "prompt": "How does the d in \"und\" sound?",
+        "answer": "like t",
+        "options": [
+         "like t",
+         "like d"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "und",
+        "why": "A final d sounds like t."
+       },
+       {
+        "type": "choose",
+        "prompt": "How does the g in \"Tag\" sound?",
+        "answer": "like k",
+        "options": [
+         "like k",
+         "like g"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "der Tag",
+        "why": "A final g sounds like k."
+       }
+      ]
+     }
+    },
+    {
+     "key": "g0-sch-ch",
+     "code": "P5",
+     "title": "sch, sp, st and the two ch sounds",
+     "chapters": [
+      "0.5"
+     ],
+     "intro": [
+      "<em class=\"de\">sch</em> is simply English \"sh\": <em class=\"de\">Schule</em>. At the start of a word, <em class=\"de\">sp</em> and <em class=\"de\">st</em> sound like \"shp\" and \"sht\": <em class=\"de\">sprechen</em>, <em class=\"de\">Stadt</em>.",
+      "<em class=\"de\">ch</em> has two sounds, and the letter just before it decides which one you use."
+     ],
+     "blocks": [
+      {
+       "step": "The sounds",
+       "title": "The two ch sounds",
+       "table": {
+        "head": [
+         "After",
+         "Sound",
+         "Examples"
+        ],
+        "rows": [
+         [
+          "a, o, u, au",
+          "throaty, at the back",
+          "Nacht, Buch, auch"
+         ],
+         [
+          "any other",
+          "soft, like the h in \"huge\"",
+          "ich, nicht, Milch"
+         ]
+        ],
+        "say": [
+         "Nacht, Buch, auch",
+         "ich, nicht, Milch"
+        ],
+        "highlight": 2
+       }
+      },
+      {
+       "step": "Listen",
+       "title": "More letter groups",
+       "examples": [
+        [
+         "die Schule",
+         "the school: sch = sh"
+        ],
+        [
+         "sprechen",
+         "to speak: sp = shp"
+        ],
+        [
+         "die Stadt",
+         "the city: st = sht"
+        ],
+        [
+         "sechs",
+         "six: chs = ks"
+        ],
+        [
+         "der Apfel",
+         "the apple: pf, both letters are spoken"
+        ],
+        [
+         "das Brot",
+         "the bread: r comes from the back of the throat"
+        ]
+       ]
+      }
+     ],
+     "rules": [
+      [
+       "sch = sh",
+       "Schule"
+      ],
+      [
+       "sp-, st- = shp-, sht-",
+       "sprechen, Stadt"
+      ],
+      [
+       "ch after a, o, u, au",
+       "throaty: Buch"
+      ],
+      [
+       "ch after other letters",
+       "soft: ich"
+      ],
+      [
+       "chs = ks",
+       "sechs"
+      ]
+     ],
+     "quiz": {
+      "title": "Which sound is it?",
+      "items": [
+       {
+        "type": "choose",
+        "prompt": "Which ch is in \"Buch\"?",
+        "answer": "throaty",
+        "options": [
+         "throaty",
+         "soft"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "das Buch",
+        "why": "After u: throaty."
+       },
+       {
+        "type": "choose",
+        "prompt": "Which ch is in \"nicht\"?",
+        "answer": "soft",
+        "options": [
+         "throaty",
+         "soft"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "nicht",
+        "why": "After i: soft."
+       },
+       {
+        "type": "choose",
+        "prompt": "Which ch is in \"Milch\"?",
+        "answer": "soft",
+        "options": [
+         "throaty",
+         "soft"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "die Milch",
+        "why": "After l: soft."
+       },
+       {
+        "type": "choose",
+        "prompt": "Which ch is in \"auch\"?",
+        "answer": "throaty",
+        "options": [
+         "throaty",
+         "soft"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "auch",
+        "why": "After au: throaty."
+       },
+       {
+        "type": "choose",
+        "prompt": "Which ch is in \"Küche\"?",
+        "answer": "soft",
+        "options": [
+         "throaty",
+         "soft"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "die Küche",
+        "why": "After ü: soft."
+       },
+       {
+        "type": "choose",
+        "prompt": "Which ch is in \"kochen\"?",
+        "answer": "throaty",
+        "options": [
+         "throaty",
+         "soft"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "kochen",
+        "why": "After o: throaty."
+       },
+       {
+        "type": "choose",
+        "prompt": "Which ch is in \"Mädchen\"?",
+        "answer": "soft",
+        "options": [
+         "throaty",
+         "soft"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "das Mädchen",
+        "why": "After ä: soft."
+       },
+       {
+        "type": "choose",
+        "prompt": "How do you say the st in \"Stadt\"?",
+        "answer": "sht",
+        "options": [
+         "sht",
+         "st"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "die Stadt",
+        "why": "At the start of a word: sht."
+       },
+       {
+        "type": "choose",
+        "prompt": "How do you say the sp in \"spielen\"?",
+        "answer": "shp",
+        "options": [
+         "shp",
+         "sp"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "spielen",
+        "why": "At the start of a word: shp."
+       },
+       {
+        "type": "choose",
+        "prompt": "How do you say the chs in \"sechs\"?",
+        "answer": "ks",
+        "options": [
+         "ks",
+         "sh",
+         "ch"
+        ],
+        "hint": "Choose the right sound.",
+        "say": "sechs",
+        "why": ""
+       }
+      ]
+     }
+    },
+    {
+     "key": "g0-numbers",
+     "code": "P6",
+     "title": "Numbers 1–12",
+     "chapters": [
+      "0.6"
+     ],
+     "intro": [
+      "You need numbers from day one: phone numbers, prices, times, your age, your house number.",
+      "The numbers 1 to 12 each have their own name. From 13 on, German builds numbers out of these, so learn these twelve well."
+     ],
+     "blocks": [
+      {
+       "step": "The numbers",
+       "title": "One to twelve",
+       "text": "Press a speaker to hear each number. The last column gives a rough English guide.",
+       "table": {
+        "head": [
+         "Number",
+         "German",
+         "Say it like"
+        ],
+        "rows": [
+         [
+          "1",
+          "eins",
+          "\"eye-ns\""
+         ],
+         [
+          "2",
+          "zwei",
+          "\"tsvy\""
+         ],
+         [
+          "3",
+          "drei",
+          "\"dry\""
+         ],
+         [
+          "4",
+          "vier",
+          "\"feer\""
+         ],
+         [
+          "5",
+          "fünf",
+          "round lips for ü"
+         ],
+         [
+          "6",
+          "sechs",
+          "\"zeks\""
+         ],
+         [
+          "7",
+          "sieben",
+          "\"ZEE-ben\""
+         ],
+         [
+          "8",
+          "acht",
+          "\"ahkht\", throaty ch"
+         ],
+         [
+          "9",
+          "neun",
+          "\"noyn\""
+         ],
+         [
+          "10",
+          "zehn",
+          "\"tsayn\""
+         ],
+         [
+          "11",
+          "elf",
+          "\"elf\""
+         ],
+         [
+          "12",
+          "zwölf",
+          "\"tsv-\" + round lips for ö"
+         ]
+        ],
+        "say": [
+         "eins",
+         "zwei",
+         "drei",
+         "vier",
+         "fünf",
+         "sechs",
+         "sieben",
+         "acht",
+         "neun",
+         "zehn",
+         "elf",
+         "zwölf"
+        ],
+        "highlight": 1
+       }
+      },
+      {
+       "step": "In use",
+       "title": "Numbers in sentences",
+       "examples": [
+        [
+         "Ich bin zwölf.",
+         "I am twelve."
+        ],
+        [
+         "Ich habe zwei Kinder.",
+         "I have two children."
+        ],
+        [
+         "Zimmer elf, bitte.",
+         "Room eleven, please."
+        ],
+        [
+         "zwo",
+         "two: often used on the phone so that zwei and drei are not mixed up"
+        ]
+       ]
+      }
+     ],
+     "rules": [
+      [
+       "eins",
+       "one; when counting: eins, zwei, drei"
+      ],
+      [
+       "zwei or zwo",
+       "zwo on the phone"
+      ],
+      [
+       "sechs",
+       "chs = ks: \"zeks\""
+      ],
+      [
+       "sieben",
+       "two syllables: ZEE-ben"
+      ]
+     ],
+     "quiz": {
+      "title": "Hear it, count it",
+      "items": [
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "2",
+        "options": [
+         "2",
+         "3",
+         "10"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "zwei",
+        "why": ""
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "3",
+        "options": [
+         "3",
+         "2",
+         "8"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "drei",
+        "why": ""
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "6",
+        "options": [
+         "6",
+         "7",
+         "5"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "sechs",
+        "why": ""
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "7",
+        "options": [
+         "7",
+         "6",
+         "11"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "sieben",
+        "why": ""
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "11",
+        "options": [
+         "11",
+         "12",
+         "8"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "elf",
+        "why": ""
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "12",
+        "options": [
+         "12",
+         "2",
+         "11"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "zwölf",
+        "why": ""
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "9",
+        "options": [
+         "9",
+         "10",
+         "4"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "neun",
+        "why": ""
+       },
+       {
+        "type": "gap",
+        "before": "drei + vier = ",
+        "answer": "sieben",
+        "after": "",
+        "options": [
+         "sieben",
+         "sechs",
+         "acht"
+        ],
+        "hint": "3 + 4",
+        "say": "drei plus vier ist sieben",
+        "why": ""
+       },
+       {
+        "type": "gap",
+        "before": "zehn + zwei = ",
+        "answer": "zwölf",
+        "after": "",
+        "options": [
+         "zwölf",
+         "elf",
+         "zehn"
+        ],
+        "hint": "10 + 2",
+        "say": "zehn plus zwei ist zwölf",
+        "why": ""
+       },
+       {
+        "type": "gap",
+        "before": "acht − fünf = ",
+        "answer": "drei",
+        "after": "",
+        "options": [
+         "drei",
+         "zwei",
+         "vier"
+        ],
+        "hint": "8 − 5",
+        "say": "acht minus fünf ist drei",
+        "why": ""
+       },
+       {
+        "type": "gap",
+        "before": "neun + zwei = ",
+        "answer": "elf",
+        "after": "",
+        "options": [
+         "elf",
+         "zwölf",
+         "zehn"
+        ],
+        "hint": "9 + 2",
+        "say": "neun plus zwei ist elf",
+        "why": ""
+       },
+       {
+        "type": "gap",
+        "before": "eins + drei = ",
+        "answer": "vier",
+        "after": "",
+        "options": [
+         "vier",
+         "fünf",
+         "zwei"
+        ],
+        "hint": "1 + 3",
+        "say": "eins plus drei ist vier",
+        "why": ""
+       }
+      ]
+     }
+    }
+   ]
+  },
   {
    "id": 1,
    "title": "Introductions & Greetings",

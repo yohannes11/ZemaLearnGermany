@@ -11,7 +11,7 @@ const jsonHeaders = () => ({ 'Content-Type': 'application/json', 'X-CSRFToken': 
 const tts = window.speechSynthesis;
 let currentSpeed = 'normal';
 
-// Course content (Units 1–7) lives in course-data.js; the app shows one unit at a time.
+// Course content (the Start unit and Units 1–7) lives in course-data.js; the app shows one unit at a time.
 const COURSE_UNITS = window.COURSE.units;
 let unit = COURSE_UNITS[0];
 let vocabulary = {};
@@ -28,6 +28,10 @@ function loadUnit(id) {
   GRAMMAR = {};
   unit.grammar.forEach(g => { GRAMMAR[g.key] = g; });
 }
+
+// The Start unit (id 0) has its own name and calls its lessons "Pronunciation" rather than "Grammar".
+const unitName = u => u.label || `Unit ${u.id}`;
+const lessonsLabel = () => unit.lessonsLabel || 'Grammar';
 
 const unitOf = scope => COURSE_UNITS.find(u => u.sections.some(s => s.key === scope) || u.grammar.some(g => g.key === scope));
 
@@ -46,7 +50,7 @@ const isGrammar = scope => scope in GRAMMAR;
 let grammarScores = store.get('grammar-scores', {});
 
 const savedScope = store.get('book-scope');
-loadUnit(unitOf(savedScope)?.id || store.get('current-unit', 1));
+loadUnit(unitOf(savedScope)?.id ?? store.get('current-unit', COURSE_UNITS[0].id));
 let currentScope = SCOPES.includes(savedScope) || isGrammar(savedScope) ? savedScope : SCOPES[0];
 let currentMode = MODES.includes(store.get('book-mode')) ? store.get('book-mode') : 'learn';
 let learned = new Set(store.get('book-learned', []));
@@ -431,7 +435,7 @@ function renderUnits() {
     btn.type = 'button';
     btn.classList.toggle('active', u.id === unit.id);
     if (u.id === unit.id) btn.setAttribute('aria-current', 'true');
-    btn.innerHTML = `<b>Unit ${u.id}</b><span></span><i style="width:${Math.round(known / words.size * 100)}%"></i>`;
+    btn.innerHTML = `<b>${unitName(u)}</b><span></span><i style="width:${Math.round(known / words.size * 100)}%"></i>`;
     btn.querySelector('span').textContent = u.title;
     btn.title = `${u.title} · ${known}/${words.size} words learned`;
     btn.onclick = () => switchUnit(u.id);
@@ -440,7 +444,8 @@ function renderUnits() {
   // Keep the current unit visible when the bar scrolls (phones).
   const active = nav.querySelector('.unit-pill.active');
   if (active && nav.scrollWidth > nav.clientWidth) nav.scrollLeft = active.offsetLeft - (nav.clientWidth - active.offsetWidth) / 2;
-  document.getElementById('brand-sub').textContent = `Unit ${unit.id} · ${unit.title}`;
+  document.getElementById('brand-sub').textContent = `${unitName(unit)} · ${unit.title}`;
+  document.getElementById('part-grammar-name').textContent = lessonsLabel();
 }
 
 function renderParts() {
@@ -495,7 +500,7 @@ function renderPage() {
   });
   revealActiveTab();
   document.getElementById('eyebrow').innerHTML = grammar
-    ? `Unit ${unit.id} · Grammar · Lesson ${grammar.code}`
+    ? `${unitName(unit)} · ${lessonsLabel()} · Lesson ${grammar.code}`
     : currentScope === 'all'
     ? 'Vocabulary · Review'
     : `Vocabulary · ${currentScope} <span class="ethiopic" aria-hidden="true">· ${geez(SCOPES.indexOf(currentScope) + 1)}</span>`;
@@ -535,7 +540,7 @@ function renderToc() {
   toc.innerHTML = '';
   renderParts();
   const inGrammar = isGrammar(currentScope);
-  document.getElementById('sidebar-heading').textContent = inGrammar ? 'Grammar lessons' : 'Vocabulary sections';
+  document.getElementById('sidebar-heading').textContent = inGrammar ? `${lessonsLabel()} lessons` : 'Vocabulary sections';
   if (inGrammar) return renderGrammarToc(toc);
   SCOPES.forEach(scope => {
     if (scope === 'all') toc.appendChild(el('li', 'divider'));
@@ -634,7 +639,7 @@ function renderGrammarCallout() {
   box.innerHTML = '';
   Object.entries(GRAMMAR).filter(([, g]) => g.chapters.includes(currentScope)).forEach(([key, g]) => {
     const card = el('div', 'grammar-callout');
-    card.innerHTML = `<span class="g-badge">${g.code}</span><div><small>Grammar for this chapter</small><strong></strong></div>`;
+    card.innerHTML = `<span class="g-badge">${g.code}</span><div><small>${lessonsLabel()} for this chapter</small><strong></strong></div>`;
     card.querySelector('strong').textContent = g.title;
     const btn = el('button', 'btn', '');
     btn.type = 'button';
@@ -1122,6 +1127,21 @@ function showGrammarQuestion() {
     box.querySelector('.g-q-hint').textContent = q.hint || 'Choose the correct German sentence.';
     document.getElementById('g-options').classList.add('stack');
   }
+  // Listening items: the learner hears the word first (it plays once by itself) and can replay it.
+  if (q.type === 'listen' || q.listen) {
+    const prompt = box.querySelector('.g-q-prompt');
+    if (q.type === 'listen') {
+      prompt.classList.add('choose');
+      prompt.textContent = q.prompt;
+      box.querySelector('.g-q-hint').textContent = q.hint;
+    }
+    const play = el('button', 'btn listen-btn', '');
+    play.type = 'button';
+    play.innerHTML = `${icon('speaker')}Play again`;
+    play.onclick = () => speak(q.say);
+    prompt.after(play);
+    speak(q.say);
+  }
   // For endings the blank sits right after the stem, with no space.
   if (gQuiz.kind === 'present') box.querySelector('.g-q-prompt').innerHTML = `<span></span><span class="blank">?</span>`;
   if (gQuiz.kind === 'present') box.querySelector('.g-q-prompt span').textContent = q.before;
@@ -1147,7 +1167,7 @@ function answerGrammar(option, chip) {
   if (blank) blank.textContent = q.answer;
   const fb = document.getElementById('g-feedback');
   fb.innerHTML = `<div class="alert ${right ? 'correct' : 'wrong'}"><span class="alert-icon">${icon(right ? 'check' : 'x')}</span>
-    <span class="alert-title">${right ? 'Correct' : 'Not quite'}</span><span class="alert-answer"><small>Correct form</small><span></span></span><span class="alert-note"></span></div>`;
+    <span class="alert-title">${right ? 'Correct' : 'Not quite'}</span><span class="alert-answer"><small>${q.type === 'listen' ? 'You heard' : q.say !== q.answer && q.type === 'choose' ? 'The word' : 'Correct form'}</small><span></span></span><span class="alert-note"></span></div>`;
   fb.querySelector('.alert-answer span').textContent = q.say;
   fb.querySelector('.alert-note').textContent = gQuiz.kind === 'present'
     ? (right ? '' : explainEnding(q))

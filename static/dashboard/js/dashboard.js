@@ -68,7 +68,7 @@ function render() {
   renderTiles(w);
   renderChart(w);
   renderBars('modes', Object.entries(data.modes).map(([k, v]) => [MODE_NAMES[k] || k, v]));
-  renderBars('units', Object.entries(data.units).map(([k, v]) => [`Unit ${k}`, v]), true);
+  renderBars('units', Object.entries(data.units).map(([k, v]) => [k === '0' ? 'Start' : `Unit ${k}`, v]), true);
   renderBars('devices', Object.entries(data.devices).map(([k, v]) => [k === 'phone' ? 'Phone / tablet' : 'Computer', v]));
   renderTable(w);
 }
