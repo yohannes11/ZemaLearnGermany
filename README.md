@@ -1,7 +1,9 @@
 # ZemaLearnGermany
 
-A German A1.1 course for beginners: Units 1–7 with vocabulary and grammar, natural-voice audio,
-speaking practice with an animated coach, flashcards and matching quizzes. Learners can create an
+A German A1.1 course for beginners: a Start unit (pronunciation, alphabet, numbers) and Units 1–9 with
+vocabulary, grammar, reading texts and a unit test each; natural-voice audio, speaking practice with an
+animated coach, flashcards, matching, sentence building, dictation and translation exercises. Course
+content lives in `tools/course_content.py`. Learners can create an
 account to keep their progress; admins get a usage report and user management.
 
 Built with Django 5.2 (LTS).
@@ -75,6 +77,37 @@ checked. Update the figure and its source together.
 The photos in `static/landing/img/` come from Wikimedia Commons. Their authors and licenses (public
 domain, CC BY and CC BY-SA) are listed in `content.py` and credited in the page footer; the files were
 only resized.
+
+## Interface languages (English / Amharic)
+
+Every page can be shown in English or Amharic. The language comes from `?lang=am` / `?lang=en` (remembered in
+a cookie), else the browser's language, else English; the switch sits in the course's top bar and the landing
+page's navigation.
+
+English text is the key: `locale/am.json` maps each English string to its Amharic translation, in a `site`
+section (pages Django renders: `{% t "…" %}` in templates, the landing content in `apps/landing/content.py`) and
+a `course` section (`T('…')` in `course.js`, the unit, section and lesson titles, and the server's account
+messages; sent to the browser with the course page). `{placeholders}` are filled in after translating. A string
+without a translation stays English. After changing interface text, run `python manage.py i18n_missing` (add
+`--json` for a skeleton to fill in); the tests fail while anything is untranslated or unused.
+
+The course content is in Amharic too. German stays German (it is what the course teaches); everything that
+explains it switches: word meanings (`tools/course_am/words*.txt`, by German word) and every English lesson text,
+example meaning, rule, hint and exercise prompt (`tools/course_am/u*.txt`, `English ||| Amharic`). Clock times
+give the Ethiopian-clock reading with the European time in brackets (9 Uhr = ሦስት ሰዓት (9:00)), and pronunciation
+guides use Fidel instead of English sounds. `python3 tools/course_content.py` compiles them into
+`static/course/js/course-am.js`, which only Amharic visitors load, and reports anything still missing;
+`tools/course_am_strings.py` decides which lesson texts are English, and the tests fail while one has no Amharic.
+In Amharic, "what does it mean in English?" exercises become a choice between Amharic meanings, and Practice
+checks typed Amharic answers locally (the AI checker grades English only). The admin dashboard stays English.
+
+## Word pictures
+
+About 60% of the vocabulary has a picture: emoji chosen per word in `tools/word_pictures.py` (compound
+words show their parts, e.g. *der Apfelkuchen* = 🍎 + 🍰; words with no honest picture have none). The
+artwork is [Twemoji](https://github.com/jdecked/twemoji) (CC BY 4.0, credited under the course page),
+stored in `static/course/pics/`. After editing the list, run `python3 tools/course_content.py` and then
+`python3 tools/fetch_word_pictures.py` to download any new SVGs.
 
 ## Security notes
 

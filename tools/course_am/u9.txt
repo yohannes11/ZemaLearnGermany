@@ -1,0 +1,138 @@
+# Unit 9 lessons. English ||| Amharic
+
+## g9-perfect-haben
+To talk about the past in spoken German you mostly use the perfect: <strong>haben</strong> in position 2 + the <strong>participle</strong> at the end: <em class="de">Ich habe Kaffee getrunken.</em> ||| በንግግር ጀርመንኛ ስለ ያለፈ ጊዜ ለመናገር በአብዛኛው ፔርፌክትን ይጠቀማሉ፦ <strong>haben</strong> በቦታ 2 + <strong>ፓርቲሲፕሉ</strong> መጨረሻ ላይ፦ <em class="de">Ich habe Kaffee getrunken.</em> (ቡና ጠጣሁ።)
+Regular verbs: <strong>ge- … -t</strong>: machen → gemacht, kaufen → gekauft. Many irregular verbs: <strong>ge- … -en</strong>, often with a new vowel: trinken → getrunken, lesen → gelesen. ||| መደበኛ ግሦች፦ <strong>ge- … -t</strong>፦ machen → gemacht፣ kaufen → gekauft። ብዙ ደንብ የማይከተሉ ግሦች፦ <strong>ge- … -en</strong>፣ ብዙ ጊዜ በአዲስ አናባቢ፦ trinken → getrunken፣ lesen → gelesen።
+Separable verbs put ge in the middle: einkaufen → ein<strong>ge</strong>kauft. Verbs ending in <strong>-ieren</strong> have no ge: telefonieren → telefoniert. ||| ተነጣይ ግሦች geን መሃል ላይ ያስገባሉ፦ einkaufen → ein<strong>ge</strong>kauft። በ<strong>-ieren</strong> የሚያልቁ ግሦች ge የላቸውም፦ telefonieren → telefoniert።
+Participles ||| ፓርቲሲፕሎች
+Four patterns ||| አራት ቅርጾች
+Yesterday ||| ትናንት
+What did you do yesterday? ||| ትናንት ምን አደረግክ/አደረግሽ?
+I worked all day. ||| ቀኑን ሙሉ ሠራሁ።
+We ate injera. ||| እንጀራ በላን።
+Have you done the shopping yet? ||| ገበያውን አስቀድመህ/አስቀድመሽ ጨረስክ/ጨረስሽ?
+In the evening I watched TV. ||| ማታ ቴሌቪዥን አየሁ።
+haben + participle ||| haben + ፓርቲሲፕል
+Ich habe … gemacht. ||| Ich habe … gemacht.
+ge- … -t ||| ge- … -t
+gemacht, gekauft, gearbeitet ||| gemacht, gekauft, gearbeitet
+ge- … -en ||| ge- … -en
+getrunken, gelesen, geschlafen ||| getrunken, gelesen, geschlafen
+Separable / -ieren ||| ተነጣይ / -ieren
+eingekauft / telefoniert ||| eingekauft / telefoniert
+What did you do? ||| ምን አደረግክ/አደረግሽ?
+I worked a lot yesterday. ||| ትናንት ብዙ ሠራሁ።
+We drank coffee. ||| ቡና ጠጣን።
+Did you read the newspaper? ||| ጋዜጣውን አነበብክ/አነበብሽ?
+She did the shopping at the supermarket. ||| እሷ ሱፐርማርኬት ገበየች።
+Separable: ge goes in the middle. ||| ተነጣይ፦ ge መሃል ላይ ይገባል።
+I was on the phone for a long time. ||| ረጅም ጊዜ በስልክ አወራሁ።
+-ieren verbs have no ge. ||| የ-ieren ግሦች ge የላቸውም።
+In the evening we watched TV. ||| ማታ ቴሌቪዥን አየን።
+What did you do on Sunday? ||| እሑድ ምን አደረግክ/አደረግሽ?
+He took a photo. ||| ፎቶ አነሳ።
+The participle of schlafen: ||| የschlafen ፓርቲሲፕል፦
+The participle of kaufen: ||| የkaufen ፓርቲሲፕል፦
+I read the newspaper yesterday. ||| ትናንት ጋዜጣውን አነበብኩ።
+What did you do at the weekend? ||| ቅዳሜና እሑድ ምን አደረግክ/አደረግሽ?
+I cooked. ||| ምግብ አበሰልኩ።
+We went shopping. ||| ገበያ ሄድን።
+
+## g9-sein-haben
+Most verbs make their perfect with haben. But verbs of <strong>movement from A to B</strong> use <strong>sein</strong>: gehen, fahren, fliegen, kommen, laufen, ankommen. ||| አብዛኞቹ ግሦች ፔርፌክታቸውን በhaben ይሠራሉ። ግን <strong>ከሀ ወደ ለ የሚደረግ እንቅስቃሴን</strong> የሚገልጹ ግሦች <strong>sein</strong> ይጠቀማሉ፦ gehen, fahren, fliegen, kommen, laufen, ankommen።
+Also with sein: <em class="de">bleiben</em> (to stay), <em class="de">passieren</em> (to happen) and <em class="de">sein</em> itself: <em class="de">Ich bin in Berlin gewesen.</em> ||| ከsein ጋር የሚሄዱ ሌሎች፦ <em class="de">bleiben</em> (መቆየት)፣ <em class="de">passieren</em> (መከሰት) እና <em class="de">sein</em> ራሱ፦ <em class="de">Ich bin in Berlin gewesen.</em> (በርሊን ነበርኩ።)
+With sein ||| ከsein ጋር
+Movement and change ||| እንቅስቃሴና ለውጥ
+Where did you go? ||| ወዴት ሄድክ/ሄድሽ?
+I went to Hawassa. ||| ወደ ሐዋሳ ሄድኩ።
+We came home late. ||| ዘግይተን ወደ ቤት መጣን።
+Have you ever flown? ||| በአውሮፕላን በርረህ/በርረሽ ታውቃለህ/ታውቂያለሽ?
+He stayed at home. ||| ቤት ቆየ።
+What happened? ||| ምን ሆነ?
+movement A → B: gehen, fahren, fliegen ||| እንቅስቃሴ ሀ → ለ፦ gehen, fahren, fliegen
+also bleiben and passieren ||| እንዲሁም bleiben እና passieren
+everything else: gegessen, gearbeitet ||| ሌሎቹ ሁሉ፦ gegessen, gearbeitet
+gegangen, gefahren, geflogen ||| gegangen, gefahren, geflogen
+I went to Adama. ||| ወደ አዳማ ሄድኩ።
+She stayed at home. ||| እሷ ቤት ቆየች።
+He slept for a long time. ||| ረጅም ሰዓት ተኛ።
+When did you arrive? ||| መቼ ደረስክ/ደረስሽ?
+You (all) learned a lot. ||| እናንተ ብዙ ተማራችሁ።
+I went home. ||| ወደ ቤት ሄድኩ።
+We flew to Frankfurt. ||| ወደ ፍራንክፈርት በረርን።
+I came home late. ||| ዘግይቼ ወደ ቤት መጣሁ።
+Did you go by train? ||| በባቡር ሄድክ/ሄድሽ?
+He flew to Germany. ||| ወደ ጀርመን በረረ።
+
+## g9-war-hatte
+For <em class="de">sein</em> and <em class="de">haben</em>, German prefers a short past form, even when speaking: <strong>war</strong> (was) and <strong>hatte</strong> (had). ||| ለ<em class="de">sein</em> እና ለ<em class="de">haben</em> ጀርመንኛ በንግግርም ቢሆን አጭሩን የያለፈ ጊዜ ቅርጽ ይመርጣል፦ <strong>war</strong> (ነበር) እና <strong>hatte</strong> (ነበረው)።
+<em class="de">Ich bin in Berlin gewesen</em> is correct, but <em class="de">Ich war in Berlin</em> is what you will usually hear. ||| <em class="de">Ich bin in Berlin gewesen</em> ትክክል ነው፤ ግን በአብዛኛው የሚሰሙት <em class="de">Ich war in Berlin</em> ነው።
+sein and haben in the past ||| sein እና haben በያለፈ ጊዜ
+Telling about a trip ||| ስለ ጉዞ መናገር
+How was the trip? – It was great! ||| ጉዞው እንዴት ነበር? – በጣም ጥሩ ነበር!
+Last year I was in Lalibela. ||| ባለፈው ዓመት ላሊበላ ነበርኩ።
+We had a lot of fun. ||| በጣም ተደሰትን።
+Were you lucky with the weather? ||| የአየሩ ሁኔታ ጥሩ ገጠመህ/ገጠመሽ?
+Yesterday I was ill. ||| ትናንት ታምሜ ነበር።
+ich / er war ||| ich / er war
+du warst, ihr wart ||| du warst, ihr wart
+you were ||| ነበርክ/ነበርሽ፣ ነበራችሁ
+ich / er hatte ||| ich / er hatte
+wir / sie waren, hatten ||| wir / sie waren, hatten
+we / they were, had ||| ነበርን/ነበሩ፣ ነበረን/ነበራቸው
+war or hatte? ||| war ወይስ hatte?
+How was the trip? ||| ጉዞው እንዴት ነበር?
+Have you ever been to Gondar? ||| ጎንደር ሄደህ/ሄደሽ ታውቃለህ/ታውቂያለሽ?
+You (all) were very tired. ||| እናንተ በጣም ደክሟችሁ ነበር።
+I didn't have time. ||| ጊዜ አልነበረኝም።
+My parents were on holiday. ||| ወላጆቼ ዕረፍት ላይ ነበሩ።
+A shorter way to say "Ich bin in Rom gewesen": ||| «Ich bin in Rom gewesen» የሚለውን በአጭሩ ለመናገር፦
+The trip was nice. ||| ጉዞው ጥሩ ነበር።
+
+## g9-time
+<strong>von … bis</strong>: from … to: <em class="de">von 9 bis 17 Uhr</em>. <strong>ab</strong>: from … on: <em class="de">ab 8 Uhr</em>. ||| <strong>von … bis</strong>፦ ከ… እስከ፦ <em class="de">von 9 bis 17 Uhr</em> (ከሦስት እስከ አሥራ አንድ ሰዓት)። <strong>ab</strong>፦ ከ… ጀምሮ፦ <em class="de">ab 8 Uhr</em> (ከሁለት ሰዓት ጀምሮ)።
+<strong>im</strong> with months and seasons: <em class="de">im März, im Winter</em>. <strong>seit</strong>: since, for: <em class="de">seit 2015</em>. ||| <strong>im</strong> ከወራትና ከወቅቶች ጋር፦ <em class="de">im März, im Winter</em>። <strong>seit</strong>፦ ከ… ጀምሮ / ለ… ያህል፦ <em class="de">seit 2015</em>።
+Where to? Cities and most countries take <strong>nach</strong>: <em class="de">nach Berlin, nach Deutschland</em>. Countries with an article take <strong>in die</strong>: <em class="de">in die Schweiz, in die Türkei, in die USA</em>. ||| ወዴት? ከተሞችና አብዛኞቹ አገሮች <strong>nach</strong> ይወስዳሉ፦ <em class="de">nach Berlin, nach Deutschland</em>። መስተኣምር ያላቸው አገሮች <strong>in die</strong> ይወስዳሉ፦ <em class="de">in die Schweiz, in die Türkei, in die USA</em>።
+Overview ||| አጠቃላይ እይታ
+Small words for time and place ||| ለጊዜና ለቦታ አጫጭር ቃላት
+Meaning ||| ትርጉም
+from … to ||| ከ… እስከ
+from … on ||| ከ… ጀምሮ
+to (city, country) ||| ወደ (ከተማ፣ አገር)
+to (country with die) ||| ወደ (die ያለው አገር)
+Opening hours and festivals ||| የሥራ ሰዓታትና በዓላት
+The surgery is open from Monday to Friday. ||| ክሊኒኩ ከሰኞ እስከ ዓርብ ክፍት ነው።
+From 6 pm the bank is closed. ||| ከምሽቱ 12 ሰዓት (18:00) ጀምሮ ባንኩ ዝግ ነው።
+In September we celebrate Enkutatash. ||| በሴፕቴምበር (መስከረም) እንቁጣጣሽን እናከብራለን።
+The Oktoberfest has existed since 1810. ||| ኦክቶበርፌስት ከ1810 ጀምሮ ሲከበር ቆይቷል።
+Last year I flew to Germany. ||| ባለፈው ዓመት ወደ ጀርመን በረርኩ።
+von … bis ||| von … bis
+von 9 bis 17 Uhr ||| von 9 bis 17 Uhr
+ab ||| ab
+ab 8 Uhr ||| ab 8 Uhr
+im / seit ||| im / seit
+im Mai, seit 2015 ||| im Mai, seit 2015
+nach / in die ||| nach / in die
+nach Berlin, in die Schweiz ||| nach Berlin, in die Schweiz
+Time and place ||| ጊዜና ቦታ
+The bank is open from 9 to 4. ||| ባንኩ ከሦስት እስከ አሥር ሰዓት (9–16) ክፍት ነው።
+From 8 pm the pharmacy is closed. ||| ከምሽቱ ሁለት ሰዓት (20:00) ጀምሮ መድኃኒት ቤቱ ዝግ ነው።
+My birthday is in April. ||| ልደቴ በኤፕሪል (ሚያዝያ አካባቢ) ነው።
+The festival has existed since 1810. ||| በዓሉ ከ1810 ጀምሮ ሲከበር ቆይቷል።
+We are going to Hamburg. ||| ወደ ሃምቡርግ እንሄዳለን።
+She is flying to Switzerland. ||| ወደ ስዊዘርላንድ ትበራለች።
+I am flying to Ethiopia. ||| ወደ ኢትዮጵያ እበራለሁ።
+In winter it is cold in Berlin. ||| በክረምት (ዊንተር) በርሊን ቀዝቃዛ ነው።
+I have been learning German for three months. ||| ጀርመንኛ መማር ከጀመርኩ ሦስት ወር ሆኖኛል።
+The shop is open from 8 am to 8 pm: ||| ሱቁ ከጠዋቱ ሁለት ሰዓት እስከ ምሽቱ ሁለት ሰዓት (8–20) ክፍት ነው፦
+The surgery is closed on Monday. ||| ክሊኒኩ ሰኞ ዝግ ነው።
+When is the bank open? ||| ባንኩ መቼ ክፍት ነው?
+
+## g9-reading
+for a year ||| ለአንድ ዓመት
+the seasons ||| ወቅቶቹ
+the port ||| ወደቡ
+to visit ||| ለመጎብኘት
+Ethiopian ||| ኢትዮጵያዊ
+What did Selam see in Hamburg? ||| ሰላም በሃምቡርግ ምን አየች?
+I had a lot of fun. ||| በጣም ተደሰትኩ።

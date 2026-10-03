@@ -1,0 +1,300 @@
+# Start unit: pronunciation and numbers. Format: English ||| Amharic (German inside stays German).
+# Pronunciation guides use Amharic sounds (Fidel), not English ones.
+
+## g0-vowels
+Good news: German is written almost exactly as it is spoken. Once you know the sounds of the letters, you can read any word aloud, even one you have never seen before. ||| መልካም ዜና፦ ጀርመንኛ እንደሚነገረው ማለት ይቻላል በትክክል ይጻፋል። የፊደላቱን ድምፆች ካወቁ ማንኛውንም ቃል፣ ከዚህ በፊት ያላዩትንም ቢሆን፣ ጮክ ብለው ማንበብ ይችላሉ።
+Each vowel (<em class="de">a, e, i, o, u</em>) has a <strong>long</strong> and a <strong>short</strong> sound. The spelling around the vowel tells you which one to use. ||| እያንዳንዱ አናባቢ (<em class="de">a, e, i, o, u</em>) <strong>ረጅም</strong> እና <strong>አጭር</strong> ድምፅ አለው። የትኛውን እንደሚጠቀሙ በአናባቢው ዙሪያ ያለው አጻጻፍ ይነግርዎታል።
+The sounds ||| ድምፆቹ
+Five vowels, two lengths ||| አምስት አናባቢዎች፣ ሁለት ርዝመቶች
+Press a speaker to hear the long word, then the short one. ||| ረጅሙን ቃል ከዚያም አጭሩን ለመስማት የድምፅ ምልክቱን ይጫኑ።
+a ||| a
+i ||| i
+The spelling ||| አጻጻፉ
+How to tell long from short ||| ረጅምን ከአጭር እንዴት መለየት እንደሚቻል
+Double vowel: long. ||| ድርብ አናባቢ፦ ረጅም።
+Vowel + h: long. The h itself is silent. ||| አናባቢ + h፦ ረጅም። h ራሱ አይነበብም።
+One vowel + one consonant: usually long. ||| አንድ አናባቢ + አንድ ተነባቢ፦ በአብዛኛው ረጅም።
+Double consonant: short. ||| ድርብ ተነባቢ፦ አጭር።
+Two different consonants: usually short. ||| ሁለት የተለያዩ ተነባቢዎች፦ በአብዛኛው አጭር።
+Every letter counts ||| እያንዳንዱ ፊደል ይቆጠራል
+Nothing is silent at the end ||| መጨረሻ ላይ የማይነበብ ፊደል የለም
+The final e is spoken: NAH-meh. ||| የመጨረሻው e ይነበባል፦ «ና-ሜ»።
+BIT-teh, never "bit". ||| «ቢ-ቴ» እንጂ በፍጹም «ቢት» አይደለም።
+A final -er sounds like a short "ah": FAH-tah. ||| መጨረሻ ላይ ያለው -er እንደ አጭር «አ» ይሰማል፦ «ፋ-ተ»።
+Double vowel or vowel + h ||| ድርብ አናባቢ ወይም አናባቢ + h
+long: Tee, Jahr ||| ረጅም፦ Tee, Jahr
+Double consonant ||| ድርብ ተነባቢ
+short: Mann, Bett ||| አጭር፦ Mann, Bett
+Final -e is spoken ||| የመጨረሻው -e ይነበባል
+Name = NAH-meh, never silent ||| Name = «ና-ሜ»፤ e በፍጹም ዝም አይልም
+Final -er ||| የመጨረሻው -er
+a short "ah": Vater, Mutter ||| አጭር «አ»፦ Vater, Mutter
+Long or short? ||| ረጅም ወይስ አጭር?
+Choose the right sound. ||| ትክክለኛውን ድምፅ ይምረጡ።
+In "Tee", is the e long or short? ||| በ«Tee» ውስጥ e ረጅም ነው ወይስ አጭር?
+In "Mann", is the a long or short? ||| በ«Mann» ውስጥ a ረጅም ነው ወይስ አጭር?
+Vowel + h: long. ||| አናባቢ + h፦ ረጅም።
+In "Jahr", is the a long or short? ||| በ«Jahr» ውስጥ a ረጅም ነው ወይስ አጭር?
+In "bitte", is the i long or short? ||| በ«bitte» ውስጥ i ረጅም ነው ወይስ አጭር?
+One vowel + one consonant: long. ||| አንድ አናባቢ + አንድ ተነባቢ፦ ረጅም።
+In "gut", is the u long or short? ||| በ«gut» ውስጥ u ረጅም ነው ወይስ አጭር?
+The final e is always spoken. ||| የመጨረሻው e ሁልጊዜ ይነበባል።
+How do you end the word "Name"? ||| «Name» የሚለውን ቃል እንዴት ይጨርሱታል?
+Press play as often as you like, then choose. ||| የፈለጉትን ያህል ጊዜ ያዳምጡ፤ ከዚያም ይምረጡ።
+Stadt (city) has a short a, Staat (state) a long one. ||| Stadt (ከተማ) አጭር a አለው፤ Staat (አገር/መንግሥት) ደግሞ ረጅም።
+Which one do you hear? ||| የትኛውን ይሰማሉ?
+Bett (bed) is short, Beet (flower bed) is long. ||| Bett (አልጋ) አጭር ነው፤ Beet (የአበባ መደብ) ረጅም ነው።
+offen (open) is short, Ofen (oven) is long. ||| offen (ክፍት) አጭር ነው፤ Ofen (ምድጃ) ረጅም ነው።
+Miete (rent) has a long ie, Mitte (middle) a short i. ||| Miete (የቤት ኪራይ) ረጅም ie አለው፤ Mitte (መሃል) ደግሞ አጭር i።
+
+## g0-umlauts
+The two dots change the sound. <em class="de">ä</em>, <em class="de">ö</em> and <em class="de">ü</em> are vowels of their own, so <em class="de">schon</em> (already) and <em class="de">schön</em> (beautiful) are two different words. ||| ሁለቱ ነጥቦች ድምፁን ይቀይራሉ። <em class="de">ä</em>፣ <em class="de">ö</em> እና <em class="de">ü</em> የራሳቸው አናባቢዎች ናቸው፤ ስለዚህ <em class="de">schon</em> (አስቀድሞ) እና <em class="de">schön</em> (ቆንጆ) ሁለት የተለያዩ ቃላት ናቸው።
+No umlaut on your keyboard? Write <strong>ae, oe, ue</strong>: <em class="de">Mädchen</em> → <em class="de">Maedchen</em>. You will also see this in email addresses and on forms. ||| ቁልፍ ሰሌዳዎ ላይ ኡምላውት የለም? <strong>ae, oe, ue</strong> ብለው ይጻፉ፦ <em class="de">Mädchen</em> → <em class="de">Maedchen</em>። ይህንን በኢሜይል አድራሻዎችና በቅጾች ላይም ያዩታል።
+How to make them ||| እንዴት እንደሚነገሩ
+The trick for ö and ü: say a sound you know, then round your lips without moving your tongue. ||| የö እና የü ብልሃት፦ የሚያውቁትን ድምፅ ይናገሩ፤ ከዚያም ምላስዎን ሳያንቀሳቅሱ ከንፈርዎን ያክብቡ።
+How to say it ||| እንዴት እንደሚባል
+Example ||| ምሳሌ
+like the e in "bed" ||| እንደ «ኤ» (ለምሳሌ «ቤት» ውስጥ)
+say "eh", then round your lips ||| «ኤ» ይበሉ፤ ከዚያም ከንፈርዎን ያክብቡ
+say "ee", then round your lips as if to whistle ||| «ኢ» ይበሉ፤ ከዚያም እንደሚያፏጩ ከንፈርዎን ያክብቡ
+Listen ||| ያዳምጡ
+Two dots, a different word ||| ሁለት ነጥቦች፣ ሌላ ቃል
+already, beautiful ||| አስቀድሞ፣ ቆንጆ
+the mother, the mothers ||| እናት፣ እናቶች
+the father, the fathers ||| አባት፣ አባቶች
+to pay, to count ||| መክፈል፣ መቁጠር
+ä ||| ä
+ö ||| ö
+"eh" with round lips ||| በተከበበ ከንፈር «ኤ»
+ü ||| ü
+"ee" with round lips ||| በተከበበ ከንፈር «ኢ»
+No umlaut key? ||| የኡምላውት ቁልፍ የለም?
+write ae, oe, ue ||| ae, oe, ue ብለው ይጻፉ
+With or without the dots? ||| ከነጥቦቹ ጋር ወይስ ያለ ነጥቦቹ?
+schön = beautiful, schon = already. ||| schön = ቆንጆ፣ schon = አስቀድሞ።
+schon = already, schön = beautiful. ||| schon = አስቀድሞ፣ schön = ቆንጆ።
+die Mütter = the mothers. ||| die Mütter = እናቶች።
+die Väter = the fathers. ||| die Väter = አባቶች።
+die Brüder = the brothers. ||| die Brüder = ወንድሞች።
+zählen = to count, zahlen = to pay. ||| zählen = መቁጠር፣ zahlen = መክፈል።
+können = can, kennen = to know (someone). ||| können = መቻል፣ kennen = (ሰውን) ማወቅ።
+ä → ae. ||| ä → ae።
+How do you write "Mädchen" without ä? ||| «Mädchen»ን ያለ ä እንዴት ይጽፉታል?
+ö → oe. ||| ö → oe።
+How do you write "schön" without ö? ||| «schön»ን ያለ ö እንዴት ይጽፉታል?
+ü → ue. ||| ü → ue።
+How do you write "Tschüss" without ü? ||| «Tschüss»ን ያለ ü እንዴት ይጽፉታል?
+
+## g0-pairs
+Some vowels come in pairs and make a single sound. The famous trap is <em class="de">ei</em> and <em class="de">ie</em>, which sound nothing alike. ||| አንዳንድ አናባቢዎች ጥንድ ሆነው አንድ ድምፅ ይሰጣሉ። ዋናው ወጥመድ <em class="de">ei</em> እና <em class="de">ie</em> ናቸው፤ ፈጽሞ አይመሳሰሉም።
+The trick: say the <strong>second</strong> letter the English way. In <em class="de">ei</em> you say English "i" (eye): <em class="de">mein</em>. In <em class="de">ie</em> you say English "e" (ee): <em class="de">die</em>. ||| ብልሃቱ፦ <em class="de">ei</em> ሁልጊዜ «አይ» ነው (<em class="de">mein</em> = «ማይን»)፤ <em class="de">ie</em> ደግሞ ሁልጊዜ ረጅም «ኢ» ነው (<em class="de">die</em> = «ዲ»)። <strong>ሁለተኛውን</strong> ፊደል ይመልከቱ፦ በie ውስጥ «ኢ» ይሰማል።
+Four pairs to know ||| ሊያውቋቸው የሚገቡ አራት ጥንዶች
+Press a speaker to hear the examples. ||| ምሳሌዎቹን ለመስማት የድምፅ ምልክቱን ይጫኑ።
+Examples ||| ምሳሌዎች
+"ee" in "see" ||| ረጅም «ኢ»
+"oy" in "boy" ||| «ኦይ»
+"ow" in "how" ||| «አው»
+In real words ||| በእውነተኛ ቃላት
+the wine, Vienna ||| ወይን፣ ቪየና
+the beer ||| ቢራ
+German ||| ጀርመንኛ
+Goodbye! ||| ደህና ሁን/ሁኚ!
+ei = "eye" ||| ei = «አይ»
+mein, drei ||| mein, drei
+ie = "ee" ||| ie = «ኢ»
+die, vier ||| die, vier
+eu = äu = "oy" ||| eu = äu = «ኦይ»
+neu, Häuser ||| neu, Häuser
+au = "ow" ||| au = «አው»
+Haus, Frau ||| Haus, Frau
+Listen and fill in the letters ||| ያዳምጡና ፊደላቱን ይሙሉ
+three ||| ሦስት
+four ||| አራት
+seven ||| ሰባት
+no ||| አይ
+my ||| የእኔ
+the time ||| ጊዜ
+the love ||| ፍቅር
+today ||| ዛሬ
+the house ||| ቤት
+nine ||| ዘጠኝ
+the woman ||| ሴት
+
+## g0-consonants
+Most consonants sound just as they do in English. A few letters follow German rules, and they appear in many everyday words. ||| አብዛኞቹ ተነባቢዎች ለመናገር ቀላል ናቸው። ጥቂት ፊደላት ግን የጀርመንኛ ደንብ ይከተላሉ፤ እነሱም በብዙ የዕለት ተዕለት ቃላት ውስጥ ይገኛሉ።
+Six letters to watch ||| ልብ ሊሏቸው የሚገቡ ስድስት ፊደላት
+Press a speaker to hear each example. ||| እያንዳንዱን ምሳሌ ለመስማት የድምፅ ምልክቱን ይጫኑ።
+Sounds like ||| የሚሰማው
+"ts" as in "cats" ||| «ትስ»
+At the end of a word ||| በቃል መጨረሻ ላይ
+b, d, g go quiet ||| b፣ d፣ g ይለሰልሳሉ
+At the end of a word, b, d and g sound like p, t and k. ||| በቃል መጨረሻ ላይ b፣ d እና g እንደ p፣ t እና k (ፕ፣ ት፣ ክ) ይሰማሉ።
+yellow: the b sounds like p ||| ቢጫ፦ b እንደ «ፕ» ይሰማል
+and: the d sounds like t ||| እና፦ d እንደ «ት» ይሰማል
+the day: the g sounds like k ||| ቀን፦ g እንደ «ክ» ይሰማል
+w → v ||| w → «ቨ»
+Wasser, Wein ||| Wasser, Wein
+v → f ||| v → «ፈ»
+Vater, vier ||| Vater, vier
+z → ts ||| z → «ትስ»
+Zeit, zwei ||| Zeit, zwei
+j → y ||| j → «የ»
+ja, jetzt ||| ja, jetzt
+Final b, d, g → p, t, k ||| በመጨረሻ b፣ d፣ g → ፕ፣ ት፣ ክ
+gelb, und, Tag ||| gelb, und, Tag
+How does it sound? ||| እንዴት ይሰማል?
+How does the w in "Wasser" sound? ||| በ«Wasser» ውስጥ ያለው w እንዴት ይሰማል?
+like English v ||| እንደ «ቨ»
+like English w ||| እንደ «ወ»
+like English f ||| እንደ «ፈ»
+How does the w in "Wein" sound? ||| በ«Wein» ውስጥ ያለው w እንዴት ይሰማል?
+How does the v in "Vater" sound? ||| በ«Vater» ውስጥ ያለው v እንዴት ይሰማል?
+How does the v in "vier" sound? ||| በ«vier» ውስጥ ያለው v እንዴት ይሰማል?
+How does the z in "Zeit" sound? ||| በ«Zeit» ውስጥ ያለው z እንዴት ይሰማል?
+like "ts" ||| እንደ «ትስ»
+like English z ||| እንደ «ዘ»
+like "s" ||| እንደ «ሰ»
+How does the z in "zwei" sound? ||| በ«zwei» ውስጥ ያለው z እንዴት ይሰማል?
+How does the j in "ja" sound? ||| በ«ja» ውስጥ ያለው j እንዴት ይሰማል?
+like English y ||| እንደ «የ»
+like English j ||| እንደ «ጀ»
+like "h" ||| እንደ «ሀ»
+s before a vowel sounds like z. ||| ከአናባቢ በፊት ያለ s እንደ «ዘ» ይሰማል።
+How does the s in "Sonne" sound? ||| በ«Sonne» ውስጥ ያለው s እንዴት ይሰማል?
+like English s ||| እንደ «ሰ»
+like "sh" ||| እንደ «ሸ»
+How does the ß in "Straße" sound? ||| በ«Straße» ውስጥ ያለው ß እንዴት ይሰማል?
+like "ss" ||| እንደ ጠንካራ «ሰ»
+like "b" ||| እንደ «በ»
+A final d sounds like t. ||| በመጨረሻ ያለ d እንደ «ት» ይሰማል።
+How does the d in "und" sound? ||| በ«und» ውስጥ ያለው d እንዴት ይሰማል?
+like t ||| እንደ «ት»
+like d ||| እንደ «ድ»
+A final g sounds like k. ||| በመጨረሻ ያለ g እንደ «ክ» ይሰማል።
+How does the g in "Tag" sound? ||| በ«Tag» ውስጥ ያለው g እንዴት ይሰማል?
+like k ||| እንደ «ክ»
+like g ||| እንደ «ግ»
+
+## g0-sch-ch
+<em class="de">sch</em> is simply English "sh": <em class="de">Schule</em>. At the start of a word, <em class="de">sp</em> and <em class="de">st</em> sound like "shp" and "sht": <em class="de">sprechen</em>, <em class="de">Stadt</em>. ||| <em class="de">sch</em> ልክ እንደ «ሸ» ነው፦ <em class="de">Schule</em> = «ሹለ»። በቃል መጀመሪያ ላይ <em class="de">sp</em> እና <em class="de">st</em> «ሽፕ» እና «ሽት» ይባላሉ፦ <em class="de">sprechen</em>፣ <em class="de">Stadt</em>።
+<em class="de">ch</em> has two sounds, and the letter just before it decides which one you use. ||| <em class="de">ch</em> ሁለት ድምፆች አሉት፤ የትኛውን እንደሚጠቀሙ የሚወስነው ከፊቱ ያለው ፊደል ነው።
+The two ch sounds ||| ሁለቱ የch ድምፆች
+After ||| ከ… በኋላ
+a, o, u, au ||| a, o, u, au
+throaty, at the back ||| ከጉሮሮ፣ ከኋላ የሚወጣ (እንደ ጠንካራ «ኽ»)
+any other ||| ሌሎች ሁሉ
+soft, like the h in "huge" ||| ለስላሳ፣ እንደ ቀጭን «ሽ» እና «ህ» መካከል
+More letter groups ||| ተጨማሪ የፊደል ቡድኖች
+the school: sch = sh ||| ትምህርት ቤት፦ sch = «ሸ»
+to speak: sp = shp ||| መናገር፦ sp = «ሽፕ»
+the city: st = sht ||| ከተማ፦ st = «ሽት»
+six: chs = ks ||| ስድስት፦ chs = «ክስ»
+the apple: pf, both letters are spoken ||| ፖም፦ pf፣ ሁለቱም ፊደላት ይነበባሉ
+the bread: r comes from the back of the throat ||| ዳቦ፦ r ከጉሮሮ ኋላ ይወጣል
+sch = sh ||| sch = «ሸ»
+Schule ||| Schule
+sp-, st- = shp-, sht- ||| sp-, st- = «ሽፕ»፣ «ሽት»
+sprechen, Stadt ||| sprechen, Stadt
+ch after a, o, u, au ||| ch ከa፣ o፣ u፣ au በኋላ
+throaty: Buch ||| ከጉሮሮ፦ Buch
+ch after other letters ||| ch ከሌሎች ፊደላት በኋላ
+soft: ich ||| ለስላሳ፦ ich
+chs = ks ||| chs = «ክስ»
+sechs ||| sechs
+Which sound is it? ||| የትኛው ድምፅ ነው?
+After u: throaty. ||| ከu በኋላ፦ ከጉሮሮ።
+Which ch is in "Buch"? ||| በ«Buch» ውስጥ የትኛው ch ነው?
+After i: soft. ||| ከi በኋላ፦ ለስላሳ።
+Which ch is in "nicht"? ||| በ«nicht» ውስጥ የትኛው ch ነው?
+After l: soft. ||| ከl በኋላ፦ ለስላሳ።
+Which ch is in "Milch"? ||| በ«Milch» ውስጥ የትኛው ch ነው?
+After au: throaty. ||| ከau በኋላ፦ ከጉሮሮ።
+Which ch is in "auch"? ||| በ«auch» ውስጥ የትኛው ch ነው?
+After ü: soft. ||| ከü በኋላ፦ ለስላሳ።
+Which ch is in "Küche"? ||| በ«Küche» ውስጥ የትኛው ch ነው?
+After o: throaty. ||| ከo በኋላ፦ ከጉሮሮ።
+Which ch is in "kochen"? ||| በ«kochen» ውስጥ የትኛው ch ነው?
+After ä: soft. ||| ከä በኋላ፦ ለስላሳ።
+Which ch is in "Mädchen"? ||| በ«Mädchen» ውስጥ የትኛው ch ነው?
+At the start of a word: sht. ||| በቃል መጀመሪያ፦ «ሽት»።
+How do you say the st in "Stadt"? ||| በ«Stadt» ውስጥ ያለውን st እንዴት ይሉታል?
+At the start of a word: shp. ||| በቃል መጀመሪያ፦ «ሽፕ»።
+How do you say the sp in "spielen"? ||| በ«spielen» ውስጥ ያለውን sp እንዴት ይሉታል?
+How do you say the chs in "sechs"? ||| በ«sechs» ውስጥ ያለውን chs እንዴት ይሉታል?
+
+## g0-numbers
+You need numbers from day one: phone numbers, prices, times, your age, your house number. ||| ቁጥሮች ከመጀመሪያው ቀን ጀምሮ ያስፈልግዎታል፦ የስልክ ቁጥር፣ ዋጋ፣ ሰዓት፣ ዕድሜዎ፣ የቤት ቁጥርዎ።
+The numbers 1 to 12 each have their own name. From 13 on, German builds numbers out of these, so learn these twelve well. ||| ከ1 እስከ 12 ያሉት ቁጥሮች እያንዳንዳቸው የራሳቸው ስም አላቸው። ከ13 ጀምሮ ጀርመንኛ ቁጥሮችን ከእነዚህ ይገነባል፤ ስለዚህ እነዚህን አሥራ ሁለቱን በደንብ ይማሩ።
+The numbers ||| ቁጥሮቹ
+One to twelve ||| ከአንድ እስከ አሥራ ሁለት
+Press a speaker to hear each number. The last column gives a rough English guide. ||| እያንዳንዱን ቁጥር ለመስማት የድምፅ ምልክቱን ይጫኑ። የመጨረሻው ዓምድ ግምታዊ የአነባበብ መመሪያ ይሰጣል።
+Say it like ||| እንዲህ ይበሉት
+round lips for ü ||| ለü ከንፈርዎን ያክብቡ
+"tsv-" + round lips for ö ||| «ትስቭ-» + ለö የተከበበ ከንፈር
+In use ||| በአጠቃቀም
+Numbers in sentences ||| ቁጥሮች በዓረፍተ ነገር ውስጥ
+I am twelve. ||| አሥራ ሁለት ዓመቴ ነው።
+I have two children. ||| ሁለት ልጆች አሉኝ።
+Room eleven, please. ||| ክፍል ቁጥር አሥራ አንድ፣ እባክዎ።
+two: often used on the phone so that zwei and drei are not mixed up ||| ሁለት፦ zwei እና drei እንዳይምታቱ በስልክ ብዙ ጊዜ ይጠቅማል
+eins ||| eins
+one; when counting: eins, zwei, drei ||| አንድ፤ ሲቆጠር፦ eins, zwei, drei
+zwei or zwo ||| zwei ወይም zwo
+zwo on the phone ||| በስልክ zwo
+chs = ks: "zeks" ||| chs = «ክስ»፦ «ዜክስ»
+sieben ||| sieben
+two syllables: ZEE-ben ||| ሁለት ቀለሞች፦ «ዚ-በን»
+Hear it, count it ||| ይስሙት፣ ይቁጠሩት
+3 + 4 ||| 3 + 4
+10 + 2 ||| 10 + 2
+8 − 5 ||| 8 − 5
+9 + 2 ||| 9 + 2
+1 + 3 ||| 1 + 3
+
+## g0-alphabet
+At the embassy, at the doctor's or on the phone you will often hear: <em class="de">Wie schreibt man das?</em> (How do you spell that?) Then you spell your name with the German letter names. ||| በኤምባሲ፣ በሐኪም ዘንድ ወይም በስልክ ብዙ ጊዜ ይህን ይሰማሉ፦ <em class="de">Wie schreibt man das?</em> (ይህ እንዴት ይጻፋል?) ከዚያም ስምዎን በጀርመንኛ የፊደል ስሞች ፊደል በፊደል ይናገራሉ።
+Many letters sound close to English. Watch out for the vowels and for <strong>J, V, W, Y, Z</strong>. ||| ብዙ ፊደላት ከላቲን ፊደል ስሞች ጋር ይቀራረባሉ። አናባቢዎቹንና <strong>J, V, W, Y, Z</strong>ን ልብ ይበሉ።
+The letters ||| ፊደላቱ
+A to Z, plus ä, ö, ü and ß ||| ከA እስከ Z፣ እንዲሁም ä፣ ö፣ ü እና ß
+Press a speaker to hear each group of letters. ||| እያንዳንዱን የፊደል ቡድን ለመስማት የድምፅ ምልክቱን ይጫኑ።
+Say them ||| እንዲህ ይባላሉ
+A B C D ||| A B C D
+a · be · ze · de ||| a · be · ze · de
+I J K L ||| I J K L
+i · jot · ka · el ||| i · jot · ka · el
+u · fau · we · ix ||| u · fau · we · ix
+Spelling a name ||| ስምን ፊደል በፊደል መናገር
+Say it letter by letter ||| ፊደል በፊደል ይናገሩት
+How do you spell that? ||| ይህ እንዴት ይጻፋል?
+Selam ||| Selam
+Dawit ||| Dawit
+With two n's: Hanna. ||| በሁለት n፦ Hanna።
+J = jot ||| J = jot («ዮት»)
+not "jay" ||| «ጄ» አይደለም
+V = fau ||| V = fau («ፋው»)
+like the f in "far" ||| በ«ፈ» ይጀምራል
+W = we ||| W = we («ቬ»)
+sounds like "vay" ||| «ቬ» ይባላል
+Z = zett ||| Z = zett
+"tsett" ||| «ትሴት»
+I = i ||| I = i
+sounds like "ee" ||| «ኢ» ይባላል
+E = e ||| E = e
+sounds like "ay" ||| «ኤ» ይባላል
+Spell and listen ||| ፊደል በፊደል ያዳምጡ
+Listen to the spelling, then choose the name. ||| ፊደል በፊደል ሲነገር ያዳምጡ፤ ከዚያም ስሙን ይምረጡ።
+Listen to the spelling, then choose the town. ||| ፊደል በፊደል ሲነገር ያዳምጡ፤ ከዚያም ከተማውን ይምረጡ።
+Choose the letter name. ||| የፊደሉን ስም ይምረጡ።
+How do you say the letter J? ||| J የሚለውን ፊደል እንዴት ይሉታል?
+How do you say the letter V? ||| V የሚለውን ፊደል እንዴት ይሉታል?
+we ||| we
+How do you say the letter W? ||| W የሚለውን ፊደል እንዴት ይሉታል?
+How do you say the letter Z? ||| Z የሚለውን ፊደል እንዴት ይሉታል?
+It sounds like the "ee" in "see". ||| «ኢ» ይባላል።
+How do you say the letter I? ||| I የሚለውን ፊደል እንዴት ይሉታል?
+A name, spelled letter by letter. ||| ፊደል በፊደል የተነገረ ስም።
+Write what you hear. ||| የሚሰሙትን ይጻፉ።
+
+## test-0
+Twelve questions from every lesson of this unit, mixed with its vocabulary. You get a new mix each time you start. ||| ከዚህ ክፍል ትምህርቶች ሁሉና ከቃላቱ የተውጣጡ አሥራ ሁለት ጥያቄዎች። በጀመሩ ቁጥር አዲስ ድብልቅ ያገኛሉ።
+Score 9 or more to complete the unit. If a question surprises you, go back to that lesson. ||| ክፍሉን ለማጠናቀቅ 9 ወይም ከዚያ በላይ ያስመዝግቡ። አንድ ጥያቄ ቢያስቸግርዎ ወደዚያ ትምህርት ይመለሱ።

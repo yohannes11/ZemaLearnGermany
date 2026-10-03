@@ -1,0 +1,300 @@
+# Word meanings in Amharic: German ||| Amharic. du-phrases use informal Amharic (አንተ/አንቺ), Sie-phrases polite (እርስዎ).
+# Alternatives are separated by " / " so typed practice answers accept either.
+
+# Start unit
+der Name ||| ስም
+der Mann ||| ወንድ / ሰው (ወንድ)
+der Tee ||| ሻይ
+das Bett ||| አልጋ
+wir ||| እኛ
+bitte ||| እባክዎ / እባክህ
+rot ||| ቀይ
+oft ||| ብዙ ጊዜ
+gut ||| ጥሩ
+die Mutter ||| እናት
+das Jahr ||| ዓመት
+kommen ||| መምጣት
+der Käse ||| አይብ
+das Mädchen ||| ልጃገረድ
+spät ||| ዘግይቶ / አርፍዶ
+schön ||| ቆንጆ / ውብ
+hören ||| መስማት
+der Löffel ||| ማንኪያ
+die Tür ||| በር
+müde ||| የደከመ / ድካም የተሰማው
+die Übung ||| መልመጃ
+Tschüss! ||| ቻው! / ደህና ሁን/ሁኚ!
+mein ||| የእኔ
+nein ||| አይ / አይደለም
+die Zeit ||| ጊዜ
+Wie? ||| እንዴት?
+die Liebe ||| ፍቅር
+viel ||| ብዙ
+heute ||| ዛሬ
+neu ||| አዲስ
+die Häuser ||| ቤቶች
+das Haus ||| ቤት
+die Frau ||| ሴት / ሚስት
+auch ||| ደግሞ / እንዲሁም
+das Wasser ||| ውሃ
+der Wein ||| ወይን ጠጅ
+der Vater ||| አባት
+die Zahl ||| ቁጥር
+der Zug ||| ባቡር
+ja ||| አዎ
+jetzt ||| አሁን
+die Sonne ||| ፀሐይ
+die Straße ||| መንገድ
+der Tag ||| ቀን
+und ||| እና
+gelb ||| ቢጫ
+die Schule ||| ትምህርት ቤት
+schnell ||| ፈጣን / በፍጥነት
+sprechen ||| መናገር
+spielen ||| መጫወት
+die Stadt ||| ከተማ
+ich ||| እኔ
+nicht ||| አይደለም / አ-… -ም (አሉታ)
+die Milch ||| ወተት
+die Nacht ||| ሌሊት
+das Buch ||| መጽሐፍ
+kochen ||| ማብሰል
+der Apfel ||| ፖም
+das Brot ||| ዳቦ
+eins ||| አንድ (1)
+zwei ||| ሁለት (2)
+drei ||| ሦስት (3)
+vier ||| አራት (4)
+fünf ||| አምስት (5)
+sechs ||| ስድስት (6)
+sieben ||| ሰባት (7)
+acht ||| ስምንት (8)
+neun ||| ዘጠኝ (9)
+zehn ||| አሥር (10)
+elf ||| አሥራ አንድ (11)
+zwölf ||| አሥራ ሁለት (12)
+das Alphabet ||| ፊደላት / የፊደል ገበታ
+der Buchstabe ||| ፊደል
+buchstabieren ||| ፊደል በፊደል መናገር
+Wie schreibt man das? ||| ይህ እንዴት ይጻፋል?
+Können Sie das bitte buchstabieren? ||| እባክዎ ፊደል በፊደል ሊነግሩኝ ይችላሉ?
+Wie ist Ihr Name, bitte? ||| ስምዎ ማን ነው፣ እባክዎ?
+mit zwei n ||| በሁለት n
+der Umlaut ||| ኡምላውት (ä፣ ö፣ ü)
+das Eszett ||| ß የሚለው ፊደል
+
+# Unit 1
+Hallo! ||| ሰላም!
+Hi! ||| ሃይ! / ሰላም!
+Guten Tag! ||| መልካም ቀን! / ጤና ይስጥልኝ!
+Guten Morgen! ||| እንደምን አደሩ! / እንደምን አደርክ/አደርሽ!
+Guten Abend! ||| እንደምን አመሹ! / እንደምን አመሸህ/አመሸሽ!
+Auf Wiedersehen! ||| ደህና ይሁኑ! / በሰላም ያገናኘን!
+der Morgen ||| ጠዋት
+der Abend ||| ምሽት
+Gute Nacht! ||| ደህና እደሩ! / ደህና እደር/እደሪ!
+Mein Name ist … ||| ስሜ … ነው
+Wie ist dein Name? ||| ስምህ/ስምሽ ማን ነው?
+Ich heiße… ||| ስሜ … ነው / … እባላለሁ
+Wie heißt du? ||| ስምህ/ስምሽ ማን ነው?
+Wie heißen Sie? ||| ስምዎ ማን ነው?
+der Vorname ||| የመጀመሪያ ስም
+der Nachname ||| የአባት/የቤተሰብ ስም
+heißen ||| መባል
+Wer bist du? ||| አንተ/አንቺ ማን ነህ/ነሽ?
+Wer sind Sie? ||| እርስዎ ማን ነዎት?
+Wer ist das? ||| ይህ/ያ ማን ነው?
+Ich weiß nicht. ||| አላውቅም።
+Woher kommst du? ||| ከየት ነህ/ነሽ?
+Ich komme aus… ||| የመጣሁት ከ… ነው / ከ… ነኝ
+aus den Vereinigten Staaten ||| ከአሜሪካ
+aus der Schweiz ||| ከስዊዘርላንድ
+aus der Türkei ||| ከቱርክ
+aus den Niederlanden ||| ከኔዘርላንድስ
+aus den Vereinigten Arabischen Emiraten ||| ከተባበሩት አረብ ኤምሬቶች
+Wie geht's? ||| እንዴት ነህ/ነሽ? / ደህና ነህ/ነሽ?
+Wie geht es dir? ||| እንዴት ነህ/ነሽ?
+Wie geht es Ihnen? ||| እንዴት ነዎት?
+sehr gut ||| በጣም ጥሩ
+schlecht ||| መጥፎ
+sehr schlecht ||| በጣም መጥፎ
+soso ||| እንደዚህ ነው / ብዙም አይደለም
+Super! ||| በጣም ጥሩ! / ድንቅ!
+Es geht. ||| ደህና ነኝ፣ ብዙም አይደለሁም። / እንደዚሁ ነው።
+Nicht so gut. ||| ብዙም ጥሩ አይደለሁም።
+Und dir? ||| አንተስ/አንቺስ?
+Auch gut. ||| እኔም ደህና ነኝ።
+Wer? ||| ማን?
+Woher? ||| ከየት?
+Wo? ||| የት?
+Was? ||| ምን?
+Wie bitte? ||| ይቅርታ፣ ምን አሉ? / እንደገና?
+du ||| አንተ/አንቺ
+er, sie, es ||| እሱ፣ እሷ፣ እሱ (ለነገር)
+ihr ||| እናንተ
+sie ||| እነሱ
+Sie ||| እርስዎ (በአክብሮት)
+duzen ||| «አንተ/አንቺ» ብሎ መጥራት
+siezen ||| «እርስዎ» ብሎ መጥራት
+Du kannst mich duzen. ||| «አንተ/አንቺ» ብለህ/ብለሽ ልትጠራኝ ትችላለህ/ትችያለሽ።
+machen ||| መሥራት / ማድረግ
+danke / danke schön ||| አመሰግናለሁ / በጣም አመሰግናለሁ
+bitte / bitte schön ||| እባክዎ / ምንም አይደለም
+nichts zu danken ||| ምንም አይደለም / ምስጋና አያስፈልግም
+gern geschehen ||| ምንም አይደለም / በደስታ
+Entschuldigung ||| ይቅርታ
+tut mir leid ||| አዝናለሁ / ይቅርታ
+Mir geht es gut, danke. Und Ihnen? ||| ደህና ነኝ፣ አመሰግናለሁ። እርስዎስ?
+Woher kommen Sie? ||| ከየት ነዎት?
+Sie können mich duzen. ||| «አንተ/አንቺ» ብለው ሊጠሩኝ ይችላሉ።
+Ich komme aus den Vereinigten Staaten. ||| የመጣሁት ከአሜሪካ ነው።
+Freut mich! ||| ስለተዋወቅን ደስ ብሎኛል!
+Äthiopien ||| ኢትዮጵያ
+Eritrea ||| ኤርትራ
+Kenia ||| ኬንያ
+Deutschland ||| ጀርመን
+Österreich ||| ኦስትሪያ
+Frankreich ||| ፈረንሳይ
+Spanien ||| ስፔን
+Italien ||| ጣሊያን
+Ich komme aus Äthiopien. ||| የመጣሁት ከኢትዮጵያ ነው። / ኢትዮጵያዊ ነኝ።
+Er kommt aus Kenia. ||| እሱ ከኬንያ ነው።
+Sie kommt aus Eritrea. ||| እሷ ከኤርትራ ነች።
+Ich wohne in Addis Abeba. ||| የምኖረው አዲስ አበባ ነው።
+Ich lerne Deutsch. ||| ጀርመንኛ እየተማርኩ ነው።
+der Deutschkurs ||| የጀርመንኛ ኮርስ
+der Kursleiter ||| የኮርስ መምህር (ወንድ)
+die Kursleiterin ||| የኮርስ መምህርት (ሴት)
+Ich verstehe das nicht. ||| ይህ አልገባኝም።
+Noch einmal, bitte. ||| እባክዎ እንደገና።
+Langsam, bitte. ||| እባክዎ ቀስ ብለው።
+Wie sagt man … auf Deutsch? ||| … በጀርመንኛ እንዴት ይባላል?
+Entschuldigung, wie bitte? ||| ይቅርታ፣ ምን አሉ?
+
+# Unit 2
+die Eltern ||| ወላጆች
+die Kinder ||| ልጆች
+der Sohn ||| ወንድ ልጅ
+die Tochter ||| ሴት ልጅ
+der Bruder ||| ወንድም
+die Schwester ||| እህት
+die Geschwister ||| ወንድሞችና እህቶች
+der Opa, der Großvater ||| አያት (ወንድ)
+die Oma, die Großmutter ||| አያት (ሴት)
+die Großeltern ||| አያቶች
+die Tante ||| አክስት
+der Onkel ||| አጎት
+die Cousine ||| የአጎት/የአክስት ልጅ (ሴት)
+der Cousin ||| የአጎት/የአክስት ልጅ (ወንድ)
+der ||| (ተባዕታይ ውሱን መስተኣምር)
+die ||| (አንስታይ ውሱን መስተኣምር)
+das ||| (ገለልተኛ ውሱን መስተኣምር)
+die (Plural) ||| (የብዙ ቁጥር ውሱን መስተኣምር)
+meine ||| የእኔ (ለአንስታይና ለብዙ ቁጥር ስሞች)
+mein Vater ||| አባቴ
+meine Mutter ||| እናቴ
+meine Eltern ||| ወላጆቼ
+sein ||| መሆን
+ich bin ||| እኔ … ነኝ
+du bist ||| አንተ … ነህ / አንቺ … ነሽ
+er, sie, es ist ||| እሱ … ነው፣ እሷ … ነች
+wir sind ||| እኛ … ነን
+ihr seid ||| እናንተ … ናችሁ
+sie sind ||| እነሱ … ናቸው
+Sie sind ||| እርስዎ … ነዎት
+die Sprache ||| ቋንቋ
+ein bisschen ||| ትንሽ
+Deutsch ||| ጀርመንኛ
+Englisch ||| እንግሊዝኛ
+Französisch ||| ፈረንሳይኛ
+Spanisch ||| ስፓኒሽ
+Portugiesisch ||| ፖርቱጋልኛ
+Japanisch ||| ጃፓንኛ
+Chinesisch ||| ቻይንኛ
+Welche Sprachen sprichst du? ||| ምን ምን ቋንቋዎች ትናገራለህ/ትናገሪያለሽ?
+Ich spreche Deutsch. ||| ጀርመንኛ እናገራለሁ።
+Ich spreche ein bisschen Englisch. ||| ትንሽ እንግሊዝኛ እናገራለሁ።
+Amharisch ||| አማርኛ
+Tigrinya ||| ትግርኛ
+Oromo ||| ኦሮምኛ
+Arabisch ||| ዐረብኛ
+Italienisch ||| ጣሊያንኛ
+Türkisch ||| ቱርክኛ
+Russisch ||| ሩስያኛ
+Sprichst du Englisch? ||| እንግሊዝኛ ትናገራለህ/ትናገሪያለሽ?
+Ja, ein bisschen. ||| አዎ፣ ትንሽ።
+Nein, gar nicht. ||| አይ፣ በፍጹም።
+Wie ist deine Telefonnummer? ||| ስልክ ቁጥርህ/ቁጥርሽ ስንት ነው?
+Wie lautet deine Telefonnummer? ||| ስልክ ቁጥርህ/ቁጥርሽ ስንት ነው?
+die Telefonnummer ||| ስልክ ቁጥር
+Können Sie das bitte wiederholen? ||| እባክዎ ሊደግሙት ይችላሉ?
+dreizehn ||| አሥራ ሦስት (13)
+vierzehn ||| አሥራ አራት (14)
+fünfzehn ||| አሥራ አምስት (15)
+sechzehn ||| አሥራ ስድስት (16)
+siebzehn ||| አሥራ ሰባት (17)
+achtzehn ||| አሥራ ስምንት (18)
+neunzehn ||| አሥራ ዘጠኝ (19)
+zwanzig ||| ሃያ (20)
+Wo wohnst du? ||| የት ትኖራለህ/ትኖሪያለሽ?
+Wo wohnen Sie? ||| የት ይኖራሉ?
+Wo lebt sie? ||| እሷ የት ትኖራለች?
+Ich wohne in … ||| የምኖረው … ነው
+Sie lebt in … ||| እሷ የምትኖረው … ነው
+Ich bin in … geboren. ||| የተወለድኩት … ነው።
+Bist du verheiratet? ||| አግብተሃል/አግብተሻል?
+Sind Sie verheiratet? ||| አግብተዋል?
+verheiratet ||| ያገባ
+geschieden ||| የፈታ
+ledig ||| ያላገባ
+Ja, ich bin verheiratet. ||| አዎ፣ አግብቻለሁ።
+Ich bin ledig. ||| አላገባሁም።
+Hast du Kinder? ||| ልጆች አሉህ/አሉሽ?
+Haben Sie Kinder? ||| ልጆች አሉዎት?
+Ich habe einen Sohn. ||| አንድ ወንድ ልጅ አለኝ።
+Ich habe eine Tochter. ||| አንዲት ሴት ልጅ አለችኝ።
+Ich habe zwei Kinder. ||| ሁለት ልጆች አሉኝ።
+Ich habe keine Kinder. ||| ልጆች የሉኝም።
+der Freund ||| ጓደኛ (ወንድ) / የወንድ ጓደኛ
+die Freundin ||| ጓደኛ (ሴት) / የሴት ጓደኛ
+der Mittelname ||| የአባት ስም (መካከለኛ ስም)
+der Spitzname ||| ቅጽል ስም
+die Hausnummer ||| የቤት ቁጥር
+die Postleitzahl ||| የፖስታ ኮድ
+die Handynummer ||| የሞባይል ቁጥር
+das Datum ||| ቀን (ዕለት)
+die Unterschrift ||| ፊርማ
+Wie alt bist du? ||| ዕድሜህ/ዕድሜሽ ስንት ነው?
+Wie alt sind Sie? ||| ዕድሜዎ ስንት ነው?
+Ich bin 25 Jahre alt. ||| 25 ዓመቴ ነው።
+Ich bin 30. ||| 30 ዓመቴ ነው።
+das Alter ||| ዕድሜ
+jung ||| ወጣት
+alt ||| አሮጌ / ያረጀ / ሽማግሌ
+Er ist 70 Jahre alt. ||| እሱ 70 ዓመቱ ነው።
+der Enkel ||| የልጅ ልጅ (ወንድ)
+die Enkelin ||| የልጅ ልጅ (ሴት)
+die Enkelkinder ||| የልጅ ልጆች
+der Ehemann ||| ባል
+die Ehefrau ||| ሚስት
+der Partner ||| የትዳር/የሕይወት አጋር (ወንድ)
+die Partnerin ||| የትዳር/የሕይወት አጋር (ሴት)
+Mama ||| እማዬ / እማ
+Papa ||| አባዬ / አባ
+das Kind ||| ልጅ
+Ich bin Single. ||| ብቸኛ ነኝ / አላገባሁም።
+Wir leben zusammen. ||| አብረን እንኖራለን።
+Ich lebe allein. ||| ብቻዬን እኖራለሁ።
+doch ||| እንጂ / አዎ እንጂ (ለአሉታዊ ጥያቄ መልስ)
+Ist das deine Schwester? ||| ይህች እህትህ/እህትሽ ናት?
+Ja, das ist meine Schwester. ||| አዎ፣ ይህች እህቴ ናት።
+Nein, das ist meine Cousine. ||| አይ፣ ይህች የአጎቴ ልጅ ናት።
+Ist das nicht dein Bruder? ||| ይህ ወንድምህ/ወንድምሽ አይደለም?
+Doch, das ist mein Bruder. ||| አዎ እንጂ፣ ወንድሜ ነው።
+Ich glaube, … ||| … ይመስለኛል
+Selams Bruder ||| የሰላም ወንድም
+Dawits Mutter ||| የዳዊት እናት
+Hannas Eltern ||| የሐና ወላጆች
+Jonas' Vater ||| የዮናስ አባት
+Wer ist Dawits Vater? ||| የዳዊት አባት ማን ነው?
+Das ist Merons Tochter. ||| ይህች የሜሮን ሴት ልጅ ናት።

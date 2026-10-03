@@ -37,7 +37,9 @@ def collect(course):
             for block in lesson.get("blocks", []):
                 texts += [de for de, _ in block.get("examples", [])]
                 texts += block.get("table", {}).get("say", [])
-            texts += [item["say"] for item in lesson.get("quiz", {}).get("items", [])]
+                texts += block.get("reading", [])
+                texts += [de for de, _ in block.get("glossary", [])]
+            texts += [item["say"] for item in lesson.get("quiz", {}).get("items", []) if item["say"]]
     seen, unique = set(), []
     for t in texts:
         if t not in seen:

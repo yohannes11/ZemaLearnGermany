@@ -1,0 +1,78 @@
+# Table cells and short answer options from all units. English ||| Amharic
+# Pronunciation guides are spelled in Fidel, as an Amharic speaker would read them.
+
+# Start unit: sounds and letters
+Vowel ||| አናባቢ
+Long ||| ረጅም
+Short ||| አጭር
+long ||| ረጅም
+short ||| አጭር
+NAH-meh ||| «ና-ሜ»
+NAYM ||| «ኔይም»
+NAHM ||| «ናም»
+Letter ||| ፊደል
+Letters ||| ፊደላት
+Sound ||| ድምፅ
+"eye" ||| «አይ»
+"oy" in "boy" ||| «ኦይ»
+English v ||| «ቨ»
+English f ||| «ፈ»
+English y ||| «የ»
+s + vowel ||| s + አናባቢ
+English z ||| «ዘ»
+"ss" ||| ጠንካራ «ሰ»
+throaty ||| ከጉሮሮ
+soft ||| ለስላሳ
+sht ||| «ሽት»
+shp ||| «ሽፕ»
+ks ||| «ክስ»
+sh ||| «ሸ»
+Number ||| ቁጥር
+"eye-ns" ||| «አይንስ»
+"tsvy" ||| «ትስቫይ»
+"dry" ||| «ድራይ»
+"feer" ||| «ፊር»
+"zeks" ||| «ዜክስ»
+"ZEE-ben" ||| «ዚ-በን»
+"ahkht", throaty ch ||| «አኽት»፣ ch ከጉሮሮ
+"noyn" ||| «ኖይን»
+"tsayn" ||| «ትሴን»
+"elf" ||| «ኤልፍ»
+
+# Grammar tables
+Position 1 ||| ቦታ 1
+Rest ||| የቀረው
+masculine (der) ||| ተባዕታይ (der)
+neuter (das) ||| ገለልተኛ (das)
+feminine (die) ||| አንስታይ (die)
+plural (die) ||| ብዙ ቁጥር (die)
+masculine (der Apfel) ||| ተባዕታይ (der Apfel)
+neuter (das Ei) ||| ገለልተኛ (das Ei)
+feminine (die Banane) ||| አንስታይ (die Banane)
+plural (die Äpfel) ||| ብዙ ቁጥር (die Äpfel)
+vowel change ||| የአናባቢ ለውጥ
+Together ||| በአንድ ላይ
+sie (she) ||| sie (እሷ)
+sie (they) ||| sie (እነሱ)
+Everyday ||| የዕለት ተዕለት
+Official ||| ይፋዊ
+clock times ||| የሰዓት ጊዜዎች
+months, seasons ||| ወራት፣ ወቅቶች
+masculine ||| ተባዕታይ
+neuter ||| ገለልተኛ
+Participle ||| ፓርቲሲፕል
+machen (regular) ||| machen (መደበኛ)
+kaufen (regular) ||| kaufen (መደበኛ)
+Year ||| ዓመት
+Male ||| ወንድ
+Female ||| ሴት
+WLAN ||| WLAN (ዋይፋይ)
+Start ||| መጀመሪያ
+Middle ||| መሃል
+End ||| መጨረሻ
+Vehicle ||| ተሽከርካሪ
+Pattern ||| ቅርጽ
+separable ||| ተነጣይ
+Perfect ||| ፔርፌክት (ያለፈ ጊዜ)
+in (month, season) ||| in (ወር፣ ወቅት)
+since ||| ከ… ጀምሮ

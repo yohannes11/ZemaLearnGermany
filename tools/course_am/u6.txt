@@ -1,0 +1,112 @@
+# Unit 6 lessons. English ||| Amharic
+
+## g6-accusative
+The <strong>direct object</strong> of a sentence (the person or thing the action is done to) is in the <strong>accusative</strong>. ||| የዓረፍተ ነገር <strong>ተሳቢ</strong> (ድርጊቱ የሚፈጸምበት ሰው ወይም ነገር) <strong>በአኩዛቲቭ (Akkusativ)</strong> ይገባል። በአማርኛ ተሳቢን «-ን» እንደምንጨምርበት (መጽሐፉን)፣ ጀርመንኛ መስተኣምሩን ይቀይራል።
+Only <strong>masculine</strong> articles change: der → den, ein → einen, kein → keinen. Feminine, neuter and plural stay the same. ||| የሚቀየሩት <strong>የተባዕታይ</strong> መስተኣምሮች ብቻ ናቸው፦ der → den፣ ein → einen፣ kein → keinen። አንስታይ፣ ገለልተኛና ብዙ ቁጥር ባሉበት ይቆያሉ።
+Articles in the accusative ||| መስተኣምሮች በአኩዛቲቭ
+plural ||| ብዙ ቁጥር
+the ||| (ውሱን)
+Verbs with the accusative ||| አኩዛቲቭ የሚወስዱ ግሦች
+I have a brother. ||| ወንድም አለኝ።
+We are buying a table. ||| ጠረጴዛ እየገዛን ነው።
+I need the helmet. ||| የራስ ቁሩ ያስፈልገኛል።
+Take a swimsuit with you! ||| የዋና ልብስ ይዘህ/ይዘሽ ሂድ/ሂጂ!
+We are visiting the uncle. ||| አጎታችንን ልንጠይቅ ነው።
+der → den ||| der → den
+ein → einen, kein → keinen ||| ein → einen, kein → keinen
+die, das, plural ||| die፣ das፣ ብዙ ቁጥር
+no change ||| ለውጥ የለም
+Typical verbs ||| የተለመዱ ግሦች
+haben, kaufen, brauchen, mitnehmen, besuchen, finden ||| haben, kaufen, brauchen, mitnehmen, besuchen, finden
+Choose the right article ||| ትክክለኛውን መስተኣምር ይምረጡ
+I need a helmet. ||| የራስ ቁር ያስፈልገኛል።
+der Helm is masculine: einen. ||| der Helm ተባዕታይ ነው፦ einen።
+Do you have a bike? ||| ብስክሌት አለህ/አለሽ?
+das Fahrrad is neuter: no change. ||| das Fahrrad ገለልተኛ ነው፦ ለውጥ የለም።
+I am buying a jacket. ||| ጃኬት እየገዛሁ ነው።
+die Jacke is feminine: no change. ||| die Jacke አንስታይ ነው፦ ለውጥ የለም።
+I don't have a swimsuit. ||| የዋና ልብስ የለኝም።
+der Badeanzug is masculine: keinen. ||| der Badeanzug ተባዕታይ ነው፦ keinen።
+We are taking the tent. ||| ድንኳኑን ይዘን እንሄዳለን።
+das Zelt is neuter: no change. ||| das Zelt ገለልተኛ ነው፦ ለውጥ የለም።
+I find the film exciting. ||| ፊልሙ አጓጊ ሆኖ አግኝቼዋለሁ።
+der Film is masculine: den. ||| der Film ተባዕታይ ነው፦ den።
+He doesn't need a hat. ||| እሱ ኮፍያ አያስፈልገውም።
+die Mütze is feminine: no change. ||| die Mütze አንስታይ ነው፦ ለውጥ የለም።
+Do you have a garden? ||| ግቢ አለህ/አለሽ?
+der Garten is masculine: einen. ||| der Garten ተባዕታይ ነው፦ einen።
+der Onkel is masculine: den. ||| der Onkel ተባዕታይ ነው፦ den።
+I am buying the tennis shoes. ||| የስፖርት ጫማዎቹን እየገዛሁ ነው።
+Plural: no change. ||| ብዙ ቁጥር፦ ለውጥ የለም።
+
+## g6-how-often
+To say how well you do something, add a word after the verb: <em class="de">Ich koche gut.</em> With können, it goes before the verb at the end: <em class="de">Ich kann gut kochen.</em> ||| አንድን ነገር ምን ያህል በደንብ እንደሚሠሩ ለመናገር ከግሡ በኋላ ቃል ይጨምሩ፦ <em class="de">Ich koche gut.</em> (በደንብ አበስላለሁ)። ከkönnen ጋር መጨረሻ ላይ ካለው ግሥ በፊት ይገባል፦ <em class="de">Ich kann gut kochen.</em>
+From worst to best: <em class="de">gar nicht → nicht so gut → ein bisschen → gut → sehr gut → super / toll</em>. ||| ከመጥፎ እስከ ምርጥ፦ <em class="de">gar nicht → nicht so gut → ein bisschen → gut → sehr gut → super / toll</em> (በፍጹም → ብዙም አይደለም → ትንሽ → ጥሩ → በጣም ጥሩ → ድንቅ)።
+How often: <em class="de">nie → selten → manchmal → oft → immer</em>. These words usually come right after the verb: <em class="de">Ich koche oft.</em> ||| ምን ያህል ጊዜ፦ <em class="de">nie → selten → manchmal → oft → immer</em> (በፍጹም → አልፎ አልፎ → አንዳንድ ጊዜ → ብዙ ጊዜ → ሁልጊዜ)። እነዚህ ቃላት በአብዛኛው ከግሡ ቀጥሎ ይመጣሉ፦ <em class="de">Ich koche oft.</em>
+How often? ||| ምን ያህል ጊዜ?
+From always to never ||| ከሁልጊዜ እስከ በፍጹም
+How well? ||| ምን ያህል በደንብ?
+Talking about what you can do ||| ስለሚችሉት ነገር መናገር
+I can't sing at all. ||| በፍጹም መዝፈን አልችልም።
+He can play the guitar a little. ||| እሱ ትንሽ ጊታር መጫወት ይችላል።
+We can dance very well. ||| በጣም ጥሩ መደነስ እንችላለን።
+You bake really well! – Oh, thanks! ||| በጣም ጥሩ ትጋግራለህ/ትጋግሪያለሽ! – ኦ፣ አመሰግናለሁ!
+How well ||| ምን ያህል በደንብ
+gar nicht → ein bisschen → gut → sehr gut ||| gar nicht → ein bisschen → gut → sehr gut
+How often ||| ምን ያህል ጊዜ
+nie → manchmal → oft → immer ||| nie → manchmal → oft → immer
+Position ||| ቦታ
+after the verb: Ich koche oft. ||| ከግሡ በኋላ፦ Ich koche oft.
+Compliment ||| ሙገሳ
+Du kannst toll …! – Danke! ||| Du kannst toll …! – Danke!
+How well? How often? ||| ምን ያህል በደንብ? ምን ያህል ጊዜ?
+Which word means the most often? ||| ከሁሉ በላይ «ብዙ ጊዜ» ማለት የትኛው ቃል ነው?
+Which word means "never"? ||| «በፍጹም» ማለት የትኛው ቃል ነው?
+Which is the best? ||| ከሁሉ የሚሻለው የትኛው ነው?
+Which means "not at all"? ||| «በፍጹም አይደለም» ማለት የትኛው ነው?
+I never drink coffee. I don't like coffee. ||| ቡና በፍጹም አልጠጣም። ቡና አልወድም።
+We eat injera every day. ||| በየቀኑ እንጀራ እንበላለን።
+You dance really well! ||| በጣም ጥሩ ትደንሳለህ/ትደንሻለሽ!
+Your friend says: Du kannst super kochen! What do you answer? ||| ጓደኛዎ «Du kannst super kochen!» ይላል። ምን ብለው ይመልሳሉ?
+I often go to the cinema. ||| ብዙ ጊዜ ሲኒማ እሄዳለሁ።
+Can you swim well? ||| በደንብ መዋኘት ትችላለህ/ትችያለሽ?
+I never dance. ||| በፍጹም አልደንስም።
+
+## g6-vowel-e
+Some common verbs change the vowel of their stem with <strong>du</strong> and <strong>er/sie/es</strong>. All the other forms stay regular. ||| አንዳንድ የተለመዱ ግሦች ከ<strong>du</strong> እና ከ<strong>er/sie/es</strong> ጋር የሥራቸውን አናባቢ ይቀይራሉ። ሌሎቹ ቅርጾች ሁሉ መደበኛ ናቸው።
+<em class="de">e → ie</em>: lesen (du liest), sehen (du siehst). <em class="de">e → i</em>: treffen (du triffst), essen (du isst), nehmen (du nimmst), sprechen (du sprichst). ||| <em class="de">e → ie</em>፦ lesen (du liest)፣ sehen (du siehst)። <em class="de">e → i</em>፦ treffen (du triffst)፣ essen (du isst)፣ nehmen (du nimmst)፣ sprechen (du sprichst)።
+lesen, treffen, essen ||| lesen, treffen, essen
+Free time ||| የትርፍ ጊዜ
+Do you like reading? ||| ማንበብ ትወዳለህ/ትወጃለሽ?
+He is meeting friends on Saturday. ||| ቅዳሜ ጓደኞቹን ያገኛል።
+Selam likes watching films. ||| ሰላም ፊልም ማየት ትወዳለች።
+What do you eat for breakfast? ||| ለቁርስ ምን ትበላለህ/ትበያለሽ?
+She speaks three languages. ||| እሷ ሦስት ቋንቋዎችን ትናገራለች።
+e → ie ||| e → ie
+lesen: du liest; sehen: er sieht ||| lesen: du liest; sehen: er sieht
+treffen: du triffst; essen: er isst ||| treffen: du triffst; essen: er isst
+Only du and er/sie/es ||| du እና er/sie/es ብቻ
+ich lese, wir lesen: no change ||| ich lese, wir lesen፦ ለውጥ የለም
+Do you like reading books? ||| መጽሐፍ ማንበብ ትወዳለህ/ትወጃለሽ?
+He reads the newspaper. ||| ጋዜጣውን ያነባል።
+I like reading. ||| ማንበብ እወዳለሁ።
+ich: no vowel change. ||| ich፦ የአናባቢ ለውጥ የለም።
+You are meeting friends. ||| ጓደኞችህን/ጓደኞችሽን ታገኛለህ/ታገኚያለሽ።
+Meron is meeting Hanna today. ||| ሜሮን ዛሬ ሐናን ታገኛለች።
+We're meeting at eight. ||| ሁለት ሰዓት (8:00) ላይ እንገናኛለን።
+Can you see the bus? ||| አውቶቡሱን ታየዋለህ/ታዪዋለሽ?
+Dawit likes eating fish. ||| ዳዊት ዓሣ መብላት ይወዳል።
+isst (eats) is not ist (is). ||| isst (ይበላል) ist (ነው) አይደለም።
+Which language do you speak? ||| የትኛውን ቋንቋ ትናገራለህ/ትናገሪያለሽ?
+You (all) read a lot. ||| እናንተ ብዙ ታነባላችሁ።
+ihr: no vowel change. ||| ihr፦ የአናባቢ ለውጥ የለም።
+She reads a lot. ||| እሷ ብዙ ታነባለች።
+
+## g6-reading
+the nurse ||| ነርሷ
+the lake ||| ሐይቁ
+for the family ||| ለቤተሰቡ
+boring ||| አሰልቺ
+the newspaper ||| ጋዜጣው
+What does Tigist do in her free time? ||| ትዕግሥት በትርፍ ጊዜዋ ምን ታደርጋለች?
+What does Tigist think of cooking? ||| ትዕግሥት ስለ ምግብ ማብሰል ምን ታስባለች?

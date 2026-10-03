@@ -1,0 +1,71 @@
+# Unit 8 lessons. English ||| Amharic
+
+## g8-separable
+Many travel verbs are separable: <em class="de">an|kommen, ab|fahren, ab|holen, ein|steigen, um|steigen</em>. In a normal sentence the small first part goes to the <strong>end</strong>: <em class="de">Ich komme um acht Uhr an.</em> ||| ብዙ የጉዞ ግሦች ተነጣይ ናቸው፦ <em class="de">an|kommen, ab|fahren, ab|holen, ein|steigen, um|steigen</em>። በተራ ዓረፍተ ነገር ውስጥ ትንሹ የመጀመሪያ ክፍል <strong>ወደ መጨረሻ</strong> ይሄዳል፦ <em class="de">Ich komme um acht Uhr an.</em> (ሁለት ሰዓት (8:00) ላይ እደርሳለሁ።)
+The same in questions: <em class="de">Wann kommst du an? Holst du mich ab?</em> ||| በጥያቄዎችም እንዲሁ፦ <em class="de">Wann kommst du an? Holst du mich ab?</em>
+With a modal verb (können, möchten …) the verb stays in one piece at the end: <em class="de">Kannst du mich abholen?</em> ||| ከረዳት ግሥ (können, möchten …) ጋር ግሡ መጨረሻ ላይ ሳይለያይ አንድ ሆኖ ይቆያል፦ <em class="de">Kannst du mich abholen?</em>
+The bracket ||| ቅንፉ
+The small part goes to the end ||| ትንሹ ክፍል ወደ መጨረሻ ይሄዳል
+On the way ||| በጉዞ ላይ
+The train leaves at 7:15. ||| ባቡሩ አንድ ሰዓት ከሩብ (7:15) ላይ ይነሳል።
+I get off at the main station. ||| ዋናው ባቡር ጣቢያ ላይ እወርዳለሁ።
+Will you call me from Frankfurt? ||| ከፍራንክፈርት ትደውልልኛለህ/ትደውዪልኛለሽ?
+I would like to arrive on Friday. ||| ዓርብ መድረስ እፈልጋለሁ።
+Ich komme um 8 an. ||| Ich komme um 8 an.
+Wann kommst du an? ||| Wann kommst du an?
+With a modal verb ||| ከረዳት ግሥ ጋር
+Kannst du mich abholen? ||| Kannst du mich abholen?
+Infinitive ||| የመዝገበ ቃላት ቅርጽ
+one word: abholen ||| አንድ ቃል፦ abholen
+Separable verbs ||| ተነጣይ ግሦች
+I arrive at eight. ||| ሁለት ሰዓት (8:00) ላይ እደርሳለሁ።
+When does the train leave? ||| ባቡሩ መቼ ይነሳል?
+Will you pick me up? ||| መጥተህ/መጥተሽ ትቀበለኛለህ/ትቀበይኛለሽ?
+We change in Frankfurt. ||| ፍራንክፈርት ላይ እንቀይራለን።
+Can you pick me up? ||| መጥተህ/መጥተሽ ልትቀበለኝ/ልትቀበይኝ ትችላለህ/ትችያለሽ?
+The bus leaves at ten. ||| አውቶቡሱ አራት ሰዓት (10:00) ላይ ይነሳል።
+When do you arrive in Berlin? ||| በርሊን መቼ ትደርሳለህ/ትደርሺያለሽ?
+I'll pick you up at the airport. ||| አውሮፕላን ማረፊያ መጥቼ እቀበልሃለሁ/እቀበልሻለሁ።
+Please get off here. ||| እባክዎ እዚህ ይውረዱ።
+We have to change in Cologne. ||| ኮሎኝ (Köln) ላይ መቀየር አለብን።
+With a modal verb, the verb stays in one piece at the end. ||| ከረዳት ግሥ ጋር ግሡ መጨረሻ ላይ አንድ ሆኖ ይቆያል።
+My flight leaves at 10 pm. ||| በረራዬ ከምሽቱ አራት ሰዓት (22:00) ላይ ይነሳል።
+When do you arrive? ||| መቼ ትደርሳለህ/ትደርሺያለሽ?
+An announcement at the station. ||| በባቡር ጣቢያ የሚነገር ማስታወቂያ።
+
+## g8-mit
+To say how you travel, use <strong>mit</strong> + the vehicle. After mit, <em class="de">der</em> and <em class="de">das</em> become <strong>dem</strong>, and <em class="de">die</em> becomes <strong>der</strong>. (This is the dative case. For now, just learn these phrases.) ||| በምን እንደሚጓዙ ለመናገር <strong>mit</strong> + ተሽከርካሪውን ይጠቀሙ (በአማርኛ «በ…» እንደምንለው)። ከmit በኋላ <em class="de">der</em> እና <em class="de">das</em> <strong>dem</strong>፣ <em class="de">die</em> ደግሞ <strong>der</strong> ይሆናሉ። (ይህ ዳቲቭ (Dativ) ይባላል። ለአሁኑ እነዚህን አገላለጾች ብቻ ይማሩ።)
+Walking is different: <em class="de">zu Fuß</em> (on foot). ||| በእግር መሄድ ይለያል፦ <em class="de">zu Fuß</em> (በእግር)።
+How? ||| እንዴት?
+mit + vehicle ||| mit + ተሽከርካሪ
+Getting around ||| መንቀሳቀስ
+I go to work by bus. ||| ወደ ሥራ በአውቶቡስ እሄዳለሁ።
+Are you going to Hamburg by train? ||| ወደ ሃምቡርግ በባቡር ትሄዳለህ/ትሄጃለሽ?
+We are flying with Ethiopian Airlines. ||| በኢትዮጵያ አየር መንገድ እንበራለን።
+I am walking. ||| በእግሬ እሄዳለሁ።
+der → dem ||| der → dem
+mit dem Zug ||| mit dem Zug
+das → dem ||| das → dem
+mit dem Auto ||| mit dem Auto
+die → der ||| die → der
+mit der U-Bahn ||| mit der U-Bahn
+Walking ||| በእግር
+zu Fuß ||| zu Fuß
+How do you travel? ||| በምን ይጓዛሉ?
+She goes by underground. ||| እሷ በምድር ውስጥ ባቡር ትሄዳለች።
+We are driving to Adama. ||| ወደ አዳማ በመኪና እንሄዳለን።
+Are you cycling? ||| በብስክሌት ትሄዳለህ/ትሄጃለሽ?
+I take the tram. ||| በትራም እሄዳለሁ።
+He is coming by taxi. ||| በታክሲ ይመጣል።
+How do you say "by train"? ||| «በባቡር» እንዴት ይላሉ?
+How do you say "by plane"? ||| «በአውሮፕላን» እንዴት ይላሉ?
+by underground ||| በምድር ውስጥ ባቡር
+on foot ||| በእግር
+
+## g8-reading
+the flight takes off ||| በረራው ይነሳል
+via Frankfurt ||| በፍራንክፈርት በኩል
+I hope so too. ||| እኔም ተስፋ አደርጋለሁ።
+See you tomorrow! ||| ነገ እንገናኝ!
+Where does Dawit change? ||| ዳዊት የት ይቀይራል?
+When does Dawit arrive in Leipzig? ||| ዳዊት ላይፕዚግ መቼ ይደርሳል?

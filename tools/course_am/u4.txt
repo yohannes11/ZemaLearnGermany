@@ -1,0 +1,144 @@
+# Unit 4 lessons. English ||| Amharic
+
+## g4-possessive
+Possessive articles say who something belongs to. Like <em class="de">mein / meine</em>, they take <strong>-e</strong> before feminine and plural nouns. ||| የባለቤትነት መስተኣምሮች አንድ ነገር የማን እንደሆነ ይናገራሉ (በአማርኛ «-ኤ፣ -ህ፣ -ሽ» እንደምንለው)። ልክ እንደ <em class="de">mein / meine</em> ከአንስታይና ከብዙ ቁጥር ስሞች በፊት <strong>-e</strong> ይወስዳሉ።
+The table ||| ሰንጠረዡ
+Who owns it? ||| የማን ነው?
+That is my room. ||| ይህ ክፍሌ ነው።
+Where is your kitchen? ||| ማዕድ ቤትህ/ቤትሽ የት ነው?
+His garden is big. ||| የእሱ ግቢ ትልቅ ነው።
+Her apartment is bright. ||| የእሷ ቤት ብሩህ ነው።
+Our house is old. ||| ቤታችን አሮጌ ነው።
++ e for die and plural ||| ለdie እና ለብዙ ቁጥር + e
+dein → deine, sein → seine ||| dein → deine, sein → seine
+euer → eure ||| euer → eure
+the e in the middle drops ||| መሃል ላይ ያለው e ይወድቃል
+Ihr (capital) ||| Ihr (በትልቅ ፊደል)
+your, formal ||| የእርስዎ (በአክብሮት)
+Choose the possessive article ||| የባለቤትነት መስተኣምሩን ይምረጡ
+your apartment (du) ||| ቤትህ/ቤትሽ (du)
+his garden ||| የእሱ ግቢ
+her house (das Haus) ||| የእሷ ቤት (das Haus)
+our kitchen ||| ማዕድ ቤታችን
+your balcony (ihr) ||| በረንዳችሁ (ihr)
+your name (formal) ||| ስምዎ (በአክብሮት)
+my parents ||| ወላጆቼ
+your room (du) ||| ክፍልህ/ክፍልሽ (du)
+his lamp ||| የእሱ መብራት
+their children ||| ልጆቻቸው
+
+## g4-nicht
+Use <em class="de">nicht</em> to say something is <strong>not</strong> a certain way, for example with adjectives. Use <em class="de">kein / keine</em> before a noun (unit 3). ||| አንድ ነገር እንደዚያ <strong>አይደለም</strong> ለማለት <em class="de">nicht</em>ን ይጠቀሙ፤ ለምሳሌ ከቅጽሎች ጋር። ከስም በፊት ደግሞ <em class="de">kein / keine</em>ን ይጠቀሙ (ክፍል 3)።
+nicht with adjectives ||| nicht ከቅጽሎች ጋር
+The kitchen is not small. ||| ማዕድ ቤቱ ትንሽ አይደለም።
+The car is not new. ||| መኪናው አዲስ አይደለም።
+The apartment is not expensive. ||| ቤቱ ውድ አይደለም።
+kein with nouns ||| kein ከስሞች ጋር
+That is not a chair. ||| ይህ ወንበር አይደለም።
+That is not a lamp. ||| ይህ መብራት አይደለም።
+We don't have a balcony. ||| በረንዳ የለንም።
+nicht + adjective ||| nicht + ቅጽል
+nicht klein, nicht teuer ||| nicht klein, nicht teuer
+kein + noun ||| kein + ስም
+kein Stuhl, keine Lampe ||| kein Stuhl, keine Lampe
+nicht, kein or keine? ||| nicht፣ kein ወይስ keine?
+The bed is not new. ||| አልጋው አዲስ አይደለም።
+Those are not chairs. ||| እነዚህ ወንበሮች አይደሉም።
+The sofa is not nice. ||| ሶፋው ጥሩ አይደለም።
+That is not a sofa. ||| ይህ ሶፋ አይደለም።
+The garden is not big. ||| ግቢው ትልቅ አይደለም።
+
+## g4-it
+In German, <strong>it</strong> depends on the gender of the noun: a der-noun becomes <em class="de">er</em>, a die-noun becomes <em class="de">sie</em>, a das-noun becomes <em class="de">es</em>. Plurals become <em class="de">sie</em> (they). ||| በጀርመንኛ ነገርን የሚተካው <strong>ተውላጠ ስም</strong> በስሙ ጾታ ይወሰናል፦ der ያለው ስም <em class="de">er</em>፣ die ያለው <em class="de">sie</em>፣ das ያለው <em class="de">es</em> ይሆናል። ብዙ ቁጥሮች <em class="de">sie</em> (እነሱ) ይሆናሉ። ስለዚህ ጠረጴዛ «እሱ»፣ መብራት ግን «እሷ» ነው።
+Replace the noun ||| ስሙን ይተኩ
+The table is new. It is nice. ||| ጠረጴዛው አዲስ ነው። ቆንጆ ነው።
+The lamp is old. It is ugly. ||| መብራቱ አሮጌ ነው። አስቀያሚ ነው።
+The bed is big. It is expensive. ||| አልጋው ትልቅ ነው። ውድ ነው።
+The chairs are new. They are cheap. ||| ወንበሮቹ አዲስ ናቸው። ርካሽ ናቸው።
+der → er ||| der → er
+der Tisch → er ||| der Tisch → er
+die → sie ||| die → sie
+die Lampe → sie ||| die Lampe → sie
+das → es ||| das → es
+das Bett → es ||| das Bett → es
+plural → sie ||| ብዙ ቁጥር → sie
+die Stühle → sie ||| die Stühle → sie
+er, sie or es? ||| er፣ sie ወይስ es?
+The garden is small. It is nice. ||| ግቢው ትንሽ ነው። ቆንጆ ነው።
+The kitchen is bright. It is new. ||| ማዕድ ቤቱ ብሩህ ነው። አዲስ ነው።
+The sofa is red. It is cosy. ||| ሶፋው ቀይ ነው። ምቹ ነው።
+The wardrobe is brown. It is old. ||| ቁም ሣጥኑ ቡናማ ነው። አሮጌ ነው።
+The room is dark. It is small. ||| ክፍሉ ጨለማ ነው። ትንሽ ነው።
+
+## g4-prices
+Big numbers are written as one word: 345 = <em class="de">dreihundertfünfundvierzig</em>. Say the hundreds first, then the last two digits just as you say 1–99: "five-and-forty". ||| ትልልቅ ቁጥሮች እንደ አንድ ቃል ይጻፋሉ፦ 345 = <em class="de">dreihundertfünfundvierzig</em>። መጀመሪያ መቶዎቹን ይናገሩ፤ ከዚያም የመጨረሻዎቹን ሁለት አኃዞች ከ1–99 እንደሚሉት፦ «አምስት-እና-አርባ» (አሃዱ ከአሥሩ ይቀድማል)።
+Prices: 9,99 € is said <em class="de">neun Euro neunundneunzig</em>. German writes a comma where English has a point, and a point or a space to group thousands: 1.500 or 1 500. ||| ዋጋዎች፦ 9,99 € የሚባለው <em class="de">neun Euro neunundneunzig</em> ተብሎ ነው። ጀርመንኛ ለአስርዮሽ ከነጥብ ይልቅ ኮማ ይጠቀማል፤ ሺዎችን ለመለየት ደግሞ ነጥብ ወይም ክፍት ቦታ፦ 1.500 ወይም 1 500።
+Numbers ||| ቁጥሮች
+From 100 to a million ||| ከ100 እስከ አንድ ሚሊዮን
+Prices ||| ዋጋዎች
+Euro and cent ||| ዩሮና ሳንቲም
+That costs 4 euros 50. ||| ዋጋው 4 ዩሮ ከ50 ነው።
+9.99 euros ||| 9.99 ዩሮ
+80 cents ||| 80 ሳንቲም
+The armchair costs 120 euros. ||| ባለ መደገፊያ ወንበሩ 120 ዩሮ ነው።
+That's really cheap! ||| ያ በእውነት ርካሽ ነው!
+345 ||| 345
+dreihundert + fünfundvierzig ||| dreihundert + fünfundvierzig
+9,99 € ||| 9,99 €
+neun Euro neunundneunzig ||| neun Euro neunundneunzig
+Comma ||| ኮማ
+for decimals: 4,50 ||| ለአስርዮሽ፦ 4,50
+1.000 ||| 1.000
+a point groups thousands ||| ነጥብ ሺዎችን ይለያል
+Numbers and prices ||| ቁጥሮችና ዋጋዎች
+How do you say 145? ||| 145ን እንዴት ይሉታል?
+How do you say 2 000? ||| 2 000ን እንዴት ይሉታል?
+How do you say 0,80 €? ||| 0,80 €ን እንዴት ይሉታል?
+The table costs 99 euros. ||| ጠረጴዛው 99 ዩሮ ነው።
+How much is the lamp? ||| መብራቱ ስንት ነው?
+Write the number you hear as one word. ||| የሚሰሙትን ቁጥር እንደ አንድ ቃል ይጻፉ።
+
+## g4-things
+To name a thing, use <em class="de">ein / eine</em>: <em class="de">Das ist ein Schlüssel.</em> To say it is not, use <em class="de">kein / keine</em>: <em class="de">Das ist kein Schlüssel.</em> ||| አንድን ነገር ለመሰየም <em class="de">ein / eine</em>ን ይጠቀሙ፦ <em class="de">Das ist ein Schlüssel.</em> (ይህ ቁልፍ ነው)። አይደለም ለማለት <em class="de">kein / keine</em>ን ይጠቀሙ፦ <em class="de">Das ist kein Schlüssel.</em> (ይህ ቁልፍ አይደለም)።
+To describe it, say what it is made of with <strong>aus</strong> and give its colour: <em class="de">Die Tasche ist aus Leder. Sie ist braun.</em> ||| ለመግለጽ ከምን እንደተሠራ በ<strong>aus</strong> ይናገሩና ቀለሙን ይስጡ፦ <em class="de">Die Tasche ist aus Leder. Sie ist braun.</em> (ቦርሳው ከቆዳ የተሠራ ነው። ቡናማ ነው)።
+Naming ||| መሰየም
+ein, kein and the pronoun ||| ein፣ kein እና ተውላጠ ስሙ
+not a ||| … አይደለም
+it ||| እሱ/እሷ (ለነገር)
+Describing ||| መግለጽ
+Material and colour ||| ቁስና ቀለም
+Is that a pen? – No, it is a pencil. ||| ያ እስክሪብቶ ነው? – አይ፣ እርሳስ ነው።
+The bottle is made of glass. It is green. ||| ጠርሙሱ ከመስታወት የተሠራ ነው። አረንጓዴ ነው።
+The chair is made of wood. ||| ወንበሩ ከእንጨት የተሠራ ነው።
+What is that in German? – That is an umbrella. ||| ያ በጀርመንኛ ምንድን ነው? – ዣንጥላ ነው።
+ein / eine ||| ein / eine
+a: ein Heft, eine Tasche ||| አንድ፦ ein Heft, eine Tasche
+kein / keine ||| kein / keine
+not a: kein Heft ||| … አይደለም፦ kein Heft
+aus + material ||| aus + ቁስ
+aus Holz, aus Glas ||| aus Holz, aus Glas
+der → er, das → es, die → sie ||| der → er, das → es, die → sie
+Die Tasche? Sie ist neu. ||| Die Tasche? Sie ist neu.
+Name it and describe it ||| ይሰይሙትና ይግለጹት
+Those are glasses. ||| ይህ መነጽር ነው።
+Is that a key? ||| ያ ቁልፍ ነው?
+No, that isn't a lighter. ||| አይ፣ ያ ላይተር አይደለም።
+That isn't a bag, it's a backpack. ||| ያ ቦርሳ አይደለም፤ የጀርባ ቦርሳ ነው።
+The bottle is made of plastic. ||| ጠርሙሱ ከፕላስቲክ የተሠራ ነው።
+The pen is new. It is blue. ||| እስክሪብቶው አዲስ ነው። ሰማያዊ ነው።
+The exercise book is old. It is made of paper. ||| ደብተሩ አሮጌ ነው። ከወረቀት የተሠራ ነው።
+The necklace is beautiful. It is made of metal. ||| የአንገት ጌጡ ቆንጆ ነው። ከብረት የተሠራ ነው።
+What is an umbrella (Regenschirm) usually made of? ||| ዣንጥላ (Regenschirm) በአብዛኛው ከምን ይሠራል?
+The bag is made of leather. ||| ቦርሳው ከቆዳ የተሠራ ነው።
+What is that called in German? ||| ያ በጀርመንኛ ምን ይባላል?
+That is not a key. ||| ያ ቁልፍ አይደለም።
+
+## g4-reading
+the shared flat ||| የጋራ መኖሪያ ቤት
+bright ||| ብሩህ
+still ||| አሁንም / ገና
+the furniture (pl.) ||| የቤት ዕቃዎች
+the furniture shop ||| የቤት ዕቃ መሸጫ
+the salesman ||| ሻጩ
+How much is the table? ||| ጠረጴዛው ስንት ነው?
+When does Yonas go to the furniture shop? ||| ዮናስ መቼ ነው ወደ የቤት ዕቃ መሸጫው የሚሄደው?

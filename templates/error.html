@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static %}
+{% load static zema_i18n %}
 
 {% block title %}{% block code %}{% endblock %} · Zema German{% endblock %}
 
@@ -13,7 +13,7 @@
     <section class="card gate">
       <h2>{% block heading %}{% endblock %}</h2>
       <p>{% block message %}{% endblock %}</p>
-      <a class="btn btn-primary" href="/">Go to the course</a>
+      <a class="btn btn-primary" href="/">{% t "Go to the course" %}</a>
     </section>
   </div>
 {% endblock %}

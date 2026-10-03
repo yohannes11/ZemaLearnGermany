@@ -54,7 +54,8 @@
       const days = Math.ceil(words / perDay);
       const w = Math.round(days / 7);
       out.textContent = perDay;
-      weeks.textContent = days < 14 ? `${days} days` : `${w} weeks`;
+      // The labels come from the page, in the page's language: "{n} days" / "{n} weeks".
+      weeks.textContent = (days < 14 ? calc.dataset.daysLabel : calc.dataset.weeksLabel).replace('{n}', days < 14 ? days : w);
     };
     range.addEventListener('input', update);
     update();

@@ -1,10 +1,13 @@
-"""Source for course-data.js: German A1.1, a Start unit (pronunciation, numbers 1-12) and Units 1-7
-(vocabulary sheets + unit recaps from 11percent.de).
+"""Source for course-data.js: German A1.1, a Start unit (pronunciation, numbers 1-12) and Units 1-9.
+Units 1-7 began as vocabulary sheets and unit recaps (11percent.de); later sections, lessons and Units 8-9
+extend the course to the full A1.1 syllabus.
 
 Run this file to regenerate static/course/js/course-data.js, then tools/gen_course_audio.py for new audio.
 """
 import json
 from pathlib import Path
+
+from word_pictures import PICTURES
 
 
 def w(german, english):
@@ -326,7 +329,7 @@ UNIT1 = {
             ('aus der Türkei', 'from Turkey'), ('aus den Niederlanden', 'from the Netherlands'),
             ('aus den Vereinigten Arabischen Emiraten', 'from the UAE')]),
         sec('1.5', 'How are you?', [
-            ('Wie gehts?', 'How are you? (informal, short)'), ('Wie geht es dir?', 'How are you? (informal)'),
+            ("Wie geht's?", 'How are you? (informal, short)'), ('Wie geht es dir?', 'How are you? (informal)'),
             ('Wie geht es Ihnen?', 'How are you? (formal)'), ('gut', 'good'), ('sehr gut', 'very good'),
             ('schlecht', 'bad'), ('sehr schlecht', 'very bad'), ('soso', 'so-so')]),
         sec('1.6', 'Question words', [
@@ -1174,7 +1177,1394 @@ UNIT7 = {
     ],
 }
 
-COURSE = {'units': [UNIT0, UNIT1, UNIT2, UNIT3, UNIT4, UNIT5, UNIT6, UNIT7]}
+
+# ================================================================ Extended A1.1 syllabus
+# More sections, lessons and exercise types for every unit, plus Units 8 and 9 (travel; the past).
+# All texts and example sentences are written for this course.
+
+# Names and places keep their capital letter when they start a sentence-building exercise.
+NAMES = {'Selam', 'Dawit', 'Hanna', 'Yonas', 'Meron', 'Abebe', 'Tigist', 'Samuel', 'Liya', 'Kaleb', 'Almaz',
+         'Lena', 'Jonas', 'Anna', 'Herr', 'Frau', 'Sie', 'Deutschland', 'Äthiopien', 'Addis', 'Berlin',
+         'Frankfurt', 'Hamburg', 'Leipzig'}
+
+
+def pick(prompt, answer, options, say=None, hint='', why=''):
+    """Multiple choice; `say` (default: the answer) is played after answering."""
+    return {'type': 'choose', 'prompt': prompt, 'answer': answer, 'options': options, 'hint': hint,
+            'say': answer if say is None else say, 'why': why}
+
+
+def tf(statement, true, why=''):
+    """Reading comprehension: richtig (true) or falsch (false)?"""
+    answer = 'richtig' if true else 'falsch'
+    return {'type': 'choose', 'prompt': statement, 'answer': answer, 'options': ['richtig', 'falsch'],
+            'hint': 'Richtig (true) or falsch (false)? Look at the text.', 'say': '', 'show': answer, 'why': why}
+
+
+def order(sentence, hint, alts=(), keep=False):
+    """Sentence building: the learner taps the words into order. `alts` are other correct word orders."""
+    words = sentence.rstrip('.?!').split()
+    if not keep and words[0] not in NAMES:
+        words[0] = words[0][0].lower() + words[0][1:]
+    prompt = 'Build the question.' if sentence.endswith('?') else 'Build the sentence.'
+    return {'type': 'order', 'prompt': prompt, 'tiles': words, 'answer': sentence, 'alts': list(alts),
+            'hint': hint, 'say': sentence}
+
+
+def dialogue(lines, hint):
+    """Put the lines of a conversation in order."""
+    return {'type': 'order', 'mode': 'lines', 'prompt': 'Put the conversation in order.', 'tiles': lines,
+            'answer': ' '.join(lines), 'hint': hint, 'say': '', 'show': ' → '.join(lines)}
+
+
+def write_de(english, german, alts=(), hint='', why=''):
+    """Translation into German, typed."""
+    return {'type': 'write', 'lang': 'de', 'prompt': 'Write it in German.', 'text': english, 'answer': german,
+            'alts': list(alts), 'hint': hint, 'say': german, 'why': why}
+
+
+def write_en(german, english, alts=()):
+    """Translation into English, typed."""
+    return {'type': 'write', 'lang': 'en', 'prompt': 'What does it mean in English?', 'text': german,
+            'answer': english, 'alts': list(alts), 'hint': '', 'say': german, 'show': english, 'why': ''}
+
+
+def answer_de(question, answer, alts=()):
+    """Answer a question about a text, in German."""
+    return {'type': 'write', 'lang': 'de', 'prompt': 'Answer in German.', 'text': question, 'answer': answer,
+            'alts': list(alts), 'hint': '', 'say': answer, 'why': ''}
+
+
+def dictation(german, hint, alts=()):
+    """Listen and write."""
+    return {'type': 'write', 'lang': 'de', 'listen': True, 'prompt': 'Write what you hear.', 'answer': german,
+            'alts': list(alts), 'hint': hint, 'say': german, 'why': ''}
+
+
+def lesson(key, code, title, chapters, intro, blocks, rules, quiz_title, items):
+    return {'key': key, 'code': code, 'title': title, 'chapters': chapters, 'intro': intro, 'blocks': blocks,
+            'rules': rules, 'quiz': {'title': quiz_title, 'items': items}}
+
+
+def reading(key, code, title, chapters, intro, text_title, paragraphs, glossary, items):
+    return {'key': key, 'code': code, 'title': f'Reading: {title}', 'chapters': chapters, 'intro': intro,
+            'blocks': [{'step': 'Read', 'title': text_title, 'reading': paragraphs, 'glossary': glossary}],
+            'rules': [], 'quiz': {'title': 'Questions about the text', 'items': items}}
+
+
+READ_INTRO = ['Read the text. Press a speaker to hear each part, and use the word list below it.',
+              'Then answer the questions. The text stays on screen while you do.']
+
+
+def review(unit_id):
+    return {'key': f'test-{unit_id}', 'code': '★', 'title': 'Unit test', 'chapters': [], 'custom': 'review',
+            'intro': ['Twelve questions from every lesson of this unit, mixed with its vocabulary. '
+                      'You get a new mix each time you start.',
+                      'Score 9 or more to complete the unit. If a question surprises you, go back to that lesson.']}
+
+
+def extend(unit, sections=(), grammar=(), words=None):
+    """Add sections and lessons to a unit; `words` adds entries to existing sections by key."""
+    for key, extra in (words or {}).items():
+        target = next(s for s in unit['sections'] if s['key'] == key)
+        target['words'] += [w(g, e) for g, e in extra]
+    unit['sections'] += list(sections)
+    unit['grammar'] += list(grammar) + [review(unit['id'])]
+
+
+# ---------------------------------------------------------------- Start: the alphabet
+extend(UNIT0, sections=[
+    sec('0.7', 'The alphabet', [
+        ('das Alphabet', 'the alphabet (n.)'), ('der Buchstabe', 'the letter (m.)'), ('buchstabieren', 'to spell'),
+        ('Wie schreibt man das?', 'How do you spell that?'),
+        ('Können Sie das bitte buchstabieren?', 'Can you spell that, please?'),
+        ('Wie ist Ihr Name, bitte?', 'What is your name, please?'), ('mit zwei n', "with two n's"),
+        ('der Umlaut', 'the umlaut (m.)'), ('das Eszett', 'the letter ß (n.)')]),
+], grammar=[
+    lesson('g0-alphabet', 'P7', 'The German alphabet', ['0.7'],
+           ['At the embassy, at the doctor\'s or on the phone you will often hear: <em class="de">Wie schreibt man '
+            'das?</em> (How do you spell that?) Then you spell your name with the German letter names.',
+            'Many letters sound close to English. Watch out for the vowels and for <strong>J, V, W, Y, Z</strong>.'],
+           [{'step': 'The letters', 'title': 'A to Z, plus ä, ö, ü and ß',
+             'text': 'Press a speaker to hear each group of letters.',
+             'table': {'head': ['Letters', 'Say them'],
+                       'rows': [['A B C D', 'a · be · ze · de'], ['E F G H', 'e · ef · ge · ha'],
+                                ['I J K L', 'i · jot · ka · el'], ['M N O P', 'em · en · o · pe'],
+                                ['Q R S T', 'ku · er · es · te'], ['U V W X', 'u · fau · we · ix'],
+                                ['Y Z', 'üpsilon · zett'], ['Ä Ö Ü ß', 'ä · ö · ü · eszett']],
+                       'say': ['a, be, ze, de', 'e, ef, ge, ha', 'i, jot, ka, el', 'em, en, o, pe', 'ku, er, es, te',
+                               'u, fau, we, ix', 'üpsilon, zett', 'ä, ö, ü, eszett'], 'highlight': 1}},
+            {'step': 'Spelling a name', 'title': 'Say it letter by letter', 'examples': [
+                ('Wie schreibt man das?', 'How do you spell that?'), ('es, e, el, a, em', 'Selam'),
+                ('de, a, we, i, te', 'Dawit'), ('Mit zwei n: ha, a, en, en, a.', "With two n's: Hanna.")]}],
+           [('J = jot', 'not "jay"'), ('V = fau', 'like the f in "far"'), ('W = we', 'sounds like "vay"'),
+            ('Z = zett', '"tsett"'), ('I = i', 'sounds like "ee"'), ('E = e', 'sounds like "ay"')],
+           'Spell and listen', [
+               listen('Selam', ['Selam', 'Salem', 'Selamu'], say='es, e, el, a, em',
+                      hint='Listen to the spelling, then choose the name.'),
+               listen('Dawit', ['Dawit', 'David', 'Dawid'], say='de, a, we, i, te',
+                      hint='Listen to the spelling, then choose the name.'),
+               listen('Tigist', ['Tigist', 'Tegist', 'Tigest'], say='te, i, ge, i, es, te',
+                      hint='Listen to the spelling, then choose the name.'),
+               listen('Yonas', ['Yonas', 'Jonas', 'Junas'], say='üpsilon, o, en, a, es',
+                      hint='Listen to the spelling, then choose the name.'),
+               listen('Meron', ['Meron', 'Miron', 'Meran'], say='em, e, er, o, en',
+                      hint='Listen to the spelling, then choose the name.'),
+               listen('Hawassa', ['Hawassa', 'Awasa', 'Hawasa'], say='ha, a, we, a, es, es, a',
+                      hint='Listen to the spelling, then choose the town.'),
+               pick('How do you say the letter J?', 'jot', ['jot', 'jay', 'je'], hint='Choose the letter name.'),
+               pick('How do you say the letter V?', 'fau', ['fau', 'we', 'vi'], hint='Choose the letter name.'),
+               pick('How do you say the letter W?', 'we', ['we', 'dabbelju', 'fau'], hint='Choose the letter name.'),
+               pick('How do you say the letter Z?', 'zett', ['zett', 'zi', 'es'], hint='Choose the letter name.'),
+               pick('How do you say the letter I?', 'i', ['i', 'ei', 'je'], hint='It sounds like the "ee" in "see".'),
+               {**dictation('Hanna', 'A name, spelled letter by letter.'), 'say': 'ha, a, en, en, a'},
+           ]),
+])
+
+# ---------------------------------------------------------------- Unit 1 additions
+extend(UNIT1, words={
+    '1.1': [('Gute Nacht!', 'Good night!')],
+    '1.5': [('Super!', 'Great!'), ('Es geht.', "It's okay. / So-so."), ('Nicht so gut.', 'Not so good.'),
+            ('Und dir?', 'And you? (informal)'), ('Auch gut.', 'Good too.')],
+    '1.10': [('Freut mich!', 'Nice to meet you!')],
+}, sections=[
+    sec('1.11', 'Countries', [
+        ('Äthiopien', 'Ethiopia'), ('Eritrea', 'Eritrea'), ('Kenia', 'Kenya'), ('Deutschland', 'Germany'),
+        ('Österreich', 'Austria'), ('Frankreich', 'France'), ('Spanien', 'Spain'), ('Italien', 'Italy'),
+        ('Ich komme aus Äthiopien.', 'I come from Ethiopia.'), ('Er kommt aus Kenia.', 'He comes from Kenya.'),
+        ('Sie kommt aus Eritrea.', 'She comes from Eritrea.'), ('Ich wohne in Addis Abeba.', 'I live in Addis Ababa.')]),
+    sec('1.12', 'In the German class', [
+        ('Ich lerne Deutsch.', 'I am learning German.'), ('der Deutschkurs', 'the German course (m.)'),
+        ('der Kursleiter', 'the course teacher (m.)'), ('die Kursleiterin', 'the course teacher (f.)'),
+        ('Ich verstehe das nicht.', "I don't understand that."), ('Noch einmal, bitte.', 'Once more, please.'),
+        ('Langsam, bitte.', 'Slowly, please.'), ('Wie sagt man … auf Deutsch?', 'How do you say … in German?'),
+        ('Entschuldigung, wie bitte?', 'Sorry, pardon?')]),
+], grammar=[
+    lesson('g1-word-order', 'G3', 'Questions and statements: where the verb goes', ['1.6', '1.4'],
+           ['In a statement and in a W-question (with <em class="de">wer, wie, woher, wo, was</em>) the verb is '
+            'always in <strong>position 2</strong>.',
+            'In a yes/no question the verb comes <strong>first</strong>: <em class="de">Kommst du aus Kenia?</em>'],
+           [{'step': 'Position 2', 'title': 'The verb is the second element',
+             'text': 'Press a speaker to hear each sentence.',
+             'table': {'head': ['Position 1', 'Verb', 'Rest'],
+                       'rows': [['Wer', 'ist', 'das?'], ['Woher', 'kommst', 'du?'], ['Wie', 'heißen', 'Sie?'],
+                                ['Ich', 'heiße', 'Selam.'], ['Das', 'ist', 'Dawit.'], ['Er', 'kommt', 'aus Äthiopien.']],
+                       'say': ['Wer ist das?', 'Woher kommst du?', 'Wie heißen Sie?', 'Ich heiße Selam.',
+                               'Das ist Dawit.', 'Er kommt aus Äthiopien.'], 'highlight': 1}},
+            {'step': 'Verb first', 'title': 'Yes/no questions', 'examples': [
+                ('Kommst du aus Kenia?', 'Do you come from Kenya?'), ('Heißt du Hanna?', 'Is your name Hanna?'),
+                ('Sind Sie Frau Bekele?', 'Are you Ms Bekele?'), ('Lernst du Deutsch?', 'Are you learning German?')]}],
+           [('W-question', 'Woher + verb: Woher kommst du?'), ('Statement', 'Ich + verb: Ich komme aus Kenia.'),
+            ('Yes/no question', 'verb first: Kommst du aus Kenia?')],
+           'Build the sentences', [
+               order('Woher kommst du?', 'Where are you from?'),
+               order('Wie heißen Sie?', 'What is your name? (formal)'),
+               order('Ich komme aus Äthiopien.', 'I come from Ethiopia.'),
+               order('Das ist Dawit.', 'That is Dawit.'),
+               order('Wer ist das?', 'Who is that?'),
+               order('Kommst du aus Kenia?', 'Do you come from Kenya?'),
+               order('Wo wohnst du?', 'Where do you live?'),
+               order('Lernst du auch Deutsch?', 'Are you learning German too?'),
+               choose('Where are you from?', 'Woher kommst du?', ['Woher kommst du?', 'Woher du kommst?', 'Kommst woher du?'],
+                      why='W-word first, then the verb.'),
+               choose('Are you Mr Tesfaye?', 'Sind Sie Herr Tesfaye?',
+                      ['Sind Sie Herr Tesfaye?', 'Sie Herr Tesfaye sind?', 'Herr Tesfaye sind Sie?'],
+                      why='Yes/no question: the verb comes first.'),
+               write_de('I come from Ethiopia.', 'Ich komme aus Äthiopien.'),
+               write_de('What is your name? (informal)', 'Wie heißt du?', alts=['Wie ist dein Name?']),
+               write_en('Woher kommen Sie?', 'Where are you from?', alts=['Where do you come from?']),
+           ]),
+    lesson('g1-du-sie', 'G4', 'du or Sie?', ['1.7', '1.10'],
+           ['German has two words for "you". <em class="de">du</em> is for family, friends, children and classmates. '
+            '<em class="de">Sie</em> (always with a capital S) is for adults you do not know well: at work, in shops, '
+            'at the doctor\'s, with officials.',
+            'With <em class="de">Sie</em> the verb looks like the infinitive: <em class="de">Sie kommen, Sie heißen</em>. '
+            'And <em class="de">sein</em> becomes <em class="de">Sie sind</em>.'],
+           [{'step': 'Side by side', 'title': 'Informal and formal',
+             'table': {'head': ['', 'du', 'Sie'],
+                       'rows': [['heißen', 'Wie heißt du?', 'Wie heißen Sie?'],
+                                ['kommen', 'Woher kommst du?', 'Woher kommen Sie?'],
+                                ['sein', 'Wer bist du?', 'Wer sind Sie?'],
+                                ['How are you?', 'Wie geht es dir?', 'Wie geht es Ihnen?'],
+                                ['And you?', 'Und dir?', 'Und Ihnen?']],
+                       'say': ['Wie heißt du? Wie heißen Sie?', 'Woher kommst du? Woher kommen Sie?',
+                               'Wer bist du? Wer sind Sie?', 'Wie geht es dir? Wie geht es Ihnen?',
+                               'Und dir? Und Ihnen?'], 'highlight': 2}},
+            {'step': 'Names', 'title': 'First name or family name?',
+             'text': 'With du you use the first name. With Sie you use Herr or Frau and the family name.',
+             'examples': [("Hallo, Dawit! Wie geht's?", 'Hi, Dawit! How are you?'),
+                          ('Guten Tag, Frau Bekele! Wie geht es Ihnen?', 'Good day, Ms Bekele! How are you?'),
+                          ('Sie können mich duzen.', 'You can call me du.')]}],
+           [('du', 'friends, family, children, classmates'), ('Sie', 'strangers, work, officials'),
+            ('Sie + verb', '= infinitive: Sie kommen'), ('dir / Ihnen', 'Wie geht es dir / Ihnen?')],
+           'du or Sie?', [
+               choose('You meet a new classmate. You ask her name.', 'Wie heißt du?', ['Wie heißt du?', 'Wie heißen Sie?'],
+                      hint='du or Sie?', why='A classmate: du.'),
+               choose('At the embassy, you greet the officer.', 'Guten Tag! Wie geht es Ihnen?',
+                      ['Guten Tag! Wie geht es Ihnen?', 'Hallo! Wie geht es dir?'], hint='du or Sie?',
+                      why='An official: Sie.'),
+               choose('Your doctor asks where you are from.', 'Woher kommen Sie?', ['Woher kommen Sie?', 'Woher kommst du?'],
+                      hint='du or Sie?', why='A doctor and a patient say Sie.'),
+               choose('You ask a child his name.', 'Wie heißt du?', ['Wie heißt du?', 'Wie heißen Sie?'],
+                      hint='du or Sie?', why='Children: du.'),
+               choose('You ask your new boss, Mr Weber, how he is.', 'Wie geht es Ihnen, Herr Weber?',
+                      ['Wie geht es Ihnen, Herr Weber?', 'Wie geht es dir, Herr Weber?'], hint='du or Sie?',
+                      why='Herr or Frau + family name goes with Sie.'),
+               gap('Woher ', 'kommen', ' Sie?', ['kommen', 'kommst', 'kommt'], 'Where are you from? (formal)'),
+               gap('Woher ', 'kommst', ' du?', ['kommst', 'kommen', 'komme'], 'Where are you from? (informal)'),
+               gap('Wer ', 'sind', ' Sie?', ['sind', 'bist', 'ist'], 'Who are you? (formal)'),
+               gap('Wie geht es ', 'Ihnen', '?', ['Ihnen', 'dir', 'Sie'], 'How are you? (formal)'),
+               gap('Gut, danke. Und ', 'dir', '?', ['dir', 'Ihnen', 'du'], 'Fine, thanks. And you? (to a friend)'),
+               dialogue(['Guten Tag! Ich heiße Abebe Tesfaye.', 'Guten Tag, Herr Tesfaye. Ich bin Anna Weber.',
+                         'Freut mich, Frau Weber. Woher kommen Sie?', 'Ich komme aus Deutschland. Und Sie?',
+                         'Ich komme aus Äthiopien.'], 'A formal first meeting'),
+               dialogue(['Hallo! Ich bin Meron. Und du?', 'Hi, Meron! Ich heiße Jonas.', 'Woher kommst du, Jonas?',
+                         'Aus Österreich. Und du?', 'Ich komme aus Eritrea.'], 'Two classmates'),
+           ]),
+    reading('g1-reading', 'R1', 'First day in the German course', ['1.11', '1.12'], READ_INTRO,
+            'Der erste Tag im Deutschkurs', [
+                'Heute ist der erste Tag im Deutschkurs. Die Kursleiterin heißt Frau Wagner. Sie kommt aus '
+                'Deutschland, aus Hamburg.',
+                'Im Kurs sind zwölf Personen. Meron kommt aus Eritrea, aber sie wohnt in Addis Abeba. '
+                'Dawit kommt aus Bahir Dar.',
+                'Dawit sagt: „Hallo, ich heiße Dawit. Ich lerne Deutsch für die Arbeit.“ Meron fragt: „Wie bitte? '
+                'Noch einmal, bitte!“',
+                'Frau Wagner sagt: „Herzlich willkommen! Wir sagen hier du, okay?“'],
+            [('heute', 'today'), ('der erste Tag', 'the first day'), ('aber', 'but'), ('für die Arbeit', 'for work'),
+             ('Herzlich willkommen!', 'Welcome!')], [
+                tf('Frau Wagner kommt aus Hamburg.', True),
+                tf('Im Kurs sind zehn Personen.', False, why='Im Kurs sind zwölf Personen.'),
+                tf('Meron wohnt in Eritrea.', False, why='Sie kommt aus Eritrea, aber sie wohnt in Addis Abeba.'),
+                tf('Dawit kommt aus Bahir Dar.', True),
+                tf('Dawit lernt Deutsch für die Arbeit.', True),
+                tf('Im Kurs sagen alle Sie.', False, why='Frau Wagner sagt: Wir sagen hier du.'),
+                pick('Wer ist Frau Wagner?', 'die Kursleiterin', ['die Kursleiterin', 'eine Studentin', 'Merons Mutter'],
+                     hint='Who is Frau Wagner?'),
+                pick('Was sagt Meron?', 'Noch einmal, bitte!', ['Noch einmal, bitte!', 'Herzlich willkommen!',
+                                                                'Ich heiße Dawit.'], hint='What does Meron say?'),
+                answer_de('Wo wohnt Meron?', 'Sie wohnt in Addis Abeba.', alts=['In Addis Abeba.', 'Addis Abeba']),
+                write_en('Ich lerne Deutsch für die Arbeit.', 'I am learning German for work.',
+                         alts=['I learn German for work.', 'I am learning German for my job.']),
+            ]),
+])
+
+# ---------------------------------------------------------------- Unit 2 additions
+extend(UNIT2, words={
+    '2.6': [('Amharisch', 'Amharic'), ('Tigrinya', 'Tigrinya'), ('Oromo', 'Oromo'), ('Arabisch', 'Arabic'),
+            ('Italienisch', 'Italian'), ('Türkisch', 'Turkish'), ('Russisch', 'Russian'),
+            ('Sprichst du Englisch?', 'Do you speak English?'), ('Ja, ein bisschen.', 'Yes, a little.'),
+            ('Nein, gar nicht.', 'No, not at all.')],
+}, sections=[
+    sec('2.14', 'How old are you?', [
+        ('Wie alt bist du?', 'How old are you? (informal)'), ('Wie alt sind Sie?', 'How old are you? (formal)'),
+        ('Ich bin 25 Jahre alt.', 'I am 25 years old.'), ('Ich bin 30.', 'I am 30.'), ('das Alter', 'the age (n.)'),
+        ('jung', 'young'), ('alt', 'old'), ('Er ist 70 Jahre alt.', 'He is 70 years old.')]),
+    sec('2.15', 'More family', [
+        ('der Enkel', 'the grandson (m.)'), ('die Enkelin', 'the granddaughter (f.)'),
+        ('die Enkelkinder', 'the grandchildren (pl.)'), ('der Ehemann', 'the husband (m.)'),
+        ('die Ehefrau', 'the wife (f.)'), ('der Partner', 'the partner (m.)'), ('die Partnerin', 'the partner (f.)'),
+        ('Mama', 'Mum'), ('Papa', 'Dad'), ('das Kind', 'the child (n.)'), ('Ich bin Single.', 'I am single.'),
+        ('Wir leben zusammen.', 'We live together.'), ('Ich lebe allein.', 'I live alone.')]),
+    sec('2.16', 'Yes, no or doch', [
+        ('ja', 'yes'), ('nein', 'no'), ('doch', 'yes (to a negative question)'),
+        ('Ist das deine Schwester?', 'Is that your sister?'), ('Ja, das ist meine Schwester.', 'Yes, that is my sister.'),
+        ('Nein, das ist meine Cousine.', 'No, that is my cousin.'), ('Ist das nicht dein Bruder?', "Isn't that your brother?"),
+        ('Doch, das ist mein Bruder.', 'Yes, it is my brother.'), ('Ich glaube, …', 'I think …')]),
+    sec('2.17', "Whose? Selam's brother", [
+        ('Selams Bruder', "Selam's brother"), ('Dawits Mutter', "Dawit's mother"), ('Hannas Eltern', "Hanna's parents"),
+        ("Jonas' Vater", "Jonas's father"), ('Wer ist Dawits Vater?', "Who is Dawit's father?"),
+        ('Das ist Merons Tochter.', "That is Meron's daughter.")]),
+], grammar=[
+    lesson('g2-doch', 'G5', 'ja, nein or doch?', ['2.16'],
+           ['To a normal yes/no question you answer <strong>ja</strong> or <strong>nein</strong>.',
+            'If the question contains <em class="de">nicht</em> or <em class="de">kein</em> and you want to say '
+            '"yes, it is", the answer is <strong>doch</strong>. English has no single word for this.'],
+           [{'step': 'Three answers', 'title': 'Which word, when?',
+             'table': {'head': ['Question', 'Yes', 'No'],
+                       'rows': [['Ist das dein Vater?', 'Ja, das ist mein Vater.', 'Nein, das ist mein Onkel.'],
+                                ['Ist das nicht dein Vater?', 'Doch, das ist mein Vater.', 'Nein, das ist mein Onkel.'],
+                                ['Hast du keine Kinder?', 'Doch, ich habe zwei Kinder.', 'Nein, ich habe keine Kinder.']],
+                       'say': ['Ist das dein Vater? Ja, das ist mein Vater.', 'Ist das nicht dein Vater? Doch, das ist mein Vater.',
+                               'Hast du keine Kinder? Doch, ich habe zwei Kinder.'], 'highlight': 1}},
+            {'step': 'Listen', 'title': 'doch in conversation', 'examples': [
+                ('Bist du nicht verheiratet? – Doch!', "Aren't you married? – Yes, I am!"),
+                ('Sprichst du kein Englisch? – Doch, ein bisschen.', "Don't you speak any English? – Yes, a little."),
+                ('Wohnst du nicht in Addis? – Nein, in Adama.', "Don't you live in Addis? – No, in Adama.")]}],
+           [('ja / nein', 'answers to a normal question'), ('doch', '"yes" to a question with nicht or kein'),
+            ('nein', '"no" to both kinds of question')],
+           'ja, nein or doch?', [
+               gap('Ist das deine Mutter? – ', 'Ja', ', das ist meine Mutter.', ['Ja', 'Doch', 'Nein'], 'Yes, it is.'),
+               gap('Ist das nicht deine Mutter? – ', 'Doch', ', das ist meine Mutter.', ['Ja', 'Doch', 'Nein'],
+                   'Yes, it is.', why='A question with nicht: "yes" is doch.'),
+               gap('Bist du verheiratet? – ', 'Nein', ', ich bin ledig.', ['Ja', 'Doch', 'Nein'], 'No, I am single.'),
+               gap('Bist du nicht verheiratet? – ', 'Doch', ', ich bin verheiratet.', ['Ja', 'Doch', 'Nein'],
+                   'Yes, I am married.'),
+               gap('Hast du keine Geschwister? – ', 'Doch', ', ich habe zwei Brüder.', ['Ja', 'Doch', 'Nein'],
+                   'Yes, I have two brothers.', why='A question with kein: "yes" is doch.'),
+               gap('Hast du keine Kinder? – ', 'Nein', ', ich habe keine Kinder.', ['Ja', 'Doch', 'Nein'],
+                   'No, I have no children.'),
+               gap('Sprichst du Amharisch? – ', 'Ja', ', sehr gut.', ['Ja', 'Doch', 'Nein'], 'Yes, very well.'),
+               gap('Sprichst du kein Englisch? – ', 'Doch', ', ein bisschen.', ['Ja', 'Doch', 'Nein'], 'Yes, a little.'),
+               gap('Kommst du nicht aus Kenia? – ', 'Nein', ', ich komme aus Äthiopien.', ['Ja', 'Doch', 'Nein'],
+                   'No, from Ethiopia.'),
+               gap('Ist Dawit nicht dein Bruder? – ', 'Doch', ', er ist mein Bruder.', ['Ja', 'Doch', 'Nein'],
+                   'Yes, he is my brother.'),
+               order('Ist das nicht deine Schwester?', "Isn't that your sister?"),
+               choose("Aren't you from Ethiopia? – Yes, I am.", 'Doch, ich komme aus Äthiopien.',
+                      ['Doch, ich komme aus Äthiopien.', 'Ja, ich komme aus Äthiopien.', 'Nein, ich komme aus Äthiopien.'],
+                      why='After a question with nicht, "yes" is doch.'),
+           ]),
+    lesson('g2-names-s', 'G6', "Selams Bruder: whose is it?", ['2.17', '2.1'],
+           ['To say whose family member someone is, add <strong>-s</strong> to the name, with no apostrophe: '
+            '<em class="de">Selams Bruder</em> = Selam\'s brother.',
+            'If the name already ends in s, ß, x or z, write only an apostrophe: <em class="de">Jonas\' Vater</em>.'],
+           [{'step': 'Examples', 'title': 'Name + s', 'examples': [
+               ('Selams Bruder', "Selam's brother"), ('Dawits Mutter', "Dawit's mother"),
+               ('Hannas Eltern', "Hanna's parents"), ("Jonas' Vater", "Jonas's father"),
+               ('Wer ist Merons Tochter?', "Who is Meron's daughter?")]},
+            {'step': 'Family puzzles', 'title': 'Who is who?', 'examples': [
+                ('Abebe ist Dawits Vater.', "Abebe is Dawit's father."),
+                ('Dawit ist Abebes Sohn.', "Dawit is Abebe's son."),
+                ('Hannas Oma heißt Almaz.', "Hanna's grandma is called Almaz.")]}],
+           [('Name + s', 'Selams Bruder'), ('No apostrophe', "Hannas, not Hanna's"),
+            ('Name ending in s', "Jonas' Vater")],
+           'Whose is it?', [
+               gap('', 'Selams', ' Bruder heißt Yonas.', ['Selams', "Selam's", 'Selam'], "Selam's brother is called Yonas.",
+                   why='German adds -s with no apostrophe.'),
+               gap('Das ist ', 'Dawits', ' Mutter.', ['Dawits', "Dawit's", 'Dawit'], "That is Dawit's mother."),
+               gap('Wer ist ', 'Hannas', ' Vater?', ['Hannas', 'Hanna', "Hannas'"], "Who is Hanna's father?"),
+               gap('', "Jonas'", ' Schwester heißt Lena.', ["Jonas'", 'Jonass', 'Jonases'], "Jonas's sister is called Lena.",
+                   why='The name ends in s: add only an apostrophe.'),
+               pick('Abebe ist Dawits Vater. Dawit ist Abebes …', 'Sohn', ['Sohn', 'Bruder', 'Vater'],
+                    hint="Abebe is Dawit's father. Dawit is Abebe's …"),
+               pick("Almaz ist Hannas Oma. Hanna ist Almaz' …", 'Enkelin', ['Enkelin', 'Tochter', 'Schwester'],
+                    hint="Almaz is Hanna's grandma. Hanna is Almaz's …"),
+               pick("Yonas ist Selams Bruder. Selam ist Yonas' …", 'Schwester', ['Schwester', 'Mutter', 'Tante'],
+                    hint="Yonas is Selam's brother. Selam is Yonas's …"),
+               pick('Tigist ist die Schwester von Dawits Mutter. Tigist ist Dawits …', 'Tante', ['Tante', 'Oma', 'Cousine'],
+                    hint="Tigist is the sister of Dawit's mother. She is Dawit's …"),
+               pick('Samuel ist der Sohn von Dawits Onkel. Samuel ist Dawits …', 'Cousin', ['Cousin', 'Bruder', 'Enkel'],
+                    hint="Samuel is the son of Dawit's uncle. He is Dawit's …"),
+               order('Das ist Merons Tochter.', "That is Meron's daughter."),
+               write_de("Selam's brother", 'Selams Bruder', hint='Remember: -s, no apostrophe.'),
+               write_en('Hannas Eltern wohnen in Adama.', "Hanna's parents live in Adama."),
+           ]),
+    lesson('g2-verbs-plural', 'G7', 'wohnen, arbeiten, haben: all six forms', ['2.11', '2.12'],
+           ['You already know the endings for ich, du and er/sie. Here are all six persons, with '
+            '<em class="de">wir, ihr</em> and <em class="de">sie/Sie</em>.',
+            'Verbs whose stem ends in <strong>-t</strong> or <strong>-d</strong> (arbeiten, finden) add an extra '
+            '<strong>e</strong> so they are easier to say: <em class="de">du arbeitest, er arbeitet</em>.'],
+           [{'step': 'The forms', 'title': 'Six persons',
+             'table': {'head': ['Person', 'wohnen', 'arbeiten', 'haben'],
+                       'rows': [['ich', 'wohne', 'arbeite', 'habe'], ['du', 'wohnst', 'arbeitest', 'hast'],
+                                ['er / sie / es', 'wohnt', 'arbeitet', 'hat'], ['wir', 'wohnen', 'arbeiten', 'haben'],
+                                ['ihr', 'wohnt', 'arbeitet', 'habt'], ['sie / Sie', 'wohnen', 'arbeiten', 'haben']],
+                       'say': ['ich wohne, ich arbeite, ich habe', 'du wohnst, du arbeitest, du hast',
+                               'er wohnt, er arbeitet, er hat', 'wir wohnen, wir arbeiten, wir haben',
+                               'ihr wohnt, ihr arbeitet, ihr habt', 'sie wohnen, sie arbeiten, sie haben']}},
+            {'step': 'In sentences', 'title': 'wir, ihr, sie', 'examples': [
+                ('Wir wohnen in Hawassa.', 'We live in Hawassa.'), ('Wo wohnt ihr?', 'Where do you (all) live?'),
+                ('Sie arbeiten in einem Hotel.', 'They work in a hotel.'),
+                ('Ihr habt zwei Kinder, oder?', 'You have two children, right?'),
+                ('Lebt ihr zusammen?', 'Do you live together?')]}],
+           [('wir / sie / Sie', '= the infinitive: wohnen'), ('ihr', '-t: ihr wohnt'),
+            ('arbeiten', 'du arbeitest, er arbeitet'), ('haben', 'du hast, er hat')],
+           'Choose the right form', [
+               gap('Wir ', 'wohnen', ' in Hawassa.', ['wohnen', 'wohnt', 'wohnst'], 'We live in Hawassa.'),
+               gap('Wo ', 'wohnt', ' ihr?', ['wohnt', 'wohnen', 'wohnst'], 'Where do you (all) live?'),
+               gap('Meron ', 'arbeitet', ' in einem Café.', ['arbeitet', 'arbeitt', 'arbeiten'], 'Meron works in a café.',
+                   why='The stem ends in t: arbeit + e + t.'),
+               gap('Du ', 'arbeitest', ' viel.', ['arbeitest', 'arbeitst', 'arbeiten'], 'You work a lot.'),
+               gap('Ihr ', 'habt', ' zwei Kinder.', ['habt', 'haben', 'hat'], 'You (all) have two children.'),
+               gap('Dawit und Selam ', 'leben', ' zusammen.', ['leben', 'lebt', 'lebst'], 'Dawit and Selam live together.'),
+               gap('', 'Lebt', ' ihr in Deutschland?', ['Lebt', 'Leben', 'Lebst'], 'Do you (all) live in Germany?'),
+               gap('Sie ', 'haben', ' keine Kinder.', ['haben', 'hat', 'habt'], 'They have no children.'),
+               order('Wir wohnen in Adama.', 'We live in Adama.'),
+               order('Wo arbeitet ihr?', 'Where do you (all) work?'),
+               write_de('We live together.', 'Wir leben zusammen.', alts=['Wir wohnen zusammen.']),
+               write_de('Where do you live? (informal, one person)', 'Wo wohnst du?', alts=['Wo lebst du?']),
+           ]),
+    reading('g2-reading', 'R1', "Hanna's family", ['2.1', '2.14', '2.15'], READ_INTRO, 'Hanna und ihre Familie', [
+        'Ich heiße Hanna Girma. Ich bin 27 Jahre alt und komme aus Äthiopien, aus Hawassa. Jetzt wohne ich in Frankfurt.',
+        'Ich bin verheiratet. Mein Mann heißt Samuel. Er ist 31 und arbeitet als Ingenieur. Wir haben eine Tochter. '
+        'Sie heißt Liya und ist drei Jahre alt.',
+        'Meine Eltern leben in Hawassa. Mein Vater ist Lehrer, meine Mutter arbeitet in einem Krankenhaus. '
+        'Ich habe zwei Brüder, aber keine Schwester.',
+        'Ich spreche Amharisch, Englisch und ein bisschen Deutsch. Mein Bruder Yonas spricht sehr gut Deutsch. '
+        'Er wohnt in Berlin.'],
+        [('jetzt', 'now'), ('als Ingenieur', 'as an engineer'), ('das Krankenhaus', 'the hospital'), ('aber', 'but')], [
+            tf('Hanna kommt aus Hawassa.', True),
+            tf('Hanna wohnt in Hawassa.', False, why='Jetzt wohnt sie in Frankfurt.'),
+            tf('Samuel ist Hannas Mann.', True),
+            tf('Liya ist Hannas Schwester.', False, why='Liya ist Hannas Tochter.'),
+            tf('Hanna hat zwei Brüder.', True),
+            tf('Hannas Mutter ist Lehrerin.', False,
+               why='Hannas Vater ist Lehrer. Ihre Mutter arbeitet in einem Krankenhaus.'),
+            pick('Wie alt ist Liya?', 'drei Jahre', ['drei Jahre', '27 Jahre', '31 Jahre'], hint='How old is Liya?'),
+            pick('Wer spricht sehr gut Deutsch?', 'Yonas', ['Yonas', 'Hanna', 'Samuel'], hint='Who speaks German very well?'),
+            answer_de('Was ist Samuel von Beruf?', 'Er ist Ingenieur.', alts=['Ingenieur', 'Er arbeitet als Ingenieur.']),
+            write_en('Wir haben eine Tochter.', 'We have a daughter.'),
+        ]),
+])
+
+# ---------------------------------------------------------------- Unit 3 additions
+extend(UNIT3, sections=[
+    sec('3.16', 'I like … (mögen)', [
+        ('mögen', 'to like'), ('ich mag', 'I like'), ('du magst', 'you like'), ('er mag', 'he likes'),
+        ('Ich mag Kaffee.', 'I like coffee.'), ('Ich mag keinen Fisch.', "I don't like fish."), ('Ich auch.', 'Me too.'),
+        ('Ich nicht.', "I don't."), ('Ich auch nicht.', 'Me neither.'), ('Ich schon.', 'I do.'),
+        ('lecker', 'tasty, delicious'), ('Das schmeckt gut.', 'That tastes good.')]),
+    sec('3.17', 'Breakfast & meals', [
+        ('das Frühstück', 'the breakfast (n.)'), ('zum Frühstück', 'for breakfast'), ('das Abendessen', 'the dinner (n.)'),
+        ('das Müsli', 'the muesli (n.)'), ('die Marmelade', 'the jam (f.)'), ('der Honig', 'the honey (m.)'),
+        ('die Butter', 'the butter (f.)'), ('die Suppe', 'the soup (f.)'), ('der Salat', 'the salad (m.)'),
+        ('die Nudeln', 'the pasta, noodles (pl.)'), ('das Eis', 'the ice cream (n.)'), ('die Tasse', 'the cup (f.)'),
+        ('eine Tasse Kaffee', 'a cup of coffee'), ('Was isst du zum Frühstück?', 'What do you eat for breakfast?')]),
+    sec('3.18', 'Compound nouns', [
+        ('der Apfelkuchen', 'the apple cake (m.)'), ('der Apfelsaft', 'the apple juice (m.)'),
+        ('der Schokoladenkuchen', 'the chocolate cake (m.)'), ('die Kartoffelsuppe', 'the potato soup (f.)'),
+        ('die Tomatensuppe', 'the tomato soup (f.)'), ('das Käsebrot', 'the cheese sandwich (n.)'),
+        ('der Obstsalat', 'the fruit salad (m.)'), ('die Kaffeetasse', 'the coffee cup (f.)')]),
+], grammar=[
+    lesson('g3-moegen', 'G5', 'mögen, möchten, nehmen', ['3.16', '3.15'],
+           ['<em class="de">mögen</em> means to like, in general: <em class="de">Ich mag Kaffee.</em> '
+            '<em class="de">möchten</em> means would like, now and politely: <em class="de">Ich möchte einen Kaffee, bitte.</em>',
+            'In a café you will also hear <em class="de">nehmen</em> (to take, to have). Its vowel changes: '
+            '<em class="de">du nimmst, er nimmt</em>.'],
+           [{'step': 'The forms', 'title': 'Three verbs for food and drink',
+             'table': {'head': ['Person', 'mögen', 'möchten', 'nehmen'],
+                       'rows': [['ich', 'mag', 'möchte', 'nehme'], ['du', 'magst', 'möchtest', 'nimmst'],
+                                ['er / sie / es', 'mag', 'möchte', 'nimmt'], ['wir', 'mögen', 'möchten', 'nehmen'],
+                                ['ihr', 'mögt', 'möchtet', 'nehmt'], ['sie / Sie', 'mögen', 'möchten', 'nehmen']],
+                       'say': ['ich mag, ich möchte, ich nehme', 'du magst, du möchtest, du nimmst',
+                               'er mag, er möchte, er nimmt', 'wir mögen, wir möchten, wir nehmen',
+                               'ihr mögt, ihr möchtet, ihr nehmt', 'sie mögen, sie möchten, sie nehmen']}},
+            {'step': 'In sentences', 'title': 'Like, would like, take', 'examples': [
+                ('Ich mag keinen Käse.', "I don't like cheese."), ('Magst du Injera?', 'Do you like injera?'),
+                ('Wir möchten zwei Tee, bitte.', 'We would like two teas, please.'), ('Was nimmst du?', 'What are you having?'),
+                ('Ich nehme die Suppe.', 'I will have the soup.'), ('Ich mag Fisch. – Ich auch!', 'I like fish. – Me too!')]}],
+           [('mögen', 'like in general: Ich mag Tee.'), ('möchten', 'would like now: Ich möchte einen Tee.'),
+            ('ich / er mag, möchte', 'no ending for ich and er'), ('nehmen', 'du nimmst, er nimmt')],
+           'Like, would like or take?', [
+               gap('Ich ', 'mag', ' Kaffee sehr.', ['mag', 'möchte', 'magst'], 'I like coffee a lot.'),
+               gap('', 'Magst', ' du Fisch?', ['Magst', 'Mag', 'Möchtet'], 'Do you like fish?'),
+               gap('Er ', 'mag', ' keine Tomaten.', ['mag', 'magt', 'mögt'], "He doesn't like tomatoes."),
+               gap('Ihr ', 'mögt', ' Schokolade, oder?', ['mögt', 'mögen', 'mag'], 'You (all) like chocolate, right?'),
+               gap('Guten Tag! Ich ', 'möchte', ' einen Tee, bitte.', ['möchte', 'mag', 'möchtest'],
+                   'Hello! I would like a tea, please.', why='Ordering now: möchte.'),
+               gap('Was ', 'möchten', ' Sie trinken?', ['möchten', 'möchtest', 'mögt'], 'What would you like to drink?'),
+               gap('Was ', 'nimmst', ' du?', ['nimmst', 'nehmst', 'nimmt'], 'What are you having?'),
+               gap('Sie ', 'nimmt', ' den Salat.', ['nimmt', 'nehmt', 'nehmen'], 'She is having the salad.'),
+               pick('A friend says: Ich mag Kaffee. You like it too.', 'Ich auch!', ['Ich auch!', 'Ich auch nicht!', 'Ich schon!']),
+               pick("A friend says: Ich mag keinen Fisch. You don't like fish either.", 'Ich auch nicht!',
+                    ['Ich auch nicht!', 'Ich auch!', 'Ich schon!']),
+               pick("A friend says: Ich mag keinen Käse. But you like cheese.", 'Ich schon!',
+                    ['Ich schon!', 'Ich auch!', 'Ich auch nicht!'], why="Ich schon = I do (even if you don't)."),
+               order('Ich möchte eine Tasse Kaffee.', 'I would like a cup of coffee.'),
+               write_de('I like tea.', 'Ich mag Tee.', alts=['Ich trinke gern Tee.']),
+           ]),
+    lesson('g3-compounds', 'G6', 'Compound nouns: Apfel + Kuchen', ['3.18'],
+           ['German loves joining nouns: <em class="de">der Apfel + der Kuchen = der Apfelkuchen</em> (apple cake).',
+            'The <strong>last</strong> noun is the main word. It gives the meaning and the article: a '
+            '<em class="de">Kaffeetasse</em> is a cup (die Tasse), so it is <em class="de">die Kaffeetasse</em>.',
+            'Sometimes a small linking sound appears in the middle: '
+            '<em class="de">Schokolade + Kuchen = Schokoladenkuchen</em>.'],
+           [{'step': 'Building words', 'title': 'Two nouns, one word',
+             'table': {'head': ['First word', 'Last word', 'Together'],
+                       'rows': [['der Apfel', 'der Saft', 'der Apfelsaft'],
+                                ['die Kartoffel', 'die Suppe', 'die Kartoffelsuppe'],
+                                ['der Käse', 'das Brot', 'das Käsebrot'], ['der Kaffee', 'die Tasse', 'die Kaffeetasse'],
+                                ['die Schokolade', 'der Kuchen', 'der Schokoladenkuchen']],
+                       'say': ['der Apfelsaft', 'die Kartoffelsuppe', 'das Käsebrot', 'die Kaffeetasse',
+                               'der Schokoladenkuchen'], 'highlight': 2}}],
+           [('Last word = main word', 'an Apfelsaft is a juice'), ('Last word = article', 'die Tasse → die Kaffeetasse'),
+            ('Linking -n-', 'Schokoladenkuchen, Tomatensuppe')],
+           'der, die or das?', [
+               gap('', 'der', ' Apfelkuchen', ['der', 'die', 'das'], 'the apple cake', why='der Kuchen → der Apfelkuchen.'),
+               gap('', 'die', ' Kartoffelsuppe', ['der', 'die', 'das'], 'the potato soup', why='die Suppe.'),
+               gap('', 'das', ' Käsebrot', ['der', 'die', 'das'], 'the cheese sandwich', why='das Brot.'),
+               gap('', 'die', ' Kaffeetasse', ['der', 'die', 'das'], 'the coffee cup', why='die Tasse.'),
+               gap('', 'der', ' Orangensaft', ['der', 'die', 'das'], 'the orange juice', why='der Saft.'),
+               gap('', 'das', ' Mineralwasser', ['der', 'die', 'das'], 'the mineral water', why='das Wasser.'),
+               gap('', 'der', ' Obstsalat', ['der', 'die', 'das'], 'the fruit salad', why='der Salat.'),
+               pick('What is a Kaffeetasse?', 'a cup for coffee', ['a cup for coffee', 'coffee in a cup', 'a coffee shop'],
+                    say='die Kaffeetasse', hint='The last word is the main word.'),
+               pick('What is a Tomatensuppe?', 'a soup made with tomatoes',
+                    ['a soup made with tomatoes', 'a tomato with soup', 'a soup bowl'], say='die Tomatensuppe'),
+               pick('Schokolade + Kuchen = ?', 'der Schokoladenkuchen',
+                    ['der Schokoladenkuchen', 'die Kuchenschokolade', 'der Schokoladekuchen'], why='With a linking -n-.'),
+               write_de('the apple juice', 'der Apfelsaft'),
+               write_de('the cheese sandwich', 'das Käsebrot'),
+           ]),
+    reading('g3-reading', 'R1', 'In the café', ['3.15', '3.16'], READ_INTRO, 'Im Café', [
+        'Kellnerin: Guten Tag! Was möchten Sie?',
+        'Dawit: Ich möchte einen Kaffee und einen Apfelkuchen, bitte.',
+        'Kellnerin: Tut mir leid, wir haben keinen Apfelkuchen mehr. Möchten Sie einen Schokoladenkuchen?',
+        'Dawit: Nein, danke. Ich mag keine Schokolade. Haben Sie Obstsalat?',
+        'Kellnerin: Ja, natürlich. Ein Kaffee und ein Obstsalat. Und für Sie?',
+        'Selam: Ich nehme einen Tee und ein Käsebrot, bitte.',
+        'Kellnerin: Gern! Das macht zusammen 14 Euro 50.'],
+        [('keinen … mehr', 'no more …'), ('natürlich', 'of course'), ('für Sie', 'for you'), ('zusammen', 'together')], [
+            tf('Dawit möchte einen Apfelkuchen.', True, why='Ja, aber das Café hat keinen Apfelkuchen mehr.'),
+            tf('Das Café hat noch Apfelkuchen.', False, why='Wir haben keinen Apfelkuchen mehr.'),
+            tf('Dawit mag Schokolade.', False, why='Er sagt: Ich mag keine Schokolade.'),
+            tf('Dawit nimmt einen Obstsalat.', True),
+            tf('Selam trinkt Kaffee.', False, why='Selam nimmt einen Tee.'),
+            pick('Was isst Selam?', 'ein Käsebrot', ['ein Käsebrot', 'einen Obstsalat', 'einen Schokoladenkuchen'],
+                 hint='What does Selam eat?'),
+            pick('Was kostet alles zusammen?', '14,50 Euro', ['14,50 Euro', '4,50 Euro', '40,50 Euro'],
+                 say='14 Euro 50', hint='How much is it altogether?'),
+            dialogue(['Guten Tag! Was möchten Sie?', 'Einen Tee, bitte.', 'Tut mir leid, wir haben keinen Tee mehr.',
+                      'Schade! Dann nehme ich einen Kaffee.', 'Gern!'], 'Ordering in a café'),
+            write_de('I would like a coffee, please.', 'Ich möchte einen Kaffee, bitte.',
+                     alts=['Einen Kaffee, bitte.', 'Ich nehme einen Kaffee, bitte.']),
+        ]),
+])
+
+# ---------------------------------------------------------------- Unit 4 additions
+extend(UNIT4, sections=[
+    sec('4.15', 'Everyday objects', [
+        ('der Kugelschreiber', 'the pen (m.)'), ('der Kuli', 'the pen (m., short form)'), ('der Bleistift', 'the pencil (m.)'),
+        ('die Brille', 'the glasses (f.)'), ('das Heft', 'the exercise book (n.)'), ('die Kamera', 'the camera (f.)'),
+        ('die Kette', 'the necklace (f.)'), ('der Schlüssel', 'the key (m.)'), ('die Tasche', 'the bag (f.)'),
+        ('das Handy', 'the mobile phone (n.)'), ('die Flasche', 'the bottle (f.)'), ('das Feuerzeug', 'the lighter (n.)'),
+        ('der Regenschirm', 'the umbrella (m.)'), ('Was ist das?', 'What is that?'),
+        ('Das ist ein Schlüssel.', 'That is a key.')]),
+    sec('4.16', 'Materials', [
+        ('das Holz', 'the wood (n.)'), ('das Plastik', 'the plastic (n.)'), ('das Papier', 'the paper (n.)'),
+        ('das Metall', 'the metal (n.)'), ('das Glas', 'the glass (n.)'), ('der Stoff', 'the fabric (m.)'),
+        ('das Leder', 'the leather (n.)'), ('aus Holz', 'made of wood'),
+        ('Die Flasche ist aus Glas.', 'The bottle is made of glass.'),
+        ('Die Tasche ist aus Leder.', 'The bag is made of leather.')]),
+    sec('4.17', 'Words & email addresses', [
+        ('Wie heißt das auf Deutsch?', 'What is that called in German?'), ('Das heißt …', 'It is called …'),
+        ('Danke schön!', 'Thank you very much!'), ('Bitte schön!', "You're welcome!"), ('Kein Problem.', 'No problem.'),
+        ('Sehr gern.', 'My pleasure.'), ('die E-Mail-Adresse', 'the email address (f.)'), ('der Punkt', 'the dot (m.)'),
+        ('der Unterstrich', 'the underscore (m.)'), ('der Bindestrich', 'the hyphen (m.)'),
+        ('Wie ist deine E-Mail-Adresse?', 'What is your email address?')]),
+    sec('4.18', 'Shopping for furniture', [
+        ('der Sessel', 'the armchair (m.)'), ('das Sonderangebot', 'the special offer (n.)'),
+        ('günstig', 'cheap, good value'), ('modern', 'modern'), ('zu groß', 'too big'), ('zu klein', 'too small'),
+        ('Schau mal!', 'Look!'), ('Wie findest du das Sofa?', 'What do you think of the sofa?'),
+        ('Das finde ich auch.', 'I think so too.'), ('Das finde ich nicht.', "I don't think so."),
+        ('Wie viel kostet der Stuhl?', 'How much is the chair?'), ('Er kostet 59 Euro.', 'It costs 59 euros.')]),
+], grammar=[
+    lesson('g4-prices', 'G4', 'Big numbers and prices', ['4.14', '4.18'],
+           ['Big numbers are written as one word: 345 = <em class="de">dreihundertfünfundvierzig</em>. Say the hundreds '
+            'first, then the last two digits just as you say 1–99: "five-and-forty".',
+            'Prices: 9,99 € is said <em class="de">neun Euro neunundneunzig</em>. German writes a comma where English '
+            'has a point, and a point or a space to group thousands: 1.500 or 1 500.'],
+           [{'step': 'Numbers', 'title': 'From 100 to a million',
+             'table': {'head': ['Number', 'German'],
+                       'rows': [['100', '(ein)hundert'], ['101', 'hunderteins'], ['250', 'zweihundertfünfzig'],
+                                ['999', 'neunhundertneunundneunzig'], ['1 000', '(ein)tausend'],
+                                ['2 500', 'zweitausendfünfhundert'], ['10 000', 'zehntausend'], ['1 000 000', 'eine Million']],
+                       'say': ['hundert', 'hunderteins', 'zweihundertfünfzig', 'neunhundertneunundneunzig', 'tausend',
+                               'zweitausendfünfhundert', 'zehntausend', 'eine Million'], 'highlight': 1}},
+            {'step': 'Prices', 'title': 'Euro and cent', 'examples': [
+                ('Das kostet 4,50 €.', 'That costs 4 euros 50.'), ('9,99 € – neun Euro neunundneunzig', '9.99 euros'),
+                ('0,80 € – achtzig Cent', '80 cents'), ('Der Sessel kostet 120 Euro.', 'The armchair costs 120 euros.'),
+                ('Das ist aber günstig!', "That's really cheap!")]}],
+           [('345', 'dreihundert + fünfundvierzig'), ('9,99 €', 'neun Euro neunundneunzig'),
+            ('Comma', 'for decimals: 4,50'), ('1.000', 'a point groups thousands')],
+           'Numbers and prices', [
+               listen('250', ['250', '205', '520'], say='zweihundertfünfzig'),
+               listen('317', ['317', '371', '713'], say='dreihundertsiebzehn'),
+               listen('1.200', ['1.200', '2.100', '1.020'], say='tausendzweihundert'),
+               listen('68', ['68', '86', '58'], say='achtundsechzig'),
+               listen('9,99 €', ['9,99 €', '19,90 €', '9,90 €'], say='neun Euro neunundneunzig'),
+               listen('4,50 €', ['4,50 €', '5,40 €', '14,50 €'], say='vier Euro fünfzig'),
+               pick('How do you say 145?', 'hundertfünfundvierzig',
+                    ['hundertfünfundvierzig', 'hundertvierundfünfzig', 'hundertvierzigfünf']),
+               pick('How do you say 2 000?', 'zweitausend', ['zweitausend', 'zweihundert', 'zwanzigtausend']),
+               pick('How do you say 0,80 €?', 'achtzig Cent', ['achtzig Cent', 'null Euro acht', 'acht Cent']),
+               gap('Der Tisch kostet ', 'neunundneunzig', ' Euro.', ['neunundneunzig', 'neunzigneun', 'neunundneunzehn'],
+                   'The table costs 99 euros.'),
+               write_de('How much is the lamp?', 'Wie viel kostet die Lampe?', alts=['Was kostet die Lampe?']),
+               dictation('vierhundertzwanzig', 'Write the number you hear as one word.', alts=['420']),
+           ]),
+    lesson('g4-things', 'G5', 'Was ist das? Describing things', ['4.15', '4.16', '4.12'],
+           ['To name a thing, use <em class="de">ein / eine</em>: <em class="de">Das ist ein Schlüssel.</em> '
+            'To say it is not, use <em class="de">kein / keine</em>: <em class="de">Das ist kein Schlüssel.</em>',
+            'To describe it, say what it is made of with <strong>aus</strong> and give its colour: '
+            '<em class="de">Die Tasche ist aus Leder. Sie ist braun.</em>'],
+           [{'step': 'Naming', 'title': 'ein, kein and the pronoun',
+             'table': {'head': ['', 'der', 'das', 'die'],
+                       'rows': [['a', 'ein Schlüssel', 'ein Heft', 'eine Brille'],
+                                ['not a', 'kein Schlüssel', 'kein Heft', 'keine Brille'], ['it', 'er', 'es', 'sie']],
+                       'say': ['ein Schlüssel, ein Heft, eine Brille', 'kein Schlüssel, kein Heft, keine Brille',
+                               'er, es, sie']}},
+            {'step': 'Describing', 'title': 'Material and colour', 'examples': [
+                ('Ist das ein Kuli? – Nein, das ist ein Bleistift.', 'Is that a pen? – No, it is a pencil.'),
+                ('Die Flasche ist aus Glas. Sie ist grün.', 'The bottle is made of glass. It is green.'),
+                ('Der Stuhl ist aus Holz.', 'The chair is made of wood.'),
+                ('Wie heißt das auf Deutsch? – Das ist ein Regenschirm.', 'What is that in German? – That is an umbrella.')]}],
+           [('ein / eine', 'a: ein Heft, eine Tasche'), ('kein / keine', 'not a: kein Heft'),
+            ('aus + material', 'aus Holz, aus Glas'), ('der → er, das → es, die → sie', 'Die Tasche? Sie ist neu.')],
+           'Name it and describe it', [
+               gap('Das ist ', 'eine', ' Brille.', ['eine', 'ein', 'einen'], 'Those are glasses.'),
+               gap('Ist das ', 'ein', ' Schlüssel?', ['ein', 'eine', 'einen'], 'Is that a key?'),
+               gap('Nein, das ist ', 'kein', ' Feuerzeug.', ['kein', 'keine', 'nicht'], "No, that isn't a lighter."),
+               gap('Das ist ', 'keine', ' Tasche, das ist ein Rucksack.', ['keine', 'kein', 'nicht'],
+                   "That isn't a bag, it's a backpack."),
+               gap('Die Flasche ist ', 'aus', ' Plastik.', ['aus', 'von', 'in'], 'The bottle is made of plastic.'),
+               gap('Der Kuli ist neu. ', 'Er', ' ist blau.', ['Er', 'Es', 'Sie'], 'The pen is new. It is blue.'),
+               gap('Das Heft ist alt. ', 'Es', ' ist aus Papier.', ['Es', 'Er', 'Sie'],
+                   'The exercise book is old. It is made of paper.'),
+               gap('Die Kette ist schön. ', 'Sie', ' ist aus Metall.', ['Sie', 'Er', 'Es'],
+                   'The necklace is beautiful. It is made of metal.'),
+               pick('What is an umbrella (Regenschirm) usually made of?', 'aus Stoff und Metall',
+                    ['aus Stoff und Metall', 'aus Papier', 'aus Glas'], say='Der Regenschirm ist aus Stoff und Metall.'),
+               order('Die Tasche ist aus Leder.', 'The bag is made of leather.'),
+               order('Wie heißt das auf Deutsch?', 'What is that called in German?'),
+               write_de('That is not a key.', 'Das ist kein Schlüssel.'),
+           ]),
+    reading('g4-reading', 'R1', 'A new room', ['4.9', '4.18'], READ_INTRO, 'Ein Zimmer in Leipzig', [
+        'Yonas wohnt jetzt in Leipzig. Er hat ein Zimmer in einer WG. Das Zimmer ist klein, aber hell.',
+        'Er braucht noch Möbel. Am Samstag geht er mit Lena in ein Möbelgeschäft.',
+        'Lena: Schau mal, der Sessel! Er ist so schön. – Yonas: Ja, aber er ist zu groß für mein Zimmer.',
+        'Yonas: Wie viel kostet der Tisch? – Verkäufer: Nur 49 Euro. Das ist ein Sonderangebot. Er ist aus Holz. – '
+        'Yonas: Das ist aber günstig! Ich nehme den Tisch.'],
+        [('die WG', 'the shared flat'), ('hell', 'bright'), ('noch', 'still'), ('die Möbel', 'the furniture (pl.)'),
+         ('das Möbelgeschäft', 'the furniture shop'), ('der Verkäufer', 'the salesman')], [
+            tf('Yonas wohnt in Leipzig.', True),
+            tf('Das Zimmer ist groß.', False, why='Das Zimmer ist klein, aber hell.'),
+            tf('Lena findet den Sessel schön.', True),
+            tf('Yonas kauft den Sessel.', False, why='Der Sessel ist zu groß für sein Zimmer.'),
+            tf('Der Tisch ist aus Metall.', False, why='Er ist aus Holz.'),
+            pick('Wie viel kostet der Tisch?', '49 Euro', ['49 Euro', '94 Euro', '19 Euro'], hint='How much is the table?'),
+            pick('Wann geht Yonas ins Möbelgeschäft?', 'am Samstag', ['am Samstag', 'am Sonntag', 'heute'],
+                 hint='When does Yonas go to the furniture shop?'),
+            answer_de('Was nimmt Yonas?', 'Er nimmt den Tisch.', alts=['den Tisch', 'Den Tisch.']),
+            write_en('Das ist aber günstig!', "That's really cheap!",
+                     alts=['That is cheap!', 'That is really cheap!', "That's cheap!", "That's good value!"]),
+        ]),
+])
+
+# ---------------------------------------------------------------- Unit 5 additions
+extend(UNIT5, sections=[
+    sec('5.12', 'Times of day', [
+        ('der Vormittag', 'the late morning (m.)'), ('der Mittag', 'midday (m.)'), ('der Nachmittag', 'the afternoon (m.)'),
+        ('am Morgen', 'in the morning'), ('am Vormittag', 'in the late morning'), ('am Nachmittag', 'in the afternoon'),
+        ('am Abend', 'in the evening'), ('in der Nacht', 'at night'), ('heute Abend', 'this evening'),
+        ('morgen früh', 'tomorrow morning'), ('das Wochenende', 'the weekend (n.)'), ('am Wochenende', 'at the weekend')]),
+    sec('5.13', 'Going out', [
+        ('das Kino', 'the cinema (n.)'), ('das Museum', 'the museum (n.)'), ('das Theater', 'the theatre (n.)'),
+        ('das Café', 'the café (n.)'), ('das Konzert', 'the concert (n.)'), ('das Restaurant', 'the restaurant (n.)'),
+        ('das Fitnessstudio', 'the gym (n.)'), ('die Bar', 'the bar (f.)'), ('ins Kino gehen', 'to go to the cinema'),
+        ('ins Konzert gehen', 'to go to a concert'), ('spazieren gehen', 'to go for a walk')]),
+    sec('5.14', 'Making a date', [
+        ('Hast du am Samstag Zeit?', 'Are you free on Saturday?'), ('Gehen wir ins Kino?', 'Shall we go to the cinema?'),
+        ('Lust auf Kaffee?', 'Fancy a coffee?'), ('Gute Idee!', 'Good idea!'), ('Ja, gern.', "Yes, I'd like to."),
+        ('Vielleicht.', 'Maybe.'), ('Tut mir leid, ich kann leider nicht.', "Sorry, I can't."),
+        ('Am Abend habe ich keine Zeit.', "I'm not free in the evening."), ('Wann denn?', 'When, then?'),
+        ('Um wie viel Uhr?', 'At what time?'), ('Bis dann!', 'See you then!')]),
+    sec('5.15', 'wissen (to know)', [
+        ('wissen', 'to know (a fact)'), ('ich weiß', 'I know'), ('du weißt', 'you know'), ('er weiß', 'he knows'),
+        ('wir wissen', 'we know'), ('Das weiß ich noch nicht.', "I don't know yet."),
+        ('Weißt du, wo das Kino ist?', 'Do you know where the cinema is?')]),
+], grammar=[
+    lesson('g5-am-um', 'G5', 'When? am, um, in der, im', ['5.12', '5.6'],
+           ['Use <strong>am</strong> with days and parts of the day: <em class="de">am Montag, am Abend, am Wochenende</em>.',
+            'Use <strong>um</strong> with clock times: <em class="de">um acht Uhr, um halb vier</em>.',
+            'Two more to learn: <em class="de">in der Nacht</em> (at night), and <strong>im</strong> with months and '
+            'seasons: <em class="de">im Mai, im Winter</em>.'],
+           [{'step': 'Which word?', 'title': 'Time words at a glance',
+             'table': {'head': ['Word', 'Use', 'Examples'],
+                       'rows': [['am', 'days, parts of the day', 'am Freitag, am Nachmittag'],
+                                ['um', 'clock times', 'um 9 Uhr, um Viertel nach drei'],
+                                ['in der', 'the night', 'in der Nacht'], ['im', 'months, seasons', 'im Juli, im Sommer']],
+                       'say': ['am Freitag, am Nachmittag', 'um 9 Uhr, um Viertel nach drei', 'in der Nacht',
+                               'im Juli, im Sommer'], 'highlight': 0}},
+            {'step': 'In sentences', 'title': 'Planning the week', 'examples': [
+                ('Am Samstag gehe ich ins Kino.', 'On Saturday I am going to the cinema.'),
+                ('Der Film beginnt um acht Uhr.', 'The film starts at eight.'),
+                ('Am Montag um zehn habe ich einen Termin.', 'On Monday at ten I have an appointment.'),
+                ('In der Nacht schlafe ich.', 'At night I sleep.'),
+                ('Im Juli regnet es in Addis viel.', 'In July it rains a lot in Addis.')]}],
+           [('am', 'Montag, Abend, Wochenende'), ('um', '8 Uhr, halb vier'), ('in der Nacht', 'the one exception'),
+            ('im', 'Mai, Sommer')],
+           'am, um, in der or im?', [
+               gap('', 'Am', ' Montag habe ich Deutschkurs.', ['Am', 'Um', 'Im'], 'On Monday I have German class.'),
+               gap('Der Kurs beginnt ', 'um', ' neun Uhr.', ['um', 'am', 'im'], 'The course starts at nine.'),
+               gap('', 'Am', ' Abend sehe ich fern.', ['Am', 'Um', 'In der'], 'In the evening I watch TV.'),
+               gap('', 'In der', ' Nacht schlafe ich.', ['In der', 'Am', 'Um'], 'At night I sleep.'),
+               gap('Wir treffen uns ', 'um', ' halb vier.', ['um', 'am', 'im'], "We're meeting at half past three."),
+               gap('Ich habe ', 'im', ' Mai Geburtstag.', ['im', 'am', 'um'], 'My birthday is in May.'),
+               gap('Was machst du ', 'am', ' Wochenende?', ['am', 'im', 'um'], 'What are you doing at the weekend?'),
+               gap('', 'Im', ' Sommer ist es heiß.', ['Im', 'Am', 'Um'], 'In summer it is hot.'),
+               order('Am Samstag gehe ich ins Kino.', 'On Saturday I am going to the cinema.',
+                     alts=['Ich gehe am Samstag ins Kino.']),
+               order('Der Film beginnt um acht Uhr.', 'The film starts at eight.', alts=['Um acht Uhr beginnt der Film.']),
+               order('Am Abend habe ich keine Zeit.', "I'm not free in the evening.", alts=['Ich habe am Abend keine Zeit.']),
+               write_de('on Friday at seven', 'am Freitag um sieben',
+                        alts=['am Freitag um sieben Uhr', 'am Freitag um 7', 'am Freitag um 7 Uhr']),
+           ]),
+    lesson('g5-plans', 'G6', 'Making plans: yes, no, maybe', ['5.14', '5.15'],
+           ['To suggest something: <em class="de">Gehen wir ins Kino?</em>, <em class="de">Hast du am Samstag Zeit?</em> '
+            'or, casually, <em class="de">Lust auf Kaffee?</em>',
+            'Answer yes (<em class="de">Ja, gern! Gute Idee!</em>), maybe (<em class="de">Vielleicht. Das weiß ich noch '
+            'nicht.</em>) or no, politely (<em class="de">Tut mir leid, ich kann leider nicht.</em>).',
+            'The verb <em class="de">wissen</em> (to know a fact) is irregular: ich weiß, du weißt, er weiß.'],
+           [{'step': 'The forms', 'title': 'wissen',
+             'table': {'head': ['Person', 'wissen'],
+                       'rows': [['ich', 'weiß'], ['du', 'weißt'], ['er / sie / es', 'weiß'], ['wir', 'wissen'],
+                                ['ihr', 'wisst'], ['sie / Sie', 'wissen']],
+                       'say': ['ich weiß', 'du weißt', 'er weiß', 'wir wissen', 'ihr wisst', 'sie wissen'], 'highlight': 1}},
+            {'step': 'Listen', 'title': 'Suggest and answer', 'examples': [
+                ('Hast du heute Abend Zeit? – Ja, gern!', "Are you free tonight? – Yes, I'd love to!"),
+                ('Gehen wir ins Museum? – Gute Idee! Wann denn?', 'Shall we go to the museum? – Good idea! When?'),
+                ('Lust auf Kaffee? – Tut mir leid, ich kann leider nicht.', "Fancy a coffee? – Sorry, I can't."),
+                ('Was machst du am Sonntag? – Das weiß ich noch nicht.', "What are you doing on Sunday? – I don't know yet.")]}],
+           [('Suggest', 'Gehen wir …? Hast du … Zeit?'), ('Yes', 'Ja, gern! Gute Idee!'),
+            ('No', 'Tut mir leid, ich kann leider nicht.'), ('wissen', 'ich weiß, du weißt, er weiß')],
+           'Make a plan', [
+               pick('Your friend asks: Gehen wir ins Kino? You want to go.', 'Ja, gern! Gute Idee!',
+                    ['Ja, gern! Gute Idee!', 'Tut mir leid, ich kann leider nicht.', 'Das weiß ich noch nicht.']),
+               pick('You are not free. How do you say no politely?', 'Tut mir leid, ich habe leider keine Zeit.',
+                    ['Tut mir leid, ich habe leider keine Zeit.', 'Nein. Keine Lust.', 'Gute Idee!']),
+               pick("You don't know yet.", 'Das weiß ich noch nicht.',
+                    ['Das weiß ich noch nicht.', 'Das weißt ich noch nicht.', 'Das wisse ich noch nicht.']),
+               pick('How do you suggest going to a café?', 'Gehen wir ins Café?',
+                    ['Gehen wir ins Café?', 'Wir gehen ins Café wir?', 'Gehen ins Café wir?']),
+               gap('Ich ', 'weiß', ' es nicht.', ['weiß', 'weißt', 'wisse'], "I don't know."),
+               gap('', 'Weißt', ' du, wo das Kino ist?', ['Weißt', 'Weiß', 'Wisst'], 'Do you know where the cinema is?'),
+               gap('Wir ', 'wissen', ' das schon.', ['wissen', 'weiß', 'wisst'], 'We know that already.'),
+               gap('Hast du am Freitag ', 'Zeit', '?', ['Zeit', 'Uhr', 'Lust'], 'Are you free on Friday?'),
+               gap('', 'Lust', ' auf Kino?', ['Lust', 'Zeit', 'Idee'], 'Fancy the cinema?'),
+               dialogue(['Hast du heute Abend Zeit?', 'Ja. Was machen wir?', 'Gehen wir ins Konzert?',
+                         'Gute Idee! Wann denn?', 'Um acht Uhr.', 'Okay, bis dann!'], 'Making a plan'),
+               dialogue(['Lust auf Kaffee?', 'Tut mir leid, heute habe ich keine Zeit.', 'Und morgen?',
+                         'Morgen kann ich. Am Nachmittag?', 'Ja, um drei Uhr!'], 'Another day'),
+               order('Hast du am Samstag Zeit?', 'Are you free on Saturday?'),
+           ]),
+    reading('g5-reading', 'R1', 'Messages', ['5.14', '5.12'], READ_INTRO, 'Selam und Dawit schreiben', [
+        'Selam: Hallo Dawit! Hast du heute Nachmittag Zeit? Gehen wir ins Museum?',
+        'Dawit: Tut mir leid, heute kann ich leider nicht. Am Nachmittag arbeite ich. Aber am Abend habe ich Zeit.',
+        'Selam: Am Abend ist das Museum zu. Lust auf Kino? Der Film beginnt um Viertel nach acht.',
+        'Dawit: Gute Idee! Ich hole dich um halb acht ab. Bis dann!'],
+        [('zu', 'closed'), ('der Film', 'the film'), ('Ich hole dich ab.', "I'll pick you up.")], [
+            tf('Selam möchte ins Museum gehen.', True),
+            tf('Dawit hat am Nachmittag Zeit.', False, why='Am Nachmittag arbeitet er.'),
+            tf('Am Abend ist das Museum offen.', False, why='Am Abend ist das Museum zu.'),
+            tf('Selam und Dawit gehen am Abend ins Kino.', True),
+            pick('Wann beginnt der Film?', 'um Viertel nach acht',
+                 ['um Viertel nach acht', 'um halb acht', 'um Viertel vor acht'], hint='When does the film start?'),
+            pick('Wann holt Dawit Selam ab?', 'um halb acht', ['um halb acht', 'um halb neun', 'um acht'],
+                 hint='When does Dawit pick Selam up?'),
+            answer_de('Was macht Dawit am Nachmittag?', 'Er arbeitet.', alts=['Er arbeitet am Nachmittag.']),
+            write_en('Am Abend habe ich Zeit.', 'I am free in the evening.',
+                     alts=['I have time in the evening.', 'In the evening I have time.', "I'm free in the evening.",
+                           'In the evening I am free.']),
+        ]),
+])
+
+# ---------------------------------------------------------------- Unit 6 additions
+extend(UNIT6, sections=[
+    sec('6.12', 'How often?', [
+        ('immer', 'always'), ('manchmal', 'sometimes'), ('selten', 'rarely'), ('nie', 'never'),
+        ('fast nie', 'hardly ever'), ('jeden Tag', 'every day'), ('Wie oft …?', 'How often …?'),
+        ('Ich koche oft.', 'I often cook.'), ('Ich tanze nie.', 'I never dance.')]),
+    sec('6.13', 'Compliments & opinions', [
+        ('Du kannst toll tanzen!', 'You dance really well!'), ('Sie können super kochen!', 'You are a great cook! (formal)'),
+        ('Vielen Dank!', 'Many thanks!'), ('Herzlichen Dank!', 'Thank you so much!'),
+        ('Ich finde das toll.', 'I think that is great.'), ('Ich finde das lustig.', 'I think that is funny.'),
+        ('Ich finde das komisch.', 'I think that is strange.'), ('Ich finde das blöd.', 'I think that is stupid.'),
+        ('Das macht Spaß.', 'That is fun.'), ('wirklich', 'really')]),
+    sec('6.14', 'More free-time activities', [
+        ('singen', 'to sing'), ('backen', 'to bake'), ('reiten', 'to ride (a horse)'), ('fotografieren', 'to take photos'),
+        ('Schach spielen', 'to play chess'), ('Ski fahren', 'to ski'), ('Rad fahren', 'to cycle'),
+        ('Tennis spielen', 'to play tennis'), ('in der Freizeit', 'in your free time'),
+        ('Mein Hobby ist Lesen.', 'My hobby is reading.'), ('Ich lese gern.', 'I like reading.')]),
+], grammar=[
+    lesson('g6-how-often', 'G2', 'How well and how often', ['6.12', '6.13'],
+           ['To say how well you do something, add a word after the verb: <em class="de">Ich koche gut.</em> '
+            'With können, it goes before the verb at the end: <em class="de">Ich kann gut kochen.</em>',
+            'From worst to best: <em class="de">gar nicht → nicht so gut → ein bisschen → gut → sehr gut → super / toll</em>.',
+            'How often: <em class="de">nie → selten → manchmal → oft → immer</em>. These words usually come right after '
+            'the verb: <em class="de">Ich koche oft.</em>'],
+           [{'step': 'How often?', 'title': 'From always to never',
+             'table': {'head': ['', 'Word', 'Example'],
+                       'rows': [['100 %', 'immer', 'Ich trinke immer Kaffee.'], ['', 'oft', 'Ich koche oft.'],
+                                ['', 'manchmal', 'Ich tanze manchmal.'], ['', 'selten', 'Ich gehe selten ins Kino.'],
+                                ['0 %', 'nie', 'Ich rauche nie.']],
+                       'say': ['Ich trinke immer Kaffee.', 'Ich koche oft.', 'Ich tanze manchmal.',
+                               'Ich gehe selten ins Kino.', 'Ich rauche nie.'], 'highlight': 1}},
+            {'step': 'How well?', 'title': 'Talking about what you can do', 'examples': [
+                ('Ich kann gar nicht singen.', "I can't sing at all."),
+                ('Er kann ein bisschen Gitarre spielen.', 'He can play the guitar a little.'),
+                ('Wir können sehr gut tanzen.', 'We can dance very well.'),
+                ('Du kannst wirklich toll backen! – Oh, danke!', 'You bake really well! – Oh, thanks!')]}],
+           [('How well', 'gar nicht → ein bisschen → gut → sehr gut'), ('How often', 'nie → manchmal → oft → immer'),
+            ('Position', 'after the verb: Ich koche oft.'), ('Compliment', 'Du kannst toll …! – Danke!')],
+           'How well? How often?', [
+               pick('Which word means the most often?', 'immer', ['immer', 'oft', 'manchmal']),
+               pick('Which word means "never"?', 'nie', ['nie', 'immer', 'selten']),
+               pick('Which is the best?', 'sehr gut', ['sehr gut', 'ein bisschen', 'nicht so gut']),
+               pick('Which means "not at all"?', 'gar nicht', ['gar nicht', 'nicht so gut', 'nie']),
+               gap('Ich trinke ', 'nie', ' Kaffee. Ich mag keinen Kaffee.', ['nie', 'immer', 'oft'],
+                   "I never drink coffee. I don't like coffee."),
+               gap('Wir essen ', 'jeden Tag', ' Injera.', ['jeden Tag', 'nie', 'gar nicht'], 'We eat injera every day.'),
+               gap('Du kannst wirklich ', 'toll', ' tanzen!', ['toll', 'nie', 'gar nicht'], 'You dance really well!'),
+               pick('Your friend says: Du kannst super kochen! What do you answer?', 'Oh, danke!',
+                    ['Oh, danke!', 'Bitte schön!', 'Gute Idee!']),
+               order('Ich gehe oft ins Kino.', 'I often go to the cinema.'),
+               order('Kannst du gut schwimmen?', 'Can you swim well?'),
+               order('Er kann ein bisschen Gitarre spielen.', 'He can play the guitar a little.'),
+               write_de('I never dance.', 'Ich tanze nie.'),
+           ]),
+    lesson('g6-vowel-e', 'G3', 'Verbs that change e → i or ie', ['6.14', '6.4'],
+           ['Some common verbs change the vowel of their stem with <strong>du</strong> and <strong>er/sie/es</strong>. '
+            'All the other forms stay regular.',
+            '<em class="de">e → ie</em>: lesen (du liest), sehen (du siehst). <em class="de">e → i</em>: treffen '
+            '(du triffst), essen (du isst), nehmen (du nimmst), sprechen (du sprichst).'],
+           [{'step': 'The forms', 'title': 'lesen, treffen, essen',
+             'table': {'head': ['Person', 'lesen', 'treffen', 'essen'],
+                       'rows': [['ich', 'lese', 'treffe', 'esse'], ['du', 'liest', 'triffst', 'isst'],
+                                ['er / sie / es', 'liest', 'trifft', 'isst'], ['wir', 'lesen', 'treffen', 'essen'],
+                                ['ihr', 'lest', 'trefft', 'esst'], ['sie / Sie', 'lesen', 'treffen', 'essen']],
+                       'say': ['ich lese, ich treffe, ich esse', 'du liest, du triffst, du isst',
+                               'er liest, er trifft, er isst', 'wir lesen, wir treffen, wir essen',
+                               'ihr lest, ihr trefft, ihr esst', 'sie lesen, sie treffen, sie essen']}},
+            {'step': 'In sentences', 'title': 'Free time', 'examples': [
+                ('Liest du gern?', 'Do you like reading?'), ('Er trifft am Samstag Freunde.', 'He is meeting friends on Saturday.'),
+                ('Selam sieht gern Filme.', 'Selam likes watching films.'),
+                ('Was isst du zum Frühstück?', 'What do you eat for breakfast?'),
+                ('Sie spricht drei Sprachen.', 'She speaks three languages.')]}],
+           [('e → ie', 'lesen: du liest; sehen: er sieht'), ('e → i', 'treffen: du triffst; essen: er isst'),
+            ('Only du and er/sie/es', 'ich lese, wir lesen: no change')],
+           'Choose the right form', [
+               gap('', 'Liest', ' du gern Bücher?', ['Liest', 'Lest', 'Lesst'], 'Do you like reading books?'),
+               gap('Er ', 'liest', ' die Zeitung.', ['liest', 'lest', 'lesen'], 'He reads the newspaper.'),
+               gap('Ich ', 'lese', ' gern.', ['lese', 'liest', 'les'], 'I like reading.', why='ich: no vowel change.'),
+               gap('Du ', 'triffst', ' Freunde.', ['triffst', 'treffst', 'triffs'], 'You are meeting friends.'),
+               gap('Meron ', 'trifft', ' heute Hanna.', ['trifft', 'treffet', 'triffst'], 'Meron is meeting Hanna today.'),
+               gap('Wir ', 'treffen', ' uns um acht.', ['treffen', 'trifft', 'triffen'], "We're meeting at eight."),
+               gap('', 'Siehst', ' du den Bus?', ['Siehst', 'Sehst', 'Sieht'], 'Can you see the bus?'),
+               gap('Dawit ', 'isst', ' gern Fisch.', ['isst', 'esst', 'ist'], 'Dawit likes eating fish.',
+                   why='isst (eats) is not ist (is).'),
+               gap('Was ', 'sprichst', ' du?', ['sprichst', 'sprechst', 'spricht'], 'Which language do you speak?'),
+               gap('Ihr ', 'lest', ' viel.', ['lest', 'liest', 'lesen'], 'You (all) read a lot.', why='ihr: no vowel change.'),
+               write_de('She reads a lot.', 'Sie liest viel.'),
+               order('Er trifft am Samstag Freunde.', 'He is meeting friends on Saturday.',
+                     alts=['Am Samstag trifft er Freunde.']),
+           ]),
+    reading('g6-reading', 'R1', 'Free time', ['6.4', '6.12'], READ_INTRO, 'Familie Abebe in der Freizeit', [
+        'Tigist ist 34 und wohnt in Bahir Dar. Sie arbeitet als Krankenschwester. In der Freizeit liest sie gern und '
+        'sie geht oft am See spazieren.',
+        'Ihr Mann Abebe kann sehr gut kochen. Am Wochenende kocht er immer für die Familie. Tigist kocht nie, sie findet '
+        'Kochen langweilig.',
+        'Ihre Tochter Liya ist zwölf. Sie spielt Fußball und kann super schwimmen. Ihr Sohn Kaleb fotografiert gern. '
+        'Er macht manchmal Fotos für eine Zeitung.'],
+        [('die Krankenschwester', 'the nurse'), ('der See', 'the lake'), ('für die Familie', 'for the family'),
+         ('langweilig', 'boring'), ('die Zeitung', 'the newspaper')], [
+            tf('Tigist wohnt in Bahir Dar.', True),
+            tf('Tigist kocht oft.', False, why='Tigist kocht nie.'),
+            tf('Abebe kann sehr gut kochen.', True),
+            tf('Liya kann nicht schwimmen.', False, why='Sie kann super schwimmen.'),
+            tf('Kaleb fotografiert gern.', True),
+            pick('Was macht Tigist in der Freizeit?', 'Sie liest und geht spazieren.',
+                 ['Sie liest und geht spazieren.', 'Sie spielt Fußball.', 'Sie kocht.'],
+                 hint='What does Tigist do in her free time?'),
+            pick('Wie findet Tigist Kochen?', 'langweilig', ['langweilig', 'toll', 'lustig'],
+                 hint='What does Tigist think of cooking?'),
+            answer_de('Wie alt ist Liya?', 'Sie ist zwölf.', alts=['Zwölf.', 'Sie ist zwölf Jahre alt.', '12', 'Sie ist 12.']),
+        ]),
+])
+
+# ---------------------------------------------------------------- Unit 7 additions
+extend(UNIT7, sections=[
+    sec('7.11', 'Talking about work', [
+        ('Was sind Sie von Beruf?', 'What do you do? (formal)'), ('Was machst du beruflich?', 'What do you do for a living?'),
+        ('Ich bin Lehrerin von Beruf.', 'I am a teacher by profession.'), ('Ich arbeite als Krankenpfleger.', 'I work as a nurse.'),
+        ('Ich arbeite bei Ethiopian Airlines.', 'I work for Ethiopian Airlines.'), ('Ich studiere Medizin.', 'I study medicine.'),
+        ('Ich mache eine Ausbildung.', 'I am doing vocational training.'), ('Ich mache ein Praktikum.', 'I am doing an internship.'),
+        ('Ich arbeite im Moment nicht.', "I'm not working at the moment."), ('der Student', 'the student (m.)'),
+        ('die Studentin', 'the student (f.)'), ('der Rentner', 'the pensioner (m.)'), ('die Rentnerin', 'the pensioner (f.)')]),
+    sec('7.12', 'At the office', [
+        ('der Computer', 'the computer (m.)'), ('der Laptop', 'the laptop (m.)'), ('der Drucker', 'the printer (m.)'),
+        ('die Maus', 'the mouse (f.)'), ('die Tastatur', 'the keyboard (f.)'), ('der Bildschirm', 'the screen (m.)'),
+        ('das Passwort', 'the password (n.)'), ('die Nachricht', 'the message (f.)'), ('der Termin', 'the appointment (m.)'),
+        ('der Kalender', 'the calendar (m.)'), ('der Stift', 'the pen (m.)'), ('das Tablet', 'the tablet (n.)'),
+        ('das WLAN', 'the Wi-Fi (n.)'), ('die Visitenkarte', 'the business card (f.)'), ('Ich brauche einen Stift.', 'I need a pen.')]),
+    sec('7.13', 'On the phone', [
+        ('Firma Kebede, guten Tag!', 'Kebede company, hello!'), ('Hier ist Selam Tesfaye.', 'This is Selam Tesfaye.'),
+        ('Was kann ich für Sie tun?', 'What can I do for you?'), ('Ist Frau Bekele da?', 'Is Ms Bekele there?'),
+        ('Einen Moment, bitte.', 'One moment, please.'), ('Sie ist leider nicht da.', "I'm afraid she isn't here."),
+        ('Auf Wiederhören!', 'Goodbye! (on the phone)'), ('telefonieren', 'to make a phone call')]),
+], grammar=[
+    lesson('g7-jobs', 'G4', 'Jobs: -in, als and bei', ['7.1', '7.11'],
+           ['Most jobs have a male and a female form. The female form usually adds <strong>-in</strong>: '
+            '<em class="de">der Lehrer → die Lehrerin</em>. Some also get an umlaut: <em class="de">der Arzt → die Ärztin, '
+            'der Koch → die Köchin</em>.',
+            'When you say your job, you do not use ein/eine: <em class="de">Ich bin Lehrer.</em> (I am a teacher.)',
+            '<strong>als</strong> = as (your role), <strong>bei</strong> = at, for (the company): '
+            '<em class="de">Ich arbeite als Pilotin bei Ethiopian Airlines.</em>'],
+           [{'step': 'Male and female', 'title': 'Add -in',
+             'table': {'head': ['Male', 'Female'],
+                       'rows': [['der Lehrer', 'die Lehrerin'], ['der Verkäufer', 'die Verkäuferin'],
+                                ['der Student', 'die Studentin'], ['der Arzt', 'die Ärztin'], ['der Koch', 'die Köchin'],
+                                ['der Krankenpfleger', 'die Krankenpflegerin']],
+                       'say': ['der Lehrer, die Lehrerin', 'der Verkäufer, die Verkäuferin', 'der Student, die Studentin',
+                               'der Arzt, die Ärztin', 'der Koch, die Köchin', 'der Krankenpfleger, die Krankenpflegerin'],
+                       'highlight': 1}},
+            {'step': 'In sentences', 'title': 'Talking about your job', 'examples': [
+                ('Was sind Sie von Beruf? – Ich bin Ingenieurin.', 'What do you do? – I am an engineer.'),
+                ('Ich arbeite als Kellner.', 'I work as a waiter.'), ('Sie arbeitet bei einer Bank.', 'She works at a bank.'),
+                ('Er ist Student. Er studiert Informatik.', 'He is a student. He studies computer science.'),
+                ('Ich arbeite im Moment nicht.', "I'm not working at the moment.")]}],
+           [('-in', 'Lehrer → Lehrerin'), ('Umlaut', 'Arzt → Ärztin'), ('No ein', 'Ich bin Lehrer.'),
+            ('als / bei', 'als Pilot bei Ethiopian Airlines')],
+           'Jobs', [
+               pick('The female form of der Lehrer:', 'die Lehrerin', ['die Lehrerin', 'die Lehrer', 'die Lehrerinne']),
+               pick('The female form of der Arzt:', 'die Ärztin', ['die Ärztin', 'die Arztin', 'die Ärzte']),
+               pick('The female form of der Koch:', 'die Köchin', ['die Köchin', 'die Kochin', 'die Köchen']),
+               pick('How do you say "I am a teacher"?', 'Ich bin Lehrer.',
+                    ['Ich bin Lehrer.', 'Ich bin als Lehrer.', 'Ich bin bei Lehrer.'], why='No ein/eine with jobs.'),
+               gap('Ich arbeite ', 'als', ' Kellnerin.', ['als', 'bei', 'in'], 'I work as a waitress.'),
+               gap('Er arbeitet ', 'bei', ' Siemens.', ['bei', 'als', 'in'], 'He works at Siemens.'),
+               gap('Meron arbeitet als Ärztin ', 'in', ' einem Krankenhaus.', ['in', 'bei', 'als'],
+                   'Meron works as a doctor in a hospital.'),
+               gap('Ich bin Lehrerin ', 'von', ' Beruf.', ['von', 'als', 'bei'], 'I am a teacher by profession.'),
+               gap('Was machst du ', 'beruflich', '?', ['beruflich', 'Beruf', 'arbeiten'], 'What do you do for a living?'),
+               order('Ich arbeite als Krankenpfleger.', 'I work as a nurse.'),
+               order('Was sind Sie von Beruf?', 'What do you do? (formal)'),
+               write_de('I am a student. (said by a woman)', 'Ich bin Studentin.'),
+           ]),
+    lesson('g7-phone', 'G5', 'On the phone and at the office', ['7.13', '7.12'],
+           ['Phone calls follow a fixed pattern. A company answers with its name: <em class="de">Firma Kebede, guten Tag!</em> '
+            'You say who you are: <em class="de">Hier ist …</em> or <em class="de">Mein Name ist …</em>',
+            'At the end you do not say Auf Wiedersehen ("see you again") but <strong>Auf Wiederhören</strong> '
+            '("hear you again").',
+            'Office words often come in the accusative: <em class="de">Ich brauche einen Stift. Haben Sie den Kalender?</em>'],
+           [{'step': 'A call', 'title': 'Phone phrases', 'examples': [
+               ('Firma Kebede, guten Tag!', 'Kebede company, hello!'),
+               ('Guten Tag, hier ist Selam Tesfaye.', 'Hello, this is Selam Tesfaye.'),
+               ('Was kann ich für Sie tun?', 'What can I do for you?'), ('Ist Herr Bekele da?', 'Is Mr Bekele there?'),
+               ('Einen Moment, bitte. Er ist leider nicht da.', "One moment, please. I'm afraid he isn't here."),
+               ('Vielen Dank. Auf Wiederhören!', 'Thank you. Goodbye!')]},
+            {'step': 'At the office', 'title': 'Nominative and accusative',
+             'table': {'head': ['', 'der', 'das', 'die'],
+                       'rows': [['Wo ist …?', 'der Kalender', 'das Tablet', 'die Maus'],
+                                ['Ich brauche …', 'den Kalender', 'das Tablet', 'die Maus'],
+                                ['Ich habe …', 'einen Stift', 'ein Tablet', 'eine Maus'],
+                                ['Ich habe …', 'keinen Stift', 'kein Passwort', 'keine Maus']],
+                       'say': ['der Kalender, das Tablet, die Maus', 'den Kalender, das Tablet, die Maus',
+                               'einen Stift, ein Tablet, eine Maus', 'keinen Stift, kein Passwort, keine Maus'],
+                       'highlight': 1}}],
+           [('Answer', 'Firma …, guten Tag!'), ('Introduce yourself', 'Hier ist … / Mein Name ist …'),
+            ('Goodbye', 'Auf Wiederhören!'), ('der → den / einen', 'Ich brauche einen Stift.')],
+           'Phone and office', [
+               dialogue(['Firma Kebede, guten Tag!', 'Guten Tag, hier ist Selam Tesfaye.',
+                         'Guten Tag, Frau Tesfaye. Was kann ich für Sie tun?', 'Ist Herr Bekele da?',
+                         'Einen Moment, bitte … Herr Bekele ist leider nicht da.', 'Okay, vielen Dank. Auf Wiederhören!'],
+                        'A phone call to a company'),
+               pick('How do you end a phone call?', 'Auf Wiederhören!', ['Auf Wiederhören!', 'Auf Wiedersehen!', 'Gute Nacht!']),
+               pick('You call a company. How do you introduce yourself?', 'Hier ist Dawit Girma.',
+                    ['Hier ist Dawit Girma.', 'Da ist Dawit Girma.', 'Ich heiße hier Dawit Girma.']),
+               pick('The person is not there. What does the secretary say?', 'Sie ist leider nicht da.',
+                    ['Sie ist leider nicht da.', 'Sie ist leider kein da.', 'Sie ist leider da nicht.']),
+               gap('Ich brauche ', 'einen', ' Stift.', ['einen', 'ein', 'eine'], 'I need a pen.',
+                   why='der Stift → einen Stift (accusative).'),
+               gap('Haben Sie ', 'den', ' Kalender?', ['den', 'der', 'dem'], 'Do you have the calendar?'),
+               gap('Ich habe ', 'kein', ' Passwort.', ['kein', 'keinen', 'keine'], "I don't have a password.",
+                   why='das Passwort → kein Passwort (no change).'),
+               gap('Wo ist ', 'die', ' Maus?', ['die', 'den', 'der'], 'Where is the mouse?', why='Wo ist …? takes the nominative.'),
+               gap('Wir haben morgen ', 'einen', ' Termin.', ['einen', 'ein', 'eine'], 'We have an appointment tomorrow.'),
+               gap('Ich komme nicht ins ', 'WLAN', '.', ['WLAN', 'Passwort', 'Drucker'], "I can't get onto the Wi-Fi."),
+               pick('The plural of der Termin:', 'die Termine', ['die Termine', 'die Terminen', 'die Termins']),
+               pick('The plural of das Passwort:', 'die Passwörter', ['die Passwörter', 'die Passworte', 'die Passworts']),
+           ]),
+    reading('g7-reading', 'R1', 'A day at the office', ['7.12', '7.13'], READ_INTRO, 'Ein Montag im Büro', [
+        'Meron Haile arbeitet als Assistentin bei einer Firma in Addis Abeba. Heute ist Montag und sie hat viel Arbeit.',
+        'Um neun Uhr hat sie einen Termin mit Jan Weber aus Deutschland. Aber wo ist der Kalender? Und ihr Passwort ist falsch!',
+        'Ihr Kollege Samuel hilft: „Das Passwort ist neu. Hier ist es.“ Dann ruft Jan Weber an: „Guten Tag, Frau Haile. '
+        'Ich komme leider zu spät. Ich bin im Taxi.“',
+        'Meron sagt: „Kein Problem. Bis gleich!“ Jetzt braucht sie einen Kaffee.'],
+        [('die Firma', 'the company'), ('viel Arbeit', 'a lot of work'), ('falsch', 'wrong'),
+         ('der Kollege', 'the colleague'), ('hilft', 'helps'), ('zu spät', 'late'), ('Bis gleich!', 'See you soon!')], [
+            tf('Meron arbeitet bei einer Firma in Addis Abeba.', True),
+            tf('Der Termin ist um zehn Uhr.', False, why='Der Termin ist um neun Uhr.'),
+            tf('Merons Passwort ist neu.', True),
+            tf('Jan Weber kommt pünktlich.', False, why='Er kommt zu spät. Er ist im Taxi.'),
+            tf('Meron braucht einen Tee.', False, why='Sie braucht einen Kaffee.'),
+            pick('Wer hilft Meron?', 'Samuel', ['Samuel', 'Jan Weber', 'Frau Haile'], hint='Who helps Meron?'),
+            pick('Woher kommt Jan Weber?', 'aus Deutschland', ['aus Deutschland', 'aus Äthiopien', 'aus Österreich'],
+                 hint='Where is Jan Weber from?'),
+            write_en('Ich komme leider zu spät.', "Unfortunately, I'm late.",
+                     alts=["I'm afraid I'm late.", "Sorry, I'm late.", 'Unfortunately I am late.',
+                           'Unfortunately I am coming too late.', "I'm sorry, I'm late."]),
+        ]),
+])
+
+# ---------------------------------------------------------------- Unit 8: Travel & transport
+UNIT8 = {
+    'id': 8,
+    'title': 'Travel & transport',
+    'sections': [
+        sec('8.1', 'Getting around', [
+            ('der Bus', 'the bus (m.)'), ('der Zug', 'the train (m.)'), ('die U-Bahn', 'the underground (f.)'),
+            ('die S-Bahn', 'the suburban train (f.)'), ('die Straßenbahn', 'the tram (f.)'), ('das Taxi', 'the taxi (n.)'),
+            ('das Auto', 'the car (n.)'), ('das Fahrrad', 'the bicycle (n.)'), ('das Flugzeug', 'the plane (n.)'),
+            ('mit dem Bus', 'by bus'), ('mit dem Zug', 'by train'), ('mit der U-Bahn', 'by underground'),
+            ('zu Fuß', 'on foot')]),
+        sec('8.2', 'Station & airport', [
+            ('der Bahnhof', 'the station (m.)'), ('der Hauptbahnhof', 'the main station (m.)'),
+            ('der Flughafen', 'the airport (m.)'), ('die Haltestelle', 'the stop (f.)'), ('das Gleis', 'the track (n.)'),
+            ('der Bahnsteig', 'the platform (m.)'), ('die Fahrkarte', 'the ticket (f.)'), ('der Flug', 'the flight (m.)'),
+            ('die Verspätung', 'the delay (f.)'), ('der Ausgang', 'the exit, the gate (m.)'),
+            ('die Abfahrt', 'the departure (f.)'), ('die Ankunft', 'the arrival (f.)')]),
+        sec('8.3', 'Luggage', [
+            ('das Gepäck', 'the luggage (n.)'), ('der Koffer', 'the suitcase (m.)'), ('der Rucksack', 'the backpack (m.)'),
+            ('der Pass', 'the passport (m.)'), ('das Visum', 'the visa (n.)'), ('der Akku', 'the battery (m.)'),
+            ('das Ladegerät', 'the charger (n.)')]),
+        sec('8.4', 'Travel verbs', [
+            ('abfahren', 'to depart'), ('ankommen', 'to arrive'), ('abfliegen', 'to fly out, take off'),
+            ('abholen', 'to pick up'), ('einsteigen', 'to get on'), ('aussteigen', 'to get off'),
+            ('umsteigen', 'to change (trains)'), ('fliegen', 'to fly'), ('landen', 'to land'),
+            ('Ich steige in Frankfurt um.', 'I change in Frankfurt.')]),
+        sec('8.5', 'On the way', [
+            ('Wann kommst du an?', 'When do you arrive?'), ('Wann fliegst du ab?', 'When does your flight leave?'),
+            ('Kannst du mich abholen?', 'Can you pick me up?'), ('Natürlich hole ich dich ab.', 'Of course I will pick you up.'),
+            ('Hoffentlich haben wir keine Verspätung.', "Hopefully we won't be delayed."),
+            ('Ich freue mich auf dich!', "I'm looking forward to seeing you!"), ('Verstehe!', 'I see!'),
+            ('Alles klar!', 'All right!'), ('Bist du sicher?', 'Are you sure?'), ('Gute Reise!', 'Have a good trip!')]),
+        sec('8.6', 'Announcements', [
+            ('Achtung!', 'Attention!'), ('Bitte Vorsicht!', 'Please be careful!'),
+            ('Der Zug fährt von Gleis 4 ab.', 'The train departs from platform 4.'),
+            ('Der nächste Halt ist Frankfurt Hauptbahnhof.', 'The next stop is Frankfurt main station.'),
+            ('Das Flugzeug landet um 6:40 Uhr.', 'The plane lands at 6:40.'), ('Bitte steigen Sie ein.', 'Please get on.'),
+            ('die Endstation', 'the last stop (f.)')]),
+    ],
+    'grammar': [
+        lesson('g8-separable', 'G1', 'Separable verbs on the move', ['8.4', '8.5'],
+               ['Many travel verbs are separable: <em class="de">an|kommen, ab|fahren, ab|holen, ein|steigen, um|steigen</em>. '
+                'In a normal sentence the small first part goes to the <strong>end</strong>: '
+                '<em class="de">Ich komme um acht Uhr an.</em>',
+                'The same in questions: <em class="de">Wann kommst du an? Holst du mich ab?</em>',
+                'With a modal verb (können, möchten …) the verb stays in one piece at the end: '
+                '<em class="de">Kannst du mich abholen?</em>'],
+               [{'step': 'The bracket', 'title': 'The small part goes to the end',
+                 'table': {'head': ['Start', 'Verb', 'Middle', 'End'],
+                           'rows': [['Ich', 'komme', 'um acht Uhr', 'an.'], ['Wann', 'fährt', 'der Zug', 'ab?'],
+                                    ['—', 'Holst', 'du mich', 'ab?'], ['Wir', 'steigen', 'in Frankfurt', 'um.'],
+                                    ['—', 'Kannst', 'du mich', 'abholen?']],
+                           'say': ['Ich komme um acht Uhr an.', 'Wann fährt der Zug ab?', 'Holst du mich ab?',
+                                   'Wir steigen in Frankfurt um.', 'Kannst du mich abholen?'], 'highlight': 3}},
+                {'step': 'In sentences', 'title': 'On the way', 'examples': [
+                    ('Der Zug fährt um 7:15 Uhr ab.', 'The train leaves at 7:15.'),
+                    ('Ich steige am Hauptbahnhof aus.', 'I get off at the main station.'),
+                    ('Rufst du mich aus Frankfurt an?', 'Will you call me from Frankfurt?'),
+                    ('Ich möchte am Freitag ankommen.', 'I would like to arrive on Friday.')]}],
+               [('Statement', 'Ich komme um 8 an.'), ('Question', 'Wann kommst du an?'),
+                ('With a modal verb', 'Kannst du mich abholen?'), ('Infinitive', 'one word: abholen')],
+               'Separable verbs', [
+                   order('Ich komme um acht Uhr an.', 'I arrive at eight.', alts=['Um acht Uhr komme ich an.']),
+                   order('Wann fährt der Zug ab?', 'When does the train leave?'),
+                   order('Holst du mich ab?', 'Will you pick me up?'),
+                   order('Wir steigen in Frankfurt um.', 'We change in Frankfurt.', alts=['In Frankfurt steigen wir um.']),
+                   order('Kannst du mich abholen?', 'Can you pick me up?'),
+                   order('Der Bus fährt um zehn Uhr ab.', 'The bus leaves at ten.', alts=['Um zehn Uhr fährt der Bus ab.']),
+                   gap('Wann kommst du in Berlin ', 'an', '?', ['an', 'ab', 'um'], 'When do you arrive in Berlin?'),
+                   gap('Ich hole dich am Flughafen ', 'ab', '.', ['ab', 'an', 'aus'], "I'll pick you up at the airport."),
+                   gap('Bitte steigen Sie hier ', 'aus', '.', ['aus', 'ein', 'um'], 'Please get off here.'),
+                   gap('Wir müssen in Köln ', 'umsteigen', '.', ['umsteigen', 'steigen um', 'um steigen'],
+                       'We have to change in Cologne.', why='With a modal verb, the verb stays in one piece at the end.'),
+                   gap('Mein Flug ', 'fliegt', ' um 22 Uhr ab.', ['fliegt', 'fliegen', 'abfliegt'], 'My flight leaves at 10 pm.'),
+                   write_de('When do you arrive?', 'Wann kommst du an?', alts=['Wann kommen Sie an?']),
+                   write_de('Can you pick me up?', 'Kannst du mich abholen?', alts=['Können Sie mich abholen?']),
+                   dictation('Der Zug fährt von Gleis drei ab.', 'An announcement at the station.',
+                             alts=['Der Zug fährt von Gleis 3 ab.']),
+               ]),
+        lesson('g8-mit', 'G2', 'mit dem Bus, mit der U-Bahn', ['8.1'],
+               ['To say how you travel, use <strong>mit</strong> + the vehicle. After mit, <em class="de">der</em> and '
+                '<em class="de">das</em> become <strong>dem</strong>, and <em class="de">die</em> becomes <strong>der</strong>. '
+                '(This is the dative case. For now, just learn these phrases.)',
+                'Walking is different: <em class="de">zu Fuß</em> (on foot).'],
+               [{'step': 'How?', 'title': 'mit + vehicle',
+                 'table': {'head': ['Vehicle', 'How?'],
+                           'rows': [['der Bus', 'mit dem Bus'], ['der Zug', 'mit dem Zug'], ['das Auto', 'mit dem Auto'],
+                                    ['das Fahrrad', 'mit dem Fahrrad'], ['das Taxi', 'mit dem Taxi'],
+                                    ['die U-Bahn', 'mit der U-Bahn'], ['die Straßenbahn', 'mit der Straßenbahn'],
+                                    ['—', 'zu Fuß']],
+                           'say': ['mit dem Bus', 'mit dem Zug', 'mit dem Auto', 'mit dem Fahrrad', 'mit dem Taxi',
+                                   'mit der U-Bahn', 'mit der Straßenbahn', 'zu Fuß'], 'highlight': 1}},
+                {'step': 'In sentences', 'title': 'Getting around', 'examples': [
+                    ('Ich fahre mit dem Bus zur Arbeit.', 'I go to work by bus.'),
+                    ('Fährst du mit dem Zug nach Hamburg?', 'Are you going to Hamburg by train?'),
+                    ('Wir fliegen mit Ethiopian Airlines.', 'We are flying with Ethiopian Airlines.'),
+                    ('Ich gehe zu Fuß.', 'I am walking.')]}],
+               [('der → dem', 'mit dem Zug'), ('das → dem', 'mit dem Auto'), ('die → der', 'mit der U-Bahn'),
+                ('Walking', 'zu Fuß')],
+               'How do you travel?', [
+                   gap('Ich fahre mit ', 'dem', ' Bus.', ['dem', 'der', 'den'], 'I go by bus.'),
+                   gap('Sie fährt mit ', 'der', ' U-Bahn.', ['der', 'dem', 'die'], 'She goes by underground.'),
+                   gap('Wir fahren mit ', 'dem', ' Auto nach Adama.', ['dem', 'der', 'das'], 'We are driving to Adama.'),
+                   gap('Fährst du mit ', 'dem', ' Fahrrad?', ['dem', 'der', 'den'], 'Are you cycling?'),
+                   gap('Ich fahre mit ', 'der', ' Straßenbahn.', ['der', 'dem', 'die'], 'I take the tram.'),
+                   gap('Er kommt mit ', 'dem', ' Taxi.', ['dem', 'der', 'das'], 'He is coming by taxi.'),
+                   gap('Ich gehe zu ', 'Fuß', '.', ['Fuß', 'Füße', 'Fuße'], 'I am walking.'),
+                   pick('How do you say "by train"?', 'mit dem Zug', ['mit dem Zug', 'mit der Zug', 'mit den Zug']),
+                   pick('How do you say "by plane"?', 'mit dem Flugzeug',
+                        ['mit dem Flugzeug', 'mit der Flugzeug', 'mit das Flugzeug']),
+                   order('Ich fahre mit dem Bus zur Arbeit.', 'I go to work by bus.',
+                         alts=['Ich fahre zur Arbeit mit dem Bus.']),
+                   write_de('by underground', 'mit der U-Bahn'),
+                   write_de('on foot', 'zu Fuß'),
+               ]),
+        reading('g8-reading', 'R1', 'Dawit flies to Germany', ['8.5', '8.2'], READ_INTRO, 'Dawit fliegt nach Deutschland', [
+            'Dawit: Hallo Lena! Mein Flug startet heute um 22:30 Uhr in Addis Abeba. Ich fliege über Frankfurt.',
+            'Lena: Super! Wann kommst du in Frankfurt an?',
+            'Dawit: Um 5:40 Uhr. Dann steige ich in den Zug nach Leipzig um. Ich komme um 9:15 Uhr am Hauptbahnhof an. '
+            'Kannst du mich abholen?',
+            'Lena: Natürlich hole ich dich ab! Ich freue mich so auf dich. Hoffentlich hast du keine Verspätung!',
+            'Dawit: Ich hoffe es auch. Bis morgen!'],
+            [('der Flug startet', 'the flight takes off'), ('über Frankfurt', 'via Frankfurt'),
+             ('Ich hoffe es auch.', 'I hope so too.'), ('Bis morgen!', 'See you tomorrow!')], [
+                tf('Dawits Flug startet in Addis Abeba.', True),
+                tf('Dawit fliegt direkt nach Leipzig.', False,
+                   why='Er fliegt nach Frankfurt und fährt dann mit dem Zug nach Leipzig.'),
+                tf('Dawit kommt um 5:40 Uhr in Frankfurt an.', True),
+                tf('Lena holt Dawit am Flughafen ab.', False, why='Sie holt ihn am Hauptbahnhof in Leipzig ab.'),
+                tf('Lena freut sich auf Dawit.', True),
+                pick('Wo steigt Dawit um?', 'in Frankfurt', ['in Frankfurt', 'in Leipzig', 'in Addis Abeba'],
+                     hint='Where does Dawit change?'),
+                pick('Wann kommt Dawit in Leipzig an?', 'um 9:15 Uhr', ['um 9:15 Uhr', 'um 5:40 Uhr', 'um 22:30 Uhr'],
+                     hint='When does Dawit arrive in Leipzig?'),
+                answer_de('Wer holt Dawit ab?', 'Lena holt ihn ab.', alts=['Lena.', 'Lena holt Dawit ab.']),
+            ]),
+    ],
+}
+extend(UNIT8)
+
+# ---------------------------------------------------------------- Unit 9: Yesterday & last year
+UNIT9 = {
+    'id': 9,
+    'title': 'Yesterday & last year',
+    'sections': [
+        sec('9.1', 'Past time words', [
+            ('gestern', 'yesterday'), ('vorgestern', 'the day before yesterday'),
+            ('gestern Abend', 'yesterday evening, last night'), ('letzte Woche', 'last week'),
+            ('letzten Montag', 'last Monday'), ('letztes Wochenende', 'last weekend'), ('letztes Jahr', 'last year'),
+            ('zuerst', 'first'), ('dann', 'then'), ('danach', 'after that'), ('später', 'later')]),
+        sec('9.2', 'What did you do?', [
+            ('Was hast du gestern gemacht?', 'What did you do yesterday?'), ('Ich habe gearbeitet.', 'I worked.'),
+            ('Ich habe eingekauft.', 'I went shopping.'), ('Ich habe gekocht.', 'I cooked.'),
+            ('Ich habe Kaffee getrunken.', 'I drank coffee.'), ('Ich habe ein Buch gelesen.', 'I read a book.'),
+            ('Ich habe ferngesehen.', 'I watched TV.'), ('Ich habe aufgeräumt.', 'I tidied up.'),
+            ('Ich habe lange geschlafen.', 'I slept in.'), ('Ich habe telefoniert.', 'I was on the phone.'),
+            ('Ich habe fotografiert.', 'I took photos.'), ('Ich habe Freunde getroffen.', 'I met friends.')]),
+        sec('9.3', 'Where did you go?', [
+            ('Ich bin nach Hause gegangen.', 'I went home.'), ('Ich bin nach Hawassa gefahren.', 'I went to Hawassa.'),
+            ('Ich bin nach Rom geflogen.', 'I flew to Rome.'), ('Ich bin spät angekommen.', 'I arrived late.'),
+            ('Ich bin zu Hause geblieben.', 'I stayed at home.'), ('Ich bin gelaufen.', 'I ran.'),
+            ('Er ist gekommen.', 'He came.'), ('Was ist passiert?', 'What happened?')]),
+        sec('9.4', 'war and hatte', [
+            ('ich war', 'I was'), ('du warst', 'you were'), ('er war', 'he was'), ('wir waren', 'we were'),
+            ('ich hatte', 'I had'), ('du hattest', 'you had'), ('wir hatten', 'we had'),
+            ('Wie war die Reise?', 'How was the trip?'), ('Die Reise war schön.', 'The trip was nice.'),
+            ('Ich hatte Glück mit dem Wetter.', 'I was lucky with the weather.'), ('Wir hatten viel Spaß.', 'We had a lot of fun.')]),
+        sec('9.5', 'Opening hours', [
+            ('die Öffnungszeiten', 'the opening hours (pl.)'), ('geöffnet', 'open'), ('geschlossen', 'closed'),
+            ('die Praxis', "the doctor's surgery (f.)"), ('die Bank', 'the bank (f.)'), ('die Apotheke', 'the pharmacy (f.)'),
+            ('Wann ist die Praxis geöffnet?', 'When is the surgery open?'), ('von Montag bis Freitag', 'from Monday to Friday'),
+            ('von 9 bis 17 Uhr', 'from 9 am to 5 pm'), ('ab 8 Uhr', "from 8 o'clock")]),
+        sec('9.6', 'Festivals & trips', [
+            ('das Fest', 'the festival (n.)'), ('feiern', 'to celebrate'), ('Weihnachten', 'Christmas'),
+            ('Silvester', "New Year's Eve"), ('Ostern', 'Easter'), ('das Neujahr', "New Year's Day (n.)"),
+            ('Wann hast du Geburtstag?', 'When is your birthday?'), ('Ich habe im März Geburtstag.', 'My birthday is in March.'),
+            ('nach Deutschland', 'to Germany'), ('in die Schweiz', 'to Switzerland'), ('eine Reise machen', 'to go on a trip'),
+            ('Freunde besuchen', 'to visit friends')]),
+    ],
+    'grammar': [
+        lesson('g9-perfect-haben', 'G1', 'The perfect with haben', ['9.2', '9.1'],
+               ['To talk about the past in spoken German you mostly use the perfect: <strong>haben</strong> in position 2 + '
+                'the <strong>participle</strong> at the end: <em class="de">Ich habe Kaffee getrunken.</em>',
+                'Regular verbs: <strong>ge- … -t</strong>: machen → gemacht, kaufen → gekauft. Many irregular verbs: '
+                '<strong>ge- … -en</strong>, often with a new vowel: trinken → getrunken, lesen → gelesen.',
+                'Separable verbs put ge in the middle: einkaufen → ein<strong>ge</strong>kauft. Verbs ending in '
+                '<strong>-ieren</strong> have no ge: telefonieren → telefoniert.'],
+               [{'step': 'Participles', 'title': 'Four patterns',
+                 'table': {'head': ['Pattern', 'Infinitive', 'Participle'],
+                           'rows': [['ge- … -t', 'machen', 'gemacht'], ['ge- … -t', 'arbeiten', 'gearbeitet'],
+                                    ['ge- … -en', 'trinken', 'getrunken'], ['ge- … -en', 'lesen', 'gelesen'],
+                                    ['separable', 'einkaufen', 'eingekauft'], ['separable', 'fernsehen', 'ferngesehen'],
+                                    ['-ieren', 'telefonieren', 'telefoniert']],
+                           'say': ['machen, gemacht', 'arbeiten, gearbeitet', 'trinken, getrunken', 'lesen, gelesen',
+                                   'einkaufen, eingekauft', 'fernsehen, ferngesehen', 'telefonieren, telefoniert'],
+                           'highlight': 2}},
+                {'step': 'In sentences', 'title': 'Yesterday', 'examples': [
+                    ('Was hast du gestern gemacht?', 'What did you do yesterday?'),
+                    ('Ich habe den ganzen Tag gearbeitet.', 'I worked all day.'),
+                    ('Wir haben Injera gegessen.', 'We ate injera.'),
+                    ('Hast du schon eingekauft?', 'Have you done the shopping yet?'),
+                    ('Am Abend habe ich ferngesehen.', 'In the evening I watched TV.')]}],
+               [('haben + participle', 'Ich habe … gemacht.'), ('ge- … -t', 'gemacht, gekauft, gearbeitet'),
+                ('ge- … -en', 'getrunken, gelesen, geschlafen'), ('Separable / -ieren', 'eingekauft / telefoniert')],
+               'What did you do?', [
+                   gap('Ich habe gestern viel ', 'gearbeitet', '.', ['gearbeitet', 'gearbeit', 'arbeitet'],
+                       'I worked a lot yesterday.'),
+                   gap('Wir haben Kaffee ', 'getrunken', '.', ['getrunken', 'getrinkt', 'trinken'], 'We drank coffee.'),
+                   gap('Hast du die Zeitung ', 'gelesen', '?', ['gelesen', 'gelest', 'geliest'], 'Did you read the newspaper?'),
+                   gap('Sie hat im Supermarkt ', 'eingekauft', '.', ['eingekauft', 'geeinkauft', 'einkaufen'],
+                       'She did the shopping at the supermarket.', why='Separable: ge goes in the middle.'),
+                   gap('Ich habe lange ', 'telefoniert', '.', ['telefoniert', 'getelefoniert', 'telefonieren'],
+                       'I was on the phone for a long time.', why='-ieren verbs have no ge.'),
+                   gap('Am Abend haben wir ', 'ferngesehen', '.', ['ferngesehen', 'gefernsehen', 'ferngeseht'],
+                       'In the evening we watched TV.'),
+                   gap('Was ', 'hast', ' du am Sonntag gemacht?', ['hast', 'bist', 'hat'], 'What did you do on Sunday?'),
+                   gap('Er hat ein Foto ', 'gemacht', '.', ['gemacht', 'gemachen', 'macht'], 'He took a photo.'),
+                   pick('The participle of schlafen:', 'geschlafen', ['geschlafen', 'geschlaft', 'geschlief']),
+                   pick('The participle of kaufen:', 'gekauft', ['gekauft', 'gekaufen', 'kauft']),
+                   order('Ich habe gestern Zeitung gelesen.', 'I read the newspaper yesterday.',
+                         alts=['Gestern habe ich Zeitung gelesen.']),
+                   order('Was hast du am Wochenende gemacht?', 'What did you do at the weekend?'),
+                   write_de('I cooked.', 'Ich habe gekocht.'),
+                   write_de('We went shopping.', 'Wir haben eingekauft.'),
+               ]),
+        lesson('g9-sein-haben', 'G2', 'haben or sein?', ['9.3'],
+               ['Most verbs make their perfect with haben. But verbs of <strong>movement from A to B</strong> use '
+                '<strong>sein</strong>: gehen, fahren, fliegen, kommen, laufen, ankommen.',
+                'Also with sein: <em class="de">bleiben</em> (to stay), <em class="de">passieren</em> (to happen) and '
+                '<em class="de">sein</em> itself: <em class="de">Ich bin in Berlin gewesen.</em>'],
+               [{'step': 'With sein', 'title': 'Movement and change',
+                 'table': {'head': ['Infinitive', 'Perfect'],
+                           'rows': [['gehen', 'ich bin gegangen'], ['fahren', 'ich bin gefahren'],
+                                    ['fliegen', 'ich bin geflogen'], ['kommen', 'ich bin gekommen'],
+                                    ['ankommen', 'ich bin angekommen'], ['laufen', 'ich bin gelaufen'],
+                                    ['bleiben', 'ich bin geblieben']],
+                           'say': ['ich bin gegangen', 'ich bin gefahren', 'ich bin geflogen', 'ich bin gekommen',
+                                   'ich bin angekommen', 'ich bin gelaufen', 'ich bin geblieben'], 'highlight': 1}},
+                {'step': 'In sentences', 'title': 'Where did you go?', 'examples': [
+                    ('Ich bin nach Hawassa gefahren.', 'I went to Hawassa.'),
+                    ('Wir sind spät nach Hause gekommen.', 'We came home late.'),
+                    ('Bist du schon einmal geflogen?', 'Have you ever flown?'),
+                    ('Er ist zu Hause geblieben.', 'He stayed at home.'), ('Was ist passiert?', 'What happened?')]}],
+               [('sein', 'movement A → B: gehen, fahren, fliegen'), ('sein', 'also bleiben and passieren'),
+                ('haben', 'everything else: gegessen, gearbeitet'), ('Participles', 'gegangen, gefahren, geflogen')],
+               'haben or sein?', [
+                   gap('Ich ', 'bin', ' nach Adama gefahren.', ['bin', 'habe', 'ist'], 'I went to Adama.'),
+                   gap('Wir ', 'haben', ' Pizza gegessen.', ['haben', 'sind', 'hat'], 'We ate pizza.'),
+                   gap('', 'Bist', ' du schon einmal geflogen?', ['Bist', 'Hast', 'Ist'], 'Have you ever flown?'),
+                   gap('Sie ', 'ist', ' zu Hause geblieben.', ['ist', 'hat', 'sind'], 'She stayed at home.'),
+                   gap('Er ', 'hat', ' lange geschlafen.', ['hat', 'ist', 'haben'], 'He slept for a long time.'),
+                   gap('Wann ', 'bist', ' du angekommen?', ['bist', 'hast', 'ist'], 'When did you arrive?'),
+                   gap('Was ', 'ist', ' passiert?', ['ist', 'hat', 'sind'], 'What happened?'),
+                   gap('Ihr ', 'habt', ' viel gelernt.', ['habt', 'seid', 'haben'], 'You (all) learned a lot.'),
+                   gap('Ich bin nach Hause ', 'gegangen', '.', ['gegangen', 'gegeht', 'gegangt'], 'I went home.'),
+                   gap('Wir sind nach Frankfurt ', 'geflogen', '.', ['geflogen', 'gefliegt', 'gefliegen'],
+                       'We flew to Frankfurt.'),
+                   order('Ich bin spät nach Hause gekommen.', 'I came home late.'),
+                   order('Bist du mit dem Zug gefahren?', 'Did you go by train?'),
+                   write_de('I stayed at home.', 'Ich bin zu Hause geblieben.'),
+                   write_de('He flew to Germany.', 'Er ist nach Deutschland geflogen.'),
+               ]),
+        lesson('g9-war-hatte', 'G3', 'war and hatte', ['9.4'],
+               ['For <em class="de">sein</em> and <em class="de">haben</em>, German prefers a short past form, even when '
+                'speaking: <strong>war</strong> (was) and <strong>hatte</strong> (had).',
+                '<em class="de">Ich bin in Berlin gewesen</em> is correct, but <em class="de">Ich war in Berlin</em> is '
+                'what you will usually hear.'],
+               [{'step': 'The forms', 'title': 'sein and haben in the past',
+                 'table': {'head': ['Person', 'sein', 'haben'],
+                           'rows': [['ich', 'war', 'hatte'], ['du', 'warst', 'hattest'], ['er / sie / es', 'war', 'hatte'],
+                                    ['wir', 'waren', 'hatten'], ['ihr', 'wart', 'hattet'], ['sie / Sie', 'waren', 'hatten']],
+                           'say': ['ich war, ich hatte', 'du warst, du hattest', 'er war, er hatte', 'wir waren, wir hatten',
+                                   'ihr wart, ihr hattet', 'sie waren, sie hatten']}},
+                {'step': 'In sentences', 'title': 'Telling about a trip', 'examples': [
+                    ('Wie war die Reise? – Sie war super!', 'How was the trip? – It was great!'),
+                    ('Letztes Jahr war ich in Lalibela.', 'Last year I was in Lalibela.'),
+                    ('Wir hatten viel Spaß.', 'We had a lot of fun.'),
+                    ('Hattest du Glück mit dem Wetter?', 'Were you lucky with the weather?'),
+                    ('Gestern war ich krank.', 'Yesterday I was ill.')]}],
+               [('ich / er war', 'no ending'), ('du warst, ihr wart', 'you were'), ('ich / er hatte', 'no ending'),
+                ('wir / sie waren, hatten', 'we / they were, had')],
+               'war or hatte?', [
+                   gap('Gestern ', 'war', ' ich krank.', ['war', 'hatte', 'bin'], 'Yesterday I was ill.'),
+                   gap('Wie ', 'war', ' die Reise?', ['war', 'waren', 'hatte'], 'How was the trip?'),
+                   gap('Wir ', 'hatten', ' viel Spaß.', ['hatten', 'waren', 'hattet'], 'We had a lot of fun.'),
+                   gap('', 'Warst', ' du schon in Gondar?', ['Warst', 'War', 'Wart'], 'Have you ever been to Gondar?'),
+                   gap('Ihr ', 'wart', ' sehr müde.', ['wart', 'waren', 'warst'], 'You (all) were very tired.'),
+                   gap('Ich ', 'hatte', ' keine Zeit.', ['hatte', 'hattest', 'war'], "I didn't have time."),
+                   gap('Meine Eltern ', 'waren', ' im Urlaub.', ['waren', 'war', 'hatten'], 'My parents were on holiday.'),
+                   gap('', 'Hattest', ' du Glück mit dem Wetter?', ['Hattest', 'Hatte', 'Warst'],
+                       'Were you lucky with the weather?'),
+                   pick('A shorter way to say "Ich bin in Rom gewesen":', 'Ich war in Rom.',
+                        ['Ich war in Rom.', 'Ich hatte in Rom.', 'Ich bin in Rom war.']),
+                   order('Letztes Jahr war ich in Lalibela.', 'Last year I was in Lalibela.',
+                         alts=['Ich war letztes Jahr in Lalibela.']),
+                   write_de('The trip was nice.', 'Die Reise war schön.'),
+                   write_de('We had a lot of fun.', 'Wir hatten viel Spaß.'),
+               ]),
+        lesson('g9-time', 'G4', 'von … bis, ab, im, seit, nach', ['9.5', '9.6'],
+               ['<strong>von … bis</strong>: from … to: <em class="de">von 9 bis 17 Uhr</em>. <strong>ab</strong>: from … on: '
+                '<em class="de">ab 8 Uhr</em>.',
+                '<strong>im</strong> with months and seasons: <em class="de">im März, im Winter</em>. <strong>seit</strong>: '
+                'since, for: <em class="de">seit 2015</em>.',
+                'Where to? Cities and most countries take <strong>nach</strong>: <em class="de">nach Berlin, nach '
+                'Deutschland</em>. Countries with an article take <strong>in die</strong>: <em class="de">in die Schweiz, '
+                'in die Türkei, in die USA</em>.'],
+               [{'step': 'Overview', 'title': 'Small words for time and place',
+                 'table': {'head': ['Word', 'Meaning', 'Example'],
+                           'rows': [['von … bis', 'from … to', 'von Montag bis Freitag'], ['ab', 'from … on', 'ab 8 Uhr'],
+                                    ['im', 'in (month, season)', 'im August'], ['seit', 'since', 'seit 1977'],
+                                    ['nach', 'to (city, country)', 'nach Hamburg'],
+                                    ['in die', 'to (country with die)', 'in die Schweiz']],
+                           'say': ['von Montag bis Freitag', 'ab 8 Uhr', 'im August', 'seit 1977', 'nach Hamburg',
+                                   'in die Schweiz'], 'highlight': 0}},
+                {'step': 'In sentences', 'title': 'Opening hours and festivals', 'examples': [
+                    ('Die Praxis ist von Montag bis Freitag geöffnet.', 'The surgery is open from Monday to Friday.'),
+                    ('Ab 18 Uhr ist die Bank geschlossen.', 'From 6 pm the bank is closed.'),
+                    ('Im September feiern wir Enkutatash.', 'In September we celebrate Enkutatash.'),
+                    ('Das Oktoberfest gibt es seit 1810.', 'The Oktoberfest has existed since 1810.'),
+                    ('Letztes Jahr bin ich nach Deutschland geflogen.', 'Last year I flew to Germany.')]}],
+               [('von … bis', 'von 9 bis 17 Uhr'), ('ab', 'ab 8 Uhr'), ('im / seit', 'im Mai, seit 2015'),
+                ('nach / in die', 'nach Berlin, in die Schweiz')],
+               'Time and place', [
+                   gap('Die Bank ist ', 'von', ' 9 bis 16 Uhr geöffnet.', ['von', 'ab', 'seit'], 'The bank is open from 9 to 4.'),
+                   gap('', 'Ab', ' 20 Uhr ist die Apotheke geschlossen.', ['Ab', 'Seit', 'Im'],
+                       'From 8 pm the pharmacy is closed.'),
+                   gap('Ich habe ', 'im', ' April Geburtstag.', ['im', 'am', 'um'], 'My birthday is in April.'),
+                   gap('Das Fest gibt es ', 'seit', ' 1810.', ['seit', 'ab', 'im'], 'The festival has existed since 1810.'),
+                   gap('Wir fahren ', 'nach', ' Hamburg.', ['nach', 'in die', 'zu'], 'We are going to Hamburg.'),
+                   gap('Sie fliegt ', 'in die', ' Schweiz.', ['in die', 'nach', 'nach die'], 'She is flying to Switzerland.'),
+                   gap('Ich fliege ', 'nach', ' Äthiopien.', ['nach', 'in die', 'in'], 'I am flying to Ethiopia.'),
+                   gap('', 'Im', ' Winter ist es in Berlin kalt.', ['Im', 'Am', 'Seit'], 'In winter it is cold in Berlin.'),
+                   gap('Ich lerne ', 'seit', ' drei Monaten Deutsch.', ['seit', 'ab', 'von'],
+                       'I have been learning German for three months.'),
+                   pick('The shop is open from 8 am to 8 pm:', 'von 8 bis 20 Uhr',
+                        ['von 8 bis 20 Uhr', 'ab 8 bis 20 Uhr', 'seit 8 bis 20 Uhr']),
+                   order('Die Praxis ist am Montag geschlossen.', 'The surgery is closed on Monday.',
+                         alts=['Am Montag ist die Praxis geschlossen.']),
+                   write_de('When is the bank open?', 'Wann ist die Bank geöffnet?', alts=['Wann hat die Bank geöffnet?']),
+               ]),
+        reading('g9-reading', 'R1', "Selam's year", ['9.6', '9.4'], READ_INTRO, 'Mein Jahr in Deutschland', [
+            'Hallo aus Leipzig! Ich bin Selam und ich wohne seit einem Jahr in Deutschland. Hier ist mein Jahr in vier '
+            'Jahreszeiten.',
+            'Im Frühling war ich in Hamburg. Ich bin mit dem Zug gefahren und habe den Hafen gesehen. Das Wetter war '
+            'leider schlecht, aber ich hatte viel Spaß.',
+            'Im Sommer bin ich nach Addis Abeba geflogen. Ich habe meine Familie besucht und wir haben zusammen gekocht '
+            'und gegessen. Im September haben wir Enkutatash gefeiert, das äthiopische Neujahr.',
+            'Im Winter bin ich in Leipzig geblieben. Weihnachten habe ich mit Freunden gefeiert. Es war kalt, aber sehr schön!'],
+            [('seit einem Jahr', 'for a year'), ('die Jahreszeiten', 'the seasons'), ('der Hafen', 'the port'),
+             ('besuchen', 'to visit'), ('äthiopisch', 'Ethiopian')], [
+                tf('Selam wohnt seit einem Jahr in Deutschland.', True),
+                tf('Im Frühling ist Selam nach Hamburg geflogen.', False, why='Sie ist mit dem Zug gefahren.'),
+                tf('In Hamburg war das Wetter gut.', False, why='Das Wetter war leider schlecht.'),
+                tf('Im Sommer hat Selam ihre Familie besucht.', True),
+                tf('Enkutatash ist das äthiopische Neujahr.', True),
+                tf('Weihnachten war Selam in Addis Abeba.', False, why='Im Winter ist sie in Leipzig geblieben.'),
+                pick('Was hat Selam in Hamburg gesehen?', 'den Hafen', ['den Hafen', 'das Meer', 'ihre Familie'],
+                     hint='What did Selam see in Hamburg?'),
+                answer_de('Wann feiert man Enkutatash?', 'im September',
+                          alts=['Im September.', 'Man feiert Enkutatash im September.']),
+                write_en('Ich hatte viel Spaß.', 'I had a lot of fun.', alts=['I had lots of fun.', 'I had great fun.']),
+            ]),
+    ],
+}
+extend(UNIT9)
+
+
+COURSE = {'units': [UNIT0, UNIT1, UNIT2, UNIT3, UNIT4, UNIT5, UNIT6, UNIT7, UNIT8, UNIT9]}
 
 
 def check(course):
@@ -1190,15 +2580,104 @@ def check(course):
             if 'quiz' in g:
                 assert len(g['quiz']['items']) >= 8, g['key']
                 for it in g['quiz']['items']:
-                    assert it['answer'] in it['options'], (g['key'], it)
+                    if it.get('type') == 'order':
+                        assert len(it['tiles']) >= 2, (g['key'], it)
+                        for alt in it.get('alts', []):
+                            assert sorted(alt.rstrip('.?!').lower().split()) == sorted(t.lower() for t in it['tiles']), (g['key'], alt)
+                    elif it.get('type') == 'write':
+                        assert it['answer'] and it['say'], (g['key'], it)
+                    else:
+                        assert it['answer'] in it['options'], (g['key'], it)
+                        assert len(set(it['options'])) == len(it['options']), (g['key'], it)
             for ch in g['chapters']:
                 assert any(s['key'] == ch for s in unit['sections']), (g['key'], ch)
 
 
+def picture_files(emoji):
+    """Twemoji file names for a string of emoji: one per picture, e.g. '🍎+🧃' -> ['1f34e', '+', '1f9c3'].
+    Like Twemoji itself, the variation selector FE0F is dropped except inside ZWJ sequences."""
+    cps, files, i = [ord(c) for c in emoji], [], 0
+    while i < len(cps):
+        if cps[i] == ord('+'):  # compound word: shown as "🍎 + 🍰"
+            files.append('+')
+            i += 1
+            continue
+        flag = 0x1F1E6 <= cps[i] <= 0x1F1FF and i + 1 < len(cps) and 0x1F1E6 <= cps[i + 1] <= 0x1F1FF
+        seq = cps[i:i + 2] if flag else [cps[i]]
+        i += len(seq)
+        while i < len(cps):
+            if cps[i] in (0xFE0F, 0x20E3) or 0x1F3FB <= cps[i] <= 0x1F3FF:
+                seq.append(cps[i])
+                i += 1
+            elif cps[i] == 0x200D and i + 1 < len(cps):
+                seq += cps[i:i + 2]
+                i += 2
+            else:
+                break
+        if 0x200D not in seq:
+            seq = [c for c in seq if c != 0xFE0F]
+        files.append('-'.join(f'{c:x}' for c in seq))
+    return files
+
+
+def add_pictures(course):
+    known = {w['german'] for u in course['units'] for s in u['sections'] for w in s['words']}
+    unknown = set(PICTURES) - known
+    assert not unknown, f'word_pictures.py names words that are not in the course: {sorted(unknown)}'
+    for unit in course['units']:
+        for section in unit['sections']:
+            for word in section['words']:
+                if word['german'] in PICTURES:
+                    word['pic'] = picture_files(PICTURES[word['german']])
+
+
+AM_DIR = Path(__file__).resolve().parent / 'course_am'
+
+
+def read_am(path):
+    """`English ||| Amharic` lines (German words for words.txt); # starts a comment."""
+    pairs = {}
+    for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
+        if not line.strip() or line.startswith('#'):
+            continue
+        source, sep, target = line.partition(' ||| ')
+        assert sep and target.strip(), f'{path.name}:{number}: expected "English ||| Amharic"'
+        assert source not in pairs or pairs[source] == target, f'{path.name}:{number}: two translations of {source!r}'
+        pairs[source] = target.strip()
+    return pairs
+
+
+def build_amharic(course):
+    """The Amharic course content for the Amharic interface: word meanings by German word, and the
+    English lesson texts by their English. German stays German: it is what the course teaches."""
+    from course_am_strings import course_strings
+
+    words = {}
+    for path in sorted(AM_DIR.glob('words*.txt')):
+        words.update(read_am(path))
+    text = {}
+    for path in sorted(AM_DIR.glob('u[0-9]*.txt')):
+        for source, target in read_am(path).items():
+            assert text.get(source, target) == target, f'{path.name}: two translations of {source!r}'
+            text[source] = target
+    german = {w['german'] for u in course['units'] for s in u['sections'] for w in s['words']}
+    needed = course_strings(course)
+    missing_words = sorted(german - set(words))
+    missing_text = [t for t in needed if t not in text]
+    if missing_words or missing_text:
+        print(f'Amharic: {len(missing_words)} word meanings and {len(missing_text)} lesson texts still in English')
+    return {'words': {g: words[g] for g in sorted(german & set(words))}, 'text': text}
+
+
 if __name__ == '__main__':
     check(COURSE)
+    add_pictures(COURSE)
+    am = build_amharic(COURSE)
+    (Path(__file__).resolve().parent.parent / 'static' / 'course' / 'js' / 'course-am.js').write_text(
+        '/* Amharic meanings and lesson texts for the Amharic interface. Generated from tools/course_am/. */\n'
+        'window.COURSE_AM = ' + json.dumps(am, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')
     out = Path(__file__).resolve().parent.parent / 'static' / 'course' / 'js' / 'course-data.js'
-    out.write_text('/* German A1.1, Start unit and Units 1-7. Generated from course_content.py: vocabulary sheets and unit recaps (11percent.de). */\n'
+    out.write_text('/* German A1.1, Start unit and Units 1-9. Generated from tools/course_content.py. */\n'
                    'window.COURSE = ' + json.dumps(COURSE, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')
     words = sum(len(s['words']) for u in COURSE['units'] for s in u['sections'])
     lessons = sum(len(u['grammar']) for u in COURSE['units'])

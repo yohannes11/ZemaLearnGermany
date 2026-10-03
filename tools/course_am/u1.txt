@@ -1,0 +1,93 @@
+# Unit 1 lessons. English ||| Amharic
+
+## g1-word-order
+In a statement and in a W-question (with <em class="de">wer, wie, woher, wo, was</em>) the verb is always in <strong>position 2</strong>. ||| በመግለጫ ዓረፍተ ነገርና በW-ጥያቄ (በ<em class="de">wer, wie, woher, wo, was</em>) ውስጥ ግሡ ሁልጊዜ <strong>በሁለተኛ ቦታ</strong> ይገባል። ይህ ከአማርኛ በጣም ይለያል፤ በአማርኛ ግሥ መጨረሻ ላይ ይመጣል።
+In a yes/no question the verb comes <strong>first</strong>: <em class="de">Kommst du aus Kenia?</em> ||| በአዎ/አይ ጥያቄ ውስጥ ግሡ <strong>መጀመሪያ</strong> ይመጣል፦ <em class="de">Kommst du aus Kenia?</em>
+Position 2 ||| ሁለተኛ ቦታ
+The verb is the second element ||| ግሡ ሁለተኛው ክፍል ነው
+Press a speaker to hear each sentence. ||| እያንዳንዱን ዓረፍተ ነገር ለመስማት የድምፅ ምልክቱን ይጫኑ።
+Verb ||| ግሥ
+Verb first ||| ግሡ መጀመሪያ
+Yes/no questions ||| የአዎ/አይ ጥያቄዎች
+Do you come from Kenya? ||| ከኬንያ ነህ/ነሽ?
+Is your name Hanna? ||| ስምሽ ሐና ነው?
+Are you Ms Bekele? ||| እርስዎ ወ/ሮ በቀለ ነዎት?
+Are you learning German? ||| ጀርመንኛ እየተማርክ/እየተማርሽ ነው?
+W-question ||| W-ጥያቄ
+Woher + verb: Woher kommst du? ||| Woher + ግሥ፦ Woher kommst du?
+Statement ||| መግለጫ
+Ich + verb: Ich komme aus Kenia. ||| Ich + ግሥ፦ Ich komme aus Kenia.
+Yes/no question ||| የአዎ/አይ ጥያቄ
+verb first: Kommst du aus Kenia? ||| ግሡ መጀመሪያ፦ Kommst du aus Kenia?
+Build the sentences ||| ዓረፍተ ነገሮቹን ይገንቡ
+Where are you from? ||| ከየት ነህ/ነሽ?
+Build the question. ||| ጥያቄውን ይገንቡ።
+What is your name? (formal) ||| ስምዎ ማን ነው? (በአክብሮት)
+I come from Ethiopia. ||| የመጣሁት ከኢትዮጵያ ነው።
+Build the sentence. ||| ዓረፍተ ነገሩን ይገንቡ።
+That is Dawit. ||| ይህ ዳዊት ነው።
+Who is that? ||| ይህ ማን ነው?
+Where do you live? ||| የት ትኖራለህ/ትኖሪያለሽ?
+Are you learning German too? ||| አንተም/አንቺም ጀርመንኛ እየተማርክ/እየተማርሽ ነው?
+W-word first, then the verb. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ።
+Yes/no question: the verb comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ መጀመሪያ ይመጣል።
+Are you Mr Tesfaye? ||| እርስዎ አቶ ተስፋዬ ነዎት?
+Write it in German. ||| በጀርመንኛ ይጻፉት።
+What is your name? (informal) ||| ስምህ/ስምሽ ማን ነው?
+What does it mean in English? ||| ትርጉሙ ምንድን ነው?
+
+## g1-du-sie
+German has two words for "you". <em class="de">du</em> is for family, friends, children and classmates. <em class="de">Sie</em> (always with a capital S) is for adults you do not know well: at work, in shops, at the doctor's, with officials. ||| ጀርመንኛ እንደ አማርኛ «አንተ/አንቺ» እና «እርስዎ» አለው። <em class="de">du</em> (አንተ/አንቺ) ለቤተሰብ፣ ለጓደኞች፣ ለልጆችና ለክፍል ጓደኞች ነው። <em class="de">Sie</em> (እርስዎ፣ ሁልጊዜ በትልቅ S) በደንብ ለማያውቋቸው አዋቂዎች ነው፦ በሥራ ቦታ፣ በሱቅ፣ በሐኪም ዘንድ፣ ከባለሥልጣናት ጋር።
+With <em class="de">Sie</em> the verb looks like the infinitive: <em class="de">Sie kommen, Sie heißen</em>. And <em class="de">sein</em> becomes <em class="de">Sie sind</em>. ||| ከ<em class="de">Sie</em> ጋር ግሡ የመዝገበ ቃላት ቅርጹን ይመስላል፦ <em class="de">Sie kommen, Sie heißen</em>። <em class="de">sein</em> ደግሞ <em class="de">Sie sind</em> ይሆናል።
+Side by side ||| ጎን ለጎን
+Informal and formal ||| የቅርበትና የአክብሮት
+How are you? ||| እንዴት ነህ/ነሽ?
+And you? ||| አንተስ/አንቺስ?
+Names ||| ስሞች
+First name or family name? ||| የመጀመሪያ ስም ወይስ የቤተሰብ ስም?
+With du you use the first name. With Sie you use Herr or Frau and the family name. ||| ከdu ጋር የመጀመሪያ ስምን ይጠቀማሉ። ከSie ጋር Herr (አቶ) ወይም Frau (ወ/ሮ) እና የቤተሰብ ስምን ይጠቀማሉ።
+Hi, Dawit! How are you? ||| ሰላም ዳዊት! እንዴት ነህ?
+Good day, Ms Bekele! How are you? ||| ጤና ይስጥልኝ ወ/ሮ በቀለ! እንዴት ነዎት?
+You can call me du. ||| «አንተ/አንቺ» ብለው ሊጠሩኝ ይችላሉ።
+du ||| du (አንተ/አንቺ)
+friends, family, children, classmates ||| ጓደኞች፣ ቤተሰብ፣ ልጆች፣ የክፍል ጓደኞች
+Sie ||| Sie (እርስዎ)
+strangers, work, officials ||| የማያውቋቸው ሰዎች፣ ሥራ፣ ባለሥልጣናት
+Sie + verb ||| Sie + ግሥ
+= infinitive: Sie kommen ||| = የመዝገበ ቃላት ቅርጽ፦ Sie kommen
+dir / Ihnen ||| dir / Ihnen
+Wie geht es dir / Ihnen? ||| Wie geht es dir / Ihnen?
+du or Sie? ||| du ወይስ Sie?
+A classmate: du. ||| የክፍል ጓደኛ፦ du።
+You meet a new classmate. You ask her name. ||| አዲስ የክፍል ጓደኛ አገኙ። ስሟን ይጠይቃሉ።
+An official: Sie. ||| ባለሥልጣን፦ Sie።
+At the embassy, you greet the officer. ||| በኤምባሲ ውስጥ ሠራተኛውን ሰላም ይላሉ።
+A doctor and a patient say Sie. ||| ሐኪምና ታካሚ Sie ይባባላሉ።
+Your doctor asks where you are from. ||| ሐኪምዎ ከየት እንደመጡ ይጠይቃሉ።
+Children: du. ||| ልጆች፦ du።
+You ask a child his name. ||| አንድን ልጅ ስሙን ይጠይቃሉ።
+Herr or Frau + family name goes with Sie. ||| Herr ወይም Frau + የቤተሰብ ስም ከSie ጋር ይሄዳል።
+You ask your new boss, Mr Weber, how he is. ||| አዲሱን አለቃዎን አቶ ቬበርን እንዴት እንደሆኑ ይጠይቃሉ።
+Where are you from? (formal) ||| ከየት ነዎት? (በአክብሮት)
+Where are you from? (informal) ||| ከየት ነህ/ነሽ?
+Who are you? (formal) ||| እርስዎ ማን ነዎት?
+How are you? (formal) ||| እንዴት ነዎት?
+Fine, thanks. And you? (to a friend) ||| ደህና ነኝ፣ አመሰግናለሁ። አንተስ/አንቺስ? (ለጓደኛ)
+A formal first meeting ||| መደበኛ የመጀመሪያ ትውውቅ
+Put the conversation in order. ||| ውይይቱን በቅደም ተከተል ያስቀምጡ።
+Two classmates ||| ሁለት የክፍል ጓደኞች
+
+## g1-reading
+Read the text. Press a speaker to hear each part, and use the word list below it. ||| ጽሑፉን ያንብቡ። እያንዳንዱን ክፍል ለመስማት የድምፅ ምልክቱን ይጫኑ፤ ከሥሩ ያለውን የቃላት ዝርዝርም ይጠቀሙ።
+Then answer the questions. The text stays on screen while you do. ||| ከዚያም ጥያቄዎቹን ይመልሱ። በሚመልሱበት ጊዜ ጽሑፉ ስክሪኑ ላይ ይቆያል።
+Read ||| ያንብቡ
+the first day ||| የመጀመሪያው ቀን
+but ||| ግን
+for work ||| ለሥራ
+Welcome! ||| እንኳን ደህና መጡ!
+Questions about the text ||| ስለ ጽሑፉ ጥያቄዎች
+Richtig (true) or falsch (false)? Look at the text. ||| Richtig (እውነት) ወይስ falsch (ሐሰት)? ጽሑፉን ይመልከቱ።
+Who is Frau Wagner? ||| ወ/ሮ ቫግነር ማን ናቸው?
+What does Meron say? ||| ሜሮን ምን ትላለች?
+Answer in German. ||| በጀርመንኛ ይመልሱ።
+I am learning German for work. ||| ጀርመንኛ የምማረው ለሥራ ነው።

@@ -1,0 +1,421 @@
+# Word meanings, Units 6–9. German ||| Amharic
+
+# Unit 6
+das Wetter ||| የአየር ሁኔታ
+der Regen ||| ዝናብ
+der Schnee ||| በረዶ
+warm ||| ሞቃት
+heiß ||| በጣም ሞቃት
+kalt ||| ቀዝቃዛ
+es regnet ||| ዝናብ እየዘነበ ነው
+es schneit ||| በረዶ እየጣለ ነው
+die Sonne scheint ||| ፀሐይ እየወጣች ነው
+es ist sonnig ||| ፀሐያማ ነው
+Wie ist das Wetter? ||| የአየር ሁኔታው እንዴት ነው?
+Es ist 20 Grad. ||| 20 ዲግሪ ነው።
+die Wolke ||| ደመና
+wolkig ||| ደመናማ
+der Wind ||| ነፋስ
+windig ||| ነፋሻማ
+der Nebel ||| ጭጋግ
+das Gewitter ||| ነጎድጓድ ያለው ዝናብ
+die Temperatur ||| የሙቀት መጠን
+das Grad ||| ዲግሪ
+der Norden ||| ሰሜን
+der Süden ||| ደቡብ
+der Osten ||| ምሥራቅ
+der Westen ||| ምዕራብ
+der Urlaub ||| ዕረፍት (የሥራ ፈቃድ)
+gemütlich ||| ምቹ / ሞቅ ያለ
+das Zelt ||| ድንኳን
+das Meer ||| ባሕር
+die Küste ||| የባሕር ዳርቻ
+schwimmen ||| መዋኘት
+schnorcheln ||| በመተንፈሻ ቱቦ መዋኘት
+tauchen ||| ጠልቆ መዋኘት
+das Skifahren ||| የበረዶ ላይ ሸርተቴ
+das Schlittschuhlaufen ||| በበረዶ ላይ መንሸራተት
+die Natur ||| ተፈጥሮ
+wandern ||| በእግር መጓዝ (ተራራ/ገጠር)
+Urlaub machen ||| ዕረፍት መውጣት
+tanzen ||| መደነስ
+reisen ||| መጓዝ
+joggen ||| ሩጫ ማድረግ
+malen ||| መሳል (በቀለም)
+die Fotografie ||| ፎቶግራፍ (ጥበብ)
+Fahrrad fahren ||| ብስክሌት መንዳት
+Freunde treffen ||| ጓደኞችን ማግኘት
+Computerspiele spielen ||| የኮምፒውተር ጨዋታ መጫወት
+Musik hören ||| ሙዚቃ ማዳመጥ
+Musik machen ||| ሙዚቃ መጫወት
+Fußball spielen ||| እግር ኳስ መጫወት
+Basketball spielen ||| የቅርጫት ኳስ መጫወት
+Handball spielen ||| የእጅ ኳስ መጫወት
+Was sind deine Hobbys? ||| የትርፍ ጊዜ ማሳለፊያዎችህ/ማሳለፊያዎችሽ ምንድን ናቸው?
+Was sind Ihre Hobbys? ||| የትርፍ ጊዜ ማሳለፊያዎችዎ ምንድን ናቸው?
+Was machst du in deiner Freizeit? ||| በትርፍ ጊዜህ/ጊዜሽ ምን ታደርጋለህ/ታደርጊያለሽ?
+Was machen Sie in Ihrer Freizeit? ||| በትርፍ ጊዜዎ ምን ያደርጋሉ?
+der Jogginganzug ||| የስፖርት ልብስ (ቱታ)
+die Tennisschuhe ||| የስፖርት ጫማ
+das Fahrrad ||| ብስክሌት
+der Helm ||| የራስ ቁር
+das Schwimmbad ||| የመዋኛ ገንዳ
+die Badehose ||| የወንድ የዋና ልብስ
+der Badeanzug ||| የሴት የዋና ልብስ
+die Jacke ||| ጃኬት
+die Mütze ||| ኮፍያ
+mitnehmen ||| ይዞ መሄድ
+der Lieblingsfilm ||| ተወዳጅ ፊልም
+das Lieblingsbuch ||| ተወዳጅ መጽሐፍ
+die Lieblingsmusik ||| ተወዳጅ ሙዚቃ
+das Lieblingslied ||| ተወዳጅ ዘፈን
+das Lieblingsessen ||| ተወዳጅ ምግብ
+das Lieblingsgetränk ||| ተወዳጅ መጠጥ
+die Lieblingsfarbe ||| ተወዳጅ ቀለም
+Wie findest du …? ||| … እንዴት ይመስልሃል/ይመስልሻል?
+Ich finde es … ||| … ይመስለኛል
+Ich finde ihn … ||| እሱ (ለder ስም) … ይመስለኛል
+Ich finde sie … ||| እሷ (ለdie ስም) … ትመስለኛለች
+kompliziert ||| ውስብስብ
+einfach ||| ቀላል
+schwer ||| ከባድ
+leicht ||| ቀላል / ቀላል ክብደት ያለው
+interessant ||| አስደሳች / የሚስብ
+spannend ||| አጓጊ
+langweilig ||| አሰልቺ
+praktisch ||| ጠቃሚ / ተግባራዊ
+freundlich ||| ተግባቢ / ደግ
+nett ||| ደግ / ጥሩ
+zu ||| በጣም (zu teuer = በጣም ውድ)
+Stimmt das? ||| ይህ እውነት ነው?
+Ist das richtig? ||| ይህ ትክክል ነው?
+Was denkst du? ||| ምን ይመስልሃል/ይመስልሻል?
+Denkst du, wir sollen …? ||| … ብናደርግ ይሻላል ብለህ/ብለሽ ታስባለህ/ታስቢያለሽ?
+Das stimmt. ||| ልክ ነው።
+Das stimmt nicht. ||| ልክ አይደለም።
+Das ist richtig. ||| ትክክል ነው።
+Das ist nicht richtig. ||| ትክክል አይደለም።
+Natürlich. ||| በእርግጥ።
+Genau. ||| ልክ ነው። / በትክክል።
+Nein, leider nicht. ||| አይ፣ እንደ አለመታደል ሆኖ።
+Ich denke … ||| … ይመስለኛል
+Unsinn! ||| ከንቱ ነገር!
+Quatsch! ||| ቀልድ ነው! / ዋጋ የለውም!
+immer ||| ሁልጊዜ
+manchmal ||| አንዳንድ ጊዜ
+selten ||| አልፎ አልፎ
+nie ||| በፍጹም / መቼም
+fast nie ||| እምብዛም
+jeden Tag ||| በየቀኑ
+Wie oft …? ||| ምን ያህል ጊዜ …?
+Ich koche oft. ||| ብዙ ጊዜ ምግብ አበስላለሁ።
+Ich tanze nie. ||| በፍጹም አልደንስም።
+Du kannst toll tanzen! ||| በጣም ጥሩ ትደንሳለህ/ትደንሻለሽ!
+Sie können super kochen! ||| በጣም ጥሩ ምግብ ያበስላሉ!
+Vielen Dank! ||| በጣም አመሰግናለሁ!
+Herzlichen Dank! ||| ከልብ አመሰግናለሁ!
+Ich finde das toll. ||| ይህ በጣም ጥሩ ይመስለኛል።
+Ich finde das lustig. ||| ይህ አስቂኝ ይመስለኛል።
+Ich finde das komisch. ||| ይህ እንግዳ ይመስለኛል።
+Ich finde das blöd. ||| ይህ ሞኝነት ይመስለኛል።
+Das macht Spaß. ||| ይህ ያስደስታል።
+wirklich ||| በእውነት
+singen ||| መዝፈን
+backen ||| መጋገር
+reiten ||| ፈረስ መጋለብ
+fotografieren ||| ፎቶ ማንሳት
+Schach spielen ||| ቼዝ መጫወት
+Ski fahren ||| በበረዶ ላይ ሸርተቴ መጫወት
+Rad fahren ||| ብስክሌት መንዳት
+Tennis spielen ||| ቴኒስ መጫወት
+in der Freizeit ||| በትርፍ ጊዜ
+Mein Hobby ist Lesen. ||| የትርፍ ጊዜ ማሳለፊያዬ ማንበብ ነው።
+Ich lese gern. ||| ማንበብ እወዳለሁ።
+
+# Unit 7
+der Lehrer ||| መምህር
+die Lehrerin ||| መምህርት
+der Ingenieur ||| መሐንዲስ (ወንድ)
+die Ingenieurin ||| መሐንዲስ (ሴት)
+der Verkäufer ||| ሻጭ
+die Verkäuferin ||| ሻጭ (ሴት)
+die Kellnerin ||| አስተናጋጅ (ሴት)
+der Programmierer ||| ፕሮግራመር (ወንድ)
+die Programmiererin ||| ፕሮግራመር (ሴት)
+der Polizist ||| ፖሊስ (ወንድ)
+die Polizistin ||| ፖሊስ (ሴት)
+der Elektriker ||| ኤሌክትሪሻን (ወንድ)
+die Elektrikerin ||| ኤሌክትሪሻን (ሴት)
+der Journalist ||| ጋዜጠኛ (ወንድ)
+die Journalistin ||| ጋዜጠኛ (ሴት)
+der Mechaniker ||| መካኒክ (ወንድ)
+die Mechanikerin ||| መካኒክ (ሴት)
+der Arzt ||| ሐኪም (ወንድ)
+die Ärztin ||| ሐኪም (ሴት)
+der Krankenpfleger ||| ነርስ (ወንድ)
+die Krankenschwester ||| ነርስ (ሴት)
+der Tierarzt ||| የእንስሳት ሐኪም (ወንድ)
+die Tierärztin ||| የእንስሳት ሐኪም (ሴት)
+der Zahnarzt ||| የጥርስ ሐኪም (ወንድ)
+die Zahnärztin ||| የጥርስ ሐኪም (ሴት)
+der Geschäftsmann ||| ነጋዴ (ወንድ)
+die Geschäftsfrau ||| ነጋዴ (ሴት)
+der Anwalt ||| ጠበቃ (ወንድ)
+die Anwältin ||| ጠበቃ (ሴት)
+der Friseur ||| ፀጉር አስተካካይ (ወንድ)
+die Friseurin ||| ፀጉር አስተካካይ (ሴት)
+der Koch ||| ምግብ አብሳይ / ሼፍ (ወንድ)
+die Köchin ||| ምግብ አብሳይ / ሼፍ (ሴት)
+Was bist du von Beruf? ||| ሥራህ/ሥራሽ ምንድን ነው?
+Ich bin Lehrerin von Beruf. ||| ሙያዬ መምህርነት ነው።
+Was kannst du gut machen? ||| ምን በደንብ መሥራት ትችላለህ/ትችያለሽ?
+Was kannst du nicht gut machen? ||| ምን በደንብ መሥራት አትችልም/አትችዪም?
+Sie kann sehr gut tanzen. ||| እሷ በጣም ጥሩ መደነስ ትችላለች።
+Er kann gar nicht kochen. ||| እሱ ምግብ ማብሰል በፍጹም አይችልም።
+Skateboard fahren ||| ስኬትቦርድ መንዳት
+Ski laufen ||| በበረዶ ላይ ሸርተቴ መጫወት
+Gitarre spielen ||| ጊታር መጫወት
+können ||| መቻል
+ich kann ||| እችላለሁ
+du kannst ||| ትችላለህ / ትችያለሽ
+sie kann ||| ትችላለች
+wir können ||| እንችላለን
+ihr könnt ||| ትችላላችሁ
+sie können ||| ይችላሉ
+müssen ||| ግዴታ መሆን / አለበት
+ich muss ||| አለብኝ
+du musst ||| አለብህ / አለብሽ
+es muss ||| አለበት
+wir müssen ||| አለብን
+ihr müsst ||| አለባችሁ
+sie müssen ||| አለባቸው
+dürfen ||| ተፈቅዶለት መሆን
+ich darf ||| ተፈቅዶልኛል
+du darfst ||| ተፈቅዶልሃል / ተፈቅዶልሻል
+er darf ||| ተፈቅዶለታል
+wir dürfen ||| ተፈቅዶልናል
+ihr dürft ||| ተፈቅዶላችኋል
+sie dürfen ||| ተፈቅዶላቸዋል
+sollen ||| ይገባል / እንዲያደርግ መጠበቅ
+ich soll ||| ይገባኛል
+du sollst ||| ይገባሃል / ይገባሻል
+es soll ||| ይገባዋል
+wir sollen ||| ይገባናል
+ihr sollt ||| ይገባችኋል
+sie sollen ||| ይገባቸዋል
+ich will ||| እፈልጋለሁ
+du willst ||| ትፈልጋለህ / ትፈልጊያለሽ
+er will ||| ይፈልጋል
+wir wollen ||| እንፈልጋለን
+ihr wollt ||| ትፈልጋላችሁ
+sie wollen ||| ይፈልጋሉ
+möchten ||| ቢሆን መፈለግ (በትሕትና)
+ich möchte ||| ብፈልግ ደስ ይለኛል / እፈልጋለሁ
+du möchtest ||| ትፈልጋለህ / ትፈልጊያለሽ (በትሕትና)
+sie möchte ||| ትፈልጋለች (በትሕትና)
+wir möchten ||| እንፈልጋለን (በትሕትና)
+ihr möchtet ||| ትፈልጋላችሁ (በትሕትና)
+sie möchten ||| ይፈልጋሉ (በትሕትና)
+besser ||| የተሻለ
+am besten ||| ከሁሉ የተሻለ
+verbessern ||| ማሻሻል
+verschieden ||| የተለያዩ
+auswählen ||| መምረጥ
+verbringen ||| (ጊዜ) ማሳለፍ
+vielleicht ||| ምናልባት
+das Vokabular ||| የቃላት ዝርዝር
+das Hörverstehen ||| የማዳመጥ ግንዛቤ
+die Aussprache ||| አነባበብ
+der Gesprächspartner ||| የውይይት አጋር
+der Betreff ||| ርዕሰ ጉዳይ
+der Empfänger ||| ተቀባይ
+der Absender ||| ላኪ
+der Anhang ||| አባሪ
+senden ||| መላክ
+löschen ||| መሰረዝ
+schreiben ||| መጻፍ
+Sehr geehrte Frau Müller ||| ለክብርት ወ/ሮ ሙለር (መደበኛ)
+Sehr geehrter Herr Müller ||| ለክቡር አቶ ሙለር (መደበኛ)
+Sehr geehrte Damen und Herren ||| ለሚመለከተው ሁሉ / ክቡራትና ክቡራን
+Liebe Anna, lieber Tom ||| ውድ አና፣ ውድ ቶም (መደበኛ ያልሆነ)
+Mit freundlichen Grüßen ||| ከሰላምታ ጋር
+Viele Grüße ||| ብዙ ሰላምታ
+Liebe Grüße ||| ሞቅ ያለ ሰላምታ
+Alles Gute ||| መልካም ሁሉ ይግጠምህ/ይግጠምሽ
+Wann bist du geboren? ||| መቼ ነው የተወለድከው/የተወለድሽው?
+Wann ist er gestorben? ||| መቼ ነው የሞተው?
+neunzehnhundertneunundneunzig ||| 1999 (አንድ ሺህ ዘጠኝ መቶ ዘጠና ዘጠኝ)
+zweitausendeins ||| 2001 (ሁለት ሺህ አንድ)
+achtzehnhundertachtundvierzig ||| 1848 (አንድ ሺህ ስምንት መቶ አርባ ስምንት)
+hat gegessen ||| በልቷል / በላ
+hat gefunden ||| አግኝቷል / አገኘ
+hat geholfen ||| ረድቷል / ረዳ
+hat genommen ||| ወስዷል / ወሰደ
+hat geschrieben ||| ጽፏል / ጻፈ
+hat gesprochen ||| ተናግሯል / ተናገረ
+hat getroffen ||| አግኝቷል / ተገናኘ
+hat getrunken ||| ጠጥቷል / ጠጣ
+ist gekommen ||| መጥቷል / መጣ
+ist gegangen ||| ሄዷል / ሄደ
+ist gefahren ||| ነድቷል / ሄደ (በተሽከርካሪ)
+ist gereist ||| ተጉዟል / ተጓዘ
+ist geblieben ||| ቆይቷል / ቆየ
+Was sind Sie von Beruf? ||| ሥራዎ ምንድን ነው?
+Was machst du beruflich? ||| ሥራህ/ሥራሽ ምንድን ነው?
+Ich arbeite als Krankenpfleger. ||| ነርስ ሆኜ እሠራለሁ።
+Ich arbeite bei Ethiopian Airlines. ||| በኢትዮጵያ አየር መንገድ እሠራለሁ።
+Ich studiere Medizin. ||| ሕክምና እማራለሁ።
+Ich mache eine Ausbildung. ||| የሙያ ሥልጠና እየወሰድኩ ነው።
+Ich mache ein Praktikum. ||| የተግባር ልምምድ (ኢንተርንሺፕ) እያደረግሁ ነው።
+Ich arbeite im Moment nicht. ||| አሁን አልሠራም።
+der Student ||| ተማሪ (ወንድ፣ ዩኒቨርሲቲ)
+die Studentin ||| ተማሪ (ሴት፣ ዩኒቨርሲቲ)
+der Rentner ||| ጡረተኛ (ወንድ)
+die Rentnerin ||| ጡረተኛ (ሴት)
+der Computer ||| ኮምፒውተር
+der Laptop ||| ላፕቶፕ
+der Drucker ||| ማተሚያ (ፕሪንተር)
+die Maus ||| ማውስ / አይጥ
+die Tastatur ||| የቁልፍ ሰሌዳ
+der Bildschirm ||| ስክሪን (መስኮት)
+das Passwort ||| የይለፍ ቃል
+die Nachricht ||| መልዕክት
+der Termin ||| ቀጠሮ
+der Kalender ||| የቀን መቁጠሪያ
+der Stift ||| እስክሪብቶ
+das Tablet ||| ታብሌት
+das WLAN ||| ዋይፋይ
+die Visitenkarte ||| የሥራ ካርድ (ቢዝነስ ካርድ)
+Ich brauche einen Stift. ||| እስክሪብቶ ያስፈልገኛል።
+Firma Kebede, guten Tag! ||| ከበደ ድርጅት፣ ጤና ይስጥልኝ!
+Hier ist Selam Tesfaye. ||| ሰላም ተስፋዬ ነኝ።
+Was kann ich für Sie tun? ||| ምን ልርዳዎት?
+Ist Frau Bekele da? ||| ወ/ሮ በቀለ አሉ?
+Einen Moment, bitte. ||| አንድ ጊዜ፣ እባክዎ።
+Sie ist leider nicht da. ||| እንደ አለመታደል ሆኖ የሉም።
+Auf Wiederhören! ||| ደህና ይሁኑ! (በስልክ)
+telefonieren ||| በስልክ ማውራት
+
+# Unit 8
+der Bus ||| አውቶቡስ
+die U-Bahn ||| የምድር ውስጥ ባቡር
+die S-Bahn ||| የከተማ ዳርቻ ባቡር
+die Straßenbahn ||| የከተማ ቀላል ባቡር (ትራም)
+das Taxi ||| ታክሲ
+das Auto ||| መኪና
+das Flugzeug ||| አውሮፕላን
+mit dem Bus ||| በአውቶቡስ
+mit dem Zug ||| በባቡር
+mit der U-Bahn ||| በምድር ውስጥ ባቡር
+zu Fuß ||| በእግር
+der Bahnhof ||| ባቡር ጣቢያ
+der Hauptbahnhof ||| ዋናው ባቡር ጣቢያ
+der Flughafen ||| አውሮፕላን ማረፊያ
+die Haltestelle ||| ማቆሚያ (ፌርማታ)
+das Gleis ||| የባቡር መስመር (መድረክ ቁጥር)
+der Bahnsteig ||| የባቡር መሳፈሪያ መድረክ
+die Fahrkarte ||| ትኬት
+der Flug ||| በረራ
+die Verspätung ||| መዘግየት
+der Ausgang ||| መውጫ / የመሳፈሪያ በር
+die Abfahrt ||| መነሻ (የጉዞ)
+die Ankunft ||| መድረሻ (መምጣት)
+das Gepäck ||| ሻንጣ (ጓዝ)
+der Koffer ||| ሻንጣ
+der Rucksack ||| የጀርባ ቦርሳ
+der Pass ||| ፓስፖርት
+das Visum ||| ቪዛ
+der Akku ||| ባትሪ
+das Ladegerät ||| ቻርጀር
+abfahren ||| መነሳት (ለጉዞ)
+ankommen ||| መድረስ
+abfliegen ||| መብረር (መነሳት)
+abholen ||| ሄዶ መቀበል
+einsteigen ||| መሳፈር
+aussteigen ||| መውረድ
+umsteigen ||| መቀየር (ባቡር/አውቶቡስ)
+fliegen ||| መብረር
+landen ||| ማረፍ (አውሮፕላን)
+Ich steige in Frankfurt um. ||| ፍራንክፈርት ላይ እቀይራለሁ።
+Wann kommst du an? ||| መቼ ትደርሳለህ/ትደርሺያለሽ?
+Wann fliegst du ab? ||| መቼ ትበራለህ/ትበሪያለሽ?
+Kannst du mich abholen? ||| መጥተህ/መጥተሽ ልትቀበለኝ/ልትቀበይኝ ትችላለህ/ትችያለሽ?
+Natürlich hole ich dich ab. ||| እርግጥ ነው፣ መጥቼ እቀበልሃለሁ/እቀበልሻለሁ።
+Hoffentlich haben wir keine Verspätung. ||| ተስፋ አደርጋለሁ አንዘገይም።
+Ich freue mich auf dich! ||| አንተን/አንቺን ለማየት ጓጉቻለሁ!
+Verstehe! ||| ገባኝ!
+Alles klar! ||| እሺ! / ሁሉም ግልጽ ነው!
+Bist du sicher? ||| እርግጠኛ ነህ/ነሽ?
+Gute Reise! ||| መልካም ጉዞ!
+Achtung! ||| ትኩረት! / ጥንቃቄ!
+Bitte Vorsicht! ||| እባክዎ ይጠንቀቁ!
+Der Zug fährt von Gleis 4 ab. ||| ባቡሩ ከመድረክ 4 ይነሳል።
+Der nächste Halt ist Frankfurt Hauptbahnhof. ||| ቀጣዩ ማቆሚያ ፍራንክፈርት ዋናው ባቡር ጣቢያ ነው።
+Das Flugzeug landet um 6:40 Uhr. ||| አውሮፕላኑ ከሌሊቱ 12:40 (6:40) ላይ ያርፋል።
+Bitte steigen Sie ein. ||| እባክዎ ይሳፈሩ።
+die Endstation ||| የመጨረሻ ማቆሚያ
+
+# Unit 9
+vorgestern ||| ከትናንት ወዲያ
+gestern Abend ||| ትናንት ማታ
+letzte Woche ||| ባለፈው ሳምንት
+letzten Montag ||| ባለፈው ሰኞ
+letztes Wochenende ||| ባለፈው ቅዳሜና እሑድ
+letztes Jahr ||| ባለፈው ዓመት
+zuerst ||| መጀመሪያ
+dann ||| ከዚያ
+danach ||| ከዚያ በኋላ
+später ||| በኋላ
+Was hast du gestern gemacht? ||| ትናንት ምን አደረግክ/አደረግሽ?
+Ich habe gearbeitet. ||| ሠርቻለሁ።
+Ich habe eingekauft. ||| ገብይቻለሁ።
+Ich habe gekocht. ||| ምግብ አብስያለሁ።
+Ich habe Kaffee getrunken. ||| ቡና ጠጥቻለሁ።
+Ich habe ein Buch gelesen. ||| መጽሐፍ አንብቤያለሁ።
+Ich habe ferngesehen. ||| ቴሌቪዥን አይቻለሁ።
+Ich habe aufgeräumt. ||| ቤቱን አስተካክያለሁ።
+Ich habe lange geschlafen. ||| ረጅም ሰዓት ተኝቻለሁ።
+Ich habe telefoniert. ||| በስልክ አውርቻለሁ።
+Ich habe fotografiert. ||| ፎቶ አንስቻለሁ።
+Ich habe Freunde getroffen. ||| ጓደኞቼን አግኝቻለሁ።
+Ich bin nach Hause gegangen. ||| ወደ ቤት ሄጃለሁ።
+Ich bin nach Hawassa gefahren. ||| ወደ ሐዋሳ ሄጃለሁ።
+Ich bin nach Rom geflogen. ||| ወደ ሮም በረርኩ።
+Ich bin spät angekommen. ||| ዘግይቼ ደረስኩ።
+Ich bin zu Hause geblieben. ||| ቤት ቆይቻለሁ።
+Ich bin gelaufen. ||| ሮጫለሁ / በእግሬ ሄጃለሁ።
+Er ist gekommen. ||| እሱ መጥቷል።
+Was ist passiert? ||| ምን ሆነ?
+ich war ||| ነበርኩ
+du warst ||| ነበርክ / ነበርሽ
+er war ||| ነበር
+wir waren ||| ነበርን
+ich hatte ||| ነበረኝ
+du hattest ||| ነበረህ / ነበረሽ
+wir hatten ||| ነበረን
+Wie war die Reise? ||| ጉዞው እንዴት ነበር?
+Die Reise war schön. ||| ጉዞው ጥሩ ነበር።
+Ich hatte Glück mit dem Wetter. ||| የአየሩ ሁኔታ ዕድለኛ አደረገኝ።
+Wir hatten viel Spaß. ||| በጣም ተደሰትን።
+die Öffnungszeiten ||| የሥራ ሰዓታት
+geöffnet ||| ክፍት
+geschlossen ||| ዝግ
+die Praxis ||| የሐኪም ክሊኒክ
+die Bank ||| ባንክ / አግዳሚ ወንበር
+die Apotheke ||| መድኃኒት ቤት
+Wann ist die Praxis geöffnet? ||| ክሊኒኩ መቼ ክፍት ነው?
+von Montag bis Freitag ||| ከሰኞ እስከ ዓርብ
+von 9 bis 17 Uhr ||| ከ3 ሰዓት እስከ 11 ሰዓት (9–17)
+ab 8 Uhr ||| ከ2 ሰዓት ጀምሮ (8:00)
+das Fest ||| በዓል / ድግስ
+feiern ||| ማክበር
+Weihnachten ||| ገና
+Silvester ||| የዘመን መለወጫ ዋዜማ (ዲሴምበር 31)
+Ostern ||| ፋሲካ
+das Neujahr ||| አዲስ ዓመት (ጃንዋሪ 1)
+Wann hast du Geburtstag? ||| ልደትህ/ልደትሽ መቼ ነው?
+Ich habe im März Geburtstag. ||| ልደቴ በማርች (መጋቢት አካባቢ) ነው።
+nach Deutschland ||| ወደ ጀርመን
+in die Schweiz ||| ወደ ስዊዘርላንድ
+eine Reise machen ||| ጉዞ ማድረግ
+Freunde besuchen ||| ጓደኞችን መጠየቅ

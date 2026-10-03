@@ -257,7 +257,7 @@ FEATURES = [
     {
         "icon": "pen",
         "title": "Grammar that makes sense",
-        "body": "21 short lessons with tables, examples and exercises, each linked to the words you are learning.",
+        "body": "49 short lessons with tables, examples and exercises, each linked to the words you are learning.",
     },
     {
         "icon": "cards",
@@ -280,7 +280,7 @@ LEVELS = [
         "opens": "The minimum for the Opportunity Card (or English at B2).",
         "sources": ["mig-opportunity"],
         "status": "now",
-        "status_label": "A1.1 available now · Units 1–7",
+        "status_label": "A1.1 available now · Units 1–9",
     },
     {
         "code": "A2",
@@ -320,13 +320,13 @@ LEVELS = [
     },
 ]
 
-COURSE_FACTS = {"words": 770, "lessons": 21, "units": 7}
+COURSE_FACTS = {"words": 1156, "lessons": 49, "units": 10}
 
 FAQ = [
     {
         "q": "Is ZemaLearn free?",
         "a": (
-            "Yes. The whole A1.1 course (Units 1–7) is free to use. A free account saves your progress so you "
+            "Yes. The whole A1.1 course (a Start unit and Units 1–9) is free to use. A free account saves your progress so you "
             "can continue on any device."
         ),
     },
@@ -343,7 +343,7 @@ FAQ = [
         "a": (
             "It depends on how much time you practise. The levels build on each other, and university programmes "
             "often ask for B2 or C1, so starting early gives you time. In this course, learning 10 words a day "
-            "covers all 770 words of A1.1 in about 11 weeks."
+            "covers all 1,156 words of A1.1 in about 17 weeks."
         ),
     },
     {

@@ -1,0 +1,244 @@
+# Unit 2 lessons. English ||| Amharic
+
+## g2-sein
+<em class="de">sein</em> means <strong>to be</strong>. It is irregular: every form has to be learned by heart, but you will use it all the time. ||| <em class="de">sein</em> ማለት <strong>መሆን</strong> ነው። ደንብ የማይከተል ግሥ ነው፤ እያንዳንዱን ቅርጽ በቃል መያዝ ያስፈልጋል፤ ግን ሁልጊዜ ይጠቀሙበታል።
+The forms ||| ቅርጾቹ
+sein in the present tense ||| sein በአሁን ጊዜ
+Press a speaker to hear each form. ||| እያንዳንዱን ቅርጽ ለመስማት የድምፅ ምልክቱን ይጫኑ።
+Person ||| ባለቤት
+Form ||| ቅርጽ
+In sentences ||| በዓረፍተ ነገር ውስጥ
+I am Anna. ||| እኔ አና ነኝ።
+You are my brother. ||| አንተ ወንድሜ ነህ።
+She is married. ||| እሷ አግብታለች።
+We are siblings. ||| እኛ ወንድማማቾች/እህትማማቾች ነን።
+You are on time. ||| በሰዓቱ ደርሳችኋል።
+Are you Ms Müller? ||| እርስዎ ወ/ሮ ሙለር ነዎት?
+bin · bist · ist ||| bin · bist · ist
+ich, du, er/sie/es ||| ich, du, er/sie/es
+sind · seid · sind ||| sind · seid · sind
+wir, ihr, sie/Sie ||| wir, ihr, sie/Sie
+wir = sie = Sie ||| wir = sie = Sie
+All three use sind. ||| ሦስቱም sind ይጠቀማሉ።
+Choose the right form of sein ||| ትክክለኛውን የsein ቅርጽ ይምረጡ
+I am a teacher. ||| እኔ መምህር ነኝ።
+You are my friend. ||| አንተ ጓደኛዬ ነህ።
+He is married. ||| እሱ አግብቷል።
+You (all) are on time. ||| እናንተ በሰዓቱ ደርሳችኋል።
+They are my parents. ||| እነሱ ወላጆቼ ናቸው።
+That is my sister. ||| ይህች እህቴ ናት።
+Are you Mr Schmidt? (formal) ||| እርስዎ አቶ ሽሚት ነዎት? (በአክብሮት)
+Are you single? ||| አላገባህም/አላገባሽም?
+My grandma is 80. ||| አያቴ 80 ዓመታቸው ነው።
+
+## g2-sprechen
+<em class="de">sprechen</em> (to speak) is a <strong>stem-changing verb</strong>: in the du and er/sie/es forms the <strong>e</strong> of the stem becomes <strong>i</strong>. The endings stay regular. ||| <em class="de">sprechen</em> (መናገር) <strong>ሥሩ የሚቀየር ግሥ</strong> ነው፦ በdu እና በer/sie/es ቅርጾች ውስጥ የሥሩ <strong>e</strong> ወደ <strong>i</strong> ይቀየራል። መጨረሻዎቹ ግን መደበኛ ናቸው።
+sprechen in the present tense ||| sprechen በአሁን ጊዜ
+I speak German. ||| ጀርመንኛ እናገራለሁ።
+Do you speak English? ||| እንግሊዝኛ ትናገራለህ/ትናገሪያለሽ?
+She speaks a little Spanish. ||| እሷ ትንሽ ስፓኒሽ ትናገራለች።
+We speak French. ||| ፈረንሳይኛ እንናገራለን።
+e → i ||| e → i
+only for du and er/sie/es ||| ለdu እና ለer/sie/es ብቻ
+du sprichst ||| du sprichst
+er/sie/es spricht ||| er/sie/es spricht
+wir sprechen ||| wir sprechen
+ihr sprecht, sie sprechen ||| ihr sprecht, sie sprechen
+Choose the right form of sprechen ||| ትክክለኛውን የsprechen ቅርጽ ይምረጡ
+du: e → i, sprichst. ||| du፦ e → i፣ sprichst።
+He speaks Japanese. ||| እሱ ጃፓንኛ ይናገራል።
+er/sie/es: e → i, spricht. ||| er/sie/es፦ e → i፣ spricht።
+We speak Spanish. ||| ስፓኒሽ እንናገራለን።
+You (all) speak German very well. ||| እናንተ ጀርመንኛን በጣም ጥሩ ትናገራላችሁ።
+ihr keeps the e: sprecht. ||| ihr eን ይይዛል፦ sprecht።
+My mother speaks Portuguese. ||| እናቴ ፖርቱጋልኛ ትናገራለች።
+Do you speak Chinese? (formal) ||| ቻይንኛ ይናገራሉ? (በአክብሮት)
+They speak French. ||| እነሱ ፈረንሳይኛ ይናገራሉ።
+You speak a little German. ||| ትንሽ ጀርመንኛ ትናገራለህ/ትናገሪያለሽ።
+
+## g2-gender
+Every German noun is <strong>masculine (der)</strong>, <strong>feminine (die)</strong> or <strong>neuter (das)</strong>. In the plural, all nouns use <strong>die</strong>. ||| እያንዳንዱ የጀርመንኛ ስም <strong>ተባዕታይ (der)</strong>፣ <strong>አንስታይ (die)</strong> ወይም <strong>ገለልተኛ (das)</strong> ነው። በብዙ ቁጥር ሁሉም ስሞች <strong>die</strong> ይጠቀማሉ። (በአማርኛ ጾታ ሁለት ብቻ ነው፤ በጀርመንኛ ሦስት ነው፤ ነገሮችም ጾታ አላቸው።)
+The best habit is to always learn a noun together with its article. These patterns help you guess. ||| ምርጡ ልማድ ስምን ሁልጊዜ ከመስተኣምሩ ጋር መማር ነው። እነዚህ ቅርጾች ለመገመት ይረዱዎታል።
+Patterns ||| ቅርጾች
+Usually der (masculine) ||| በአብዛኛው der (ተባዕታይ)
+male people: the father ||| ወንዶች፦ አባት
+days, months, seasons: Monday ||| ቀናት፣ ወራት፣ ወቅቶች፦ ሰኞ
+summer ||| በጋ
+words ending in -ling: the darling ||| በ-ling የሚያልቁ ቃላት፦ ውዴ
+most alcoholic drinks: wine (but das Bier) ||| አብዛኞቹ የአልኮል መጠጦች፦ ወይን ጠጅ (ግን das Bier)
+Usually die (feminine) ||| በአብዛኛው die (አንስታይ)
+female people: the mother (but das Mädchen) ||| ሴቶች፦ እናት (ግን das Mädchen)
+words ending in -heit / -keit: freedom ||| በ-heit / -keit የሚያልቁ ቃላት፦ ነፃነት
+words ending in -schaft: friendship ||| በ-schaft የሚያልቁ ቃላት፦ ጓደኝነት
+words ending in -ung: the bill ||| በ-ung የሚያልቁ ቃላት፦ ሂሳብ
+words ending in -ur: culture ||| በ-ur የሚያልቁ ቃላት፦ ባህል
+many words ending in -e: the lamp ||| በ-e የሚያልቁ ብዙ ቃላት፦ መብራት
+Usually das (neuter) ||| በአብዛኛው das (ገለልተኛ)
+words ending in -chen: the girl ||| በ-chen የሚያልቁ ቃላት፦ ልጃገረድ
+the rabbit ||| ጥንቸል
+many Latin words: the audience ||| ብዙ የላቲን ቃላት፦ ታዳሚ
+der ||| der
+male people, days, months, seasons, -ling ||| ወንዶች፣ ቀናት፣ ወራት፣ ወቅቶች፣ -ling
+die ||| die
+female people, -heit, -keit, -schaft, -ung, -ur, often -e ||| ሴቶች፣ -heit፣ -keit፣ -schaft፣ -ung፣ -ur፣ ብዙ ጊዜ -e
+das ||| das
+-chen, -lein, many Latin words ||| -chen፣ -lein፣ ብዙ የላቲን ቃላት
+die (plural) ||| die (ብዙ ቁጥር)
+all plurals ||| ሁሉም ብዙ ቁጥሮች
+der, die or das? ||| der፣ die ወይስ das?
+the father ||| አባት
+Male people are masculine. ||| ወንዶች ተባዕታይ ናቸው።
+the sister ||| እህት
+Female people are feminine. ||| ሴቶች አንስታይ ናቸው።
+the girl ||| ልጃገረድ
+Words ending in -chen are neuter. ||| በ-chen የሚያልቁ ቃላት ገለልተኛ ናቸው።
+Monday ||| ሰኞ
+Days of the week are masculine. ||| የሳምንቱ ቀናት ተባዕታይ ናቸው።
+the bill ||| ሂሳብ
+Words ending in -ung are feminine. ||| በ-ung የሚያልቁ ቃላት አንስታይ ናቸው።
+freedom ||| ነፃነት
+Words ending in -heit are feminine. ||| በ-heit የሚያልቁ ቃላት አንስታይ ናቸው።
+winter ||| ክረምት
+Seasons are masculine. ||| ወቅቶች ተባዕታይ ናቸው።
+beer ||| ቢራ
+Most drinks with alcohol are der, but das Bier is the exception. ||| አብዛኞቹ የአልኮል መጠጦች der ናቸው፤ das Bier ግን የተለየ ነው።
+culture ||| ባህል
+Words ending in -ur are feminine. ||| በ-ur የሚያልቁ ቃላት አንስታይ ናቸው።
+wine ||| ወይን ጠጅ
+Most alcoholic drinks are masculine. ||| አብዛኞቹ የአልኮል መጠጦች ተባዕታይ ናቸው።
+friendship ||| ጓደኝነት
+Words ending in -schaft are feminine. ||| በ-schaft የሚያልቁ ቃላት አንስታይ ናቸው።
+the parents ||| ወላጆች
+All plurals use die. ||| ሁሉም ብዙ ቁጥሮች die ይጠቀማሉ።
+
+## g2-mein
+<em class="de">mein</em> and <em class="de">meine</em> both mean <strong>my</strong>. Which one you use depends on the noun that follows. ||| <em class="de">mein</em> እና <em class="de">meine</em> ሁለቱም <strong>የእኔ</strong> ማለት ናቸው። የትኛውን እንደሚጠቀሙ የሚወስነው ከኋላቸው የሚመጣው ስም ነው።
+The rule ||| ደንቡ
+mein for der and das, meine for die and plural ||| mein ለder እና ለdas፤ meine ለdie እና ለብዙ ቁጥር
+Noun type ||| የስሙ ዓይነት
+der / das → mein ||| der / das → mein
+mein Bruder, mein Datum ||| mein Bruder, mein Datum
+die → meine ||| die → meine
+meine Tante ||| meine Tante
+plural → meine ||| ብዙ ቁጥር → meine
+meine Großeltern ||| meine Großeltern
+mein or meine? ||| mein ወይስ meine?
+my mother (die Mutter) ||| እናቴ (die Mutter)
+my father (der Vater) ||| አባቴ (der Vater)
+my parents (plural) ||| ወላጆቼ (ብዙ ቁጥር)
+my brother (der Bruder) ||| ወንድሜ (der Bruder)
+my sister (die Schwester) ||| እህቴ (die Schwester)
+my grandparents (plural) ||| አያቶቼ (ብዙ ቁጥር)
+my name (der Name) ||| ስሜ (der Name)
+my phone number (die Telefonnummer) ||| ስልክ ቁጥሬ (die Telefonnummer)
+my child (das Kind) ||| ልጄ (das Kind)
+my aunt (die Tante) ||| አክስቴ (die Tante)
+my uncle (der Onkel) ||| አጎቴ (der Onkel)
+
+## g2-doch
+To a normal yes/no question you answer <strong>ja</strong> or <strong>nein</strong>. ||| ለተራ የአዎ/አይ ጥያቄ <strong>ja</strong> (አዎ) ወይም <strong>nein</strong> (አይ) ብለው ይመልሳሉ።
+If the question contains <em class="de">nicht</em> or <em class="de">kein</em> and you want to say "yes, it is", the answer is <strong>doch</strong>. English has no single word for this. ||| ጥያቄው <em class="de">nicht</em> ወይም <em class="de">kein</em> ካለውና «አዎ እንጂ» ማለት ከፈለጉ መልሱ <strong>doch</strong> ነው። ልክ በአማርኛ «አይደለህም እንዴ?» ተብሎ ሲጠየቁ «እንጂ!» እንደሚሉት።
+Three answers ||| ሦስት መልሶች
+Which word, when? ||| የትኛው ቃል፣ መቼ?
+Question ||| ጥያቄ
+Yes ||| አዎ
+No ||| አይ
+doch in conversation ||| doch በንግግር ውስጥ
+Aren't you married? – Yes, I am! ||| አላገባህም እንዴ? – አግብቻለሁ እንጂ!
+Don't you speak any English? – Yes, a little. ||| እንግሊዝኛ አትናገርም እንዴ? – እናገራለሁ እንጂ፣ ትንሽ።
+Don't you live in Addis? – No, in Adama. ||| አዲስ አበባ አትኖርም እንዴ? – አይ፣ አዳማ ነው።
+ja / nein ||| ja / nein
+answers to a normal question ||| ለተራ ጥያቄ መልሶች
+doch ||| doch
+"yes" to a question with nicht or kein ||| nicht ወይም kein ላለው ጥያቄ «አዎ እንጂ»
+nein ||| nein
+"no" to both kinds of question ||| ለሁለቱም ዓይነት ጥያቄዎች «አይ»
+ja, nein or doch? ||| ja፣ nein ወይስ doch?
+Yes, it is. ||| አዎ እንጂ፣ ነው።
+A question with nicht: "yes" is doch. ||| nicht ያለው ጥያቄ፦ «አዎ» doch ነው።
+No, I am single. ||| አይ፣ አላገባሁም።
+Yes, I am married. ||| አዎ፣ አግብቻለሁ።
+Yes, I have two brothers. ||| አዎ፣ ሁለት ወንድሞች አሉኝ።
+A question with kein: "yes" is doch. ||| kein ያለው ጥያቄ፦ «አዎ» doch ነው።
+No, I have no children. ||| አይ፣ ልጆች የሉኝም።
+Yes, very well. ||| አዎ፣ በጣም በደንብ።
+Yes, a little. ||| አዎ እንጂ፣ ትንሽ።
+No, from Ethiopia. ||| አይ፣ ከኢትዮጵያ ነኝ።
+Yes, he is my brother. ||| አዎ፣ ወንድሜ ነው።
+Isn't that your sister? ||| ይህች እህትህ/እህትሽ አይደለችም እንዴ?
+After a question with nicht, "yes" is doch. ||| nicht ካለው ጥያቄ በኋላ «አዎ» doch ነው።
+Aren't you from Ethiopia? – Yes, I am. ||| ከኢትዮጵያ አይደለህም እንዴ? – ነኝ እንጂ።
+
+## g2-names-s
+To say whose family member someone is, add <strong>-s</strong> to the name, with no apostrophe: <em class="de">Selams Bruder</em> = Selam's brother. ||| አንድ ሰው የማን ቤተሰብ እንደሆነ ለመናገር በስሙ ላይ ያለ ጭረት (apostrophe) <strong>-s</strong> ይጨምሩ፦ <em class="de">Selams Bruder</em> = የሰላም ወንድም።
+If the name already ends in s, ß, x or z, write only an apostrophe: <em class="de">Jonas' Vater</em>. ||| ስሙ ቀድሞውንም በs፣ ß፣ x ወይም z የሚያልቅ ከሆነ ጭረት (') ብቻ ይጻፉ፦ <em class="de">Jonas' Vater</em>።
+Name + s ||| ስም + s
+Selam's brother ||| የሰላም ወንድም
+Dawit's mother ||| የዳዊት እናት
+Hanna's parents ||| የሐና ወላጆች
+Jonas's father ||| የዮናስ አባት
+Who is Meron's daughter? ||| የሜሮን ሴት ልጅ ማን ናት?
+Family puzzles ||| የቤተሰብ እንቆቅልሾች
+Who is who? ||| ማን ማን ነው?
+Abebe is Dawit's father. ||| አበበ የዳዊት አባት ነው።
+Dawit is Abebe's son. ||| ዳዊት የአበበ ልጅ ነው።
+Hanna's grandma is called Almaz. ||| የሐና አያት አልማዝ ይባላሉ።
+Selams Bruder ||| Selams Bruder
+No apostrophe ||| ጭረት የለም
+Hannas, not Hanna's ||| Hannas እንጂ Hanna's አይደለም
+Name ending in s ||| በs የሚያልቅ ስም
+Jonas' Vater ||| Jonas' Vater
+Whose is it? ||| የማን ነው?
+Selam's brother is called Yonas. ||| የሰላም ወንድም ዮናስ ይባላል።
+German adds -s with no apostrophe. ||| ጀርመንኛ ያለ ጭረት -s ይጨምራል።
+That is Dawit's mother. ||| እነዚህ የዳዊት እናት ናቸው።
+Who is Hanna's father? ||| የሐና አባት ማን ነው?
+Jonas's sister is called Lena. ||| የዮናስ እህት ሌና ትባላለች።
+The name ends in s: add only an apostrophe. ||| ስሙ በs ያልቃል፦ ጭረት ብቻ ይጨምሩ።
+Abebe is Dawit's father. Dawit is Abebe's … ||| አበበ የዳዊት አባት ነው። ዳዊት የአበበ … ነው።
+Almaz is Hanna's grandma. Hanna is Almaz's … ||| አልማዝ የሐና አያት ናቸው። ሐና የአልማዝ … ናት።
+Yonas is Selam's brother. Selam is Yonas's … ||| ዮናስ የሰላም ወንድም ነው። ሰላም የዮናስ … ናት።
+Tigist is the sister of Dawit's mother. She is Dawit's … ||| ትዕግሥት የዳዊት እናት እህት ናት። እሷ የዳዊት … ናት።
+Samuel is the son of Dawit's uncle. He is Dawit's … ||| ሳሙኤል የዳዊት አጎት ልጅ ነው። እሱ የዳዊት … ነው።
+That is Meron's daughter. ||| ይህች የሜሮን ሴት ልጅ ናት።
+Remember: -s, no apostrophe. ||| ያስታውሱ፦ -s፣ ያለ ጭረት።
+Hanna's parents live in Adama. ||| የሐና ወላጆች የሚኖሩት አዳማ ነው።
+
+## g2-verbs-plural
+You already know the endings for ich, du and er/sie. Here are all six persons, with <em class="de">wir, ihr</em> and <em class="de">sie/Sie</em>. ||| የich፣ የdu እና የer/sie መጨረሻዎችን አስቀድመው ያውቃሉ። ስድስቱም ባለቤቶች እዚህ አሉ፤ ከ<em class="de">wir, ihr</em> እና <em class="de">sie/Sie</em> ጋር።
+Verbs whose stem ends in <strong>-t</strong> or <strong>-d</strong> (arbeiten, finden) add an extra <strong>e</strong> so they are easier to say: <em class="de">du arbeitest, er arbeitet</em>. ||| ሥራቸው በ<strong>-t</strong> ወይም በ<strong>-d</strong> የሚያልቅ ግሦች (arbeiten, finden) ለመናገር እንዲቀሉ ተጨማሪ <strong>e</strong> ይጨምራሉ፦ <em class="de">du arbeitest, er arbeitet</em>።
+Six persons ||| ስድስት ባለቤቶች
+wir, ihr, sie ||| wir, ihr, sie
+We live in Hawassa. ||| የምንኖረው ሐዋሳ ነው።
+Where do you (all) live? ||| እናንተ የት ትኖራላችሁ?
+They work in a hotel. ||| እነሱ ሆቴል ውስጥ ይሠራሉ።
+You have two children, right? ||| ሁለት ልጆች አሏችሁ፣ አይደል?
+Do you live together? ||| አብራችሁ ትኖራላችሁ?
+wir / sie / Sie ||| wir / sie / Sie
+= the infinitive: wohnen ||| = የመዝገበ ቃላት ቅርጽ፦ wohnen
+ihr ||| ihr
+-t: ihr wohnt ||| -t፦ ihr wohnt
+arbeiten ||| arbeiten
+du arbeitest, er arbeitet ||| du arbeitest, er arbeitet
+haben ||| haben
+du hast, er hat ||| du hast, er hat
+Choose the right form ||| ትክክለኛውን ቅርጽ ይምረጡ
+Meron works in a café. ||| ሜሮን ካፌ ውስጥ ትሠራለች።
+The stem ends in t: arbeit + e + t. ||| ሥሩ በt ያልቃል፦ arbeit + e + t።
+You work a lot. ||| ብዙ ትሠራለህ/ትሠሪያለሽ።
+You (all) have two children. ||| እናንተ ሁለት ልጆች አሏችሁ።
+Dawit and Selam live together. ||| ዳዊትና ሰላም አብረው ይኖራሉ።
+Do you (all) live in Germany? ||| እናንተ ጀርመን ትኖራላችሁ?
+They have no children. ||| እነሱ ልጆች የሏቸውም።
+We live in Adama. ||| የምንኖረው አዳማ ነው።
+Where do you (all) work? ||| እናንተ የት ትሠራላችሁ?
+We live together. ||| አብረን እንኖራለን።
+Where do you live? (informal, one person) ||| የት ትኖራለህ/ትኖሪያለሽ? (ለአንድ ሰው)
+
+## g2-reading
+now ||| አሁን
+as an engineer ||| እንደ መሐንዲስ
+the hospital ||| ሆስፒታል
+How old is Liya? ||| ሊያ ዕድሜዋ ስንት ነው?
+Who speaks German very well? ||| ጀርመንኛን በጣም ጥሩ የሚናገረው ማን ነው?
+We have a daughter. ||| አንዲት ሴት ልጅ አለችን።

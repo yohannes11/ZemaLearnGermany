@@ -2,12 +2,14 @@ from django.conf import settings
 from django.db import transaction
 from django.http import JsonResponse
 from django.shortcuts import render
+from django.templatetags.static import static
 from django.urls import reverse
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views.decorators.http import require_GET, require_http_methods
 
 from apps.accounts.decorators import api_login_required
+from apps.core.i18n import catalog
 from apps.core.utils import BadJSON, json_error, read_json
 
 from .models import Progress
@@ -18,7 +20,11 @@ from .models import Progress
 def index(request):
     """The course: one page; everything after loading happens in the browser."""
     app_config = {
+        # The interface language and its strings for the course's script (English needs none).
+        "lang": request.LANG,
+        "messages": catalog(request.LANG)["course"],
         "audioBase": settings.AUDIO_URL,
+        "picBase": static("course/pics/"),
         "ads": settings.ADSENSE,
         "dashboardUrl": reverse("analytics:dashboard"),
         "api": {

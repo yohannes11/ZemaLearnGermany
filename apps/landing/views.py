@@ -1,10 +1,13 @@
 import json
+import math
 
 from django.conf import settings
 from django.shortcuts import redirect, render
 from django.templatetags.static import static
 from django.urls import reverse
 from django.views.decorators.http import require_GET
+
+from apps.core.i18n import localize, translate
 
 from . import content
 
@@ -37,7 +40,7 @@ def _structured_data(request):
                 "name": "German A1.1 for learners in Ethiopia",
                 "description": (
                     f"{content.COURSE_FACTS['units']} units, {content.COURSE_FACTS['words']} words and "
-                    f"{content.COURSE_FACTS['lessons']} grammar lessons with audio and speaking practice."
+                    f"{content.COURSE_FACTS['lessons']} lessons with audio, exercises and speaking practice."
                 ),
                 "inLanguage": "de",
                 "educationalLevel": "A1",
@@ -64,24 +67,38 @@ def index(request):
     if request.user.is_authenticated:
         return redirect("course:index")
 
+    lang = request.LANG
     numbers = {key: i for i, key in enumerate(content.SOURCE_ORDER, start=1)}
-    stats = [{**s, "notes": _notes([s["source"]], numbers)} for s in content.STATS]
+    stats = [
+        {**s, "notes": _notes([s["source"]], numbers)}
+        for s in localize(content.STATS, lang, ("display", "label", "detail"))
+    ]
     paths = [
         {**p, "notes": _notes(p["sources"], numbers), "img": _image(p["image"]) if p.get("image") else None}
-        for p in content.PATHS
+        for p in localize(content.PATHS, lang, ("title", "alt", "body", "needs"))
     ]
-    reasons = [{**r, "notes": _notes(r["sources"], numbers)} for r in content.REASONS_NOW]
-    levels = [{**lv, "notes": _notes(lv["sources"], numbers)} for lv in content.LEVELS]
+    reasons = [
+        {**r, "notes": _notes(r["sources"], numbers)} for r in localize(content.REASONS_NOW, lang, ("title", "body"))
+    ]
+    levels = [
+        {**lv, "notes": _notes(lv["sources"], numbers)}
+        for lv in localize(content.LEVELS, lang, ("name", "can", "opens", "status_label"))
+    ]
     sources = [{**content.SOURCES[key], "n": numbers[key]} for key in content.SOURCE_ORDER]
-    samples = [{**s, "src": f"{settings.AUDIO_URL}katja/normal/{s['clip']}.mp3"} for s in AUDIO_SAMPLES]
+    samples = [
+        {**s, "meaning": translate(s["english"], lang), "src": f"{settings.AUDIO_URL}katja/normal/{s['clip']}.mp3"}
+        for s in AUDIO_SAMPLES
+    ]
 
     context = {
         "stats": stats,
         "paths": paths,
         "reasons": reasons,
         "levels": levels,
-        "features": content.FEATURES,
-        "faq": content.FAQ,
+        "features": localize(content.FEATURES, lang, ("title", "body")),
+        "faq": localize(content.FAQ, lang, ("q", "a")),
+        # The pace calculator's first answer (10 words a day), before the page's script takes over.
+        "calc_weeks": round(math.ceil(content.COURSE_FACTS["words"] / 10) / 7),
         "sources": sources,
         "facts": content.COURSE_FACTS,
         "samples": samples,

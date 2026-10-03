@@ -1,0 +1,162 @@
+# Unit 7 lessons. English ||| Amharic
+
+## g7-modals
+Modal verbs (können, müssen, dürfen, sollen, wollen, möchten) change the meaning of another verb. The <strong>modal is in second place</strong>, and the <strong>other verb goes to the end</strong> in the infinitive. ||| ረዳት ግሦች (können, müssen, dürfen, sollen, wollen, möchten) የሌላን ግሥ ትርጉም ይቀይራሉ። <strong>ረዳት ግሡ በሁለተኛ ቦታ</strong> ይገባል፤ ሌላው ግሥ ደግሞ በመዝገበ ቃላት ቅርጹ <strong>ወደ መጨረሻ ይሄዳል</strong>።
+Note: ich and er/sie/es have the <strong>same form</strong>, with no ending: ich kann, er kann. ||| ልብ ይበሉ፦ ich እና er/sie/es <strong>አንድ ዓይነት ቅርጽ</strong> አላቸው፤ መጨረሻ የላቸውም፦ ich kann, er kann.
+Modal verbs in the present tense ||| ረዳት ግሦች በአሁን ጊዜ
+I can dance well. ||| በደንብ መደነስ እችላለሁ።
+You have to work today. ||| ዛሬ መሥራት አለብህ/አለብሽ።
+We are allowed to swim here. ||| እዚህ መዋኘት ተፈቅዶልናል።
+He wants to learn German. ||| ጀርመንኛ መማር ይፈልጋል።
+I would like a coffee. ||| አንድ ቡና እፈልጋለሁ።
+modal = position 2 ||| ረዳት ግሥ = ቦታ 2
+Ich kann … ||| Ich kann …
+infinitive at the end ||| የመዝገበ ቃላት ቅርጹ መጨረሻ ላይ
+… gut tanzen. ||| … gut tanzen.
+ich = er/sie/es ||| ich = er/sie/es
+kann, muss, darf, soll, will, möchte ||| kann, muss, darf, soll, will, möchte
+I can dance well. (können) ||| በደንብ መደነስ እችላለሁ። (können)
+You have to work today. (müssen) ||| ዛሬ መሥራት አለብህ/አለብሽ። (müssen)
+We are allowed to swim here. (dürfen) ||| እዚህ መዋኘት ተፈቅዶልናል። (dürfen)
+He wants to learn German. (wollen) ||| ጀርመንኛ መማር ይፈልጋል። (wollen)
+Would you like a coffee? (möchten) ||| ቡና ትፈልጋለህ/ትፈልጊያለሽ? (möchten)
+You (all) should be on time. (sollen) ||| እናንተ በሰዓቱ መድረስ ይገባችኋል። (sollen)
+She can cook very well. (können) ||| እሷ በጣም ጥሩ ምግብ ማብሰል ትችላለች። (können)
+er/sie/es has no ending: kann. ||| er/sie/es መጨረሻ የለውም፦ kann።
+You (all) have to study a lot. (müssen) ||| እናንተ ብዙ ማጥናት አለባችሁ። (müssen)
+I would like a glass of water. (möchten) ||| አንድ ብርጭቆ ውሃ እፈልጋለሁ። (möchten)
+You aren't allowed to watch TV now. (dürfen) ||| አሁን ቴሌቪዥን ማየት አልተፈቀደልህም/አልተፈቀደልሽም። (dürfen)
+
+## g7-perfect
+The <strong>perfect</strong> is the usual way to talk about the past in spoken German. It has two parts: <strong>haben or sein</strong> in second place, and the <strong>participle</strong> (ge- … -t / -en) at the end. ||| <strong>ፔርፌክት (Perfekt)</strong> በንግግር ጀርመንኛ ስለ ያለፈ ጊዜ የሚነገርበት የተለመደው መንገድ ነው። ሁለት ክፍሎች አሉት፦ በሁለተኛ ቦታ <strong>haben ወይም sein</strong>፣ መጨረሻ ላይ ደግሞ <strong>ፓርቲሲፕል</strong> (ge- … -t / -en)።
+haben or sein? ||| haben ወይስ sein?
+Most verbs use haben ||| አብዛኞቹ ግሦች haben ይጠቀማሉ
+I drank coffee. ||| ቡና ጠጣሁ።
+We ate pizza. ||| ፒዛ በላን።
+He helped me. ||| እሱ ረዳኝ።
+You wrote a letter. ||| ደብዳቤ ጻፍክ/ጻፍሽ።
+Movement or change: sein ||| እንቅስቃሴ ወይም ለውጥ፦ sein
+He drove to Berlin. ||| ወደ በርሊን በመኪና ሄደ።
+She came home. ||| ወደ ቤት መጣች።
+I went to the cinema. ||| ሲኒማ ሄድኩ።
+I stayed at home. ||| ቤት ቆየሁ።
+The participle ||| ፓርቲሲፕሉ
+haben / sein = position 2 ||| haben / sein = ቦታ 2
+Ich habe … ||| Ich habe …
+participle at the end ||| ፓርቲሲፕሉ መጨረሻ ላይ
+… getrunken. ||| … getrunken.
+sein ||| sein
+kommen, gehen, fahren, reisen, bleiben, aufstehen ||| kommen, gehen, fahren, reisen, bleiben, aufstehen
+fahren is movement: sein. ||| fahren እንቅስቃሴ ነው፦ sein።
+kommen is movement: sein. ||| kommen እንቅስቃሴ ነው፦ sein።
+bleiben uses sein. ||| bleiben sein ይጠቀማል።
+You (all) spoke German. ||| እናንተ ጀርመንኛ ተናገራችሁ።
+We travelled to Spain. ||| ወደ ስፔን ተጓዝን።
+reisen is movement: sein. ||| reisen እንቅስቃሴ ነው፦ sein።
+gehen is movement: sein. ||| gehen እንቅስቃሴ ነው፦ sein።
+
+## g7-years
+Years before 2000 are read in two halves with <strong>hundert</strong> in between: 1999 = <em class="de">neunzehnhundertneunundneunzig</em>. From 2000 on, say them like normal numbers: 2001 = <em class="de">zweitausendeins</em>. ||| ከ2000 በፊት ያሉ ዓመታት በሁለት ግማሽ፣ መሃል ላይ <strong>hundert</strong> ተጨምሮ ይነበባሉ፦ 1999 = <em class="de">neunzehnhundertneunundneunzig</em> («አሥራ ዘጠኝ መቶ ዘጠና ዘጠኝ»)። ከ2000 ጀምሮ እንደ ተራ ቁጥር ይነበባሉ፦ 2001 = <em class="de">zweitausendeins</em>። ልብ ይበሉ፦ ጀርመን የግሪጎሪያን (አውሮፓ) ዘመን አቆጣጠርን ትጠቀማለች፤ ከኢትዮጵያ ዘመን አቆጣጠር 7–8 ዓመት ይቀድማል።
+You say <em class="de">Ich bin 1990 geboren</em> or <em class="de">im Jahr 1990</em> — never “in 1990”. ||| <em class="de">Ich bin 1990 geboren</em> ወይም <em class="de">im Jahr 1990</em> ይላሉ — በፍጹም «in 1990» አይባልም።
+How to read years ||| ዓመታትን እንዴት ማንበብ እንደሚቻል
+Said as ||| የሚነበበው
+before 2000 ||| ከ2000 በፊት
+neunzehnhundert… ||| neunzehnhundert…
+from 2000 ||| ከ2000 ጀምሮ
+zweitausend… ||| zweitausend…
+no “in” ||| «in» የለም
+Ich bin 1990 geboren. ||| Ich bin 1990 geboren.
+How do you say it? ||| እንዴት ይሉታል?
+1999 ||| 1999
+2001 ||| 2001
+1848 ||| 1848
+1990 ||| 1990
+2024 ||| 2024
+I was born in 1995. ||| የተወለድኩት በ1995 (እ.ኤ.አ.) ነው።
+No preposition before a year. ||| ከዓመት በፊት መስተዋድድ የለም።
+1975 ||| 1975
+2010 ||| 2010
+
+## g7-jobs
+Most jobs have a male and a female form. The female form usually adds <strong>-in</strong>: <em class="de">der Lehrer → die Lehrerin</em>. Some also get an umlaut: <em class="de">der Arzt → die Ärztin, der Koch → die Köchin</em>. ||| አብዛኞቹ ሙያዎች የወንድና የሴት ቅርጽ አላቸው (እንደ አማርኛው «መምህር / መምህርት»)። የሴቷ ቅርጽ በአብዛኛው <strong>-in</strong> ይጨምራል፦ <em class="de">der Lehrer → die Lehrerin</em>። አንዳንዶቹ ኡምላውትም ያገኛሉ፦ <em class="de">der Arzt → die Ärztin, der Koch → die Köchin</em>።
+When you say your job, you do not use ein/eine: <em class="de">Ich bin Lehrer.</em> (I am a teacher.) ||| ሙያዎን ሲናገሩ ein/eine አይጠቀሙም፦ <em class="de">Ich bin Lehrer.</em> (መምህር ነኝ።)
+<strong>als</strong> = as (your role), <strong>bei</strong> = at, for (the company): <em class="de">Ich arbeite als Pilotin bei Ethiopian Airlines.</em> ||| <strong>als</strong> = እንደ (ሚናዎ)፣ <strong>bei</strong> = በ… (ድርጅቱ)፦ <em class="de">Ich arbeite als Pilotin bei Ethiopian Airlines.</em> (በኢትዮጵያ አየር መንገድ አብራሪ ሆኜ እሠራለሁ።)
+Male and female ||| ወንድና ሴት
+Add -in ||| -in ይጨምሩ
+Talking about your job ||| ስለ ሥራዎ መናገር
+What do you do? – I am an engineer. ||| ሥራህ/ሥራሽ ምንድን ነው? – መሐንዲስ ነኝ።
+I work as a waiter. ||| አስተናጋጅ ሆኜ እሠራለሁ።
+She works at a bank. ||| እሷ ባንክ ውስጥ ትሠራለች።
+He is a student. He studies computer science. ||| እሱ ተማሪ ነው። የኮምፒውተር ሳይንስ ያጠናል።
+I'm not working at the moment. ||| አሁን አልሠራም።
+-in ||| -in
+Lehrer → Lehrerin ||| Lehrer → Lehrerin
+Arzt → Ärztin ||| Arzt → Ärztin
+No ein ||| ein የለም
+Ich bin Lehrer. ||| Ich bin Lehrer.
+als / bei ||| als / bei
+als Pilot bei Ethiopian Airlines ||| als Pilot bei Ethiopian Airlines
+Jobs ||| ሙያዎች
+The female form of der Lehrer: ||| የder Lehrer የሴት ቅርጽ፦
+The female form of der Arzt: ||| የder Arzt የሴት ቅርጽ፦
+The female form of der Koch: ||| የder Koch የሴት ቅርጽ፦
+No ein/eine with jobs. ||| ከሙያዎች ጋር ein/eine የለም።
+How do you say "I am a teacher"? ||| «መምህር ነኝ» እንዴት ይላሉ?
+I work as a waitress. ||| አስተናጋጅ ሆኜ እሠራለሁ። (ሴት)
+He works at Siemens. ||| እሱ ሲመንስ ውስጥ ይሠራል።
+Meron works as a doctor in a hospital. ||| ሜሮን ሆስፒታል ውስጥ ሐኪም ሆና ትሠራለች።
+I am a teacher by profession. ||| ሙያዬ መምህርነት ነው።
+What do you do for a living? ||| ሥራህ/ሥራሽ ምንድን ነው?
+I work as a nurse. ||| ነርስ ሆኜ እሠራለሁ።
+What do you do? (formal) ||| ሥራዎ ምንድን ነው? (በአክብሮት)
+I am a student. (said by a woman) ||| ተማሪ ነኝ። (ሴት የምትናገረው)
+
+## g7-phone
+Phone calls follow a fixed pattern. A company answers with its name: <em class="de">Firma Kebede, guten Tag!</em> You say who you are: <em class="de">Hier ist …</em> or <em class="de">Mein Name ist …</em> ||| የስልክ ጥሪዎች የተወሰነ ቅደም ተከተል ይከተላሉ። ድርጅት በስሙ ይመልሳል፦ <em class="de">Firma Kebede, guten Tag!</em> እርስዎ ማን እንደሆኑ ይናገራሉ፦ <em class="de">Hier ist …</em> ወይም <em class="de">Mein Name ist …</em>
+At the end you do not say Auf Wiedersehen ("see you again") but <strong>Auf Wiederhören</strong> ("hear you again"). ||| መጨረሻ ላይ Auf Wiedersehen («እንደገና እንተያይ») ሳይሆን <strong>Auf Wiederhören</strong> («እንደገና እንሰማማ») ይላሉ።
+Office words often come in the accusative: <em class="de">Ich brauche einen Stift. Haben Sie den Kalender?</em> ||| የቢሮ ቃላት ብዙ ጊዜ በአኩዛቲቭ ይመጣሉ፦ <em class="de">Ich brauche einen Stift. Haben Sie den Kalender?</em>
+A call ||| አንድ ጥሪ
+Phone phrases ||| የስልክ አገላለጾች
+Kebede company, hello! ||| ከበደ ድርጅት፣ ጤና ይስጥልኝ!
+Hello, this is Selam Tesfaye. ||| ጤና ይስጥልኝ፣ ሰላም ተስፋዬ ነኝ።
+What can I do for you? ||| ምን ልርዳዎት?
+Is Mr Bekele there? ||| አቶ በቀለ አሉ?
+One moment, please. I'm afraid he isn't here. ||| አንድ ጊዜ፣ እባክዎ። እንደ አለመታደል ሆኖ የሉም።
+Thank you. Goodbye! ||| አመሰግናለሁ። ደህና ይሁኑ!
+At the office ||| በቢሮ
+Nominative and accusative ||| ባለቤትና ተሳቢ
+Firma …, guten Tag! ||| Firma …, guten Tag!
+Introduce yourself ||| ራስዎን ያስተዋውቁ
+Hier ist … / Mein Name ist … ||| Hier ist … / Mein Name ist …
+Goodbye ||| ስንብት
+Auf Wiederhören! ||| Auf Wiederhören!
+der → den / einen ||| der → den / einen
+Ich brauche einen Stift. ||| Ich brauche einen Stift.
+Phone and office ||| ስልክና ቢሮ
+A phone call to a company ||| ወደ አንድ ድርጅት የሚደረግ ጥሪ
+How do you end a phone call? ||| የስልክ ጥሪን እንዴት ይጨርሳሉ?
+You call a company. How do you introduce yourself? ||| ወደ አንድ ድርጅት ይደውላሉ። ራስዎን እንዴት ያስተዋውቃሉ?
+The person is not there. What does the secretary say? ||| ሰውየው የሉም። ጸሐፊዋ ምን ትላለች?
+I need a pen. ||| እስክሪብቶ ያስፈልገኛል።
+der Stift → einen Stift (accusative). ||| der Stift → einen Stift (አኩዛቲቭ)።
+Do you have the calendar? ||| የቀን መቁጠሪያው አለዎት?
+I don't have a password. ||| የይለፍ ቃል የለኝም።
+das Passwort → kein Passwort (no change). ||| das Passwort → kein Passwort (ለውጥ የለም)።
+Where is the mouse? ||| ማውሱ የት ነው?
+Wo ist …? takes the nominative. ||| Wo ist …? ባለቤትን (Nominativ) ይወስዳል።
+We have an appointment tomorrow. ||| ነገ ቀጠሮ አለን።
+I can't get onto the Wi-Fi. ||| ዋይፋዩ ላይ መግባት አልቻልኩም።
+The plural of der Termin: ||| የder Termin ብዙ ቁጥር፦
+The plural of das Passwort: ||| የdas Passwort ብዙ ቁጥር፦
+
+## g7-reading
+the company ||| ድርጅቱ
+a lot of work ||| ብዙ ሥራ
+wrong ||| ስህተት
+the colleague ||| የሥራ ባልደረባ
+helps ||| ይረዳል
+late ||| ዘግይቶ
+See you soon! ||| በቅርቡ እንገናኝ!
+Who helps Meron? ||| ሜሮንን ማን ይረዳታል?
+Where is Jan Weber from? ||| ያን ቬበር ከየት ነው?
+Unfortunately, I'm late. ||| እንደ አለመታደል ሆኖ ዘግይቻለሁ።

@@ -1,0 +1,180 @@
+# Unit 3 lessons. English ||| Amharic
+
+## g3-articles
+<em class="de">ein / eine</em> mean <strong>a / an</strong>. <em class="de">kein / keine</em> mean <strong>no / not a</strong>: they work exactly like ein / eine, with a k in front. ||| <em class="de">ein / eine</em> ማለት <strong>አንድ</strong> ነው (አማርኛ ለዚህ የተለየ መስተኣምር የለውም)። <em class="de">kein / keine</em> ማለት <strong>ምንም … የለም / … አይደለም</strong> ነው፦ ልክ እንደ ein / eine ይሠራሉ፤ ፊታቸው ላይ k ብቻ ይጨመራል።
+Which form? ||| የትኛው ቅርጽ?
+a / an ||| አንድ
+no / not a ||| ምንም / … አይደለም
+That is an apple. ||| ይህ ፖም ነው።
+That is not a pear. ||| ይህ ፒር አይደለም።
+I don't have any children. ||| ምንም ልጅ የለኝም።
+That is not bread. ||| ይህ ዳቦ አይደለም።
+ein / kein ||| ein / kein
+masculine and neuter ||| ተባዕታይና ገለልተኛ
+eine / keine ||| eine / keine
+feminine ||| አንስታይ
+keine ||| keine
+plural (there is no plural of ein) ||| ብዙ ቁጥር (የein ብዙ ቁጥር የለም)
+ein, eine, kein or keine? ||| ein፣ eine፣ kein ወይስ keine?
+That is a banana. ||| ይህ ሙዝ ነው።
+That is not an apple. ||| ይህ ፖም አይደለም።
+Plural: keine. ||| ብዙ ቁጥር፦ keine።
+That is an egg. ||| ይህ እንቁላል ነው።
+das Ei is neuter: ein. ||| das Ei ገለልተኛ ነው፦ ein።
+das Brot is neuter: kein. ||| das Brot ገለልተኛ ነው፦ kein።
+That is a tomato. ||| ይህ ቲማቲም ነው።
+Those are not potatoes. ||| እነዚህ ድንች አይደሉም።
+That is a cake. ||| ይህ ኬክ ነው።
+That is not a cucumber. ||| ይህ ኪያር አይደለም።
+
+## g3-plural
+German plurals come in several patterns. The article in the plural is always <strong>die</strong>. Learn each noun with its plural. ||| የጀርመንኛ ብዙ ቁጥር በተለያዩ ቅርጾች ይመጣል (በአማርኛ እንደ «-ኦች» አንድ ብቻ አይደለም)። በብዙ ቁጥር መስተኣምሩ ሁልጊዜ <strong>die</strong> ነው። እያንዳንዱን ስም ከብዙ ቁጥሩ ጋር ይማሩ።
+Six ways to form the plural ||| ብዙ ቁጥር የሚሠራባቸው ስድስት መንገዶች
+Ending ||| መጨረሻ
+Singular ||| ነጠላ ቁጥር
+Plural ||| ብዙ ቁጥር
+no ending ||| መጨረሻ የለም
+die in the plural ||| በብዙ ቁጥር die
+die Äpfel, die Eier, die Kuchen ||| die Äpfel, die Eier, die Kuchen
+feminine -e → -en ||| አንስታይ -e → -en
+die Tomate → die Tomaten ||| die Tomate → die Tomaten
+Umlaut ||| ኡምላውት
+der Apfel → die Äpfel ||| der Apfel → die Äpfel
+Choose the plural ||| ብዙ ቁጥሩን ይምረጡ
+banana → bananas ||| ሙዝ → ሙዞች
+fish → fish (plural) ||| ዓሣ → ዓሣዎች
+egg → eggs ||| እንቁላል → እንቁላሎች
+apple → apples ||| ፖም → ፖሞች
+Vowel change, no ending. ||| አናባቢው ይቀየራል፤ መጨረሻ የለም።
+cake → cakes ||| ኬክ → ኬኮች
+No ending. ||| መጨረሻ የለም።
+tomato → tomatoes ||| ቲማቲም → ቲማቲሞች
+pepper → peppers ||| ቃሪያ → ቃሪያዎች
+potato → potatoes ||| ድንች → ድንቾች
+strawberry → strawberries ||| እንጆሪ → እንጆሪዎች
+
+## g3-questions
+To ask a question that can be answered with <strong>ja</strong> or <strong>nein</strong>, put the <strong>verb in first place</strong>. ||| በ<strong>ja</strong> ወይም በ<strong>nein</strong> የሚመለስ ጥያቄ ለመጠየቅ <strong>ግሡን መጀመሪያ ያስቀምጡ</strong>።
+Statement → question ||| መግለጫ → ጥያቄ
+Do you like to eat fruit? ||| ፍራፍሬ መብላት ትወዳለህ/ትወጃለሽ?
+Do we need potatoes? ||| ድንች ያስፈልገናል?
+Is this a banana? ||| ይህ ሙዝ ነው?
+Isst du …? Hast du …? Ist das …? ||| Isst du …? Hast du …? Ist das …?
+Answer ||| መልስ
+Ja, … / Nein, … ||| Ja, … / Nein, …
+Which question is correct? ||| የትኛው ጥያቄ ትክክል ነው?
+Do you like to eat fish? ||| ዓሣ መብላት ትወዳለህ/ትወጃለሽ?
+Are you hungry? ||| ርቦሃል/ርቦሻል?
+Do you like to drink tea? ||| ሻይ መጠጣት ትወዳለህ/ትወጃለሽ?
+Is the cake tasty? ||| ኬኩ ይጣፍጣል?
+Do you need bread? ||| ዳቦ ያስፈልግሃል/ያስፈልግሻል?
+Does the apple cost 1 euro? ||| ፖሙ 1 ዩሮ ነው?
+
+## g3-haben-essen
+<em class="de">haben</em> (to have) loses its <strong>b</strong> in the du and er/sie/es forms. <em class="de">essen</em> (to eat) changes <strong>e → i</strong> in the same two forms. ||| <em class="de">haben</em> (ያለው መሆን) በdu እና በer/sie/es ቅርጾች <strong>b</strong>ን ያጣል። <em class="de">essen</em> (መብላት) በእነዚሁ ሁለት ቅርጾች <strong>e → i</strong> ይቀየራል።
+haben in the present tense ||| haben በአሁን ጊዜ
+essen ||| essen
+essen in the present tense ||| essen በአሁን ጊዜ
+du hast · er hat ||| du hast · er hat
+haben loses the b ||| haben bን ያጣል
+du isst · er isst ||| du isst · er isst
+essen: e → i ||| essen፦ e → i
+wir haben · wir essen ||| wir haben · wir essen
+plural forms are regular ||| የብዙ ቁጥር ቅርጾች መደበኛ ናቸው
+I am hungry. ||| ርቦኛል።
+Are you thirsty? ||| ጠምቶሃል/ጠምቶሻል?
+He has two children. ||| እሱ ሁለት ልጆች አሉት።
+We don't have any milk. ||| ምንም ወተት የለንም።
+You (all) have a garden. ||| እናንተ የአትክልት ቦታ አላችሁ።
+I like to eat fish. ||| ዓሣ መብላት እወዳለሁ።
+You like to eat cake. ||| ኬክ መብላት ትወዳለህ/ትወጃለሽ።
+du: e → i, isst. ||| du፦ e → i፣ isst።
+She doesn't eat meat. ||| እሷ ሥጋ አትበላም።
+We eat rice. ||| ሩዝ እንበላለን።
+Do you (all) like cheese? ||| እናንተ አይብ ትወዳላችሁ?
+ihr keeps the e: esst. ||| ihr eን ይይዛል፦ esst።
+
+## g3-moegen
+<em class="de">mögen</em> means to like, in general: <em class="de">Ich mag Kaffee.</em> <em class="de">möchten</em> means would like, now and politely: <em class="de">Ich möchte einen Kaffee, bitte.</em> ||| <em class="de">mögen</em> ማለት በአጠቃላይ መውደድ ነው፦ <em class="de">Ich mag Kaffee.</em> (ቡና እወዳለሁ)። <em class="de">möchten</em> ማለት አሁን በትሕትና መፈለግ ነው፦ <em class="de">Ich möchte einen Kaffee, bitte.</em> (አንድ ቡና እፈልጋለሁ፣ እባክዎ)።
+In a café you will also hear <em class="de">nehmen</em> (to take, to have). Its vowel changes: <em class="de">du nimmst, er nimmt</em>. ||| በካፌ ውስጥ <em class="de">nehmen</em> (መውሰድ፣ ማዘዝ) የሚለውንም ይሰማሉ። አናባቢው ይቀየራል፦ <em class="de">du nimmst, er nimmt</em>።
+Three verbs for food and drink ||| ለምግብና ለመጠጥ ሦስት ግሦች
+Like, would like, take ||| መውደድ፣ መፈለግ፣ መውሰድ
+I don't like cheese. ||| አይብ አልወድም።
+Do you like injera? ||| እንጀራ ትወዳለህ/ትወጃለሽ?
+We would like two teas, please. ||| ሁለት ሻይ እንፈልጋለን፣ እባክዎ።
+What are you having? ||| ምን ትወስዳለህ/ትወስጃለሽ?
+I will have the soup. ||| ሾርባውን እወስዳለሁ።
+I like fish. – Me too! ||| ዓሣ እወዳለሁ። – እኔም!
+mögen ||| mögen
+like in general: Ich mag Tee. ||| በአጠቃላይ መውደድ፦ Ich mag Tee.
+möchten ||| möchten
+would like now: Ich möchte einen Tee. ||| አሁን መፈለግ፦ Ich möchte einen Tee.
+ich / er mag, möchte ||| ich / er mag, möchte
+no ending for ich and er ||| ለich እና ለer መጨረሻ የለም
+nehmen ||| nehmen
+du nimmst, er nimmt ||| du nimmst, er nimmt
+Like, would like or take? ||| መውደድ፣ መፈለግ ወይስ መውሰድ?
+I like coffee a lot. ||| ቡና በጣም እወዳለሁ።
+Do you like fish? ||| ዓሣ ትወዳለህ/ትወጃለሽ?
+He doesn't like tomatoes. ||| እሱ ቲማቲም አይወድም።
+You (all) like chocolate, right? ||| እናንተ ቸኮሌት ትወዳላችሁ፣ አይደል?
+Hello! I would like a tea, please. ||| ሰላም! አንድ ሻይ እፈልጋለሁ፣ እባክዎ።
+Ordering now: möchte. ||| አሁን ማዘዝ፦ möchte።
+What would you like to drink? ||| ምን መጠጣት ትፈልጋለህ/ትፈልጊያለሽ?
+She is having the salad. ||| እሷ ሰላጣውን ትወስዳለች።
+A friend says: Ich mag Kaffee. You like it too. ||| ጓደኛዎ «Ich mag Kaffee» ይላል። እርስዎም ይወዱታል።
+A friend says: Ich mag keinen Fisch. You don't like fish either. ||| ጓደኛዎ «Ich mag keinen Fisch» ይላል። እርስዎም ዓሣ አይወዱም።
+Ich schon = I do (even if you don't). ||| Ich schon = እኔ ግን እወዳለሁ (አንተ ባትወድም)።
+A friend says: Ich mag keinen Käse. But you like cheese. ||| ጓደኛዎ «Ich mag keinen Käse» ይላል። እርስዎ ግን አይብ ይወዳሉ።
+I would like a cup of coffee. ||| አንድ ሲኒ ቡና እፈልጋለሁ።
+I like tea. ||| ሻይ እወዳለሁ።
+
+## g3-compounds
+German loves joining nouns: <em class="de">der Apfel + der Kuchen = der Apfelkuchen</em> (apple cake). ||| ጀርመንኛ ስሞችን ማጣመር ይወዳል፦ <em class="de">der Apfel + der Kuchen = der Apfelkuchen</em> (የፖም ኬክ)።
+The <strong>last</strong> noun is the main word. It gives the meaning and the article: a <em class="de">Kaffeetasse</em> is a cup (die Tasse), so it is <em class="de">die Kaffeetasse</em>. ||| <strong>የመጨረሻው</strong> ስም ዋናው ቃል ነው። ትርጉሙንና መስተኣምሩን የሚሰጠው እሱ ነው፦ <em class="de">Kaffeetasse</em> ሲኒ ነው (die Tasse)፤ ስለዚህ <em class="de">die Kaffeetasse</em> ይባላል። በአማርኛ «የቡና ሲኒ» እንደምንለው፣ ግን በተገላቢጦሽ ቅደም ተከተል።
+Sometimes a small linking sound appears in the middle: <em class="de">Schokolade + Kuchen = Schokoladenkuchen</em>. ||| አንዳንድ ጊዜ መሃል ላይ ትንሽ አገናኝ ድምፅ ይገባል፦ <em class="de">Schokolade + Kuchen = Schokoladenkuchen</em>።
+Building words ||| ቃላትን መገንባት
+Two nouns, one word ||| ሁለት ስሞች፣ አንድ ቃል
+First word ||| የመጀመሪያው ቃል
+Last word ||| የመጨረሻው ቃል
+Last word = main word ||| የመጨረሻው ቃል = ዋናው ቃል
+an Apfelsaft is a juice ||| Apfelsaft ጭማቂ ነው
+Last word = article ||| የመጨረሻው ቃል = መስተኣምሩ
+die Tasse → die Kaffeetasse ||| die Tasse → die Kaffeetasse
+Linking -n- ||| አገናኝ -n-
+Schokoladenkuchen, Tomatensuppe ||| Schokoladenkuchen, Tomatensuppe
+the apple cake ||| የፖም ኬክ
+der Kuchen → der Apfelkuchen. ||| der Kuchen → der Apfelkuchen።
+the potato soup ||| የድንች ሾርባ
+die Suppe. ||| die Suppe።
+the cheese sandwich ||| የአይብ ሳንድዊች
+das Brot. ||| das Brot።
+the coffee cup ||| የቡና ሲኒ
+die Tasse. ||| die Tasse።
+the orange juice ||| የብርቱካን ጭማቂ
+der Saft. ||| der Saft።
+the mineral water ||| የታሸገ ውሃ
+das Wasser. ||| das Wasser።
+the fruit salad ||| የፍራፍሬ ሰላጣ
+der Salat. ||| der Salat።
+The last word is the main word. ||| የመጨረሻው ቃል ዋናው ቃል ነው።
+What is a Kaffeetasse? ||| Kaffeetasse ምንድን ነው?
+a cup for coffee ||| የቡና ሲኒ
+coffee in a cup ||| በሲኒ ያለ ቡና
+a coffee shop ||| ቡና ቤት
+What is a Tomatensuppe? ||| Tomatensuppe ምንድን ነው?
+a soup made with tomatoes ||| በቲማቲም የተሠራ ሾርባ
+a tomato with soup ||| ሾርባ ያለው ቲማቲም
+a soup bowl ||| የሾርባ ሳህን
+With a linking -n-. ||| ከአገናኝ -n- ጋር።
+the apple juice ||| የፖም ጭማቂ
+
+## g3-reading
+no more … ||| ከእንግዲህ … የለም
+of course ||| በእርግጥ
+for you ||| ለአንተ/ለአንቺ
+together ||| በአንድ ላይ / በጠቅላላ
+What does Selam eat? ||| ሰላም ምን ትበላለች?
+How much is it altogether? ||| በጠቅላላ ስንት ነው?
+Ordering in a café ||| በካፌ ውስጥ ማዘዝ
+I would like a coffee, please. ||| አንድ ቡና እፈልጋለሁ፣ እባክዎ።

@@ -1,0 +1,460 @@
+# Word meanings, Units 3–5. German ||| Amharic
+# Clock times: the Ethiopian-clock reading, with the European time in brackets (9 Uhr = ሦስት ሰዓት (9:00)).
+
+# Unit 3
+die Nachbarin ||| ጎረቤት (ሴት)
+der Supermarkt ||| ሱፐርማርኬት
+der Laden ||| ሱቅ
+das Geschäft ||| ሱቅ / ንግድ
+einkaufen gehen ||| ለገበያ መሄድ
+brauchen ||| ማስፈለግ / መፈለግ
+kaufen ||| መግዛት
+kosten ||| ዋጋው … መሆን
+die Kartoffel ||| ድንች
+die Tomate ||| ቲማቲም
+die Banane ||| ሙዝ
+der Saft ||| ጭማቂ
+die Birne ||| ፒር (ኮክ መሳይ ፍሬ)
+die Orange ||| ብርቱካን
+die Erdbeere ||| እንጆሪ
+die Traube ||| ወይን (ፍሬ)
+der/die Paprika ||| ቃሪያ / ቃሪያ ቃሪያ (በርበሬ ያልሆነ)
+die Gurke ||| ኪያር
+die Zwiebel ||| ሽንኩርት
+ein ||| አንድ (ለተባዕታይና ለገለልተኛ ስሞች)
+eine ||| አንድ / አንዲት (ለአንስታይ ስሞች)
+ein Apfel ||| አንድ ፖም
+eine Banane ||| አንድ ሙዝ
+die Nahrungsmittel ||| ምግቦች / የምግብ ሸቀጦች
+das Brötchen ||| ትንሽ ዳቦ (ዳቦ ቆሎ)
+der Kuchen ||| ኬክ
+der Joghurt ||| እርጎ
+das Ei ||| እንቁላል
+der Reis ||| ሩዝ
+das Fleisch ||| ሥጋ
+der Fisch ||| ዓሣ
+die Wurst ||| ቋሊማ
+Hast du Hunger? ||| ርቦሃል/ርቦሻል?
+Ich habe Hunger. ||| ርቦኛል።
+Guten Appetit! ||| መልካም ምግብ!
+kein ||| ምንም … የለም / አይደለም (ለተባዕታይና ለገለልተኛ ስሞች)
+keine ||| ምንም … የለም / አይደለም (ለአንስታይና ለብዙ ቁጥር ስሞች)
+Das ist kein Apfel. ||| ይህ ፖም አይደለም።
+Das ist keine Birne. ||| ይህ ፒር አይደለም።
+Ich möchte kein Stück Kuchen. ||| አንድም ቁራጭ ኬክ አልፈልግም።
+der, die, das ||| ውሱን መስተኣምሮች (der፣ die፣ das)
+ein, eine ||| ያልተወሰኑ መስተኣምሮች (አንድ)
+mein, meine ||| የባለቤትነት መስተኣምሮች (የእኔ)
+kein, keine ||| አሉታዊ መስተኣምሮች (ምንም … የለም)
+das Bier ||| ቢራ
+das Mineralwasser ||| የታሸገ ውሃ / ሚነራል ውሃ
+der Kaffee ||| ቡና
+der Orangensaft ||| የብርቱካን ጭማቂ
+Hast du Durst? ||| ጠምቶሃል/ጠምቶሻል?
+Bist du durstig? ||| ጠምቶሃል/ጠምቶሻል?
+Ich habe Durst. ||| ጠምቶኛል።
+Was möchtest du trinken? ||| ምን መጠጣት ትፈልጋለህ/ትፈልጊያለሽ?
+Was möchten Sie trinken? ||| ምን መጠጣት ይፈልጋሉ?
+Schmeckt gut! ||| ጣፋጭ ነው! / ይጣፍጣል!
+Prost! ||| ለጤናችን!
+haben ||| ያለው መሆን / መኖር (ንብረት)
+ich habe ||| አለኝ
+du hast ||| አለህ / አለሽ
+er hat ||| አለው
+wir haben ||| አለን
+ihr habt ||| አላችሁ
+sie haben ||| አላቸው
+einundzwanzig ||| ሃያ አንድ (21)
+zweiundzwanzig ||| ሃያ ሁለት (22)
+dreißig ||| ሠላሳ (30)
+vierzig ||| አርባ (40)
+fünfzig ||| ሃምሳ (50)
+sechzig ||| ስድሳ (60)
+siebzig ||| ሰባ (70)
+achtzig ||| ሰማንያ (80)
+neunzig ||| ዘጠና (90)
+hundert ||| መቶ (100)
+Wie viel kostet das? ||| ይህ ስንት ነው? / ዋጋው ስንት ነው?
+Was kostet das? ||| ይህ ስንት ነው?
+Das kostet … ||| ዋጋው … ነው
+Das macht … ||| በአጠቃላይ … ይሆናል
+der Preis ||| ዋጋ
+der Euro ||| ዩሮ
+der Cent ||| ሳንቲም (ሴንት)
+das Kilo ||| ኪሎ
+das Wechselgeld ||| መልስ (ገንዘብ)
+Was isst du gerne? ||| ምን መብላት ትወዳለህ/ትወጃለሽ?
+Was trinkst du gerne? ||| ምን መጠጣት ትወዳለህ/ትወጃለሽ?
+Isst du gerne Fisch? ||| ዓሣ መብላት ትወዳለህ/ትወጃለሽ?
+Trinkst du gerne Tee? ||| ሻይ መጠጣት ትወዳለህ/ትወጃለሽ?
+Ja, ich esse gerne Fisch. ||| አዎ፣ ዓሣ መብላት እወዳለሁ።
+Nein, ich trinke nicht gerne Tee. ||| አይ፣ ሻይ መጠጣት አልወድም።
+Was ist dein Lieblingsessen? ||| የምትወደው/የምትወጂው ምግብ ምንድን ነው?
+essen ||| መብላት
+ich esse ||| እበላለሁ
+du isst ||| ትበላለህ / ትበያለሽ
+sie isst ||| ትበላለች
+wir essen ||| እንበላለን
+ihr esst ||| ትበላላችሁ
+sie essen ||| ይበላሉ
+etwas zum Trinken ||| የሚጠጣ ነገር
+etwas zum Essen ||| የሚበላ ነገር
+Was darf es sein? ||| ምን ልታዘዝ? / ምን ይፈልጋሉ?
+Kommt gleich! ||| አሁኑኑ ይደርሳል!
+Ich möchte … bitte. ||| … እፈልጋለሁ፣ እባክዎ።
+Ich nehme … ||| … እወስዳለሁ / … ይሁንልኝ
+Können wir bitte die Rechnung bekommen? ||| እባክዎ ሂሳቡን ሊያመጡልን ይችላሉ?
+Zahlen Sie mit Karte oder Bargeld? ||| በካርድ ነው ወይስ በጥሬ ገንዘብ የሚከፍሉት?
+Stimmt so. ||| መልሱን ያስቀምጡት።
+In Ordnung? ||| ደህና ነው? / እሺ?
+der Kellner ||| አስተናጋጅ (ወንድ)
+die Gäste ||| እንግዶች
+ein Glas Wein ||| አንድ ብርጭቆ ወይን ጠጅ
+das Menü ||| የተዘጋጀ የምግብ ዝርዝር (ሜኑ)
+die Speise, das Essen ||| ምግብ
+die Getränke ||| መጠጦች
+bestellen ||| ማዘዝ
+bereit ||| ዝግጁ
+der Nachtisch, die Nachspeise ||| ከምግብ በኋላ የሚበላ ጣፋጭ
+die Rechnung ||| ሂሳብ
+bekommen ||| ማግኘት / መቀበል
+köstlich ||| በጣም ጣፋጭ
+das Bargeld ||| ጥሬ ገንዘብ
+die Kreditkarte ||| የክሬዲት ካርድ
+das Trinkgeld ||| ጉርሻ (ቲፕ)
+mögen ||| መውደድ
+ich mag ||| እወዳለሁ
+du magst ||| ትወዳለህ / ትወጃለሽ
+er mag ||| ይወዳል
+Ich mag Kaffee. ||| ቡና እወዳለሁ።
+Ich mag keinen Fisch. ||| ዓሣ አልወድም።
+Ich auch. ||| እኔም።
+Ich nicht. ||| እኔ ግን አልወድም።
+Ich auch nicht. ||| እኔም አልወድም።
+Ich schon. ||| እኔ ግን እወዳለሁ።
+lecker ||| ጣፋጭ
+Das schmeckt gut. ||| ይጣፍጣል።
+das Frühstück ||| ቁርስ
+zum Frühstück ||| ለቁርስ
+das Abendessen ||| እራት
+das Müsli ||| ሙስሊ (የእህል ቁርስ)
+die Marmelade ||| ማርማላታ
+der Honig ||| ማር
+die Butter ||| ቅቤ
+die Suppe ||| ሾርባ
+der Salat ||| ሰላጣ
+die Nudeln ||| ፓስታ / መኮረኒ
+das Eis ||| አይስክሬም / በረዶ
+die Tasse ||| ሲኒ / ኩባያ
+eine Tasse Kaffee ||| አንድ ሲኒ ቡና
+Was isst du zum Frühstück? ||| ለቁርስ ምን ትበላለህ/ትበያለሽ?
+der Apfelkuchen ||| የፖም ኬክ
+der Apfelsaft ||| የፖም ጭማቂ
+der Schokoladenkuchen ||| የቸኮሌት ኬክ
+die Kartoffelsuppe ||| የድንች ሾርባ
+die Tomatensuppe ||| የቲማቲም ሾርባ
+das Käsebrot ||| የአይብ ሳንድዊች
+der Obstsalat ||| የፍራፍሬ ሰላጣ
+die Kaffeetasse ||| የቡና ሲኒ
+
+# Unit 4
+die Wohnung ||| አፓርታማ / መኖሪያ ቤት
+das Zimmer ||| ክፍል (የቤት)
+das Wohnzimmer ||| ሳሎን
+das Schlafzimmer ||| መኝታ ቤት
+das Kinderzimmer ||| የልጆች ክፍል
+das Arbeitszimmer ||| የሥራ ክፍል (ቢሮ በቤት)
+die Küche ||| ማዕድ ቤት / ኩሽና
+das Badezimmer ||| መታጠቢያ ቤት
+das Bad ||| መታጠቢያ ቤት
+Wo ist es? ||| የት ነው?
+Entschuldigung, wo ist das Badezimmer? ||| ይቅርታ፣ መታጠቢያ ቤቱ የት ነው?
+links ||| ግራ / በግራ በኩል
+rechts ||| ቀኝ / በቀኝ በኩል
+vorne ||| ፊት ለፊት / በፊት በኩል
+hinten ||| ኋላ / በኋላ በኩል
+neben ||| አጠገብ
+Wie ist etwas? ||| አንድ ነገር እንዴት ነው?
+billig ||| ርካሽ
+teuer ||| ውድ
+hässlich ||| አስቀያሚ
+dunkel ||| ጨለማ / ጥቁር ያለ
+hell ||| ብሩህ / ፈካ ያለ
+klein ||| ትንሽ
+groß ||| ትልቅ
+Die Küche ist nicht klein. ||| ማዕድ ቤቱ ትንሽ አይደለም።
+Das Auto ist nicht neu. ||| መኪናው አዲስ አይደለም።
+er (der Tisch) ||| እሱ (ለder ስሞች፣ ለምሳሌ ጠረጴዛ)
+sie (die Lampe) ||| እሷ (ለdie ስሞች፣ ለምሳሌ መብራት)
+es (das Bett) ||| እሱ (ለdas ስሞች፣ ለምሳሌ አልጋ)
+sie (die Stühle) ||| እነሱ (ለብዙ ቁጥር ስሞች)
+Das ist doch toll! ||| ይህማ በጣም ጥሩ ነው!
+Wie ist deine Wohnung? ||| ቤትህ/ቤትሽ እንዴት ነው?
+Hast du auch einen Balkon? ||| በረንዳም አለህ/አለሽ?
+Ist die Wohnung teuer? ||| ቤቱ ውድ ነው?
+das Erdgeschoss ||| ምድር ቤት (የመሬት ወለል)
+der Stock ||| ፎቅ
+der erste Stock ||| አንደኛ ፎቅ
+der zweite Stock ||| ሁለተኛ ፎቅ
+der Dachboden ||| ጣሪያ ሥር ያለ ክፍል
+der Garten ||| የአትክልት ቦታ / ግቢ
+der Balkon ||| በረንዳ
+die Garage ||| ጋራዥ
+die Treppe ||| ደረጃ (መወጣጫ)
+der Keller ||| ምድር ቤት (ከመሬት በታች)
+im ersten Stock ||| አንደኛ ፎቅ ላይ
+im zweiten Stock ||| ሁለተኛ ፎቅ ላይ
+im Garten ||| ግቢ ውስጥ
+im Flur ||| መተላለፊያው ውስጥ
+im Zimmer ||| ክፍሉ ውስጥ
+im Schlafzimmer ||| መኝታ ቤት ውስጥ
+im Wohnzimmer ||| ሳሎን ውስጥ
+im Arbeitszimmer ||| የሥራ ክፍል ውስጥ
+in der Garage ||| ጋራዥ ውስጥ
+in der Wohnung ||| ቤቱ ውስጥ
+in der Küche ||| ማዕድ ቤት ውስጥ
+der Schrank ||| ቁም ሣጥን
+das Sofa ||| ሶፋ
+die Couch ||| ሶፋ
+der Tisch ||| ጠረጴዛ
+der Couchtisch ||| የሶፋ ጠረጴዛ
+der Stuhl ||| ወንበር
+der Fernseher ||| ቴሌቪዥን
+die Lampe ||| መብራት
+der Teppich ||| ምንጣፍ
+das Regal ||| መደርደሪያ
+Wie gefällt dir …? ||| … እንዴት ይመስልሃል/ይመስልሻል? / ወደድከው/ወደድሽው?
+Wie gefallen dir …? ||| … (ብዙ ነገሮች) እንዴት ይመስሉሃል/ይመስሉሻል?
+Wie gefällt Ihnen …? ||| … እንዴት ይመስልዎታል?
+Es gefällt mir. ||| ወድጄዋለሁ።
+Es gefällt mir sehr. ||| በጣም ወድጄዋለሁ።
+Es gefällt mir sehr gut. ||| እጅግ በጣም ወድጄዋለሁ።
+Es gefällt mir nicht. ||| አልወደድኩትም።
+Es gefällt mir nicht so gut. ||| ብዙም አልወደድኩትም።
+Es gefällt mir überhaupt nicht. ||| ፈጽሞ አልወደድኩትም።
+der Küchenschrank ||| የማዕድ ቤት ቁም ሣጥን
+der Herd ||| ምድጃ
+der Kühlschrank ||| ማቀዝቀዣ (ፍሪጅ)
+die Spüle ||| የዕቃ ማጠቢያ
+die Waschmaschine ||| የልብስ ማጠቢያ ማሽን
+die Dusche ||| ሻወር
+die Badewanne ||| የገላ መታጠቢያ ገንዳ
+das Waschbecken ||| የእጅ መታጠቢያ
+der Spiegel ||| መስታወት
+die Toilette ||| መጸዳጃ ቤት
+weiß ||| ነጭ
+schwarz ||| ጥቁር
+blau ||| ሰማያዊ
+grün ||| አረንጓዴ
+orange ||| ብርቱካናማ
+braun ||| ቡናማ
+lila ||| ሐምራዊ
+grau ||| ግራጫ
+dunkelblau ||| ጥቁር ሰማያዊ
+hellgrün ||| ፈካ ያለ አረንጓዴ
+Welche Farbe hat …? ||| … ምን ዓይነት ቀለም ነው?
+Welche Farbe haben …? ||| … (ብዙዎቹ) ምን ዓይነት ቀለም ናቸው?
+dein / deine ||| የአንተ / የአንቺ
+sein / seine ||| የእሱ
+ihr / ihre ||| የእሷ / የእነሱ
+zweihundert ||| ሁለት መቶ (200)
+dreihundert ||| ሦስት መቶ (300)
+vierhundert ||| አራት መቶ (400)
+fünfhundert ||| አምስት መቶ (500)
+sechshundert ||| ስድስት መቶ (600)
+siebenhundert ||| ሰባት መቶ (700)
+achthundert ||| ስምንት መቶ (800)
+neunhundert ||| ዘጠኝ መቶ (900)
+eintausend ||| አንድ ሺህ (1000)
+zweitausend ||| ሁለት ሺህ (2000)
+fünftausend ||| አምስት ሺህ (5000)
+eine Million ||| አንድ ሚሊዮን
+der Kugelschreiber ||| እስክሪብቶ
+der Kuli ||| እስክሪብቶ
+der Bleistift ||| እርሳስ
+die Brille ||| መነጽር
+das Heft ||| ደብተር
+die Kamera ||| ካሜራ
+die Kette ||| የአንገት ጌጥ
+der Schlüssel ||| ቁልፍ
+die Tasche ||| ቦርሳ
+das Handy ||| ሞባይል ስልክ
+die Flasche ||| ጠርሙስ
+das Feuerzeug ||| ላይተር (መለኮሻ)
+der Regenschirm ||| ዣንጥላ
+Was ist das? ||| ይህ ምንድን ነው?
+Das ist ein Schlüssel. ||| ይህ ቁልፍ ነው።
+das Holz ||| እንጨት
+das Plastik ||| ፕላስቲክ
+das Papier ||| ወረቀት
+das Metall ||| ብረት
+das Glas ||| መስታወት (ቁስ) / ብርጭቆ
+der Stoff ||| ጨርቅ
+das Leder ||| ቆዳ
+aus Holz ||| ከእንጨት የተሠራ
+Die Flasche ist aus Glas. ||| ጠርሙሱ ከመስታወት የተሠራ ነው።
+Die Tasche ist aus Leder. ||| ቦርሳው ከቆዳ የተሠራ ነው።
+Wie heißt das auf Deutsch? ||| ይህ በጀርመንኛ ምን ይባላል?
+Das heißt … ||| … ይባላል
+Danke schön! ||| በጣም አመሰግናለሁ!
+Bitte schön! ||| ምንም አይደለም! / እንኳን!
+Kein Problem. ||| ችግር የለም።
+Sehr gern. ||| በደስታ።
+die E-Mail-Adresse ||| የኢሜይል አድራሻ
+der Punkt ||| ነጥብ
+der Unterstrich ||| የታች መስመር ( _ )
+der Bindestrich ||| ሰረዝ ( - )
+Wie ist deine E-Mail-Adresse? ||| የኢሜይል አድራሻህ/አድራሻሽ ምንድን ነው?
+der Sessel ||| ባለ መደገፊያ ወንበር
+das Sonderangebot ||| ልዩ ቅናሽ
+günstig ||| ርካሽ / ተመጣጣኝ ዋጋ ያለው
+modern ||| ዘመናዊ
+zu groß ||| በጣም ትልቅ
+zu klein ||| በጣም ትንሽ
+Schau mal! ||| እስኪ ተመልከት/ተመልከቺ!
+Wie findest du das Sofa? ||| ሶፋውን እንዴት አየኸው/አየሽው?
+Das finde ich auch. ||| እኔም እንደዚያ ይመስለኛል።
+Das finde ich nicht. ||| እኔ እንደዚያ አይመስለኝም።
+Wie viel kostet der Stuhl? ||| ወንበሩ ስንት ነው?
+Er kostet 59 Euro. ||| ዋጋው 59 ዩሮ ነው።
+
+# Unit 5
+die Uhr ||| ሰዓት
+die Zähne ||| ጥርሶች
+die Arbeit ||| ሥራ
+arbeiten ||| መሥራት
+aufräumen ||| ማጽዳት / ማስተካከል
+das Mittagessen ||| ምሳ
+der Besuch ||| ጉብኝት / እንግዶች
+fernsehen ||| ቴሌቪዥን ማየት
+trinken ||| መጠጣት
+das Computerspiel ||| የኮምፒውተር ጨዋታ
+schlafen ||| መተኛት
+Es ist 8 Uhr. ||| ሁለት ሰዓት ነው (8:00)።
+sich die Zähne putzen ||| ጥርስ መቦረሽ
+sich anziehen ||| ልብስ መልበስ
+zur Arbeit fahren ||| ወደ ሥራ መሄድ (በመኪና ወይም በአውቶቡስ)
+nach Hause kommen ||| ወደ ቤት መምጣት
+zu Besuch kommen ||| ለጉብኝት መምጣት
+schlafen gehen ||| ለመተኛት መሄድ
+Wie spät ist es? ||| ሰዓቱ ስንት ነው?
+Wie viel Uhr ist es? ||| ሰዓቱ ስንት ነው?
+Es ist neun Uhr. ||| ሦስት ሰዓት ነው (9:00)።
+Es ist ein Uhr. ||| ሰባት ሰዓት ነው (1:00)።
+Es ist halb zwei. ||| ሰባት ተኩል ነው (1:30)።
+um ||| … ላይ (በሰዓት)
+von … bis ||| ከ… እስከ
+vor ||| በፊት / … ጉዳይ (ለሰዓት)
+nach ||| በኋላ / … አልፎ (ለሰዓት)
+um acht Uhr ||| ሁለት ሰዓት ላይ (8:00)
+von neun bis fünf ||| ከሦስት እስከ አሥራ አንድ ሰዓት (9–5)
+Es ist fünf nach neun. ||| ሦስት ሰዓት ከአምስት ደቂቃ ነው (9:05)።
+Es ist Viertel nach neun. ||| ሦስት ሰዓት ከሩብ ነው (9:15)።
+Es ist fünf vor halb zehn. ||| ሦስት ሰዓት ከሃያ አምስት ነው (9:25)።
+Es ist halb zehn. ||| ሦስት ተኩል ነው (9:30)።
+Es ist fünf nach halb zehn. ||| ሦስት ሰዓት ከሠላሳ አምስት ነው (9:35)።
+Es ist Viertel vor zehn. ||| ለአራት ሩብ ጉዳይ ነው (9:45)።
+Es ist fünf vor zehn. ||| ለአራት አምስት ጉዳይ ነው (9:55)።
+der Montag ||| ሰኞ
+der Dienstag ||| ማክሰኞ
+der Mittwoch ||| ረቡዕ
+der Donnerstag ||| ሐሙስ
+der Freitag ||| ዓርብ
+der Samstag ||| ቅዳሜ
+der Sonntag ||| እሑድ
+am Montag ||| ሰኞ ዕለት
+gestern ||| ትናንት
+morgen ||| ነገ
+Welcher Tag ist heute? ||| ዛሬ ምን ቀን ነው?
+aufstehen ||| መነሣት (ከእንቅልፍ)
+anrufen ||| ስልክ መደወል
+anziehen ||| መልበስ
+einkaufen ||| መገብየት
+aufmachen ||| መክፈት
+zumachen ||| መዝጋት
+Ich stehe um 7 Uhr auf. ||| አንድ ሰዓት ላይ እነሣለሁ (7:00)።
+Was machst du gerne? ||| ምን ማድረግ ትወዳለህ/ትወጃለሽ?
+Was machst du nicht gerne? ||| ምን ማድረግ አትወድም/አትወጅም?
+Kochst du gerne? ||| ምግብ ማብሰል ትወዳለህ/ትወጃለሽ?
+Kaufst du gerne ein? ||| መገብየት ትወዳለህ/ትወጃለሽ?
+Er spielt gerne Gitarre. ||| ጊታር መጫወት ይወዳል።
+Ich mache nicht gerne Kuchen. ||| ኬክ መሥራት አልወድም።
+der Januar ||| ጃንዋሪ (ጥር አካባቢ)
+der Februar ||| ፌብሩዋሪ (የካቲት አካባቢ)
+der März ||| ማርች (መጋቢት አካባቢ)
+der April ||| ኤፕሪል (ሚያዝያ አካባቢ)
+der Mai ||| ሜይ (ግንቦት አካባቢ)
+der Juni ||| ጁን (ሰኔ አካባቢ)
+der Juli ||| ጁላይ (ሐምሌ አካባቢ)
+der August ||| ኦገስት (ነሐሴ አካባቢ)
+der September ||| ሴፕቴምበር (መስከረም አካባቢ)
+der Oktober ||| ኦክቶበር (ጥቅምት አካባቢ)
+der November ||| ኖቬምበር (ኅዳር አካባቢ)
+der Dezember ||| ዲሴምበር (ታኅሣሥ አካባቢ)
+der Frühling ||| ጸደይ
+der Sommer ||| በጋ
+der Herbst ||| መጸው
+der Winter ||| ክረምት (የጀርመን ቀዝቃዛ ወቅት)
+die Monate ||| ወራት
+die Jahreszeiten ||| ወቅቶች
+wollen ||| መፈለግ
+fragen ||| መጠየቅ
+der Geburtstag ||| የልደት ቀን
+beginnen ||| መጀመር
+pünktlich ||| በሰዓቱ / ሰዓት አክባሪ
+toll ||| በጣም ጥሩ / ድንቅ
+Zeit haben ||| ጊዜ ማግኘት
+frei sein ||| ነፃ መሆን
+eine Party machen ||| ግብዣ ማድረግ
+Sei pünktlich! ||| በሰዓቱ ድረስ/ድረሺ!
+Bis Samstag! ||| እስከ ቅዳሜ! / ቅዳሜ እንገናኝ!
+tragen ||| መልበስ / መሸከም (du trägst)
+waschen ||| ማጠብ (du wäschst)
+fahren ||| መንዳት / መሄድ (በተሽከርካሪ) (du fährst)
+fallen ||| መውደቅ (du fällst)
+treten ||| መርገጥ (du trittst)
+geben ||| መስጠት (du gibst)
+helfen ||| መርዳት (du hilfst)
+lesen ||| ማንበብ (du liest)
+sehen ||| ማየት (du siehst)
+der Vormittag ||| ረፋድ
+der Mittag ||| ቀትር
+der Nachmittag ||| ከሰዓት በኋላ
+am Morgen ||| ጠዋት ላይ
+am Vormittag ||| ረፋድ ላይ
+am Nachmittag ||| ከሰዓት በኋላ
+am Abend ||| ማታ / ምሽት ላይ
+in der Nacht ||| ሌሊት
+heute Abend ||| ዛሬ ማታ
+morgen früh ||| ነገ ጠዋት
+das Wochenende ||| ቅዳሜና እሑድ
+am Wochenende ||| ቅዳሜና እሑድ ላይ
+das Kino ||| ሲኒማ ቤት
+das Museum ||| ሙዚየም
+das Theater ||| ቴአትር ቤት
+das Café ||| ካፌ
+das Konzert ||| ኮንሰርት
+das Restaurant ||| ምግብ ቤት
+das Fitnessstudio ||| ጂም (የስፖርት ማዕከል)
+die Bar ||| መጠጥ ቤት
+ins Kino gehen ||| ሲኒማ ቤት መሄድ
+ins Konzert gehen ||| ኮንሰርት መሄድ
+spazieren gehen ||| ለእግር ጉዞ መውጣት
+Hast du am Samstag Zeit? ||| ቅዳሜ ጊዜ አለህ/አለሽ?
+Gehen wir ins Kino? ||| ሲኒማ እንሂድ?
+Lust auf Kaffee? ||| ቡና ይፈልጋሉ? / ቡና ልንጠጣ?
+Gute Idee! ||| ጥሩ ሐሳብ!
+Ja, gern. ||| አዎ፣ በደስታ።
+Vielleicht. ||| ምናልባት።
+Tut mir leid, ich kann leider nicht. ||| ይቅርታ፣ እንደ አለመታደል ሆኖ አልችልም።
+Am Abend habe ich keine Zeit. ||| ማታ ጊዜ የለኝም።
+Wann denn? ||| እንግዲያው መቼ?
+Um wie viel Uhr? ||| ስንት ሰዓት ላይ?
+Bis dann! ||| እስከዚያው! / እንገናኛለን!
+wissen ||| ማወቅ (እውነታን)
+ich weiß ||| አውቃለሁ
+du weißt ||| ታውቃለህ / ታውቂያለሽ
+er weiß ||| ያውቃል
+wir wissen ||| እናውቃለን
+Das weiß ich noch nicht. ||| ያንን ገና አላውቅም።
+Weißt du, wo das Kino ist? ||| ሲኒማ ቤቱ የት እንዳለ ታውቃለህ/ታውቂያለሽ?

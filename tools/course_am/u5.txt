@@ -1,0 +1,153 @@
+# Unit 5 lessons. English ||| Amharic
+# Clock times: the Ethiopian-clock reading, with the German (European) time in brackets.
+
+## g5-time
+Germans often say <strong>halb</strong> + the <em>next</em> hour: <em class="de">halb zehn</em> is 9:30 (half on the way to ten). Around half past you count from the half: <em class="de">fünf vor halb zehn</em> is 9:25. ||| ጀርመኖች ብዙ ጊዜ <strong>halb</strong> + <em>የሚቀጥለውን</em> ሰዓት ይላሉ፦ <em class="de">halb zehn</em> ማለት 9:30 ነው (ወደ አሥር የግማሽ መንገድ)። በተኩል አካባቢ ከተኩሉ ይቆጥራሉ፦ <em class="de">fünf vor halb zehn</em> ማለት 9:25 ነው። ያስታውሱ፦ ጀርመን የአውሮፓን ሰዓት ትጠቀማለች፤ 9:00 በኢትዮጵያ አቆጣጠር ሦስት ሰዓት ነው (6 ሰዓት ልዩነት)።
+The clock ||| ሰዓቱ
+From 9:00 to 9:55 ||| ከ9:00 እስከ 9:55
+Time ||| ሰዓት
+halb + next hour ||| halb + የሚቀጥለው ሰዓት
+9:30 = halb zehn ||| 9:30 = halb zehn
+vor / nach ||| vor / nach
+to / past ||| ጉዳይ / አልፎ
+Viertel ||| Viertel
+quarter: Viertel nach, Viertel vor ||| ሩብ፦ Viertel nach (ከሩብ)፣ Viertel vor (ሩብ ጉዳይ)
+What time is it? ||| ሰዓቱ ስንት ነው?
+half past nine ||| ሦስት ተኩል (9:30)
+halb + the NEXT hour. ||| halb + የሚቀጥለው ሰዓት።
+quarter past nine ||| ሦስት ሰዓት ከሩብ (9:15)
+quarter to ten ||| ለአራት ሩብ ጉዳይ (9:45)
+five past nine ||| ሦስት ሰዓት ከአምስት ደቂቃ (9:05)
+five to ten ||| ለአራት አምስት ጉዳይ (9:55)
+twenty-five past nine ||| ሦስት ሰዓት ከሃያ አምስት (9:25)
+half past one ||| ሰባት ተኩል (1:30)
+halb + the NEXT hour: halb zwei. ||| halb + የሚቀጥለው ሰዓት፦ halb zwei።
+twenty-five to ten ||| ሦስት ሰዓት ከሠላሳ አምስት (9:35)
+seven o'clock ||| አንድ ሰዓት (7:00)
+
+## g5-word-order
+In a German statement the <strong>verb is always in second place</strong>. The first place can be the subject or something else, such as a time. ||| በጀርመንኛ መግለጫ ዓረፍተ ነገር ውስጥ <strong>ግሡ ሁልጊዜ በሁለተኛ ቦታ ነው</strong>። የመጀመሪያው ቦታ ባለቤቱ ወይም ሌላ ነገር፣ ለምሳሌ ጊዜ፣ ሊሆን ይችላል።
+Position 1 · verb · the rest ||| ቦታ 1 · ግሥ · የቀረው
+I work from 8 to 2. ||| ከ2 ሰዓት እስከ 8 ሰዓት (8–14) እሠራለሁ።
+At 8 he goes to work. ||| ሁለት ሰዓት (8:00) ላይ ወደ ሥራ ይሄዳል።
+Today I am cooking. ||| ዛሬ እኔ አበስላለሁ።
+On Monday I play football. ||| ሰኞ እግር ኳስ እጫወታለሁ።
+Verb = position 2 ||| ግሥ = ቦታ 2
+always, in statements ||| ሁልጊዜ፣ በመግለጫ ዓረፍተ ነገሮች
+Time first? ||| ጊዜ መጀመሪያ?
+then the subject comes after the verb: Heute koche ich. ||| ከዚያ ባለቤቱ ከግሡ በኋላ ይመጣል፦ Heute koche ich.
+Which sentence is correct? ||| የትኛው ዓረፍተ ነገር ትክክል ነው?
+In the evening we watch TV. ||| ማታ ቴሌቪዥን እናያለን።
+Tomorrow she works. ||| ነገ እሷ ትሠራለች።
+At noon we eat lunch. ||| ቀትር ላይ ምሳ እንበላለን።
+Today I have time. ||| ዛሬ ጊዜ አለኝ።
+
+## g5-separable
+Some verbs have a prefix that <strong>splits off</strong> in the present tense. The main part is conjugated in second place, and the prefix goes to the <strong>end of the sentence</strong>. ||| አንዳንድ ግሦች በአሁን ጊዜ <strong>የሚለያይ</strong> መነሻ አላቸው። ዋናው ክፍል በሁለተኛ ቦታ ይረባል፤ መነሻው ደግሞ <strong>ወደ ዓረፍተ ነገሩ መጨረሻ</strong> ይሄዳል።
+aufstehen (to get up) ||| aufstehen (መነሣት)
+I get up at 8 every day. ||| በየቀኑ ሁለት ሰዓት (8:00) ላይ እነሣለሁ።
+He calls his mother. ||| እናቱን ይደውልላታል።
+We go shopping on Saturday. ||| ቅዳሜ እንገበያለን።
+Are you opening the window? ||| መስኮቱን ትከፍታለህ/ትከፍቻለሽ?
+verb in position 2 ||| ግሡ በቦታ 2
+Ich stehe … ||| Ich stehe …
+prefix at the end ||| መነሻው መጨረሻ ላይ
+… um 8 Uhr auf. ||| … um 8 Uhr auf.
+aufstehen, anrufen, einkaufen, fernsehen, aufmachen ||| aufstehen, anrufen, einkaufen, fernsehen, aufmachen
+I get up at 7. ||| አንድ ሰዓት (7:00) ላይ እነሣለሁ።
+You watch TV in the evening. ||| ማታ ቴሌቪዥን ታያለህ/ታያለሽ።
+She opens the window. ||| እሷ መስኮቱን ትከፍታለች።
+You (all) tidy the room. ||| እናንተ ክፍሉን ታስተካክላላችሁ።
+I close the door. ||| በሩን እዘጋለሁ።
+He puts on the jacket. ||| ጃኬቱን ይለብሳል።
+
+## g5-vowel
+Some verbs change <strong>a → ä</strong> in the du and er/sie/es forms. All the other forms stay regular. ||| አንዳንድ ግሦች በdu እና በer/sie/es ቅርጾች <strong>a → ä</strong> ይቀይራሉ። ሌሎቹ ቅርጾች ሁሉ መደበኛ ሆነው ይቆያሉ።
+schlafen, fahren, waschen ||| schlafen, fahren, waschen
+a → ä ||| a → ä
+only du and er/sie/es ||| du እና er/sie/es ብቻ
+du fährst ||| du fährst
+er fährt ||| er fährt
+ihr fahrt ||| ihr fahrt
+no umlaut for ihr ||| ለihr ኡምላውት የለም
+You drive to work. ||| ወደ ሥራ በመኪና ትሄዳለህ/ትሄጃለሽ።
+He sleeps until 9. ||| እስከ ሦስት ሰዓት (9:00) ይተኛል።
+We go home. ||| ወደ ቤት እንሄዳለን።
+She does the washing. ||| እሷ ልብስ ታጥባለች።
+You (all) sleep for a long time. ||| እናንተ ረጅም ሰዓት ትተኛላችሁ።
+ihr has no umlaut. ||| ihr ኡምላውት የለውም።
+I go by bus. ||| በአውቶቡስ እሄዳለሁ።
+Do you sleep well? ||| በደንብ ትተኛለህ/ትተኚያለሽ?
+My father drives a car. ||| አባቴ መኪና ይነዳል።
+
+## g5-am-um
+Use <strong>am</strong> with days and parts of the day: <em class="de">am Montag, am Abend, am Wochenende</em>. ||| <strong>am</strong>ን ከቀናትና ከቀኑ ክፍለ ጊዜያት ጋር ይጠቀሙ፦ <em class="de">am Montag, am Abend, am Wochenende</em>።
+Use <strong>um</strong> with clock times: <em class="de">um acht Uhr, um halb vier</em>. ||| <strong>um</strong>ን ከሰዓት ጋር ይጠቀሙ፦ <em class="de">um acht Uhr, um halb vier</em>።
+Two more to learn: <em class="de">in der Nacht</em> (at night), and <strong>im</strong> with months and seasons: <em class="de">im Mai, im Winter</em>. ||| ሊማሯቸው የሚገቡ ሁለት ተጨማሪ፦ <em class="de">in der Nacht</em> (ሌሊት)፣ እና <strong>im</strong> ከወራትና ከወቅቶች ጋር፦ <em class="de">im Mai, im Winter</em>።
+Which word? ||| የትኛው ቃል?
+Time words at a glance ||| የጊዜ ቃላት በአጭሩ
+Word ||| ቃል
+Use ||| አጠቃቀም
+days, parts of the day ||| ቀናት፣ የቀኑ ክፍለ ጊዜያት
+the night ||| ሌሊቱ
+Planning the week ||| ሳምንቱን ማቀድ
+On Saturday I am going to the cinema. ||| ቅዳሜ ሲኒማ እሄዳለሁ።
+The film starts at eight. ||| ፊልሙ ሁለት ሰዓት (8:00) ላይ ይጀምራል።
+On Monday at ten I have an appointment. ||| ሰኞ አራት ሰዓት (10:00) ላይ ቀጠሮ አለኝ።
+At night I sleep. ||| ሌሊት እተኛለሁ።
+In July it rains a lot in Addis. ||| በጁላይ (ሐምሌ) አዲስ አበባ ብዙ ይዘንባል።
+am ||| am
+Montag, Abend, Wochenende ||| Montag, Abend, Wochenende
+um ||| um
+8 Uhr, halb vier ||| 8 Uhr, halb vier
+in der Nacht ||| in der Nacht
+the one exception ||| ብቸኛው ልዩ ሁኔታ
+im ||| im
+Mai, Sommer ||| Mai, Sommer
+am, um, in der or im? ||| am፣ um፣ in der ወይስ im?
+On Monday I have German class. ||| ሰኞ የጀርመንኛ ክፍለ ጊዜ አለኝ።
+The course starts at nine. ||| ኮርሱ ሦስት ሰዓት (9:00) ላይ ይጀምራል።
+In the evening I watch TV. ||| ማታ ቴሌቪዥን አያለሁ።
+We're meeting at half past three. ||| ዘጠኝ ተኩል (3:30) ላይ እንገናኛለን።
+My birthday is in May. ||| ልደቴ በሜይ (ግንቦት አካባቢ) ነው።
+What are you doing at the weekend? ||| ቅዳሜና እሑድ ምን ታደርጋለህ/ታደርጊያለሽ?
+In summer it is hot. ||| በበጋ ሞቃት ነው።
+I'm not free in the evening. ||| ማታ ነፃ አይደለሁም።
+on Friday at seven ||| ዓርብ አንድ ሰዓት (7:00) ላይ
+
+## g5-plans
+To suggest something: <em class="de">Gehen wir ins Kino?</em>, <em class="de">Hast du am Samstag Zeit?</em> or, casually, <em class="de">Lust auf Kaffee?</em> ||| አንድ ነገር ለማቅረብ፦ <em class="de">Gehen wir ins Kino?</em> (ሲኒማ እንሂድ?)፣ <em class="de">Hast du am Samstag Zeit?</em> (ቅዳሜ ጊዜ አለህ?) ወይም በቀላሉ <em class="de">Lust auf Kaffee?</em> (ቡና?)።
+Answer yes (<em class="de">Ja, gern! Gute Idee!</em>), maybe (<em class="de">Vielleicht. Das weiß ich noch nicht.</em>) or no, politely (<em class="de">Tut mir leid, ich kann leider nicht.</em>). ||| አዎ ብለው ይመልሱ (<em class="de">Ja, gern! Gute Idee!</em>)፣ ምናልባት (<em class="de">Vielleicht. Das weiß ich noch nicht.</em>) ወይም በትሕትና አይ (<em class="de">Tut mir leid, ich kann leider nicht.</em>)።
+The verb <em class="de">wissen</em> (to know a fact) is irregular: ich weiß, du weißt, er weiß. ||| <em class="de">wissen</em> (እውነታን ማወቅ) ደንብ የማይከተል ግሥ ነው፦ ich weiß, du weißt, er weiß.
+wissen ||| wissen
+Suggest and answer ||| ያቅርቡና ይመልሱ
+Are you free tonight? – Yes, I'd love to! ||| ዛሬ ማታ ጊዜ አለህ/አለሽ? – አዎ፣ በደስታ!
+Shall we go to the museum? – Good idea! When? ||| ሙዚየም እንሂድ? – ጥሩ ሐሳብ! መቼ?
+Fancy a coffee? – Sorry, I can't. ||| ቡና እንጠጣ? – ይቅርታ፣ አልችልም።
+What are you doing on Sunday? – I don't know yet. ||| እሑድ ምን ታደርጋለህ/ታደርጊያለሽ? – ገና አላውቅም።
+Suggest ||| ያቅርቡ
+Gehen wir …? Hast du … Zeit? ||| Gehen wir …? Hast du … Zeit?
+Ja, gern! Gute Idee! ||| Ja, gern! Gute Idee!
+Tut mir leid, ich kann leider nicht. ||| Tut mir leid, ich kann leider nicht.
+ich weiß, du weißt, er weiß ||| ich weiß, du weißt, er weiß
+Make a plan ||| ዕቅድ ያውጡ
+Your friend asks: Gehen wir ins Kino? You want to go. ||| ጓደኛዎ «Gehen wir ins Kino?» ብሎ ይጠይቃል። መሄድ ይፈልጋሉ።
+You are not free. How do you say no politely? ||| ነፃ አይደሉም። በትሕትና አይ እንዴት ይላሉ?
+You don't know yet. ||| ገና አያውቁም።
+How do you suggest going to a café? ||| ወደ ካፌ መሄድን እንዴት ያቀርባሉ?
+I don't know. ||| አላውቅም።
+Do you know where the cinema is? ||| ሲኒማ ቤቱ የት እንዳለ ታውቃለህ/ታውቂያለሽ?
+We know that already. ||| ያንን አስቀድመን እናውቃለን።
+Are you free on Friday? ||| ዓርብ ጊዜ አለህ/አለሽ?
+Fancy the cinema? ||| ሲኒማ እንሂድ?
+Making a plan ||| ዕቅድ ማውጣት
+Another day ||| ሌላ ቀን
+Are you free on Saturday? ||| ቅዳሜ ጊዜ አለህ/አለሽ?
+
+## g5-reading
+closed ||| ዝግ
+the film ||| ፊልሙ
+I'll pick you up. ||| መጥቼ እወስድሃለሁ/እወስድሻለሁ።
+When does the film start? ||| ፊልሙ መቼ ይጀምራል?
+When does Dawit pick Selam up? ||| ዳዊት ሰላምን መቼ መጥቶ ይወስዳታል?
+I am free in the evening. ||| ማታ ነፃ ነኝ።
