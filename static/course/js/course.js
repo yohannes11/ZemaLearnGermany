@@ -1600,13 +1600,14 @@ function buildOrder(box, q) {
   order.forEach(text => {
     const chip = el('button', 'chip', text);
     chip.type = 'button';
+    chip.dataset.tile = text; // the answer is checked against this, not the label an admin may have reworded
     if (!lines) chip.lang = 'de';
     chip.onclick = () => { (chip.parentElement === bank ? line : bank).appendChild(chip); update(); };
     bank.appendChild(chip);
   });
   area.querySelector('#g-reset').onclick = () => { line.querySelectorAll('.chip').forEach(c => bank.appendChild(c)); update(); };
   check.onclick = () => {
-    const given = [...line.querySelectorAll('.chip')].map(c => c.textContent);
+    const given = [...line.querySelectorAll('.chip')].map(c => c.dataset.tile);
     const right = lines
       ? given.join('\n') === q.tiles.join('\n')
       : [q.answer, ...(q.alts || [])].some(a => normalizeAnswer(a) === normalizeAnswer(given.join(' ')));

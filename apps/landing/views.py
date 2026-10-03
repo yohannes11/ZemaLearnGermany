@@ -7,6 +7,7 @@ from django.templatetags.static import static
 from django.urls import reverse
 from django.views.decorators.http import require_GET
 
+from apps.content.texts import can_edit_text
 from apps.core.i18n import localize, translate
 
 from . import content
@@ -63,8 +64,8 @@ def _structured_data(request):
 
 @require_GET
 def index(request):
-    """The public front page. Signed-in learners go straight to their course."""
-    if request.user.is_authenticated:
+    """The public front page. Signed-in learners go straight to their course; whoever may edit its text stays."""
+    if request.user.is_authenticated and not can_edit_text(request.user):
         return redirect("course:index")
 
     lang = request.LANG

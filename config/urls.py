@@ -24,5 +24,6 @@ urlpatterns = [
     path("", include("apps.course.urls")),
     path("", include("apps.landing.urls")),
     path("", include("apps.core.urls")),
+    path("", include("apps.content.urls")),
     path("sitemap.xml", sitemap, {"sitemaps": {"pages": PublicPagesSitemap}}, name="sitemap"),
 ]

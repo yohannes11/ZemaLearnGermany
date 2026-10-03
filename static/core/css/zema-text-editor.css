@@ -1,0 +1,297 @@
+/* The on-page text editor for admins (static/core/js/zema-text-editor.js). Its controls use their own dark
+   surfaces so they read the same over any page, in the light or the dark theme. */
+
+.ze-ui, .ze-ui * { box-sizing: border-box; }
+.ze-ui {
+  --ze-surface: #221d1a;
+  --ze-raised: #2e2723;
+  --ze-line: #463c36;
+  --ze-ink: #f7f0ea;
+  --ze-muted: #c2b5ab;
+  --ze-accent: #c4532f;
+  --ze-accent-ink: #ffffff;
+  --ze-focus: #f0a27f;
+  --ze-draft: #f2c14e;
+  --ze-published: #7fc8a0;
+  --ze-error: #ff9d8a;
+  font: 500 14px/1.4 "Plus Jakarta Sans", "Noto Sans Ethiopic", system-ui, sans-serif;
+  color: var(--ze-ink);
+  letter-spacing: normal;
+  text-transform: none;
+}
+.ze-ui [hidden] { display: none !important; }
+.ze-ui button { font: inherit; color: inherit; cursor: pointer; }
+.ze-ui button:disabled { cursor: default; opacity: 0.45; }
+.ze-ui :focus-visible { outline: 2px solid var(--ze-focus); outline-offset: 2px; }
+
+/* ---------------------------------------------------------------- toolbar */
+
+.ze-toolbar {
+  position: fixed;
+  left: max(16px, env(safe-area-inset-left));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 2147483000;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: calc(100vw - 32px);
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--ze-surface);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28), 0 0 0 1px var(--ze-line);
+}
+.ze-toggle, .ze-tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  font-weight: 700 !important;
+  white-space: nowrap;
+}
+.ze-toggle:hover, .ze-tool:hover { background: var(--ze-raised); }
+.ze-toggle[aria-pressed="true"] { background: var(--ze-accent); color: var(--ze-accent-ink); }
+.ze-pen { font-size: 16px; line-height: 1; }
+.ze-hint {
+  padding: 0 8px;
+  color: var(--ze-muted);
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ze-badge {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--ze-draft);
+  color: #2a1f00;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .ze-hint { display: none; }
+}
+
+/* ---------------------------------------------------------------- hover outline and the inline field */
+
+.ze-highlight {
+  position: fixed;
+  z-index: 2147482999;
+  pointer-events: none;
+  border-radius: 5px;
+  outline: 2px dashed var(--ze-accent);
+  background: rgba(196, 83, 47, 0.08);
+}
+.ze-highlight[data-state="draft"], .ze-highlight[data-state="reset"] { outline-color: #d9a21b; }
+.ze-highlight[data-state="published"] { outline-color: #3f9a6b; }
+
+.ze-field {
+  outline: 2px solid #c4532f;
+  outline-offset: 2px;
+  border-radius: 3px;
+  background: rgba(196, 83, 47, 0.1);
+  cursor: text;
+  user-select: text;
+  -webkit-user-select: text;
+  white-space: pre-wrap;
+  min-width: 1ch;
+}
+
+/* Every place showing a text, flashed from the panel. */
+.ze-flash { animation: ze-flash 1.4s ease-out; }
+@keyframes ze-flash {
+  0%, 40% { box-shadow: 0 0 0 3px #c4532f; background-color: rgba(196, 83, 47, 0.16); }
+  100% { box-shadow: 0 0 0 3px transparent; }
+}
+
+/* ---------------------------------------------------------------- the edit bar */
+
+.ze-bar {
+  position: fixed;
+  z-index: 2147483001;
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--ze-surface);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35), 0 0 0 1px var(--ze-line);
+}
+.ze-bar.ze-nudge { animation: ze-nudge 0.35s; }
+@keyframes ze-nudge {
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+.ze-bar-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--ze-muted);
+  font-size: 12.5px;
+}
+.ze-default, .ze-note {
+  margin: 0;
+  color: var(--ze-muted);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.ze-default span { font-weight: 700; }
+.ze-note code {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: var(--ze-raised);
+  color: var(--ze-ink);
+  font: 600 12.5px ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.ze-error { margin: 0; color: var(--ze-error); font-size: 13px; font-weight: 600; }
+
+.ze-tag {
+  flex: none;
+  white-space: nowrap;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--ze-raised);
+  color: var(--ze-muted);
+  font-size: 11.5px;
+  font-weight: 700;
+}
+.ze-tag-draft, .ze-tag-reset { background: rgba(242, 193, 78, 0.16); color: var(--ze-draft); }
+.ze-tag-published { background: rgba(127, 200, 160, 0.14); color: var(--ze-published); }
+
+.ze-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.ze-spacer { flex: 1; }
+.ze-btn {
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--ze-line);
+  border-radius: 9px;
+  background: var(--ze-raised);
+  font-weight: 700 !important;
+}
+.ze-btn:hover:not(:disabled) { border-color: var(--ze-muted); }
+.ze-primary { border-color: var(--ze-accent); background: var(--ze-accent); color: var(--ze-accent-ink) !important; }
+.ze-primary:hover:not(:disabled) { border-color: var(--ze-focus); }
+.ze-link {
+  min-height: 28px;
+  padding: 0 4px;
+  border: 0;
+  background: none;
+  color: var(--ze-focus) !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.ze-icon { width: 34px; padding: 0; font-size: 20px; line-height: 1; }
+
+.ze-input {
+  display: block;
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid var(--ze-line);
+  border-radius: 9px;
+  background: #171310;
+  color: var(--ze-ink);
+  font: 500 14px/1.45 "Plus Jakarta Sans", "Noto Sans Ethiopic", system-ui, sans-serif;
+  resize: vertical;
+  field-sizing: content;
+  max-height: 40vh;
+}
+.ze-input:focus { outline: 2px solid var(--ze-focus); outline-offset: 0; border-color: transparent; }
+
+/* ---------------------------------------------------------------- the "All text" panel */
+
+.ze-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2147483000;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  width: min(440px, 100vw);
+  background: var(--ze-surface);
+  box-shadow: -14px 0 40px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--ze-line);
+}
+.ze-panel-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px 16px 10px;
+}
+.ze-panel-head h2 { margin: 0; color: var(--ze-ink); font: 800 18px/1.3 "Plus Jakarta Sans", system-ui, sans-serif; }
+.ze-panel-head p { margin: 4px 0 0; color: var(--ze-muted); font-size: 13px; }
+.ze-panel-head > div { flex: 1; }
+.ze-filters { display: grid; gap: 8px; padding: 0 16px 12px; border-bottom: 1px solid var(--ze-line); }
+.ze-search {
+  width: 100%;
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--ze-line);
+  border-radius: 9px;
+  background: #171310;
+  color: var(--ze-ink);
+  font: inherit;
+}
+.ze-search::placeholder { color: #9c8f86; }
+.ze-scope { display: flex; gap: 4px; padding: 3px; border-radius: 10px; background: #171310; }
+.ze-scope button {
+  flex: 1;
+  min-height: 30px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ze-muted);
+  font-weight: 700;
+}
+.ze-scope button[aria-pressed="true"] { background: var(--ze-raised); color: var(--ze-ink); }
+
+.ze-rows {
+  margin: 0;
+  padding: 8px 16px;
+  list-style: none;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.ze-row { display: grid; gap: 6px; padding: 10px 0; border-bottom: 1px solid var(--ze-line); }
+.ze-row-head { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.ze-key {
+  flex: 1;
+  min-width: 0;
+  color: var(--ze-muted);
+  font-size: 12.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ze-count {
+  flex: none;
+  min-height: 22px;
+  padding: 0 8px;
+  line-height: 20px;
+  white-space: nowrap;
+  border: 1px solid var(--ze-line);
+  border-radius: 999px;
+  background: none;
+  color: var(--ze-muted);
+  font-size: 11.5px;
+  font-weight: 700;
+}
+.ze-count:hover { color: var(--ze-ink); border-color: var(--ze-muted); }
+.ze-row-actions { display: flex; gap: 12px; }
+.ze-empty { margin: 0; padding: 12px 16px; color: var(--ze-muted); font-size: 13px; }
+
+.ze-panel-foot { display: grid; gap: 8px; padding: 12px 16px max(14px, env(safe-area-inset-bottom)); border-top: 1px solid var(--ze-line); }
+.ze-status, .ze-message { margin: 0; font-size: 13px; color: var(--ze-muted); }
+.ze-message { color: var(--ze-ink); }
+.ze-secondary { gap: 16px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ze-flash, .ze-bar.ze-nudge { animation: none; }
+  .ze-flash { box-shadow: 0 0 0 3px #c4532f; }
+}

@@ -20,5 +20,8 @@ STORAGES = {
 
 AXES_ENABLED = True
 
+# The tests check the normal, admins-only text editing and switch this on where they need it.
+TEXT_EDITING_FOR_EVERYONE = False
+
 # Tests trigger 4xx responses on purpose; don't print a warning for each one.
 LOGGING = {"version": 1, "disable_existing_loggers": False, "root": {"level": "CRITICAL"}}

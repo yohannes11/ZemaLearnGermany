@@ -39,11 +39,13 @@ apps/
   course/               the course page and each learner's saved progress (Progress model)
   analytics/            usage events, the report, the staff dashboard, user management
   landing/              the public landing page; content.py holds every figure with its source
+  content/              text changes admins make on the page (TextOverride model, publish API)
   core/                 shared helpers, static storage, /healthz/, /ads.txt and /robots.txt
 templates/              base, course page, dashboard, login and error pages
 static/
   course/               course.css, course.js, course-data.js (generated)
   dashboard/            dashboard.css, dashboard.js
+  core/                 zema-text.js (text store + page binding), zema-text-editor.js/.css (admins' editor)
   audio/                recorded clips + manifest.json (generated)
 tools/                  course content source and audio generator
 deploy/                 gunicorn systemd service and nginx site
@@ -100,6 +102,45 @@ guides use Fidel instead of English sounds. `python3 tools/course_content.py` co
 `tools/course_am_strings.py` decides which lesson texts are English, and the tests fail while one has no Amharic.
 In Amharic, "what does it mean in English?" exercises become a choice between Amharic meanings, and Practice
 checks typed Amharic answers locally (the AI checker grades English only). The admin dashboard stays English.
+
+## Editing text on the page
+
+Admins (staff users) can change any text on any page right where it is shown. For testing, `TEXT_EDITING_FOR_EVERYONE` (on by default; set it to `false` in `.env`) gives every visitor the editor, including publishing, so turn it off before real use. Every page has an **Edit text**
+button at the bottom left for them. In edit mode, clicking a piece of text edits it in place. Alt-click uses the
+page as usual, and so does a click anywhere that isn't text. Clicks work the same way for headings, lesson
+text, words and meanings, buttons and labels, and text inside dialogs.
+
+While the admin types, every place showing the same text previews the change. The editor has three buttons:
+
+- **Save** keeps the change as a draft in that browser (localStorage).
+- **Cancel** drops it.
+- **Reset to default** brings back the original wording.
+
+**All text** lists every text on the page, including tooltips, input placeholders and the page title. From
+there, admins can:
+
+- **Publish** the drafts to the server, so every visitor sees them.
+- **Export** the changes as JSON.
+- **Import** JSON as drafts, for example to move changes from a test site to the live one.
+
+Published changes are also in the Django admin under *Site text*.
+
+Each text is keyed by its default wording as shown, with whitespace collapsed. This is the same convention as
+`locale/am.json`, so the same words anywhere on the site share one value.
+
+- **Templates:** strings with `{placeholders}` are keyed by their template. Editing "12 words learned" changes
+  `{count} words learned` everywhere and keeps each number. An edit that drops a placeholder is refused.
+- **Markup:** text with markup is edited per text node, so the markup stays as it is.
+- **Display only:** a change affects only what is shown. Answers are still checked against the course data.
+  Lasting fixes to course content therefore belong in `tools/` or `locale/`. A published change keeps working
+  only while the default text it is keyed by stays the same.
+
+How it is built:
+
+- **Server:** `{% t %}` applies published changes as it renders (`apps/core/i18n.py`, `apps/content/`).
+- **Browser:** `static/core/js/zema-text.js` applies changes to everything else, including whatever the course
+  script renders later, using a MutationObserver. Visitors only load it once at least one change has been
+  published.
 
 ## Word pictures
 

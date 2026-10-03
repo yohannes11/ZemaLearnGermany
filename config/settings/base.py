@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     "apps.course",
     "apps.analytics",
     "apps.landing",
+    "apps.content",
 ]
 
 MIDDLEWARE = [
@@ -43,6 +44,7 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "apps.content.texts.TextOverridesMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     # Axes must be last so it can turn lockouts raised by the other layers into responses.
@@ -63,6 +65,7 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "apps.core.i18n.language_context",
+                "apps.content.texts.text_context",
             ],
         },
     },
@@ -145,6 +148,10 @@ STORAGES = {
 
 # The course builds audio URLs in the browser, so the clips keep their plain names under this prefix.
 AUDIO_URL = f"{STATIC_URL}audio/"
+
+# Who may change the site's text on the page (apps/content). Normally admins only. While this is on, every
+# visitor, signed in or not, gets the editor and can publish changes that everyone sees: for testing only.
+TEXT_EDITING_FOR_EVERYONE = env.bool("TEXT_EDITING_FOR_EVERYONE", default=True)
 
 # --------------------------------------------------------------------------- site settings
 

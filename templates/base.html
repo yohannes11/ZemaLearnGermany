@@ -9,6 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Noto+Serif+Ethiopic:wght@500;600&display=swap">
   {% block head %}{% endblock %}
+  {% if zema_text %}
+  {{ zema_text|json_script:"zema-text" }}
+  <script src="{% static 'core/js/zema-text.js' %}"></script>
+  {% if zema_text.canEdit %}
+  <link rel="stylesheet" href="{% static 'core/css/zema-text-editor.css' %}">
+  <script src="{% static 'core/js/zema-text-editor.js' %}" defer></script>
+  {% endif %}
+  {% endif %}
 </head>
 <body{% block body_attrs %}{% endblock %}>
 {% block body %}{% endblock %}
