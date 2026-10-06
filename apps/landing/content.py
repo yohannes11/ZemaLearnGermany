@@ -257,7 +257,7 @@ FEATURES = [
     {
         "icon": "pen",
         "title": "Grammar that makes sense",
-        "body": "49 short lessons with tables, examples and exercises, each linked to the words you are learning.",
+        "body": "50 short lessons with tables, examples and exercises, each linked to the words you are learning.",
     },
     {
         "icon": "cards",
@@ -320,7 +320,7 @@ LEVELS = [
     },
 ]
 
-COURSE_FACTS = {"words": 1156, "lessons": 49, "units": 10}
+COURSE_FACTS = {"words": 1156, "lessons": 50, "units": 10}
 
 FAQ = [
     {

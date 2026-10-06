@@ -1,4 +1,4 @@
-"""Source for course-data.js: German A1.1, a Start unit (pronunciation, numbers 1-12) and Units 1-9.
+"""Source for course-data.js: German A1.1, a Start unit (a welcome chapter, pronunciation, numbers 1-12) and Units 1-9.
 Units 1-7 began as vocabulary sheets and unit recaps (11percent.de); later sections, lessons and Units 8-9
 extend the course to the full A1.1 syllabus.
 
@@ -63,6 +63,14 @@ UNIT0 = {
     'title': 'Pronunciation & numbers',
     'lessonsLabel': 'Pronunciation',
     'sections': [
+        # A welcome before the real work: everyday phrases learners can use today, all taught again in Unit 1.
+        sec('0.0', 'Welcome: your first German', [
+            ('Hallo!', 'Hello!'), ('Guten Morgen!', 'Good morning!'), ('Danke schön!', 'Thank you very much!'),
+            ('Entschuldigung', 'Excuse me / Sorry'), ('Ich heiße…', 'I am called…'),
+            ('Ich komme aus Äthiopien.', 'I come from Ethiopia.'), ('Ich lerne Deutsch.', 'I am learning German.'),
+            ('Wie bitte?', 'Pardon?'), ('Noch einmal, bitte.', 'Once more, please.'),
+            ('Ich verstehe das nicht.', "I don't understand that."), ('der Kaffee', 'the coffee (m.)'),
+            ('das Taxi', 'the taxi (n.)')]),
         sec('0.1', 'Long & short vowels', [
             ('der Name', 'the name (m.)'), ('der Mann', 'the man (m.)'), ('der Tee', 'the tea (m.)'),
             ('das Bett', 'the bed (n.)'), ('wir', 'we'), ('bitte', 'please'), ('rot', 'red'), ('oft', 'often'),
@@ -1270,6 +1278,54 @@ def extend(unit, sections=(), grammar=(), words=None):
         target['words'] += [w(g, e) for g, e in extra]
     unit['sections'] += list(sections)
     unit['grammar'] += list(grammar) + [review(unit['id'])]
+
+
+# ---------------------------------------------------------------- Start: the welcome lesson (chapter 0.0)
+# Comes first, before pronunciation: quick wins that build confidence, in the same lesson format as the rest.
+UNIT0['grammar'].insert(0, lesson(
+    'g0-welcome', 'Hi', 'Welcome: you already know some German', ['0.0'],
+    ['Welcome! Here is some good news before you start: you already know some German. Words like '
+     '<em class="de">Taxi</em>, <em class="de">Hotel</em> and <em class="de">Kaffee</em> mean just what you think.',
+     'This short chapter gives you twelve words and phrases you can use today: to greet people, to say who you are '
+     'and to keep a conversation going. No grammar yet, only quick wins.'],
+    [{'step': 'Quick win', 'title': 'Words you already know',
+      'text': 'Press a speaker to hear each word. You understand all of them already.',
+      'table': {'head': ['German', 'Meaning'],
+                'rows': [['der Kaffee', 'coffee'], ['das Taxi', 'taxi'], ['das Hotel', 'hotel'], ['der Bus', 'bus'],
+                         ['die Banane', 'banana'], ['die Musik', 'music']],
+                'say': ['der Kaffee', 'das Taxi', 'das Hotel', 'der Bus', 'die Banane', 'die Musik'], 'highlight': 0}},
+     {'step': 'Say hello', 'title': 'Greet and thank people', 'examples': [
+         ('Hallo!', 'Hello! You can say it at any time of day.'),
+         ('Guten Morgen!', "Good morning! Until about 10 or 11 o'clock."),
+         ('Danke schön!', 'Thank you very much!'),
+         ('Entschuldigung', 'Excuse me, to ask for help. It also means sorry.')]},
+     {'step': 'Say who you are', 'title': 'Introduce yourself in three sentences', 'examples': [
+         ('Ich heiße Selam.', 'My name is Selam. Put your own name at the end.'),
+         ('Ich komme aus Äthiopien.', 'I come from Ethiopia.'), ('Ich lerne Deutsch.', 'I am learning German.')]},
+     {'step': 'When you get stuck', 'title': 'Three phrases that keep you talking',
+      'text': 'Nobody understands everything at first. These phrases are your safety net: use them often.',
+      'examples': [('Wie bitte?', 'Pardon? Please say it again.'), ('Noch einmal, bitte.', 'Once more, please.'),
+                   ('Ich verstehe das nicht.', "I don't understand that.")]}],
+    [('To greet someone', 'Hallo! · Guten Morgen!'), ('To thank someone', 'Danke schön!'),
+     ('To say who you are', 'Ich heiße … · Ich komme aus …'),
+     ('When you did not understand', 'Wie bitte? · Noch einmal, bitte.')],
+    'Your first quick wins',
+    [pick('You meet your neighbour at 8 in the morning. What do you say?', 'Guten Morgen!',
+          ['Guten Morgen!', 'Noch einmal, bitte.', 'Ich lerne Deutsch.'], why='Guten Morgen is the greeting for the morning.'),
+     pick('A friend brings you a coffee. What do you say?', 'Danke schön!', ['Danke schön!', 'Wie bitte?', 'Hallo!'],
+          why='Danke schön means thank you very much.'),
+     pick('You did not hear what someone said. What do you say?', 'Wie bitte?',
+          ['Wie bitte?', 'Danke schön!', 'Guten Morgen!'], why='Wie bitte? asks them to say it again.'),
+     pick('You want to ask a stranger for help. How do you start?', 'Entschuldigung',
+          ['Entschuldigung', 'Ich heiße Selam.', 'Danke schön!'], why='Entschuldigung is the polite way to get attention.'),
+     listen('das Taxi', ['das Taxi', 'der Kaffee', 'das Hotel']),
+     listen('Ich lerne Deutsch.', ['Ich lerne Deutsch.', 'Ich komme aus Äthiopien.', 'Ich verstehe das nicht.']),
+     gap('Ich ', 'heiße', ' Selam.', ['heiße', 'komme', 'lerne'], hint='Say your name.',
+         why='Ich heiße … means my name is …'),
+     gap('Ich komme aus ', 'Äthiopien', '.', ['Äthiopien', 'Deutsch', 'Kaffee'], hint='Say where you come from.',
+         why='Äthiopien is Ethiopia.'),
+     order('Ich lerne Deutsch.', 'I am learning German.'),
+     order('Ich verstehe das nicht.', "I don't understand that.")]))
 
 
 # ---------------------------------------------------------------- Start: the alphabet

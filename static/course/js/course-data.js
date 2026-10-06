@@ -8,6 +8,90 @@ window.COURSE = {
    "lessonsLabel": "Pronunciation",
    "sections": [
     {
+     "key": "0.0",
+     "title": "Welcome: your first German",
+     "words": [
+      {
+       "german": "Hallo!",
+       "english": "Hello!",
+       "pic": [
+        "1f44b"
+       ]
+      },
+      {
+       "german": "Guten Morgen!",
+       "english": "Good morning!",
+       "pic": [
+        "1f305"
+       ]
+      },
+      {
+       "german": "Danke schön!",
+       "english": "Thank you very much!"
+      },
+      {
+       "german": "Entschuldigung",
+       "english": "Excuse me / Sorry",
+       "pic": [
+        "1f647"
+       ]
+      },
+      {
+       "german": "Ich heiße…",
+       "english": "I am called…"
+      },
+      {
+       "german": "Ich komme aus Äthiopien.",
+       "english": "I come from Ethiopia.",
+       "pic": [
+        "1f1ea-1f1f9"
+       ]
+      },
+      {
+       "german": "Ich lerne Deutsch.",
+       "english": "I am learning German.",
+       "pic": [
+        "1f1e9-1f1ea"
+       ]
+      },
+      {
+       "german": "Wie bitte?",
+       "english": "Pardon?",
+       "pic": [
+        "1f442"
+       ]
+      },
+      {
+       "german": "Noch einmal, bitte.",
+       "english": "Once more, please.",
+       "pic": [
+        "1f501"
+       ]
+      },
+      {
+       "german": "Ich verstehe das nicht.",
+       "english": "I don't understand that.",
+       "pic": [
+        "1f615"
+       ]
+      },
+      {
+       "german": "der Kaffee",
+       "english": "the coffee (m.)",
+       "pic": [
+        "2615"
+       ]
+      },
+      {
+       "german": "das Taxi",
+       "english": "the taxi (n.)",
+       "pic": [
+        "1f695"
+       ]
+      }
+     ]
+    },
+    {
      "key": "0.1",
      "title": "Long & short vowels",
      "words": [
@@ -539,6 +623,281 @@ window.COURSE = {
     }
    ],
    "grammar": [
+    {
+     "key": "g0-welcome",
+     "code": "Hi",
+     "title": "Welcome: you already know some German",
+     "chapters": [
+      "0.0"
+     ],
+     "intro": [
+      "Welcome! Here is some good news before you start: you already know some German. Words like <em class=\"de\">Taxi</em>, <em class=\"de\">Hotel</em> and <em class=\"de\">Kaffee</em> mean just what you think.",
+      "This short chapter gives you twelve words and phrases you can use today: to greet people, to say who you are and to keep a conversation going. No grammar yet, only quick wins."
+     ],
+     "blocks": [
+      {
+       "step": "Quick win",
+       "title": "Words you already know",
+       "text": "Press a speaker to hear each word. You understand all of them already.",
+       "table": {
+        "head": [
+         "German",
+         "Meaning"
+        ],
+        "rows": [
+         [
+          "der Kaffee",
+          "coffee"
+         ],
+         [
+          "das Taxi",
+          "taxi"
+         ],
+         [
+          "das Hotel",
+          "hotel"
+         ],
+         [
+          "der Bus",
+          "bus"
+         ],
+         [
+          "die Banane",
+          "banana"
+         ],
+         [
+          "die Musik",
+          "music"
+         ]
+        ],
+        "say": [
+         "der Kaffee",
+         "das Taxi",
+         "das Hotel",
+         "der Bus",
+         "die Banane",
+         "die Musik"
+        ],
+        "highlight": 0
+       }
+      },
+      {
+       "step": "Say hello",
+       "title": "Greet and thank people",
+       "examples": [
+        [
+         "Hallo!",
+         "Hello! You can say it at any time of day."
+        ],
+        [
+         "Guten Morgen!",
+         "Good morning! Until about 10 or 11 o'clock."
+        ],
+        [
+         "Danke schön!",
+         "Thank you very much!"
+        ],
+        [
+         "Entschuldigung",
+         "Excuse me, to ask for help. It also means sorry."
+        ]
+       ]
+      },
+      {
+       "step": "Say who you are",
+       "title": "Introduce yourself in three sentences",
+       "examples": [
+        [
+         "Ich heiße Selam.",
+         "My name is Selam. Put your own name at the end."
+        ],
+        [
+         "Ich komme aus Äthiopien.",
+         "I come from Ethiopia."
+        ],
+        [
+         "Ich lerne Deutsch.",
+         "I am learning German."
+        ]
+       ]
+      },
+      {
+       "step": "When you get stuck",
+       "title": "Three phrases that keep you talking",
+       "text": "Nobody understands everything at first. These phrases are your safety net: use them often.",
+       "examples": [
+        [
+         "Wie bitte?",
+         "Pardon? Please say it again."
+        ],
+        [
+         "Noch einmal, bitte.",
+         "Once more, please."
+        ],
+        [
+         "Ich verstehe das nicht.",
+         "I don't understand that."
+        ]
+       ]
+      }
+     ],
+     "rules": [
+      [
+       "To greet someone",
+       "Hallo! · Guten Morgen!"
+      ],
+      [
+       "To thank someone",
+       "Danke schön!"
+      ],
+      [
+       "To say who you are",
+       "Ich heiße … · Ich komme aus …"
+      ],
+      [
+       "When you did not understand",
+       "Wie bitte? · Noch einmal, bitte."
+      ]
+     ],
+     "quiz": {
+      "title": "Your first quick wins",
+      "items": [
+       {
+        "type": "choose",
+        "prompt": "You meet your neighbour at 8 in the morning. What do you say?",
+        "answer": "Guten Morgen!",
+        "options": [
+         "Guten Morgen!",
+         "Noch einmal, bitte.",
+         "Ich lerne Deutsch."
+        ],
+        "hint": "",
+        "say": "Guten Morgen!",
+        "why": "Guten Morgen is the greeting for the morning."
+       },
+       {
+        "type": "choose",
+        "prompt": "A friend brings you a coffee. What do you say?",
+        "answer": "Danke schön!",
+        "options": [
+         "Danke schön!",
+         "Wie bitte?",
+         "Hallo!"
+        ],
+        "hint": "",
+        "say": "Danke schön!",
+        "why": "Danke schön means thank you very much."
+       },
+       {
+        "type": "choose",
+        "prompt": "You did not hear what someone said. What do you say?",
+        "answer": "Wie bitte?",
+        "options": [
+         "Wie bitte?",
+         "Danke schön!",
+         "Guten Morgen!"
+        ],
+        "hint": "",
+        "say": "Wie bitte?",
+        "why": "Wie bitte? asks them to say it again."
+       },
+       {
+        "type": "choose",
+        "prompt": "You want to ask a stranger for help. How do you start?",
+        "answer": "Entschuldigung",
+        "options": [
+         "Entschuldigung",
+         "Ich heiße Selam.",
+         "Danke schön!"
+        ],
+        "hint": "",
+        "say": "Entschuldigung",
+        "why": "Entschuldigung is the polite way to get attention."
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "das Taxi",
+        "options": [
+         "das Taxi",
+         "der Kaffee",
+         "das Hotel"
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "das Taxi",
+        "why": ""
+       },
+       {
+        "type": "listen",
+        "prompt": "Which one do you hear?",
+        "answer": "Ich lerne Deutsch.",
+        "options": [
+         "Ich lerne Deutsch.",
+         "Ich komme aus Äthiopien.",
+         "Ich verstehe das nicht."
+        ],
+        "hint": "Press play as often as you like, then choose.",
+        "say": "Ich lerne Deutsch.",
+        "why": ""
+       },
+       {
+        "type": "gap",
+        "before": "Ich ",
+        "answer": "heiße",
+        "after": " Selam.",
+        "options": [
+         "heiße",
+         "komme",
+         "lerne"
+        ],
+        "hint": "Say your name.",
+        "say": "Ich heiße Selam.",
+        "why": "Ich heiße … means my name is …"
+       },
+       {
+        "type": "gap",
+        "before": "Ich komme aus ",
+        "answer": "Äthiopien",
+        "after": ".",
+        "options": [
+         "Äthiopien",
+         "Deutsch",
+         "Kaffee"
+        ],
+        "hint": "Say where you come from.",
+        "say": "Ich komme aus Äthiopien.",
+        "why": "Äthiopien is Ethiopia."
+       },
+       {
+        "type": "order",
+        "prompt": "Build the sentence.",
+        "tiles": [
+         "ich",
+         "lerne",
+         "Deutsch"
+        ],
+        "answer": "Ich lerne Deutsch.",
+        "alts": [],
+        "hint": "I am learning German.",
+        "say": "Ich lerne Deutsch."
+       },
+       {
+        "type": "order",
+        "prompt": "Build the sentence.",
+        "tiles": [
+         "ich",
+         "verstehe",
+         "das",
+         "nicht"
+        ],
+        "answer": "Ich verstehe das nicht.",
+        "alts": [],
+        "hint": "I don't understand that.",
+        "say": "Ich verstehe das nicht."
+       }
+      ]
+     }
+    },
     {
      "key": "g0-vowels",
      "code": "P1",

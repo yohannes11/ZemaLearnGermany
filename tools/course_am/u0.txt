@@ -1,5 +1,55 @@
-# Start unit: pronunciation and numbers. Format: English ||| Amharic (German inside stays German).
+# Start unit: welcome, pronunciation and numbers. Format: English ||| Amharic (German inside stays German).
 # Pronunciation guides use Amharic sounds (Fidel), not English ones.
+
+## g0-welcome
+Welcome! Here is some good news before you start: you already know some German. Words like <em class="de">Taxi</em>, <em class="de">Hotel</em> and <em class="de">Kaffee</em> mean just what you think. ||| እንኳን ደህና መጡ! ከመጀመርዎ በፊት መልካም ዜና አለ፦ ትንሽ ጀርመንኛ አስቀድመው ያውቃሉ። እንደ <em class="de">Taxi</em>፣ <em class="de">Hotel</em> እና <em class="de">Kaffee</em> ያሉ ቃላት ልክ የሚያስቡትን ማለት ናቸው፤ ታክሲና ሆቴል በአማርኛም አሉ።
+This short chapter gives you twelve words and phrases you can use today: to greet people, to say who you are and to keep a conversation going. No grammar yet, only quick wins. ||| ይህ አጭር ምዕራፍ ዛሬውኑ ሊጠቀሙባቸው የሚችሉ አሥራ ሁለት ቃላትና ሐረጎችን ይሰጥዎታል፦ ሰዎችን ሰላም ለማለት፣ ማን እንደሆኑ ለመናገርና ውይይት ለማስቀጠል። ገና ሰዋስው የለም፤ ቀላል ስኬቶች ብቻ።
+Quick win ||| ቀላል ስኬት
+Words you already know ||| አስቀድመው የሚያውቋቸው ቃላት
+Press a speaker to hear each word. You understand all of them already. ||| እያንዳንዱን ቃል ለመስማት የድምፅ ምልክቱን ይጫኑ። ሁሉንም አስቀድመው ይረዷቸዋል።
+coffee ||| ቡና
+taxi ||| ታክሲ
+hotel ||| ሆቴል
+bus ||| አውቶቡስ
+banana ||| ሙዝ
+music ||| ሙዚቃ
+Say hello ||| ሰላም ይበሉ
+Greet and thank people ||| ሰዎችን ሰላም ይበሉ፣ ያመስግኑ
+Hello! You can say it at any time of day. ||| ሰላም! በማንኛውም የቀን ሰዓት ሊሉት ይችላሉ።
+Good morning! Until about 10 or 11 o'clock. ||| እንደምን አደሩ! እስከ ጠዋቱ አራት ወይም አምስት ሰዓት (10:00 ወይም 11:00) ገደማ ድረስ።
+Thank you very much! ||| በጣም አመሰግናለሁ!
+Excuse me, to ask for help. It also means sorry. ||| ይቅርታ፣ እርዳታ ለመጠየቅ። ለመጸጸትም «ይቅርታ» ማለት ነው።
+Say who you are ||| ማን እንደሆኑ ይናገሩ
+Introduce yourself in three sentences ||| ራስዎን በሦስት ዓረፍተ ነገሮች ያስተዋውቁ
+My name is Selam. Put your own name at the end. ||| ስሜ ሰላም ነው። በመጨረሻው ላይ የራስዎን ስም ያስገቡ።
+I am learning German. ||| ጀርመንኛ እየተማርኩ ነው።
+When you get stuck ||| ሲቸገሩ
+Three phrases that keep you talking ||| ውይይቱን የሚያስቀጥሉ ሦስት ሐረጎች
+Nobody understands everything at first. These phrases are your safety net: use them often. ||| መጀመሪያ ላይ ሁሉን የሚረዳ የለም። እነዚህ ሐረጎች መከታዎ ናቸው፤ ደጋግመው ይጠቀሙባቸው።
+Pardon? Please say it again. ||| ይቅርታ፣ ምን አሉ? እባክዎ እንደገና ይናገሩት።
+Once more, please. ||| እባክዎ እንደገና።
+I don't understand that. ||| ይህ አልገባኝም።
+To greet someone ||| ሰላም ለማለት
+Hallo! · Guten Morgen! ||| Hallo! · Guten Morgen!
+To thank someone ||| ለማመስገን
+Danke schön! ||| Danke schön!
+To say who you are ||| ማን እንደሆኑ ለመናገር
+Ich heiße … · Ich komme aus … ||| Ich heiße … · Ich komme aus …
+When you did not understand ||| ሳይገባዎት ሲቀር
+Wie bitte? · Noch einmal, bitte. ||| Wie bitte? · Noch einmal, bitte.
+Your first quick wins ||| የመጀመሪያ ቀላል ስኬቶችዎ
+You meet your neighbour at 8 in the morning. What do you say? ||| ጠዋት ሁለት ሰዓት (8:00) ላይ ጎረቤትዎን ያገኛሉ። ምን ይላሉ?
+Guten Morgen is the greeting for the morning. ||| Guten Morgen የጠዋት ሰላምታ ነው።
+A friend brings you a coffee. What do you say? ||| ጓደኛዎ ቡና ያመጣልዎታል። ምን ይላሉ?
+Danke schön means thank you very much. ||| Danke schön «በጣም አመሰግናለሁ» ማለት ነው።
+You did not hear what someone said. What do you say? ||| አንድ ሰው ያለውን አልሰሙም። ምን ይላሉ?
+Wie bitte? asks them to say it again. ||| Wie bitte? እንደገና እንዲናገሩ ይጠይቃል።
+You want to ask a stranger for help. How do you start? ||| የማያውቁትን ሰው እርዳታ መጠየቅ ይፈልጋሉ። እንዴት ይጀምራሉ?
+Entschuldigung is the polite way to get attention. ||| Entschuldigung የሰውን ትኩረት በትሕትና የሚስቡበት መንገድ ነው።
+Say your name. ||| ስምዎን ይናገሩ።
+Ich heiße … means my name is … ||| Ich heiße … «ስሜ … ነው» ማለት ነው።
+Say where you come from. ||| ከየት እንደመጡ ይናገሩ።
+Äthiopien is Ethiopia. ||| Äthiopien ኢትዮጵያ ማለት ነው።
 
 ## g0-vowels
 Good news: German is written almost exactly as it is spoken. Once you know the sounds of the letters, you can read any word aloud, even one you have never seen before. ||| መልካም ዜና፦ ጀርመንኛ እንደሚነገረው ማለት ይቻላል በትክክል ይጻፋል። የፊደላቱን ድምፆች ካወቁ ማንኛውንም ቃል፣ ከዚህ በፊት ያላዩትንም ቢሆን፣ ጮክ ብለው ማንበብ ይችላሉ።
