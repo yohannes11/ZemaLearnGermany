@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Noto+Serif+Ethiopic:wght@500;600&display=swap">
+  <link rel="stylesheet" href="{% static 'core/css/hover-read.css' %}">
+  <script src="{% static 'core/js/hover-read.js' %}" data-words="{% static 'core/hover-words.json' %}" data-audio="{% get_static_prefix %}audio/"></script>
   {% block head %}{% endblock %}
   {% if zema_text %}
   {{ zema_text|json_script:"zema-text" }}

@@ -46,6 +46,7 @@ static/
   course/               course.css, course.js, course-data.js (generated)
   dashboard/            dashboard.css, dashboard.js
   core/                 zema-text.js (text store + page binding), zema-text-editor.js/.css (admins' editor)
+                        hover-read.js/.css + hover-words.json: point at German on any page to hear it with its meaning
   audio/                recorded clips + manifest.json (generated)
 tools/                  course content source and audio generator
 deploy/                 gunicorn systemd service and nginx site

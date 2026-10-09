@@ -2732,6 +2732,13 @@ if __name__ == '__main__':
     (Path(__file__).resolve().parent.parent / 'static' / 'course' / 'js' / 'course-am.js').write_text(
         '/* Amharic meanings and lesson texts for the Amharic interface. Generated from tools/course_am/. */\n'
         'window.COURSE_AM = ' + json.dumps(am, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')
+    # Every German word and phrase with its meaning, for pointing at German on any page (static/core/js/hover-read.js).
+    meanings = [[w['german'], w['english'], am['words'].get(w['german'])]
+                for u in COURSE['units'] for s in u['sections'] for w in s['words']]
+    meanings += [[de, en, am['text'].get(en)] for u in COURSE['units'] for g in u['grammar']
+                 for b in g.get('blocks', []) for de, en in b.get('glossary', [])]
+    (Path(__file__).resolve().parent.parent / 'static' / 'core' / 'hover-words.json').write_text(
+        json.dumps(meanings, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     out = Path(__file__).resolve().parent.parent / 'static' / 'course' / 'js' / 'course-data.js'
     out.write_text('/* German A1.1, Start unit and Units 1-9. Generated from tools/course_content.py. */\n'
                    'window.COURSE = ' + json.dumps(COURSE, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')

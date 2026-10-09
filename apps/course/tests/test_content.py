@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import sys
 from pathlib import Path
 
 from django.conf import settings
@@ -21,6 +22,17 @@ def english_lesson_strings(course):
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module.course_strings(course)
+
+
+def hover_texts(course):
+    """Every German text pointing can read aloud, as tools/hover_texts.py finds them."""
+    tools = str(Path(settings.BASE_DIR) / "tools")
+    sys.path.insert(0, tools)
+    try:
+        import hover_texts as module  # tools/ is only importable while on the path
+    finally:
+        sys.path.remove(tools)
+    return module.hover_texts(course)
 
 
 def load_course():
@@ -56,6 +68,14 @@ class CourseContentTests(SimpleTestCase):
         self.assertEqual(sorted(german - set(am["words"])), [], "word meanings missing in tools/course_am/words*.txt")
         missing = [t for t in english_lesson_strings(self.course) if t not in am["text"]]
         self.assertEqual(missing, [], "lesson texts missing in tools/course_am/u*.txt")
+
+    def test_hover_meanings_cover_every_word(self):
+        """static/core/hover-words.json (pointing at German on any page) is rebuilt with the course."""
+        entries = json.loads((STATIC / "core" / "hover-words.json").read_text(encoding="utf-8"))
+        known = {german for german, _, _ in entries}
+        words = {w["german"] for u in self.course["units"] for s in u["sections"] for w in s["words"]}
+        self.assertEqual(sorted(words - known), [], "run tools/course_content.py")
+        self.assertTrue(all(english for _, english, _ in entries))
 
     def test_amharic_keeps_markup_and_german(self):
         am = load_js_object("course-am.js")
@@ -116,6 +136,12 @@ class CourseContentTests(SimpleTestCase):
         self.assertEqual(missing, [], "run tools/gen_course_audio.py")
         for clip in {manifest[text] for text in spoken_texts(self.course)}:
             self.assertTrue((STATIC / "audio" / "katja" / "normal" / f"{clip}.mp3").exists(), clip)
+
+    def test_everything_pointing_reads_has_a_human_recording(self):
+        """Pointing at German never falls back to the browser's computer voice."""
+        manifest = json.loads((STATIC / "audio" / "manifest.json").read_text(encoding="utf-8"))
+        missing = [text for text in hover_texts(self.course) if text not in manifest]
+        self.assertEqual(missing, [], "run tools/gen_course_audio.py")
 
     def test_landing_page_figures_match_the_course(self):
         from apps.landing.content import COURSE_FACTS

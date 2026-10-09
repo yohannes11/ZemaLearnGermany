@@ -2743,6 +2743,16 @@ function showPracticeSummary() {
   }));
 }
 
+/* ---------------- Point to hear ---------------- */
+
+// Pointing at German reads it aloud with its meaning on every page (static/core/js/hover-read.js). Here it
+// uses the course's player, and stays quiet in Practice, Flashcards, Match and lesson exercises, where it
+// would give the answers away.
+window.ZemaHoverRead = {
+  speak,
+  allowed: () => (isGrammar(currentScope) ? grammarView === 'lesson' : currentMode === 'learn' || currentMode === 'speak'),
+};
+
 /* ---------------- Start ---------------- */
 
 // On narrow phones the tab row scrolls sideways: keep the chosen tab in view.
@@ -2772,6 +2782,7 @@ function openAccountFromLink() {
   applyCoachLook();
   setSpeed(store.get('book-pace', 'normal'));
   document.getElementById('usage-toggle').checked = usage.enabled;
+  if (window.hoverRead) document.getElementById('hover-read-toggle').checked = hoverRead.enabled;
   renderAds();
   loadAccount().then(openAccountFromLink);
   renderUnits();

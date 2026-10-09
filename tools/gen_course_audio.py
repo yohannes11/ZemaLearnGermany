@@ -1,5 +1,5 @@
-"""Record audio for every phrase in static/course/js/course-data.js (vocabulary + grammar) that is not yet in
-static/audio/manifest.json.
+"""Record audio for every phrase in static/course/js/course-data.js (vocabulary + grammar), and every German text
+a learner can point at to hear it (tools/hover_texts.py), that is not yet in static/audio/manifest.json.
 
 Clips are stored under the exact text the app looks up; what is spoken is that text without notes in
 brackets and, for "A → B" examples, only the part after the arrow.
@@ -13,6 +13,7 @@ import sys
 from pathlib import Path
 
 import edge_tts
+from hover_texts import hover_texts
 
 ROOT = Path(__file__).resolve().parent.parent
 VOICES = {"katja": "de-DE-KatjaNeural", "conrad": "de-DE-ConradNeural"}
@@ -40,6 +41,7 @@ def collect(course):
                 texts += block.get("reading", [])
                 texts += [de for de, _ in block.get("glossary", [])]
             texts += [item["say"] for item in lesson.get("quiz", {}).get("items", []) if item["say"]]
+    texts += hover_texts(course)
     seen, unique = set(), []
     for t in texts:
         if t not in seen:

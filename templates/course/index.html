@@ -322,6 +322,10 @@
         <p>{% t "Each speed is recorded at that pace, so pronunciation stays natural." %}</p>
       </div>
       <div class="setting">
+        <label class="check-row"><input type="checkbox" id="hover-read-toggle" onchange="hoverRead.setEnabled(this.checked)"> {% t "Read German aloud when you point at it" %}</label>
+        <p>{% t "Point at a German word or phrase to hear it and see what it means. It stays quiet during exercises." %}</p>
+      </div>
+      <div class="setting">
         <span class="setting-label">{% t "Appearance" %}</span>
         <div class="segmented" role="group" aria-label="{% t "Appearance" %}">
           <button class="theme-btn" data-theme="light" onclick="setTheme('light')">{% t "Light" %}</button>
