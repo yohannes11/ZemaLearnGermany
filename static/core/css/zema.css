@@ -1,0 +1,134 @@
+/* ------------------------------------------------------------------
+   ZemaLearn design system: the tokens every page shares (base.html loads this first; the course, landing
+   page and dashboard style themselves with these names). One place for the brand, so pages can't drift.
+
+   Brand (zemalearn.com): emerald green and amber gold on a deep green-black, set in Plus Jakarta Sans with
+   Noto Sans Ethiopic. Here it is the daylight version: warm paper surfaces, deep green ink, emerald for
+   action and place, gold for what is earned or worth noticing. The tibeb weave (the woven border of
+   Ethiopian dress) carries the brand colours.
+
+   Scales: spacing on an 8px grid (4px for fine adjustments), type on --fs-*, radii on --radius-*.
+   ------------------------------------------------------------------ */
+:root {
+  /* Surfaces and ink */
+  --bg: #f3f2ea;
+  --surface: #fdfcf8;
+  --surface-2: #eceee4;
+  --border: #dfe2d6;
+  --border-strong: #c3c9b8;
+  --text: #12261d;
+  --muted: #4b5d53;
+  --subtle: #5e6d64;
+
+  /* Brand: emerald for action and place, gold for achievement and highlights */
+  --brand: #047857;
+  --brand-hover: #065f46;
+  --brand-deep: #064e3b;
+  --brand-soft: #e2f1e9;
+  --brand-ink: #ffffff;
+  --gold: #a84d08;
+  --gold-bright: #f59e0b;
+  --gold-soft: #fcf0d8;
+  --ink: #0b1712;
+  --ink-2: #12241b;
+
+  /* States */
+  --green: #047857;
+  --green-soft: #e2f1e9;
+  --indigo: #1d3d31;
+  --red: #b42318;
+  --red-soft: #fcebe8;
+
+  /* Type */
+  --font: 'Plus Jakarta Sans', 'Noto Sans Ethiopic', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --display: var(--font);
+  --serif: var(--display); /* older name: headings and German specimens, now in the brand sans */
+  --ethiopic: 'Noto Sans Ethiopic', 'Kefa', 'Abyssinica SIL', sans-serif;
+  --fs-xs: 0.75rem;   /* 12 */
+  --fs-sm: 0.875rem;  /* 14 */
+  --fs-base: 1rem;    /* 16 */
+  --fs-md: 1.125rem;  /* 18 */
+  --fs-lg: 1.25rem;   /* 20 */
+  --fs-xl: 1.5rem;    /* 24 */
+  --fs-2xl: 2rem;     /* 32 */
+  --fs-3xl: 2.5rem;   /* 40 */
+  --fs-4xl: 3.5rem;   /* 56 */
+  --tracking-tight: -0.02em;
+  --tracking-caps: 0.08em;
+
+  /* Shape and depth: shadows tinted with the brand's green ink, never grey */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-sm: 0 1px 2px rgba(18, 38, 29, 0.06);
+  --shadow: 0 1px 2px rgba(18, 38, 29, 0.05), 0 8px 24px -12px rgba(18, 38, 29, 0.18);
+  --shadow-lg: 0 2px 4px rgba(18, 38, 29, 0.06), 0 24px 48px -20px rgba(18, 38, 29, 0.32);
+  --focus: #047857;
+  --ring: 0 0 0 3px rgba(4, 120, 87, 0.22);
+
+  /* Motion: quick and settled, never bouncy */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --t-fast: 120ms;
+  --t: 200ms;
+  --t-slow: 300ms;
+
+  /* Brand patterns */
+  --accent-bar: linear-gradient(90deg, #059669, #f59e0b 50%, #059669);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .07 0 0 0 0 .15 0 0 0 0 .11 0 0 0 .1 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+  --tibeb: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='10' viewBox='0 0 48 10'%3E%3Cpath d='M0 5L6 0L12 5L6 10Z' fill='%23047857'/%3E%3Cpath d='M12 5L18 0L24 5L18 10Z' fill='%23f59e0b'/%3E%3Cpath d='M24 5L30 0L36 5L30 10Z' fill='%23064e3b'/%3E%3Cpath d='M36 5L42 0L48 5L42 10Z' fill='%23b45309'/%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M6 3L8 5L6 7L4 5Z'/%3E%3Cpath d='M18 3L20 5L18 7L16 5Z'/%3E%3Cpath d='M30 3L32 5L30 7L28 5Z'/%3E%3Cpath d='M42 3L44 5L42 7L40 5Z'/%3E%3C/g%3E%3C/svg%3E");
+  --harag: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='16' viewBox='0 0 48 16'%3E%3Cpath d='M0 8L6 2L12 8L6 14Z' fill='%23047857'/%3E%3Cpath d='M12 8L18 2L24 8L18 14Z' fill='%23f59e0b'/%3E%3Cpath d='M24 8L30 2L36 8L30 14Z' fill='%23064e3b'/%3E%3Cpath d='M36 8L42 2L48 8L42 14Z' fill='%23b45309'/%3E%3Cpath d='M0 2Q6 14 12 2T24 2T36 2T48 2M0 14Q6 2 12 14T24 14T36 14T48 14' fill='none' stroke='%230b1712' stroke-width='1.1'/%3E%3Cg fill='%230b1712'%3E%3Ccircle cx='0' cy='8' r='1.2'/%3E%3Ccircle cx='12' cy='8' r='1.2'/%3E%3Ccircle cx='24' cy='8' r='1.2'/%3E%3Ccircle cx='36' cy='8' r='1.2'/%3E%3Ccircle cx='48' cy='8' r='1.2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* The dark theme (the course's Appearance setting): the brand's own deep green-black, with softened
+   emerald and gold so nothing glows. */
+:root[data-theme="dark"] {
+  --bg: #0b1712;
+  --surface: #11211a;
+  --surface-2: #172b22;
+  --border: #233a2f;
+  --border-strong: #31503f;
+  --text: #ebf2ed;
+  --muted: #a5b6ac;
+  --subtle: #82958a;
+  --brand: #3fbf91;
+  --brand-hover: #62cda6;
+  --brand-deep: #9fdcc3;
+  --brand-soft: rgba(63, 191, 145, 0.13);
+  --brand-ink: #062a1d;
+  --gold: #f0b545;
+  --gold-bright: #f0b545;
+  --gold-soft: rgba(240, 181, 69, 0.13);
+  --green: #3fbf91;
+  --green-soft: rgba(63, 191, 145, 0.13);
+  --indigo: #2b5544;
+  --red: #f07d6d;
+  --red-soft: rgba(240, 125, 109, 0.13);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 2px 4px rgba(0, 0, 0, 0.3), 0 24px 48px -20px rgba(0, 0, 0, 0.6);
+  --focus: #62cda6;
+  --ring: 0 0 0 3px rgba(63, 191, 145, 0.3);
+  color-scheme: dark;
+}
+
+/* ---------------------------------------------------------------- shared polish */
+
+/* Fidel is never letter-spaced: Amharic pages keep natural spacing in headings too. */
+:root:lang(am) { --tracking-tight: 0; --tracking-caps: 0; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+::selection { background: rgba(245, 158, 11, 0.32); color: inherit; }
+
+/* One focus style everywhere, for keyboards only. */
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+:focus:not(:focus-visible) { outline: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}

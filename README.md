@@ -45,6 +45,7 @@ templates/              base, course page, dashboard, login and error pages
 static/
   course/               course.css, course.js, course-data.js (generated)
   dashboard/            dashboard.css, dashboard.js
+  core/                 zema.css: the shared design system (brand colours, type, 8px spacing, motion) every page uses
   core/                 zema-text.js (text store + page binding), zema-text-editor.js/.css (admins' editor)
                         hover-read.js/.css + hover-words.json: point at German on any page to hear it with its meaning
   audio/                recorded clips + manifest.json (generated)
