@@ -90,6 +90,32 @@ certbot --nginx -d $DOMAIN -d www.$DOMAIN --redirect --agree-tos -m you@example.
 Open `https://yourdomain.com` (the course) and `https://yourdomain.com/dashboard/` (sign in with the
 account from step 4).
 
+## No domain yet: the site on the server's IP address
+
+Until you have a domain there is no HTTPS (certificates are issued for domains), so the site runs on plain
+`http://YOUR_IP/`. Follow steps 1–5 above with `DOMAIN` set to the IP address, then in step 3 make sure
+`/srv/zema/.env` has:
+
+```
+DJANGO_ALLOWED_HOSTS=YOUR_IP
+DJANGO_CSRF_TRUSTED_ORIGINS=http://YOUR_IP
+DJANGO_HTTPS=false
+```
+
+and instead of step 6:
+
+```bash
+sed "s/server_name .*;/server_name $DOMAIN;/" /srv/zema/app/web/deploy/nginx.conf > /etc/nginx/sites-available/zema
+ln -sf /etc/nginx/sites-available/zema /etc/nginx/sites-enabled/zema
+rm -f /etc/nginx/sites-enabled/default
+nginx -t && systemctl reload nginx
+```
+
+`check --deploy` warns about the missing HTTPS; that is expected until you have a domain. Don't put real
+accounts on it yet: without HTTPS, passwords cross the internet unencrypted. When the domain is ready, point it
+at the IP (step 0), put the domain in `DJANGO_ALLOWED_HOSTS` and `https://` in `DJANGO_CSRF_TRUSTED_ORIGINS`,
+delete the `DJANGO_HTTPS=false` line, then run step 6 with `DOMAIN` set to the domain.
+
 ## Updating the site later
 
 ```bash

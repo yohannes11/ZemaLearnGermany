@@ -10,12 +10,16 @@ DEBUG = False
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 TRUST_PROXY_IP_HEADER = env.bool("DJANGO_TRUST_PROXY_IP_HEADER", default=True)
 
-SECURE_SSL_REDIRECT = env.bool("DJANGO_SECURE_SSL_REDIRECT", default=True)
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+# HTTPS is on unless DJANGO_HTTPS=false: only for a server reached by its bare IP address before it has a domain
+# (no certificate is possible yet). Then cookies may travel over plain HTTP and nothing redirects to HTTPS.
+HTTPS = env.bool("DJANGO_HTTPS", default=True)
+
+SECURE_SSL_REDIRECT = HTTPS and env.bool("DJANGO_SECURE_SSL_REDIRECT", default=True)
+SESSION_COOKIE_SECURE = HTTPS
+CSRF_COOKIE_SECURE = HTTPS
 
 # Start with a short HSTS time and raise it (e.g. to 31536000) once HTTPS is confirmed working.
-SECURE_HSTS_SECONDS = env.int("DJANGO_SECURE_HSTS_SECONDS", default=3600)
+SECURE_HSTS_SECONDS = env.int("DJANGO_SECURE_HSTS_SECONDS", default=3600) if HTTPS else 0
 SECURE_HSTS_INCLUDE_SUBDOMAINS = env.bool("DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS", default=False)
 SECURE_HSTS_PRELOAD = env.bool("DJANGO_SECURE_HSTS_PRELOAD", default=False)
 SECURE_CONTENT_TYPE_NOSNIFF = True
