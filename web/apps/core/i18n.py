@@ -91,12 +91,12 @@ class LanguageMiddleware:
         chosen = request.GET.get("lang")
         lang = chosen if chosen in LANGUAGES else request.COOKIES.get(COOKIE)
         if lang not in LANGUAGES:
-            lang = "am" if request.headers.get("Accept-Language", "").lower().startswith("am") else DEFAULT_LANGUAGE
+            lang = DEFAULT_LANGUAGE  # English for everyone until they choose Amharic (?lang=am, then the cookie)
         request.LANG = lang
         response = self.get_response(request)
         if chosen in LANGUAGES and request.COOKIES.get(COOKIE) != chosen:
             response.set_cookie(COOKIE, chosen, max_age=365 * 24 * 3600, samesite="Lax", secure=request.is_secure())
-        patch_vary_headers(response, ("Cookie", "Accept-Language"))
+        patch_vary_headers(response, ("Cookie",))
         return response
 
 

@@ -76,9 +76,9 @@ class LanguageSwitchTests(TestCase):
         back = self.client.get(reverse("landing:index") + "?lang=en")
         self.assertContains(back, "Start learning German")
 
-    def test_amharic_browsers_get_amharic(self):
+    def test_english_is_the_default_even_for_amharic_browsers(self):
         response = self.client.get(reverse("landing:index"), HTTP_ACCEPT_LANGUAGE="am-ET,am;q=0.9,en;q=0.5")
-        self.assertContains(response, '<html lang="am">')
+        self.assertContains(response, '<html lang="en">')
 
     def test_course_page_sends_its_strings(self):
         response = self.client.get(reverse("course:index") + "?lang=am")
@@ -91,7 +91,6 @@ class LanguageSwitchTests(TestCase):
 
     def test_responses_vary_by_language(self):
         response = self.client.get(reverse("landing:index"))
-        self.assertIn("Accept-Language", response["Vary"])
         self.assertIn("Cookie", response["Vary"])
 
 
