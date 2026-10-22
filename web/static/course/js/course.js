@@ -904,7 +904,8 @@ function switchUnit(id) {
 // The map runs edge to edge and can be panned and zoomed (drag, pinch, ctrl + scroll, the buttons).
 // A strict zig-zag: each name sits on the other side from its neighbours (below in a dip, above on a crest),
 // so names never run into each other.
-const MAP_Y = [72, 44, 70, 42, 72, 44, 72, 42, 70, 44]; // hand-placed heights (% of the town area), repeating
+// A gentle wave: the towns sit in one row, so the map stays a slim strip above the lesson.
+const MAP_Y = [62, 52, 60, 50, 62, 52, 62, 50, 60, 52]; // hand-placed heights (% of the town area), repeating
 
 // A smooth road through the points (Catmull-Rom), one cubic segment per leg so it can be split anywhere.
 function routeLegs(pts) {
@@ -1023,10 +1024,8 @@ function renderUnits() {
     const test = u.grammar.find(g => g.custom === 'review');
     const passed = test && grammarScores[test.key] >= testPass;
     const last = i === n - 1;
-    // The name goes on the side the road is not: above a town on a crest, below one in a dip.
-    const near = [at[i - 1], at[i + 1]].filter(Boolean);
-    const above = at[i].y < near.reduce((t, p) => t + p.y, 0) / near.length;
-    const btn = el('button', `bead${last ? ' destination' : ''}${above ? ' label-above' : ''}`);
+    // Names hang below the towns; only the current one shows until you point at another.
+    const btn = el('button', `bead${last ? ' destination' : ''}`);
     btn.type = 'button';
     btn.classList.toggle('active', u === unit);
     btn.classList.toggle('done', !!passed);
@@ -1086,10 +1085,10 @@ const MAP_ZOOM = [1, 3];
 function mapSize(nav) {
   const vw = nav.clientWidth;
   const w = Math.max(1280, vw); // always the full width of the page; phones get a wider map to pan across
-  const towns = Math.round(Math.max(140, Math.min(w / 9, 160))); // a strip, not a page: the lesson stays in view
+  const towns = Math.round(Math.max(92, Math.min(w / 15, 104))); // a slim strip: the lesson stays in view
   const bar = document.querySelector('.topbar')?.offsetHeight || 0;
   const head = nav.parentElement.querySelector('.journey-head')?.offsetHeight || 0;
-  return { vw, w, towns, bar, top: bar + 12, h: bar + 12 + towns + head + 4 };
+  return { vw, w, towns, bar, top: bar + 4, h: bar + 4 + towns + head + 4 };
 }
 
 function layoutMap() {

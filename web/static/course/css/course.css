@@ -2123,9 +2123,11 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
 }
 .pin-label small { font-size: 0.75rem; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
 .destination .pin-label, .bead.active .pin-label { top: 12px; }
-.label-above .pin-label { top: auto; bottom: 38px; }
-.label-above.destination .pin-label { bottom: 50px; }
-.label-above.active .pin-label { bottom: 44px; }
+
+/* Only the current town's name shows; pointing at (or tabbing to) another town shows its name over the others. */
+.bead:not(.active) .pin-label { opacity: 0; translate: 0 -4px; pointer-events: none; transition: opacity var(--t) var(--ease), translate var(--t) var(--ease); }
+.bead:not(.active):is(:hover, :focus-visible) { z-index: 4; }
+.bead:not(.active):is(:hover, :focus-visible) .pin-label { opacity: 1; translate: 0 0; }
 
 /* You are here: the largest name, in the brand's green. */
 .bead.active .pin-label b { font-size: 1.0625rem; color: var(--brand-deep); }
@@ -2152,6 +2154,7 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
   top: calc(var(--towns-top, 80px) + var(--towns-h, 320px) / 2);
   transform: translateY(-50%);
   display: grid;
+  grid-auto-flow: column; /* side by side: as tall as one button, so it fits the slim strip */
   padding: 4px;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -2172,7 +2175,7 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
 .map-ctl:hover:not(:disabled) { background: var(--surface-2); color: var(--brand); }
 .map-ctl:active:not(:disabled) { background: var(--brand-soft); }
 .map-ctl:disabled { color: var(--subtle); opacity: 0.45; cursor: default; }
-.map-ctl-rule { height: 1px; margin: 4px 6px; background: var(--border); }
+.map-ctl-rule { width: 1px; margin: 6px 4px; background: var(--border); }
 @media (pointer: coarse) { .map-ctl { width: 44px; height: 44px; } }
 
 .journey-head {
