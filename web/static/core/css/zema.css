@@ -2,47 +2,58 @@
    ZemaLearn design system: the tokens every page shares (base.html loads this first; the course, landing
    page and dashboard style themselves with these names). One place for the brand, so pages can't drift.
 
-   Brand (zemalearn.com): emerald green and amber gold on a deep green-black, set in Plus Jakarta Sans with
-   Noto Sans Ethiopic. Here it is the daylight version: warm paper surfaces, deep green ink, emerald for
-   action and place, gold for what is earned or worth noticing. The tibeb weave (the woven border of
-   Ethiopian dress) carries the brand colours.
+   Brand (zemalearn.com): emerald green and amber gold on a deep green-black. Headings and German
+   specimens are set in Newsreader, an editorial serif, so the course reads like a well-made book;
+   interface text stays in Plus Jakarta Sans, with Noto Sans Ethiopic for Fidel. Here it is the daylight
+   version: warm paper surfaces, deep green ink, emerald for action and place, gold for what is earned or
+   worth noticing. The tibeb weave (the woven border of Ethiopian dress) carries the brand colours.
 
    Scales: spacing on an 8px grid (4px for fine adjustments), type on --fs-*, radii on --radius-*.
+   Depth: surfaces sit on a hairline edge with a soft top highlight; shadows are layered (contact +
+   ambient) and tinted with the green ink, never grey.
    ------------------------------------------------------------------ */
 :root {
-  /* Surfaces and ink */
-  --bg: #f3f2ea;
-  --surface: #fdfcf8;
-  --surface-2: #eceee4;
-  --border: #dfe2d6;
-  --border-strong: #c3c9b8;
-  --text: #12261d;
-  --muted: #4b5d53;
-  --subtle: #5e6d64;
+  /* Surfaces and ink: warm paper, near-black green ink for strong contrast */
+  --bg: #f4f1e8;
+  --surface: #fffdf7;
+  --surface-2: #efebe0;
+  --border: #e2dccd;
+  --border-strong: #c8c0ad;
+  --text: #0f1f17;
+  --muted: #3e4f46;
+  --subtle: #5b685f;
 
   /* Brand: emerald for action and place, gold for achievement and highlights */
-  --brand: #047857;
-  --brand-hover: #065f46;
-  --brand-deep: #064e3b;
-  --brand-soft: #e2f1e9;
+  --brand: #046c4e;
+  --brand-hover: #035a41;
+  --brand-deep: #053d2d;
+  --brand-soft: #e1eee6;
   --brand-ink: #ffffff;
+  /* Primary buttons: a lit top edge and a slight fall of light, so they read as pressable. */
+  --brand-fill: linear-gradient(180deg, #0b7d5b 0%, #046c4e 100%);
+  --brand-fill-hover: linear-gradient(180deg, #08704f 0%, #035a41 100%);
+  --brand-lift: inset 0 1px 0 rgba(255, 255, 255, 0.18), inset 0 -1px 0 rgba(0, 0, 0, 0.14), 0 1px 2px rgba(5, 61, 45, 0.28), 0 6px 16px -6px rgba(5, 61, 45, 0.55);
   --gold: #a84d08;
   --gold-bright: #f59e0b;
   --gold-soft: #fcf0d8;
+  /* The game: the streak's flame (struck-off days) and a streak freeze's icy blue. */
+  --flame: #ea580c;
+  --flame-soft: #ffedd5;
+  --freeze: #2f80d1;
   --ink: #0b1712;
   --ink-2: #12241b;
 
   /* States */
-  --green: #047857;
-  --green-soft: #e2f1e9;
+  --green: #046c4e;
+  --green-soft: #e1eee6;
   --indigo: #1d3d31;
   --red: #b42318;
   --red-soft: #fcebe8;
 
-  /* Type */
+  /* Type: an editorial serif for headings and German words, the brand sans for everything you operate */
   --font: 'Plus Jakarta Sans', 'Noto Sans Ethiopic', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --display: var(--font);
-  --serif: var(--display); /* older name: headings and German specimens, now in the brand sans */
+  --display: 'Newsreader', 'Noto Sans Ethiopic', Georgia, 'Times New Roman', serif;
+  --serif: var(--display); /* older name for the same face */
   --ethiopic: 'Noto Sans Ethiopic', 'Kefa', 'Abyssinica SIL', sans-serif;
   --fs-xs: 0.75rem;   /* 12 */
   --fs-sm: 0.875rem;  /* 14 */
@@ -56,17 +67,21 @@
   --tracking-tight: -0.02em;
   --tracking-caps: 0.08em;
 
-  /* Shape and depth: shadows tinted with the brand's green ink, never grey */
+  /* Shape: tighter corners than the usual soft boxes; pills only for tags and audio chips */
   --radius-xs: 4px;
-  --radius-sm: 8px;
-  --radius: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
-  --shadow-sm: 0 1px 2px rgba(18, 38, 29, 0.06);
-  --shadow: 0 1px 2px rgba(18, 38, 29, 0.05), 0 8px 24px -12px rgba(18, 38, 29, 0.18);
-  --shadow-lg: 0 2px 4px rgba(18, 38, 29, 0.06), 0 24px 48px -20px rgba(18, 38, 29, 0.32);
-  --focus: #047857;
-  --ring: 0 0 0 3px rgba(4, 120, 87, 0.22);
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  /* Depth: an inner top highlight, a contact shadow and a long soft ambient one */
+  --highlight: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  --shadow-sm: var(--highlight), 0 1px 2px rgba(15, 31, 23, 0.07);
+  --shadow: var(--highlight), 0 1px 2px rgba(15, 31, 23, 0.06), 0 4px 8px -4px rgba(15, 31, 23, 0.08), 0 16px 32px -16px rgba(15, 31, 23, 0.16);
+  --shadow-lg: var(--highlight), 0 2px 4px rgba(15, 31, 23, 0.06), 0 12px 24px -8px rgba(15, 31, 23, 0.12), 0 32px 64px -24px rgba(15, 31, 23, 0.3);
+  --inset: inset 0 1px 2px rgba(15, 31, 23, 0.07);
+  --focus: #046c4e;
+  /* Two-step focus ring: a paper gap, then the brand, visible on any surface */
+  --ring: 0 0 0 2px var(--surface), 0 0 0 4px var(--focus);
 
   /* Motion: quick and settled, never bouncy */
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -75,7 +90,8 @@
   --t-slow: 300ms;
 
   /* Brand patterns */
-  --accent-bar: linear-gradient(90deg, #059669, #f59e0b 50%, #059669);
+  /* A woven edge in hard bands (emerald, gold, deep green), not a blended gradient */
+  --accent-bar: linear-gradient(90deg, #046c4e 0 64%, #f59e0b 64% 82%, #053d2d 82%);
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .07 0 0 0 0 .15 0 0 0 0 .11 0 0 0 .1 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
   --tibeb: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='10' viewBox='0 0 48 10'%3E%3Cpath d='M0 5L6 0L12 5L6 10Z' fill='%23047857'/%3E%3Cpath d='M12 5L18 0L24 5L18 10Z' fill='%23f59e0b'/%3E%3Cpath d='M24 5L30 0L36 5L30 10Z' fill='%23064e3b'/%3E%3Cpath d='M36 5L42 0L48 5L42 10Z' fill='%23b45309'/%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M6 3L8 5L6 7L4 5Z'/%3E%3Cpath d='M18 3L20 5L18 7L16 5Z'/%3E%3Cpath d='M30 3L32 5L30 7L28 5Z'/%3E%3Cpath d='M42 3L44 5L42 7L40 5Z'/%3E%3C/g%3E%3C/svg%3E");
   --harag: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='16' viewBox='0 0 48 16'%3E%3Cpath d='M0 8L6 2L12 8L6 14Z' fill='%23047857'/%3E%3Cpath d='M12 8L18 2L24 8L18 14Z' fill='%23f59e0b'/%3E%3Cpath d='M24 8L30 2L36 8L30 14Z' fill='%23064e3b'/%3E%3Cpath d='M36 8L42 2L48 8L42 14Z' fill='%23b45309'/%3E%3Cpath d='M0 2Q6 14 12 2T24 2T36 2T48 2M0 14Q6 2 12 14T24 14T36 14T48 14' fill='none' stroke='%230b1712' stroke-width='1.1'/%3E%3Cg fill='%230b1712'%3E%3Ccircle cx='0' cy='8' r='1.2'/%3E%3Ccircle cx='12' cy='8' r='1.2'/%3E%3Ccircle cx='24' cy='8' r='1.2'/%3E%3Ccircle cx='36' cy='8' r='1.2'/%3E%3Ccircle cx='48' cy='8' r='1.2'/%3E%3C/g%3E%3C/svg%3E");
@@ -97,19 +113,28 @@
   --brand-deep: #9fdcc3;
   --brand-soft: rgba(63, 191, 145, 0.13);
   --brand-ink: #062a1d;
+  --brand-fill: linear-gradient(180deg, #55cba0 0%, #3fbf91 100%);
+  --brand-fill-hover: linear-gradient(180deg, #6fd5af 0%, #52c79c 100%);
+  --brand-lift: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 16px -6px rgba(0, 0, 0, 0.6);
   --gold: #f0b545;
   --gold-bright: #f0b545;
   --gold-soft: rgba(240, 181, 69, 0.13);
+  --flame: #fb923c;
+  --flame-soft: rgba(251, 146, 60, 0.14);
+  --freeze: #7cb8f2;
   --green: #3fbf91;
   --green-soft: rgba(63, 191, 145, 0.13);
   --indigo: #2b5544;
   --red: #f07d6d;
   --red-soft: rgba(240, 125, 109, 0.13);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 2px 4px rgba(0, 0, 0, 0.3), 0 24px 48px -20px rgba(0, 0, 0, 0.6);
+  --highlight: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --shadow-sm: var(--highlight), 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow: var(--highlight), 0 1px 2px rgba(0, 0, 0, 0.3), 0 16px 32px -16px rgba(0, 0, 0, 0.55);
+  --shadow-lg: var(--highlight), 0 2px 4px rgba(0, 0, 0, 0.3), 0 32px 64px -24px rgba(0, 0, 0, 0.7);
+  --inset: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   --focus: #62cda6;
-  --ring: 0 0 0 3px rgba(63, 191, 145, 0.3);
+  --ring: 0 0 0 2px var(--surface), 0 0 0 4px var(--focus);
+  --accent-bar: linear-gradient(90deg, #3fbf91 0 64%, #f0b545 64% 82%, #9fdcc3 82%);
   color-scheme: dark;
 }
 
@@ -124,6 +149,10 @@ html {
   text-rendering: optimizeLegibility;
 }
 ::selection { background: rgba(245, 158, 11, 0.32); color: inherit; }
+
+/* Headings: the serif's optical sizes, and lines that break evenly instead of leaving one word behind. */
+h1, h2, h3 { font-optical-sizing: auto; text-wrap: balance; }
+p { text-wrap: pretty; }
 
 /* One focus style everywhere, for keyboards only. */
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }

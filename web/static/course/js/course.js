@@ -39,6 +39,7 @@ let vocabulary = {};
 let SECTION_TITLES = {};
 let SCOPES = [];
 let GRAMMAR = {};
+let railReady = false; // the progress column waits for start(): the page's constants are only all in place then
 
 function loadUnit(id) {
   unit = COURSE_UNITS.find(u => u.id === id) || COURSE_UNITS[0];
@@ -277,7 +278,8 @@ function renderAds() {
 /* ---------------- Accounts ---------------- */
 
 // Optional: guests keep using the course; signed-in learners have their words and grammar results saved on the server.
-const SYNCED_KEYS = ['book-learned', 'grammar-scores'];
+// Cleared on sign-out, so the next person on this browser starts fresh (their progress is safe in the account).
+const SYNCED_KEYS = ['book-learned', 'grammar-scores', 'sync-outbox', 'sync-seen-learned', 'sync-seen-grammar', 'sync-account', 'sync-facts'];
 let account = null;
 let syncTimer = null;
 let lastSynced = null;
@@ -292,7 +294,11 @@ async function api(path, method = 'GET', body) {
   let data = {};
   try { data = await res.json(); } catch (e) {}
   // Server messages are English; the course shows them in the interface language.
-  if (!res.ok) throw new Error(T(data.error || 'Something went wrong. Please try again.'));
+  if (!res.ok) {
+    const error = new Error(T(data.error || 'Something went wrong. Please try again.'));
+    error.status = res.status;
+    throw error;
+  }
   return data;
 }
 
@@ -351,7 +357,7 @@ async function submitAuth(event, kind) {
     account = user;
     form.reset();
     renderAccountButton();
-    await syncProgress(true);
+    await startSync();
     showAccountView('profile');
     accountMessage(kind === 'register' ? T('Welcome, {name}! Your progress will now be saved.', { name: user.name }) : T('Welcome back, {name}.', { name: user.name }), true);
   } catch (err) {
@@ -377,8 +383,7 @@ async function changePassword(event) {
 }
 
 async function signOut() {
-  clearTimeout(syncTimer);
-  await pushProgress();
+  await syncNow();
   try { await api(APP.api.logout, 'POST', {}); } catch (e) {}
   // The progress is safe in the account; clear it here so the next person on this device starts fresh.
   SYNCED_KEYS.forEach(k => { try { localStorage.removeItem(k); } catch (e) {} });
@@ -386,36 +391,462 @@ async function signOut() {
   location.reload();
 }
 
-function localProgress() {
-  return { learned: store.get('book-learned', []), grammar: store.get('grammar-scores', {}) };
+/* ---------------- Progress sync ----------------
+   Every change is recorded as an operation (a word marked, a score, XP, the open exercise) and sent to the
+   account (apps/course/sync.py), which applies each once and answers with the whole state, including what other
+   devices did. A live connection (/ws/v1/) says when another device changed something. Operations wait in
+   localStorage while offline or signed out, and are sent once there is an account to send them to. */
+
+const XP = { newWord: 10, answerRight: 10, lessonPassed: 25, perfect: 15 }; // as in the app (mobile/src/features/gamification/xp.ts)
+const syncId = () => window.crypto?.randomUUID?.() || Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 12);
+const deviceId = store.get('sync-device') || `web-${syncId()}`;
+store.set('sync-device', deviceId);
+let outbox = store.get('sync-outbox', []);
+// What this page last recorded, so a change becomes an operation once.
+let seenLearned = new Set(store.get('sync-seen-learned', [...learned]));
+let seenGrammar = store.get('sync-seen-grammar', { ...grammarScores });
+let revision = null;
+let syncing = false;
+let syncAgain = false;
+let pendingResume = null;
+
+const dayKey = (date = new Date()) =>
+  `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+const operation = (kind, fields) => ({ id: syncId(), kind, at: Date.now(), day: dayKey(), ...fields });
+
+function queue(...ops) {
+  if (!ops.length) return;
+  outbox = [...outbox, ...ops].slice(-2000);
+  store.set('sync-outbox', outbox);
+  if (account) { clearTimeout(syncTimer); syncTimer = setTimeout(syncNow, 800); }
+  renderStreak();
 }
 
-// On sign-in, device and account progress are merged; afterwards this device's state is the latest.
-async function syncProgress(merge) {
+function remember() {
+  store.set('sync-seen-learned', [...seenLearned]);
+  store.set('sync-seen-grammar', seenGrammar);
+}
+
+// Called by store.set for the progress keys: what changed since last time, as operations.
+function scheduleSync(key) {
+  if (key === 'book-learned') {
+    const ops = [];
+    learned.forEach(german => { if (!seenLearned.has(german)) ops.push(operation('word', { german, learned: true })); });
+    seenLearned.forEach(german => { if (!learned.has(german)) ops.push(operation('word', { german, learned: false })); });
+    const added = ops.filter(op => op.learned).length;
+    if (added) ops.push(operation('xp', { amount: added * XP.newWord }));
+    seenLearned = new Set(learned);
+    remember();
+    queue(...ops);
+  } else if (key === 'grammar-scores') {
+    const ops = Object.entries(grammarScores)
+      .filter(([lesson, score]) => Number.isInteger(score) && score > (seenGrammar[lesson] ?? -1))
+      .map(([lesson, score]) => operation('score', { lesson, score }));
+    seenGrammar = { ...grammarScores };
+    remember();
+    queue(...ops);
+  }
+}
+
+// The account's state, with operations still on their way replayed on top, so nothing jumps back on screen.
+function applySnapshot(snapshot) {
+  revision = snapshot.revision;
+  streakFacts = { days: snapshot.days || [], xp: snapshot.xp || {}, goals: snapshot.goals || [] };
+  store.set('sync-facts', streakFacts);
+  renderStreak();
+  const words = new Set(snapshot.learned);
+  const scores = { ...snapshot.grammar };
+  outbox.forEach(op => {
+    if (op.kind === 'word') op.learned ? words.add(op.german) : words.delete(op.german);
+    if (op.kind === 'score') scores[op.lesson] = Math.max(op.score, scores[op.lesson] ?? 0);
+  });
+  seenLearned = new Set(words);
+  seenGrammar = { ...scores };
+  remember();
+  const same = words.size === learned.size && [...words].every(w => learned.has(w)) && JSON.stringify(scores) === JSON.stringify(grammarScores);
+  if (same) return;
+  learned = words;
+  grammarScores = scores;
+  store.set('book-learned', [...learned]);
+  store.set('grammar-scores', grammarScores);
+  mqBuiltFor = fcBuiltFor = prBuiltFor = learnBuiltFor = speakBuiltFor = null;
+  renderUnits();
+  updateProgress();
+  renderPage();
+}
+
+async function syncNow() {
   if (!account) return;
+  if (syncing) { syncAgain = true; return; }
+  syncing = true;
+  clearTimeout(syncTimer);
+  const sending = outbox.slice(0, 500);
+  let ok = false;
   try {
-    const merged = await api(APP.api.progress, 'PUT', { ...localProgress(), replace: !merge });
+    const snapshot = sending.length
+      ? await api(APP.api.sync, 'POST', { ops: sending, device: deviceId })
+      : await api(APP.api.sync);
+    const sent = new Set(sending.map(op => op.id));
+    outbox = outbox.filter(op => !sent.has(op.id));
+    store.set('sync-outbox', outbox);
     lastSynced = new Date();
-    if (!merge) return;
-    const before = localProgress();
-    if (merged.learned.length === before.learned.length && JSON.stringify(merged.grammar) === JSON.stringify(before.grammar)) return;
-    learned = new Set(merged.learned);
-    grammarScores = merged.grammar;
-    store.set('book-learned', merged.learned);
-    store.set('grammar-scores', merged.grammar);
-    mqBuiltFor = fcBuiltFor = prBuiltFor = learnBuiltFor = speakBuiltFor = null;
-    renderUnits();
-    updateProgress();
-    renderPage();
+    applySnapshot(snapshot);
+    offerResume(snapshot.session);
+    ok = true;
+  } catch (error) {
+    // Refused (malformed, e.g. from an older page): drop that batch so it can't block the rest. Offline: keep it.
+    if (error.status === 400) {
+      const sent = new Set(sending.map(op => op.id));
+      outbox = outbox.filter(op => !sent.has(op.id));
+      store.set('sync-outbox', outbox);
+    } else {
+      syncTimer = setTimeout(syncNow, 30000);
+    }
+  } finally {
+    syncing = false;
+  }
+  // More to send, or another device changed something meanwhile: go again. After a failure the retry above waits.
+  if (ok && (syncAgain || outbox.length)) {
+    syncAgain = false;
+    syncTimer = setTimeout(syncNow, outbox.length ? 800 : 0);
+  }
+}
+
+// First sign-in in this browser: what was learned here before joins the account (nothing is un-marked).
+async function joinAccount() {
+  if (store.get('sync-account') === account.id) return;
+  try {
+    const snapshot = await api(APP.api.sync);
+    const have = new Set(snapshot.learned);
+    const ops = [...learned].filter(german => !have.has(german)).map(german => operation('word', { german, learned: true }));
+    Object.entries(grammarScores).forEach(([lesson, score]) => {
+      if (Number.isInteger(score) && score > (snapshot.grammar[lesson] ?? -1)) ops.push(operation('score', { lesson, score }));
+    });
+    queue(...ops);
+    store.set('sync-account', account.id);
   } catch (e) {}
 }
 
-function pushProgress() { return syncProgress(false); }
+async function startSync() {
+  await joinAccount();
+  await syncNow();
+  connectLive(true);
+}
 
-function scheduleSync(key) {
-  if (!account || !SYNCED_KEYS.includes(key)) return;
-  clearTimeout(syncTimer);
-  syncTimer = setTimeout(pushProgress, 1500);
+/* Live updates: progress from the learner's other devices, and text an admin published. */
+let live = null;
+let liveRetry = 1000;
+
+function connectLive(restart = false) {
+  if (!('WebSocket' in window)) return;
+  if (live && restart) { live.onclose = null; live.close(); live = null; }
+  if (live) return;
+  const socket = new WebSocket(`${location.protocol === 'https:' ? 'wss' : 'ws'}://${location.host}${APP.api.live}`);
+  live = socket;
+  socket.onopen = () => { liveRetry = 1000; };
+  socket.onmessage = event => {
+    let message;
+    try { message = JSON.parse(event.data); } catch (e) { return; }
+    if (message.type === 'progress' && message.origin !== deviceId && message.revision !== revision) syncNow();
+    if (message.type === 'content') liveBanner(T('The course text was just updated.'), T('Refresh'), () => location.reload());
+  };
+  socket.onclose = () => {
+    if (live !== socket) return;
+    live = null;
+    setTimeout(connectLive, liveRetry);
+    liveRetry = Math.min(liveRetry * 2, 60000);
+  };
+}
+
+// Coming back to the tab: catch up at once rather than waiting for the next message.
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && account) syncNow(); });
+addEventListener('online', () => { if (account) syncNow(); });
+
+function liveBanner(text, action, onAction) {
+  let banner = document.getElementById('live-banner');
+  if (!banner) {
+    banner = el('div', 'live-banner');
+    banner.id = 'live-banner';
+    banner.setAttribute('role', 'status');
+    document.body.appendChild(banner);
+  }
+  banner.innerHTML = '<span></span><button class="btn btn-primary" type="button"></button><button class="btn" type="button"></button>';
+  banner.querySelector('span').textContent = text;
+  const [go, close] = banner.querySelectorAll('button');
+  go.textContent = action;
+  close.textContent = T('Not now');
+  go.onclick = () => { banner.remove(); onAction(); };
+  close.onclick = () => banner.remove();
+}
+
+/* Resume anywhere: the open exercise is saved with the account, so another device can continue at that question. */
+function recordQuizSession(done) {
+  if (!gQuiz || gQuiz.kind !== 'data') return;
+  queue(operation('session', {
+    session: done ? null : {
+      kind: 'quiz', ref: currentScope, items: gQuiz.items, answers: gQuiz.answers,
+      position: gQuiz.index, platform: 'web', device: deviceId,
+    },
+  }));
+}
+
+function offerResume(session) {
+  if (!session || session.kind !== 'quiz' || session.device === deviceId) return;
+  // The exercise may be in any unit, not only the one open on this page.
+  const home = COURSE_UNITS.find(u => u.grammar.some(g => g.key === session.ref && g.quiz && !g.custom));
+  if (!home || session.position >= session.items.length || store.get('resume-dismissed') === session.id) return;
+  if (gQuiz && gQuiz.kind === 'data' && currentScope === session.ref) return; // already doing it here
+  const lesson = home.grammar.find(g => g.key === session.ref);
+  liveBanner(
+    T('Continue where you stopped on another device: {title}, question {n} of {total}.', {
+      title: L(lesson.title), n: session.position + 1, total: session.items.length,
+    }),
+    T('Continue'),
+    () => { pendingResume = session; openStep(home.id, session.ref); setGrammarView('exercise'); },
+  );
+  document.querySelector('#live-banner .btn:not(.btn-primary)').addEventListener('click', () => store.set('resume-dismissed', session.id));
+}
+
+/* ---------------- Streak tally ----------------
+   The stick-strikeout streak, drawn by static/core/js/tally-view.js from tally.js (the same rules, layout and
+   timing as the app): one stick per day of the streak, struck out on days that reached the daily goal. */
+let streakFacts = store.get('sync-facts', { days: [], xp: {}, goals: [] });
+const PRACTICE_KINDS = ['word', 'review', 'score', 'xp'];
+
+// The account's facts with this page's waiting operations on top: the tally moves the moment XP is earned.
+function localFacts() {
+  const days = new Set(streakFacts.days);
+  const xp = { ...streakFacts.xp };
+  const goals = [...streakFacts.goals];
+  outbox.forEach(op => {
+    if (PRACTICE_KINDS.includes(op.kind)) days.add(op.day);
+    if (op.kind === 'xp') xp[op.day] = (xp[op.day] || 0) + op.amount;
+    if (op.kind === 'goal') goals.push([op.day, op.at, op.xp, op.id]);
+  });
+  return { days: [...days], xp, goals };
+}
+
+const streakModel = () => ZemaTally.timeline({ ...localFacts(), today: ZemaTally.today() });
+
+function streakLabel(model) {
+  return [
+    model.streak ? T('{n}-day streak', { n: model.streak }) : T('No streak yet'),
+    model.todayMet ? T("Today's goal reached") : T('Today: {xp} of {goal} XP', { xp: model.todayXp, goal: model.goal }),
+    freezeText(model.freezes),
+  ].filter(Boolean).join(' · ');
+}
+
+function freezeText(n) {
+  return !n ? '' : n === 1 ? T('1 streak freeze ready') : T('{n} streak freezes ready', { n });
+}
+
+// The legend's small examples, drawn with the same colours as the tally.
+function legendIcon(state) {
+  const colour = { met: 'var(--text)', kept: 'var(--text)', today: 'var(--gold-bright)', frozen: 'var(--freeze)', missed: 'var(--border-strong)' }[state];
+  const glow = state === 'today' ? '<line x1="9" y1="3" x2="9" y2="19" stroke="var(--gold-bright)" stroke-width="9" opacity=".35" stroke-linecap="round"/>' : '';
+  const dash = state === 'missed' ? ' stroke-dasharray="3 4"' : '';
+  const strike = state === 'met' ? '<line x1="3" y1="16" x2="15" y2="6" stroke="var(--flame)" stroke-width="4" stroke-linecap="round"/>' : '';
+  return `<svg width="18" height="22" viewBox="0 0 18 22" aria-hidden="true">${glow}<line x1="9" y1="3" x2="9" y2="19" stroke="${colour}" stroke-width="3" stroke-linecap="round"${dash}/>${strike}</svg>`;
+}
+
+function renderStreakPanel(model) {
+  const headline = document.getElementById('streak-headline');
+  headline.textContent = model.streak ? T('{n}-day streak', { n: model.streak }) : T('No streak yet');
+  if (model.freezes) {
+    const freezes = el('span', 'streak-freezes');
+    freezes.textContent = freezeText(model.freezes);
+    headline.appendChild(freezes);
+  }
+  ZemaTallyView.render(document.getElementById('streak-full'), model, 'full', streakLabel(model));
+  document.getElementById('streak-today').textContent = model.todayMet
+    ? T("Today's goal reached")
+    : T('Today: {xp} of {goal} XP', { xp: model.todayXp, goal: model.goal });
+  const legend = document.getElementById('streak-legend');
+  legend.innerHTML = '';
+  [['met', T('Goal reached: struck off')], ['kept', T('Practised: streak kept')], ['today', T('Today: waiting for you')],
+    ['frozen', T('Streak freeze: a missed day covered')], ['missed', T('Missed: the streak starts again')]].forEach(([state, text]) => {
+    const item = el('span');
+    item.innerHTML = legendIcon(state);
+    item.appendChild(document.createTextNode(text));
+    legend.appendChild(item);
+  });
+  document.querySelectorAll('#goal-buttons button').forEach(b => {
+    const on = Number(b.dataset.goal) === model.goal;
+    b.classList.toggle('active', on);
+    b.setAttribute('aria-pressed', on);
+  });
+  document.getElementById('goal-note').textContent = T('{n} XP a day', { n: model.goal });
+}
+
+function renderStreak() {
+  if (!window.ZemaTally) return;
+  const model = streakModel();
+  const label = streakLabel(model);
+  const button = document.getElementById('streak-btn');
+  if (button) {
+    ZemaTallyView.render(document.getElementById('streak-tally'), model, 'compact', label);
+    button.classList.toggle('met', model.todayMet);
+    button.setAttribute('aria-label', `${T('Your streak')}: ${label}`);
+  }
+  if (document.getElementById('streak')?.open) renderStreakPanel(model);
+  const profile = document.getElementById('profile-tally');
+  if (profile && account) ZemaTallyView.render(profile, model, 'full', label);
+  renderRail();
+}
+
+function openStreak() {
+  renderStreakPanel(streakModel());
+  document.getElementById('streak').showModal();
+}
+
+// The daily goal syncs like progress: every device judges each day by the goal in force that day.
+document.querySelectorAll('#goal-buttons button').forEach(b => {
+  b.onclick = () => queue(operation('goal', { xp: Number(b.dataset.goal) }));
+});
+// A new day starts a new stick at midnight, even with the page left open.
+setInterval(() => { if (document.visibilityState === 'visible') renderStreak(); }, 60000);
+renderStreak();
+
+/* ---------------- Progress column ----------------
+   Beside the lesson on wide screens, below it on smaller ones: today's XP against the daily goal and the
+   streak, the next step with how long it takes, milestones, and the whole course's progress. Everything comes
+   from the learner's own progress; nothing is invented to look busy. */
+const RING = 2 * Math.PI * 40;
+const SECONDS_PER_WORD = 20; // a word met, heard and checked in Learn
+const MINUTES_PER_LESSON = 4;
+const FLAME = '<svg class="rail-flame" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-7 0 2 1 3 2 3 0-3-1-5 1-8z"/></svg>';
+const BADGES = [
+  { id: 'first-words', icon: icon('learn'), name: () => T('First words'), goal: f => [f.words, 10] },
+  { id: 'hundred-words', icon: icon('cards'), name: () => T('100 words'), goal: f => [f.words, 100] },
+  { id: 'halfway', icon: icon('list'), name: () => T('Halfway there'), goal: f => [f.words, Math.ceil(f.total / 2)] },
+  { id: 'first-test', icon: icon('trophy'), name: () => T('First unit test'), goal: f => [f.tests, 1] },
+  { id: 'week-streak', icon: FLAME, name: () => T('7-day streak'), goal: f => [f.streak, 7] },
+  { id: 'month-streak', icon: FLAME, name: () => T('30-day streak'), goal: f => [f.streak, 30] },
+];
+const lessonPassed = g => (grammarScores[g.key] ?? -1) >= (g.custom === 'review' ? Math.ceil(REVIEW_QUIZ_SIZE * GRAMMAR_PASS / GRAMMAR_QUIZ_SIZE) : GRAMMAR_PASS);
+
+// The next thing to do: the first section with words left, starting from the open one; then the first lesson
+// not yet passed; null when the course is done.
+function nextStep() {
+  const sections = COURSE_UNITS.flatMap(u => u.sections.map(s => ({ u, s })));
+  const from = Math.max(0, sections.findIndex(x => x.s.key === currentScope));
+  for (const { u, s } of [...sections.slice(from), ...sections.slice(0, from)]) {
+    const left = new Set(s.words.filter(w => !learned.has(w.german)).map(w => w.german)).size;
+    if (left) return { u, key: s.key, title: s.title, left, minutes: Math.max(1, Math.round(left * SECONDS_PER_WORD / 60)), lesson: false };
+  }
+  for (const u of COURSE_UNITS) {
+    const g = u.grammar.find(x => !lessonPassed(x));
+    if (g) return { u, key: g.key, title: g.title, minutes: MINUTES_PER_LESSON, lesson: true };
+  }
+  return null;
+}
+
+function goToStep(step) {
+  if (step.u !== unit) switchUnit(step.u.id);
+  goTo({ scope: step.key, mode: step.lesson ? currentMode : 'learn' });
+  document.querySelector('main')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderRail() {
+  const rail = document.getElementById('rail');
+  if (!rail || !railReady || !window.ZemaTally) return;
+  const model = streakModel();
+  const words = new Set(COURSE_UNITS.flatMap(u => u.sections.flatMap(s => s.words.map(w => w.german))));
+  const known = [...words].filter(g => learned.has(g)).length;
+  const lessons = COURSE_UNITS.flatMap(u => u.grammar);
+  const passed = lessons.filter(lessonPassed).length;
+  const tests = COURSE_UNITS.filter(u => u.grammar.some(g => g.custom === 'review' && lessonPassed(g))).length;
+  const facts = { words: known, total: words.size, tests, streak: model.streak };
+  const share = Math.min(1, model.todayXp / Math.max(1, model.goal));
+  const step = nextStep();
+
+  // Badges stay earned once earned, even if a streak later breaks.
+  const earned = new Set(store.get('badges-earned', []));
+  const fresh = BADGES.filter(b => { const [have, need] = b.goal(facts); return have >= need && !earned.has(b.id); }).map(b => b.id);
+  fresh.forEach(id => earned.add(id));
+  if (fresh.length) store.set('badges-earned', [...earned]);
+
+  if (!rail.childElementCount) {
+    rail.innerHTML = `
+      <section class="rail-card rail-today">
+        <button class="rail-today-btn" type="button" onclick="openStreak()">
+          <span class="rail-ring" aria-hidden="true">
+            <svg viewBox="0 0 96 96"><circle class="ring-track" cx="48" cy="48" r="40"/><circle class="ring-fill" cx="48" cy="48" r="40" stroke-dasharray="${RING}" stroke-dashoffset="${RING}"/></svg>
+            <span class="ring-centre"><b class="ring-xp"></b><small class="ring-goal"></small></span>
+          </span>
+          <span class="rail-today-text">
+            <span class="rail-kicker">${T('Today')}</span>
+            <span class="rail-streak">${FLAME}<b class="streak-count"></b></span>
+            <span class="rail-nudge"></span>
+            <span class="rail-tally"></span>
+          </span>
+        </button>
+      </section>
+      <section class="rail-card rail-next" aria-live="polite"></section>
+      <section class="rail-card rail-badges">
+        <h2 class="rail-title">${T('Milestones')}</h2>
+        <ul class="milestone-grid"></ul>
+      </section>
+      <section class="rail-card rail-course">
+        <h2 class="rail-title">${T('Your course')}</h2>
+        <div class="rail-meter"><span class="rail-meter-label"></span><span class="rail-bar"><i class="rail-words"></i></span></div>
+        <div class="rail-meter"><span class="rail-meter-label"></span><span class="rail-bar gold"><i class="rail-lessons"></i></span></div>
+      </section>`;
+  }
+
+  // Today: the ring fills with today's XP; it turns gold once the goal is reached.
+  const today = rail.querySelector('.rail-today');
+  today.classList.toggle('met', model.todayMet);
+  requestAnimationFrame(() => { rail.querySelector('.ring-fill').style.strokeDashoffset = RING * (1 - share); });
+  const xp = rail.querySelector('.ring-xp');
+  xp.textContent = model.todayXp;
+  xp.classList.toggle('long', String(model.todayXp).length > 3); // a big day still fits inside the ring
+  rail.querySelector('.ring-goal').textContent = T('of {goal} XP', { goal: model.goal });
+  rail.querySelector('.streak-count').textContent = model.streak ? T('{n}-day streak', { n: model.streak }) : T('No streak yet');
+  rail.querySelector('.rail-nudge').textContent = model.todayMet
+    ? T('Today is struck off. See you tomorrow!')
+    : T('{n} XP more strikes off today', { n: model.goal - model.todayXp }) + (model.freezes ? ` · ${freezeText(model.freezes)}` : '');
+  ZemaTallyView.render(rail.querySelector('.rail-tally'), model, 'compact', streakLabel(model));
+  rail.querySelector('.rail-today-btn').setAttribute('aria-label', `${T('Your streak')}: ${streakLabel(model)}`);
+
+  // Up next: the exact next step, with how much is left and roughly how long it takes.
+  const next = rail.querySelector('.rail-next');
+  next.innerHTML = '';
+  if (step) {
+    const here = step.key === currentScope;
+    next.append(el('span', 'rail-kicker', here ? T('Keep going') : T('Up next')), el('h2', 'rail-next-title', step.title));
+    next.append(el('p', 'rail-meta', `${unitName(step.u)} · ${step.lesson ? lessonsLabel() : T('{n} words to learn', { n: step.left })}`));
+    const go = el('button', 'btn btn-primary rail-cta');
+    go.type = 'button';
+    go.innerHTML = `<span></span>${icon('arrow')}`;
+    go.firstChild.textContent = `${step.lesson ? T('Start lesson') : here ? T('Continue') : T('Begin')} · ${T('about {n} min', { n: step.minutes })}`;
+    go.onclick = () => goToStep(step);
+    next.appendChild(go);
+  } else {
+    next.append(el('span', 'rail-kicker', T('Well done')), el('h2', 'rail-next-title', T('You have finished the course')));
+  }
+
+  // Milestones: earned ones in gold; the rest show how far there is to go.
+  const grid = rail.querySelector('.milestone-grid');
+  grid.innerHTML = '';
+  BADGES.forEach(b => {
+    const [have, need] = b.goal(facts);
+    const on = earned.has(b.id);
+    const item = el('li', `milestone${on ? ' earned' : ''}${fresh.includes(b.id) ? ' just' : ''}`);
+    item.innerHTML = `<span class="milestone-medal" aria-hidden="true">${b.icon}</span>`;
+    item.append(el('span', 'milestone-name', b.name()), el('span', 'milestone-progress', on ? T('Earned') : `${Math.min(have, need)}/${need}`));
+    item.setAttribute('aria-label', `${b.name()}: ${on ? T('Earned') : `${Math.min(have, need)} / ${need}`}`);
+    grid.appendChild(item);
+  });
+
+  // The whole course
+  const [wordsLabel, lessonsLabelEl] = rail.querySelectorAll('.rail-meter-label');
+  wordsLabel.textContent = T('{known} of {total} words', { known, total: words.size });
+  lessonsLabelEl.textContent = T('{passed} of {total} lessons', { passed, total: lessons.length });
+  requestAnimationFrame(() => {
+    rail.querySelector('.rail-words').style.width = `${Math.round(known / words.size * 100)}%`;
+    rail.querySelector('.rail-lessons').style.width = `${Math.round(passed / Math.max(1, lessons.length) * 100)}%`;
+  });
 }
 
 async function loadAccount() {
@@ -426,13 +857,14 @@ async function loadAccount() {
     account = null;
   }
   renderAccountButton();
-  if (account) syncProgress(true);
+  if (account) startSync();
+  else connectLive();
 }
 
 addEventListener('pagehide', () => {
-  if (!account || !syncTimer) return;
-  clearTimeout(syncTimer);
-  fetch(APP.api.progress, { method: 'PUT', keepalive: true, credentials: 'same-origin', headers: jsonHeaders(), body: JSON.stringify({ ...localProgress(), replace: true }) }).catch(() => {});
+  if (!account || !outbox.length) return;
+  // keepalive lets the request finish after the page is gone.
+  fetch(APP.api.sync, { method: 'POST', keepalive: true, credentials: 'same-origin', headers: jsonHeaders(), body: JSON.stringify({ ops: outbox.slice(0, 500), device: deviceId }) }).catch(() => {});
 });
 
 function openSettings() { document.getElementById('settings').showModal(); }
@@ -466,43 +898,377 @@ function switchUnit(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// The course as a woven thread: one bead per unit. A bead's ring fills with the words learned, it turns
-// green when the unit test is passed, and the thread is woven up to the current unit.
+// The course as an engraved map in the site's own colours: one town per unit along a road, with each unit's
+// title and progress as its place name. The road is inked where the learner has travelled and dashed
+// ahead; the current town is circled by hand, a passed unit test plants a pennant, the last unit is a castle.
+// The map runs edge to edge and can be panned and zoomed (drag, pinch, ctrl + scroll, the buttons).
+// A strict zig-zag: each name sits on the other side from its neighbours (below in a dip, above on a crest),
+// so names never run into each other.
+const MAP_Y = [76, 30, 70, 26, 74, 34, 78, 28, 70, 36]; // hand-placed heights (% of the town area), repeating
+
+// A smooth road through the points (Catmull-Rom), one cubic segment per leg so it can be split anywhere.
+function routeLegs(pts) {
+  return pts.slice(0, -1).map((p1, i) => {
+    const p0 = pts[i - 1] || p1, p2 = pts[i + 1], p3 = pts[i + 2] || p2;
+    const r = v => Math.round(v * 100) / 100;
+    return `C${r(p1.x + (p2.x - p0.x) / 6)} ${r(p1.y + (p2.y - p0.y) / 6)} ${r(p2.x - (p3.x - p1.x) / 6)} ${r(p2.y - (p3.y - p1.y) / 6)} ${p2.x} ${p2.y}`;
+  });
+}
+
+// Under the road: soft washes of colour and a sea in the corner. Decoration only; shapes stretch to fit.
+const MAP_BASE = `
+  <defs>
+    <filter id="m-rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="7"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter>
+  </defs>
+  <g filter="url(#m-rough)">
+    <path class="m-wash m-wash-1" d="M-10 210C70 230 150 250 210 310S290 390 270 410H-10Z"/>
+    <path class="m-wash m-wash-2" d="M270 410C310 330 350 280 430 262S570 244 630 284 670 364 650 410Z"/>
+    <path class="m-wash m-wash-3" d="M650 410C670 300 630 220 710 160S870 60 1010 80V410Z"/>
+    <path class="m-wash m-wash-4" d="M420 -10C440 60 520 92 600 82S700 22 720 -10Z"/>
+    <path class="m-sea" d="M-10 -10H230C200 40 170 90 120 130S40 190 -10 200Z"/>
+    <path class="m-coast-red" d="M-10 200C40 190 70 170 120 130S200 40 230 -10"/>
+    <path class="m-coast" d="M-10 200C40 190 70 170 120 130S200 40 230 -10"/>
+  </g>`;
+
+// Each unit's place on the map is an engraved emblem of its topic, drawn like the symbols on an old map: ink
+// outlines, gold washes and hatched shading, standing on a washed ground. They share one 24-wide grid with the
+// ground at y = 20, so every emblem stands on its point on the road. A pennant flies over a passed unit test.
+const MAP_EMBLEMS = {
+  // Start: pronunciation and numbers, a herald's speaking-horn
+  0: `<path class="town-tower" d="M2 13L16 7V19L2 15Z"/><path class="town-tower" d="M0 13h2v2H0z"/>
+      <ellipse class="town-accent" cx="16" cy="13" rx="2.5" ry="6"/><path class="town-hatch" d="M6 12.5v3M9 11v5.5M12 9.5v7"/>
+      <path class="town-door" d="M20 9q3 4 0 8M22.5 7q4.5 6 0 12"/>`,
+  // 1: introductions and greetings, a banner on two posts
+  1: `<path class="town-door" d="M3 13V20M21 13V20"/>
+      <path class="town-tower" d="M1 4C5 2 9 6 12 4S19 2 23 4V13C19 11 15 15 12 13S5 11 1 13Z"/>
+      <ellipse class="town-accent" cx="1" cy="8.5" rx="1.8" ry="4.5"/><ellipse class="town-accent" cx="23" cy="8.5" rx="1.8" ry="4.5"/>
+      <path class="town-hatch" d="M5 7.5h13M5 10h9"/>`,
+  // 2: family, a family tree
+  2: `<path class="town-tower" d="M10.5 20V12h3v8"/><path class="town-door" d="M10.5 20q-2 0-3.5 1M13.5 20q2 0 3.5 1"/>
+      <path class="town-leaf" d="M12 0C6 0 3 4 4 8C1 9 1 14 5 14H19C23 14 23 9 20 8C21 4 18 0 12 0Z"/>
+      <path class="town-hatch" d="M16 4l3 3M15 7l4 4M13 10l3 3M8 3l-2 2"/>`,
+  // 3: food and shopping, a market stall with its awning and produce
+  3: `<path class="town-door" d="M4 12V5M20 12V5"/><path class="town-tower" d="M3 12h18v8H3z"/>
+      <path class="town-accent" d="M2 5H22L20.5 9H3.5Z"/><path class="town-door" d="M3.5 9q2 2 4.25 0q2 2 4.25 0q2 2 4.25 0q2 2 4.25 0M8 5l-.5 4M12 5v4M16 5l.5 4"/>
+      <circle class="town-accent" cx="8" cy="10.5" r="1.8"/><circle class="town-leaf" cx="12" cy="10.8" r="1.6"/><ellipse class="town-accent" cx="16" cy="11" rx="2.4" ry="1.4"/>
+      <path class="town-hatch" d="M5 14v5M8 14v5M11 14v5M14 14v5M17 14v5"/>`,
+  // 4: home and living, a cottage with a smoking chimney
+  4: `<path class="town-door" d="M17.5 1q-2-2 0-4q2-2 0-4"/><path class="town-tower" d="M16 7V1h3v8"/>
+      <path class="town-tower" d="M4 20V10h16v10Z"/><path class="town-accent" d="M2 11L12 2L22 11Z"/>
+      <path class="town-tower" d="M10 20v-5h4v5"/><path class="town-tower" d="M6 13h3v3H6z"/><path class="town-tower" d="M15 13h3v3h-3z"/>
+      <path class="town-hatch" d="M8 8.5l2 2M12 5.5l3 3M15 8l2 2"/>`,
+  // 5: daily routine and time, an hourglass
+  5: `<path class="town-door" d="M5 2v16M19 2v16"/><path class="town-tower" d="M3 0h18v2H3zM3 18h18v2H3z"/>
+      <path class="town-tower" d="M7 2C7 8 11 9 11 10C11 11 7 12 7 18H17C17 12 13 11 13 10C13 9 17 8 17 2Z"/>
+      <path class="town-accent" d="M8.6 5H15.4C15 7.5 12.6 8.6 12 9.6C11.4 8.6 9 7.5 8.6 5Z"/>
+      <path class="town-accent" d="M8 18C9 15.5 11 14.2 12 13.2C13 14.2 15 15.5 16 18Z"/><path class="town-door" d="M12 10v3.4"/>`,
+  // 6: weather, holidays and hobbies, a sun behind a cloud
+  6: `<path class="town-door" d="M9 -2v-3M9 16v3M0 7h-3M18 7h3M2.6 0.6l-2-2M15.4 0.6l2-2M2.6 13.4l-2 2"/>
+      <circle class="town-accent" cx="9" cy="7" r="5.5"/><path class="town-hatch" d="M6.5 6.5h.01M11.5 6.5h.01M7 9.5q2 1.5 4 0"/>
+      <path class="town-tower" d="M8 19C4.5 19 4.5 13.5 9 13.5C9 9.5 15.5 9.5 16.5 12.5C19.5 11.5 22.5 13.5 21.5 16.5C22.5 18.5 20.5 19.5 19 19Z"/>
+      <path class="town-hatch" d="M10 17h9M12 15.5h6"/>`,
+  // 7: jobs and abilities, a windmill at work
+  7: `<path class="town-tower" d="M8 20L10 8H14L16 20Z"/><path class="town-accent" d="M9.5 8L12 4.5L14.5 8Z"/>
+      <path class="town-tower" d="M11 20v-3.5a1 1 0 0 1 2 0V20"/><path class="town-hatch" d="M11 11h2.5M10.5 14h3.5"/>
+      ${[45, 135, 225, 315].map(a => `<g transform="rotate(${a} 12 6)"><path class="town-door" d="M12 6V-4"/><path class="town-tower" d="M12.4 4.5V-3.5H15.4V4.5Z"/><path class="town-hatch" d="M12.4 -1H15.4M12.4 1.6H15.4"/></g>`).join('')}
+      <circle class="town-accent" cx="12" cy="6" r="1.2"/>`,
+  // 8: travel and transport, a sailing ship on the waves
+  8: `<path class="town-door" d="M12 13V-6"/><path class="town-accent" d="M12 -6L17.5 -4.8L12 -3.6Z"/>
+      <path class="town-tower" d="M6 -3Q12 -1 18 -3V9Q12 11 6 9Z"/><path class="town-hatch" d="M8 1Q12 2.4 16 1M8 5Q12 6.4 16 5"/>
+      <path class="town-tower" d="M1 13H23L20 18.5H4Z"/><path class="town-accent" d="M2.2 14.6H21.8L21.3 15.6H2.7Z"/>
+      <path class="town-wave" d="M0 20.5q3-2 6 0t6 0t6 0t6 0"/>`,
+  // 9: yesterday and last year, the journey's end: a columned gate
+  9: `<path class="town-accent" d="M9.5 3l1-2.6h3l1 2.6"/><path class="town-tower" d="M5 3h14v3H5z"/><path class="town-tower" d="M1 6h22v2.4H1z"/>
+      <path class="town-tower" d="M2.2 8.4h1.8V18H2.2zM6.6 8.4h1.8V18H6.6zM11.1 8.4h1.8V18h-1.8zM15.6 8.4h1.8V18h-1.8zM20 8.4h1.8V18H20z"/>
+      <path class="town-tower" d="M0 18h24v2H0z"/><path class="town-hatch" d="M7 4.5h10"/>`,
+};
+// Any unit without its own emblem keeps the engraved town.
+const MAP_TOWN_EMBLEM = `<path class="town-tower" d="M3 20V11l3-4 3 4v9M9 20V6l3-6 3 6v14M15 20V12l3-4 3 4v8"/>
+  <path class="town-door" d="M11 20v-3a1 1 0 0 1 2 0v3"/>`;
+
+const MAP_TOWN = (id, flag) => `<svg class="town" viewBox="-2 -12 28 34" aria-hidden="true">
+  <ellipse class="town-ground" cx="12" cy="20" rx="12" ry="2.6"/>
+  ${MAP_EMBLEMS[id] || MAP_TOWN_EMBLEM}
+  ${flag ? '<path class="town-flag-pole" d="M24 4V-9"/><path class="town-flag" d="M24 -9L30 -7 24 -5Z"/>' : ''}
+</svg>`;
+
 function renderUnits() {
   const nav = document.getElementById('units');
   nav.innerHTML = '';
   const here = COURSE_UNITS.indexOf(unit);
   const testPass = Math.ceil(REVIEW_QUIZ_SIZE * GRAMMAR_PASS / GRAMMAR_QUIZ_SIZE);
+  const n = COURSE_UNITS.length;
+  // Towns are spread across the whole map, from edge to edge, and at full view clear of the zoom controls.
+  previewUnit(null); // the title below the towns is in place before the map is measured
+  const { w, vw, towns, top, h } = mapSize(nav);
+  const right = w > vw ? 92 : 24 + 52 + 96; // clear of the zoom controls at the right edge
+  const at = COURSE_UNITS.map((u, i) => ({
+    x: Math.round((n > 1 ? 92 + i * (w - 92 - right) / (n - 1) : w / 2) / w * 10000) / 100,
+    y: Math.round((top + MAP_Y[i % MAP_Y.length] * towns / 100) / h * 10000) / 100,
+  }));
+  const legs = routeLegs(at);
+  const travelled = `M${at[0].x} ${at[0].y}${legs.slice(0, here).join('')}`;
+  const ahead = `M${at[here].x} ${at[here].y}${legs.slice(here).join('')}`;
+  const map = el('div', 'map');
+  map.innerHTML = `<svg class="map-base" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">${MAP_BASE}</svg>
+    <svg class="map-road" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      ${here < n - 1 ? `<path class="road-ahead" d="${ahead}"/>` : ''}
+      ${here > 0 ? `<path class="road" d="${travelled}"/>` : ''}
+    </svg>`;
+  nav.appendChild(map);
   COURSE_UNITS.forEach((u, i) => {
-    if (i) {
-      const thread = el('span', i <= here ? 'thread woven' : 'thread');
-      thread.setAttribute('aria-hidden', 'true');
-      nav.appendChild(thread);
-    }
     const words = new Map();
     u.sections.forEach(s => s.words.forEach(w => words.set(w.german, w)));
     const known = [...words.keys()].filter(g => learned.has(g)).length;
     const test = u.grammar.find(g => g.custom === 'review');
     const passed = test && grammarScores[test.key] >= testPass;
-    const btn = el('button', 'bead');
+    const last = i === n - 1;
+    // The name goes on the side the road is not: above a town on a crest, below one in a dip.
+    const near = [at[i - 1], at[i + 1]].filter(Boolean);
+    const above = at[i].y < near.reduce((t, p) => t + p.y, 0) / near.length;
+    const btn = el('button', `bead${last ? ' destination' : ''}${above ? ' label-above' : ''}`);
     btn.type = 'button';
     btn.classList.toggle('active', u === unit);
     btn.classList.toggle('done', !!passed);
     if (u === unit) btn.setAttribute('aria-current', 'true');
-    btn.style.setProperty('--p', Math.round(known / words.size * 100));
-    btn.innerHTML = `<span class="bead-core">${u.label ? icon('speaker') : u.id}</span>`;
+    btn.style.left = `${at[i].x}%`;
+    btn.style.top = `${at[i].y}%`;
+    btn.innerHTML = MAP_TOWN(u.id, passed) + (u === unit
+      ? '<svg class="ink-ring" viewBox="0 0 60 44" aria-hidden="true"><path pathLength="100" d="M44 6C30 0 8 4 4 18S16 42 34 40 58 28 55 15 40 2 26 5"/></svg>'
+      : '');
+    const label = el('span', 'pin-label');
+    label.setAttribute('aria-hidden', 'true');
+    label.append(el('b', '', u.title), el('small', '', `${unitName(u)} · ${Math.round(known / words.size * 100)}%${passed ? ' ✓' : ''}`));
+    btn.appendChild(label);
     btn.setAttribute('aria-label', `${unitName(u)}: ${u.title}. ${T('{known} of {total} words learned', { known, total: words.size })}${passed ? ` · ${T('Unit test passed')}` : ''}`);
     btn.onclick = () => switchUnit(u.id);
-    btn.onpointerenter = btn.onfocus = () => previewUnit(u);
+    btn.onpointerenter = () => previewUnit(u);
+    btn.onfocus = () => {
+      previewUnit(u);
+      // Tabbing to a town that is off screen brings it into view.
+      const r = btn.getBoundingClientRect(), v = nav.getBoundingClientRect();
+      if (r.left < v.left + 40 || r.right > v.right - 40 || r.top < v.top || r.bottom > v.bottom) centreMapOn(i, true);
+    };
     btn.onpointerleave = btn.onblur = () => previewUnit(null);
-    nav.appendChild(btn);
+    // Left and right arrows walk the road from town to town.
+    btn.onkeydown = e => {
+      const step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      const next = step && map.querySelectorAll('.bead')[i + step];
+      if (next) { e.preventDefault(); next.focus(); }
+    };
+    map.appendChild(btn);
   });
-  // Keep the current unit visible when the thread scrolls (phones).
-  const active = nav.querySelector('.bead.active');
-  if (active && nav.scrollWidth > nav.clientWidth) nav.scrollLeft = active.offsetLeft - (nav.clientWidth - active.offsetWidth) / 2;
+  // The controls sit outside the faded viewport, over the map.
+  const journey = nav.parentElement;
+  journey.querySelector('.map-controls')?.remove();
+  journey.appendChild(mapControls());
+  mapView.points = at;
+  mapView.here = here;
+  layoutMap();
+  // A new unit brings its town into view; re-rendering the same unit keeps the learner's pan and zoom.
+  if (mapView.centred !== unit.id) { mapView.centred = unit.id; centreMapOn(here); }
+  wireMap(nav);
   previewUnit(null);
   document.getElementById('brand-sub').textContent = `${unitName(unit)} · ${unit.title}`;
   document.getElementById('part-grammar-name').textContent = lessonsLabel();
+}
+
+/* ---------------- Map view: pan and zoom ----------------
+   The map is drawn at a size fitted to the screen (.map) and moved inside its edge-to-edge viewport (#units)
+   with one transform. Towns and labels are scaled back by the zoom, so they stay the same size, as on any map. */
+const mapView = { z: 1, tx: 0, ty: 0, w: 0, h: 0, points: [], here: 0, centred: null, wired: false };
+const MAP_ZOOM = [1, 3];
+
+// Fitted to the screen: as wide as the page, tall enough for the towns to spread out (phones get a wider map
+// to pan across).
+// The map fills the whole top of the page: it runs up behind the top bar, the towns use the middle, and the
+// unit's title and the Vocabulary | Grammar switch sit over its lower edge.
+function mapSize(nav) {
+  const vw = nav.clientWidth;
+  const w = Math.max(1280, vw); // always the full width of the page; phones get a wider map to pan across
+  const towns = Math.round(Math.max(320, Math.min(w / 4.2, 380)));
+  const bar = document.querySelector('.topbar')?.offsetHeight || 0;
+  const head = nav.parentElement.querySelector('.journey-head')?.offsetHeight || 0;
+  return { vw, w, towns, bar, top: bar + 8, h: bar + 8 + towns + head + 8 };
+}
+
+function layoutMap() {
+  const nav = document.getElementById('units');
+  const map = nav.querySelector('.map');
+  if (!map) return;
+  ({ w: mapView.w, h: mapView.h } = mapSize(nav));
+  map.style.width = `${mapView.w}px`;
+  map.style.height = `${mapView.h}px`;
+  nav.style.height = `${mapView.h}px`;
+  const size = mapSize(nav);
+  nav.parentElement.style.setProperty('--towns-h', `${size.towns}px`);
+  nav.parentElement.style.setProperty('--towns-top', `${size.top}px`);
+  nav.parentElement.style.setProperty('--topbar-h', `${size.bar}px`);
+  applyMapView();
+}
+
+function applyMapView() {
+  const nav = document.getElementById('units');
+  const map = nav.querySelector('.map');
+  if (!map) return;
+  const v = mapView, vw = nav.clientWidth, vh = v.h;
+  v.z = Math.min(MAP_ZOOM[1], Math.max(MAP_ZOOM[0], v.z));
+  const cw = v.w * v.z, ch = v.h * v.z;
+  v.tx = cw <= vw ? (vw - cw) / 2 : Math.min(0, Math.max(vw - cw, v.tx));
+  v.ty = ch <= vh ? 0 : Math.min(0, Math.max(vh - ch, v.ty));
+  map.style.transform = `translate(${v.tx}px, ${v.ty}px) scale(${v.z})`;
+  map.style.setProperty('--z', v.z);
+  const pannable = cw > vw + 1 || v.z > 1;
+  nav.classList.toggle('pannable', pannable);
+  // Zoomed in, a finger drag moves the map in every direction; at full view, up and down still scroll the page.
+  nav.style.touchAction = v.z > 1 ? 'none' : 'pan-y';
+  // Zoomed in, the map slides under the top bar: the bar turns solid, as it does when the page scrolls.
+  document.querySelector('.topbar')?.classList.toggle('over-map', v.z > 1);
+  const zin = document.querySelector('[data-map="in"]'), zout = document.querySelector('[data-map="out"]');
+  if (zin) zin.disabled = v.z >= MAP_ZOOM[1];
+  if (zout) zout.disabled = v.z <= MAP_ZOOM[0];
+}
+
+// Zoom keeping the point under (cx, cy) in place: the cursor, the pinch or the middle of the view.
+function zoomMapAt(z, cx, cy) {
+  const v = mapView;
+  const nz = Math.min(MAP_ZOOM[1], Math.max(MAP_ZOOM[0], z));
+  v.tx = cx - (cx - v.tx) * nz / v.z;
+  v.ty = cy - (cy - v.ty) * nz / v.z;
+  v.z = nz;
+  applyMapView();
+}
+
+function centreMapOn(i, smooth = false) {
+  const nav = document.getElementById('units');
+  const p = mapView.points[i];
+  if (!p) return;
+  mapView.tx = nav.clientWidth / 2 - p.x / 100 * mapView.w * mapView.z;
+  mapView.ty = mapView.h / 2 - p.y / 100 * mapView.h * mapView.z;
+  const map = nav.querySelector('.map');
+  if (smooth && map) {
+    map.classList.add('easing');
+    setTimeout(() => map.classList.remove('easing'), 400);
+  }
+  applyMapView();
+}
+
+function mapControls() {
+  const box = el('div', 'map-controls');
+  const add = (key, label, svg, fn) => {
+    const b = el('button', 'map-ctl');
+    b.type = 'button';
+    b.dataset.map = key;
+    b.setAttribute('aria-label', label);
+    b.title = label;
+    b.innerHTML = svg;
+    b.onclick = e => { e.stopPropagation(); fn(); };
+    box.appendChild(b);
+  };
+  const mid = () => [document.getElementById('units').clientWidth / 2, mapView.h / 2];
+  add('in', T('Zoom in'), icon('plus'), () => { const [x, y] = mid(); smoothZoom(mapView.z * 1.5, x, y); });
+  add('out', T('Zoom out'), icon('dash'), () => { const [x, y] = mid(); smoothZoom(mapView.z / 1.5, x, y); });
+  box.appendChild(el('span', 'map-ctl-rule'));
+  add('here', T('Show where I am'), icon('locate'), () => centreMapOn(mapView.here, true));
+  return box;
+}
+
+function smoothZoom(z, x, y) {
+  const map = document.querySelector('#units .map');
+  map?.classList.add('easing');
+  setTimeout(() => map?.classList.remove('easing'), 400);
+  zoomMapAt(z, x, y);
+}
+
+// Drag to pan (mouse, pen, one finger), pinch to zoom, ctrl + scroll or a trackpad pinch to zoom, sideways
+// scroll to pan, double-click to zoom in, + and - keys. A drag never counts as a click on a town.
+function wireMap(nav) {
+  if (mapView.wired) return;
+  mapView.wired = true;
+  const pointers = new Map();
+  let drag = null, pinch = null, moved = false;
+  const local = e => { const r = nav.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+
+  nav.addEventListener('pointerdown', e => {
+    if (e.target.closest('.map-controls') || (e.pointerType === 'mouse' && e.button !== 0)) return;
+    pointers.set(e.pointerId, local(e));
+    moved = false;
+    if (pointers.size === 1) drag = { x: e.clientX, y: e.clientY, tx: mapView.tx, ty: mapView.ty, id: e.pointerId };
+    if (pointers.size === 2) {
+      const [a, b] = [...pointers.values()];
+      pinch = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), z: mapView.z };
+      drag = null;
+    }
+  });
+  nav.addEventListener('pointermove', e => {
+    if (!pointers.has(e.pointerId)) return;
+    pointers.set(e.pointerId, local(e));
+    if (pinch && pointers.size === 2) {
+      const [a, b] = [...pointers.values()];
+      moved = true;
+      zoomMapAt(pinch.z * Math.hypot(a[0] - b[0], a[1] - b[1]) / pinch.d, (a[0] + b[0]) / 2, (a[1] + b[1]) / 2);
+      return;
+    }
+    if (!drag || e.pointerId !== drag.id) return;
+    const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (!moved && Math.hypot(dx, dy) < 5) return;
+    if (!moved) { moved = true; nav.setPointerCapture(e.pointerId); nav.classList.add('dragging'); }
+    mapView.tx = drag.tx + dx;
+    mapView.ty = drag.ty + dy;
+    applyMapView();
+  });
+  const end = e => {
+    pointers.delete(e.pointerId);
+    if (pointers.size < 2) pinch = null;
+    if (!pointers.size) { drag = null; nav.classList.remove('dragging'); }
+  };
+  nav.addEventListener('pointerup', end);
+  nav.addEventListener('pointercancel', end);
+  // Swallow the click that ends a drag, so panning across a town does not open it.
+  nav.addEventListener('click', e => { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
+
+  nav.addEventListener('wheel', e => {
+    const [x, y] = local(e);
+    if (e.ctrlKey || e.metaKey) {
+      e.preventDefault();
+      zoomMapAt(mapView.z * Math.exp(-e.deltaY * 0.01), x, y);
+    } else if (Math.abs(e.deltaX) > Math.abs(e.deltaY) && nav.classList.contains('pannable')) {
+      e.preventDefault();
+      mapView.tx -= e.deltaX;
+      applyMapView();
+    }
+    // Plain up-and-down scrolling is left to the page.
+  }, { passive: false });
+  nav.addEventListener('dblclick', e => {
+    if (e.target.closest('.bead, .map-controls')) return;
+    const [x, y] = local(e);
+    smoothZoom(mapView.z * 1.6, x, y);
+  });
+  nav.addEventListener('keydown', e => {
+    if (e.target.closest('.map-controls') && (e.key === 'Enter' || e.key === ' ')) return;
+    const [x, y] = [nav.clientWidth / 2, mapView.h / 2];
+    if (e.key === '+' || e.key === '=') { e.preventDefault(); smoothZoom(mapView.z * 1.5, x, y); }
+    else if (e.key === '-' || e.key === '_') { e.preventDefault(); smoothZoom(mapView.z / 1.5, x, y); }
+  });
+  // A new width re-spreads the towns (they keep clear of the controls); the zoom is kept.
+  let resizeTimer;
+  let lastWidth = nav.clientWidth;
+  addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (nav.clientWidth === lastWidth) return;
+      lastWidth = nav.clientWidth;
+      renderUnits();
+    }, 120);
+  });
+}
+
+// The top bar is see-through over the map at the top of the page, and solid once the page scrolls under it.
+{
+  const bar = document.querySelector('.topbar');
+  const onScroll = () => bar?.classList.toggle('scrolled', window.scrollY > 4);
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 }
 
 // Pointing at a bead shows where it leads; leaving it shows the current unit again.
@@ -548,6 +1314,7 @@ function goTo({ scope = currentScope, mode = currentMode }) {
 }
 
 function renderPage() {
+  renderRail(); // the next step depends on the open section
   const grammar = GRAMMAR[currentScope];
   if (currentMode !== 'speak' || grammar) stopSpeakSession(true);
   document.querySelector('.tabs').hidden = !!grammar;
@@ -903,6 +1670,7 @@ function updateProgress() {
   renderStats();
   renderToc();
   if (document.getElementById('units').childElementCount) renderUnits();
+  renderRail();
 }
 
 /* ---------------- Learn ---------------- */
@@ -1454,9 +2222,6 @@ function reviewQuestions() {
 
 function makeQuestions(kind) {
   if (kind === 'review') return reviewQuestions();
-  if (kind === 'data') {
-    return shuffle([...GRAMMAR[currentScope].quiz.items]).slice(0, quizSize(currentScope)).map(forLanguage).map(withChoices);
-  }
   if (kind === 'present') {
     const all = [];
     VERBS.forEach(v => QUIZ_PRONOUNS.forEach(([p, person, en]) => {
@@ -1476,7 +2241,23 @@ function makeQuestions(kind) {
 }
 
 function startGrammarQuiz(kind) {
-  gQuiz = { kind, questions: makeQuestions(kind), index: 0, score: 0 };
+  if (kind !== 'data') {
+    gQuiz = { kind, questions: makeQuestions(kind), index: 0, score: 0, answers: [] };
+    return showGrammarQuestion();
+  }
+  // Lesson exercises are drawn as item numbers, so another device can rebuild the same questions.
+  const all = GRAMMAR[currentScope].quiz.items;
+  const resume = pendingResume && pendingResume.ref === currentScope ? pendingResume : null;
+  pendingResume = null;
+  const items = resume ? resume.items.filter(i => i >= 0 && i < all.length) : shuffle(all.map((_, i) => i)).slice(0, quizSize(currentScope));
+  const answers = resume ? resume.answers.slice(0, resume.position) : [];
+  gQuiz = {
+    kind, items, answers,
+    questions: items.map(i => all[i]).map(forLanguage).map(withChoices),
+    index: answers.length,
+    score: answers.filter(Boolean).length,
+  };
+  recordQuizSession(false);
   showGrammarQuestion();
 }
 
@@ -1532,7 +2313,11 @@ function showGrammarQuestion() {
     prompt.after(play);
     speak(q.say);
   }
-  box.querySelector('#g-next button').onclick = () => { gQuiz.index++; showGrammarQuestion(); };
+  box.querySelector('#g-next button').onclick = () => {
+    gQuiz.index++;
+    if (gQuiz.index < gQuiz.questions.length) recordQuizSession(false); // the result screen clears it instead
+    showGrammarQuestion();
+  };
   if (builds) return (q.type === 'order' ? buildOrder : buildWrite)(box, q);
   // For endings the blank sits right after the stem, with no space.
   if (gQuiz.kind === 'present') box.querySelector('.g-q-prompt').innerHTML = `<span></span><span class="blank">?</span>`;
@@ -1562,6 +2347,8 @@ function answerGrammar(option, chip) {
 function finishGrammar(right, note) {
   const q = gQuiz.questions[gQuiz.index];
   if (right) gQuiz.score++;
+  gQuiz.answers.push(right);
+  if (right && gQuiz.kind === 'data') queue(operation('xp', { amount: XP.answerRight }));
   const label = q.type === 'listen' ? T('You heard')
     : q.type === 'order' || q.type === 'write' || !q.say ? T('Answer')
     : q.say !== q.answer && q.type === 'choose' ? T('The word') : T('Correct form');
@@ -1664,12 +2451,18 @@ function explainEnding(q) {
 
 function showGrammarResult() {
   const { kind, score, questions } = gQuiz;
+  if (kind === 'data') {
+    const bonus = (score >= passMark(currentScope) ? XP.lessonPassed : 0) + (score === questions.length ? XP.perfect : 0);
+    if (bonus) queue(operation('xp', { amount: bonus }));
+    recordQuizSession(true);
+  }
   const best = Math.max(score, grammarScores[currentScope] || 0);
   grammarScores[currentScope] = best;
   store.set('grammar-scores', grammarScores);
   usage.grammar(currentScope, score);
   renderStats();
   renderToc();
+  renderRail();
   const box = document.getElementById('g-quiz');
   box.innerHTML = '';
   const keys = Object.keys(GRAMMAR);
@@ -1683,7 +2476,11 @@ function showGrammarResult() {
     buttons,
   });
   panel.classList.remove('panel', 'narrow');
+  const streak = el('div', 'tally-full result-tally');
+  panel.appendChild(streak);
   box.appendChild(panel);
+  const model = streakModel();
+  ZemaTallyView.render(streak, model, 'full', streakLabel(model));
 }
 
 /* ---------------- Speak ---------------- */
@@ -2788,4 +3585,6 @@ function openAccountFromLink() {
   renderUnits();
   updateProgress();
   renderPage();
+  railReady = true;
+  renderRail();
 })();

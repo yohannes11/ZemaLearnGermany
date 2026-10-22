@@ -6,6 +6,7 @@
 {% block head %}
   <meta name="description" content="{% t "Learn German A1.1 step by step: vocabulary, grammar, listening and speaking practice." %}">
   <link rel="stylesheet" href="{% static 'course/css/course.css' %}">
+  <link rel="stylesheet" href="{% static 'core/css/tally.css' %}">
 {% endblock %}
 
 {% block body %}
@@ -19,6 +20,8 @@
     <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-3.6 4.4-5.5 8-5.5s6.5 1.9 8 5.5"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
     <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-locate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
     <symbol id="i-dash" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
     <symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></symbol>
@@ -49,6 +52,9 @@
         <div class="bar"><i id="progress-fill"></i></div>
         <strong id="progress-percent">0%</strong>
       </div>
+      <button class="btn btn-ghost streak-btn" type="button" id="streak-btn" onclick="openStreak()" aria-haspopup="dialog">
+        <span id="streak-tally"></span>
+      </button>
       <a class="btn btn-ghost lang-switch" href="{{ lang_switch.url }}" hreflang="{{ lang_switch.code }}" lang="{{ lang_switch.code }}" aria-label="{{ lang_switch.label }}"><span class="lang-long">{{ lang_switch.label }}</span><span class="lang-short" aria-hidden="true">{{ lang_switch.short }}</span></a>
       <button class="btn account-btn" type="button" id="account-btn" onclick="openAccount()" aria-label="{% t "Sign in" %}">
         <svg class="icon"><use href="#i-user"/></svg><span id="account-label">{% t "Sign in" %}</span>
@@ -276,6 +282,7 @@
       <div class="ad-slot ad-bottom" data-ad="bottom"></div>
       <p class="pic-credit">{% t "Word pictures:" %} <a href="https://github.com/jdecked/twemoji" rel="noopener" target="_blank">Twemoji</a> · Twitter, Inc and contributors, <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>.</p>
     </main>
+    <aside class="rail" id="rail" aria-label="{% t "Your progress" %}"></aside>
   </div>
 
   <div class="fab-dock">
@@ -339,6 +346,32 @@
     </div>
   </dialog>
 
+  <dialog id="streak" aria-labelledby="streak-title">
+    <div class="dialog-head">
+      <h2 id="streak-title">{% t "Your streak" %}</h2>
+      <button class="btn btn-ghost btn-close" type="button" onclick="document.getElementById('streak').close()" aria-label="{% t "Close" %}">
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <div class="dialog-body streak-panel">
+      <p class="streak-headline" id="streak-headline"></p>
+      <div id="streak-full" class="tally-full"></div>
+      <p id="streak-today"></p>
+      <div class="streak-legend" id="streak-legend"></div>
+      <div class="setting">
+        <span class="setting-label">{% t "Daily goal" %}</span>
+        <div class="segmented" role="group" aria-label="{% t "Daily goal" %}" id="goal-buttons">
+          <button type="button" data-goal="30">{% t "Casual" %}</button>
+          <button type="button" data-goal="50">{% t "Regular" %}</button>
+          <button type="button" data-goal="100">{% t "Serious" %}</button>
+          <button type="button" data-goal="150">{% t "Intense" %}</button>
+        </div>
+        <p id="goal-note"></p>
+      </div>
+      <p>{% t "Every 5 days that reach the goal earn a streak freeze (you can hold 2). A freeze covers a missed day by itself." %}</p>
+    </div>
+  </dialog>
+
   <dialog id="account" aria-labelledby="account-title">
     <div class="dialog-head">
       <h2 id="account-title">{% t "Sign in" %}</h2>
@@ -375,6 +408,7 @@
             <div class="profile-email" id="profile-email"></div>
           </div>
         </div>
+        <div class="tally-full" id="profile-tally"></div>
         <p class="sync-note" id="sync-note">{% t "Your progress is saved to your account." %}</p>
         <a class="btn" id="admin-link" href="{% url 'analytics:dashboard' %}" hidden>{% t "Open the admin area" %}</a>
         <details class="change-pw">
@@ -395,5 +429,7 @@
   {{ app_config|json_script:"app-config" }}
   <script src="{% static 'course/js/course-data.js' %}"></script>
   {% if lang == "am" %}<script src="{% static 'course/js/course-am.js' %}"></script>{% endif %}
+  <script src="{% static 'core/js/tally.js' %}"></script>
+  <script src="{% static 'core/js/tally-view.js' %}"></script>
   <script src="{% static 'course/js/course.js' %}"></script>
 {% endblock %}
