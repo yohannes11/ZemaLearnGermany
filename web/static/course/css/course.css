@@ -2096,11 +2096,13 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
   position: absolute;
   left: 0;
   top: 8px;
-  display: grid;
-  gap: 2px;
+  /* One line: the name, then the progress beside it. */
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
   width: max-content;
-  max-width: 240px;
-  padding: 4px 8px;
+  white-space: nowrap;
+  padding: 2px 8px;
   border-radius: var(--radius-sm);
   transform: translateX(-50%);
   text-align: center;
@@ -2112,7 +2114,7 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
 }
 .pin-label b {
   font-family: var(--display);
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   color: var(--text);
   overflow-wrap: break-word;
@@ -2120,19 +2122,26 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
   transition: color var(--t) var(--ease);
 }
 .pin-label small { font-size: 0.75rem; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
-.destination .pin-label, .bead.active .pin-label { top: 14px; }
-.label-above .pin-label { top: auto; bottom: 40px; }
-.label-above.destination .pin-label { bottom: 54px; }
-.label-above.active .pin-label { bottom: 50px; }
+.destination .pin-label, .bead.active .pin-label { top: 12px; }
+.label-above .pin-label { top: auto; bottom: 38px; }
+.label-above.destination .pin-label { bottom: 50px; }
+.label-above.active .pin-label { bottom: 44px; }
 
 /* You are here: the largest name, in the brand's green. */
-.bead.active .pin-label b { font-size: 1.125rem; color: var(--brand-deep); }
+.bead.active .pin-label b { font-size: 1.0625rem; color: var(--brand-deep); }
 .bead.active .pin-label small { color: var(--brand); }
 :root[data-theme="dark"] .bead.active .pin-label b { color: var(--brand); }
 
 /* Pointing at a town or its name: the name turns green and is underlined, the town lifts. */
 .bead:hover .pin-label b { color: var(--brand); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .bead:focus-visible .pin-label { outline: 2px solid var(--focus); outline-offset: 2px; }
+/* Narrower screens: towns are closer together, so the names get a little smaller. */
+@media (max-width: 1399px) {
+  .pin-label { gap: 4px; padding: 2px 4px; }
+  .pin-label b { font-size: 0.875rem; }
+  .pin-label small { font-size: 0.6875rem; }
+  .bead.active .pin-label b { font-size: 1rem; }
+}
 :root[lang="am"] .pin-label b { font-family: var(--ethiopic); font-size: var(--fs-base); }
 
 /* Map controls: zoom in, zoom out, back to where I am. They sit at the right edge of the map. */
@@ -2184,7 +2193,7 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
 }
 .journey-title {
   font-family: var(--display);
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
   font-weight: 700;
   line-height: 1.2;
   overflow-wrap: break-word;
@@ -2223,8 +2232,8 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 56px;
-  padding: 8px 16px 12px;
+  min-height: 46px;
+  padding: 6px 16px 10px;
   border-radius: var(--radius);
   text-align: left;
   color: var(--muted);

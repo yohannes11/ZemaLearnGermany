@@ -904,7 +904,7 @@ function switchUnit(id) {
 // The map runs edge to edge and can be panned and zoomed (drag, pinch, ctrl + scroll, the buttons).
 // A strict zig-zag: each name sits on the other side from its neighbours (below in a dip, above on a crest),
 // so names never run into each other.
-const MAP_Y = [70, 40, 68, 38, 70, 42, 72, 38, 68, 42]; // hand-placed heights (% of the town area), repeating
+const MAP_Y = [72, 44, 70, 42, 72, 44, 72, 42, 70, 44]; // hand-placed heights (% of the town area), repeating
 
 // A smooth road through the points (Catmull-Rom), one cubic segment per leg so it can be split anywhere.
 function routeLegs(pts) {
@@ -1038,7 +1038,7 @@ function renderUnits() {
       : '');
     const label = el('span', 'pin-label');
     label.setAttribute('aria-hidden', 'true');
-    label.append(el('b', '', u.title), el('small', '', `${unitName(u)} · ${Math.round(known / words.size * 100)}%${passed ? ' ✓' : ''}`));
+    label.append(el('b', '', u.title), el('small', '', `${Math.round(known / words.size * 100)}%${passed ? ' ✓' : ''}`));
     btn.appendChild(label);
     btn.setAttribute('aria-label', `${unitName(u)}: ${u.title}. ${T('{known} of {total} words learned', { known, total: words.size })}${passed ? ` · ${T('Unit test passed')}` : ''}`);
     btn.onclick = () => switchUnit(u.id);
@@ -1086,10 +1086,10 @@ const MAP_ZOOM = [1, 3];
 function mapSize(nav) {
   const vw = nav.clientWidth;
   const w = Math.max(1280, vw); // always the full width of the page; phones get a wider map to pan across
-  const towns = Math.round(Math.max(200, Math.min(w / 6.5, 240))); // a band, not a page: the lesson stays in view
+  const towns = Math.round(Math.max(140, Math.min(w / 9, 160))); // a strip, not a page: the lesson stays in view
   const bar = document.querySelector('.topbar')?.offsetHeight || 0;
   const head = nav.parentElement.querySelector('.journey-head')?.offsetHeight || 0;
-  return { vw, w, towns, bar, top: bar + 16, h: bar + 16 + towns + head + 4 };
+  return { vw, w, towns, bar, top: bar + 12, h: bar + 12 + towns + head + 4 };
 }
 
 function layoutMap() {
