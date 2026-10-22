@@ -2099,7 +2099,7 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
   display: grid;
   gap: 2px;
   width: max-content;
-  max-width: 180px;
+  max-width: 240px;
   padding: 4px 8px;
   border-radius: var(--radius-sm);
   transform: translateX(-50%);
@@ -2112,21 +2112,21 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
 }
 .pin-label b {
   font-family: var(--display);
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--text);
   overflow-wrap: break-word;
   letter-spacing: -0.01em;
   transition: color var(--t) var(--ease);
 }
-.pin-label small { font-size: 0.8125rem; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.pin-label small { font-size: 0.75rem; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
 .destination .pin-label, .bead.active .pin-label { top: 14px; }
-.label-above .pin-label { top: auto; bottom: 44px; }
+.label-above .pin-label { top: auto; bottom: 40px; }
 .label-above.destination .pin-label { bottom: 54px; }
 .label-above.active .pin-label { bottom: 50px; }
 
 /* You are here: the largest name, in the brand's green. */
-.bead.active .pin-label b { font-size: 1.3125rem; color: var(--brand-deep); }
+.bead.active .pin-label b { font-size: 1.125rem; color: var(--brand-deep); }
 .bead.active .pin-label small { color: var(--brand); }
 :root[data-theme="dark"] .bead.active .pin-label b { color: var(--brand); }
 

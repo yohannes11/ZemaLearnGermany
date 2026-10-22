@@ -904,7 +904,7 @@ function switchUnit(id) {
 // The map runs edge to edge and can be panned and zoomed (drag, pinch, ctrl + scroll, the buttons).
 // A strict zig-zag: each name sits on the other side from its neighbours (below in a dip, above on a crest),
 // so names never run into each other.
-const MAP_Y = [76, 30, 70, 26, 74, 34, 78, 28, 70, 36]; // hand-placed heights (% of the town area), repeating
+const MAP_Y = [70, 40, 68, 38, 70, 42, 72, 38, 68, 42]; // hand-placed heights (% of the town area), repeating
 
 // A smooth road through the points (Catmull-Rom), one cubic segment per leg so it can be split anywhere.
 function routeLegs(pts) {
@@ -1001,9 +1001,9 @@ function renderUnits() {
   // Towns are spread across the whole map, from edge to edge, and at full view clear of the zoom controls.
   previewUnit(null); // the title below the towns is in place before the map is measured
   const { w, vw, towns, top, h } = mapSize(nav);
-  const right = w > vw ? 92 : 24 + 52 + 96; // clear of the zoom controls at the right edge
+  const right = w > vw ? 136 : 24 + 52 + 110; // clear of the zoom controls at the right edge
   const at = COURSE_UNITS.map((u, i) => ({
-    x: Math.round((n > 1 ? 92 + i * (w - 92 - right) / (n - 1) : w / 2) / w * 10000) / 100,
+    x: Math.round((n > 1 ? 136 + i * (w - 136 - right) / (n - 1) : w / 2) / w * 10000) / 100, // 136: room for a one-line name
     y: Math.round((top + MAP_Y[i % MAP_Y.length] * towns / 100) / h * 10000) / 100,
   }));
   const legs = routeLegs(at);
@@ -1086,10 +1086,10 @@ const MAP_ZOOM = [1, 3];
 function mapSize(nav) {
   const vw = nav.clientWidth;
   const w = Math.max(1280, vw); // always the full width of the page; phones get a wider map to pan across
-  const towns = Math.round(Math.max(320, Math.min(w / 4.2, 380)));
+  const towns = Math.round(Math.max(200, Math.min(w / 6.5, 240))); // a band, not a page: the lesson stays in view
   const bar = document.querySelector('.topbar')?.offsetHeight || 0;
   const head = nav.parentElement.querySelector('.journey-head')?.offsetHeight || 0;
-  return { vw, w, towns, bar, top: bar + 8, h: bar + 8 + towns + head + 8 };
+  return { vw, w, towns, bar, top: bar + 16, h: bar + 16 + towns + head + 4 };
 }
 
 function layoutMap() {
