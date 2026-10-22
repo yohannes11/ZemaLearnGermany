@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Continue on the website · Zema German{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'dashboard/css/dashboard.css' %}">
+{% endblock %}
+
+{% block body %}
+  <div class="band" aria-hidden="true"></div>
+  <div class="wrap">
+    <section class="card gate">
+      {% if expired %}
+        <div>
+          <h2>This link has expired</h2>
+          <p>Links from the app work once, for two minutes. Open the website from the app again, or sign in here.</p>
+        </div>
+        <a class="btn btn-primary" href="{{ next }}">Go to the course</a>
+      {% else %}
+        <form method="post">
+          {% csrf_token %}
+          <input type="hidden" name="code" value="{{ code }}">
+          <input type="hidden" name="next" value="{{ next }}">
+          <div>
+            <h2>Continue as {{ handoff_user.name }}</h2>
+            <p>You came here from the Zema German app. Your words, scores, XP and streak are the same here.</p>
+          </div>
+          <button class="btn btn-primary" type="submit" autofocus>Continue as @{{ handoff_user.username }}</button>
+        </form>
+      {% endif %}
+    </section>
+  </div>
+{% endblock %}

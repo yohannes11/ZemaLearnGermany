@@ -12,7 +12,7 @@ from django.db import transaction
 
 from apps.accounts.validators import unique_username
 from apps.analytics.models import Event
-from apps.course.models import Progress
+from apps.course.sync import legacy_ops, sync
 
 
 def aware(ts):
@@ -64,9 +64,10 @@ class Command(BaseCommand):
                 created += 1
                 if row["progress"]:
                     data = json.loads(row["progress"])
-                    progress = Progress(user=user)
-                    progress.merge(data.get("learned") or [], data.get("grammar") or {})
-                    progress.save()
+                    joined = aware(row["created"]) or datetime.now(dt_timezone.utc)
+                    learned, grammar = data.get("learned") or [], data.get("grammar") or {}
+                    ops = legacy_ops(None, learned, grammar, replace=False, day=joined.date().isoformat())
+                    sync(user, ops)
 
         batch = []
         for row in source.execute("SELECT * FROM events ORDER BY id"):

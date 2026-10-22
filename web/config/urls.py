@@ -19,6 +19,7 @@ urlpatterns = [
         name="login",
     ),
     path("accounts/logout/", auth_views.LogoutView.as_view(), name="logout"),
+    path("api/v1/", include("apps.api.urls")),
     path("api/auth/", include("apps.accounts.urls")),
     path("", include("apps.analytics.urls")),
     path("", include("apps.course.urls")),

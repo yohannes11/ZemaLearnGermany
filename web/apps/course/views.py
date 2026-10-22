@@ -1,9 +1,9 @@
 from django.conf import settings
-from django.db import transaction
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.templatetags.static import static
 from django.urls import reverse
+from django.utils import timezone
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views.decorators.http import require_GET, require_http_methods
@@ -11,7 +11,9 @@ from django.views.decorators.http import require_GET, require_http_methods
 from apps.accounts.decorators import api_login_required
 from apps.core.i18n import catalog
 from apps.core.utils import BadJSON, json_error, read_json
+from apps.realtime import notify
 
+from . import sync
 from .models import Progress
 
 
@@ -34,6 +36,8 @@ def index(request):
             "logout": reverse("accounts:logout"),
             "password": reverse("accounts:password"),
             "progress": reverse("course:progress"),
+            "sync": reverse("api:sync"),
+            "live": "/ws/v1/",
             "events": reverse("analytics:events"),
         },
     }
@@ -44,9 +48,11 @@ def index(request):
 @never_cache
 @api_login_required
 def progress(request):
+    """The course page's progress: GET it, or PUT the whole of it. Kept for pages opened before operations
+    (sync.py); a PUT becomes operations, so it follows the same rules as every other device."""
     if request.method == "GET":
         record = Progress.objects.filter(user=request.user).first()
-        return JsonResponse(record.as_dict() if record else {"learned": [], "grammar": {}})
+        return JsonResponse(record.as_dict() if record else Progress().as_dict())
 
     try:
         data = read_json(request, max_bytes=256 * 1024)
@@ -55,10 +61,13 @@ def progress(request):
     learned, grammar = data.get("learned", []), data.get("grammar", {})
     if not isinstance(learned, list) or not isinstance(grammar, dict):
         return json_error("Progress must have a list of words and a dict of grammar scores.", 400)
-
-    # Lock the row so two devices saving at the same moment cannot overwrite each other's merge.
-    with transaction.atomic():
-        record, _ = Progress.objects.select_for_update().get_or_create(user=request.user)
-        record.merge(learned, grammar, replace=bool(data.get("replace")))
-        record.save()
+    current = Progress.objects.filter(user=request.user).first()
+    today = timezone.localdate().isoformat()
+    ops = sync.legacy_ops(current, learned, grammar, replace=bool(data.get("replace")), day=today)
+    try:
+        record, changed = sync.sync(request.user, ops)
+    except sync.BadOperation as error:
+        return json_error(str(error), 400)
+    if changed:
+        notify.progress_changed(request.user.pk, record.revision)
     return JsonResponse(record.as_dict())

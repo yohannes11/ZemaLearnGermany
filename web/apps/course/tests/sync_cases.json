@@ -1,0 +1,363 @@
+{
+  "about": "Conflict cases for progress sync. Each case sends batches of operations in the given order of arrival; the result must not depend on that order. Checked by web/apps/course/tests/test_sync.py and mobile/src/core/sync/rules.test.ts.",
+  "cases": [
+    {
+      "name": "an offline phone's older un-mark arrives late and loses to the newer mark",
+      "arrivals": [
+        [
+          {
+            "id": "web-1",
+            "kind": "word",
+            "at": 2000,
+            "day": "2026-10-10",
+            "german": "Hallo!",
+            "learned": true
+          }
+        ],
+        [
+          {
+            "id": "phone-1",
+            "kind": "word",
+            "at": 1000,
+            "day": "2026-10-10",
+            "german": "Hallo!",
+            "learned": false
+          }
+        ]
+      ],
+      "expect": {
+        "learned": [
+          "Hallo!"
+        ]
+      }
+    },
+    {
+      "name": "a newer un-mark wins even when it arrives first",
+      "arrivals": [
+        [
+          {
+            "id": "phone-2",
+            "kind": "word",
+            "at": 3000,
+            "day": "2026-10-10",
+            "german": "Tschüss!",
+            "learned": false
+          }
+        ],
+        [
+          {
+            "id": "web-2",
+            "kind": "word",
+            "at": 1000,
+            "day": "2026-10-10",
+            "german": "Tschüss!",
+            "learned": true
+          }
+        ]
+      ],
+      "expect": {
+        "learned": []
+      }
+    },
+    {
+      "name": "two changes at the same moment: the larger id wins, on every device",
+      "arrivals": [
+        [
+          {
+            "id": "b",
+            "kind": "word",
+            "at": 5000,
+            "day": "2026-10-10",
+            "german": "Danke",
+            "learned": true
+          }
+        ],
+        [
+          {
+            "id": "a",
+            "kind": "word",
+            "at": 5000,
+            "day": "2026-10-10",
+            "german": "Danke",
+            "learned": false
+          }
+        ]
+      ],
+      "expect": {
+        "learned": [
+          "Danke"
+        ]
+      }
+    },
+    {
+      "name": "XP from two devices adds up, and a retried operation counts once",
+      "arrivals": [
+        [
+          {
+            "id": "x1",
+            "kind": "xp",
+            "at": 1000,
+            "day": "2026-10-10",
+            "amount": 10
+          }
+        ],
+        [
+          {
+            "id": "x2",
+            "kind": "xp",
+            "at": 1100,
+            "day": "2026-10-10",
+            "amount": 25
+          },
+          {
+            "id": "x1",
+            "kind": "xp",
+            "at": 1000,
+            "day": "2026-10-10",
+            "amount": 10
+          }
+        ],
+        [
+          {
+            "id": "x3",
+            "kind": "xp",
+            "at": 9000,
+            "day": "2026-10-11",
+            "amount": 5
+          }
+        ]
+      ],
+      "expect": {
+        "xp": {
+          "2026-10-10": 35,
+          "2026-10-11": 5
+        },
+        "days": [
+          "2026-10-10",
+          "2026-10-11"
+        ]
+      }
+    },
+    {
+      "name": "the best lesson score is kept",
+      "arrivals": [
+        [
+          {
+            "id": "s1",
+            "kind": "score",
+            "at": 1000,
+            "day": "2026-10-10",
+            "lesson": "g1-sein",
+            "score": 5
+          }
+        ],
+        [
+          {
+            "id": "s2",
+            "kind": "score",
+            "at": 900,
+            "day": "2026-10-09",
+            "lesson": "g1-sein",
+            "score": 7
+          }
+        ],
+        [
+          {
+            "id": "s3",
+            "kind": "score",
+            "at": 2000,
+            "day": "2026-10-10",
+            "lesson": "g1-sein",
+            "score": 6
+          }
+        ]
+      ],
+      "expect": {
+        "grammar": {
+          "g1-sein": 7
+        },
+        "days": [
+          "2026-10-09",
+          "2026-10-10"
+        ]
+      }
+    },
+    {
+      "name": "the latest review of a word sets its schedule",
+      "arrivals": [
+        [
+          {
+            "id": "r2",
+            "kind": "review",
+            "at": 2000,
+            "day": "2026-10-10",
+            "german": "Hallo!",
+            "box": 3,
+            "due": "2026-10-14"
+          }
+        ],
+        [
+          {
+            "id": "r1",
+            "kind": "review",
+            "at": 1000,
+            "day": "2026-10-10",
+            "german": "Hallo!",
+            "box": 0,
+            "due": "2026-10-10"
+          }
+        ]
+      ],
+      "expect": {
+        "srs": {
+          "Hallo!": {
+            "box": 3,
+            "due": "2026-10-14"
+          }
+        }
+      }
+    },
+    {
+      "name": "the latest position in an exercise wins, and clearing it is a change too",
+      "arrivals": [
+        [
+          {
+            "id": "p2",
+            "kind": "session",
+            "at": 2000,
+            "day": "2026-10-10",
+            "session": {
+              "kind": "quiz",
+              "ref": "g1-sein",
+              "items": [
+                3,
+                0,
+                5
+              ],
+              "answers": [
+                true
+              ],
+              "position": 1,
+              "platform": "android"
+            }
+          }
+        ],
+        [
+          {
+            "id": "p1",
+            "kind": "session",
+            "at": 1000,
+            "day": "2026-10-10",
+            "session": {
+              "kind": "quiz",
+              "ref": "g1-sein",
+              "items": [
+                3,
+                0,
+                5
+              ],
+              "answers": [],
+              "position": 0,
+              "platform": "web"
+            }
+          }
+        ]
+      ],
+      "expect": {
+        "session": {
+          "kind": "quiz",
+          "ref": "g1-sein",
+          "items": [
+            3,
+            0,
+            5
+          ],
+          "answers": [
+            true
+          ],
+          "position": 1,
+          "done": false,
+          "platform": "android",
+          "device": ""
+        },
+        "days": []
+      }
+    },
+    {
+      "name": "a cleared exercise stays cleared against an older position",
+      "arrivals": [
+        [
+          {
+            "id": "c2",
+            "kind": "session",
+            "at": 3000,
+            "day": "2026-10-10",
+            "session": null
+          }
+        ],
+        [
+          {
+            "id": "c1",
+            "kind": "session",
+            "at": 1000,
+            "day": "2026-10-10",
+            "session": {
+              "kind": "cards",
+              "ref": "1.1",
+              "items": [
+                "Hallo!"
+              ],
+              "position": 0
+            }
+          }
+        ]
+      ],
+      "expect": {
+        "session": null
+      }
+    },
+    {
+      "name": "daily goal changes are all kept, in time order, whatever order they arrive in",
+      "arrivals": [
+        [
+          {
+            "id": "g2",
+            "kind": "goal",
+            "at": 2000,
+            "day": "2026-10-10",
+            "xp": 100
+          }
+        ],
+        [
+          {
+            "id": "g1",
+            "kind": "goal",
+            "at": 1000,
+            "day": "2026-10-08",
+            "xp": 30
+          },
+          {
+            "id": "g2",
+            "kind": "goal",
+            "at": 2000,
+            "day": "2026-10-10",
+            "xp": 100
+          }
+        ]
+      ],
+      "expect": {
+        "goals": [
+          [
+            "2026-10-08",
+            30
+          ],
+          [
+            "2026-10-10",
+            100
+          ]
+        ],
+        "days": []
+      }
+    }
+  ]
+}

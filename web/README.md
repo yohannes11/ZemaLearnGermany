@@ -1,4 +1,4 @@
-# ZemaLearnGermany
+# Zema German: the website and the backend
 
 A German A1.1 course for beginners: a Start unit (pronunciation, alphabet, numbers) and Units 1–9 with
 vocabulary, grammar, reading texts and a unit test each; natural-voice audio, speaking practice with an
@@ -6,9 +6,12 @@ animated coach, flashcards, matching, sentence building, dictation and translati
 content lives in `tools/course_content.py`. Learners can create an
 account to keep their progress; admins get a usage report and user management.
 
-Built with Django 5.2 (LTS).
+Built with Django 5.2 (LTS). This Django project is also the backend of the mobile app in `../mobile/`: both
+use the same accounts, progress and course content through the API in `apps/api/` (see *The API* below).
 
 ## Quick start (development)
+
+Run every command in this README from the `web/` folder.
 
 ```bash
 python3 -m venv .venv
@@ -17,6 +20,10 @@ python3 -m venv .venv
 .venv/bin/python manage.py createsuperuser        # your admin account
 .venv/bin/python manage.py runserver
 ```
+
+For live updates between open pages and apps (WebSockets), run the site under uvicorn instead:
+`.venv/bin/uvicorn config.asgi:application --reload --reload-include '*.html' --reload-include '*.json'` (without Redis,
+updates reach connections on that one process; the includes reload templates and translations too).
 
 | Address | What |
 |---|---|
@@ -35,9 +42,11 @@ config/                 project package
   settings/base.py      shared settings        dev.py / prod.py / test.py per environment
   urls.py  wsgi.py  asgi.py
 apps/
-  accounts/             custom User (sign in with username or email), JSON auth API, legacy password hasher
+  accounts/             custom User (sign in with username or email), JSON auth API, app tokens, legacy password hasher
   course/               the course page and each learner's saved progress (Progress model)
   analytics/            usage events, the report, the staff dashboard, user management
+  api/                  /api/v1/: the API the mobile app uses (course content, token sign-in, sync)
+  realtime/             /ws/v1/: live updates over WebSockets (Django Channels)
   landing/              the public landing page; content.py holds every figure with its source
   content/              text changes admins make on the page (TextOverride model, publish API)
   core/                 shared helpers, static storage, /healthz/, /ads.txt and /robots.txt
@@ -152,11 +161,38 @@ artwork is [Twemoji](https://github.com/jdecked/twemoji) (CC BY 4.0, credited un
 stored in `static/course/pics/`. After editing the list, run `python3 tools/course_content.py` and then
 `python3 tools/fetch_word_pictures.py` to download any new SVGs.
 
+## The API (`/api/v1/`)
+
+The mobile app reads everything through these addresses; the website's own pages use the same views. Published
+app builds stay in use for months, so these addresses stay as they are, and a breaking change becomes `/api/v2/`.
+
+| Address | What |
+|---|---|
+| `GET /api/v1/` | Where the audio and pictures are, and `minAppVersion` (`MOBILE_MIN_APP_VERSION`) |
+| `GET /api/v1/course/?lang=en\|am` | The whole course, the Amharic meanings and every published text change, with a `version` |
+| `GET /api/v1/why-german/?lang=en\|am` | The landing page's figures and reasons with their sources, for the app's introduction |
+| `POST /api/v1/auth/token/` | `{login, password, device}` → `{user, token}`; `DELETE` signs this device out |
+| `POST /api/v1/auth/register/` | Create an account → `{user, token}` |
+| `GET /api/v1/auth/me/`, `POST /api/v1/auth/password/` | The signed-in user; change password (signs out other devices) |
+| `GET/POST /api/v1/sync/` | The learner's state; POST sends operations and answers with the merged state (see [SYNC.md](../SYNC.md)) |
+| `POST /api/v1/auth/web-session/` | A one-time link (two minutes) that opens the website signed in, for the app's single sign-on |
+| `/ws/v1/` (WebSocket) | Live updates: `progress` for the learner's other devices, `content` when an admin publishes text |
+| `GET/PUT /api/v1/progress/` | The older whole-progress format, still accepted from pages opened before operations |
+
+- **Sign-in:** the app sends `Authorization: Bearer <token>`. Only a hash of each token is stored. Admins see each
+  user's signed-in devices in the Django admin, and deleting one signs that device out.
+- **Content updates:** `version` changes whenever the course files or a published text change do, and doubles as
+  the ETag. The app sends it back and gets `304 Not Modified` while its offline copy is current, so text an admin
+  publishes reaches the website and the app together.
+- **Audio:** the app reads `static/audio/manifest.json` and downloads clips from `static/audio/<voice>/<speed>/`,
+  the same files the website plays.
+
 ## Security notes
 
 - People sign in with their username or email address (both matched regardless of capitals).
 - Passwords are hashed with Argon2; Django's password validators apply to sign-ups.
-- Every write is CSRF-protected; the course page sends Django's token in `X-CSRFToken`.
+- Every write from the website is CSRF-protected; the course page sends Django's token in `X-CSRFToken`. Requests
+  signed with an app token skip that check: browsers never add that header by themselves.
 - Failed logins are throttled per address with django-axes (10 attempts, then 15 minutes).
 - Usage events store a random browser id, never an IP address.
 - In production (`config.settings.prod`): HTTPS redirect, secure cookies, HSTS, and every secret

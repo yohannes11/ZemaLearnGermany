@@ -34,6 +34,9 @@ INSTALLED_APPS = [
     "apps.analytics",
     "apps.landing",
     "apps.content",
+    "apps.api",
+    "apps.realtime",
+    "channels",
 ]
 
 MIDDLEWARE = [
@@ -44,6 +47,8 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
+    # The mobile app signs in with a bearer token instead of a session cookie.
+    "apps.accounts.tokens.BearerTokenMiddleware",
     "apps.content.texts.TextOverridesMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
@@ -53,6 +58,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "config.urls"
 WSGI_APPLICATION = "config.wsgi.application"
+ASGI_APPLICATION = "config.asgi.application"
 
 TEMPLATES = [
     {
@@ -80,6 +86,17 @@ DATABASES["default"]["CONN_MAX_AGE"] = env.int("DATABASE_CONN_MAX_AGE", default=
 DATABASES["default"]["CONN_HEALTH_CHECKS"] = True
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# --------------------------------------------------------------------------- live updates (apps/realtime)
+
+# Redis carries live updates between server processes. Without it they only reach connections on the same
+# process, which is enough for development and a single worker.
+REDIS_URL = env("REDIS_URL", default="")
+CHANNEL_LAYERS = {
+    "default": {"BACKEND": "channels_redis.core.RedisChannelLayer", "CONFIG": {"hosts": [REDIS_URL]}}
+    if REDIS_URL
+    else {"BACKEND": "channels.layers.InMemoryChannelLayer"}
+}
 
 # --------------------------------------------------------------------------- authentication
 
@@ -154,6 +171,9 @@ AUDIO_URL = f"{STATIC_URL}audio/"
 TEXT_EDITING_FOR_EVERYONE = env.bool("TEXT_EDITING_FOR_EVERYONE", default=True)
 
 # --------------------------------------------------------------------------- site settings
+
+# The oldest mobile app version the API still works with; older apps ask their users to update.
+MOBILE_MIN_APP_VERSION = env("MOBILE_MIN_APP_VERSION", default="1.0.0")
 
 ADMIN_URL = env("DJANGO_ADMIN_URL", default="admin/")
 

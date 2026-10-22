@@ -5,4 +5,8 @@ django-environ==0.14.0      # settings from environment variables / .env
 django-axes==8.3.1          # locks out repeated failed logins
 argon2-cffi==25.1.0         # Argon2 password hashing (Django's recommended hasher)
 whitenoise==6.12.0          # serves static files with far-future caching
-gunicorn==26.2.0            # production WSGI server
+gunicorn==26.2.0            # production server (with uvicorn workers for ASGI)
+uvicorn[standard]==0.54.0   # ASGI worker: HTTP and WebSockets
+uvicorn-worker==0.4.0       # runs uvicorn under gunicorn
+channels==4.3.2             # WebSockets: live progress and content updates (apps/realtime)
+channels-redis==4.3.0       # carries live updates between server processes

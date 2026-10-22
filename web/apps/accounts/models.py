@@ -56,3 +56,21 @@ class User(AbstractUser):
     def as_public_dict(self):
         """What the course page may know about the signed-in user."""
         return {"id": self.pk, "username": self.username, "email": self.email, "name": self.name, "role": self.role}
+
+
+class ApiToken(models.Model):
+    """A signed-in device of the mobile app. The app sends `Authorization: Bearer <token>` instead of a session
+    cookie; only the token's hash is stored, so a leaked database can't be used to sign in."""
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="api_tokens")
+    key_hash = models.CharField(max_length=64, unique=True, editable=False)
+    device = models.CharField("device", max_length=80, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    last_used = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        verbose_name = "app sign-in"
+        ordering = ["-created_at"]
+
+    def __str__(self):
+        return f"{self.user} on {self.device or 'a device'}"

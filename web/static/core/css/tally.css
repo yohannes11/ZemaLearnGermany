@@ -1,0 +1,33 @@
+/* The stick-strikeout streak tally (static/core/js/tally-view.js). Timing comes from tally.js as custom
+   properties, so the website moves exactly like the app. */
+.tally { display: inline-flex; align-items: center; gap: 2px; line-height: 1; }
+.tally svg { display: block; overflow: visible; }
+.tally line { stroke-linecap: round; }
+.tally-more { font-size: var(--fs-xs); font-weight: 700; color: var(--muted); }
+
+/* A day that reached its goal: the strikeout draws itself once, as it happens. */
+.tally-strike { stroke-dashoffset: 0; }
+.tally-strike.draw { stroke-dashoffset: var(--len); animation: tally-draw var(--strike-ms) var(--ease) var(--delay, 0ms) forwards; }
+@keyframes tally-draw { to { stroke-dashoffset: 0; } }
+
+/* Today, before the goal: a soft glow says this stick is waiting. */
+.tally-glow { opacity: 0.35; animation: tally-glow var(--glow-ms) ease-in-out infinite alternate; }
+@keyframes tally-glow { from { opacity: 0.2; } to { opacity: 0.7; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .tally-strike.draw { animation: none; stroke-dashoffset: 0; }
+  .tally-glow { animation: none; }
+}
+
+/* The top bar's streak button and the streak dialog. */
+.streak-btn { gap: 6px; padding: 0 10px; }
+.streak-btn.met { background: var(--flame-soft); }
+.streak-panel { display: grid; gap: 12px; }
+.streak-panel .tally-full svg { max-width: 100%; height: auto; }
+.streak-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 6px 12px; font-size: var(--fs-sm); color: var(--muted); }
+.streak-legend span { display: flex; align-items: center; gap: 8px; }
+.streak-legend svg { flex: none; }
+.result-tally { display: flex; justify-content: center; margin-top: 12px; }
+#profile-tally { margin: 4px 0 8px; }
+.streak-headline { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; margin: 0; font-size: var(--fs-xl); font-weight: 800; letter-spacing: var(--tracking-tight); }
+.streak-freezes { font-size: var(--fs-sm); font-weight: 700; color: var(--freeze); letter-spacing: 0; }
