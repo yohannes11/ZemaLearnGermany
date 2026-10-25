@@ -2780,7 +2780,7 @@ window.COURSE = {
     },
     {
      "key": "1.2",
-     "title": "Names",
+     "title": "Introducing each other",
      "words": [
       {
        "german": "Mein Name ist …",

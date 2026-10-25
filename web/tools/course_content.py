@@ -322,7 +322,7 @@ UNIT1 = {
             ('Hallo!', 'Hello!'), ('Hi!', 'Hi!'), ('Guten Tag!', 'Good day!'), ('Guten Morgen!', 'Good morning!'),
             ('Guten Abend!', 'Good evening!'), ('Tschüss!', 'Bye!'), ('Auf Wiedersehen!', 'Goodbye!'),
             ('der Tag', 'the day (m.)'), ('der Morgen', 'the morning (m.)'), ('der Abend', 'the evening (m.)')]),
-        sec('1.2', 'Names', [
+        sec('1.2', 'Introducing each other', [
             ('Mein Name ist …', 'My name is …'), ('Wie ist dein Name?', 'What is your name? (informal)'),
             ('Ich heiße…', 'I am called…'), ('Wie heißt du?', 'What are you called? (informal)'),
             ('Wie heißen Sie?', 'What are you called? (formal)'), ('der Name', 'the name (m.)'),

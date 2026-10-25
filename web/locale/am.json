@@ -421,7 +421,6 @@
     "Most countries need no article": "አብዛኞቹ አገሮች መስተኣምር አያስፈልጋቸውም",
     "My day": "ቀኔ",
     "My: mein & meine": "የእኔ፦ mein እና meine",
-    "Names": "ስሞች",
     "Nearly! Check the spelling.": "ተቃርበዋል! አጻጻፉን ይፈትሹ።",
     "Need a reminder?": "ማስታወሻ ይፈልጋሉ?",
     "New": "አዲስ",
@@ -751,6 +750,7 @@
     "{part} lessons": "የ{part} ትምህርቶች",
     "{passed} of {total} lessons": "{passed} / {total} ትምህርቶች",
     "{passed}/{total} lessons done": "{passed}/{total} ትምህርቶች ተጠናቀዋል",
-    "{who} always takes -{ending}.": "{who} ሁልጊዜ -{ending} ይወስዳል።"
+    "{who} always takes -{ending}.": "{who} ሁልጊዜ -{ending} ይወስዳል።",
+    "Introducing each other": "እርስ በርስ መተዋወቅ"
   }
 }
