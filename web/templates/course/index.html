@@ -37,8 +37,8 @@
 
   <header class="topbar">
     <div class="topbar-inner">
-      <button class="btn btn-ghost menu-btn" type="button" onclick="openSidebar()" aria-label="{% t "Open chapters" %}" aria-controls="sidebar" aria-expanded="false" style="padding:0 10px">
-        <svg class="icon"><use href="#i-menu"/></svg>
+      <button class="btn btn-ghost menu-btn labelled" type="button" onclick="openSidebar()" aria-label="{% t "Open chapters" %}" aria-controls="sidebar" aria-expanded="false">
+        <svg class="icon"><use href="#i-menu"/></svg><span class="btn-label" aria-hidden="true">{% t "Chapters" %}</span>
       </button>
       <div class="brand">
         <div class="brand-mark" aria-hidden="true"><span>De</span></div>
@@ -59,8 +59,8 @@
       <button class="btn account-btn" type="button" id="account-btn" onclick="openAccount()" aria-label="{% t "Sign in" %}">
         <svg class="icon"><use href="#i-user"/></svg><span id="account-label">{% t "Sign in" %}</span>
       </button>
-      <button class="btn btn-ghost" type="button" onclick="openSettings()" aria-label="{% t "Settings" %}" style="padding:0 10px">
-        <svg class="icon"><use href="#i-settings"/></svg>
+      <button class="btn btn-ghost settings-btn labelled" type="button" onclick="openSettings()" aria-label="{% t "Settings" %}">
+        <svg class="icon"><use href="#i-settings"/></svg><span class="btn-label" aria-hidden="true">{% t "Settings" %}</span>
       </button>
     </div>
     <div class="tibeb" aria-hidden="true"></div>
@@ -93,8 +93,14 @@
 
   <div class="layout">
     <aside class="sidebar" id="sidebar" aria-label="{% t "Chapters" %}">
+      <button class="panel-show" type="button" onclick="setPanel('side', true)" aria-controls="toc" aria-expanded="false" title="{% t "Show chapters" %}">
+        <svg class="icon"><use href="#i-list"/></svg><span>{% t "Chapters" %}</span><svg class="icon panel-show-arrow"><use href="#i-arrow"/></svg>
+      </button>
       <div class="sidebar-title">
         <span id="sidebar-heading">{% t "Vocabulary sections" %}</span>
+        <button class="panel-hide" type="button" onclick="setPanel('side', false)" aria-controls="toc" aria-expanded="true" aria-label="{% t "Hide chapters" %}">
+          <svg class="icon"><use href="#i-back"/></svg><span>{% t "Hide" %}</span>
+        </button>
         <button class="btn btn-ghost sidebar-close btn-close" type="button" onclick="closeSidebar()" aria-label="{% t "Close chapters" %}">
           <svg class="icon"><use href="#i-close"/></svg>
         </button>
@@ -282,7 +288,18 @@
       <div class="ad-slot ad-bottom" data-ad="bottom"></div>
       <p class="pic-credit">{% t "Word pictures:" %} <a href="https://github.com/jdecked/twemoji" rel="noopener" target="_blank">Twemoji</a> · Twitter, Inc and contributors, <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>.</p>
     </main>
-    <aside class="rail" id="rail" aria-label="{% t "Your progress" %}"></aside>
+    <aside class="rail-wrap" aria-label="{% t "Your progress" %}">
+      <button class="panel-show" type="button" onclick="setPanel('rail', true)" aria-controls="rail" aria-expanded="false" title="{% t "Show your progress" %}">
+        <svg class="icon"><use href="#i-trophy"/></svg><span class="show-short">{% t "Progress" %}</span><span class="show-long">{% t "Show your progress" %}</span><svg class="icon panel-show-arrow"><use href="#i-back"/></svg>
+      </button>
+      <div class="panel-head">
+        <span class="panel-heading">{% t "Your progress" %}</span>
+        <button class="panel-hide" type="button" onclick="setPanel('rail', false)" aria-controls="rail" aria-expanded="true" aria-label="{% t "Hide your progress" %}">
+          <span>{% t "Hide" %}</span><svg class="icon"><use href="#i-arrow"/></svg>
+        </button>
+      </div>
+      <div class="rail" id="rail"></div>
+    </aside>
   </div>
 
   <div class="fab-dock">

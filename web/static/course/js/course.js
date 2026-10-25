@@ -1431,9 +1431,33 @@ function setDrawerState(open) {
   document.querySelectorAll('.topbar, .journey, main, .fab-dock').forEach(n => { n.inert = open; });
 }
 
+// On wide screens the chapters and progress columns can each be folded away to a narrow strip, giving the lesson
+// the room. Each has a labelled "Hide" button, and its strip a word saying what it brings back; the choice is
+// remembered on this device.
+function setPanel(which, open, { focus = true } = {}) {
+  const layout = document.querySelector('.layout');
+  const panel = which === 'side' ? document.getElementById('sidebar') : document.querySelector('.rail-wrap');
+  if (!layout || !panel) return;
+  layout.classList.toggle(`${which}-collapsed`, !open);
+  panel.querySelectorAll('.panel-hide').forEach(b => b.setAttribute('aria-expanded', open));
+  panel.querySelectorAll('.panel-show').forEach(b => b.setAttribute('aria-expanded', open));
+  try { localStorage.setItem(`panel-${which}`, JSON.stringify(open)); } catch (e) {}
+  // Keep the keyboard where the learner is: on the button that undoes what they just did.
+  if (focus) panel.querySelector(open ? '.panel-hide' : '.panel-show')?.focus({ preventScroll: true });
+  if (open && which === 'rail') renderRail();
+}
+
+function restorePanels() {
+  const saved = key => { try { return JSON.parse(localStorage.getItem(key)); } catch (e) { return null; } };
+  if (saved('panel-side') === false) setPanel('side', false, { focus: false });
+  if (saved('panel-rail') === false) setPanel('rail', false, { focus: false });
+}
+restorePanels();
+
 function openSidebar() {
   const sidebar = document.getElementById('sidebar');
   const current = sidebar.querySelector('.chapter-link.active');
+  if (!drawerMode() && document.querySelector('.layout.side-collapsed')) setPanel('side', true, { focus: false });
   if (!drawerMode()) {
     // The sidebar is always visible on wide screens: point to the current chapter instead.
     if (current) { current.scrollIntoView({ block: 'nearest' }); current.focus({ preventScroll: true }); }

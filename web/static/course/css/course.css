@@ -244,9 +244,18 @@ svg.icon {
 
 .menu-btn { display: none !important; }
 
+/* Icon buttons in the top bar say what they do: a word beside the icon, or under it on small screens. */
+.btn.labelled { gap: 8px; padding: 0 12px; }
+.btn.labelled .btn-label { font-size: var(--fs-sm); font-weight: 600; }
+
 .layout {
+  /* The side columns' widths: folding one away (setPanel in course.js) shrinks it to a strip. */
+  --side-w: 280px;
+  --rail-w: 312px;
+  --strip-w: 84px;
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
+  grid-template-columns: var(--side-w) minmax(0, 1fr);
+  transition: grid-template-columns var(--t-slow) var(--ease);
   gap: 32px;
   max-width: calc(var(--page-max) + 2 * var(--gutter));
   margin: 0 auto;
@@ -259,21 +268,91 @@ svg.icon {
    the course. Beside the lesson on wide screens (about 30% of the content
    area), below it on smaller ones.
    ------------------------------------------------------------------ */
+.rail-wrap { min-width: 0; }
 .rail { display: grid; gap: 16px; align-content: start; min-width: 0; }
 @media (min-width: 1280px) {
-  .layout { grid-template-columns: 260px minmax(0, 1fr) 312px; gap: 24px 32px; }
-  .rail { position: sticky; top: 94px; max-height: calc(100vh - 110px); overflow-y: auto; scrollbar-width: none; padding-bottom: 8px; }
-  .rail::-webkit-scrollbar { display: none; }
+  .layout { --side-w: 260px; grid-template-columns: var(--side-w) minmax(0, 1fr) var(--rail-w); gap: 24px 32px; }
+  .rail-wrap { position: sticky; top: 94px; max-height: calc(100vh - 110px); overflow-y: auto; scrollbar-width: none; padding-bottom: 8px; }
+  .rail-wrap::-webkit-scrollbar { display: none; }
 }
 @media (min-width: 1600px) {
   /* Big screens: the side columns and the flashcard widen, so extra room goes to content, not margins. */
-  .layout { grid-template-columns: 280px minmax(0, 1fr) 340px; gap: 24px 40px; }
+  .layout { --side-w: 280px; --rail-w: 340px; gap: 24px 40px; }
 }
 @media (min-width: 1001px) and (max-width: 1279px) {
-  .rail { grid-column: 2; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 8px; }
+  .rail-wrap { grid-column: 2; margin-top: 8px; }
+  .rail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 1000px) {
-  .rail { margin-top: 24px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .rail-wrap { margin-top: 24px; }
+  .rail { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+}
+
+/* ------------------------------------------------------------------
+   Folding the side columns away. Each column's heading has a labelled
+   "Hide" button; folded, the column is a strip with a big icon and a word
+   saying what it brings back. Words, not only icons: many learners are
+   new to computers. The chapters fold on wide screens only (on phones
+   they are a drawer); the progress column folds on every screen.
+   ------------------------------------------------------------------ */
+.panel-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 4px 12px; }
+.panel-heading { font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--subtle); }
+.panel-hide {
+  display: inline-flex; align-items: center; gap: 6px; flex: none;
+  min-height: 36px; padding: 0 10px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface);
+  font: inherit; font-size: var(--fs-sm); font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--muted);
+  cursor: pointer; transition: background var(--t) var(--ease), color var(--t) var(--ease), border-color var(--t) var(--ease);
+}
+.panel-hide .icon { width: 16px; height: 16px; }
+.panel-hide:hover { background: var(--brand-soft); border-color: var(--brand); color: var(--brand); }
+.panel-hide:focus-visible, .panel-show:focus-visible { outline: none; box-shadow: var(--ring); }
+
+.panel-show {
+  display: none; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; min-height: 52px; padding: 12px 16px; border-radius: var(--radius-lg);
+  border: 1px solid var(--border); background: var(--surface); box-shadow: var(--shadow);
+  font: inherit; font-weight: 700; color: var(--text); cursor: pointer;
+  transition: background var(--t) var(--ease), border-color var(--t) var(--ease), transform var(--t) var(--ease);
+}
+.panel-show .icon { width: 22px; height: 22px; color: var(--brand); flex: none; }
+.panel-show .panel-show-arrow { width: 16px; height: 16px; color: var(--muted); }
+.panel-show:hover { background: var(--brand-soft); border-color: var(--brand); }
+.panel-show .show-short { display: none; }
+/* As a full-width bar (progress below the lesson) the button needs no arrow: it opens in place. */
+.panel-show:has(.show-long) .panel-show-arrow { display: none; }
+.sidebar-title .panel-hide { gap: 4px; }
+.sidebar-title #sidebar-heading { min-width: 0; }
+
+/* Folded progress: one button in its place ("Show your progress"); a narrow strip beside the lesson on wide screens. */
+.layout.rail-collapsed .rail-wrap > :not(.panel-show) { display: none; }
+.layout.rail-collapsed .rail-wrap > .panel-show { display: flex; }
+@media (min-width: 1280px) {
+  .layout.rail-collapsed { --rail-w: var(--strip-w); }
+  .layout.rail-collapsed .panel-show,
+  .layout.side-collapsed .sidebar .panel-show {
+    flex-direction: column; gap: 6px; min-height: 132px; padding: 16px 4px;
+    font-size: var(--fs-xs); line-height: 1.2; text-align: center; overflow-wrap: anywhere;
+  }
+  .layout.rail-collapsed .panel-show .show-short { display: inline; }
+  .layout.rail-collapsed .panel-show .show-long { display: none; }
+  .layout.rail-collapsed .panel-show .panel-show-arrow { display: block; }
+}
+@media (min-width: 1001px) {
+  .layout.side-collapsed { --side-w: var(--strip-w); }
+  .layout.side-collapsed .sidebar { overflow: visible; padding-right: 0; }
+  .layout.side-collapsed .sidebar > :not(.panel-show) { display: none; }
+  .layout.side-collapsed .sidebar > .panel-show { display: flex; }
+}
+@media (min-width: 1001px) and (max-width: 1279px) {
+  .layout.side-collapsed .sidebar .panel-show {
+    flex-direction: column; gap: 6px; min-height: 132px; padding: 16px 4px;
+    font-size: var(--fs-xs); line-height: 1.2; text-align: center; overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 1000px) {
+  /* Phones: the chapters are a drawer with its own close button. */
+  .sidebar .panel-hide, .sidebar .panel-show { display: none !important; }
 }
 
 /* A light frosted card: the page shows faintly through, with the site's layered shadow. */
@@ -430,13 +509,17 @@ svg.icon {
 
 .chapter-link.active .chapter-num { background: var(--brand-fill); color: var(--brand-ink); border-color: var(--brand-hover); box-shadow: var(--brand-lift); }
 
+/* Titles wrap rather than being cut short: the whole name tells a learner where a link goes. Two lines at most. */
 .chapter-name {
-  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
   font-size: var(--fs-sm);
   font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 
 .chapter-link.active .chapter-name { color: var(--brand); }
@@ -1644,8 +1727,13 @@ dialog[open] { animation: dialog-in 0.22s cubic-bezier(0.2, 0.7, 0.2, 1); }
 @media (max-width: 640px) {
   .topbar-inner { gap: 8px; }
   .brand-sub { display: none; }
-  .account-btn:not(.signed-in) #account-label { display: none; }
   .account-btn { padding: 0 8px; }
+  /* Phones: the words go under the icons, as in phone apps, so every button still says what it does. */
+  .btn.labelled, .account-btn:not(.signed-in) {
+    flex-direction: column; gap: 2px; height: auto; min-height: 48px; min-width: 52px; padding: 4px 6px; line-height: 1.1;
+  }
+  .btn.labelled .btn-label, .account-btn:not(.signed-in) #account-label { font-size: 0.6875rem; font-weight: 600; white-space: nowrap; }
+  .account-btn:not(.signed-in) { border-color: transparent; background: transparent; box-shadow: none; }
   .account-btn.signed-in #account-label { display: none; }
   .account-btn.signed-in .avatar { margin: 0; }
   .ad-placeholder { min-height: 60px; }
