@@ -1,115 +1,94 @@
 # Zema German: the mobile app
 
-The iOS and Android app for the Zema German course. It teaches the same course as the website, with the same
-accounts and progress, from the same Django backend in `../web/`.
+The iOS and Android app for the Zema German course, built with Flutter. It teaches the same course as the
+website, with the same accounts and progress, from the same Django backend in `../web/`.
 
 ## Stack
 
 | Concern | Choice | Why |
 |---|---|---|
-| Framework | Expo SDK 57 (React Native 0.86, TypeScript) | One codebase for iOS and Android, cloud builds with EAS, over-the-air fixes |
-| Navigation | Expo Router (`src/app/`), native tabs | Screens are files; real platform tab bars |
-| Animation and gestures | Reanimated 4, Gesture Handler | Swipe cards, pager and celebrations on the UI thread at full frame rate |
-| Type | Plus Jakarta Sans (`@expo-google-fonts`) | The website's typeface |
-| Icons and graphics | `@expo/vector-icons`, `react-native-svg`, `expo-image` | Tab and UI icons, the goal ring, cached word pictures and photos |
-| Offline data | `expo-file-system` (course JSON, audio clips), AsyncStorage (progress, settings) | The course opens and plays without a connection |
-| Sign-in | Bearer token in `expo-secure-store` (Keychain / Keystore) | No cookies or CSRF in a native app |
-| Audio | `expo-audio` | Plays downloaded clips, or streams them from the site |
-| Reminders | `expo-notifications`, scheduled on the device | Daily streak reminders work offline and need no push server |
+| Framework | Flutter 3.47 (Dart 3.13) | One codebase for iOS and Android, drawn by Flutter itself, so both look the same |
+| Navigation | `go_router` with a `StatefulShellRoute` | Four tabs, each with its own back stack; practice sessions cover the tabs |
+| State | `ChangeNotifier` stores (`core/`), redrawn with `ListenableBuilder` | Small, explicit and testable; no framework to learn |
+| Drawing | Custom painters (`path_drawing` for SVG path data), `flutter_svg` for word pictures | The course map, emblems, streak tally and goal ring are drawn like the website's SVG |
+| Type | Newsreader (bundled in `assets/fonts`), system font for controls | The website's serif for titles and German words |
+| Offline data | Files in the app's documents folder (course JSON, recordings, pictures), `shared_preferences` (progress, settings) | The course opens and plays without a connection |
+| Sign-in | Bearer token in `flutter_secure_storage` (Keychain / Keystore) | No cookies or CSRF in a native app |
+| Audio | `just_audio` with `audio_session` | Plays saved clips, or streams them from the site |
+| Speaking | `speech_to_text` (German) | The speaking coach hears the learner; a tap stands in where recognition is missing |
+| Reminders | `flutter_local_notifications`, scheduled on the phone | Daily streak reminders work offline and need no push server |
 
 ## Running it
 
 ```bash
 cd mobile
-npm install
-cp .env.example .env.local      # point EXPO_PUBLIC_API_URL at your computer, see below
-npx expo start                  # then press i (iOS simulator) or a (Android), or scan the QR code
+flutter pub get
+# Start the backend so the emulator or phone can reach it, with live updates (from web/; runserver has no WebSockets):
+#   DJANGO_SETTINGS_MODULE=config.settings.dev DJANGO_ALLOWED_HOSTS='*' ../.venv/bin/uvicorn config.asgi:application --host 0.0.0.0 --port 8000 --reload
+flutter run --dart-define=API_URL=http://10.0.2.2:8000     # Android emulator: 10.0.2.2 is this computer
+flutter run --profile --dart-define=API_URL=http://10.0.2.2:8000  # the same at full speed (debug builds are slow)
+flutter run --dart-define=API_URL=http://192.168.1.4:8000  # a phone on the same Wi-Fi (ipconfig getifaddr en0)
+flutter run                                                # without API_URL: the live site
 ```
 
-For the backend, run the dev server in `web/` so phones can reach it:
-`DJANGO_ALLOWED_HOSTS='*' ../.venv/bin/uvicorn config.asgi:application --host 0.0.0.0 --reload`.
-Without `EXPO_PUBLIC_API_URL` the app talks to the live site.
+A build pointed at `http://…` is a test build: when the computer's address changes, open **Me › Test server**,
+enter the new one and tap **Save and connect**. Debug builds allow plain http; release builds need https.
 
-**Test builds and a changing address.** A build pointed at `http://…` (your computer) is a test build. When the
-computer's Wi-Fi address changes (another network, a router restart), the app can't reach it: nothing new loads and
-recordings stay silent. Open **Me › Test server**, enter the new address (`ipconfig getifaddr en0` on a Mac) and
-tap **Save and connect**; no new build needed. In the Android emulator, `http://10.0.2.2:8000` always reaches the
-computer it runs on.
+Android builds need Java 17 (`JAVA_HOME`, or `flutter config --jdk-dir`). iOS builds need Xcode and CocoaPods.
 
-Before committing: `npm run typecheck && npm run lint`.
+Before committing: `flutter analyze && flutter test`.
 
-Release builds use EAS: `npx eas-cli@latest build --platform all` (it asks to create the project the first time).
+Release builds: `flutter build appbundle` (Google Play) and `flutter build ipa` (App Store). Both keep the app id
+`com.zemalearn.german` of the earlier Expo app, so they replace it in the stores. Add the release signing config
+in `android/app/build.gradle.kts` before the first upload.
 
 ## How it fits together
 
 ```
-src/
-  app/                      routes only (Expo Router); each file is a thin screen over features/
-    _layout.tsx             fonts, saved state, providers; onboarding guard (Stack.Protected)
-    onboarding.tsx          first run only
-    (tabs)/                 Home · Words · Lessons · Me (native tab bar)
-      index.tsx             Home: today's goal, streak week, level, "continue" cards
-      words/                Vocabulary training: review, sections by unit, word lists     (own stack)
-      lessons/              Learning modules: grammar, reading, unit tests, listening     (own stack)
-      me.tsx                account, stats, daily goal, language, voice, reminder, offline
-    session/                full-screen practice: cards, quiz, listening (no tab bar, close to leave)
-    sign-in.tsx
+lib/
+  main.dart                 loads what is saved on the phone, then starts the app
+  router.dart               tabs, their stacks, full-screen sessions, the onboarding guard
   core/                     the app's plumbing, no screens
-    api/                    types.ts (mirrors web/apps/api), client.ts (every request, the token)
-    offline/                the course and recordings saved on the phone
-    course.tsx session.tsx  the course (English/Amharic, admins' text changes) and the signed-in user
-    settings.ts store.ts    persisted settings, and the small store they are built on
+    api/                    models.dart (mirrors web/apps/api), client.dart (every request, the token)
+    sync/                   rules.dart (the server's conflict rules), engine.dart (outbox, retries), live.dart (/ws/v1/)
+    offline/                recordings (per unit, voice and speed) and word pictures saved on the phone
+    course.dart session.dart settings.dart storage.dart i18n.dart config.dart
   features/                 one folder per product area
-    onboarding/             slides, pager, the website's sourced reasons to learn German
-    vocabulary/             spaced repetition (srs.ts), the swipe card, card sessions, word rows
-    lessons/                lesson kinds, questions, the question view and quiz sessions, lesson content
-    gamification/           XP rules and levels (xp.ts), celebration, confetti, goal ring, chips, week strip
-    progress/               progress and its sync rules, streaks, what to do next
-    reminders/              daily streak reminders
-  ui/                       design system: theme/ (tokens from zema.css, type scale, motion), primitives
+    gamification/           XP and levels (game.dart), the streak tally (port of tally.js), milestones, celebration
+    progress/               progress changes, what to do next, the course map and its emblems
+    lessons/                questions (incl. the unit test, verb endings, countries), the question view, quiz sessions,
+                            lesson content, answer checking (port of the website's checker)
+    vocabulary/             spaced repetition, flashcards, match, practice, word-by-word learning, the speaking coach
+    onboarding/ reminders/
+  screens/                  Home, Words, Lessons, Me, unit, section, lesson, sign-in
+  ui/                       design system: tokens.dart (from zema.css), theme, primitives, rich text
+tool/sync_shared.dart       copies zema.css colours and web/locale/am.json into the app
+test/                       sync rules (the server's sync_cases.json), tally and answer checking (the website's cases)
 ```
 
-**Separation.** Words (vocabulary training) and Lessons (learning modules) are separate tabs with separate
-stacks, separate feature folders and their own accent colours: gold for words, emerald for lessons. Home
-only links into them. Practice always opens as a full-screen session above the tabs, with one way out, so
-there are no dead ends.
+## The same as the website
 
-**The game.** The rules live in `features/gamification/xp.ts`: XP for new words, reviews and right answers,
-bonuses for passing a lesson and for perfect scores, a level curve, and daily goals. XP is stored per day in
-the learner's progress and synced: the server keeps each day's highest count, so two devices never count the
-same XP twice. Every session ends with a celebration (confetti only for a real success, a level-up banner,
-the streak and the daily goal). Animations run on the UI thread with Reanimated and switch off with the
-phone's reduce-motion setting.
+| Website | App |
+|---|---|
+| Course map with topic emblems, solid road travelled, dashed ahead, pennant for a passed unit test | Home, scrolls sideways, tap a place to open its unit |
+| Progress column: today's ring, streak, up next with minutes, milestones, the whole course | Home |
+| Streak dialog: full tally, legend, daily goal, freezes | Tap the tally (Home, Words, Lessons, Me) |
+| Learn: word grid with "Reveal all", word by word | Section page (word list), Learn mode |
+| Flashcards (DE→EN, EN→DE, mixed) | Swipe cards, direction under Me; graded for spaced review too |
+| Match (10 pairs) | Match |
+| Practice (type the translation) | Practice, with the same forgiving check (the website's local AI checker runs only on its own Mac) |
+| Speak with Selam or Dawit | Speaking coach: listen three times, say it three times |
+| Lessons, reading texts, exercises of every item type | Lessons tab and lesson pages; reading text stays in view during its exercise |
+| Unit test (12 questions, 9 to pass), verb endings, countries | Built in the app the same way |
+| English or Amharic | Explanations and interface (the website's `am.json`) |
+| Voice, speaking speed, light or dark | Me |
+| Sync, live updates, resume on any device, single sign-on | Same API, same rules |
 
-**Spaced repetition.** Learned words come back for review on a Leitner schedule (1, 2, 4, 8, 16 and 32 days);
-a miss brings a word back the same day. Schedules sync with the account (the latest review of a word wins).
-
-**Onboarding.** On first start: a welcome (with the choice of English or Amharic explanations), three reasons
-with photos and figures served by `/api/v1/why-german/` (the website's landing page content, each with its
-official source), how the app works, and a daily goal. Skip jumps to the goal. Offline, the reasons are left
-out. *Me › Watch the introduction again* shows it again.
-
-**Sync and resume.** `src/core/sync/` holds the sync engine: operations, an offline outbox, conflict rules shared with
-the server, and a live connection. Exercises continue on any device at the same question. See [SYNC.md](../SYNC.md).
-`npm run test:sync` checks the rules against the server's cases, and the answer checking against the website's.
-
-**Offline first.** The course, the clip list, settings, progress and review data load from the phone before the
-first screen; the server is only asked whether anything changed. Recordings stream, or are saved per unit.
-
-**Same rules as the website.** A lesson exercise is 8 items drawn from the same list as the website's, and 6 right completes it. Every item
-type runs in the app (multiple choice, listening, gaps, word order, typed answers), checked like on the website.
-`npm run sync-tokens` copies the colours from `web/static/core/css/zema.css`.
+App only: today's review (spaced repetition), listening practice per unit, saving a unit's recordings for
+offline use, daily reminders.
 
 ## Next steps
 
-1. **Unit tests and the present-tense trainer**, which the website builds itself, so every exercise also runs in
-   the app (they open the website for now; their scores sync back).
-2. **Amharic interface text.** Course content already switches to Amharic. Buttons and labels are English for now;
-   reuse `web/locale/am.json` by adding its `course` section to the API.
-3. **Speaking practice** with `expo-audio` recording, like the website's coach.
-4. **Server push** (Expo push tokens and a daily job on the server) only if reminders must know about practice done
-   on other devices. The on-device reminders cover the streak already.
-5. **Content in the database.** The course is written in `web/tools/course_content.py`. Moving units, words and
-   quizzes into Django models would let admins edit them in the admin site; the API's shape can stay the same, so
-   neither the website nor the app has to change.
-6. **App icons and splash** in the brand (the files in `assets/images/` are placeholders).
+1. **Push reminders** from the server, if reminders must know about practice done on other devices.
+2. **A lip-synced coach** like the website's illustrated one (the app shows the coach's face and when they talk).
+3. **App icons and splash** in the brand (`assets/brand/` holds the earlier app's files).

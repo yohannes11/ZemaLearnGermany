@@ -20,7 +20,7 @@ queueing offline for days, or receiving changes in any order all lead to the sam
 | `Progress` (one per learner) | `revision` (goes up on every real change), `learned` words, `word_log` (when each word last changed), `grammar` (best scores), `days` practised, `xp` per day, `srs` (review schedule per word), `session` (the open exercise) |
 | `ProgressEvent` | Every operation applied, unique per (learner, `op_id`): the deduplication record |
 
-## Operations and conflict rules (`web/apps/course/sync.py`, `mobile/src/core/sync/rules.ts`)
+## Operations and conflict rules (`web/apps/course/sync.py`, `mobile/lib/core/sync/rules.dart`)
 
 Every operation has `id`, `kind`, `at` (milliseconds since 1970, from the device's clock) and `day` (the
 learner's own calendar day, `YYYY-MM-DD`).
@@ -82,7 +82,7 @@ on the socket alone.
 
 ## On each device
 
-**App (`mobile/src/core/sync/engine.ts`).** The app shows the server's last state with its unconfirmed
+**App (`mobile/lib/core/sync/engine.dart`).** The app shows the server's last state with its unconfirmed
 operations applied on top, using the same rules, so every tap shows at once, offline too.
 - **Outbox:** operations wait in a persisted outbox. It is sent about 0.8 s after a change, when the app
   returns to the foreground, when the network comes back (tested: within 2 s) and when the live connection
@@ -99,7 +99,7 @@ Changes from other devices are applied live, with waiting operations replayed on
 
 An open exercise is the `session` field. For a lesson exercise, `items` are the quiz item **numbers** in the
 order drawn, so any device rebuilds the very same questions. Answers are checked the same way on both
-platforms: the app's `answer-check.ts` is a line-for-line port of the website's checker.
+platforms: the app's `answer_check.dart` is a line-for-line port of the website's checker.
 - **Saving:** both clients save the position after every question and clear it when the exercise ends.
 - **App:** Home shows "Continue where you stopped on the website / your other phone", and the lesson screen
   shows "Continue · question n of 8".
@@ -129,12 +129,12 @@ missed day by itself.
 are the learner's own calendar days, so the day resets at their local midnight. Every device computes the
 same tally from the same facts.
 
-**One implementation.** Rules, layout, colour roles and timing are in `web/static/core/js/tally.js`. The website
-loads it as a script. The app imports the same file (`@shared/tally`, through `mobile/metro.config.js` and
-`tsconfig.json`), and its types are in `tally.d.ts`. Each platform only draws: `web/static/core/js/tally-view.js`
-as SVG, and `mobile/src/features/gamification/tally.tsx` with `react-native-svg` and Reanimated. Colours come
-from `zema.css` (`--flame`, `--freeze`), which the app copies with `npm run sync-tokens`. Tests:
-`npm run test:sync` in `mobile/`.
+**Two copies of one implementation.** Rules, layout, colour roles and timing are in `web/static/core/js/tally.js`,
+which the website loads as a script. The Flutter app can't run that file, so `mobile/lib/features/gamification/tally.dart`
+is a line-for-line port of it, checked by the website's own cases (`mobile/test/tally_test.dart`). Change both
+together. Each platform only draws: `web/static/core/js/tally-view.js` as SVG, and
+`mobile/lib/features/gamification/tally_view.dart` with a custom painter. Colours come from `zema.css` (`--flame`,
+`--freeze`), which the app copies with `dart run tool/sync_shared.dart`. Tests: `flutter test` in `mobile/`.
 
 **Animation, and offline.** A strike draws itself (420 ms, eased like the rest of the design, 90 ms apart) the
 first time a device shows that day struck, with a success haptic on phones.
