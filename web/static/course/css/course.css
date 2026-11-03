@@ -418,7 +418,7 @@ svg.icon {
 .milestone-medal .rail-flame { fill: currentColor; }
 .milestone.earned .milestone-medal {
   border: 1.5px solid var(--gold-bright);
-  background: radial-gradient(circle at 35% 30%, var(--gold-soft), color-mix(in srgb, var(--gold-bright) 32%, var(--surface)));
+  background: var(--gold-soft);
   color: var(--gold);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 8px -2px color-mix(in srgb, var(--gold-bright) 60%, transparent);
 }
@@ -551,7 +551,7 @@ svg.icon {
   right: 36px;
   width: 20px;
   height: 64px;
-  background: linear-gradient(90deg, #064e3b, #047857 45%, #064e3b);
+  background: #065f46;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   transform-origin: top center;
