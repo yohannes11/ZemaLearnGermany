@@ -19,6 +19,7 @@ import '../lessons/questions.dart' show shuffle;
 import '../lessons/quiz_session.dart';
 import '../progress/progress.dart';
 import 'word_picture.dart';
+import 'word_widgets.dart' show ExampleList;
 
 /// Words for a study mode: a section, or a whole unit (`unit:<id>`, the website's "All chapters").
 class WordScope {
@@ -348,28 +349,35 @@ class _PracticeSessionState extends State<PracticeSession> {
 
 /* ---------------- Learn: one word at a time ---------------- */
 
-/// The website's Learn mode, word by word: the word, its picture and recording, then its meaning on request (which
-/// counts it as learned). From any word, "Say it with Selam" starts speaking practice there.
+/// The website's Learn mode, word by word: the word, its picture, recording, meaning and examples (reading a word's
+/// page counts it as learned). From any word, "Say it with Selam" starts speaking practice there.
 class WordPages extends StatefulWidget {
-  const WordPages({super.key, required this.scope});
+  const WordPages({super.key, required this.scope, this.from = 0});
   final WordScope scope;
+
+  /// The word to start at (from the search).
+  final int from;
 
   @override
   State<WordPages> createState() => _WordPagesState();
 }
 
 class _WordPagesState extends State<WordPages> {
-  var _index = 0;
-  var _shown = false;
+  late var _index = widget.from.clamp(0, widget.scope.words.isEmpty ? 0 : widget.scope.words.length - 1);
 
   void _move(int step) {
     final next = _index + step;
     if (next < 0 || next > widget.scope.words.length) return;
-    setState(() {
-      _index = next;
-      _shown = false;
-    });
-    if (next < widget.scope.words.length) audio.play(widget.scope.words[next].german);
+    setState(() => _index = next);
+    _show();
+  }
+
+  /// Plays the word on screen and counts it as learned.
+  void _show() {
+    if (_index >= widget.scope.words.length) return;
+    final german = widget.scope.words[_index].german;
+    audio.play(german);
+    learnWord(german);
   }
 
   void _changed() => setState(() {});
@@ -379,7 +387,7 @@ class _WordPagesState extends State<WordPages> {
     super.initState();
     // Redraws when progress changes (the "Learned" mark).
     sync.addListener(_changed);
-    if (widget.scope.words.isNotEmpty) audio.play(widget.scope.words.first.german);
+    WidgetsBinding.instance.addPostFrameCallback((_) => _show());
   }
 
   @override
@@ -399,7 +407,14 @@ class _WordPagesState extends State<WordPages> {
           Txt(T('Chapter read'), role: TextRole.title),
           Txt(T('You went through all {n} words in this chapter.', {'n': words.length}), colour: c.muted),
           AppButton(label: T('Practise these words'), onPressed: () => context.pushReplacement('/session/practice/${widget.scope.key}')),
-          AppButton(label: T('Start over'), kind: ButtonKind.ghost, onPressed: () => setState(() => _index = 0)),
+          AppButton(
+            label: T('Start over'),
+            kind: ButtonKind.ghost,
+            onPressed: () {
+              setState(() => _index = 0);
+              _show();
+            },
+          ),
         ]),
       );
     }
@@ -431,19 +446,8 @@ class _WordPagesState extends State<WordPages> {
                         WordPicture(codes: word.pic, size: 84),
                         Txt(word.german, role: TextRole.german, align: TextAlign.center),
                         ListenButton(word.german, size: 56),
-                        if (_shown)
-                          Txt(course.meaning(word), role: TextRole.title, colour: c.brand, align: TextAlign.center)
-                        else
-                          AppButton(
-                            label: T('Show meaning'),
-                            kind: ButtonKind.secondary,
-                            icon: Icons.visibility_outlined,
-                            expand: false,
-                            onPressed: () {
-                              setState(() => _shown = true);
-                              learnWord(word.german);
-                            },
-                          ),
+                        Txt(course.meaning(word), role: TextRole.title, colour: c.brand, align: TextAlign.center),
+                        ExampleList(word: word),
                         AppButton(
                           label: T('Say it with {name}', {'name': coachName()}),
                           kind: ButtonKind.ghost,

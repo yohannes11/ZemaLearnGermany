@@ -84,7 +84,7 @@ class LanguageSwitchTests(TestCase):
         response = self.client.get(reverse("course:index") + "?lang=am")
         config = response.context["app_config"]
         self.assertEqual(config["lang"], "am")
-        self.assertEqual(config["messages"]["Show meaning"], "ትርጉሙን ይመልከቱ")
+        self.assertEqual(config["messages"]["Show answer"], "መልሱን ይመልከቱ")
         self.assertContains(response, "ቅንብሮች")
         english = self.client.get(reverse("course:index") + "?lang=en")
         self.assertEqual(english.context["app_config"]["messages"], {})

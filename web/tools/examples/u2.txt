@@ -1,0 +1,489 @@
+# Unit 2: example sentences for every word. German ||| English ||| Amharic
+# Three for a single word, two for a phrase; A1 German that uses the course's own words.
+
+# 2.1 Family
+## die Eltern
+Meine Eltern wohnen in Addis Abeba. ||| My parents live in Addis Ababa. ||| ወላጆቼ አዲስ አበባ ይኖራሉ።
+Die Eltern sind zu Hause. ||| The parents are at home. ||| ወላጆቹ ቤት ናቸው።
+Wie heißen deine Eltern? ||| What are your parents called? ||| ወላጆችህ ማን ይባላሉ?
+## die Kinder
+Die Kinder spielen im Garten. ||| The children are playing in the garden. ||| ልጆቹ በአትክልት ቦታው ውስጥ እየተጫወቱ ነው።
+Wir haben zwei Kinder. ||| We have two children. ||| ሁለት ልጆች አሉን።
+Die Kinder sind in der Schule. ||| The children are at school. ||| ልጆቹ ትምህርት ቤት ናቸው።
+## der Sohn
+Mein Sohn heißt Yonas. ||| My son is called Yonas. ||| ልጄ ዮናስ ይባላል።
+Der Sohn ist zehn Jahre alt. ||| The son is ten years old. ||| ወንድ ልጁ የአሥር ዓመት ልጅ ነው።
+Ihr Sohn spielt Fußball. ||| Her son plays football. ||| ወንድ ልጇ እግር ኳስ ይጫወታል።
+## die Tochter
+Meine Tochter heißt Selam. ||| My daughter is called Selam. ||| ሴት ልጄ ሰላም ትባላለች።
+Die Tochter ist acht Jahre alt. ||| The daughter is eight years old. ||| ሴት ልጁ የስምንት ዓመት ልጅ ናት።
+Seine Tochter lernt Deutsch. ||| His daughter is learning German. ||| ሴት ልጁ ጀርመንኛ እየተማረች ነው።
+## der Bruder
+Mein Bruder wohnt in Berlin. ||| My brother lives in Berlin. ||| ወንድሜ በርሊን ይኖራል።
+Hast du einen Bruder? ||| Do you have a brother? ||| ወንድም አለህ?
+Mein Bruder ist Lehrer. ||| My brother is a teacher. ||| ወንድሜ አስተማሪ ነው።
+## die Schwester
+Meine Schwester heißt Liya. ||| My sister is called Liya. ||| እህቴ ሊያ ትባላለች።
+Hast du eine Schwester? ||| Do you have a sister? ||| እህት አለህ?
+Meine Schwester ist zwanzig. ||| My sister is twenty. ||| እህቴ ሃያ ዓመቷ ነው።
+## die Geschwister
+Hast du Geschwister? ||| Do you have siblings? ||| ወንድሞችና እህቶች አሉህ?
+Ich habe drei Geschwister. ||| I have three siblings. ||| ሦስት ወንድሞችና እህቶች አሉኝ።
+Meine Geschwister wohnen in Äthiopien. ||| My siblings live in Ethiopia. ||| ወንድሞቼና እህቶቼ ኢትዮጵያ ይኖራሉ።
+## der Opa, der Großvater
+Mein Opa ist achtzig Jahre alt. ||| My grandpa is eighty years old. ||| አያቴ የሰማንያ ዓመት ሰው ናቸው።
+Der Großvater erzählt viel. ||| The grandfather tells a lot of stories. ||| አያትየው ብዙ ያወራሉ።
+Mein Großvater wohnt in Gondar. ||| My grandfather lives in Gondar. ||| አያቴ ጎንደር ይኖራሉ።
+## die Oma, die Großmutter
+Meine Oma kocht sehr gut. ||| My grandma cooks very well. ||| አያቴ በጣም በደንብ ያበስላሉ።
+Die Großmutter trinkt Kaffee. ||| The grandmother drinks coffee. ||| አያትየዋ ቡና ይጠጣሉ።
+Meine Großmutter ist sehr nett. ||| My grandmother is very kind. ||| አያቴ በጣም ደግ ናቸው።
+## die Großeltern
+Meine Großeltern wohnen auf dem Land. ||| My grandparents live in the countryside. ||| አያቶቼ ገጠር ይኖራሉ።
+Die Großeltern besuchen uns. ||| The grandparents visit us. ||| አያቶቹ ይጠይቁናል።
+Ich liebe meine Großeltern. ||| I love my grandparents. ||| አያቶቼን እወዳቸዋለሁ።
+## die Tante
+Meine Tante wohnt in Hamburg. ||| My aunt lives in Hamburg. ||| አክስቴ ሃምቡርግ ትኖራለች።
+Die Tante ist sehr lustig. ||| The aunt is very funny. ||| አክስትየዋ በጣም አስቂኝ ናት።
+Das ist meine Tante Almaz. ||| That is my aunt Almaz. ||| ይህች አክስቴ አልማዝ ናት።
+## der Onkel
+Mein Onkel ist Arzt. ||| My uncle is a doctor. ||| አጎቴ ሐኪም ነው።
+Der Onkel kommt heute. ||| The uncle is coming today. ||| አጎትየው ዛሬ ይመጣል።
+Mein Onkel wohnt in Kenia. ||| My uncle lives in Kenya. ||| አጎቴ ኬንያ ይኖራል።
+## die Cousine
+Meine Cousine heißt Hanna. ||| My cousin is called Hanna. ||| የአጎቴ ልጅ ሐና ትባላለች።
+Die Cousine ist sechzehn. ||| The cousin is sixteen. ||| የአጎቷ ልጅ አሥራ ስድስት ዓመቷ ነው።
+Meine Cousine lernt auch Deutsch. ||| My cousin is learning German too. ||| የአጎቴ ልጅም ጀርመንኛ እየተማረች ነው።
+## der Cousin
+Mein Cousin heißt Meron. ||| My cousin is called Meron. ||| የአክስቴ ልጅ ሜሮን ይባላል።
+Der Cousin spielt Gitarre. ||| The cousin plays guitar. ||| የአጎቱ ልጅ ጊታር ይጫወታል።
+Mein Cousin wohnt in Bahir Dar. ||| My cousin lives in Bahir Dar. ||| የአጎቴ ልጅ ባሕር ዳር ይኖራል።
+
+# 2.2 The definite article
+## der
+Der Mann heißt Dawit. ||| The man is called Dawit. ||| ሰውየው ዳዊት ይባላል።
+Der Tisch ist neu. ||| The table is new. ||| ጠረጴዛው አዲስ ነው።
+Der Kaffee ist heiß. ||| The coffee is hot. ||| ቡናው ትኩስ ነው።
+## die
+Die Frau heißt Liya. ||| The woman is called Liya. ||| ሴትዮዋ ሊያ ትባላለች።
+Die Tür ist offen. ||| The door is open. ||| በሩ ክፍት ነው።
+Die Schule ist groß. ||| The school is big. ||| ትምህርት ቤቱ ትልቅ ነው።
+## das
+Das Kind spielt. ||| The child is playing. ||| ልጁ እየተጫወተ ነው።
+Das Haus ist schön. ||| The house is beautiful. ||| ቤቱ ቆንጆ ነው።
+Das Buch ist neu. ||| The book is new. ||| መጽሐፉ አዲስ ነው።
+## die (Plural)
+Die Kinder spielen. ||| The children are playing. ||| ልጆቹ እየተጫወቱ ነው።
+Die Bücher sind neu. ||| The books are new. ||| መጻሕፍቱ አዲስ ናቸው።
+Die Häuser sind groß. ||| The houses are big. ||| ቤቶቹ ትልልቅ ናቸው።
+
+# 2.4 My: mein & meine
+## meine
+Das ist meine Schwester. ||| That is my sister. ||| ይህች እህቴ ናት።
+Meine Kinder sind in der Schule. ||| My children are at school. ||| ልጆቼ ትምህርት ቤት ናቸው።
+Wo ist meine Tasche? ||| Where is my bag? ||| ቦርሳዬ የት ነው?
+## mein Vater
+Mein Vater heißt Abebe. ||| My father is called Abebe. ||| አባቴ አበበ ይባላል።
+Das ist mein Vater. ||| That is my father. ||| ይህ አባቴ ነው።
+Mein Vater arbeitet viel. ||| My father works a lot. ||| አባቴ ብዙ ይሠራል።
+## meine Mutter
+Meine Mutter heißt Almaz. ||| My mother is called Almaz. ||| እናቴ አልማዝ ትባላለች።
+Das ist meine Mutter. ||| That is my mother. ||| ይህች እናቴ ናት።
+Meine Mutter kocht sehr gut. ||| My mother cooks very well. ||| እናቴ በጣም በደንብ ታበስላለች።
+## meine Eltern
+Meine Eltern sind in Äthiopien. ||| My parents are in Ethiopia. ||| ወላጆቼ ኢትዮጵያ ናቸው።
+Das sind meine Eltern. ||| Those are my parents. ||| እነዚህ ወላጆቼ ናቸው።
+Meine Eltern sprechen kein Deutsch. ||| My parents don't speak German. ||| ወላጆቼ ጀርመንኛ አይናገሩም።
+
+# 2.5 The verb sein (to be)
+## sein
+Ich möchte Lehrer sein. ||| I would like to be a teacher. ||| አስተማሪ መሆን እፈልጋለሁ።
+Das kann sein. ||| That may be. ||| ሊሆን ይችላል።
+Wo kann das sein? ||| Where can that be? ||| ያ የት ሊሆን ይችላል?
+## ich bin
+Ich bin Liya. ||| I am Liya. ||| እኔ ሊያ ነኝ።
+Ich bin müde. ||| I am tired. ||| ደክሞኛል።
+Ich bin Lehrerin. ||| I am a teacher. ||| እኔ አስተማሪ ነኝ።
+## du bist
+Du bist sehr nett. ||| You are very kind. ||| በጣም ደግ ነህ።
+Du bist mein Freund. ||| You are my friend. ||| አንተ ጓደኛዬ ነህ።
+Bist du müde? ||| Are you tired? ||| ደክሞሃል?
+## er, sie, es ist
+Er ist mein Bruder. ||| He is my brother. ||| እሱ ወንድሜ ነው።
+Sie ist Ärztin. ||| She is a doctor. ||| እሷ ሐኪም ናት።
+Es ist kalt. ||| It is cold. ||| ቀዝቃዛ ነው።
+## wir sind
+Wir sind aus Äthiopien. ||| We are from Ethiopia. ||| እኛ ከኢትዮጵያ ነን።
+Wir sind Freunde. ||| We are friends. ||| እኛ ጓደኞች ነን።
+Wir sind zu Hause. ||| We are at home. ||| እኛ ቤት ነን።
+## ihr seid
+Ihr seid sehr nett. ||| You all are very kind. ||| እናንተ በጣም ደጎች ናችሁ።
+Seid ihr müde? ||| Are you all tired? ||| ደክሟችኋል?
+Ihr seid meine Freunde. ||| You all are my friends. ||| እናንተ ጓደኞቼ ናችሁ።
+## sie sind
+Sie sind meine Eltern. ||| They are my parents. ||| እነሱ ወላጆቼ ናቸው።
+Die Kinder? Sie sind in der Schule. ||| The children? They are at school. ||| ልጆቹ? ትምህርት ቤት ናቸው።
+Sie sind aus Kenia. ||| They are from Kenya. ||| እነሱ ከኬንያ ናቸው።
+## Sie sind
+Sie sind Frau Bekele, richtig? ||| You are Mrs Bekele, right? ||| እርስዎ ወይዘሮ በቀለ ነዎት፣ አይደል?
+Sind Sie der Kursleiter? ||| Are you the course teacher? ||| እርስዎ የኮርሱ መምህር ነዎት?
+Sie sind sehr freundlich. ||| You are very friendly. ||| በጣም ተግባቢ ነዎት።
+
+# 2.6 Languages
+## die Sprache
+Deutsch ist eine schöne Sprache. ||| German is a beautiful language. ||| ጀርመንኛ ውብ ቋንቋ ነው።
+Welche Sprache sprichst du? ||| Which language do you speak? ||| የትኛውን ቋንቋ ትናገራለህ?
+Die Sprache ist schwer. ||| The language is difficult. ||| ቋንቋው ከባድ ነው።
+## ein bisschen
+Ich spreche ein bisschen Deutsch. ||| I speak a little German. ||| ትንሽ ጀርመንኛ እናገራለሁ።
+Ich bin ein bisschen müde. ||| I am a little tired. ||| ትንሽ ደክሞኛል።
+Ein bisschen Milch, bitte. ||| A little milk, please. ||| እባክዎ ትንሽ ወተት።
+## Deutsch
+Ich lerne Deutsch. ||| I am learning German. ||| ጀርመንኛ እየተማርኩ ነው።
+Sprichst du Deutsch? ||| Do you speak German? ||| ጀርመንኛ ትናገራለህ?
+Deutsch ist nicht so schwer. ||| German is not so difficult. ||| ጀርመንኛ ያን ያህል ከባድ አይደለም።
+## Englisch
+Ich spreche Englisch. ||| I speak English. ||| እንግሊዝኛ እናገራለሁ።
+Sprichst du Englisch? ||| Do you speak English? ||| እንግሊዝኛ ትናገራለህ?
+Mein Englisch ist gut. ||| My English is good. ||| እንግሊዝኛዬ ጥሩ ነው።
+## Französisch
+Marie spricht Französisch. ||| Marie speaks French. ||| ማሪ ፈረንሳይኛ ትናገራለች።
+Ich lerne ein bisschen Französisch. ||| I am learning a little French. ||| ትንሽ ፈረንሳይኛ እየተማርኩ ነው።
+Französisch ist schön. ||| French is beautiful. ||| ፈረንሳይኛ ውብ ነው።
+## Spanisch
+Carlos spricht Spanisch. ||| Carlos speaks Spanish. ||| ካርሎስ ስፓኒሽ ይናገራል።
+In Spanien spricht man Spanisch. ||| In Spain people speak Spanish. ||| በስፔን ስፓኒሽ ይነገራል።
+Sprechen Sie Spanisch? ||| Do you speak Spanish? ||| ስፓኒሽ ይናገራሉ?
+## Portugiesisch
+In Brasilien spricht man Portugiesisch. ||| In Brazil people speak Portuguese. ||| በብራዚል ፖርቱጋልኛ ይነገራል።
+Ana spricht Portugiesisch. ||| Ana speaks Portuguese. ||| አና ፖርቱጋልኛ ትናገራለች።
+Ich spreche kein Portugiesisch. ||| I don't speak Portuguese. ||| ፖርቱጋልኛ አልናገርም።
+## Japanisch
+Yuki spricht Japanisch. ||| Yuki speaks Japanese. ||| ዩኪ ጃፓንኛ ትናገራለች።
+Japanisch ist schwer. ||| Japanese is difficult. ||| ጃፓንኛ ከባድ ነው።
+In Japan spricht man Japanisch. ||| In Japan people speak Japanese. ||| በጃፓን ጃፓንኛ ይነገራል።
+## Chinesisch
+Li spricht Chinesisch. ||| Li speaks Chinese. ||| ሊ ቻይንኛ ይናገራል።
+Chinesisch ist nicht leicht. ||| Chinese is not easy. ||| ቻይንኛ ቀላል አይደለም።
+Ich lerne Chinesisch. ||| I am learning Chinese. ||| ቻይንኛ እየተማርኩ ነው።
+## Amharisch
+Ich spreche Amharisch. ||| I speak Amharic. ||| አማርኛ እናገራለሁ።
+Amharisch ist meine Muttersprache. ||| Amharic is my mother tongue. ||| አማርኛ የአፍ መፍቻ ቋንቋዬ ነው።
+In Äthiopien spricht man Amharisch. ||| In Ethiopia people speak Amharic. ||| በኢትዮጵያ አማርኛ ይነገራል።
+## Tigrinya
+In Eritrea spricht man Tigrinya. ||| In Eritrea people speak Tigrinya. ||| በኤርትራ ትግርኛ ይነገራል።
+Helen spricht Tigrinya und Englisch. ||| Helen speaks Tigrinya and English. ||| ሄለን ትግርኛና እንግሊዝኛ ትናገራለች።
+Mein Vater spricht Tigrinya. ||| My father speaks Tigrinya. ||| አባቴ ትግርኛ ይናገራል።
+## Oromo
+Meine Großmutter spricht Oromo. ||| My grandmother speaks Oromo. ||| አያቴ ኦሮምኛ ይናገራሉ።
+Ich spreche Amharisch und Oromo. ||| I speak Amharic and Oromo. ||| አማርኛና ኦሮምኛ እናገራለሁ።
+Sprichst du Oromo? ||| Do you speak Oromo? ||| ኦሮምኛ ትናገራለህ?
+## Arabisch
+Omar spricht Arabisch. ||| Omar speaks Arabic. ||| ዑመር ዐረብኛ ይናገራል።
+In Dubai spricht man Arabisch. ||| In Dubai people speak Arabic. ||| በዱባይ ዐረብኛ ይነገራል።
+Ich lerne ein bisschen Arabisch. ||| I am learning a little Arabic. ||| ትንሽ ዐረብኛ እየተማርኩ ነው።
+## Italienisch
+Marco spricht Italienisch. ||| Marco speaks Italian. ||| ማርኮ ጣሊያንኛ ይናገራል።
+Mein Opa spricht Italienisch. ||| My grandpa speaks Italian. ||| አያቴ ጣሊያንኛ ይናገራሉ።
+Italienisch ist schön. ||| Italian is beautiful. ||| ጣሊያንኛ ውብ ነው።
+## Türkisch
+Ayşe spricht Türkisch. ||| Ayşe speaks Turkish. ||| አይሼ ቱርክኛ ትናገራለች።
+In der Türkei spricht man Türkisch. ||| In Turkey people speak Turkish. ||| በቱርክ ቱርክኛ ይነገራል።
+Ich verstehe kein Türkisch. ||| I don't understand Turkish. ||| ቱርክኛ አልገባኝም።
+## Russisch
+Olga spricht Russisch. ||| Olga speaks Russian. ||| ኦልጋ ሩስያኛ ትናገራለች።
+Russisch ist schwer. ||| Russian is difficult. ||| ሩስያኛ ከባድ ነው።
+Sprechen Sie Russisch? ||| Do you speak Russian? ||| ሩስያኛ ይናገራሉ?
+## Welche Sprachen sprichst du?
+Welche Sprachen sprichst du? – Amharisch und Englisch. ||| Which languages do you speak? – Amharic and English. ||| ምን ምን ቋንቋዎች ትናገራለህ? – አማርኛና እንግሊዝኛ።
+Welche Sprachen sprichst du? – Ich spreche drei Sprachen. ||| Which languages do you speak? – I speak three languages. ||| ምን ምን ቋንቋዎች ትናገሪያለሽ? – ሦስት ቋንቋዎች እናገራለሁ።
+## Ich spreche Deutsch.
+Ich spreche Deutsch und Amharisch. ||| I speak German and Amharic. ||| ጀርመንኛና አማርኛ እናገራለሁ።
+Ich spreche Deutsch, aber langsam. ||| I speak German, but slowly. ||| ጀርመንኛ እናገራለሁ፤ ግን በቀስታ።
+## Ich spreche ein bisschen Englisch.
+Ich spreche ein bisschen Englisch und gut Amharisch. ||| I speak a little English and good Amharic. ||| ትንሽ እንግሊዝኛና ጥሩ አማርኛ እናገራለሁ።
+Sprechen Sie Englisch? – Ich spreche ein bisschen Englisch. ||| Do you speak English? – I speak a little English. ||| እንግሊዝኛ ይናገራሉ? – ትንሽ እንግሊዝኛ እናገራለሁ።
+## Sprichst du Englisch?
+Sprichst du Englisch? – Ja, gut. ||| Do you speak English? – Yes, well. ||| እንግሊዝኛ ትናገራለህ? – አዎ፣ በደንብ።
+Entschuldigung, sprichst du Englisch? ||| Excuse me, do you speak English? ||| ይቅርታ፣ እንግሊዝኛ ትናገራለህ?
+## Ja, ein bisschen.
+Sprichst du Deutsch? – Ja, ein bisschen. ||| Do you speak German? – Yes, a little. ||| ጀርመንኛ ትናገራለህ? – አዎ፣ ትንሽ።
+Verstehst du Englisch? – Ja, ein bisschen. ||| Do you understand English? – Yes, a little. ||| እንግሊዝኛ ይገባሃል? – አዎ፣ ትንሽ።
+## Nein, gar nicht.
+Sprichst du Russisch? – Nein, gar nicht. ||| Do you speak Russian? – No, not at all. ||| ሩስያኛ ትናገራለህ? – አይ፣ በፍጹም።
+Bist du müde? – Nein, gar nicht. ||| Are you tired? – No, not at all. ||| ደክሞሃል? – አይ፣ በፍጹም።
+
+# 2.9 Phone numbers
+## die Telefonnummer
+Meine Telefonnummer ist neu. ||| My phone number is new. ||| ስልክ ቁጥሬ አዲስ ነው።
+Ich brauche deine Telefonnummer. ||| I need your phone number. ||| ስልክ ቁጥርህ ያስፈልገኛል።
+Die Telefonnummer ist 0911 23 45 67. ||| The phone number is 0911 23 45 67. ||| ስልክ ቁጥሩ 0911 23 45 67 ነው።
+## Wie ist deine Telefonnummer?
+Wie ist deine Telefonnummer? – 0911 23 45 67. ||| What is your phone number? – 0911 23 45 67. ||| ስልክ ቁጥርህ ስንት ነው? – 0911 23 45 67።
+Ich rufe dich an. Wie ist deine Telefonnummer? ||| I'll call you. What is your phone number? ||| እደውልልሃለሁ። ስልክ ቁጥርህ ስንት ነው?
+## Wie lautet deine Telefonnummer?
+Wie lautet deine Telefonnummer, bitte? ||| What is your phone number, please? ||| እባክህ ስልክ ቁጥርህ ስንት ነው?
+Wie lautet deine Telefonnummer? – Moment, ich schaue. ||| What is your phone number? – One moment, I'll look. ||| ስልክ ቁጥርሽ ስንት ነው? – አንድ ጊዜ፣ ልመልከት።
+## Können Sie das bitte wiederholen?
+Können Sie das bitte wiederholen? Langsam, bitte. ||| Can you repeat that, please? Slowly, please. ||| እባክዎ ሊደግሙት ይችላሉ? በቀስታ እባክዎ።
+Die Nummer ist 0911 … – Können Sie das bitte wiederholen? ||| The number is 0911 … – Can you repeat that, please? ||| ቁጥሩ 0911 … ነው – እባክዎ ሊደግሙት ይችላሉ?
+
+# 2.10 Numbers 1–20
+## dreizehn
+Meine Schwester ist dreizehn. ||| My sister is thirteen. ||| እህቴ አሥራ ሦስት ዓመቷ ነው።
+Der Kurs hat dreizehn Teilnehmer. ||| The course has thirteen participants. ||| ኮርሱ አሥራ ሦስት ተሳታፊዎች አሉት።
+Ich wohne in Haus Nummer dreizehn. ||| I live in house number thirteen. ||| የምኖረው ቤት ቁጥር አሥራ ሦስት ውስጥ ነው።
+## vierzehn
+Mein Sohn ist vierzehn Jahre alt. ||| My son is fourteen years old. ||| ልጄ የአሥራ አራት ዓመት ልጅ ነው።
+Das kostet vierzehn Euro. ||| That costs fourteen euros. ||| ይህ አሥራ አራት ዩሮ ያወጣል።
+Wir haben vierzehn Tage Urlaub. ||| We have fourteen days of holiday. ||| የአሥራ አራት ቀን እረፍት አለን።
+## fünfzehn
+Es ist fünfzehn Uhr. ||| It is fifteen o'clock (3 pm). ||| ዘጠኝ ሰዓት ነው።
+Ich warte fünfzehn Minuten. ||| I wait fifteen minutes. ||| አሥራ አምስት ደቂቃ እጠብቃለሁ።
+Die Klasse hat fünfzehn Kinder. ||| The class has fifteen children. ||| ክፍሉ አሥራ አምስት ልጆች አሉት።
+## sechzehn
+Hanna ist sechzehn. ||| Hanna is sixteen. ||| ሐና አሥራ ስድስት ዓመቷ ነው።
+Der Bus Nummer sechzehn kommt. ||| Bus number sixteen is coming. ||| ቁጥር አሥራ ስድስት አውቶቡስ እየመጣ ነው።
+Ich habe sechzehn Euro. ||| I have sixteen euros. ||| አሥራ ስድስት ዩሮ አለኝ።
+## siebzehn
+Mein Bruder ist siebzehn. ||| My brother is seventeen. ||| ወንድሜ አሥራ ሰባት ዓመቱ ነው።
+Das Zimmer hat die Nummer siebzehn. ||| The room has the number seventeen. ||| ክፍሉ ቁጥር አሥራ ሰባት ነው።
+Siebzehn plus drei ist zwanzig. ||| Seventeen plus three is twenty. ||| አሥራ ሰባት ሲደመር ሦስት ሃያ ነው።
+## achtzehn
+Ich bin achtzehn Jahre alt. ||| I am eighteen years old. ||| የአሥራ ስምንት ዓመት ልጅ ነኝ።
+Mit achtzehn darf man Auto fahren. ||| At eighteen you may drive a car. ||| በአሥራ ስምንት ዓመት መኪና መንዳት ይቻላል።
+Es ist achtzehn Uhr. ||| It is eighteen o'clock (6 pm). ||| አሥራ ሁለት ሰዓት ነው።
+## neunzehn
+Meine Cousine ist neunzehn. ||| My cousin is nineteen. ||| የአጎቴ ልጅ አሥራ ዘጠኝ ዓመቷ ነው።
+Das kostet neunzehn Euro. ||| That costs nineteen euros. ||| ይህ አሥራ ዘጠኝ ዩሮ ያወጣል።
+Der Zug fährt um neunzehn Uhr. ||| The train leaves at nineteen o'clock (7 pm). ||| ባቡሩ አንድ ሰዓት (ማታ) ይነሣል።
+## zwanzig
+Ich bin zwanzig Jahre alt. ||| I am twenty years old. ||| የሃያ ዓመት ወጣት ነኝ።
+Das kostet zwanzig Euro. ||| That costs twenty euros. ||| ይህ ሃያ ዩሮ ያወጣል።
+Wir sind zwanzig Personen. ||| We are twenty people. ||| ሃያ ሰዎች ነን።
+
+# 2.11 Where do you live?
+## Wo wohnst du?
+Wo wohnst du? – In Addis Abeba. ||| Where do you live? – In Addis Ababa. ||| የት ትኖራለህ? – አዲስ አበባ።
+Wo wohnst du jetzt? ||| Where do you live now? ||| አሁን የት ትኖራለህ?
+## Wo wohnen Sie?
+Wo wohnen Sie, Frau Bekele? ||| Where do you live, Mrs Bekele? ||| ወይዘሮ በቀለ፣ የት ይኖራሉ?
+Wo wohnen Sie? – Ich wohne in Berlin. ||| Where do you live? – I live in Berlin. ||| የት ይኖራሉ? – የምኖረው በርሊን ነው።
+## Wo lebt sie?
+Wo lebt sie? – Sie lebt in Hamburg. ||| Where does she live? – She lives in Hamburg. ||| እሷ የት ትኖራለች? – ሃምቡርግ ትኖራለች።
+Deine Schwester? Wo lebt sie? ||| Your sister? Where does she live? ||| እህትህ? የት ትኖራለች?
+## Ich wohne in …
+Ich wohne in Adama. ||| I live in Adama. ||| የምኖረው አዳማ ነው።
+Ich wohne in Berlin, in der Hauptstraße. ||| I live in Berlin, on the Hauptstraße. ||| የምኖረው በርሊን፣ ሃውፕትሽትራሰ ላይ ነው።
+## Sie lebt in …
+Meine Schwester? Sie lebt in Frankfurt. ||| My sister? She lives in Frankfurt. ||| እህቴ? ፍራንክፈርት ትኖራለች።
+Sie lebt in Hawassa mit ihrer Familie. ||| She lives in Hawassa with her family. ||| ከቤተሰቧ ጋር ሐዋሳ ትኖራለች።
+## Ich bin in … geboren.
+Ich bin in Gondar geboren. ||| I was born in Gondar. ||| የተወለድኩት ጎንደር ነው።
+Ich bin in Äthiopien geboren, aber ich wohne in Deutschland. ||| I was born in Ethiopia, but I live in Germany. ||| የተወለድኩት ኢትዮጵያ ነው፤ ግን የምኖረው ጀርመን ነው።
+
+# 2.12 Married? Children?
+## verheiratet
+Mein Bruder ist verheiratet. ||| My brother is married. ||| ወንድሜ አግብቷል።
+Sie ist seit fünf Jahren verheiratet. ||| She has been married for five years. ||| ካገባች አምስት ዓመቷ ነው።
+Sind Ihre Eltern verheiratet? ||| Are your parents married? ||| ወላጆችዎ ተጋብተዋል?
+## ledig
+Meine Schwester ist ledig. ||| My sister is single. ||| እህቴ አላገባችም።
+Ich bin noch ledig. ||| I am still single. ||| ገና አላገባሁም።
+Ist er ledig? ||| Is he single? ||| እሱ አላገባም?
+## geschieden
+Mein Onkel ist geschieden. ||| My uncle is divorced. ||| አጎቴ ተፋቷል።
+Sie ist geschieden und hat zwei Kinder. ||| She is divorced and has two children. ||| ተፋትታለች፤ ሁለት ልጆችም አሏት።
+Ist sie geschieden? ||| Is she divorced? ||| እሷ ተፋታለች?
+## der Freund
+Das ist mein Freund Dawit. ||| That is my friend Dawit. ||| ይህ ጓደኛዬ ዳዊት ነው።
+Mein Freund wohnt in Berlin. ||| My boyfriend lives in Berlin. ||| የወንድ ጓደኛዬ በርሊን ይኖራል።
+Hast du einen Freund? ||| Do you have a boyfriend? ||| የወንድ ጓደኛ አለሽ?
+## die Freundin
+Das ist meine Freundin Selam. ||| That is my friend Selam. ||| ይህች ጓደኛዬ ሰላም ናት።
+Meine Freundin kommt aus Kenia. ||| My girlfriend comes from Kenya. ||| የሴት ጓደኛዬ ከኬንያ ናት።
+Hast du eine Freundin? ||| Do you have a girlfriend? ||| የሴት ጓደኛ አለህ?
+## Bist du verheiratet?
+Bist du verheiratet? – Ja, seit zwei Jahren. ||| Are you married? – Yes, for two years. ||| አግብተሃል? – አዎ፣ ካገባሁ ሁለት ዓመቴ ነው።
+Bist du verheiratet? – Nein, ich bin ledig. ||| Are you married? – No, I am single. ||| አግብተሻል? – አይ፣ አላገባሁም።
+## Sind Sie verheiratet?
+Sind Sie verheiratet, Herr Tesfaye? ||| Are you married, Mr Tesfaye? ||| አቶ ተስፋዬ፣ አግብተዋል?
+Sind Sie verheiratet? – Ja, und ich habe drei Kinder. ||| Are you married? – Yes, and I have three children. ||| አግብተዋል? – አዎ፣ ሦስት ልጆችም አሉኝ።
+## Ja, ich bin verheiratet.
+Ja, ich bin verheiratet. Meine Frau heißt Liya. ||| Yes, I am married. My wife is called Liya. ||| አዎ፣ አግብቻለሁ። ባለቤቴ ሊያ ትባላለች።
+Bist du verheiratet? – Ja, ich bin verheiratet. ||| Are you married? – Yes, I am married. ||| አግብተሃል? – አዎ፣ አግብቻለሁ።
+## Ich bin ledig.
+Ich bin ledig und wohne allein. ||| I am single and live alone. ||| አላገባሁም፤ ብቻዬን እኖራለሁ።
+Sind Sie verheiratet? – Nein, ich bin ledig. ||| Are you married? – No, I am single. ||| አግብተዋል? – አይ፣ አላገባሁም።
+## Hast du Kinder?
+Hast du Kinder? – Ja, zwei. ||| Do you have children? – Yes, two. ||| ልጆች አሉህ? – አዎ፣ ሁለት።
+Hast du Kinder? – Nein, noch nicht. ||| Do you have children? – No, not yet. ||| ልጆች አሉሽ? – አይ፣ ገና።
+## Haben Sie Kinder?
+Haben Sie Kinder, Frau Bekele? ||| Do you have children, Mrs Bekele? ||| ወይዘሮ በቀለ፣ ልጆች አሉዎት?
+Haben Sie Kinder? – Ja, eine Tochter. ||| Do you have children? – Yes, a daughter. ||| ልጆች አሉዎት? – አዎ፣ አንዲት ሴት ልጅ።
+## Ich habe einen Sohn.
+Ich habe einen Sohn. Er heißt Yonas. ||| I have a son. He is called Yonas. ||| አንድ ወንድ ልጅ አለኝ። ዮናስ ይባላል።
+Ich habe einen Sohn und eine Tochter. ||| I have a son and a daughter. ||| አንድ ወንድ ልጅና አንዲት ሴት ልጅ አሉኝ።
+## Ich habe eine Tochter.
+Ich habe eine Tochter. Sie ist fünf. ||| I have a daughter. She is five. ||| አንዲት ሴት ልጅ አለችኝ። አምስት ዓመቷ ነው።
+Ich habe eine Tochter, sie heißt Hanna. ||| I have a daughter, she is called Hanna. ||| አንዲት ሴት ልጅ አለችኝ፤ ሐና ትባላለች።
+## Ich habe zwei Kinder.
+Ich habe zwei Kinder, einen Sohn und eine Tochter. ||| I have two children, a son and a daughter. ||| ሁለት ልጆች አሉኝ፤ ወንድና ሴት።
+Ich habe zwei Kinder. Sie gehen in die Schule. ||| I have two children. They go to school. ||| ሁለት ልጆች አሉኝ። ትምህርት ቤት ይሄዳሉ።
+## Ich habe keine Kinder.
+Ich habe keine Kinder, aber viele Neffen. ||| I don't have any children, but many nephews. ||| ልጆች የሉኝም፤ ግን ብዙ የወንድም ልጆች አሉኝ።
+Haben Sie Kinder? – Nein, ich habe keine Kinder. ||| Do you have children? – No, I don't have any children. ||| ልጆች አሉዎት? – አይ፣ ልጆች የሉኝም።
+
+# 2.13 Personal details
+## der Mittelname
+Mein Mittelname ist Tesfaye. ||| My middle name is Tesfaye. ||| የአባቴ ስም ተስፋዬ ነው።
+In Äthiopien ist der Mittelname der Name vom Vater. ||| In Ethiopia the middle name is the father's name. ||| በኢትዮጵያ መካከለኛው ስም የአባት ስም ነው።
+Haben Sie einen Mittelnamen? ||| Do you have a middle name? ||| መካከለኛ ስም አለዎት?
+## der Spitzname
+Mein Spitzname ist Mimi. ||| My nickname is Mimi. ||| ቅጽል ስሜ ሚሚ ነው።
+Hast du einen Spitznamen? ||| Do you have a nickname? ||| ቅጽል ስም አለህ?
+Sein Spitzname ist lustig. ||| His nickname is funny. ||| ቅጽል ስሙ አስቂኝ ነው።
+## die Hausnummer
+Meine Hausnummer ist zwölf. ||| My house number is twelve. ||| የቤቴ ቁጥር አሥራ ሁለት ነው።
+Wie ist Ihre Hausnummer? ||| What is your house number? ||| የቤትዎ ቁጥር ስንት ነው?
+Die Hausnummer steht an der Tür. ||| The house number is on the door. ||| የቤቱ ቁጥር በበሩ ላይ ተጽፏል።
+## die Postleitzahl
+Wie ist die Postleitzahl? ||| What is the postcode? ||| የፖስታ ኮዱ ስንት ነው?
+Die Postleitzahl von Berlin-Mitte ist 10115. ||| The postcode of Berlin-Mitte is 10115. ||| የበርሊን-ሚተ የፖስታ ኮድ 10115 ነው።
+Bitte schreiben Sie die Postleitzahl. ||| Please write the postcode. ||| እባክዎ የፖስታ ኮዱን ይጻፉ።
+## die Handynummer
+Wie ist deine Handynummer? ||| What is your mobile number? ||| የሞባይል ቁጥርህ ስንት ነው?
+Meine Handynummer ist neu. ||| My mobile number is new. ||| የሞባይል ቁጥሬ አዲስ ነው።
+Ich schreibe dir meine Handynummer. ||| I'll write down my mobile number for you. ||| የሞባይል ቁጥሬን እጽፍልሃለሁ።
+## das Datum
+Welches Datum ist heute? ||| What is the date today? ||| ዛሬ ቀኑ ስንት ነው?
+Schreiben Sie bitte das Datum. ||| Please write the date. ||| እባክዎ ቀኑን ይጻፉ።
+Das Datum steht oben. ||| The date is at the top. ||| ቀኑ ላይኛው ክፍል ላይ ተጽፏል።
+## die Unterschrift
+Hier ist meine Unterschrift. ||| Here is my signature. ||| ፊርማዬ ይኸው።
+Wir brauchen Ihre Unterschrift. ||| We need your signature. ||| ፊርማዎ ያስፈልገናል።
+Die Unterschrift kommt unten. ||| The signature goes at the bottom. ||| ፊርማው ከታች ይገባል።
+
+# 2.14 How old are you?
+## das Alter
+Wie ist Ihr Alter? ||| What is your age? ||| ዕድሜዎ ስንት ነው?
+Das Alter ist nicht wichtig. ||| Age is not important. ||| ዕድሜ አስፈላጊ አይደለም።
+Bitte schreiben Sie Ihr Alter. ||| Please write your age. ||| እባክዎ ዕድሜዎን ይጻፉ።
+## jung
+Meine Schwester ist jung. ||| My sister is young. ||| እህቴ ወጣት ናት።
+Du bist noch jung. ||| You are still young. ||| ገና ወጣት ነህ።
+Der Lehrer ist sehr jung. ||| The teacher is very young. ||| አስተማሪው በጣም ወጣት ነው።
+## alt
+Mein Opa ist alt. ||| My grandpa is old. ||| አያቴ ሽማግሌ ናቸው።
+Das Haus ist sehr alt. ||| The house is very old. ||| ቤቱ በጣም አሮጌ ነው።
+Wie alt ist deine Tochter? ||| How old is your daughter? ||| ሴት ልጅህ ስንት ዓመቷ ነው?
+## Wie alt bist du?
+Wie alt bist du? – Ich bin zwölf. ||| How old are you? – I am twelve. ||| ዕድሜህ ስንት ነው? – አሥራ ሁለት ዓመቴ ነው።
+Ich bin zwanzig. Und wie alt bist du? ||| I am twenty. And how old are you? ||| እኔ ሃያ ዓመቴ ነው። አንቺስ ዕድሜሽ ስንት ነው?
+## Wie alt sind Sie?
+Wie alt sind Sie, Herr Tesfaye? ||| How old are you, Mr Tesfaye? ||| አቶ ተስፋዬ፣ ዕድሜዎ ስንት ነው?
+Wie alt sind Sie? – Ich bin 45 Jahre alt. ||| How old are you? – I am 45 years old. ||| ዕድሜዎ ስንት ነው? – 45 ዓመቴ ነው።
+## Ich bin 25 Jahre alt.
+Ich bin 25 Jahre alt und komme aus Äthiopien. ||| I am 25 years old and come from Ethiopia. ||| 25 ዓመቴ ነው፤ የመጣሁትም ከኢትዮጵያ ነው።
+Wie alt bist du? – Ich bin 25 Jahre alt. ||| How old are you? – I am 25 years old. ||| ዕድሜህ ስንት ነው? – 25 ዓመቴ ነው።
+## Ich bin 30.
+Ich bin 30 und mein Bruder ist 28. ||| I am 30 and my brother is 28. ||| እኔ 30 ዓመቴ ነው፤ ወንድሜ ደግሞ 28 ነው።
+Wie alt bist du? – Ich bin 30. ||| How old are you? – I am 30. ||| ዕድሜሽ ስንት ነው? – 30 ዓመቴ ነው።
+## Er ist 70 Jahre alt.
+Mein Opa? Er ist 70 Jahre alt. ||| My grandpa? He is 70 years old. ||| አያቴ? 70 ዓመታቸው ነው።
+Er ist 70 Jahre alt, aber sehr fit. ||| He is 70 years old, but very fit. ||| 70 ዓመቱ ነው፤ ግን በጣም ጤነኛ ነው።
+
+# 2.15 More family
+## der Enkel
+Der Enkel heißt Yonas. ||| The grandson is called Yonas. ||| የልጅ ልጁ ዮናስ ይባላል።
+Mein Enkel ist drei Jahre alt. ||| My grandson is three years old. ||| የልጅ ልጄ የሦስት ዓመት ልጅ ነው።
+Der Enkel besucht die Oma. ||| The grandson visits the grandma. ||| የልጅ ልጁ አያቱን ይጠይቃል።
+## die Enkelin
+Die Enkelin heißt Selam. ||| The granddaughter is called Selam. ||| የልጅ ልጇ ሰላም ትባላለች።
+Meine Enkelin geht in die Schule. ||| My granddaughter goes to school. ||| የልጅ ልጄ ትምህርት ቤት ትሄዳለች።
+Die Enkelin spielt mit dem Opa. ||| The granddaughter plays with grandpa. ||| የልጅ ልጇ ከአያቷ ጋር ትጫወታለች።
+## die Enkelkinder
+Meine Oma hat zehn Enkelkinder. ||| My grandma has ten grandchildren. ||| አያቴ አሥር የልጅ ልጆች አሏቸው።
+Die Enkelkinder kommen am Sonntag. ||| The grandchildren are coming on Sunday. ||| የልጅ ልጆቹ እሑድ ይመጣሉ።
+Die Enkelkinder spielen im Garten. ||| The grandchildren are playing in the garden. ||| የልጅ ልጆቹ በአትክልት ቦታው ውስጥ ይጫወታሉ።
+## der Ehemann
+Mein Ehemann heißt Dawit. ||| My husband is called Dawit. ||| ባሌ ዳዊት ይባላል።
+Ihr Ehemann arbeitet in Berlin. ||| Her husband works in Berlin. ||| ባሏ በርሊን ይሠራል።
+Das ist mein Ehemann. ||| This is my husband. ||| ይህ ባሌ ነው።
+## die Ehefrau
+Meine Ehefrau heißt Liya. ||| My wife is called Liya. ||| ሚስቴ ሊያ ትባላለች።
+Seine Ehefrau kommt aus Kenia. ||| His wife comes from Kenya. ||| ሚስቱ ከኬንያ ናት።
+Das ist meine Ehefrau. ||| This is my wife. ||| ይህች ሚስቴ ናት።
+## der Partner
+Mein Partner heißt Tom. ||| My partner is called Tom. ||| አጋሬ ቶም ይባላል።
+Wohnst du mit deinem Partner zusammen? ||| Do you live together with your partner? ||| ከአጋርሽ ጋር አብራችሁ ትኖራላችሁ?
+Ihr Partner ist sehr nett. ||| Her partner is very kind. ||| አጋሯ በጣም ደግ ነው።
+## die Partnerin
+Meine Partnerin heißt Anna. ||| My partner is called Anna. ||| አጋሬ አና ትባላለች።
+Seine Partnerin kommt aus Österreich. ||| His partner comes from Austria. ||| አጋሩ ከኦስትሪያ ናት።
+Die Partnerin arbeitet viel. ||| The partner works a lot. ||| አጋሩ ብዙ ትሠራለች።
+## Mama
+Mama, wo ist mein Buch? ||| Mum, where is my book? ||| እማዬ፣ መጽሐፌ የት ነው?
+Mama kocht heute. ||| Mum is cooking today. ||| እማዬ ዛሬ ታበስላለች።
+Ich rufe Mama an. ||| I am calling Mum. ||| ለእማዬ እደውላለሁ።
+## Papa
+Papa, kommst du? ||| Dad, are you coming? ||| አባዬ፣ ትመጣለህ?
+Papa arbeitet heute. ||| Dad is working today. ||| አባዬ ዛሬ ይሠራል።
+Mein Papa ist Lehrer. ||| My dad is a teacher. ||| አባዬ አስተማሪ ነው።
+## das Kind
+Das Kind spielt. ||| The child is playing. ||| ልጁ እየተጫወተ ነው።
+Das Kind ist fünf Jahre alt. ||| The child is five years old. ||| ልጁ የአምስት ዓመት ልጅ ነው።
+Wie heißt das Kind? ||| What is the child called? ||| ልጁ ማን ይባላል?
+## Ich bin Single.
+Ich bin Single und wohne allein. ||| I am single and live alone. ||| ብቸኛ ነኝ፤ ብቻዬንም እኖራለሁ።
+Hast du eine Freundin? – Nein, ich bin Single. ||| Do you have a girlfriend? – No, I am single. ||| የሴት ጓደኛ አለህ? – አይ፣ ብቸኛ ነኝ።
+## Wir leben zusammen.
+Das ist mein Freund. Wir leben zusammen. ||| That is my boyfriend. We live together. ||| ይህ የወንድ ጓደኛዬ ነው። አብረን እንኖራለን።
+Wir leben zusammen in Berlin. ||| We live together in Berlin. ||| በርሊን ውስጥ አብረን እንኖራለን።
+## Ich lebe allein.
+Ich lebe allein in einer kleinen Wohnung. ||| I live alone in a small flat. ||| በትንሽ አፓርታማ ውስጥ ብቻዬን እኖራለሁ።
+Ich bin ledig. Ich lebe allein. ||| I am single. I live alone. ||| አላገባሁም። ብቻዬን እኖራለሁ።
+
+# 2.16 Yes, no or doch
+## doch
+Du bist nicht müde? – Doch! ||| You are not tired? – Yes, I am! ||| አልደከመህም? – ደክሞኛል እንጂ!
+Hast du keine Zeit? – Doch, ich habe Zeit. ||| Don't you have time? – Yes, I do have time. ||| ጊዜ የለህም? – አለኝ እንጂ።
+Kommst du nicht? – Doch, ich komme. ||| Aren't you coming? – Yes, I am coming. ||| አትመጣም? – እመጣለሁ እንጂ።
+## Ist das deine Schwester?
+Ist das deine Schwester? – Ja, das ist Liya. ||| Is that your sister? – Yes, that is Liya. ||| ይህች እህትህ ናት? – አዎ፣ ይህች ሊያ ናት።
+Ist das deine Schwester oder deine Cousine? ||| Is that your sister or your cousin? ||| ይህች እህትሽ ናት ወይስ የአጎትሽ ልጅ?
+## Ja, das ist meine Schwester.
+Ja, das ist meine Schwester. Sie heißt Selam. ||| Yes, that is my sister. She is called Selam. ||| አዎ፣ ይህች እህቴ ናት። ሰላም ትባላለች።
+Ist das deine Schwester? – Ja, das ist meine Schwester. ||| Is that your sister? – Yes, that is my sister. ||| ይህች እህትህ ናት? – አዎ፣ ይህች እህቴ ናት።
+## Nein, das ist meine Cousine.
+Nein, das ist meine Cousine Hanna. ||| No, that is my cousin Hanna. ||| አይ፣ ይህች የአጎቴ ልጅ ሐና ናት።
+Ist das deine Schwester? – Nein, das ist meine Cousine. ||| Is that your sister? – No, that is my cousin. ||| ይህች እህትህ ናት? – አይ፣ ይህች የአጎቴ ልጅ ናት።
+## Ist das nicht dein Bruder?
+Ist das nicht dein Bruder? – Doch! ||| Isn't that your brother? – Yes, it is! ||| ይህ ወንድምህ አይደለም? – ነው እንጂ!
+Ist das nicht dein Bruder? – Nein, das ist mein Cousin. ||| Isn't that your brother? – No, that is my cousin. ||| ይህ ወንድምሽ አይደለም? – አይ፣ ይህ የአጎቴ ልጅ ነው።
+## Doch, das ist mein Bruder.
+Doch, das ist mein Bruder Dawit. ||| Yes, it is my brother Dawit. ||| አዎ እንጂ፣ ይህ ወንድሜ ዳዊት ነው።
+Ist das nicht dein Bruder? – Doch, das ist mein Bruder. ||| Isn't that your brother? – Yes, it is my brother. ||| ይህ ወንድምህ አይደለም? – አዎ እንጂ፣ ወንድሜ ነው።
+## Ich glaube, …
+Ich glaube, das ist Liyas Bruder. ||| I think that is Liya's brother. ||| ያ የሊያ ወንድም ይመስለኛል።
+Ich glaube, sie kommt aus Kenia. ||| I think she comes from Kenya. ||| ከኬንያ የመጣች ይመስለኛል።
+
+# 2.17 Whose? Selam's brother
+## Selams Bruder
+Selams Bruder heißt Dawit. ||| Selam's brother is called Dawit. ||| የሰላም ወንድም ዳዊት ይባላል።
+Selams Bruder wohnt in Berlin. ||| Selam's brother lives in Berlin. ||| የሰላም ወንድም በርሊን ይኖራል።
+## Dawits Mutter
+Dawits Mutter kocht sehr gut. ||| Dawit's mother cooks very well. ||| የዳዊት እናት በጣም በደንብ ታበስላለች።
+Dawits Mutter heißt Almaz. ||| Dawit's mother is called Almaz. ||| የዳዊት እናት አልማዝ ትባላለች።
+## Hannas Eltern
+Hannas Eltern wohnen in Hawassa. ||| Hanna's parents live in Hawassa. ||| የሐና ወላጆች ሐዋሳ ይኖራሉ።
+Hannas Eltern sind sehr nett. ||| Hanna's parents are very kind. ||| የሐና ወላጆች በጣም ደጎች ናቸው።
+## Jonas' Vater
+Jonas' Vater ist Arzt. ||| Jonas's father is a doctor. ||| የዮናስ አባት ሐኪም ነው።
+Jonas' Vater kommt aus Österreich. ||| Jonas's father comes from Austria. ||| የዮናስ አባት ከኦስትሪያ ነው።
+## Wer ist Dawits Vater?
+Wer ist Dawits Vater? – Herr Abebe. ||| Who is Dawit's father? – Mr Abebe. ||| የዳዊት አባት ማን ነው? – አቶ አበበ።
+Wer ist Dawits Vater? Der Mann dort? ||| Who is Dawit's father? The man over there? ||| የዳዊት አባት ማን ነው? እዚያ ያለው ሰውዬ?
+## Das ist Merons Tochter.
+Das ist Merons Tochter. Sie heißt Selam. ||| That is Meron's daughter. She is called Selam. ||| ይህች የሜሮን ሴት ልጅ ናት። ሰላም ትባላለች።
+Wer ist das Mädchen? – Das ist Merons Tochter. ||| Who is the girl? – That is Meron's daughter. ||| ልጅቷ ማን ናት? – ይህች የሜሮን ሴት ልጅ ናት።

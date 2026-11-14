@@ -17,7 +17,7 @@ class ListenButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => audio.hasClip(german)
-      ? RoundIconButton(icon: Icons.volume_up_rounded, label: 'Listen to $german', size: size, onPressed: () => audio.play(german))
+      ? RoundIconButton(icon: Icons.volume_up_rounded, label: T('Listen: {text}', {'text': german}), size: size, onPressed: () => audio.play(german))
       : const SizedBox.shrink();
 }
 

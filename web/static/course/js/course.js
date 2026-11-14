@@ -28,6 +28,11 @@ let currentSpeed = 'normal';
 
 // Course content (the Start unit and Units 1–7) lives in course-data.js; the app shows one unit at a time.
 const COURSE_UNITS = window.COURSE.units;
+// The search keeps the English titles (they are translated in place just below) and adds the Amharic through T.
+const SEARCH_SOURCE = {
+  units: COURSE_UNITS.map(u => ({ id: u.id, sections: u.sections.map(s => ({ ...s })), grammar: u.grammar.map(g => ({ ...g })) })),
+  topics: window.COURSE.topics || [],
+};
 // Unit, section and lesson titles follow the interface language; the German itself never changes.
 COURSE_UNITS.forEach(u => {
   ['title', 'label', 'lessonsLabel'].forEach(k => { if (u[k]) u[k] = T(u[k]); });
@@ -130,6 +135,24 @@ function listenButton(german) {
   return btn;
 }
 
+// A word's example sentences: the German (with a speaker) and its meaning in the learner's language
+// (tools/examples/). Shown once the learner has seen the word's meaning.
+function exampleList(item) {
+  if (!item.examples || !item.examples.length) return null;
+  const list = el('ul', 'examples');
+  list.setAttribute('aria-label', T('Examples'));
+  item.examples.forEach(([de, en]) => {
+    const row = el('li', 'example');
+    const german = el('span', 'example-de', de);
+    german.lang = 'de';
+    const text = el('span', 'example-text');
+    text.append(german, el('span', 'example-meaning', (AM && AM.examples && AM.examples[de]) || en));
+    row.append(listenButton(de), text);
+    list.appendChild(row);
+  });
+  return list;
+}
+
 // Shared end-of-exercise screen.
 function resultPanel({ title, text, stats = [], buttons }) {
   const box = el('div', 'panel narrow result view-enter');
@@ -145,6 +168,34 @@ function resultPanel({ title, text, stats = [], buttons }) {
     box.querySelector('.actions').appendChild(b);
   });
   return box;
+}
+
+// "Start again" at the top of every exercise. When answers would be lost it asks first, in words, so a stray tap
+// costs nothing; with nothing answered yet it starts again straight away.
+function redoBar(restart, hasProgress = () => true) {
+  const bar = el('div', 'redo-bar');
+  const ask = () => {
+    bar.classList.add('asking');
+    bar.innerHTML = `<span class="redo-question">${T('Start this exercise again? Your answers so far will be lost.')}</span>`;
+    const no = el('button', 'btn', T('No, continue'));
+    const yes = el('button', 'btn btn-primary', T('Yes, start again'));
+    no.type = yes.type = 'button';
+    no.onclick = idle;
+    yes.onclick = restart;
+    bar.append(no, yes);
+    yes.focus({ preventScroll: true });
+  };
+  const idle = () => {
+    bar.classList.remove('asking');
+    bar.innerHTML = '';
+    const btn = el('button', 'btn redo-btn');
+    btn.type = 'button';
+    btn.innerHTML = `${icon('redo')}${T('Start again')}`;
+    btn.onclick = () => (hasProgress() ? ask() : restart());
+    bar.appendChild(btn);
+  };
+  idle();
+  return bar;
 }
 
 /* ---------------- Audio ---------------- */
@@ -593,7 +644,8 @@ function recordQuizSession(done) {
 function offerResume(session) {
   if (!session || session.kind !== 'quiz' || session.device === deviceId) return;
   // The exercise may be in any unit, not only the one open on this page.
-  const home = COURSE_UNITS.find(u => u.grammar.some(g => g.key === session.ref && g.quiz && !g.custom));
+  // A family tree is matched on the tree here, not question by question as the app does it.
+  const home = COURSE_UNITS.find(u => u.grammar.some(g => g.key === session.ref && g.quiz && !g.custom && !g.tree));
   if (!home || session.position >= session.items.length || store.get('resume-dismissed') === session.id) return;
   if (gQuiz && gQuiz.kind === 'data' && currentScope === session.ref) return; // already doing it here
   const lesson = home.grammar.find(g => g.key === session.ref);
@@ -868,6 +920,302 @@ addEventListener('pagehide', () => {
 });
 
 function openSettings() { document.getElementById('settings').showModal(); }
+
+/* ---------------- Search ---------------- */
+
+// The whole course, searched in the page (search.js). The index is built on the first search; the Amharic meanings
+// (course-am.js) load then even in the English interface, so a learner can always type in Amharic.
+let searchIndex = null;
+let searchTimer = 0;
+const SEARCH_TRIES = ['Danke', 'schoen', 'how to order food', 'accusative', 'past tense', 'ምግብ'];
+// What the search is narrowed to (search.js `fits`): result type, word type, unit, chapter, level.
+const NO_FILTERS = { types: [], pos: [], unit: null, section: null, level: null };
+let searchFilters = { ...NO_FILTERS };
+const SEARCH_TYPES = [['word', T('Words')], ['grammar', T('Grammar')], ['reading', T('Reading')], ['chapter', T('Word lists')], ['topic', T('Topics')]];
+const WORD_TYPES = [['noun', T('Nouns'), T('Noun')], ['verb', T('Verbs'), T('Verb')], ['adjective', T('Adjectives & adverbs'), T('Adjective / adverb')],
+  ['phrase', T('Phrases'), T('Phrase')], ['number', T('Numbers'), T('Number')], ['small', T('Small words'), T('Small word')]];
+const COURSE_LEVELS = [...new Set(COURSE_UNITS.map(u => u.level).filter(Boolean))];
+const filtersOn = () => searchFilters.types.length + searchFilters.pos.length + (searchFilters.unit !== null) + !!searchFilters.level;
+
+function buildSearchIndex() {
+  searchIndex = window.CourseSearch.createIndex(SEARCH_SOURCE, window.COURSE_AM || null, T);
+}
+
+// The search narrowed to where the learner is: this chapter (or this unit, from "All chapters").
+function searchHere() {
+  const scope = currentScope === 'all' || isGrammar(currentScope) ? { unit: unit.id } : { unit: unit.id, section: currentScope };
+  openSearch('', scope);
+}
+
+// From the header: the whole course (filters the learner chose stay). With a scope: only there.
+function openSearch(query, scope) {
+  searchFilters = { ...searchFilters, unit: null, section: null, ...(scope || {}) };
+  const dialog = document.getElementById('search');
+  const input = document.getElementById('search-input');
+  if (!searchIndex) buildSearchIndex();
+  if (!window.COURSE_AM && !dialog.dataset.loading) {
+    dialog.dataset.loading = 'yes';
+    const script = document.createElement('script');
+    script.src = dialog.dataset.amharic;
+    script.onload = () => { buildSearchIndex(); runSearch(); };
+    document.head.appendChild(script);
+  }
+  if (typeof query === 'string') input.value = query;
+  if (!dialog.open) dialog.showModal();
+  input.focus();
+  input.select();
+  runSearch();
+}
+
+function runSearch() {
+  const input = document.getElementById('search-input');
+  const box = document.getElementById('search-results');
+  const query = input.value.trim();
+  document.getElementById('search-clear').hidden = !input.value;
+  renderSearchScope();
+  renderSearchFilters();
+  box.innerHTML = '';
+  const narrowed = filtersOn() || searchFilters.section;
+  const results = query || narrowed ? searchIndex.search(query, { filters: searchFilters }) : [];
+  renderSuggestions(query, results);
+  if (!query && !narrowed) return box.appendChild(searchTries(T('Try one of these:')));
+  if (!results.length) {
+    const empty = el('div', 'search-empty');
+    empty.append(el('p', 'search-empty-title', query ? T('Nothing found for “{q}”.', { q: query }) : T('Nothing here fits these filters.')),
+      el('p', '', narrowed ? T('Try fewer filters, or search the whole course.') : T('Try another spelling or a shorter word, or type it in English or Amharic.')));
+    box.appendChild(empty);
+    if (!narrowed) box.appendChild(searchTries(T('Or try one of these:')));
+    return;
+  }
+  const groups = { topic: [], word: [], lesson: [], chapter: [] };
+  results.forEach(r => groups[r.kind].push(r));
+  const names = { topic: T('Topics'), word: T('Words'), lesson: T('Lessons'), chapter: T('Chapters') };
+  Object.entries(groups).filter(([, list]) => list.length)
+    .sort(([, a], [, b]) => b[0].score - a[0].score)
+    .forEach(([kind, list]) => {
+      const group = el('section', 'search-group');
+      const head = el('h3', 'search-group-title', names[kind]);
+      head.appendChild(el('span', 'search-count', String(list.length)));
+      const items = el('ul', 'search-list');
+      list.forEach(r => items.appendChild(searchItem(r)));
+      group.append(head, items);
+      box.appendChild(group);
+    });
+}
+
+// Where a scoped search looks, with the way out to the whole course.
+function renderSearchScope() {
+  const box = document.getElementById('search-scope');
+  const { unit: unitId, section } = searchFilters;
+  box.hidden = unitId === null && !section;
+  if (box.hidden) return;
+  box.innerHTML = '';
+  const where = section ? searchWhere(unitId, section) : unitName(unitById(unitId));
+  const label = el('span', 'search-scope-label', T('Only in: {place}', { place: where }));
+  const wide = el('button', 'btn btn-ghost', T('Search the whole course'));
+  wide.type = 'button';
+  wide.onclick = () => { searchFilters = { ...searchFilters, unit: null, section: null }; runSearch(); };
+  box.append(label, wide);
+}
+
+// Autocomplete: the best matches' names, a tap away (also how a misspelling finds its word).
+function renderSuggestions(query, results) {
+  const box = document.getElementById('search-suggest');
+  const folded = window.CourseSearch.fold(query);
+  const names = [...new Set(results.slice(0, 12).map(r => (r.kind === 'word' ? r.id : T(r.title))))]
+    .filter(name => window.CourseSearch.fold(name) !== folded).slice(0, 5);
+  box.hidden = !query || !names.length;
+  box.innerHTML = '';
+  if (box.hidden) return;
+  box.appendChild(el('span', 'search-suggest-label', T('Suggestions:')));
+  names.forEach(name => {
+    const chip = el('button', 'chip', name);
+    chip.type = 'button';
+    chip.onclick = () => openSearch(name, { unit: searchFilters.unit, section: searchFilters.section });
+    box.appendChild(chip);
+  });
+}
+
+// The filters: what to show, which kind of word, which unit (and level, once the course has more than one).
+function renderSearchFilters() {
+  const body = document.getElementById('search-filter-body');
+  const count = filtersOn();
+  const badge = document.getElementById('search-filter-count');
+  badge.hidden = !count;
+  badge.textContent = String(count);
+  body.innerHTML = '';
+  const row = (label, options, value, onPick) => {
+    const group = el('div', 'search-filter-row');
+    group.setAttribute('role', 'group');
+    group.setAttribute('aria-label', label);
+    group.appendChild(el('span', 'search-filter-label', label));
+    const chips = el('div', 'search-try-row');
+    options.forEach(([key, name]) => {
+      const chip = el('button', 'chip' + (key === value ? ' active' : ''), name);
+      chip.type = 'button';
+      chip.setAttribute('aria-pressed', String(key === value));
+      chip.onclick = () => { onPick(key); runSearch(); };
+      chips.appendChild(chip);
+    });
+    group.appendChild(chips);
+    body.appendChild(group);
+  };
+  const shown = searchFilters.types[0] || '';
+  row(T('Show'), [['', T('All')], ...SEARCH_TYPES], shown, key => {
+    searchFilters.types = key ? [key] : [];
+    if (key && key !== 'word') searchFilters.pos = [];
+  });
+  if (!shown || shown === 'word') {
+    row(T('Word type'), [['', T('All')], ...WORD_TYPES.map(([k, n]) => [k, n])], searchFilters.pos[0] || '', key => { searchFilters.pos = key ? [key] : []; });
+  }
+  const select = (label, options, value, onPick) => {
+    const group = el('label', 'search-filter-row');
+    group.appendChild(el('span', 'search-filter-label', label));
+    const pick = el('select', 'select');
+    options.forEach(([key, name]) => {
+      const option = el('option', '', name);
+      option.value = key;
+      option.selected = key === value;
+      pick.appendChild(option);
+    });
+    pick.onchange = () => { onPick(pick.value); runSearch(); };
+    group.appendChild(pick);
+    body.appendChild(group);
+  };
+  select(T('Unit'), [['', T('All units')], ...COURSE_UNITS.map(u => [String(u.id), `${unitName(u)} · ${u.title}`])],
+    searchFilters.unit === null ? '' : String(searchFilters.unit), key => {
+      searchFilters.unit = key === '' ? null : Number(key);
+      searchFilters.section = null;
+    });
+  if (COURSE_LEVELS.length > 1) {
+    select(T('Level'), [['', T('All levels')], ...COURSE_LEVELS.map(l => [l, l])], searchFilters.level || '', key => { searchFilters.level = key || null; });
+  }
+  if (count || searchFilters.section) {
+    const reset = el('button', 'btn btn-ghost search-filter-reset', T('Clear filters'));
+    reset.type = 'button';
+    reset.onclick = () => { searchFilters = { ...NO_FILTERS }; runSearch(); };
+    body.appendChild(reset);
+  }
+}
+
+function searchTries(label) {
+  const box = el('div', 'search-tries');
+  box.appendChild(el('p', '', label));
+  const row = el('div', 'search-try-row');
+  SEARCH_TRIES.forEach(text => {
+    const chip = el('button', 'chip', text);
+    chip.type = 'button';
+    chip.onclick = () => openSearch(text);
+    row.appendChild(chip);
+  });
+  box.appendChild(row);
+  return box;
+}
+
+const unitById = id => COURSE_UNITS.find(u => u.id === id);
+const searchWhere = (unitId, key) => {
+  const u = unitById(unitId);
+  const section = u.sections.find(s => s.key === key);
+  return `${unitName(u)} · ${section ? section.title : u.grammar.find(g => g.key === key)?.title || ''}`;
+};
+
+function searchItem(r) {
+  const item = el('li', `search-item search-item-${r.kind}`);
+  const open = el('button', 'search-open');
+  open.type = 'button';
+  if (r.kind === 'word') {
+    const de = el('span', 'search-de', r.id);
+    de.lang = 'de';
+    const kind = WORD_TYPES.find(([k]) => k === r.pos);
+    const place = searchFilters.section && r.sections.includes(searchFilters.section) ? searchFilters.section : r.section;
+    const placeUnit = COURSE_UNITS.find(u => u.sections.some(s => s.key === place)).id;
+    open.append(de, el('span', 'search-meaning', meaning(r.word)),
+      el('span', 'search-where', searchWhere(placeUnit, place) + (kind ? ` · ${kind[2]}` : '')));
+    if (r.example !== undefined) {
+      const [exDe, exEn] = r.word.examples[r.example];
+      const example = el('span', 'search-example');
+      const exGerman = el('span', 'search-example-de', exDe);
+      exGerman.lang = 'de';
+      example.append(exGerman, el('span', 'search-example-meaning', (AM && AM.examples && AM.examples[exDe]) || exEn));
+      open.appendChild(example);
+    }
+    open.onclick = () => openFromSearch(() => showChapter(placeUnit, place, r.id));
+    item.append(listenButton(r.id), open);
+    return item;
+  }
+  if (r.kind === 'topic') {
+    const card = el('div', 'search-topic');
+    card.append(el('span', 'search-kicker', r.topic.kind === 'grammar' ? T('Grammar') : T('Topic')),
+      el('strong', 'search-title', T(r.title)));
+    const links = el('div', 'search-links');
+    const lessonUnit = key => COURSE_UNITS.find(u => u.grammar.some(g => g.key === key)).id;
+    const chapterUnit = key => COURSE_UNITS.find(u => u.sections.some(s => s.key === key)).id;
+    [...r.topic.lessons.map(key => [lessonUnit(key), key, true]), ...r.topic.chapters.map(key => [chapterUnit(key), key, false])]
+      .slice(0, 8)
+      .forEach(([unitId, key, lesson]) => {
+        const chip = el('button', 'chip', searchWhere(unitId, key));
+        chip.type = 'button';
+        chip.onclick = () => openFromSearch(() => (lesson ? showLesson(unitId, key) : showChapter(unitId, key)));
+        links.appendChild(chip);
+      });
+    card.appendChild(links);
+    item.appendChild(card);
+    return item;
+  }
+  const u = unitById(r.unit);
+  if (r.kind === 'lesson') {
+    open.append(el('span', 'search-title', T(r.title)), el('span', 'search-where', `${unitName(u)} · ${u.lessonsLabel || T('Grammar')}`));
+    open.onclick = () => openFromSearch(() => showLesson(r.unit, r.id));
+  } else {
+    const count = u.sections.find(s => s.key === r.id).words.length;
+    open.append(el('span', 'search-title', T(r.title)), el('span', 'search-where', `${unitName(u)} · ${T('{n} words', { n: count })}`));
+    open.onclick = () => openFromSearch(() => showChapter(r.unit, r.id));
+  }
+  item.appendChild(open);
+  return item;
+}
+
+function openFromSearch(go) {
+  document.getElementById('search').close();
+  go();
+  const top = document.querySelector('main').getBoundingClientRect().top + window.scrollY - 90;
+  window.scrollTo({ top, behavior: scrollBehavior() });
+}
+
+// A chapter in Learn; with a word, at that word.
+function showChapter(unitId, key, german) {
+  if (unitId !== unit.id) openStep(unitId, key);
+  goTo({ scope: key, mode: 'learn' });
+  if (!german) return;
+  learnView = 'single';
+  store.set('learn-view', 'single');
+  learnBuiltFor = key;
+  learnIndex = Math.max(0, learnSequence().findIndex(x => x.item.german === german));
+  renderLearn();
+}
+
+function showLesson(unitId, key) { openStep(unitId, key); }
+
+document.getElementById('search-input').addEventListener('input', () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(runSearch, 120);
+});
+document.getElementById('search-clear').addEventListener('click', () => openSearch(''));
+document.getElementById('search-input').addEventListener('keydown', e => {
+  if (e.key !== 'Enter') return;
+  e.preventDefault();
+  clearTimeout(searchTimer);
+  runSearch();
+  document.querySelector('#search-results .search-open, #search-results .search-links .chip')?.click();
+});
+// "/" or Ctrl/⌘ + K opens the search from anywhere outside a text field.
+document.addEventListener('keydown', e => {
+  const typing = e.target.matches('input, select, textarea, [contenteditable]');
+  if ((e.key === '/' && !typing) || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k')) {
+    e.preventDefault();
+    openSearch();
+  }
+});
 
 /* ---------------- Navigation ---------------- */
 
@@ -1740,7 +2088,6 @@ function renderGrammarCallout() {
 function renderLearn() {
   renderGrammarCallout();
   document.querySelectorAll('.learn-view-btn').forEach(b => b.classList.toggle('active', b.dataset.view === learnView));
-  document.getElementById('reveal-all').hidden = learnView !== 'grid';
   if (learnBuiltFor !== currentScope) { learnIndex = 0; learnBuiltFor = currentScope; }
   if (learnView === 'single') return renderWordPage();
   renderLearnGrid();
@@ -1767,7 +2114,7 @@ function renderWordPage(direction) {
         <button class="btn" type="button" id="wv-prev" ${learnIndex === 0 ? 'disabled' : ''}>← ${T('Previous')}</button>
         <button class="btn btn-primary" type="button" id="wv-next">${learnIndex + 1 < words.length ? `${T('Next word')} →` : `${T('Finish chapter')} →`}</button>
       </div>
-      <div class="kbd-hint"><kbd>←</kbd> <kbd>→</kbd> ${T('move between words')} · <kbd>Space</kbd> ${T('show meaning')}</div>
+      <div class="kbd-hint"><kbd>←</kbd> <kbd>→</kbd> ${T('move between words')}</div>
     </div>`;
   content.querySelector('.wv-section').textContent = currentScope === 'all' ? `${section} · ${SECTION_TITLES[section]}` : T('German');
   content.querySelector('.wv-word').textContent = item.german;
@@ -1776,7 +2123,7 @@ function renderWordPage(direction) {
   const listen = listenButton(item.german);
   listen.classList.add('lg');
   content.querySelector('.wv-listen').appendChild(listen);
-  showWordMeaning(false);
+  showWordMeaning();
   document.getElementById('wv-speak').onclick = () => {
     speakIndex = learnIndex;
     speakBuiltFor = currentScope;
@@ -1787,21 +2134,14 @@ function renderWordPage(direction) {
   document.getElementById('wv-next').onclick = () => moveWord(1);
 }
 
-function showWordMeaning(reveal) {
+// The meaning and examples show with the word, so reading its page counts it as learned.
+function showWordMeaning() {
   const box = document.querySelector('#learn-content .wv-meaning');
   if (!box) return;
   const { item } = learnSequence()[learnIndex];
-  box.innerHTML = '';
-  if (!reveal) {
-    const btn = el('button', 'btn', '');
-    btn.type = 'button';
-    btn.id = 'wv-reveal';
-    btn.innerHTML = `${icon('eye')}${T('Show meaning')}`;
-    btn.onclick = () => showWordMeaning(true);
-    box.appendChild(btn);
-    return;
-  }
   box.appendChild(el('div', 'wv-answer', meaning(item)));
+  const examples = exampleList(item);
+  if (examples) box.appendChild(examples);
   if (!learned.has(item.german)) {
     learned.add(item.german);
     updateProgress();
@@ -1852,16 +2192,7 @@ function renderLearnGrid() {
     });
   });
   content.appendChild(grid);
-
-  const reveal = document.getElementById('reveal-all');
-  const cards = () => [...grid.querySelectorAll('.vocab-card')];
-  const syncLabel = () => { reveal.querySelector('span').textContent = cards().every(c => c.classList.contains('open')) ? T('Hide all') : T('Reveal all'); };
-  reveal.onclick = () => {
-    const open = !cards().every(c => c.classList.contains('open'));
-    cards().forEach((c, i) => setTimeout(() => toggleCard(c, open), open ? i * 25 : 0));
-    setTimeout(syncLabel, open ? cards().length * 25 + 30 : 0);
-  };
-  syncLabel();
+  watchCardsRead(grid);
 
   const i = SCOPES.indexOf(currentScope);
   if (SCOPES[i + 1] && SCOPES[i + 1] !== 'all') {
@@ -1878,36 +2209,43 @@ function renderLearnGrid() {
 
 function vocabCard(item, index) {
   const card = el('div', 'vocab-card');
-  card.tabIndex = 0;
-  card.setAttribute('role', 'button');
-  card.setAttribute('aria-expanded', 'false');
   card.style.setProperty('--i', Math.min(index, 20));
   card.classList.toggle('learned', learned.has(item.german));
   card.dataset.german = item.german;
   card.innerHTML = `<span class="vc-learned" aria-hidden="true"></span>
     <div class="vc-top"><span class="vc-word"></span></div>
-    <div class="vc-meaning"><span class="vc-hint">${icon('eye', 'style="width:16px;height:16px"')}${T('Show meaning')}</span><span class="vc-text"></span></div>`;
+    <div class="vc-meaning"><span class="vc-text"></span></div>`;
   card.querySelector('.vc-word').textContent = item.german;
   card.querySelector('.vc-text').textContent = meaning(item);
   card.querySelector('.vc-word').lang = 'de'; // lets long compounds hyphenate at German syllables
   const picture = wordPicture(item, 'vc-pic');
   if (picture) card.querySelector('.vc-top').before(picture); // own row: the word keeps the full width
   card.querySelector('.vc-top').appendChild(listenButton(item.german));
-  card.onclick = () => toggleCard(card, !card.classList.contains('open'));
-  card.onkeydown = e => {
-    if (e.target === card && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); card.click(); }
-  };
+  const examples = exampleList(item);
+  if (examples) {
+    examples.classList.add('vc-examples');
+    card.appendChild(examples);
+  }
   return card;
 }
 
-function toggleCard(card, open) {
-  card.classList.toggle('open', open);
-  card.setAttribute('aria-expanded', open);
-  if (open && !learned.has(card.dataset.german)) {
-    learned.add(card.dataset.german);
-    card.classList.add('learned');
-    updateProgress();
-  }
+// Every card shows its meaning, so a word counts as learned once its card has been fully on screen for a moment.
+let cardWatcher;
+function watchCardsRead(grid) {
+  cardWatcher?.disconnect();
+  const timers = new Map();
+  cardWatcher = new IntersectionObserver(entries => entries.forEach(({ target: card, isIntersecting }) => {
+    clearTimeout(timers.get(card));
+    if (!isIntersecting) return;
+    timers.set(card, setTimeout(() => {
+      cardWatcher.unobserve(card);
+      if (!card.isConnected || learned.has(card.dataset.german)) return;
+      learned.add(card.dataset.german);
+      card.classList.add('learned');
+      updateProgress();
+    }, 1500));
+  }), { threshold: 0.9 });
+  grid.querySelectorAll('.vocab-card:not(.learned)').forEach(card => cardWatcher.observe(card));
 }
 
 /* ---------------- Grammar ---------------- */
@@ -1988,7 +2326,7 @@ function renderGrammar() {
   const page = el('div', 'g-lesson');
   box.appendChild(page);
   const lesson = GRAMMAR[currentScope];
-  const kind = lesson.custom || 'data';
+  const kind = lesson.tree ? 'tree' : lesson.custom || 'data';
   if (grammarView === 'exercise') {
     const reading = (lesson.blocks || []).find(b => b.reading);
     if (reading) {
@@ -2077,6 +2415,11 @@ function renderReviewLesson(page, lesson) {
 
 function renderDataLesson(page, lesson) {
   page.appendChild(lessonPanel('', T('The idea'), lesson.intro.map(p => `<p>${L(p)}</p>`).join('')));
+  if (lesson.tree) {
+    const panel = lessonPanel(T('Look and listen'), L(lesson.tree.title), `<p>${T('Press a person to hear the word.')}</p>`);
+    panel.appendChild(familyTree(lesson.tree, { onPerson: (person, node) => speak(person.word) }));
+    page.appendChild(panel);
+  }
   lesson.blocks.forEach(block => {
     const panel = lessonPanel(L(block.step || ''), L(block.title), block.text ? `<p></p>` : '');
     if (block.text) panel.querySelector('p').textContent = L(block.text);
@@ -2113,7 +2456,7 @@ function exerciseCallout() {
   const best = grammarScores[currentScope];
   const card = el('section', 'exercise-cta');
   card.innerHTML = `<span class="cta-icon">${icon('practice')}</span>
-    <div><small>${T('Exercise · {n} quick questions', { n: quizSize(currentScope) })}</small>
+    <div><small>${GRAMMAR[currentScope].tree ? T('Exercise · {n} people to match', { n: quizSize(currentScope) }) : T('Exercise · {n} quick questions', { n: quizSize(currentScope) })}</small>
     <strong>${best === undefined ? (GRAMMAR[currentScope].custom === 'review' ? T('Test yourself on the whole unit') : T('Test yourself on this lesson')) : best >= passMark(currentScope) ? T('Keep it fresh: practise again') : T('Try again and beat your score')}</strong>
     <span>${best === undefined ? T('Score {n} or more to complete it.', { n: passMark(currentScope) }) : T('Best score so far: {best} of {total}.', { best, total: quizSize(currentScope) })}</span></div>`;
   const start = el('button', 'btn btn-primary', '');
@@ -2263,16 +2606,20 @@ function makeQuestions(kind) {
   }));
 }
 
-function startGrammarQuiz(kind) {
+// `again`: the round being restarted; its questions come back in a new order.
+function startGrammarQuiz(kind, again = null) {
+  if (kind === 'tree') return startTreeQuiz();
   if (kind !== 'data') {
-    gQuiz = { kind, questions: makeQuestions(kind), index: 0, score: 0, answers: [] };
+    gQuiz = { kind, questions: again ? shuffle([...again.questions]) : makeQuestions(kind), index: 0, score: 0, answers: [] };
     return showGrammarQuestion();
   }
   // Lesson exercises are drawn as item numbers, so another device can rebuild the same questions.
   const all = GRAMMAR[currentScope].quiz.items;
   const resume = pendingResume && pendingResume.ref === currentScope ? pendingResume : null;
   pendingResume = null;
-  const items = resume ? resume.items.filter(i => i >= 0 && i < all.length) : shuffle(all.map((_, i) => i)).slice(0, quizSize(currentScope));
+  const items = resume ? resume.items.filter(i => i >= 0 && i < all.length)
+    : again ? shuffle([...again.items])
+    : shuffle(all.map((_, i) => i)).slice(0, quizSize(currentScope));
   const answers = resume ? resume.answers.slice(0, resume.position) : [];
   gQuiz = {
     kind, items, answers,
@@ -2296,6 +2643,8 @@ function showGrammarQuestion() {
     <div class="chip-row" id="g-options"></div>
     <div id="g-feedback" aria-live="polite"></div>
     <div class="actions" id="g-next" hidden><button class="btn btn-primary" type="button">${gQuiz.index + 1 < gQuiz.questions.length ? T('Next question') : T('See results')}</button></div>`;
+  const round = gQuiz;
+  box.prepend(redoBar(() => startGrammarQuiz(round.kind, round), () => round.answers.length > 0));
   box.querySelector('.before').textContent = q.before;
   box.querySelector('.after').textContent = q.after;
   box.querySelector('.g-q-hint').textContent = L(q.hint);
@@ -2474,7 +2823,7 @@ function explainEnding(q) {
 
 function showGrammarResult() {
   const { kind, score, questions } = gQuiz;
-  if (kind === 'data') {
+  if (kind === 'data' || kind === 'tree') {
     const bonus = (score >= passMark(currentScope) ? XP.lessonPassed : 0) + (score === questions.length ? XP.perfect : 0);
     if (bonus) queue(operation('xp', { amount: bonus }));
     recordQuizSession(true);
@@ -2499,11 +2848,271 @@ function showGrammarResult() {
     buttons,
   });
   panel.classList.remove('panel', 'narrow');
+  if (gQuiz.summary) panel.querySelector('.actions').before(gQuiz.summary());
   const streak = el('div', 'tally-full result-tally');
   panel.appendChild(streak);
   box.appendChild(panel);
   const model = streakModel();
   ZemaTallyView.render(streak, model, 'full', streakLabel(model));
+}
+
+/* ---------------- Family tree ----------------
+   A lesson with a `tree` (tools/course_content.py) draws the family: people placed by row and x (a percentage of
+   the width), a line between each couple and lines down to their children. The lesson labels everyone; the
+   exercise numbers them, and the learner matches each number with a word by tapping or dragging. */
+const TREE_ROW = 164; // px per generation: room for a label of three lines above the next row's lines
+const TREE_PIC = 60; // picture size; its centre sits TREE_PIC_Y below the top of the row
+const TREE_PIC_Y = 4 + TREE_PIC / 2;
+const shortWord = word => word.split(',')[0].trim(); // "die Oma, die Großmutter" → "die Oma"
+const shortMeaning = text => text.replace(/\s*\([^)]*\)/g, ''); // drops "(f.)"
+const vocabItem = german => COURSE_UNITS.flatMap(u => u.sections).flatMap(s => s.words).find(w => w.german === german);
+const wordMeaning = german => shortMeaning(meaning(vocabItem(german) || { german, english: '' }));
+
+function familyTree(tree, { pins = null, onPerson = null } = {}) {
+  const rows = Math.max(...tree.people.map(p => p.row)) + 1;
+  const height = rows * TREE_ROW;
+  const box = el('div', 'family-tree');
+  box.style.height = `${height}px`;
+  const at = Object.fromEntries(tree.people.map(p => [p.key, { x: p.x, y: p.row * TREE_ROW + TREE_PIC_Y }]));
+
+  // Lines: x in per cent of the width, y in pixels. The pictures sit on top and hide the line ends.
+  const paths = [];
+  tree.couples.forEach(([a, b]) => paths.push(`M${at[a].x} ${at[a].y}H${at[b].x}`));
+  tree.families.forEach(({ parents, children }) => {
+    const [a, b] = parents.map(k => at[k]);
+    const mid = (a.x + b.x) / 2;
+    const kids = children.map(k => at[k]);
+    const bus = kids[0].y - TREE_PIC_Y - 12; // just above the children's row, below the parents' labels
+    const xs = kids.map(k => k.x).concat(mid);
+    paths.push(`M${mid} ${a.y}V${bus}`, `M${Math.min(...xs)} ${bus}H${Math.max(...xs)}`);
+    kids.forEach(k => paths.push(`M${k.x} ${bus}V${k.y}`));
+  });
+  box.innerHTML = `<svg class="tree-lines" viewBox="0 0 100 ${height}" preserveAspectRatio="none" aria-hidden="true">
+    ${paths.map(d => `<path d="${d}" vector-effect="non-scaling-stroke"/>`).join('')}</svg>`;
+
+  tree.people.forEach(person => {
+    const pin = pins && pins.find(p => p.person.key === person.key);
+    const clickable = !person.me && (onPerson || pin);
+    const node = el(clickable ? 'button' : 'div', `tree-person${person.me ? ' me' : ''}`);
+    if (clickable) node.type = 'button';
+    node.style.left = `${person.x}%`;
+    node.style.top = `${person.row * TREE_ROW}px`;
+    const pic = el('span', `tree-pic${person.me ? ' me' : ''}`);
+    if (person.me) {
+      pic.textContent = 'ich';
+      pic.lang = 'de';
+    } else {
+      const img = el('img');
+      img.src = `${APP.picBase}${person.pic}.svg`;
+      img.alt = '';
+      img.draggable = false;
+      pic.appendChild(img);
+    }
+    node.appendChild(pic);
+    const label = el('span', 'tree-label');
+    if (person.me) {
+      label.append(el('b', '', 'ich'), el('small', '', T('this is you')));
+    } else if (pin) {
+      node.dataset.pin = pin.number;
+      node.appendChild(el('span', 'tree-pin', String(pin.number)));
+      label.classList.add('tree-slot');
+    } else {
+      const german = el('b', '', shortWord(person.word));
+      german.lang = 'de';
+      label.append(german, el('small', '', wordMeaning(person.word)));
+      node.setAttribute('aria-label', T('Listen: {text}', { text: person.word }));
+    }
+    node.appendChild(label);
+    if (clickable) node.onclick = () => onPerson(person, node);
+    box.appendChild(node);
+  });
+  return box;
+}
+
+let treePins = [];
+let treeSelected = null;
+let treeDrag = null;
+let treeDragEnded = false;
+
+function startTreeQuiz() {
+  const tree = GRAMMAR[currentScope].tree;
+  // New numbers every round, so trying again means reading the tree again, not remembering numbers.
+  treePins = shuffle(tree.people.filter(p => !p.me)).map((person, i) => ({ person, number: i + 1, given: null, right: false }));
+  gQuiz = { kind: 'tree', questions: treePins, index: 0, score: 0, answers: [], summary: () => treeSummary(treePins) };
+  const box = document.getElementById('g-quiz');
+  box.innerHTML = `
+    <div class="q-head"><span id="t-count"></span><div class="bar"><i id="t-bar"></i></div></div>
+    <ol class="tree-how">
+      <li>${T('Tap a number on the tree.')}</li>
+      <li>${T('Tap the word for that person.')}</li>
+    </ol>
+    <p class="tree-how-drag">${T('You can also drag a word onto a number.')}</p>
+    <div id="t-tree"></div>
+    <div id="g-feedback" aria-live="polite"></div>
+    <div class="tree-ask" id="t-ask" aria-live="polite"></div>
+    <div class="chip-row tree-bank" id="t-bank" role="group" aria-label="${T('Words')}"></div>
+    <div class="actions" id="t-done" hidden><button class="btn btn-primary" type="button">${T('See results')}</button></div>`;
+  document.getElementById('t-tree').appendChild(familyTree(tree, { pins: treePins, onPerson: person => {
+    const pin = treePins.find(p => p.person === person);
+    if (pin.given) return speak(person.word);
+    selectPin(pin);
+  } }));
+  const bank = document.getElementById('t-bank');
+  shuffle([...treePins.map(p => p.person.word), ...tree.distractors]).forEach(word => bank.appendChild(treeWordChip(word)));
+  box.querySelector('#t-done button').onclick = () => showGrammarResult();
+  box.prepend(redoBar(startTreeQuiz, () => treePins.some(p => p.given)));
+  selectPin(treePins[0]);
+  updateTreeCount();
+}
+
+const pinNode = pin => document.querySelector(`#t-tree .tree-person[data-pin="${pin.number}"]`);
+
+function selectPin(pin) {
+  treeSelected = pin;
+  document.querySelectorAll('#t-tree .tree-person[data-pin]').forEach(node => {
+    const p = treePins.find(x => String(x.number) === node.dataset.pin);
+    node.classList.toggle('selected', p === pin);
+    node.setAttribute('aria-pressed', p === pin);
+    node.setAttribute('aria-label', p.given
+      ? T('Number {n}: {word}', { n: p.number, word: shortWord(p.person.word) })
+      : T('Number {n}: who is it?', { n: p.number }));
+  });
+  const ask = document.getElementById('t-ask');
+  if (!pin) {
+    ask.innerHTML = '';
+    return;
+  }
+  ask.innerHTML = `<span class="tree-pin">${pin.number}</span><strong></strong>`;
+  ask.querySelector('strong').textContent = T('Who is number {n}? Tap the word.', { n: pin.number });
+}
+
+function treeWordChip(word) {
+  const chip = el('button', 'chip tree-word', shortWord(word));
+  chip.type = 'button';
+  chip.lang = 'de';
+  chip.dataset.word = word;
+  chip.onclick = () => {
+    if (treeDragEnded) return; // the drop already answered
+    if (!treeSelected) return;
+    answerPin(treeSelected, word, chip);
+  };
+  // Dragging: the chip follows the pointer as a copy; letting go over a number answers for that person.
+  chip.addEventListener('pointerdown', e => {
+    if (e.button !== 0 || chip.disabled) return;
+    treeDrag = { chip, x: e.clientX, y: e.clientY, ghost: null };
+    chip.setPointerCapture(e.pointerId);
+  });
+  chip.addEventListener('pointermove', e => {
+    if (!treeDrag || treeDrag.chip !== chip) return;
+    if (!treeDrag.ghost) {
+      if (Math.hypot(e.clientX - treeDrag.x, e.clientY - treeDrag.y) < 8) return;
+      treeDrag.ghost = el('span', 'chip tree-ghost', chip.textContent);
+      document.body.appendChild(treeDrag.ghost);
+      chip.classList.add('dragging');
+    }
+    treeDrag.ghost.style.left = `${e.clientX}px`;
+    treeDrag.ghost.style.top = `${e.clientY}px`;
+    const over = pinUnder(e.clientX, e.clientY);
+    document.querySelectorAll('#t-tree .drop-over').forEach(n => { if (n !== over) n.classList.remove('drop-over'); });
+    if (over) over.classList.add('drop-over');
+  });
+  const endDrag = (e, drop) => {
+    if (!treeDrag || treeDrag.chip !== chip) return;
+    const { ghost } = treeDrag;
+    treeDrag = null;
+    if (!ghost) return; // a tap, not a drag: the click answers
+    ghost.remove();
+    chip.classList.remove('dragging');
+    document.querySelectorAll('#t-tree .drop-over').forEach(n => n.classList.remove('drop-over'));
+    treeDragEnded = true;
+    setTimeout(() => { treeDragEnded = false; });
+    const over = drop && pinUnder(e.clientX, e.clientY);
+    if (over) answerPin(treePins.find(p => String(p.number) === over.dataset.pin), word, chip);
+  };
+  chip.addEventListener('pointerup', e => endDrag(e, true));
+  chip.addEventListener('pointercancel', e => endDrag(e, false));
+  return chip;
+}
+
+function pinUnder(x, y) {
+  const node = document.elementFromPoint(x, y)?.closest('#t-tree .tree-person[data-pin]');
+  const pin = node && treePins.find(p => String(p.number) === node.dataset.pin);
+  return pin && !pin.given ? node : null;
+}
+
+function answerPin(pin, word, chip) {
+  if (!pin || pin.given) return;
+  const right = word === pin.person.word;
+  pin.given = word;
+  pin.right = right;
+  gQuiz.answers.push(right);
+  if (right) {
+    gQuiz.score++;
+    queue(operation('xp', { amount: XP.answerRight }));
+  }
+  // The person's word is used up; a wrong word goes back to the list, it may belong to someone else.
+  const used = document.querySelector(`#t-bank .chip[data-word="${CSS.escape(pin.person.word)}"]`);
+  if (used) used.remove();
+  if (!right) {
+    chip.classList.add('wrong');
+    setTimeout(() => chip.classList.remove('wrong'), 700);
+  }
+  const node = pinNode(pin);
+  node.classList.add(right ? 'right' : 'wrong');
+  const slot = node.querySelector('.tree-slot');
+  slot.innerHTML = '<b lang="de"></b>';
+  slot.querySelector('b').textContent = shortWord(pin.person.word);
+  if (!right) {
+    const not = el('s', '', shortWord(word));
+    not.lang = 'de';
+    slot.appendChild(not);
+  }
+
+  const fb = document.getElementById('g-feedback');
+  fb.innerHTML = `<div class="alert ${right ? 'correct' : 'wrong'}"><span class="alert-icon">${icon(right ? 'check' : 'x')}</span>
+    <span class="alert-title">${right ? T('Correct') : T('Not quite')}</span><span class="alert-answer"><small></small><span lang="de"></span></span><span class="alert-note"></span></div>`;
+  fb.querySelector('.alert-answer small').textContent = T('Number {n}', { n: pin.number });
+  fb.querySelector('.alert-answer span').textContent = pin.person.word.replace(', ', ' · ');
+  fb.querySelector('.alert-note').textContent = right
+    ? wordMeaning(pin.person.word)
+    : T('You chose {word}. This person is {right}: {meaning}.', { word: shortWord(word), right: shortWord(pin.person.word), meaning: wordMeaning(pin.person.word) });
+  speak(pin.person.word);
+
+  updateTreeCount();
+  const next = treePins.find(p => !p.given);
+  selectPin(next || null);
+  if (!next) {
+    document.getElementById('t-bank').hidden = true;
+    document.getElementById('t-done').hidden = false;
+    document.querySelector('#t-done button').focus({ preventScroll: true });
+  }
+}
+
+function updateTreeCount() {
+  const done = treePins.filter(p => p.given).length;
+  document.getElementById('t-count').textContent = T('{done} of {total} matched · {right} right', {
+    done, total: treePins.length, right: treePins.filter(p => p.right).length,
+  });
+  document.getElementById('t-bar').style.width = `${Math.round(done / treePins.length * 100)}%`;
+}
+
+// The end of the round: every number with its word, right or wrong.
+function treeSummary(pins) {
+  const list = el('ol', 'tree-results');
+  list.setAttribute('aria-label', T('Your answers'));
+  pins.forEach(pin => {
+    const row = el('li', pin.right ? 'right' : 'wrong');
+    row.innerHTML = `<span class="tree-pin"></span><span class="alert-icon">${icon(pin.right ? 'check' : 'x')}</span>
+      <span class="tree-result-text"><b lang="de"></b><small></small></span>`;
+    row.querySelector('.tree-pin').textContent = pin.number;
+    row.querySelector('b').textContent = shortWord(pin.person.word);
+    row.querySelector('small').textContent = pin.right
+      ? wordMeaning(pin.person.word)
+      : T('{meaning} · you chose {word}', { meaning: wordMeaning(pin.person.word), word: shortWord(pin.given) });
+    row.appendChild(listenButton(pin.person.word));
+    list.appendChild(row);
+  });
+  return list;
 }
 
 /* ---------------- Speak ---------------- */
@@ -2707,6 +3316,16 @@ function showSpeakWord() {
   prev.disabled = speakIndex === 0;
   next.disabled = speakIndex >= words.length - 1;
   prev.onclick = () => { speakIndex--; showSpeakWord(); };
+  if (!document.getElementById('sp-restart')) {
+    const restart = el('button', 'btn redo-btn');
+    restart.type = 'button';
+    restart.id = 'sp-restart';
+    restart.innerHTML = `${icon('redo')}${T('Start again from the first word')}`;
+    prev.before(restart);
+  }
+  const restart = document.getElementById('sp-restart');
+  restart.disabled = speakIndex === 0;
+  restart.onclick = () => { speakIndex = 0; showSpeakWord(); };
   next.onclick = () => { speakIndex++; showSpeakWord(); };
 }
 
@@ -2953,9 +3572,10 @@ function renderMatchQuiz() {
   if (mqBuiltFor !== currentScope) startMatchQuiz();
 }
 
-function startMatchQuiz() {
+// `again`: the same words as the round being restarted.
+function startMatchQuiz(again = null) {
   mqBuiltFor = currentScope;
-  const pool = shuffle([...(currentScope === 'all' ? Object.values(vocabulary).flat() : vocabulary[currentScope])]);
+  const pool = again ? shuffle([...again]) : shuffle([...(currentScope === 'all' ? Object.values(vocabulary).flat() : vocabulary[currentScope])]);
   // Skip repeated words or meanings so each tile has exactly one correct partner.
   const germanSeen = new Set();
   const englishSeen = new Set();
@@ -2993,6 +3613,8 @@ function startMatchQuiz() {
   const order = () => shuffle(mqPairs.map((_, i) => i));
   order().forEach((i, n) => document.getElementById('mq-de').appendChild(makeTile(i, 'de', n)));
   order().forEach((i, n) => document.getElementById('mq-en').appendChild(makeTile(i, 'en', n + 2)));
+  const pairs = mqPairs;
+  area.querySelector('.panel').prepend(redoBar(() => startMatchQuiz(pairs), () => mqMatched > 0 || mqMistakes > 0));
   mqUpdateStatus();
 }
 
@@ -3120,6 +3742,7 @@ function mqShowResult() {
 let fcDirection = store.get('book-fc-direction', 'de-en');
 let fcQueue = [];
 let fcTotal = 0;
+let fcRound = []; // this round's words, for "Start again"
 let fcFlipped = false;
 let fcFirstTry = 0;
 let fcMissed = new Map();
@@ -3149,6 +3772,7 @@ function setDirection(dir) {
 function startFlashcards(items) {
   fcBuiltFor = currentScope;
   items = items || wordsIn(currentScope);
+  fcRound = items;
   fcQueue = shuffle(items.map(item => ({
     item,
     dir: fcDirection === 'mixed' ? (Math.random() < 0.5 ? 'de-en' : 'en-de') : fcDirection,
@@ -3193,6 +3817,7 @@ function showCard() {
       </div>
       <div class="kbd-hint"><kbd>Space</kbd> ${T('flip')} · <kbd>←</kbd> ${T('still learning')} · <kbd>→</kbd> ${T('knew it')}</div>
     </div>`;
+  area.firstElementChild.prepend(redoBar(() => startFlashcards(fcRound), () => fcSeen.size > 0));
   const cardEl = area.querySelector('.fc-card');
   cardEl.appendChild(face('front', card));
   cardEl.appendChild(face('back', card));
@@ -3245,7 +3870,6 @@ document.addEventListener('keydown', e => {
   if (currentMode === 'learn' && learnView === 'single' && !e.target.matches('input, select, textarea')) {
     if (e.key === 'ArrowRight') moveWord(1);
     else if (e.key === 'ArrowLeft') moveWord(-1);
-    else if (e.key === ' ' && !e.target.matches('button, [role="button"]')) { e.preventDefault(); showWordMeaning(true); }
     return;
   }
   if (currentMode !== 'flashcards') return;
@@ -3300,6 +3924,7 @@ let prResults = [];
 let prChecked = false;
 let prPending = false;
 let prBuiltFor = null;
+let prRound = []; // this round's words, for "Start again"
 
 async function detectAI() {
   const badge = document.getElementById('pr-ai');
@@ -3340,6 +3965,7 @@ function setPracticeDirection(dir) {
 function startPractice(items) {
   prBuiltFor = currentScope;
   prQueue = items || shuffle(wordsIn(currentScope)).slice(0, PRACTICE_SIZE);
+  prRound = prQueue;
   prIndex = 0;
   prResults = [];
   showPracticeQuestion();
@@ -3367,6 +3993,7 @@ function showPracticeQuestion() {
       </div>
     </div>`;
   area.querySelector('.q-text').textContent = toGerman ? meaning(item) : item.german;
+  area.querySelector('.panel').prepend(redoBar(() => startPractice(shuffle([...prRound])), () => prResults.length > 0 || prChecked));
   if (!toGerman) {
     area.querySelector('.q-prompt').appendChild(listenButton(item.german));
   }
@@ -3555,6 +4182,8 @@ function showPracticeSummary() {
   area.innerHTML = '';
   const buttons = [[T('Next 10 words'), 'btn-primary', () => startPractice()]];
   if (toReview.length) buttons.push([T('Practise {n} again', { n: toReview.length }), '', () => startPractice(shuffle(toReview))]);
+  const round = prRound;
+  buttons.push([T('Do the same words again'), '', () => startPractice(shuffle([...round]))]);
   area.appendChild(resultPanel({
     title: T('Practice complete'),
     text: prResults.length === 1 ? T('You answered 1 question.') : T('You answered {n} questions.', { n: prResults.length }),

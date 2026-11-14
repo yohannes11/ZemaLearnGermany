@@ -20,13 +20,13 @@ import '../ui/primitives.dart';
 import '../ui/theme.dart';
 import '../ui/watch.dart';
 
-/// The website, already signed in as this learner (a link that works once, for two minutes).
+/// The website, already signed in as this learner (a link that works once, for two minutes), in the app's language.
 Future<void> openWebsite() async {
   String url;
   try {
-    url = await Api.instance.webSessionLink('/learn/');
+    url = await Api.instance.webSessionLink(lang: course.lang);
   } on ApiError {
-    url = '${apiUrl()}/learn/';
+    url = '${apiUrl()}/learn/?lang=${course.lang}';
   }
   await launchUrl(Uri.parse(url), mode: LaunchMode.inAppBrowserView);
 }
@@ -47,7 +47,7 @@ class _MeScreenState extends State<MeScreen> {
     if (!await reminders.save(next)) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Notifications are off. Allow them for Zema German in your phone settings to get reminders.')));
+            SnackBar(content: Text(T('Notifications are off. Allow them for Zema German in your phone settings to get reminders.'))));
       }
       return;
     }
@@ -84,27 +84,27 @@ class _MeScreenState extends State<MeScreen> {
                   const SizedBox(width: Space.md),
                   Expanded(
                     child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                      Txt(user?.name.isNotEmpty == true ? user!.name : (user?.username ?? 'Guest learner'), role: TextRole.heading),
-                      Txt(user != null ? '@${user.username} · syncs with the website' : 'Progress is saved on this phone only', role: TextRole.caption, colour: c.muted),
+                      Txt(user?.name.isNotEmpty == true ? user!.name : (user?.username ?? T('Guest learner')), role: TextRole.heading),
+                      Txt(user != null ? T('@{name} · syncs with the website', {'name': user.username}) : T('Progress is saved on this phone only'), role: TextRole.caption, colour: c.muted),
                     ]),
                   ),
                 ]),
                 if (user != null) const _SyncLine(),
-                if (user != null) AppButton(label: 'Open the website, signed in', kind: ButtonKind.secondary, icon: Icons.open_in_new_rounded, onPressed: openWebsite),
+                if (user != null) AppButton(label: T('Open the website, signed in'), kind: ButtonKind.secondary, icon: Icons.open_in_new_rounded, onPressed: openWebsite),
                 if (user != null)
                   AppButton(label: T('Change password'), kind: ButtonKind.secondary, icon: Icons.key_rounded, onPressed: () => _changePassword(context)),
                 if (user != null)
                   AppButton(label: T('Sign out'), kind: ButtonKind.ghost, icon: Icons.logout_rounded, onPressed: session.signOut)
                 else
-                  AppButton(label: 'Sign in or create an account', icon: Icons.person_add_alt_rounded, onPressed: () => context.push('/sign-in')),
+                  AppButton(label: T('Sign in or create an account'), icon: Icons.person_add_alt_rounded, onPressed: () => context.push('/sign-in')),
               ], Space.sm)),
             ),
             AppCard(
               child: Row(children: [
-                stat(InkWell(onTap: () => showStreakSheet(context), child: const TallyView(size: 'compact')), '${game.streak}', 'day streak'),
-                stat(Icon(Icons.bolt_rounded, color: c.xp), '${game.totalXp}', 'total XP'),
-                stat(Icon(Icons.style_rounded, color: c.goldBright), '${sync.state.learned.length}', 'words'),
-                stat(Icon(Icons.school_rounded, color: c.brand), '${[for (final u in course.units) ...u.grammar].where(lessonPassed).length}', 'lessons'),
+                stat(InkWell(onTap: () => showStreakSheet(context), child: const TallyView(size: 'compact')), '${game.streak}', T('day streak')),
+                stat(Icon(Icons.bolt_rounded, color: c.xp), '${game.totalXp}', T('total XP')),
+                stat(Icon(Icons.style_rounded, color: c.goldBright), '${sync.state.learned.length}', T('words')),
+                stat(Icon(Icons.school_rounded, color: c.brand), '${[for (final u in course.units) ...u.grammar].where(lessonPassed).length}', T('lessons')),
               ]),
             ),
             AppCard(
@@ -112,11 +112,11 @@ class _MeScreenState extends State<MeScreen> {
                 setting(
                   T('Daily goal'),
                   Segmented<int>(label: T('Daily goal'), value: game.dailyGoal, options: [for (final g in dailyGoals) (g.xp, T(g.name))], onChanged: setDailyGoal),
-                  dailyGoals.where((g) => g.xp == game.dailyGoal).firstOrNull?.time ?? T('{n} XP a day', {'n': game.dailyGoal}),
+                  dailyGoals.where((g) => g.xp == game.dailyGoal).map((g) => T(g.time)).firstOrNull ?? T('{n} XP a day', {'n': game.dailyGoal}),
                 ),
                 setting(
-                  'Explanations in',
-                  Segmented<String>(label: 'Explanations in', value: course.lang, options: const [('en', 'English'), ('am', 'አማርኛ')], onChanged: course.setLang),
+                  T('Explanations in'),
+                  Segmented<String>(label: T('Explanations in'), value: course.lang, options: const [('en', 'English'), ('am', 'አማርኛ')], onChanged: course.setLang),
                 ),
                 setting(
                   T('Voice'),
@@ -141,7 +141,7 @@ class _MeScreenState extends State<MeScreen> {
                   Segmented<Appearance>(
                     label: T('Appearance'),
                     value: settings.appearance,
-                    options: [(Appearance.system, 'Phone'), (Appearance.light, T('Light')), (Appearance.dark, T('Dark'))],
+                    options: [(Appearance.system, T('Phone')), (Appearance.light, T('Light')), (Appearance.dark, T('Dark'))],
                     onChanged: (v) => settings.update(() => settings.appearance = v),
                   ),
                 ),
@@ -150,7 +150,7 @@ class _MeScreenState extends State<MeScreen> {
                   Segmented<String>(
                     label: T('Flashcards'),
                     value: settings.cardDirection,
-                    options: [('de-en', 'DE → EN'), ('en-de', 'EN → DE'), ('mixed', 'Mixed')],
+                    options: [('de-en', 'DE → EN'), ('en-de', 'EN → DE'), ('mixed', T('Mixed'))],
                     onChanged: (v) => settings.update(() => settings.cardDirection = v),
                   ),
                 ),
@@ -174,8 +174,8 @@ class _MeScreenState extends State<MeScreen> {
                       if (picked != null) await _setReminder(ReminderSettings(enabled: _reminder.enabled, hour: picked.hour, minute: picked.minute));
                     },
                     child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                      const Txt('Daily reminder', role: TextRole.subheading),
-                      Txt('${_reminder.time} · not on days you have practised · tap to change the time', role: TextRole.caption, colour: c.muted),
+                      Txt(T('Daily reminder'), role: TextRole.subheading),
+                      Txt(T('{time} · not on days you have practised · tap to change the time', {'time': _reminder.time}), role: TextRole.caption, colour: c.muted),
                     ]),
                   ),
                 ),
@@ -184,11 +184,11 @@ class _MeScreenState extends State<MeScreen> {
             ),
             AppCard(
               child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: gapped([
-                const Txt('Offline recordings', role: TextRole.subheading),
-                Txt('${(_saved / 1024 / 1024).toStringAsFixed(1)} MB on this phone. Save a unit from any of its word lists.', role: TextRole.caption, colour: c.muted),
+                Txt(T('Offline recordings'), role: TextRole.subheading),
+                Txt(T('{n} MB on this phone. Save a unit from any of its word lists.', {'n': (_saved / 1024 / 1024).toStringAsFixed(1)}), role: TextRole.caption, colour: c.muted),
                 if (_saved > 0)
                   AppButton(
-                    label: 'Delete saved recordings',
+                    label: T('Delete saved recordings'),
                     kind: ButtonKind.danger,
                     icon: Icons.delete_outline_rounded,
                     onPressed: () async {
@@ -200,7 +200,7 @@ class _MeScreenState extends State<MeScreen> {
             ),
             if (isTestBuild) const _TestServer(),
             AppButton(
-              label: 'Watch the introduction again',
+              label: T('Watch the introduction again'),
               kind: ButtonKind.ghost,
               icon: Icons.play_circle_outline_rounded,
               onPressed: () => settings.update(() => settings.onboarded = false),
@@ -276,16 +276,18 @@ class _SyncLineState extends State<_SyncLine> {
     final pending = sync.pending;
     final last = sync.lastSync;
     final ago = last == null ? null : ((DateTime.now().millisecondsSinceEpoch - last) / 60000).round().clamp(0, 1 << 30);
-    final changes = '$pending ${pending == 1 ? 'change' : 'changes'}';
+    final changes = pending == 1 ? T('1 change') : T('{n} changes', {'n': pending});
     final text = sync.syncing
-        ? 'Syncing…'
+        ? T('Syncing…')
         : !sync.online && pending > 0
-            ? 'Offline · $changes saved on this phone, sent when you are back online'
+            ? T('Offline · {changes} saved on this phone, sent when you are back online', {'changes': changes})
             : pending > 0
-                ? '$changes waiting to sync'
+                ? T('{changes} waiting to sync', {'changes': changes})
                 : ago == null
-                    ? 'Not synced yet'
-                    : 'Synced with your account ${ago < 1 ? 'just now' : '$ago min ago'}';
+                    ? T('Not synced yet')
+                    : ago < 1
+                        ? T('Synced with your account just now')
+                        : T('Synced with your account {n} min ago', {'n': ago});
     final ok = pending == 0 && sync.online && !sync.syncing;
     return Material(
       color: ok ? c.greenSoft : c.surface2,
@@ -421,8 +423,8 @@ class _SignInScreenState extends State<SignInScreen> {
       appBar: AppBar(title: Txt(T('Your account'), role: TextRole.heading)),
       body: AutofillGroup(
         child: PageList(children: [
-          Txt(_creating ? T('Create your account') : 'Welcome back', role: TextRole.title),
-          Txt('Your words, scores, XP and streak follow you to every device and the website.', colour: c.muted),
+          Txt(_creating ? T('Create your account') : T('Welcome back'), role: TextRole.title),
+          Txt(T('Your words, scores, XP and streak follow you to every device and the website.'), colour: c.muted),
           if (_creating) ...[
             _field(T('Name'), _name, hints: const [AutofillHints.name]),
             _field(T('Username'), _username, hints: const [AutofillHints.newUsername]),
@@ -433,7 +435,7 @@ class _SignInScreenState extends State<SignInScreen> {
           if (_error != null) Semantics(liveRegion: true, child: Txt(_error!, colour: c.red)),
           AppButton(label: _creating ? T('Create account') : T('Sign in'), busy: _busy, onPressed: _submit),
           AppButton(
-            label: _creating ? 'I already have an account' : 'Create a free account',
+            label: _creating ? T('I already have an account') : T('Create a free account'),
             kind: ButtonKind.ghost,
             onPressed: () => setState(() => _creating = !_creating),
           ),

@@ -5,6 +5,7 @@ import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:timezone/data/latest_all.dart' as tzdata;
 import 'package:timezone/timezone.dart' as tz;
 
+import '../../core/i18n.dart';
 import '../../core/storage.dart';
 
 /// Daily streak reminders, scheduled on the phone: they need no server and arrive offline too. Reminders are set
@@ -79,11 +80,11 @@ class Reminders {
         await _plugin.zonedSchedule(
           id: ahead,
           scheduledDate: date,
-          title: keepStreak ? 'Keep your $streak-day streak' : 'Time for a little German',
-          body: keepStreak ? 'Five minutes of German keeps it going.' : 'A few words today make tomorrow easier.',
-          notificationDetails: const NotificationDetails(
-            android: AndroidNotificationDetails('streak', 'Daily practice', importance: Importance.defaultImportance),
-            iOS: DarwinNotificationDetails(),
+          title: keepStreak ? T('Keep your {n}-day streak', {'n': streak}) : T('Time for a little German'),
+          body: keepStreak ? T('Five minutes of German keeps it going.') : T('A few words today make tomorrow easier.'),
+          notificationDetails: NotificationDetails(
+            android: AndroidNotificationDetails('streak', T('Daily practice'), importance: Importance.defaultImportance),
+            iOS: const DarwinNotificationDetails(),
           ),
           androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
         );

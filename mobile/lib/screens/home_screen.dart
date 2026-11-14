@@ -11,6 +11,7 @@ import '../features/gamification/tally_view.dart';
 import '../features/progress/course_map.dart';
 import '../features/progress/progress.dart';
 import '../features/vocabulary/srs.dart';
+import '../features/search/search_screen.dart';
 import '../ui/primitives.dart';
 import '../ui/theme.dart';
 import '../ui/watch.dart';
@@ -47,6 +48,7 @@ class HomeScreen extends StatelessWidget {
                     constraints: const BoxConstraints(maxWidth: 720),
                     child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: gapped([
                       Txt(user != null ? '${_greeting()}, ${user.firstName}!' : '${_greeting()}!', role: TextRole.title),
+                      const SearchEntry(),
                       const StatChips(),
                       _TodayCard(game: game),
                       AppCard(
@@ -56,8 +58,8 @@ class HomeScreen extends StatelessWidget {
                           Expanded(
                             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                               Wrap(spacing: Space.sm, crossAxisAlignment: WrapCrossAlignment.end, children: [
-                                Txt('Level ${game.level.level}', role: TextRole.subheading),
-                                Txt('${game.level.toNext} XP to level ${game.level.level + 1}', role: TextRole.caption, colour: c.muted),
+                                Txt(T('Level {n}', {'n': game.level.level}), role: TextRole.subheading),
+                                Txt(T('{xp} XP to level {n}', {'xp': game.level.toNext, 'n': game.level.level + 1}), role: TextRole.caption, colour: c.muted),
                               ]),
                               const SizedBox(height: Space.xs),
                               Bar(value: game.level.share),
@@ -76,8 +78,8 @@ class HomeScreen extends StatelessWidget {
                             leading: Badge2(icon: Icons.psychology_rounded, colour: c.xp, background: c.goldSoft),
                             kicker: T('Review'),
                             kickerColour: c.xp,
-                            title: '$due ${due == 1 ? 'word is' : 'words are'} due',
-                            detail: 'Review now, before they fade.',
+                            title: due == 1 ? T('1 word is due') : T('{n} words are due', {'n': due}),
+                            detail: T('Review now, before they fade.'),
                           ),
                         ),
                       if (section != null && step?.key != section.section.key)
@@ -86,7 +88,7 @@ class HomeScreen extends StatelessWidget {
                           onTap: () => context.push('/section/${section.section.key}'),
                           child: ListRow(
                             leading: Badge2(icon: Icons.style_rounded, colour: c.xp, background: c.goldSoft),
-                            kicker: 'New words · ${course.unitName(section.unit)}',
+                            kicker: '${T('New words')} · ${course.unitName(section.unit)}',
                             kickerColour: c.xp,
                             title: course.t(section.section.title),
                             detail: T('{n} words to learn', {'n': section.left}),
@@ -98,7 +100,7 @@ class HomeScreen extends StatelessWidget {
                           onTap: () => context.push('/lesson/${lesson.lesson.key}'),
                           child: ListRow(
                             leading: Badge2(icon: Icons.school_rounded, colour: c.brand, background: c.brandSoft),
-                            kicker: 'Next lesson · ${course.unitName(lesson.unit)}',
+                            kicker: '${T('Next lesson')} · ${course.unitName(lesson.unit)}',
                             title: course.t(lesson.lesson.title),
                           ),
                         ),
@@ -107,9 +109,9 @@ class HomeScreen extends StatelessWidget {
                       if (user == null)
                         AppCard(
                           child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: gapped([
-                            const Txt('Keep your streak on every device', role: TextRole.subheading),
-                            Txt('A free account saves your words, scores and XP, here and on the website.', role: TextRole.caption, colour: c.muted),
-                            AppButton(label: 'Sign in or sign up', kind: ButtonKind.secondary, icon: Icons.person_add_alt_rounded, onPressed: () => context.push('/sign-in')),
+                            Txt(T('Keep your streak on every device'), role: TextRole.subheading),
+                            Txt(T('A free account saves your words, scores and XP, here and on the website.'), role: TextRole.caption, colour: c.muted),
+                            AppButton(label: T('Sign in or sign up'), kind: ButtonKind.secondary, icon: Icons.person_add_alt_rounded, onPressed: () => context.push('/sign-in')),
                           ], Space.sm)),
                         ),
                     ], Space.md)),
@@ -159,10 +161,10 @@ class _TodayCard extends StatelessWidget {
                     : game.practisedToday
                         ? T('{n} XP more strikes off today', {'n': game.dailyGoal - game.todayXp})
                         : t.streak > 0
-                            ? 'Practise today to keep your ${t.streak}-day streak.'
+                            ? T('Practise today to keep your {n}-day streak.', {'n': t.streak})
                             : t.broken != null
-                                ? 'Your streak was reset. Start a new one today.'
-                                : 'Earn some XP to start a streak.',
+                                ? T('Your streak was reset. Start a new one today.')
+                                : T('Earn some XP to start a streak.'),
                 role: TextRole.caption,
                 colour: c.muted,
               ),
@@ -174,7 +176,7 @@ class _TodayCard extends StatelessWidget {
           const Expanded(child: Align(alignment: Alignment.centerLeft, child: TallyView(feel: true))),
           if (game.freezes > 0)
             Semantics(
-              label: '${game.freezes} streak ${game.freezes == 1 ? 'freeze' : 'freezes'}: a missed day won\'t break your streak',
+              label: game.freezes == 1 ? T("1 streak freeze: a missed day won't break your streak") : T("{n} streak freezes: a missed day won't break your streak", {'n': game.freezes}),
               excludeSemantics: true,
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: Space.sm, vertical: Space.xs),
@@ -281,21 +283,21 @@ class ResumeCard extends StatelessWidget {
     if (title == null) return const SizedBox.shrink();
     final position = (s['position'] as num).toInt();
     final total = (s['items'] as List).length;
-    final where = s['device'] == sync.device ? 'here' : (s['platform'] == 'web' ? 'on the website' : 'on your other phone');
+    final where = s['device'] == sync.device ? T('here') : (s['platform'] == 'web' ? T('on the website') : T('on your other phone'));
     return AppCard(
       raised: true,
       accent: c.brand,
       onTap: () => context.push(kind == 'quiz' ? '/session/quiz/$ref?resume=1' : '/session/cards?resume=1'),
-      semanticLabel: 'Continue $title at the question where you stopped',
+      semanticLabel: T('Continue {title} at the question where you stopped', {'title': title}),
       child: Column(children: [
         Row(children: [
           Badge2(icon: s['platform'] == 'web' ? Icons.desktop_windows_rounded : Icons.phone_android_rounded, colour: c.brandInk, background: c.brand),
           const SizedBox(width: Space.md),
           Expanded(
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Txt('Continue where you stopped $where', role: TextRole.overline, colour: c.brand),
+              Txt(T('Continue where you stopped {where}', {'where': where}), role: TextRole.overline, colour: c.brand),
               Txt(title, role: TextRole.subheading),
-              Txt('${kind == 'quiz' ? 'Question' : 'Card'} ${position + 1} of $total', role: TextRole.caption, colour: c.muted),
+              Txt(kind == 'quiz' ? T('Question {n} of {total}', {'n': position + 1, 'total': total}) : T('Card {n} of {total}', {'n': position + 1, 'total': total}), role: TextRole.caption, colour: c.muted),
             ]),
           ),
           Icon(Icons.play_circle_fill_rounded, size: 32, color: c.brand),

@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 import '../config.dart';
+import '../i18n.dart';
 import '../storage.dart';
 import 'models.dart';
 
@@ -55,7 +56,7 @@ class Api {
     try {
       response = await http.Response.fromStream(await _http.send(request).timeout(_timeout));
     } catch (_) {
-      throw ApiError('No connection to the server.', 0);
+      throw ApiError(T('No connection to the server.'), 0);
     }
     if (response.statusCode == 401 && _token != null) {
       await _saveToken(null);
@@ -66,7 +67,7 @@ class Api {
       try {
         message = (jsonDecode(utf8.decode(response.bodyBytes)) as Map)['error'] as String?;
       } catch (_) {}
-      throw ApiError(message ?? 'The server answered ${response.statusCode}.', response.statusCode);
+      throw ApiError(message ?? T('The server answered {code}.', {'code': response.statusCode}), response.statusCode);
     }
     return response;
   }
@@ -123,6 +124,6 @@ class Api {
       _json('sync/', method: 'POST', body: {'ops': ops, 'device': device});
 
   /// A link that opens the website signed in as the same learner (works once, for two minutes).
-  Future<String> webSessionLink([String next = '/learn/']) async =>
-      (await _json('auth/web-session/?next=${Uri.encodeQueryComponent(next)}', method: 'POST'))['url'] as String;
+  Future<String> webSessionLink({String next = '/learn/', String? lang}) async =>
+      (await _json('auth/web-session/?next=${Uri.encodeQueryComponent(next)}${lang == null ? '' : '&lang=$lang'}', method: 'POST'))['url'] as String;
 }

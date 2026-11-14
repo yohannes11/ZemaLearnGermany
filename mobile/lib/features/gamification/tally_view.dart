@@ -21,10 +21,10 @@ String describeTally(tally.Timeline t) {
   final met = t.marks.where((m) => m.state == tally.Mark.met).length;
   return [
     t.streak > 0 ? T('{n}-day streak', {'n': t.streak}) : T('No streak yet'),
-    if (met > 0) 'daily goal reached on $met ${met == 1 ? 'day' : 'days'}',
+    if (met > 0) met == 1 ? T('daily goal reached on 1 day') : T('daily goal reached on {n} days', {'n': met}),
     t.todayMet ? T("Today's goal reached") : T('Today: {xp} of {goal} XP', {'xp': t.todayXp, 'goal': t.goal}),
-    if (t.freezes > 0) '${t.freezes} streak ${t.freezes == 1 ? 'freeze' : 'freezes'}',
-    if (t.broken != null) 'the last streak was broken',
+    if (t.freezes > 0) t.freezes == 1 ? T('1 streak freeze') : T('{n} streak freezes', {'n': t.freezes}),
+    if (t.broken != null) T('the last streak was broken'),
   ].join(', ');
 }
 
@@ -264,7 +264,7 @@ class StatChips extends StatelessWidget {
         ),
       ),
       Chip2(icon: Icons.bolt_rounded, value: '${game.totalXp}', colour: c.xp, background: c.goldSoft, label: '${game.totalXp} XP'),
-      Chip2(icon: Icons.shield_rounded, value: '${game.level.level}', colour: c.brand, background: c.brandSoft, label: 'Level ${game.level.level}'),
+      Chip2(icon: Icons.shield_rounded, value: '${game.level.level}', colour: c.brand, background: c.brandSoft, label: T('Level {n}', {'n': game.level.level})),
     ]);
   }
 }

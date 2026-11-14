@@ -73,9 +73,31 @@ def course_strings() -> set[str]:
         found.update(unit[k] for k in ("title", "label", "lessonsLabel") if unit.get(k))
         found.update(section["title"] for section in unit["sections"])
         found.update(lesson["title"] for lesson in unit["grammar"])
+    found.update(topic["title"] for topic in course.get("topics", []))
     found.update(SERVER_MESSAGES)
     return found
 
 
+# The Flutter app (../mobile) shows the same catalogue: its T('…') calls, plus the daily goals and milestones it
+# translates where it shows them. Strings the website already uses are checked in the website's sections.
+APP_DIR = BASE.parent / "mobile" / "lib"
+DART_CALL = re.compile(r"""\bT\(\s*(['"])((?:\\.|(?!\1).)*?)\1""")
+DART_DATA = re.compile(r"""\b(?:DailyGoal\(\d+|Milestone\('[^']*', [\w.]+)((?:, '[^'$]*')+)""")
+
+
+def app_strings() -> set[str]:
+    found = set()
+    for path in APP_DIR.rglob("*.dart"):
+        source = path.read_text(encoding="utf-8")
+        found.update(_unescape(text) for _, text in DART_CALL.findall(source) if "$" not in text)
+        for args in DART_DATA.findall(source):
+            found.update(re.findall(r"'([^']*)'", args))
+    return found
+
+
 def all_strings() -> dict[str, set[str]]:
-    return {"site": site_strings(), "course": course_strings()}
+    site, course = site_strings(), course_strings()
+    strings = {"site": site, "course": course}
+    if APP_DIR.exists():
+        strings["app"] = app_strings() - site - course
+    return strings

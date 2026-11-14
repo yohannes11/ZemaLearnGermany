@@ -71,6 +71,8 @@ def lesson_strings(lesson: dict) -> list[str]:
         if table:
             found += [h for h in table['head'] if h and looks_english(h)]
             found += [c for row in table['rows'] for c in row if looks_english(c)]
+    if lesson.get('tree'):
+        add(lesson['tree']['title'])
     for title, text in lesson.get('rules', []):
         add(title)
         add(text)

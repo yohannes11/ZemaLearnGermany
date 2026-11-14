@@ -103,8 +103,8 @@ class _CardSessionState extends State<CardSession> {
       final missed = [for (final (i, w) in deck.indexed) if (i < _given.length && !_given[i]) w];
       final success = knew >= again;
       return Celebration(
-        title: deck.isEmpty ? 'Nothing to practise' : (success ? 'Ausgezeichnet!' : 'Gut gemacht!'),
-        message: deck.isEmpty ? 'Learn some words first, then come back.' : T('You went through all {n} cards.', {'n': deck.length}),
+        title: deck.isEmpty ? T('Nothing to practise') : (success ? 'Ausgezeichnet!' : 'Gut gemacht!'),
+        message: deck.isEmpty ? T('Learn some words first, then come back.') : T('You went through all {n} cards.', {'n': deck.length}),
         xpGained: _xp,
         levelBefore: _startLevel,
         success: deck.isNotEmpty && success,
@@ -158,7 +158,7 @@ class _CardSessionState extends State<CardSession> {
               Expanded(child: AppButton(label: T('Still learning'), kind: ButtonKind.secondary, icon: Icons.refresh_rounded, onPressed: () => _answer(false))),
               if (audio.hasClip(word.german)) ...[
                 const SizedBox(width: Space.sm),
-                RoundIconButton(icon: Icons.volume_up_rounded, label: 'Listen to ${word.german}', onPressed: () => audio.play(word.german)),
+                RoundIconButton(icon: Icons.volume_up_rounded, label: T('Listen: {text}', {'text': word.german}), onPressed: () => audio.play(word.german)),
               ],
               const SizedBox(width: Space.sm),
               Expanded(child: AppButton(label: T('I knew it'), icon: Icons.check_rounded, onPressed: () => _answer(true))),
@@ -292,7 +292,7 @@ class _SwipeCardState extends State<SwipeCard> with TickerProviderStateMixin {
       return Semantics(
         button: true,
         label: widget.word.german,
-        hint: 'Double tap to turn the card',
+        hint: T('Double tap to turn the card'),
         onTap: _flip,
         child: GestureDetector(
           onTap: _flip,

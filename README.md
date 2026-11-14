@@ -11,7 +11,8 @@ Both are one product with one source of truth. How progress syncs between them i
 and how an exercise left on one device continues on another: [SYNC.md](SYNC.md). The Django backend in `web/` holds the accounts, every learner's
 progress, the course content and the recordings. The website uses them directly. The app uses them through
 `/api/v1/`. A live connection (`/ws/v1/`) carries every change to the learner's other open devices within a
-moment, and a text change an admin publishes to everyone.
+moment, and a text change an admin publishes to everyone. How learners search the course (words, grammar, plain
+questions, filters), on the website and in the app, offline included: [SEARCH.md](SEARCH.md).
 
 Shared pieces:
 

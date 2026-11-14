@@ -139,7 +139,7 @@ class _QuizSessionState extends State<QuizSession> {
 
   String get _title => switch (widget.kind) {
         LessonQuiz(:final lesson) => course.t(lesson.title),
-        ListeningQuiz(:final unit) => 'listening for ${course.t(unit.title)}',
+        ListeningQuiz(:final unit) => T('listening for {title}', {'title': course.t(unit.title)}),
       };
 
   @override
@@ -151,15 +151,15 @@ class _QuizSessionState extends State<QuizSession> {
       final passed = _questions.isNotEmpty && _right >= pass;
       return Celebration(
         title: _questions.isEmpty
-            ? 'Nothing here yet'
+            ? T('Nothing here yet')
             : passed
                 ? (_right == _questions.length ? 'Perfekt!' : 'Geschafft!')
                 : 'Weiter üben!',
         message: _questions.isEmpty
-            ? 'This exercise needs recordings. Connect to the internet or save the unit.'
+            ? T('This exercise needs recordings. Connect to the internet or save the unit.')
             : lesson != null
                 ? (passed ? T('You have got this.') : T('Score {n} or more to complete it.', {'n': pass}))
-                : 'You practised $_title.',
+                : T('You practised {title}.', {'title': _title}),
         xpGained: _xp,
         levelBefore: _levelBefore,
         success: passed,
@@ -168,7 +168,7 @@ class _QuizSessionState extends State<QuizSession> {
           if (lesson != null)
             Stat(Icons.star_outline_rounded, T('best score'), '${[_right, sync.state.grammar[lesson.key] ?? 0].reduce((a, b) => a > b ? a : b)}/${_questions.length}')
           else
-            Stat(Icons.flag_outlined, 'to pass', '$pass'),
+            Stat(Icons.flag_outlined, T('to pass'), '$pass'),
         ],
         extra: [
           if (_questions.isNotEmpty)
@@ -230,11 +230,11 @@ class SessionHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Row(children: [
-        RoundIconButton(icon: Icons.close_rounded, label: 'End session', colour: context.c.muted, onPressed: () => context.pop()),
+        RoundIconButton(icon: Icons.close_rounded, label: T('End session'), colour: context.c.muted, onPressed: () => context.pop()),
         const SizedBox(width: Space.md),
         Expanded(child: Bar(value: total == 0 ? 0 : done / total, colour: colour, height: 12)),
         const SizedBox(width: Space.md),
-        Semantics(label: '$done of $total done', excludeSemantics: true, child: Txt('$done/$total', role: TextRole.label, colour: context.c.muted)),
+        Semantics(label: T('{done} of {total} done', {'done': done, 'total': total}), excludeSemantics: true, child: Txt('$done/$total', role: TextRole.label, colour: context.c.muted)),
         if (trailing != null) ...[const SizedBox(width: Space.sm), trailing!],
       ]);
 }

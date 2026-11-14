@@ -5,6 +5,7 @@ extend the course to the full A1.1 syllabus.
 Run this file to regenerate static/course/js/course-data.js, then tools/gen_course_audio.py for new audio.
 """
 import json
+import re
 from pathlib import Path
 
 from word_pictures import PICTURES
@@ -1260,6 +1261,31 @@ def reading(key, code, title, chapters, intro, text_title, paragraphs, glossary,
             'rules': [], 'quiz': {'title': 'Questions about the text', 'items': items}}
 
 
+FAMILY_HINT = 'Choose the German word.'
+
+# Your family, three generations: grandparents; your aunt, father, mother and uncle; your brother, you and your
+# sister. `word` is the vocabulary entry (its audio and meaning); x is a percentage of the width, row 0 is the top.
+# The aunt and uncle are your father's sister and brother: children of the same grandparents.
+FAMILY_TREE = {
+    'title': 'Your family tree',
+    'people': [
+        {'key': 'opa', 'word': 'der Opa, der Großvater', 'pic': '1f474', 'x': 33, 'row': 0},
+        {'key': 'oma', 'word': 'die Oma, die Großmutter', 'pic': '1f475', 'x': 67, 'row': 0},
+        {'key': 'tante', 'word': 'die Tante', 'pic': '1f469', 'x': 12, 'row': 1},
+        {'key': 'vater', 'word': 'der Vater', 'pic': '1f468', 'x': 37, 'row': 1},
+        {'key': 'mutter', 'word': 'die Mutter', 'pic': '1f469', 'x': 63, 'row': 1},
+        {'key': 'onkel', 'word': 'der Onkel', 'pic': '1f468', 'x': 88, 'row': 1},
+        {'key': 'bruder', 'word': 'der Bruder', 'pic': '1f466', 'x': 24, 'row': 2},
+        {'key': 'ich', 'word': 'ich', 'me': True, 'x': 50, 'row': 2},
+        {'key': 'schwester', 'word': 'die Schwester', 'pic': '1f467', 'x': 76, 'row': 2},
+    ],
+    'couples': [['opa', 'oma'], ['vater', 'mutter']],
+    'families': [{'parents': ['opa', 'oma'], 'children': ['tante', 'vater', 'onkel']},
+                 {'parents': ['vater', 'mutter'], 'children': ['bruder', 'ich', 'schwester']}],
+    # Words offered in the exercise that belong to nobody on the tree, so the last answer isn't a given.
+    'distractors': ['die Cousine', 'der Cousin'],
+}
+
 READ_INTRO = ['Read the text. Press a speaker to hear each part, and use the word list below it.',
               'Then answer the questions. The text stays on screen while you do.']
 
@@ -1640,6 +1666,43 @@ extend(UNIT2, words={
                write_de('We live together.', 'Wir leben zusammen.', alts=['Wir wohnen zusammen.']),
                write_de('Where do you live? (informal, one person)', 'Wo wohnst du?', alts=['Wo lebst du?']),
            ]),
+    {**lesson('g2-family-tree', 'G8', 'Family tree: who is who?', ['2.1', '2.15'],
+              ['A family tree shows who is who. A line between two people joins a couple; the lines below them '
+               'lead to their children.',
+               'You are <em class="de">ich</em>, at the bottom in the middle. Press a person to hear their word. '
+               'In the exercise, the people have numbers: match each number to the right word.'],
+              [{'step': 'Groups', 'title': 'One word for several people', 'examples': [
+                  ('die Großeltern', 'grandpa + grandma = the grandparents'),
+                  ('die Eltern', 'father + mother = the parents'),
+                  ('die Geschwister', 'brothers + sisters = the siblings')]}],
+              [('der', 'men and boys: der Vater, der Opa, der Bruder, der Onkel'),
+               ('die', 'women and girls: die Mutter, die Oma, die Schwester, die Tante'),
+               ('die (plural)', 'groups: die Eltern, die Großeltern, die Geschwister')],
+              'Who is who in your family?', [
+                  pick("Your father's mother is your …", 'die Oma, die Großmutter',
+                       ['die Oma, die Großmutter', 'die Tante', 'die Schwester'], hint=FAMILY_HINT),
+                  pick("Your father's father is your …", 'der Opa, der Großvater',
+                       ['der Opa, der Großvater', 'der Onkel', 'der Bruder'], hint=FAMILY_HINT),
+                  pick("Your father's sister is your …", 'die Tante',
+                       ['die Tante', 'die Cousine', 'die Oma, die Großmutter'], hint=FAMILY_HINT),
+                  pick("Your father's brother is your …", 'der Onkel',
+                       ['der Onkel', 'der Cousin', 'der Opa, der Großvater'], hint=FAMILY_HINT),
+                  pick("Your father's wife is your …", 'die Mutter', ['die Mutter', 'die Tante', 'die Schwester'],
+                       hint=FAMILY_HINT),
+                  pick("Your mother's husband is your …", 'der Vater', ['der Vater', 'der Onkel', 'der Bruder'],
+                       hint=FAMILY_HINT),
+                  pick("Your parents' son (not you) is your …", 'der Bruder', ['der Bruder', 'der Sohn', 'der Cousin'],
+                       hint=FAMILY_HINT),
+                  pick("Your parents' daughter (not you) is your …", 'die Schwester',
+                       ['die Schwester', 'die Tochter', 'die Cousine'], hint=FAMILY_HINT),
+                  pick("Your uncle's daughter is your …", 'die Cousine', ['die Cousine', 'die Schwester', 'die Tante'],
+                       hint=FAMILY_HINT),
+                  pick("Your aunt's son is your …", 'der Cousin', ['der Cousin', 'der Bruder', 'der Onkel'],
+                       hint=FAMILY_HINT),
+              ]),
+     # The website draws this tree: numbered people to match with words (course.js, familyTree). Apps that don't
+     # know `tree` still have the quiz above.
+     'tree': FAMILY_TREE},
     reading('g2-reading', 'R1', "Hanna's family", ['2.1', '2.14', '2.15'], READ_INTRO, 'Hanna und ihre Familie', [
         'Ich heiße Hanna Girma. Ich bin 27 Jahre alt und komme aus Äthiopien, aus Hawassa. Jetzt wohne ich in Frankfurt.',
         'Ich bin verheiratet. Mein Mann heißt Samuel. Er ist 31 und arbeitet als Ingenieur. Wir haben eine Tochter. '
@@ -2623,6 +2686,68 @@ extend(UNIT9)
 COURSE = {'units': [UNIT0, UNIT1, UNIT2, UNIT3, UNIT4, UNIT5, UNIT6, UNIT7, UNIT8, UNIT9]}
 
 
+# ---------------------------------------------------------------- Teaching order within sections
+# A section teaches from the general to the specific: first the words the topic is about (der Name, heißen),
+# then the questions (Wie heißt du?), then their answers (Ich heiße …). Sections are built in several places
+# (extend() adds words later), so the order is set here, once every section is complete. Each list must hold
+# exactly its section's words; sections not listed keep the order they were written in.
+TEACHING_ORDER = {
+    # Start: the words you already know (the lesson's opening idea), then first phrases.
+    '0.0': ['der Kaffee', 'das Taxi', 'Hallo!', 'Guten Morgen!', 'Danke schön!', 'Entschuldigung', 'Ich heiße…',
+            'Ich komme aus Äthiopien.', 'Ich lerne Deutsch.', 'Wie bitte?', 'Noch einmal, bitte.', 'Ich verstehe das nicht.'],
+    '0.7': ['das Alphabet', 'der Buchstabe', 'der Umlaut', 'das Eszett', 'buchstabieren', 'Wie schreibt man das?',
+            'Können Sie das bitte buchstabieren?', 'Wie ist Ihr Name, bitte?', 'mit zwei n'],
+    # The times of day, then the greetings made from them, then goodbyes.
+    '1.1': ['Hallo!', 'Hi!', 'der Morgen', 'der Tag', 'der Abend', 'Guten Morgen!', 'Guten Tag!', 'Guten Abend!',
+            'Gute Nacht!', 'Tschüss!', 'Auf Wiedersehen!'],
+    '1.2': ['der Name', 'der Vorname', 'der Nachname', 'heißen', 'Wie ist dein Name?', 'Mein Name ist …',
+            'Wie heißt du?', 'Ich heiße…', 'Wie heißen Sie?'],
+    '1.3': ['der Mann', 'die Frau', 'Wer ist das?', 'Wer bist du?', 'Wer sind Sie?', 'Ich weiß nicht.'],
+    '1.12': ['der Deutschkurs', 'der Kursleiter', 'die Kursleiterin', 'Ich lerne Deutsch.', 'Ich verstehe das nicht.',
+             'Noch einmal, bitte.', 'Langsam, bitte.', 'Wie sagt man … auf Deutsch?', 'Entschuldigung, wie bitte?'],
+    '2.3': ['der Mann', 'die Frau', 'Wer ist das?', 'Wer bist du?', 'Wer sind Sie?', 'Ich weiß nicht.'],
+    '2.6': ['die Sprache', 'sprechen', 'ein bisschen', 'Deutsch', 'Englisch', 'Französisch', 'Spanisch', 'Portugiesisch',
+            'Japanisch', 'Chinesisch', 'Amharisch', 'Tigrinya', 'Oromo', 'Arabisch', 'Italienisch', 'Türkisch', 'Russisch',
+            'Welche Sprachen sprichst du?', 'Ich spreche Deutsch.', 'Ich spreche ein bisschen Englisch.',
+            'Sprichst du Englisch?', 'Ja, ein bisschen.', 'Nein, gar nicht.'],
+    '2.9': ['die Telefonnummer', 'Wie ist deine Telefonnummer?', 'Wie lautet deine Telefonnummer?', 'Wie bitte?',
+            'Können Sie das bitte wiederholen?'],
+    '2.12': ['verheiratet', 'ledig', 'geschieden', 'der Freund', 'die Freundin', 'Bist du verheiratet?',
+             'Sind Sie verheiratet?', 'Ja, ich bin verheiratet.', 'Ich bin ledig.', 'Hast du Kinder?', 'Haben Sie Kinder?',
+             'Ich habe einen Sohn.', 'Ich habe eine Tochter.', 'Ich habe zwei Kinder.', 'Ich habe keine Kinder.'],
+    '2.14': ['das Alter', 'jung', 'alt', 'Wie alt bist du?', 'Wie alt sind Sie?', 'Ich bin 25 Jahre alt.', 'Ich bin 30.',
+             'Er ist 70 Jahre alt.'],
+    '3.12': ['der Preis', 'der Euro', 'der Cent', 'das Kilo', 'das Wechselgeld', 'Wie viel kostet das?', 'Was kostet das?',
+             'Das kostet …', 'Das macht …'],
+    # The restaurant's words, then the visit in order: ordering, the food arriving, paying.
+    '3.15': ['der Kellner', 'die Gäste', 'das Menü', 'die Speise, das Essen', 'die Getränke', 'der Nachtisch, die Nachspeise',
+             'bestellen', 'bereit', 'köstlich', 'die Rechnung', 'bekommen', 'das Bargeld', 'die Kreditkarte', 'das Trinkgeld',
+             'etwas zum Essen', 'etwas zum Trinken', 'ein Glas Wein', 'Was darf es sein?', 'Ich möchte … bitte.',
+             'Ich nehme …', 'Kommt gleich!', 'In Ordnung?', 'Können wir bitte die Rechnung bekommen?',
+             'Zahlen Sie mit Karte oder Bargeld?', 'Stimmt so.'],
+    '4.2': ['links', 'rechts', 'vorne', 'hinten', 'neben', 'Wo ist es?', 'Entschuldigung, wo ist das Badezimmer?'],
+    '7.2': ['malen', 'Gitarre spielen', 'Skateboard fahren', 'Ski laufen', 'Was kannst du gut machen?',
+            'Was kannst du nicht gut machen?', 'Sie kann sehr gut tanzen.', 'Er kann gar nicht kochen.'],
+    '7.11': ['der Student', 'die Studentin', 'der Rentner', 'die Rentnerin', 'Was sind Sie von Beruf?',
+             'Was machst du beruflich?', 'Ich bin Lehrerin von Beruf.', 'Ich arbeite als Krankenpfleger.',
+             'Ich arbeite bei Ethiopian Airlines.', 'Ich studiere Medizin.', 'Ich mache eine Ausbildung.',
+             'Ich mache ein Praktikum.', 'Ich arbeite im Moment nicht.'],
+    '7.13': ['telefonieren', 'Firma Kebede, guten Tag!', 'Hier ist Selam Tesfaye.', 'Was kann ich für Sie tun?',
+             'Ist Frau Bekele da?', 'Einen Moment, bitte.', 'Sie ist leider nicht da.', 'Auf Wiederhören!'],
+}
+
+
+def apply_teaching_order(course):
+    sections = {s['key']: s for u in course['units'] for s in u['sections']}
+    for key, order in TEACHING_ORDER.items():
+        words = {w['german']: w for w in sections[key]['words']}
+        assert sorted(order) == sorted(words), f'{key}: the teaching order must list exactly its words: {set(order) ^ set(words)}'
+        sections[key]['words'] = [words[german] for german in order]
+
+
+apply_teaching_order(COURSE)
+
+
 def check(course):
     keys = set()
     for unit in course['units']:
@@ -2647,6 +2772,17 @@ def check(course):
                         assert len(set(it['options'])) == len(it['options']), (g['key'], it)
             for ch in g['chapters']:
                 assert any(s['key'] == ch for s in unit['sections']), (g['key'], ch)
+            if 'tree' in g:
+                # Every word on a tree is a vocabulary entry, so it has a recording and an Amharic meaning.
+                vocab = {wd['german'] for s in unit['sections'] for wd in s['words']}
+                tree = g['tree']
+                keys = {p['key'] for p in tree['people']}
+                for p in tree['people']:
+                    assert p.get('me') or (p['word'] in vocab and p['pic']), (g['key'], p['key'])
+                for word in tree['distractors']:
+                    assert word in vocab, (g['key'], word)
+                for pair in tree['couples'] + [f['parents'] + f['children'] for f in tree['families']]:
+                    assert set(pair) <= keys, (g['key'], pair)
 
 
 def picture_files(emoji):
@@ -2687,6 +2823,118 @@ def add_pictures(course):
                     word['pic'] = picture_files(PICTURES[word['german']])
 
 
+EXAMPLES_DIR = Path(__file__).resolve().parent / 'examples'
+MIN_EXAMPLES = 2
+
+
+def read_examples():
+    """Example sentences for every vocabulary entry, from tools/examples/u*.txt: a `## German entry` line, then one
+    `German ||| English ||| Amharic` line per sentence. Plain text, so a translator can review any line."""
+    examples = {}
+    for path in sorted(EXAMPLES_DIR.glob('u*.txt')):
+        head = None
+        for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
+            if not line.strip() or (line.startswith('#') and not line.startswith('## ')):
+                continue
+            if line.startswith('## '):
+                head = line[3:].strip()
+                assert head not in examples, f'{path.name}:{number}: {head!r} has examples twice'
+                examples[head] = []
+                continue
+            parts = [p.strip() for p in line.split('|||')]
+            assert head and len(parts) == 3 and all(parts), f'{path.name}:{number}: expected "German ||| English ||| Amharic"'
+            examples[head].append(tuple(parts))
+    return examples
+
+
+def add_examples(course):
+    """Each word gets its example sentences ([German, English]); the Amharic goes to course-am.js."""
+    examples = read_examples()
+    entries = {w['german'] for u in course['units'] for s in u['sections'] for w in s['words']}
+    unknown = sorted(set(examples) - entries)
+    assert not unknown, f'tools/examples names entries that are not in the course: {unknown}'
+    for unit in course['units']:
+        for section in unit['sections']:
+            for word in section['words']:
+                if word['german'] in examples:
+                    word['examples'] = [[de, en] for de, en, _ in examples[word['german']]]
+    missing = sorted(e for e in entries if len(examples.get(e, [])) < MIN_EXAMPLES)
+    assert not missing, f'add at least {MIN_EXAMPLES} example sentences to tools/examples for: {missing}'
+    return examples
+
+
+# Word types for the search filters, worked out from the course itself: German nouns are capitalised (der Tisch,
+# Äthiopien), English meanings of verbs start with "to". Small words (pronouns, articles, particles) are listed.
+NUMBER_CHAPTERS = {'0.6', '2.10', '3.11', '4.14', '7.8'}
+SMALL_WORDS = {'ich', 'du', 'er', 'sie', 'es', 'wir', 'ihr', 'Sie', 'mein', 'meine', 'der', 'die', 'das', 'ein', 'eine',
+               'kein', 'keine', 'und', 'auch', 'doch', 'ja', 'nein', 'nicht', 'bitte', 'um', 'vor', 'nach', 'neben',
+               'zu', 'soso'}
+MODAL_VERBS = {'können', 'müssen', 'dürfen', 'sollen', 'möchten'}
+POS_TYPES = ('noun', 'verb', 'adjective', 'phrase', 'number', 'small')
+
+
+def word_type(word, section):
+    german, english = word['german'], word['english']
+    if section in NUMBER_CHAPTERS:
+        return 'number'
+    if german in SMALL_WORDS:
+        return 'small'
+    if german in MODAL_VERBS or english.startswith('to '):
+        return 'verb'
+    if re.match(r'^(der|die|das) [A-ZÄÖÜ]', german) and not re.search(r'[?!.…]$', german):
+        return 'noun'
+    if re.search(r'[\s?!.…]', german):
+        return 'phrase'
+    return 'noun' if german[0].isupper() else 'adjective'
+
+
+def add_word_types(course):
+    """Each word's type (POS_TYPES) and each unit's CEFR level, for filtering the search."""
+    for unit in course['units']:
+        unit['level'] = 'A1'
+        for section in unit['sections']:
+            for word in section['words']:
+                word['pos'] = word_type(word, section['key'])
+
+
+TOPICS_FILE = Path(__file__).resolve().parent / 'search_topics.txt'
+TOPIC_FIELDS = {'kind', 'en', 'am', 'chapters', 'lessons', 'words'}
+
+
+def add_topics(course):
+    """The search topics (tools/search_topics.txt): ways learners ask for a grammar point or an everyday
+    situation, in English and Amharic, linked to chapters, lessons and words. Every link must exist."""
+    topics, topic = [], None
+    for number, line in enumerate(TOPICS_FILE.read_text(encoding='utf-8').splitlines(), 1):
+        if line.startswith('## '):
+            topic = {'title': line[3:].strip(), 'kind': '', 'en': [], 'am': [], 'chapters': [], 'lessons': [], 'words': []}
+            topics.append(topic)
+            continue
+        if not line.strip() or line.startswith('#'):
+            continue
+        name, sep, value = line.partition(':')
+        assert topic and sep and name in TOPIC_FIELDS, f'search_topics.txt:{number}: expected "field: value" under a ## title'
+        if name == 'kind':
+            topic['kind'] = value.strip()
+        else:
+            parts = value.split(' | ') if name == 'words' else value.split(',')
+            topic[name] = [part.strip() for part in parts if part.strip()]
+    chapters = {s['key'] for u in course['units'] for s in u['sections']}
+    lessons = {g['key'] for u in course['units'] for g in u['grammar']}
+    words = {w['german'] for u in course['units'] for s in u['sections'] for w in s['words']}
+    titles = [t['title'] for t in topics]
+    assert len(titles) == len(set(titles)), 'search_topics.txt: two topics with the same title'
+    for t in topics:
+        where = f'search topic {t["title"]!r}'
+        assert t['kind'] in ('grammar', 'topic'), f'{where}: kind is grammar or topic'
+        assert t['en'] and t['am'], f'{where}: needs English and Amharic ways of asking'
+        assert t['chapters'] or t['lessons'], f'{where}: links no chapter or lesson'
+        for key, known, label in (('chapters', chapters, 'chapter'), ('lessons', lessons, 'lesson'), ('words', words, 'word')):
+            unknown = [x for x in t[key] if x not in known]
+            assert not unknown, f'{where}: no such {label}: {unknown}'
+    course['topics'] = topics
+
+
 AM_DIR = Path(__file__).resolve().parent / 'course_am'
 
 
@@ -2703,7 +2951,7 @@ def read_am(path):
     return pairs
 
 
-def build_amharic(course):
+def build_amharic(course, examples=None):
     """The Amharic course content for the Amharic interface: word meanings by German word, and the
     English lesson texts by their English. German stays German: it is what the course teaches."""
     from course_am_strings import course_strings
@@ -2722,13 +2970,21 @@ def build_amharic(course):
     missing_text = [t for t in needed if t not in text]
     if missing_words or missing_text:
         print(f'Amharic: {len(missing_words)} word meanings and {len(missing_text)} lesson texts still in English')
-    return {'words': {g: words[g] for g in sorted(german & set(words))}, 'text': text}
+    sentences = {}
+    for entry in (examples or {}).values():
+        for de, _, am in entry:
+            assert sentences.get(de, am) == am, f'two Amharic translations of the example {de!r}'
+            sentences[de] = am
+    return {'words': {g: words[g] for g in sorted(german & set(words))}, 'text': text, 'examples': sentences}
 
 
 if __name__ == '__main__':
     check(COURSE)
     add_pictures(COURSE)
-    am = build_amharic(COURSE)
+    examples = add_examples(COURSE)
+    add_topics(COURSE)
+    add_word_types(COURSE)
+    am = build_amharic(COURSE, examples)
     (Path(__file__).resolve().parent.parent / 'static' / 'course' / 'js' / 'course-am.js').write_text(
         '/* Amharic meanings and lesson texts for the Amharic interface. Generated from tools/course_am/. */\n'
         'window.COURSE_AM = ' + json.dumps(am, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')

@@ -93,8 +93,8 @@ class _CourseMapState extends State<CourseMap> {
                     child: Semantics(
                       button: true,
                       label: '${course.unitName(units[i])}: ${course.t(units[i].title)}. '
-                          '${progress[i].done} of ${progress[i].total} words learned'
-                          '${progress[i].testPassed ? '. Unit test passed' : ''}${i == here ? '. You are here' : ''}',
+                          '${T('{done} of {total} words learned', {'done': progress[i].done, 'total': progress[i].total})}'
+                          '${progress[i].testPassed ? '. ${T('Unit test passed')}' : ''}${i == here ? '. ${T('You are here')}' : ''}',
                       excludeSemantics: true,
                       child: Material(
                         type: MaterialType.transparency,

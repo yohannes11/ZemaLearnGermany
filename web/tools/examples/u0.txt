@@ -1,0 +1,371 @@
+# Start unit: example sentences for every word. German ||| English ||| Amharic
+# Three for a single word, two for a phrase; A1 German that uses the course's own words.
+
+# 0.0 Welcome: your first German
+## der Kaffee
+Der Kaffee ist heiß. ||| The coffee is hot. ||| ቡናው ትኩስ ነው።
+Ich trinke Kaffee. ||| I drink coffee. ||| ቡና እጠጣለሁ።
+Der Kaffee aus Äthiopien ist gut. ||| The coffee from Ethiopia is good. ||| የኢትዮጵያ ቡና ጥሩ ነው።
+## das Taxi
+Das Taxi ist hier. ||| The taxi is here. ||| ታክሲው እዚህ ነው።
+Ich nehme ein Taxi. ||| I take a taxi. ||| ታክሲ እይዛለሁ።
+Wo ist das Taxi? ||| Where is the taxi? ||| ታክሲው የት ነው?
+## Hallo!
+Hallo, ich bin Liya. ||| Hello, I am Liya. ||| ሰላም፣ እኔ ሊያ ነኝ።
+Hallo, Dawit! Wie geht's? ||| Hello, Dawit! How are you? ||| ሰላም ዳዊት! እንዴት ነህ?
+## Guten Morgen!
+Guten Morgen, Frau Bekele! ||| Good morning, Mrs Bekele! ||| እንደምን አደሩ ወይዘሮ በቀለ!
+Guten Morgen! Der Kaffee ist fertig. ||| Good morning! The coffee is ready. ||| እንደምን አደራችሁ! ቡናው ደርሷል።
+## Danke schön!
+Danke schön! Das ist sehr nett. ||| Thank you very much! That is very kind. ||| በጣም አመሰግናለሁ! በጣም ደግ ነዎት።
+Danke schön für den Kaffee! ||| Thank you very much for the coffee! ||| ስለ ቡናው በጣም አመሰግናለሁ!
+## Entschuldigung
+Entschuldigung, wo ist die Schule? ||| Excuse me, where is the school? ||| ይቅርታ፣ ትምህርት ቤቱ የት ነው?
+Entschuldigung, ich bin spät. ||| Sorry, I am late. ||| ይቅርታ፣ አርፍጃለሁ።
+Entschuldigung, wie heißen Sie? ||| Excuse me, what is your name? ||| ይቅርታ፣ ስምዎ ማን ነው?
+## Ich heiße…
+Ich heiße Selam. ||| My name is Selam. ||| ስሜ ሰላም ነው።
+Hallo, ich heiße Dawit. Und du? ||| Hello, my name is Dawit. And you? ||| ሰላም፣ ስሜ ዳዊት ነው። አንቺስ?
+## Ich komme aus Äthiopien.
+Ich komme aus Äthiopien. Ich wohne in Addis Abeba. ||| I come from Ethiopia. I live in Addis Ababa. ||| የመጣሁት ከኢትዮጵያ ነው። የምኖረው አዲስ አበባ ነው።
+Woher kommst du? – Ich komme aus Äthiopien. ||| Where are you from? – I come from Ethiopia. ||| ከየት ነህ? – የመጣሁት ከኢትዮጵያ ነው።
+## Ich lerne Deutsch.
+Ich lerne Deutsch. Das ist schön. ||| I am learning German. That is nice. ||| ጀርመንኛ እየተማርኩ ነው። ደስ ይላል።
+Ich lerne Deutsch, und Dawit lernt auch Deutsch. ||| I am learning German, and Dawit is learning German too. ||| እኔ ጀርመንኛ እየተማርኩ ነው፤ ዳዊትም ጀርመንኛ እየተማረ ነው።
+## Wie bitte?
+Wie bitte? Noch einmal, bitte. ||| Pardon? Once more, please. ||| ይቅርታ፣ ምን አሉ? እባክዎ እንደገና።
+Wie bitte? Ich verstehe das nicht. ||| Pardon? I don't understand that. ||| ይቅርታ፣ ምን አሉ? ይህ አልገባኝም።
+## Noch einmal, bitte.
+Langsam und noch einmal, bitte. ||| Slowly and once more, please. ||| እባክዎ በቀስታ እንደገና ይድገሙት።
+Das ist schwer. Noch einmal, bitte. ||| That is difficult. Once more, please. ||| ይህ ከባድ ነው። እባክዎ እንደገና።
+## Ich verstehe das nicht.
+Entschuldigung, ich verstehe das nicht. ||| Sorry, I don't understand that. ||| ይቅርታ፣ ይህ አልገባኝም።
+Ich verstehe das nicht. Was heißt das? ||| I don't understand that. What does that mean? ||| ይህ አልገባኝም። ትርጉሙ ምንድን ነው?
+
+# 0.1 Long & short vowels
+## der Name
+Mein Name ist Liya. ||| My name is Liya. ||| ስሜ ሊያ ነው።
+Der Name ist schön. ||| The name is beautiful. ||| ስሙ ቆንጆ ነው።
+Wie ist dein Name? ||| What is your name? ||| ስምህ ማን ነው?
+## der Mann
+Der Mann heißt Dawit. ||| The man is called Dawit. ||| ሰውየው ዳዊት ይባላል።
+Der Mann kommt aus Kenia. ||| The man comes from Kenya. ||| ሰውየው ከኬንያ ነው።
+Wer ist der Mann? ||| Who is the man? ||| ሰውየው ማን ነው?
+## der Tee
+Der Tee ist heiß. ||| The tea is hot. ||| ሻዩ ትኩስ ነው።
+Ich trinke Tee mit Milch. ||| I drink tea with milk. ||| ሻይ በወተት እጠጣለሁ።
+Möchtest du Tee oder Kaffee? ||| Would you like tea or coffee? ||| ሻይ ወይስ ቡና ትፈልጋለህ?
+## das Bett
+Das Bett ist neu. ||| The bed is new. ||| አልጋው አዲስ ነው።
+Ich gehe ins Bett. ||| I am going to bed. ||| ወደ አልጋ እሄዳለሁ።
+Das Bett ist sehr groß. ||| The bed is very big. ||| አልጋው በጣም ትልቅ ነው።
+## wir
+Wir lernen Deutsch. ||| We are learning German. ||| እኛ ጀርመንኛ እየተማርን ነው።
+Wir kommen aus Äthiopien. ||| We come from Ethiopia. ||| እኛ ከኢትዮጵያ ነን።
+Wir trinken Kaffee. ||| We drink coffee. ||| እኛ ቡና እንጠጣለን።
+## bitte
+Ein Wasser, bitte. ||| A water, please. ||| እባክዎ አንድ ውሃ።
+Noch einmal, bitte. ||| Once more, please. ||| እባክዎ እንደገና።
+Komm bitte! ||| Come, please! ||| እባክህ ና!
+## rot
+Der Apfel ist rot. ||| The apple is red. ||| ፖሙ ቀይ ነው።
+Mein Auto ist rot. ||| My car is red. ||| መኪናዬ ቀይ ነው።
+Die Tür ist rot. ||| The door is red. ||| በሩ ቀይ ነው።
+## oft
+Ich trinke oft Kaffee. ||| I often drink coffee. ||| ብዙ ጊዜ ቡና እጠጣለሁ።
+Wir kochen oft zusammen. ||| We often cook together. ||| ብዙ ጊዜ አብረን እናበስላለን።
+Dawit ist oft müde. ||| Dawit is often tired. ||| ዳዊት ብዙ ጊዜ ይደክመዋል።
+## gut
+Der Kaffee ist gut. ||| The coffee is good. ||| ቡናው ጥሩ ነው።
+Mir geht es gut. ||| I am doing well. ||| ደህና ነኝ።
+Liya spricht gut Deutsch. ||| Liya speaks German well. ||| ሊያ ጀርመንኛ በደንብ ትናገራለች።
+## die Mutter
+Meine Mutter heißt Almaz. ||| My mother is called Almaz. ||| እናቴ አልማዝ ትባላለች።
+Die Mutter kocht. ||| The mother is cooking. ||| እናትየዋ እያበሰለች ነው።
+Meine Mutter wohnt in Addis Abeba. ||| My mother lives in Addis Ababa. ||| እናቴ አዲስ አበባ ትኖራለች።
+## das Jahr
+Das Jahr ist neu. ||| The year is new. ||| ዓመቱ አዲስ ነው።
+Ich lerne ein Jahr Deutsch. ||| I am learning German for a year. ||| ለአንድ ዓመት ጀርመንኛ እማራለሁ።
+Ein Jahr hat zwölf Monate. ||| A year has twelve months. ||| አንድ ዓመት አሥራ ሁለት ወራት አሉት።
+## kommen
+Ich komme aus Äthiopien. ||| I come from Ethiopia. ||| የመጣሁት ከኢትዮጵያ ነው።
+Kommst du heute? ||| Are you coming today? ||| ዛሬ ትመጣለህ?
+Woher kommen Sie? ||| Where are you from? ||| ከየት ነዎት?
+
+# 0.2 The umlauts ä, ö, ü
+## der Käse
+Der Käse ist gut. ||| The cheese is good. ||| አይቡ ጥሩ ነው።
+Ich esse Brot mit Käse. ||| I eat bread with cheese. ||| ዳቦ በአይብ እበላለሁ።
+Der Käse kommt aus der Schweiz. ||| The cheese comes from Switzerland. ||| አይቡ ከስዊዘርላንድ ነው።
+## das Mädchen
+Das Mädchen heißt Selam. ||| The girl is called Selam. ||| ልጅቷ ሰላም ትባላለች።
+Das Mädchen ist sieben Jahre alt. ||| The girl is seven years old. ||| ልጅቷ የሰባት ዓመት ልጅ ናት።
+Das Mädchen spielt. ||| The girl is playing. ||| ልጅቷ እየተጫወተች ነው።
+## spät
+Es ist spät. ||| It is late. ||| መሽቷል።
+Entschuldigung, ich bin spät. ||| Sorry, I am late. ||| ይቅርታ፣ አርፍጃለሁ።
+Der Zug kommt spät. ||| The train is coming late. ||| ባቡሩ ዘግይቶ ይመጣል።
+## schön
+Das Haus ist schön. ||| The house is beautiful. ||| ቤቱ ቆንጆ ነው።
+Heute ist ein schöner Tag. ||| Today is a beautiful day. ||| ዛሬ ውብ ቀን ነው።
+Addis Abeba ist schön. ||| Addis Ababa is beautiful. ||| አዲስ አበባ ውብ ናት።
+## hören
+Ich höre Musik. ||| I listen to music. ||| ሙዚቃ እሰማለሁ።
+Hörst du das? ||| Do you hear that? ||| ይህን ትሰማለህ?
+Wir hören gut zu. ||| We listen carefully. ||| በደንብ እናዳምጣለን።
+## der Löffel
+Der Löffel ist hier. ||| The spoon is here. ||| ማንኪያው እዚህ ነው።
+Ich brauche einen Löffel. ||| I need a spoon. ||| ማንኪያ ያስፈልገኛል።
+Der Löffel ist neu. ||| The spoon is new. ||| ማንኪያው አዲስ ነው።
+## die Tür
+Die Tür ist offen. ||| The door is open. ||| በሩ ክፍት ነው።
+Mach bitte die Tür zu. ||| Please close the door. ||| እባክህ በሩን ዝጋ።
+Die Tür ist rot. ||| The door is red. ||| በሩ ቀይ ነው።
+## müde
+Ich bin müde. ||| I am tired. ||| ደክሞኛል።
+Bist du müde? ||| Are you tired? ||| ደክሞሃል?
+Am Abend ist Dawit müde. ||| In the evening Dawit is tired. ||| ምሽት ላይ ዳዊት ይደክመዋል።
+## die Übung
+Die Übung ist leicht. ||| The exercise is easy. ||| መልመጃው ቀላል ነው።
+Wir machen eine Übung. ||| We are doing an exercise. ||| መልመጃ እየሠራን ነው።
+Die Übung ist schwer. ||| The exercise is difficult. ||| መልመጃው ከባድ ነው።
+## Tschüss!
+Tschüss, bis morgen! ||| Bye, see you tomorrow! ||| ቻው፣ ነገ እንገናኝ!
+Tschüss, Liya! ||| Bye, Liya! ||| ቻው ሊያ!
+
+# 0.3 Vowel pairs: ei, ie, eu, au
+## mein
+Das ist mein Buch. ||| That is my book. ||| ያ የእኔ መጽሐፍ ነው።
+Mein Name ist Dawit. ||| My name is Dawit. ||| ስሜ ዳዊት ነው።
+Mein Vater kocht gut. ||| My father cooks well. ||| አባቴ በደንብ ያበስላል።
+## nein
+Nein, danke. ||| No, thank you. ||| አይ፣ አመሰግናለሁ።
+Nein, ich bin nicht müde. ||| No, I am not tired. ||| አይ፣ አልደከመኝም።
+Bist du Lehrer? – Nein. ||| Are you a teacher? – No. ||| አስተማሪ ነህ? – አይ።
+## die Zeit
+Ich habe keine Zeit. ||| I have no time. ||| ጊዜ የለኝም።
+Hast du heute Zeit? ||| Do you have time today? ||| ዛሬ ጊዜ አለህ?
+Die Zeit ist schön. ||| The time is nice. ||| ጊዜው ደስ ይላል።
+## Wie?
+Wie heißt du? ||| What is your name? ||| ስምህ ማን ነው?
+Wie bitte? ||| Pardon? ||| ይቅርታ፣ ምን አሉ?
+## die Liebe
+Die Liebe ist schön. ||| Love is beautiful. ||| ፍቅር ውብ ነው።
+Liebe Grüße, Liya. ||| Love, Liya. ||| ከፍቅር ሰላምታ ጋር፣ ሊያ።
+Das ist Liebe. ||| That is love. ||| ይህ ፍቅር ነው።
+## viel
+Ich trinke viel Wasser. ||| I drink a lot of water. ||| ብዙ ውሃ እጠጣለሁ።
+Danke, das ist viel. ||| Thank you, that is a lot. ||| አመሰግናለሁ፣ ይህ ብዙ ነው።
+Wir lernen viel Deutsch. ||| We learn a lot of German. ||| ብዙ ጀርመንኛ እንማራለን።
+## heute
+Heute ist Montag. ||| Today is Monday. ||| ዛሬ ሰኞ ነው።
+Ich habe heute Zeit. ||| I have time today. ||| ዛሬ ጊዜ አለኝ።
+Heute ist es schön. ||| It is nice today. ||| ዛሬ ደስ የሚል ቀን ነው።
+## neu
+Das Auto ist neu. ||| The car is new. ||| መኪናው አዲስ ነው።
+Ich bin neu hier. ||| I am new here. ||| እዚህ አዲስ ነኝ።
+Das Buch ist neu. ||| The book is new. ||| መጽሐፉ አዲስ ነው።
+## die Häuser
+Die Häuser sind groß. ||| The houses are big. ||| ቤቶቹ ትልልቅ ናቸው።
+Die Häuser sind neu. ||| The houses are new. ||| ቤቶቹ አዲስ ናቸው።
+Hier sind viele Häuser. ||| There are many houses here. ||| እዚህ ብዙ ቤቶች አሉ።
+## das Haus
+Das Haus ist schön. ||| The house is beautiful. ||| ቤቱ ቆንጆ ነው።
+Mein Haus ist klein. ||| My house is small. ||| ቤቴ ትንሽ ነው።
+Wo ist das Haus? ||| Where is the house? ||| ቤቱ የት ነው?
+## die Frau
+Die Frau heißt Liya. ||| The woman is called Liya. ||| ሴትዮዋ ሊያ ትባላለች።
+Die Frau kommt aus Äthiopien. ||| The woman comes from Ethiopia. ||| ሴትዮዋ ከኢትዮጵያ ናት።
+Wer ist die Frau? ||| Who is the woman? ||| ሴትዮዋ ማን ናት?
+## auch
+Ich lerne auch Deutsch. ||| I am learning German too. ||| እኔም ጀርመንኛ እየተማርኩ ነው።
+Mir geht es auch gut. ||| I am also doing well. ||| እኔም ደህና ነኝ።
+Wir kommen auch. ||| We are coming too. ||| እኛም እንመጣለን።
+
+# 0.4 w, v, z, j, s, ß
+## das Wasser
+Das Wasser ist kalt. ||| The water is cold. ||| ውሃው ቀዝቃዛ ነው።
+Ein Wasser, bitte. ||| A water, please. ||| እባክዎ አንድ ውሃ።
+Ich trinke viel Wasser. ||| I drink a lot of water. ||| ብዙ ውሃ እጠጣለሁ።
+## der Wein
+Der Wein ist rot. ||| The wine is red. ||| ወይን ጠጁ ቀይ ነው።
+Ein Glas Wein, bitte. ||| A glass of wine, please. ||| እባክዎ አንድ ብርጭቆ ወይን ጠጅ።
+Ich trinke keinen Wein. ||| I don't drink wine. ||| ወይን ጠጅ አልጠጣም።
+## der Vater
+Mein Vater heißt Abebe. ||| My father is called Abebe. ||| አባቴ አበበ ይባላል።
+Der Vater kocht heute. ||| The father is cooking today. ||| አባትየው ዛሬ ያበስላል።
+Mein Vater wohnt in Bahir Dar. ||| My father lives in Bahir Dar. ||| አባቴ ባሕር ዳር ይኖራል።
+## die Zahl
+Die Zahl ist sieben. ||| The number is seven. ||| ቁጥሩ ሰባት ነው።
+Wie ist die Zahl? ||| What is the number? ||| ቁጥሩ ስንት ነው?
+Schreib die Zahl, bitte. ||| Write the number, please. ||| እባክህ ቁጥሩን ጻፍ።
+## der Zug
+Der Zug kommt um acht Uhr. ||| The train comes at eight o'clock. ||| ባቡሩ ሁለት ሰዓት ይመጣል።
+Ich fahre mit dem Zug. ||| I go by train. ||| በባቡር እሄዳለሁ።
+Der Zug ist spät. ||| The train is late. ||| ባቡሩ ዘግይቷል።
+## ja
+Ja, bitte. ||| Yes, please. ||| አዎ፣ እባክዎ።
+Ja, ich komme. ||| Yes, I am coming. ||| አዎ፣ እመጣለሁ።
+Bist du müde? – Ja. ||| Are you tired? – Yes. ||| ደክሞሃል? – አዎ።
+## jetzt
+Ich habe jetzt Zeit. ||| I have time now. ||| አሁን ጊዜ አለኝ።
+Wir gehen jetzt. ||| We are going now. ||| አሁን እንሄዳለን።
+Jetzt ist es spät. ||| Now it is late. ||| አሁን መሽቷል።
+## die Sonne
+Die Sonne ist heiß. ||| The sun is hot. ||| ፀሐዩ ኃይለኛ ነው።
+Heute scheint die Sonne. ||| The sun is shining today. ||| ዛሬ ፀሐይ ወጥቷል።
+Die Sonne ist schön. ||| The sun is beautiful. ||| ፀሐዩ ደስ ይላል።
+## die Straße
+Die Straße ist lang. ||| The street is long. ||| መንገዱ ረጅም ነው።
+Ich wohne in der Bolestraße. ||| I live on Bole Street. ||| የምኖረው ቦሌ መንገድ ላይ ነው።
+Die Straße ist neu. ||| The street is new. ||| መንገዱ አዲስ ነው።
+## der Tag
+Der Tag ist schön. ||| The day is beautiful. ||| ቀኑ ውብ ነው።
+Guten Tag, Herr Tesfaye! ||| Good day, Mr Tesfaye! ||| ጤና ይስጥልኝ አቶ ተስፋዬ!
+Ein Tag hat 24 Stunden. ||| A day has 24 hours. ||| አንድ ቀን 24 ሰዓት አለው።
+## und
+Ich trinke Kaffee und Tee. ||| I drink coffee and tea. ||| ቡናና ሻይ እጠጣለሁ።
+Liya und Dawit lernen Deutsch. ||| Liya and Dawit are learning German. ||| ሊያና ዳዊት ጀርመንኛ እየተማሩ ነው።
+Brot und Käse, bitte. ||| Bread and cheese, please. ||| እባክዎ ዳቦና አይብ።
+## gelb
+Die Sonne ist gelb. ||| The sun is yellow. ||| ፀሐይ ቢጫ ናት።
+Das Taxi ist gelb. ||| The taxi is yellow. ||| ታክሲው ቢጫ ነው።
+Die Banane ist gelb. ||| The banana is yellow. ||| ሙዙ ቢጫ ነው።
+
+# 0.5 sch, sp, st & ch
+## die Schule
+Die Schule ist groß. ||| The school is big. ||| ትምህርት ቤቱ ትልቅ ነው።
+Ich gehe in die Schule. ||| I go to school. ||| ወደ ትምህርት ቤት እሄዳለሁ።
+Wo ist die Schule? ||| Where is the school? ||| ትምህርት ቤቱ የት ነው?
+## schnell
+Der Zug ist schnell. ||| The train is fast. ||| ባቡሩ ፈጣን ነው።
+Du sprichst sehr schnell. ||| You speak very fast. ||| በጣም በፍጥነት ትናገራለህ።
+Komm schnell! ||| Come quickly! ||| ቶሎ ና!
+## sprechen
+Ich spreche Amharisch. ||| I speak Amharic. ||| አማርኛ እናገራለሁ።
+Sprichst du Deutsch? ||| Do you speak German? ||| ጀርመንኛ ትናገራለህ?
+Wir sprechen langsam. ||| We speak slowly. ||| በቀስታ እንናገራለን።
+## spielen
+Die Kinder spielen. ||| The children are playing. ||| ልጆቹ እየተጫወቱ ነው።
+Ich spiele Fußball. ||| I play football. ||| እግር ኳስ እጫወታለሁ።
+Spielst du gern? ||| Do you like playing? ||| መጫወት ትወዳለህ?
+## die Stadt
+Die Stadt ist groß. ||| The city is big. ||| ከተማው ትልቅ ነው።
+Addis Abeba ist eine Stadt. ||| Addis Ababa is a city. ||| አዲስ አበባ ከተማ ናት።
+Ich wohne in der Stadt. ||| I live in the city. ||| የምኖረው ከተማ ውስጥ ነው።
+## ich
+Ich heiße Liya. ||| My name is Liya. ||| ስሜ ሊያ ነው።
+Ich bin müde. ||| I am tired. ||| ደክሞኛል።
+Ich lerne Deutsch. ||| I am learning German. ||| ጀርመንኛ እየተማርኩ ነው።
+## nicht
+Ich bin nicht müde. ||| I am not tired. ||| አልደከመኝም።
+Das ist nicht gut. ||| That is not good. ||| ያ ጥሩ አይደለም።
+Ich verstehe das nicht. ||| I don't understand that. ||| ይህ አልገባኝም።
+## die Milch
+Die Milch ist kalt. ||| The milk is cold. ||| ወተቱ ቀዝቃዛ ነው።
+Ich trinke Kaffee mit Milch. ||| I drink coffee with milk. ||| ቡና በወተት እጠጣለሁ።
+Wir brauchen Milch. ||| We need milk. ||| ወተት ያስፈልገናል።
+## die Nacht
+Die Nacht ist kalt. ||| The night is cold. ||| ሌሊቱ ቀዝቃዛ ነው።
+Gute Nacht! ||| Good night! ||| ደህና እደር!
+In der Nacht schlafe ich. ||| At night I sleep. ||| ሌሊት እተኛለሁ።
+## das Buch
+Das Buch ist neu. ||| The book is new. ||| መጽሐፉ አዲስ ነው።
+Ich lese ein Buch. ||| I am reading a book. ||| መጽሐፍ እያነበብኩ ነው።
+Das Buch ist gut. ||| The book is good. ||| መጽሐፉ ጥሩ ነው።
+## kochen
+Ich koche heute. ||| I am cooking today. ||| ዛሬ እኔ አበስላለሁ።
+Meine Mutter kocht gut. ||| My mother cooks well. ||| እናቴ በደንብ ታበስላለች።
+Wir kochen Kaffee. ||| We make coffee. ||| ቡና እናፈላለን።
+## der Apfel
+Der Apfel ist rot. ||| The apple is red. ||| ፖሙ ቀይ ነው።
+Ich esse einen Apfel. ||| I am eating an apple. ||| ፖም እየበላሁ ነው።
+Der Apfel ist gut. ||| The apple is good. ||| ፖሙ ጥሩ ነው።
+## das Brot
+Das Brot ist frisch. ||| The bread is fresh. ||| ዳቦው ትኩስ ነው።
+Ich esse Brot mit Käse. ||| I eat bread with cheese. ||| ዳቦ በአይብ እበላለሁ።
+Wir kaufen Brot. ||| We are buying bread. ||| ዳቦ እንገዛለን።
+
+# 0.6 Numbers 1–12
+## eins
+Eins, zwei, drei! ||| One, two, three! ||| አንድ፣ ሁለት፣ ሦስት!
+Ich nehme den Bus Nummer eins. ||| I take bus number one. ||| ቁጥር አንድ አውቶቡስ እይዛለሁ።
+Die Zahl ist eins. ||| The number is one. ||| ቁጥሩ አንድ ነው።
+## zwei
+Ich habe zwei Kinder. ||| I have two children. ||| ሁለት ልጆች አሉኝ።
+Zwei Kaffee, bitte. ||| Two coffees, please. ||| እባክዎ ሁለት ቡና።
+Wir sind zwei. ||| There are two of us. ||| እኛ ሁለት ነን።
+## drei
+Ich habe drei Bücher. ||| I have three books. ||| ሦስት መጻሕፍት አሉኝ።
+Drei Tee, bitte. ||| Three teas, please. ||| እባክዎ ሦስት ሻይ።
+Das Kind ist drei Jahre alt. ||| The child is three years old. ||| ልጁ የሦስት ዓመት ልጅ ነው።
+## vier
+Wir sind vier. ||| There are four of us. ||| እኛ አራት ነን።
+Das Haus hat vier Zimmer. ||| The house has four rooms. ||| ቤቱ አራት ክፍሎች አሉት።
+Ich habe vier Äpfel. ||| I have four apples. ||| አራት ፖሞች አሉኝ።
+## fünf
+Ich habe fünf Euro. ||| I have five euros. ||| አምስት ዩሮ አለኝ።
+Das Mädchen ist fünf. ||| The girl is five. ||| ልጅቷ አምስት ዓመቷ ነው።
+Fünf Minuten, bitte. ||| Five minutes, please. ||| እባክዎ አምስት ደቂቃ።
+## sechs
+Der Zug kommt um sechs. ||| The train comes at six. ||| ባቡሩ በአሥራ ሁለት ሰዓት ይመጣል።
+Ich habe sechs Bücher. ||| I have six books. ||| ስድስት መጻሕፍት አሉኝ።
+Sechs Brote, bitte. ||| Six bread rolls, please. ||| እባክዎ ስድስት ዳቦ።
+## sieben
+Die Woche hat sieben Tage. ||| The week has seven days. ||| ሳምንት ሰባት ቀናት አሉት።
+Das Kind ist sieben. ||| The child is seven. ||| ልጁ ሰባት ዓመቱ ነው።
+Ich habe sieben Euro. ||| I have seven euros. ||| ሰባት ዩሮ አለኝ።
+## acht
+Es ist acht Uhr. ||| It is eight o'clock. ||| ሁለት ሰዓት ነው።
+Wir sind acht. ||| There are eight of us. ||| እኛ ስምንት ነን።
+Ich arbeite acht Stunden. ||| I work eight hours. ||| ስምንት ሰዓት እሠራለሁ።
+## neun
+Die Schule beginnt um neun. ||| School starts at nine. ||| ትምህርት ቤቱ በሦስት ሰዓት ይጀምራል።
+Ich habe neun Äpfel. ||| I have nine apples. ||| ዘጠኝ ፖሞች አሉኝ።
+Das Kind ist neun. ||| The child is nine. ||| ልጁ ዘጠኝ ዓመቱ ነው።
+## zehn
+Ich habe zehn Euro. ||| I have ten euros. ||| አሥር ዩሮ አለኝ።
+Zehn Minuten, bitte. ||| Ten minutes, please. ||| እባክዎ አሥር ደቂቃ።
+Die Klasse hat zehn Schüler. ||| The class has ten pupils. ||| ክፍሉ አሥር ተማሪዎች አሉት።
+## elf
+Es ist elf Uhr. ||| It is eleven o'clock. ||| አምስት ሰዓት ነው።
+Mein Sohn ist elf. ||| My son is eleven. ||| ልጄ አሥራ አንድ ዓመቱ ነው።
+Wir sind elf. ||| There are eleven of us. ||| እኛ አሥራ አንድ ነን።
+## zwölf
+Ein Jahr hat zwölf Monate. ||| A year has twelve months. ||| አንድ ዓመት አሥራ ሁለት ወራት አሉት።
+Es ist zwölf Uhr. ||| It is twelve o'clock. ||| ስድስት ሰዓት ነው።
+Ich habe zwölf Eier. ||| I have twelve eggs. ||| አሥራ ሁለት እንቁላሎች አሉኝ።
+
+# 0.7 The alphabet
+## das Alphabet
+Das Alphabet hat 26 Buchstaben. ||| The alphabet has 26 letters. ||| የፊደል ገበታው 26 ፊደላት አሉት።
+Wir lernen das Alphabet. ||| We are learning the alphabet. ||| የፊደል ገበታውን እየተማርን ነው።
+Das deutsche Alphabet ist leicht. ||| The German alphabet is easy. ||| የጀርመንኛ የፊደል ገበታ ቀላል ነው።
+## der Buchstabe
+Der Buchstabe A ist der erste. ||| The letter A is the first. ||| A የሚለው ፊደል የመጀመሪያው ነው።
+Wie heißt der Buchstabe? ||| What is the letter called? ||| ፊደሉ ማን ይባላል?
+Mein Name hat fünf Buchstaben. ||| My name has five letters. ||| ስሜ አምስት ፊደላት አሉት።
+## der Umlaut
+Ä ist ein Umlaut. ||| Ä is an umlaut. ||| Ä ኡምላውት ነው።
+Das Wort „schön“ hat einen Umlaut. ||| The word “schön” has an umlaut. ||| „schön“ የሚለው ቃል ኡምላውት አለው።
+Deutsch hat drei Umlaute: ä, ö, ü. ||| German has three umlauts: ä, ö, ü. ||| ጀርመንኛ ሦስት ኡምላውቶች አሉት፦ ä፣ ö፣ ü።
+## das Eszett
+„Straße“ schreibt man mit Eszett. ||| “Straße” is written with ß. ||| „Straße“ በ ß ይጻፋል።
+Das Eszett klingt wie „ss“. ||| The ß sounds like “ss”. ||| ß እንደ „ss“ ይነበባል።
+„Heißen“ hat ein Eszett. ||| “Heißen” has a ß. ||| „heißen“ ß አለው።
+## buchstabieren
+Kannst du das buchstabieren? ||| Can you spell that? ||| ይህን ፊደል በፊደል ልትነግረኝ ትችላለህ?
+Ich buchstabiere meinen Namen: L-I-Y-A. ||| I spell my name: L-I-Y-A. ||| ስሜን ፊደል በፊደል እላለሁ፦ L-I-Y-A።
+Bitte buchstabieren Sie langsam. ||| Please spell slowly. ||| እባክዎ ፊደል በፊደል በቀስታ ይናገሩ።
+## Wie schreibt man das?
+Wie schreibt man das? – Mit „ei“. ||| How do you spell that? – With “ei”. ||| ይህ እንዴት ይጻፋል? – በ„ei“።
+Entschuldigung, wie schreibt man das? ||| Excuse me, how do you spell that? ||| ይቅርታ፣ ይህ እንዴት ይጻፋል?
+## Können Sie das bitte buchstabieren?
+Können Sie das bitte buchstabieren? – Ja, T-E-S-F-A-Y-E. ||| Can you spell that, please? – Yes, T-E-S-F-A-Y-E. ||| እባክዎ ፊደል በፊደል ሊነግሩኝ ይችላሉ? – አዎ፣ T-E-S-F-A-Y-E።
+Ihr Name ist neu für mich. Können Sie das bitte buchstabieren? ||| Your name is new to me. Can you spell it, please? ||| ስምዎ ለእኔ አዲስ ነው። እባክዎ ፊደል በፊደል ሊነግሩኝ ይችላሉ?
+## Wie ist Ihr Name, bitte?
+Wie ist Ihr Name, bitte? – Mein Name ist Bekele. ||| What is your name, please? – My name is Bekele. ||| ስምዎ ማን ነው፣ እባክዎ? – ስሜ በቀለ ነው።
+Guten Tag! Wie ist Ihr Name, bitte? ||| Good day! What is your name, please? ||| ጤና ይስጥልኝ! ስምዎ ማን ነው፣ እባክዎ?
+## mit zwei n
+„Anna“ schreibt man mit zwei n. ||| “Anna” is written with two n's. ||| „Anna“ በሁለት n ይጻፋል።
+Ist das mit zwei n? – Ja, mit zwei n. ||| Is that with two n's? – Yes, with two n's. ||| ይህ በሁለት n ነው? – አዎ፣ በሁለት n።

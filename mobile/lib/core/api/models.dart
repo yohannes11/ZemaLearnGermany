@@ -7,15 +7,26 @@ List<(String, String)> _pairs(Object? list) =>
     [...?(list as List?)?.map((p) => ('${(p as List)[0]}', '${p.length > 1 ? p[1] : ''}'))];
 
 class Word {
-  const Word({required this.german, required this.english, this.pic = const []});
+  const Word({required this.german, required this.english, this.pic = const [], this.examples = const [], this.pos = ''});
   final String german;
   final String english;
+
+  /// noun, verb, adjective, phrase, number or small (pronouns, articles, particles); for the search filters.
+  final String pos;
 
   /// Twemoji picture codes; compound words show their parts.
   final List<String> pic;
 
-  factory Word.fromJson(Map<String, dynamic> j) =>
-      Word(german: j['german'] as String, english: j['english'] as String? ?? '', pic: _strings(j['pic']));
+  /// Example sentences: (German, English). The Amharic is in [Amharic.examples].
+  final List<(String, String)> examples;
+
+  factory Word.fromJson(Map<String, dynamic> j) => Word(
+        german: j['german'] as String,
+        english: j['english'] as String? ?? '',
+        pic: _strings(j['pic']),
+        examples: _pairs(j['examples']),
+        pos: j['pos'] as String? ?? '',
+      );
 }
 
 class Section {
@@ -135,8 +146,11 @@ class Lesson {
 }
 
 class Unit {
-  const Unit({required this.id, this.label, required this.title, this.lessonsLabel, required this.sections, required this.grammar});
+  const Unit({required this.id, this.label, required this.title, this.lessonsLabel, required this.sections, required this.grammar, this.level = ''});
   final int id;
+
+  /// The CEFR level, such as A1.
+  final String level;
   final String? label;
   final String title;
 
@@ -150,6 +164,7 @@ class Unit {
         label: j['label'] as String?,
         title: j['title'] as String? ?? '',
         lessonsLabel: j['lessonsLabel'] as String?,
+        level: j['level'] as String? ?? '',
         sections: [for (final s in j['sections'] as List? ?? []) Section.fromJson((s as Map).cast())],
         grammar: [for (final g in j['grammar'] as List? ?? []) Lesson.fromJson((g as Map).cast())],
       );
@@ -161,24 +176,58 @@ class Unit {
   }
 }
 
+/// A search topic (web/tools/search_topics.txt): ways learners ask for a grammar point or an everyday situation,
+/// in English and Amharic, and the chapters, lessons and words that answer it.
+class Topic {
+  const Topic({required this.title, required this.kind, this.en = const [], this.am = const [], this.chapters = const [], this.lessons = const [], this.words = const []});
+  final String title;
+
+  /// "grammar" or "topic".
+  final String kind;
+  final List<String> en;
+  final List<String> am;
+  final List<String> chapters;
+  final List<String> lessons;
+
+  /// German entries, as in the course.
+  final List<String> words;
+
+  factory Topic.fromJson(Map<String, dynamic> j) => Topic(
+        title: j['title'] as String? ?? '',
+        kind: j['kind'] as String? ?? 'topic',
+        en: _strings(j['en']),
+        am: _strings(j['am']),
+        chapters: _strings(j['chapters']),
+        lessons: _strings(j['lessons']),
+        words: _strings(j['words']),
+      );
+}
+
 class Amharic {
-  const Amharic({required this.words, required this.text});
+  const Amharic({required this.words, required this.text, this.examples = const {}});
   final Map<String, String> words;
   final Map<String, String> text;
+
+  /// Example sentences in Amharic, by their German.
+  final Map<String, String> examples;
 
   factory Amharic.fromJson(Map<String, dynamic> j) => Amharic(
         words: {...?(j['words'] as Map?)?.map((k, v) => MapEntry('$k', '$v'))},
         text: {...?(j['text'] as Map?)?.map((k, v) => MapEntry('$k', '$v'))},
+        examples: {...?(j['examples'] as Map?)?.map((k, v) => MapEntry('$k', '$v'))},
       );
 }
 
 class CourseBundle {
-  const CourseBundle({required this.version, required this.lang, required this.units, this.amharic, this.texts = const {}});
+  const CourseBundle({required this.version, required this.lang, required this.units, this.topics = const [], this.amharic, this.texts = const {}});
 
   /// Changes whenever the course, its Amharic or an admin's published text changes.
   final String version;
   final String lang;
   final List<Unit> units;
+
+  /// What the search understands besides the course's own words (see [Topic]).
+  final List<Topic> topics;
   final Amharic? amharic;
 
   /// Text admins changed on the site: wherever `key` would be shown, show the value instead.
@@ -188,6 +237,7 @@ class CourseBundle {
         version: j['version'] as String? ?? '',
         lang: j['lang'] as String? ?? 'en',
         units: [for (final u in ((j['course'] as Map)['units'] as List)) Unit.fromJson((u as Map).cast())],
+        topics: [for (final t in ((j['course'] as Map)['topics'] as List? ?? [])) Topic.fromJson((t as Map).cast())],
         amharic: j['amharic'] == null ? null : Amharic.fromJson((j['amharic'] as Map).cast()),
         texts: {...?(j['texts'] as Map?)?.map((k, v) => MapEntry('$k', '$v'))},
       );

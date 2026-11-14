@@ -1,0 +1,527 @@
+# Unit 5: example sentences for every word. German ||| English ||| Amharic
+# Three for a single word, two for a phrase; A1 German that uses the course's own words.
+# Times in the Amharic use the Ethiopian clock, as the course does (8:00 = ሁለት ሰዓት).
+
+# 5.1 My day
+## die Uhr
+Die Uhr ist neu. ||| The clock is new. ||| ሰዓቱ አዲስ ነው።
+Es ist zehn Uhr. ||| It is ten o'clock. ||| አራት ሰዓት ነው።
+Die Uhr hängt an der Wand. ||| The clock hangs on the wall. ||| ሰዓቱ ግድግዳ ላይ ተሰቅሏል።
+## die Zähne
+Meine Zähne sind weiß. ||| My teeth are white. ||| ጥርሶቼ ነጭ ናቸው።
+Das Kind putzt die Zähne. ||| The child is brushing its teeth. ||| ልጁ ጥርሱን እየቦረሸ ነው።
+Ich putze zweimal am Tag die Zähne. ||| I brush my teeth twice a day. ||| በቀን ሁለት ጊዜ ጥርሴን እቦርሻለሁ።
+## die Arbeit
+Die Arbeit beginnt um acht. ||| Work starts at eight. ||| ሥራው ሁለት ሰዓት ይጀምራል።
+Ich habe viel Arbeit. ||| I have a lot of work. ||| ብዙ ሥራ አለኝ።
+Die Arbeit macht Spaß. ||| The work is fun. ||| ሥራው ደስ ይላል።
+## arbeiten
+Ich arbeite in einem Büro. ||| I work in an office. ||| የምሠራው ቢሮ ውስጥ ነው።
+Arbeitest du heute? ||| Are you working today? ||| ዛሬ ትሠራለህ?
+Meine Mutter arbeitet im Krankenhaus. ||| My mother works at the hospital. ||| እናቴ ሆስፒታል ትሠራለች።
+## aufräumen
+Ich räume mein Zimmer auf. ||| I am tidying up my room. ||| ክፍሌን እያስተካከልኩ ነው።
+Wir räumen die Küche auf. ||| We are tidying up the kitchen. ||| ማዕድ ቤቱን እያጸዳን ነው።
+Die Kinder müssen aufräumen. ||| The children have to tidy up. ||| ልጆቹ ማስተካከል አለባቸው።
+## das Mittagessen
+Das Mittagessen ist um zwölf. ||| Lunch is at twelve. ||| ምሳ ስድስት ሰዓት ነው።
+Was gibt es zum Mittagessen? ||| What is there for lunch? ||| ለምሳ ምን አለ?
+Ich koche das Mittagessen. ||| I am cooking lunch. ||| ምሳ እያበሰልኩ ነው።
+## der Besuch
+Wir haben heute Besuch. ||| We have visitors today. ||| ዛሬ እንግዶች አሉን።
+Der Besuch kommt um sechs. ||| The visitors come at six. ||| እንግዶቹ አሥራ ሁለት ሰዓት ይመጣሉ።
+Danke für den Besuch! ||| Thanks for the visit! ||| ስለ ጉብኝቱ አመሰግናለሁ!
+## fernsehen
+Am Abend sehe ich fern. ||| In the evening I watch TV. ||| ማታ ቴሌቪዥን አያለሁ።
+Die Kinder sehen zu viel fern. ||| The children watch too much TV. ||| ልጆቹ በጣም ብዙ ቴሌቪዥን ያያሉ።
+Siehst du gern fern? ||| Do you like watching TV? ||| ቴሌቪዥን ማየት ትወዳለህ?
+## trinken
+Ich trinke Wasser. ||| I drink water. ||| ውሃ እጠጣለሁ።
+Was trinkst du gern? ||| What do you like to drink? ||| ምን መጠጣት ትወዳለህ?
+Wir trinken zusammen Kaffee. ||| We drink coffee together. ||| አብረን ቡና እንጠጣለን።
+## das Computerspiel
+Das Computerspiel ist neu. ||| The computer game is new. ||| የኮምፒውተር ጨዋታው አዲስ ነው።
+Mein Bruder spielt ein Computerspiel. ||| My brother is playing a computer game. ||| ወንድሜ የኮምፒውተር ጨዋታ እየተጫወተ ነው።
+Das Computerspiel ist sehr spannend. ||| The computer game is very exciting. ||| የኮምፒውተር ጨዋታው በጣም አጓጊ ነው።
+## schlafen
+Ich schlafe acht Stunden. ||| I sleep eight hours. ||| ስምንት ሰዓት እተኛለሁ።
+Das Baby schläft. ||| The baby is sleeping. ||| ሕፃኑ ተኝቷል።
+Schläfst du gut? ||| Do you sleep well? ||| በደንብ ትተኛለህ?
+## Es ist 8 Uhr.
+Es ist 8 Uhr. Ich gehe zur Arbeit. ||| It is 8 o'clock. I am going to work. ||| ሁለት ሰዓት ነው። ወደ ሥራ እሄዳለሁ።
+Schnell, es ist 8 Uhr! ||| Quickly, it is 8 o'clock! ||| ቶሎ በሉ፣ ሁለት ሰዓት ሆኗል!
+## sich die Zähne putzen
+Ich putze mir die Zähne. ||| I brush my teeth. ||| ጥርሴን እቦርሻለሁ።
+Putz dir bitte die Zähne! ||| Please brush your teeth! ||| እባክህ ጥርስህን ቦርሽ!
+## sich anziehen
+Ich ziehe mich an. ||| I get dressed. ||| ልብሴን እለብሳለሁ።
+Zieh dich schnell an! ||| Get dressed quickly! ||| ቶሎ ልበስ!
+## zur Arbeit fahren
+Ich fahre mit dem Bus zur Arbeit. ||| I go to work by bus. ||| በአውቶቡስ ወደ ሥራ እሄዳለሁ።
+Wann fährst du zur Arbeit? ||| When do you go to work? ||| መቼ ወደ ሥራ ትሄዳለህ?
+## nach Hause kommen
+Ich komme um fünf nach Hause. ||| I come home at five. ||| አሥራ አንድ ሰዓት ወደ ቤት እመጣለሁ።
+Wann kommst du nach Hause? ||| When are you coming home? ||| መቼ ወደ ቤት ትመጣለህ?
+## zu Besuch kommen
+Meine Oma kommt zu Besuch. ||| My grandma is coming to visit. ||| አያቴ ሊጠይቁን ይመጣሉ።
+Kommst du am Sonntag zu Besuch? ||| Are you coming to visit on Sunday? ||| እሑድ ልትጠይቀን ትመጣለህ?
+## schlafen gehen
+Ich gehe um zehn schlafen. ||| I go to bed at ten. ||| አራት ሰዓት ለመተኛት እሄዳለሁ።
+Die Kinder gehen früh schlafen. ||| The children go to bed early. ||| ልጆቹ ቀደም ብለው ይተኛሉ።
+
+# 5.2 What time is it?
+## Wie spät ist es?
+Entschuldigung, wie spät ist es? ||| Excuse me, what time is it? ||| ይቅርታ፣ ሰዓቱ ስንት ነው?
+Wie spät ist es? – Es ist acht Uhr. ||| What time is it? – It is eight o'clock. ||| ሰዓቱ ስንት ነው? – ሁለት ሰዓት ነው።
+## Wie viel Uhr ist es?
+Wie viel Uhr ist es jetzt? ||| What time is it now? ||| አሁን ሰዓቱ ስንት ነው?
+Wie viel Uhr ist es? – Halb zwei. ||| What time is it? – Half past one. ||| ሰዓቱ ስንት ነው? – ሰባት ተኩል።
+## Es ist neun Uhr.
+Es ist neun Uhr. Der Kurs beginnt. ||| It is nine o'clock. The course is starting. ||| ሦስት ሰዓት ነው። ኮርሱ እየጀመረ ነው።
+Wie spät ist es? – Es ist neun Uhr. ||| What time is it? – It is nine o'clock. ||| ሰዓቱ ስንት ነው? – ሦስት ሰዓት ነው።
+## Es ist ein Uhr.
+Es ist ein Uhr. Zeit für das Mittagessen! ||| It is one o'clock. Time for lunch! ||| ሰባት ሰዓት ነው። የምሳ ሰዓት ነው!
+Wie viel Uhr ist es? – Es ist ein Uhr. ||| What time is it? – It is one o'clock. ||| ሰዓቱ ስንት ነው? – ሰባት ሰዓት ነው።
+## Es ist halb zwei.
+Es ist halb zwei. Wir haben noch Zeit. ||| It is half past one. We still have time. ||| ሰባት ተኩል ነው። ገና ጊዜ አለን።
+Wie spät ist es? – Es ist halb zwei. ||| What time is it? – It is half past one. ||| ሰዓቱ ስንት ነው? – ሰባት ተኩል ነው።
+
+# 5.3 Time words
+## um
+Der Kurs beginnt um neun. ||| The course starts at nine. ||| ኮርሱ ሦስት ሰዓት ይጀምራል።
+Wir essen um sieben. ||| We eat at seven. ||| አንድ ሰዓት እንበላለን።
+Um wie viel Uhr kommst du? ||| At what time are you coming? ||| ስንት ሰዓት ትመጣለህ?
+## von … bis
+Ich arbeite von Montag bis Freitag. ||| I work from Monday to Friday. ||| ከሰኞ እስከ ዓርብ እሠራለሁ።
+Der Kurs ist von neun bis zwölf. ||| The course is from nine until twelve. ||| ኮርሱ ከሦስት እስከ ስድስት ሰዓት ነው።
+## vor
+Es ist fünf vor acht. ||| It is five to eight. ||| ለሁለት አምስት ጉዳይ ነው።
+Vor dem Essen wasche ich die Hände. ||| Before eating I wash my hands. ||| ከምግብ በፊት እጄን እታጠባለሁ።
+Ich bin vor dir da. ||| I am there before you. ||| ከአንተ በፊት እደርሳለሁ።
+## nach
+Es ist zehn nach sieben. ||| It is ten past seven. ||| አንድ ሰዓት ከአሥር ደቂቃ ነው።
+Nach der Arbeit gehe ich einkaufen. ||| After work I go shopping. ||| ከሥራ በኋላ ለገበያ እሄዳለሁ።
+Wir sehen nach dem Essen fern. ||| We watch TV after the meal. ||| ከምግብ በኋላ ቴሌቪዥን እናያለን።
+## um acht Uhr
+Ich stehe um acht Uhr auf. ||| I get up at eight o'clock. ||| ሁለት ሰዓት ላይ እነሣለሁ።
+Der Zug fährt um acht Uhr. ||| The train leaves at eight o'clock. ||| ባቡሩ ሁለት ሰዓት ላይ ይነሣል።
+## von neun bis fünf
+Ich arbeite von neun bis fünf. ||| I work from nine until five. ||| ከሦስት እስከ አሥራ አንድ ሰዓት እሠራለሁ።
+Das Büro ist von neun bis fünf offen. ||| The office is open from nine until five. ||| ቢሮው ከሦስት እስከ አሥራ አንድ ሰዓት ክፍት ነው።
+
+# 5.5 Telling the time
+## Es ist fünf nach neun.
+Es ist fünf nach neun. Du bist spät! ||| It is five past nine. You are late! ||| ሦስት ሰዓት ከአምስት ደቂቃ ነው። አርፍደሃል!
+Wie spät ist es? – Es ist fünf nach neun. ||| What time is it? – It is five past nine. ||| ሰዓቱ ስንት ነው? – ሦስት ሰዓት ከአምስት ደቂቃ ነው።
+## Es ist Viertel nach neun.
+Es ist Viertel nach neun. Der Kurs beginnt. ||| It is quarter past nine. The course is starting. ||| ሦስት ሰዓት ከሩብ ነው። ኮርሱ እየጀመረ ነው።
+Wie spät ist es? – Es ist Viertel nach neun. ||| What time is it? – It is quarter past nine. ||| ሰዓቱ ስንት ነው? – ሦስት ሰዓት ከሩብ ነው።
+## Es ist fünf vor halb zehn.
+Es ist fünf vor halb zehn. Wir haben noch fünf Minuten. ||| It is 9:25. We still have five minutes. ||| ሦስት ሰዓት ከሃያ አምስት ነው። ገና አምስት ደቂቃ አለን።
+Wie spät ist es? – Es ist fünf vor halb zehn. ||| What time is it? – It is 9:25. ||| ሰዓቱ ስንት ነው? – ሦስት ሰዓት ከሃያ አምስት ነው።
+## Es ist halb zehn.
+Es ist halb zehn. Wir machen eine Pause. ||| It is half past nine. We are taking a break. ||| ሦስት ተኩል ነው። እረፍት እንወስዳለን።
+Wie spät ist es? – Es ist halb zehn. ||| What time is it? – It is half past nine. ||| ሰዓቱ ስንት ነው? – ሦስት ተኩል ነው።
+## Es ist fünf nach halb zehn.
+Es ist fünf nach halb zehn. Der Bus kommt gleich. ||| It is 9:35. The bus is coming soon. ||| ሦስት ሰዓት ከሠላሳ አምስት ነው። አውቶቡሱ አሁን ይመጣል።
+Wie spät ist es? – Es ist fünf nach halb zehn. ||| What time is it? – It is 9:35. ||| ሰዓቱ ስንት ነው? – ሦስት ሰዓት ከሠላሳ አምስት ነው።
+## Es ist Viertel vor zehn.
+Es ist Viertel vor zehn. Schnell! ||| It is quarter to ten. Quickly! ||| ለአራት ሩብ ጉዳይ ነው። ቶሎ!
+Wie spät ist es? – Es ist Viertel vor zehn. ||| What time is it? – It is quarter to ten. ||| ሰዓቱ ስንት ነው? – ለአራት ሩብ ጉዳይ ነው።
+## Es ist fünf vor zehn.
+Es ist fünf vor zehn. Der Film beginnt um zehn. ||| It is five to ten. The film starts at ten. ||| ለአራት አምስት ጉዳይ ነው። ፊልሙ አራት ሰዓት ይጀምራል።
+Wie spät ist es? – Es ist fünf vor zehn. ||| What time is it? – It is five to ten. ||| ሰዓቱ ስንት ነው? – ለአራት አምስት ጉዳይ ነው።
+
+# 5.6 Days of the week
+## der Montag
+Der Montag ist der erste Tag der Woche. ||| Monday is the first day of the week. ||| ሰኞ የሳምንቱ የመጀመሪያ ቀን ነው።
+Am Montag arbeite ich. ||| On Monday I work. ||| ሰኞ እሠራለሁ።
+Heute ist Montag. ||| Today is Monday. ||| ዛሬ ሰኞ ነው።
+## der Dienstag
+Am Dienstag habe ich Deutschkurs. ||| On Tuesday I have German class. ||| ማክሰኞ የጀርመንኛ ኮርስ አለኝ።
+Der Dienstag ist ruhig. ||| Tuesday is quiet. ||| ማክሰኞ ጸጥ ያለ ቀን ነው።
+Morgen ist Dienstag. ||| Tomorrow is Tuesday. ||| ነገ ማክሰኞ ነው።
+## der Mittwoch
+Am Mittwoch gehe ich einkaufen. ||| On Wednesday I go shopping. ||| ረቡዕ ለገበያ እሄዳለሁ።
+Der Mittwoch ist in der Mitte der Woche. ||| Wednesday is in the middle of the week. ||| ረቡዕ የሳምንቱ አጋማሽ ነው።
+Am Mittwoch fasten viele Äthiopier. ||| On Wednesday many Ethiopians fast. ||| ረቡዕ ብዙ ኢትዮጵያውያን ይጾማሉ።
+## der Donnerstag
+Am Donnerstag habe ich Zeit. ||| On Thursday I have time. ||| ሐሙስ ጊዜ አለኝ።
+Der Donnerstag ist lang. ||| Thursday is long. ||| ሐሙስ ረጅም ቀን ነው።
+Wir treffen uns am Donnerstag. ||| We are meeting on Thursday. ||| ሐሙስ እንገናኛለን።
+## der Freitag
+Am Freitag gehe ich ins Kino. ||| On Friday I go to the cinema. ||| ዓርብ ሲኒማ ቤት እሄዳለሁ።
+Der Freitag ist mein Lieblingstag. ||| Friday is my favourite day. ||| ዓርብ የምወደው ቀን ነው።
+Am Freitag fasten viele Äthiopier. ||| On Friday many Ethiopians fast. ||| ዓርብ ብዙ ኢትዮጵያውያን ይጾማሉ።
+## der Samstag
+Am Samstag schlafe ich lange. ||| On Saturday I sleep in. ||| ቅዳሜ ረጅም ጊዜ እተኛለሁ።
+Der Samstag ist frei. ||| Saturday is free. ||| ቅዳሜ ነፃ ነው።
+Am Samstag machen wir eine Party. ||| On Saturday we are having a party. ||| ቅዳሜ ግብዣ እናደርጋለን።
+## der Sonntag
+Am Sonntag gehe ich in die Kirche. ||| On Sunday I go to church. ||| እሑድ ቤተ ክርስቲያን እሄዳለሁ።
+Der Sonntag ist ruhig. ||| Sunday is quiet. ||| እሑድ ጸጥ ያለ ቀን ነው።
+Am Sonntag sind die Geschäfte zu. ||| On Sunday the shops are closed. ||| እሑድ ሱቆቹ ዝግ ናቸው።
+## am Montag
+Am Montag beginnt der Kurs. ||| The course starts on Monday. ||| ኮርሱ ሰኞ ዕለት ይጀምራል።
+Was machst du am Montag? ||| What are you doing on Monday? ||| ሰኞ ምን ትሠራለህ?
+## gestern
+Gestern war ich müde. ||| Yesterday I was tired. ||| ትናንት ደክሞኝ ነበር።
+Gestern war Sonntag. ||| Yesterday was Sunday. ||| ትናንት እሑድ ነበር።
+Wo warst du gestern? ||| Where were you yesterday? ||| ትናንት የት ነበርክ?
+## morgen
+Morgen habe ich Zeit. ||| Tomorrow I have time. ||| ነገ ጊዜ አለኝ።
+Bis morgen! ||| See you tomorrow! ||| ነገ እንገናኝ!
+Morgen ist Freitag. ||| Tomorrow is Friday. ||| ነገ ዓርብ ነው።
+## Welcher Tag ist heute?
+Welcher Tag ist heute? – Heute ist Mittwoch. ||| What day is it today? – Today is Wednesday. ||| ዛሬ ምን ቀን ነው? – ዛሬ ረቡዕ ነው።
+Entschuldigung, welcher Tag ist heute? ||| Excuse me, what day is it today? ||| ይቅርታ፣ ዛሬ ምን ቀን ነው?
+
+# 5.7 Separable verbs
+## aufstehen
+Ich stehe früh auf. ||| I get up early. ||| ቀደም ብዬ እነሣለሁ።
+Wann stehst du auf? ||| When do you get up? ||| መቼ ትነሣለህ?
+Am Sonntag stehen wir spät auf. ||| On Sunday we get up late. ||| እሑድ ዘግይተን እንነሣለን።
+## anrufen
+Ich rufe meine Mutter an. ||| I am calling my mother. ||| ለእናቴ እደውላለሁ።
+Rufst du mich morgen an? ||| Will you call me tomorrow? ||| ነገ ትደውልልኛለህ?
+Er ruft jeden Tag an. ||| He calls every day. ||| በየቀኑ ይደውላል።
+## anziehen
+Ich ziehe eine Jacke an. ||| I put on a jacket. ||| ጃኬት እለብሳለሁ።
+Zieh die Schuhe an! ||| Put on your shoes! ||| ጫማህን አድርግ!
+Was ziehst du heute an? ||| What are you wearing today? ||| ዛሬ ምን ትለብሳለህ?
+## einkaufen
+Ich kaufe am Samstag ein. ||| I shop on Saturday. ||| ቅዳሜ እገበያለሁ።
+Wo kaufst du ein? ||| Where do you shop? ||| የት ትገበያለህ?
+Wir kaufen im Supermarkt ein. ||| We shop at the supermarket. ||| ሱፐርማርኬት እንገበያለን።
+## aufmachen
+Mach bitte das Fenster auf. ||| Please open the window. ||| እባክህ መስኮቱን ክፈት።
+Der Laden macht um acht auf. ||| The shop opens at eight. ||| ሱቁ ሁለት ሰዓት ይከፈታል።
+Ich mache die Tür auf. ||| I open the door. ||| በሩን እከፍታለሁ።
+## zumachen
+Mach bitte die Tür zu. ||| Please close the door. ||| እባክህ በሩን ዝጋ።
+Der Supermarkt macht um acht zu. ||| The supermarket closes at eight. ||| ሱፐርማርኬቱ ሁለት ሰዓት (ማታ) ይዘጋል።
+Ich mache das Fenster zu. ||| I close the window. ||| መስኮቱን እዘጋለሁ።
+## Ich stehe um 7 Uhr auf.
+Ich stehe um 7 Uhr auf und trinke Kaffee. ||| I get up at 7 o'clock and drink coffee. ||| አንድ ሰዓት ላይ እነሣና ቡና እጠጣለሁ።
+Wann stehst du auf? – Ich stehe um 7 Uhr auf. ||| When do you get up? – I get up at 7 o'clock. ||| መቼ ትነሣለህ? – አንድ ሰዓት ላይ እነሣለሁ።
+
+# 5.8 What do you like doing?
+## Was machst du gerne?
+Was machst du gerne? – Ich lese gerne. ||| What do you like doing? – I like reading. ||| ምን ማድረግ ትወዳለህ? – ማንበብ እወዳለሁ።
+Was machst du gerne am Wochenende? ||| What do you like doing at the weekend? ||| ቅዳሜና እሑድ ምን ማድረግ ትወጃለሽ?
+## Was machst du nicht gerne?
+Was machst du nicht gerne? – Ich räume nicht gerne auf. ||| What don't you like doing? – I don't like tidying up. ||| ምን ማድረግ አትወድም? – ማስተካከል አልወድም።
+Was machst du nicht gerne in der Küche? ||| What don't you like doing in the kitchen? ||| ማዕድ ቤት ውስጥ ምን ማድረግ አትወጅም?
+## Kochst du gerne?
+Kochst du gerne? – Ja, sehr gerne! ||| Do you like cooking? – Yes, very much! ||| ምግብ ማብሰል ትወዳለህ? – አዎ፣ በጣም!
+Kochst du gerne äthiopisches Essen? ||| Do you like cooking Ethiopian food? ||| የኢትዮጵያ ምግብ ማብሰል ትወጃለሽ?
+## Kaufst du gerne ein?
+Kaufst du gerne ein? – Nein, nicht so gerne. ||| Do you like shopping? – No, not so much. ||| መገብየት ትወዳለህ? – አይ፣ ብዙም አልወድም።
+Kaufst du gerne im Supermarkt ein? ||| Do you like shopping at the supermarket? ||| ሱፐርማርኬት መገብየት ትወጃለሽ?
+## Er spielt gerne Gitarre.
+Mein Bruder? Er spielt gerne Gitarre. ||| My brother? He likes playing the guitar. ||| ወንድሜ? ጊታር መጫወት ይወዳል።
+Er spielt gerne Gitarre und singt. ||| He likes playing the guitar and singing. ||| ጊታር መጫወትና መዝፈን ይወዳል።
+## Ich mache nicht gerne Kuchen.
+Ich mache nicht gerne Kuchen, aber ich esse ihn gern. ||| I don't like making cakes, but I like eating them. ||| ኬክ መሥራት አልወድም፤ መብላቱን ግን እወዳለሁ።
+Ich mache nicht gerne Kuchen. Das ist zu schwer. ||| I don't like making cakes. That is too difficult. ||| ኬክ መሥራት አልወድም። በጣም ከባድ ነው።
+
+# 5.9 Months & seasons
+## der Januar
+Der Januar ist kalt in Deutschland. ||| January is cold in Germany. ||| ጃንዋሪ በጀርመን ቀዝቃዛ ነው።
+Im Januar feiern wir Timkat. ||| In January we celebrate Timkat. ||| በጃንዋሪ ጥምቀትን እናከብራለን።
+Mein Geburtstag ist im Januar. ||| My birthday is in January. ||| ልደቴ በጃንዋሪ ነው።
+## der Februar
+Der Februar ist kurz. ||| February is short. ||| ፌብሩዋሪ አጭር ነው።
+Im Februar ist es kalt. ||| In February it is cold. ||| በፌብሩዋሪ ይቀዘቅዛል።
+Der Februar hat 28 Tage. ||| February has 28 days. ||| ፌብሩዋሪ 28 ቀናት አሉት።
+## der März
+Im März beginnt der Frühling. ||| In March spring begins. ||| በማርች ጸደይ ይጀምራል።
+Der März ist warm in Addis Abeba. ||| March is warm in Addis Ababa. ||| ማርች በአዲስ አበባ ሞቃት ነው።
+Mein Bruder hat im März Geburtstag. ||| My brother's birthday is in March. ||| የወንድሜ ልደት በማርች ነው።
+## der April
+Im April regnet es oft. ||| In April it often rains. ||| በኤፕሪል ብዙ ጊዜ ይዘንባል።
+Der April ist schön. ||| April is beautiful. ||| ኤፕሪል ውብ ነው።
+Im April ist Ostern. ||| Easter is in April. ||| ፋሲካ በኤፕሪል ነው።
+## der Mai
+Im Mai ist es warm. ||| In May it is warm. ||| በሜይ ሞቃት ነው።
+Der Mai ist mein Lieblingsmonat. ||| May is my favourite month. ||| ሜይ የምወደው ወር ነው።
+Im Mai blühen die Blumen. ||| In May the flowers bloom. ||| በሜይ አበቦቹ ያብባሉ።
+## der Juni
+Im Juni beginnt der Sommer. ||| In June summer begins. ||| በጁን በጋ ይጀምራል።
+Der Juni ist warm. ||| June is warm. ||| ጁን ሞቃት ነው።
+Im Juni haben die Kinder Ferien. ||| In June the children have holidays. ||| በጁን ልጆቹ የዕረፍት ጊዜ አላቸው።
+## der Juli
+Im Juli ist es heiß in Deutschland. ||| In July it is hot in Germany. ||| በጁላይ በጀርመን ይሞቃል።
+Im Juli regnet es viel in Äthiopien. ||| In July it rains a lot in Ethiopia. ||| በጁላይ በኢትዮጵያ ብዙ ይዘንባል።
+Der Juli hat 31 Tage. ||| July has 31 days. ||| ጁላይ 31 ቀናት አሉት።
+## der August
+Im August machen wir Urlaub. ||| In August we go on holiday. ||| በኦገስት ዕረፍት እንወጣለን።
+Der August ist heiß. ||| August is hot. ||| ኦገስት ሞቃት ነው።
+Mein Geburtstag ist im August. ||| My birthday is in August. ||| ልደቴ በኦገስት ነው።
+## der September
+Im September ist das äthiopische Neujahr. ||| In September is the Ethiopian New Year. ||| የኢትዮጵያ አዲስ ዓመት በሴፕቴምበር ነው።
+Im September beginnt die Schule. ||| In September school begins. ||| በሴፕቴምበር ትምህርት ይጀምራል።
+Der September ist schön. ||| September is beautiful. ||| ሴፕቴምበር ውብ ነው።
+## der Oktober
+Im Oktober beginnt der Herbst. ||| In October autumn begins. ||| በኦክቶበር መጸው ይጀምራል።
+Der Oktober ist kühl. ||| October is cool. ||| ኦክቶበር ቀዝቀዝ ያለ ነው።
+Im Oktober fliege ich nach Berlin. ||| In October I fly to Berlin. ||| በኦክቶበር ወደ በርሊን እበራለሁ።
+## der November
+Der November ist grau. ||| November is grey. ||| ኖቬምበር ግራጫ ነው።
+Im November ist es kalt. ||| In November it is cold. ||| በኖቬምበር ይቀዘቅዛል።
+Im November regnet es oft. ||| In November it often rains. ||| በኖቬምበር ብዙ ጊዜ ይዘንባል።
+## der Dezember
+Im Dezember ist Weihnachten. ||| Christmas is in December. ||| የፈረንጅ ገና በዲሴምበር ነው።
+Der Dezember ist kalt. ||| December is cold. ||| ዲሴምበር ቀዝቃዛ ነው።
+Im Dezember schneit es oft. ||| In December it often snows. ||| በዲሴምበር ብዙ ጊዜ በረዶ ይጥላል።
+## der Frühling
+Der Frühling ist schön. ||| Spring is beautiful. ||| ጸደይ ውብ ነው።
+Im Frühling blühen die Blumen. ||| In spring the flowers bloom. ||| በጸደይ አበቦቹ ያብባሉ።
+Im Frühling ist es warm. ||| In spring it is warm. ||| በጸደይ ሞቃት ነው።
+## der Sommer
+Der Sommer ist heiß. ||| Summer is hot. ||| በጋው ሞቃት ነው።
+Im Sommer fahren wir ans Meer. ||| In summer we go to the sea. ||| በበጋ ወደ ባሕር እንሄዳለን።
+Im Sommer esse ich viel Eis. ||| In summer I eat a lot of ice cream. ||| በበጋ ብዙ አይስክሬም እበላለሁ።
+## der Herbst
+Der Herbst ist bunt. ||| Autumn is colourful. ||| መጸው ባለ ብዙ ቀለም ነው።
+Im Herbst regnet es viel. ||| In autumn it rains a lot. ||| በመጸው ብዙ ይዘንባል።
+Im Herbst beginnt die Schule. ||| In autumn school begins. ||| በመጸው ትምህርት ይጀምራል።
+## der Winter
+Der Winter ist kalt. ||| Winter is cold. ||| ክረምቱ ቀዝቃዛ ነው።
+Im Winter schneit es. ||| In winter it snows. ||| በክረምት በረዶ ይጥላል።
+Im Winter trage ich eine Jacke. ||| In winter I wear a jacket. ||| በክረምት ጃኬት እለብሳለሁ።
+## die Monate
+Das Jahr hat zwölf Monate. ||| The year has twelve months. ||| ዓመቱ አሥራ ሁለት ወራት አሉት።
+Die Monate gehen schnell vorbei. ||| The months pass quickly. ||| ወራቱ በፍጥነት ያልፋሉ።
+Ich lerne die Monate auf Deutsch. ||| I am learning the months in German. ||| ወራቱን በጀርመንኛ እየተማርኩ ነው።
+## die Jahreszeiten
+In Deutschland gibt es vier Jahreszeiten. ||| In Germany there are four seasons. ||| በጀርመን አራት ወቅቶች አሉ።
+Welche Jahreszeit magst du? ||| Which season do you like? ||| የትኛውን ወቅት ትወዳለህ?
+Die Jahreszeiten sind sehr verschieden. ||| The seasons are very different. ||| ወቅቶቹ በጣም የተለያዩ ናቸው።
+
+# 5.10 Making plans
+## wollen
+Ich will Deutsch lernen. ||| I want to learn German. ||| ጀርመንኛ መማር እፈልጋለሁ።
+Willst du ins Kino gehen? ||| Do you want to go to the cinema? ||| ሲኒማ ቤት መሄድ ትፈልጋለህ?
+Wir wollen eine Party machen. ||| We want to throw a party. ||| ግብዣ ማድረግ እንፈልጋለን።
+## fragen
+Ich frage den Lehrer. ||| I ask the teacher. ||| አስተማሪውን እጠይቃለሁ።
+Darf ich etwas fragen? ||| May I ask something? ||| አንድ ነገር ልጠይቅ?
+Frag deine Mutter! ||| Ask your mother! ||| እናትህን ጠይቅ!
+## der Geburtstag
+Heute ist mein Geburtstag. ||| Today is my birthday. ||| ዛሬ የልደቴ ቀን ነው።
+Wann ist dein Geburtstag? ||| When is your birthday? ||| ልደትህ መቼ ነው?
+Alles Gute zum Geburtstag! ||| Happy birthday! ||| መልካም ልደት!
+## beginnen
+Der Kurs beginnt um neun. ||| The course begins at nine. ||| ኮርሱ ሦስት ሰዓት ይጀምራል።
+Wann beginnt der Film? ||| When does the film begin? ||| ፊልሙ መቼ ይጀምራል?
+Die Schule beginnt im September. ||| School begins in September. ||| ትምህርት በሴፕቴምበር ይጀምራል።
+## pünktlich
+Der Zug ist pünktlich. ||| The train is on time. ||| ባቡሩ በሰዓቱ ደርሷል።
+Bitte seid pünktlich! ||| Please be on time, everyone! ||| እባካችሁ በሰዓቱ ድረሱ!
+In Deutschland sind die Leute pünktlich. ||| In Germany people are punctual. ||| በጀርመን ሰዎች ሰዓት አክባሪ ናቸው።
+## toll
+Das ist toll! ||| That is great! ||| ይህ በጣም ጥሩ ነው!
+Der Film ist toll. ||| The film is great. ||| ፊልሙ ድንቅ ነው።
+Du kochst toll! ||| You cook brilliantly! ||| በጣም ድንቅ አድርገህ ታበስላለህ!
+## Zeit haben
+Hast du heute Abend Zeit? ||| Do you have time this evening? ||| ዛሬ ማታ ጊዜ አለህ?
+Ich habe am Wochenende Zeit. ||| I have time at the weekend. ||| ቅዳሜና እሑድ ጊዜ አለኝ።
+## frei sein
+Bist du morgen frei? ||| Are you free tomorrow? ||| ነገ ነፃ ነህ?
+Am Sonntag bin ich frei. ||| On Sunday I am free. ||| እሑድ ነፃ ነኝ።
+## eine Party machen
+Wir machen am Samstag eine Party. ||| We are throwing a party on Saturday. ||| ቅዳሜ ግብዣ እናደርጋለን።
+Für meinen Geburtstag mache ich eine Party. ||| For my birthday I am throwing a party. ||| ለልደቴ ግብዣ አደርጋለሁ።
+## Sei pünktlich!
+Der Kurs beginnt um neun. Sei pünktlich! ||| The course begins at nine. Be on time! ||| ኮርሱ ሦስት ሰዓት ይጀምራል። በሰዓቱ ድረስ!
+Sei pünktlich! Der Zug wartet nicht. ||| Be on time! The train doesn't wait. ||| በሰዓቱ ድረሺ! ባቡሩ አይጠብቅም።
+## Bis Samstag!
+Danke! Bis Samstag! ||| Thanks! See you on Saturday! ||| አመሰግናለሁ! ቅዳሜ እንገናኝ!
+Die Party ist am Samstag. Bis Samstag! ||| The party is on Saturday. See you on Saturday! ||| ግብዣው ቅዳሜ ነው። ቅዳሜ እንገናኝ!
+
+# 5.11 Verbs with a vowel change
+## tragen
+Ich trage eine Brille. ||| I wear glasses. ||| መነጽር አደርጋለሁ።
+Du trägst eine schöne Jacke. ||| You are wearing a nice jacket. ||| ቆንጆ ጃኬት ለብሰሃል።
+Er trägt die Tasche. ||| He is carrying the bag. ||| ቦርሳውን ተሸክሟል።
+## waschen
+Ich wasche die Wäsche. ||| I wash the laundry. ||| ልብሶቹን አጥባለሁ።
+Du wäschst das Auto. ||| You are washing the car. ||| መኪናውን እያጠብክ ነው።
+Wir waschen die Hände. ||| We wash our hands. ||| እጃችንን እንታጠባለን።
+## fahren
+Ich fahre mit dem Bus. ||| I go by bus. ||| በአውቶቡስ እሄዳለሁ።
+Du fährst sehr schnell. ||| You drive very fast. ||| በጣም በፍጥነት ትነዳለህ።
+Wir fahren nach Adama. ||| We are going to Adama. ||| ወደ አዳማ እንሄዳለን።
+## fallen
+Das Glas fällt auf den Boden. ||| The glass falls on the floor. ||| ብርጭቆው መሬት ላይ ይወድቃል።
+Pass auf, du fällst! ||| Watch out, you're falling! ||| ተጠንቀቅ፣ ልትወድቅ ነው!
+Im Herbst fallen die Blätter. ||| In autumn the leaves fall. ||| በመጸው ቅጠሎቹ ይረግፋሉ።
+## treten
+Tritt nicht auf das Gras! ||| Don't step on the grass! ||| ሣሩን አትርገጥ!
+Du trittst gegen den Ball. ||| You kick the ball. ||| ኳሱን ትመታለህ።
+Er tritt auf meinen Fuß. ||| He steps on my foot. ||| እግሬን ይረግጣል።
+## geben
+Ich gebe dir das Buch. ||| I give you the book. ||| መጽሐፉን እሰጥሃለሁ።
+Gibst du mir bitte das Salz? ||| Will you give me the salt, please? ||| እባክህ ጨዉን ታቀብለኛለህ?
+Er gibt mir seine Telefonnummer. ||| He gives me his phone number. ||| ስልክ ቁጥሩን ይሰጠኛል።
+## helfen
+Ich helfe meiner Mutter. ||| I help my mother. ||| እናቴን እረዳለሁ።
+Hilfst du mir? ||| Will you help me? ||| ትረዳኛለህ?
+Er hilft in der Küche. ||| He helps in the kitchen. ||| ማዕድ ቤት ውስጥ ያግዛል።
+## lesen
+Ich lese ein Buch. ||| I am reading a book. ||| መጽሐፍ እያነበብኩ ነው።
+Du liest sehr gut. ||| You read very well. ||| በጣም በደንብ ታነባለህ።
+Sie liest die Zeitung. ||| She is reading the newspaper. ||| ጋዜጣውን እያነበበች ነው።
+## sehen
+Ich sehe das Haus. ||| I see the house. ||| ቤቱን አያለሁ።
+Siehst du den Bus? ||| Do you see the bus? ||| አውቶቡሱን ታየዋለህ?
+Wir sehen einen Film. ||| We are watching a film. ||| ፊልም እያየን ነው።
+
+# 5.12 Times of day
+## der Vormittag
+Der Vormittag ist ruhig. ||| The late morning is quiet. ||| ረፋዱ ጸጥ ያለ ነው።
+Am Vormittag arbeite ich. ||| In the late morning I work. ||| ረፋድ ላይ እሠራለሁ።
+Der Vormittag ist schnell vorbei. ||| The late morning is over quickly. ||| ረፋዱ በፍጥነት ያልፋል።
+## der Mittag
+Am Mittag essen wir. ||| At midday we eat. ||| ቀትር ላይ እንበላለን።
+Der Mittag ist heiß. ||| Midday is hot. ||| ቀትሩ ሞቃት ነው።
+Bis Mittag habe ich Kurs. ||| Until midday I have class. ||| እስከ ቀትር ድረስ ኮርስ አለኝ።
+## der Nachmittag
+Der Nachmittag ist frei. ||| The afternoon is free. ||| ከሰዓት በኋላ ነፃ ነው።
+Wir trinken am Nachmittag Kaffee. ||| We drink coffee in the afternoon. ||| ከሰዓት በኋላ ቡና እንጠጣለን።
+Der Nachmittag ist lang. ||| The afternoon is long. ||| ከሰዓት በኋላው ረጅም ነው።
+## am Morgen
+Am Morgen trinke ich Tee. ||| In the morning I drink tea. ||| ጠዋት ላይ ሻይ እጠጣለሁ።
+Am Morgen ist es kalt. ||| In the morning it is cold. ||| ጠዋት ላይ ቀዝቃዛ ነው።
+## am Vormittag
+Am Vormittag gehe ich einkaufen. ||| In the late morning I go shopping. ||| ረፋድ ላይ ለገበያ እሄዳለሁ።
+Der Arzt hat am Vormittag Zeit. ||| The doctor has time in the late morning. ||| ሐኪሙ ረፋድ ላይ ጊዜ አላቸው።
+## am Nachmittag
+Am Nachmittag spielen die Kinder. ||| In the afternoon the children play. ||| ከሰዓት በኋላ ልጆቹ ይጫወታሉ።
+Ich schlafe am Nachmittag ein bisschen. ||| I sleep a little in the afternoon. ||| ከሰዓት በኋላ ትንሽ እተኛለሁ።
+## am Abend
+Am Abend sehen wir fern. ||| In the evening we watch TV. ||| ማታ ቴሌቪዥን እናያለን።
+Am Abend koche ich. ||| In the evening I cook. ||| ማታ አበስላለሁ።
+## in der Nacht
+In der Nacht ist es ruhig. ||| At night it is quiet. ||| ሌሊት ጸጥ ያለ ነው።
+Das Baby schreit in der Nacht. ||| The baby cries at night. ||| ሕፃኑ ሌሊት ያለቅሳል።
+## heute Abend
+Was machst du heute Abend? ||| What are you doing this evening? ||| ዛሬ ማታ ምን ትሠራለህ?
+Heute Abend gehen wir ins Kino. ||| This evening we go to the cinema. ||| ዛሬ ማታ ሲኒማ ቤት እንሄዳለን።
+## morgen früh
+Ich rufe dich morgen früh an. ||| I'll call you tomorrow morning. ||| ነገ ጠዋት እደውልልሃለሁ።
+Morgen früh fahre ich nach Adama. ||| Tomorrow morning I go to Adama. ||| ነገ ጠዋት ወደ አዳማ እሄዳለሁ።
+## das Wochenende
+Das Wochenende ist kurz. ||| The weekend is short. ||| ቅዳሜና እሑድ አጭር ነው።
+Schönes Wochenende! ||| Have a nice weekend! ||| መልካም ቅዳሜና እሑድ!
+Was machst du am Wochenende? ||| What are you doing at the weekend? ||| ቅዳሜና እሑድ ምን ትሠራለህ?
+## am Wochenende
+Am Wochenende schlafe ich lange. ||| At the weekend I sleep in. ||| ቅዳሜና እሑድ ረጅም ጊዜ እተኛለሁ።
+Am Wochenende besuchen wir die Großeltern. ||| At the weekend we visit the grandparents. ||| ቅዳሜና እሑድ አያቶቻችንን እንጠይቃለን።
+
+# 5.13 Going out
+## das Kino
+Das Kino ist neben dem Café. ||| The cinema is next to the café. ||| ሲኒማ ቤቱ ከካፌው አጠገብ ነው።
+Wir gehen heute ins Kino. ||| We are going to the cinema today. ||| ዛሬ ሲኒማ ቤት እንሄዳለን።
+Das Kino ist voll. ||| The cinema is full. ||| ሲኒማ ቤቱ ሞልቷል።
+## das Museum
+Das Museum ist am Montag zu. ||| The museum is closed on Monday. ||| ሙዚየሙ ሰኞ ዝግ ነው።
+Im Museum ist Lucy. ||| Lucy is in the museum. ||| ሉሲ በሙዚየሙ ውስጥ ናት።
+Wir besuchen das Museum. ||| We are visiting the museum. ||| ሙዚየሙን እንጎበኛለን።
+## das Theater
+Das Theater ist sehr alt. ||| The theatre is very old. ||| ቴአትር ቤቱ በጣም አሮጌ ነው።
+Wir gehen ins Theater. ||| We are going to the theatre. ||| ቴአትር ቤት እንሄዳለን።
+Das Theater beginnt um acht. ||| The play begins at eight. ||| ቴአትሩ ሁለት ሰዓት (ማታ) ይጀምራል።
+## das Café
+Das Café ist gemütlich. ||| The café is cosy. ||| ካፌው ምቹ ነው።
+Wir trinken Kaffee im Café. ||| We drink coffee at the café. ||| ካፌ ውስጥ ቡና እንጠጣለን።
+Das Café macht um acht auf. ||| The café opens at eight. ||| ካፌው ሁለት ሰዓት ይከፈታል።
+## das Konzert
+Das Konzert ist am Samstag. ||| The concert is on Saturday. ||| ኮንሰርቱ ቅዳሜ ነው።
+Das Konzert war toll. ||| The concert was great. ||| ኮንሰርቱ ድንቅ ነበር።
+Hast du Karten für das Konzert? ||| Do you have tickets for the concert? ||| ለኮንሰርቱ ትኬት አለህ?
+## das Restaurant
+Das Restaurant ist teuer. ||| The restaurant is expensive. ||| ምግብ ቤቱ ውድ ነው።
+Wir essen im Restaurant. ||| We eat at the restaurant. ||| ምግብ ቤት እንበላለን።
+Das Restaurant hat äthiopisches Essen. ||| The restaurant has Ethiopian food. ||| ምግብ ቤቱ የኢትዮጵያ ምግብ አለው።
+## das Fitnessstudio
+Ich gehe ins Fitnessstudio. ||| I go to the gym. ||| ወደ ጂም እሄዳለሁ።
+Das Fitnessstudio ist neu. ||| The gym is new. ||| ጂሙ አዲስ ነው።
+Das Fitnessstudio ist voll. ||| The gym is full. ||| ጂሙ ሞልቷል።
+## die Bar
+Die Bar ist laut. ||| The bar is loud. ||| መጠጥ ቤቱ ጫጫታ ነው።
+Wir treffen uns in der Bar. ||| We meet at the bar. ||| መጠጥ ቤቱ ውስጥ እንገናኛለን።
+Die Bar macht um zehn auf. ||| The bar opens at ten. ||| መጠጥ ቤቱ አራት ሰዓት ይከፈታል።
+## ins Kino gehen
+Wollen wir ins Kino gehen? ||| Shall we go to the cinema? ||| ሲኒማ ቤት እንሂድ?
+Am Freitag gehe ich gern ins Kino. ||| On Friday I like going to the cinema. ||| ዓርብ ሲኒማ ቤት መሄድ እወዳለሁ።
+## ins Konzert gehen
+Wir gehen am Samstag ins Konzert. ||| We are going to a concert on Saturday. ||| ቅዳሜ ኮንሰርት እንሄዳለን።
+Gehst du gern ins Konzert? ||| Do you like going to concerts? ||| ኮንሰርት መሄድ ትወዳለህ?
+## spazieren gehen
+Am Sonntag gehen wir spazieren. ||| On Sunday we go for a walk. ||| እሑድ ለእግር ጉዞ እንወጣለን።
+Ich gehe gern im Park spazieren. ||| I like going for walks in the park. ||| በፓርኩ ውስጥ ለእግር ጉዞ መውጣት እወዳለሁ።
+
+# 5.14 Making a date
+## Hast du am Samstag Zeit?
+Hast du am Samstag Zeit? – Ja, warum? ||| Are you free on Saturday? – Yes, why? ||| ቅዳሜ ጊዜ አለህ? – አዎ፣ ለምን?
+Hast du am Samstag Zeit? Wir machen eine Party. ||| Are you free on Saturday? We are throwing a party. ||| ቅዳሜ ጊዜ አለሽ? ግብዣ እናደርጋለን።
+## Gehen wir ins Kino?
+Gehen wir ins Kino? – Gute Idee! ||| Shall we go to the cinema? – Good idea! ||| ሲኒማ እንሂድ? – ጥሩ ሐሳብ!
+Es regnet. Gehen wir ins Kino? ||| It is raining. Shall we go to the cinema? ||| ዝናብ እየዘነበ ነው። ሲኒማ እንሂድ?
+## Lust auf Kaffee?
+Lust auf Kaffee? – Ja, gern! ||| Fancy a coffee? – Yes, I'd like to! ||| ቡና ልንጠጣ? – አዎ፣ በደስታ!
+Es ist drei Uhr. Lust auf Kaffee? ||| It is three o'clock. Fancy a coffee? ||| ዘጠኝ ሰዓት ነው። ቡና ልንጠጣ?
+## Gute Idee!
+Gehen wir spazieren? – Gute Idee! ||| Shall we go for a walk? – Good idea! ||| ለእግር ጉዞ እንውጣ? – ጥሩ ሐሳብ!
+Wir kochen zusammen. – Gute Idee! ||| We cook together. – Good idea! ||| አብረን እናበስል። – ጥሩ ሐሳብ!
+## Ja, gern.
+Möchtest du mitkommen? – Ja, gern. ||| Would you like to come along? – Yes, I'd like to. ||| አብረህ መምጣት ትፈልጋለህ? – አዎ፣ በደስታ።
+Noch einen Tee? – Ja, gern. ||| Another tea? – Yes, please. ||| ሌላ ሻይ? – አዎ፣ በደስታ።
+## Vielleicht.
+Kommst du am Samstag? – Vielleicht. ||| Are you coming on Saturday? – Maybe. ||| ቅዳሜ ትመጣለህ? – ምናልባት።
+Vielleicht gehe ich morgen ins Kino. ||| Maybe I'll go to the cinema tomorrow. ||| ምናልባት ነገ ሲኒማ ቤት እሄዳለሁ።
+## Tut mir leid, ich kann leider nicht.
+Kommst du heute? – Tut mir leid, ich kann leider nicht. ||| Are you coming today? – Sorry, I can't. ||| ዛሬ ትመጣለህ? – ይቅርታ፣ እንደ አለመታደል ሆኖ አልችልም።
+Tut mir leid, ich kann leider nicht. Ich muss arbeiten. ||| Sorry, I can't. I have to work. ||| ይቅርታ፣ እንደ አለመታደል ሆኖ አልችልም። መሥራት አለብኝ።
+## Am Abend habe ich keine Zeit.
+Am Abend habe ich keine Zeit, aber am Nachmittag. ||| I'm not free in the evening, but in the afternoon. ||| ማታ ጊዜ የለኝም፤ ከሰዓት በኋላ ግን አለኝ።
+Heute? Am Abend habe ich keine Zeit. ||| Today? I'm not free in the evening. ||| ዛሬ? ማታ ጊዜ የለኝም።
+## Wann denn?
+Ich habe morgen Zeit. – Wann denn? ||| I have time tomorrow. – When, then? ||| ነገ ጊዜ አለኝ። – እንግዲያው መቼ?
+Wir treffen uns. – Gut! Wann denn? ||| Let's meet. – Good! When, then? ||| እንገናኝ። – ጥሩ! እንግዲያው መቼ?
+## Um wie viel Uhr?
+Wir treffen uns am Samstag. – Um wie viel Uhr? ||| We meet on Saturday. – At what time? ||| ቅዳሜ እንገናኛለን። – ስንት ሰዓት ላይ?
+Um wie viel Uhr beginnt der Film? ||| At what time does the film begin? ||| ፊልሙ ስንት ሰዓት ላይ ይጀምራል?
+## Bis dann!
+Also um acht im Café. Bis dann! ||| So at eight in the café. See you then! ||| እንግዲያው ሁለት ሰዓት ካፌው ውስጥ። እስከዚያው!
+Gut, bis dann! ||| Good, see you then! ||| ጥሩ፣ እንገናኛለን!
+
+# 5.15 wissen (to know)
+## wissen
+Ich will das wissen. ||| I want to know that. ||| ያንን ማወቅ እፈልጋለሁ።
+Wir müssen die Antwort wissen. ||| We have to know the answer. ||| መልሱን ማወቅ አለብን።
+Woher soll ich das wissen? ||| How should I know that? ||| ያንን እኔ ከየት አውቃለሁ?
+## ich weiß
+Ich weiß die Antwort. ||| I know the answer. ||| መልሱን አውቃለሁ።
+Ich weiß es nicht. ||| I don't know. ||| አላውቀውም።
+Ich weiß, wo er wohnt. ||| I know where he lives. ||| የት እንደሚኖር አውቃለሁ።
+## du weißt
+Du weißt viel. ||| You know a lot. ||| ብዙ ታውቃለህ።
+Weißt du die Antwort? ||| Do you know the answer? ||| መልሱን ታውቃለህ?
+Du weißt, ich mag Kaffee. ||| You know I like coffee. ||| ቡና እንደምወድ ታውቃለህ።
+## er weiß
+Er weiß alles. ||| He knows everything. ||| ሁሉንም ነገር ያውቃል።
+Er weiß nicht, wo das Kino ist. ||| He doesn't know where the cinema is. ||| ሲኒማ ቤቱ የት እንዳለ አያውቅም።
+Weiß er das? ||| Does he know that? ||| ይህን ያውቃል?
+## wir wissen
+Wir wissen die Adresse. ||| We know the address. ||| አድራሻውን እናውቃለን።
+Wir wissen es noch nicht. ||| We don't know yet. ||| ገና አናውቅም።
+Wir wissen, wann der Zug kommt. ||| We know when the train comes. ||| ባቡሩ መቼ እንደሚመጣ እናውቃለን።
+## Das weiß ich noch nicht.
+Kommst du am Samstag? – Das weiß ich noch nicht. ||| Are you coming on Saturday? – I don't know yet. ||| ቅዳሜ ትመጣለህ? – ያንን ገና አላውቅም።
+Wann fährst du? – Das weiß ich noch nicht. ||| When are you going? – I don't know yet. ||| መቼ ትሄዳለህ? – ያንን ገና አላውቅም።
+## Weißt du, wo das Kino ist?
+Entschuldigung, weißt du, wo das Kino ist? ||| Excuse me, do you know where the cinema is? ||| ይቅርታ፣ ሲኒማ ቤቱ የት እንዳለ ታውቃለህ?
+Weißt du, wo das Kino ist? – Ja, neben dem Café. ||| Do you know where the cinema is? – Yes, next to the café. ||| ሲኒማ ቤቱ የት እንዳለ ታውቂያለሽ? – አዎ፣ ከካፌው አጠገብ።

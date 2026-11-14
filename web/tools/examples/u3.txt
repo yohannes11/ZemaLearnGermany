@@ -1,0 +1,596 @@
+# Unit 3: example sentences for every word. German ||| English ||| Amharic
+# Three for a single word, two for a phrase; A1 German that uses the course's own words.
+
+# 3.1 Going shopping
+## die Nachbarin
+Meine Nachbarin heißt Frau Weber. ||| My neighbour is called Mrs Weber. ||| ጎረቤቴ ወይዘሮ ቬበር ይባላሉ።
+Die Nachbarin kauft Brot. ||| The neighbour is buying bread. ||| ጎረቤቷ ዳቦ እየገዛች ነው።
+Meine Nachbarin ist sehr nett. ||| My neighbour is very kind. ||| ጎረቤቴ በጣም ደግ ናት።
+## der Supermarkt
+Der Supermarkt ist neben der Schule. ||| The supermarket is next to the school. ||| ሱፐርማርኬቱ ከትምህርት ቤቱ አጠገብ ነው።
+Ich gehe in den Supermarkt. ||| I am going to the supermarket. ||| ወደ ሱፐርማርኬት እሄዳለሁ።
+Der Supermarkt ist am Sonntag zu. ||| The supermarket is closed on Sunday. ||| ሱፐርማርኬቱ እሑድ ዝግ ነው።
+## der Laden
+Der Laden ist klein. ||| The shop is small. ||| ሱቁ ትንሽ ነው።
+Der Laden öffnet um acht Uhr. ||| The shop opens at eight o'clock. ||| ሱቁ ሁለት ሰዓት ይከፈታል።
+Im Laden gibt es frisches Brot. ||| There is fresh bread in the shop. ||| በሱቁ ውስጥ ትኩስ ዳቦ አለ።
+## das Geschäft
+Das Geschäft ist neu. ||| The shop is new. ||| ሱቁ አዲስ ነው።
+Mein Onkel hat ein Geschäft. ||| My uncle has a business. ||| አጎቴ ንግድ አለው።
+Das Geschäft ist heute geschlossen. ||| The shop is closed today. ||| ሱቁ ዛሬ ዝግ ነው።
+## einkaufen gehen
+Ich gehe heute einkaufen. ||| I am going shopping today. ||| ዛሬ ለገበያ እሄዳለሁ።
+Gehst du mit mir einkaufen? ||| Are you going shopping with me? ||| ከእኔ ጋር ለገበያ ትሄዳለህ?
+Am Samstag gehen wir einkaufen. ||| On Saturday we go shopping. ||| ቅዳሜ ለገበያ እንሄዳለን።
+## brauchen
+Ich brauche Milch. ||| I need milk. ||| ወተት ያስፈልገኛል።
+Brauchst du Hilfe? ||| Do you need help? ||| እርዳታ ያስፈልግሃል?
+Wir brauchen drei Tomaten. ||| We need three tomatoes. ||| ሦስት ቲማቲሞች ያስፈልጉናል።
+## kaufen
+Ich kaufe Brot. ||| I am buying bread. ||| ዳቦ እገዛለሁ።
+Was kaufst du? ||| What are you buying? ||| ምን ትገዛለህ?
+Wir kaufen Obst im Supermarkt. ||| We buy fruit at the supermarket. ||| ፍራፍሬ ከሱፐርማርኬት እንገዛለን።
+## kosten
+Was kostet das Brot? ||| What does the bread cost? ||| ዳቦው ስንት ነው?
+Die Bananen kosten zwei Euro. ||| The bananas cost two euros. ||| ሙዞቹ ሁለት ዩሮ ናቸው።
+Das kostet nicht viel. ||| That does not cost much. ||| ያ ብዙ አያወጣም።
+## die Kartoffel
+Die Kartoffel ist groß. ||| The potato is big. ||| ድንቹ ትልቅ ነው።
+Ich koche Kartoffeln. ||| I am cooking potatoes. ||| ድንች እያበሰልኩ ነው።
+Ein Kilo Kartoffeln, bitte. ||| A kilo of potatoes, please. ||| እባክዎ አንድ ኪሎ ድንች።
+## die Tomate
+Die Tomate ist rot. ||| The tomato is red. ||| ቲማቲሙ ቀይ ነው።
+Ich kaufe Tomaten. ||| I am buying tomatoes. ||| ቲማቲም እገዛለሁ።
+Die Tomaten sind frisch. ||| The tomatoes are fresh. ||| ቲማቲሞቹ ትኩስ ናቸው።
+## die Banane
+Die Banane ist gelb. ||| The banana is yellow. ||| ሙዙ ቢጫ ነው።
+Ich esse eine Banane. ||| I am eating a banana. ||| ሙዝ እየበላሁ ነው።
+Die Bananen kommen aus Äthiopien. ||| The bananas come from Ethiopia. ||| ሙዞቹ ከኢትዮጵያ የመጡ ናቸው።
+## der Saft
+Der Saft ist kalt. ||| The juice is cold. ||| ጭማቂው ቀዝቃዛ ነው።
+Ich trinke einen Saft. ||| I am drinking a juice. ||| ጭማቂ እየጠጣሁ ነው።
+Möchtest du Saft? ||| Would you like juice? ||| ጭማቂ ትፈልጋለህ?
+
+# 3.2 Fruit & vegetables
+## die Birne
+Die Birne ist süß. ||| The pear is sweet. ||| ፒሩ ጣፋጭ ነው።
+Ich esse eine Birne. ||| I am eating a pear. ||| ፒር እየበላሁ ነው።
+Die Birnen sind grün. ||| The pears are green. ||| ፒሮቹ አረንጓዴ ናቸው።
+## die Orange
+Die Orange ist süß. ||| The orange is sweet. ||| ብርቱካኑ ጣፋጭ ነው።
+Ich kaufe Orangen. ||| I am buying oranges. ||| ብርቱካን እገዛለሁ።
+Die Orangen kommen aus Spanien. ||| The oranges come from Spain. ||| ብርቱካኖቹ ከስፔን የመጡ ናቸው።
+## die Erdbeere
+Die Erdbeere ist rot. ||| The strawberry is red. ||| እንጆሪው ቀይ ነው።
+Ich esse gern Erdbeeren. ||| I like eating strawberries. ||| እንጆሪ መብላት እወዳለሁ።
+Die Erdbeeren sind lecker. ||| The strawberries are tasty. ||| እንጆሪዎቹ ጣፋጭ ናቸው።
+## die Traube
+Die Traube ist grün. ||| The grape is green. ||| ወይኑ አረንጓዴ ነው።
+Ich esse Trauben. ||| I am eating grapes. ||| ወይን (ፍሬ) እየበላሁ ነው።
+Die Trauben sind süß. ||| The grapes are sweet. ||| የወይን ፍሬዎቹ ጣፋጭ ናቸው።
+## der/die Paprika
+Die Paprika ist rot. ||| The pepper is red. ||| ቃሪያው ቀይ ነው።
+Ich kaufe eine Paprika. ||| I am buying a pepper. ||| አንድ ቃሪያ እገዛለሁ።
+Der Salat hat Paprika und Gurke. ||| The salad has pepper and cucumber. ||| ሰላጣው ቃሪያና ኪያር አለው።
+## die Gurke
+Die Gurke ist grün. ||| The cucumber is green. ||| ኪያሩ አረንጓዴ ነው።
+Ich brauche eine Gurke. ||| I need a cucumber. ||| ኪያር ያስፈልገኛል።
+Die Gurke ist frisch. ||| The cucumber is fresh. ||| ኪያሩ ትኩስ ነው።
+## die Zwiebel
+Die Zwiebel ist rot. ||| The onion is red. ||| ሽንኩርቱ ቀይ ነው።
+Für Wot brauche ich viele Zwiebeln. ||| For wot I need a lot of onions. ||| ለወጥ ብዙ ሽንኩርት ያስፈልገኛል።
+Ein Kilo Zwiebeln, bitte. ||| A kilo of onions, please. ||| እባክዎ አንድ ኪሎ ሽንኩርት።
+
+# 3.3 A / an: ein & eine
+## ein
+Das ist ein Apfel. ||| That is an apple. ||| ያ ፖም ነው።
+Ich habe ein Buch. ||| I have a book. ||| አንድ መጽሐፍ አለኝ።
+Ein Kaffee, bitte. ||| A coffee, please. ||| እባክዎ አንድ ቡና።
+## eine
+Das ist eine Banane. ||| That is a banana. ||| ያ ሙዝ ነው።
+Ich habe eine Schwester. ||| I have a sister. ||| አንዲት እህት አለችኝ።
+Eine Tasse Tee, bitte. ||| A cup of tea, please. ||| እባክዎ አንድ ሲኒ ሻይ።
+## ein Apfel
+Hier ist ein Apfel für dich. ||| Here is an apple for you. ||| ለአንተ የሚሆን ፖም ይኸውልህ።
+Das ist ein Apfel aus Deutschland. ||| That is an apple from Germany. ||| ይህ ከጀርመን የመጣ ፖም ነው።
+## eine Banane
+Das ist eine Banane. Sie ist gelb. ||| That is a banana. It is yellow. ||| ይህ ሙዝ ነው። ቢጫ ነው።
+Ich möchte eine Banane, bitte. ||| I would like a banana, please. ||| እባክዎ አንድ ሙዝ እፈልጋለሁ።
+
+# 3.4 Food
+## die Nahrungsmittel
+Die Nahrungsmittel sind im Supermarkt. ||| The groceries are in the supermarket. ||| የምግብ ሸቀጦቹ በሱፐርማርኬት ውስጥ ናቸው።
+Wir kaufen Nahrungsmittel für die Woche. ||| We buy groceries for the week. ||| ለሳምንቱ የምግብ ሸቀጦች እንገዛለን።
+Brot und Reis sind Nahrungsmittel. ||| Bread and rice are foods. ||| ዳቦና ሩዝ ምግቦች ናቸው።
+## das Brötchen
+Ich esse ein Brötchen. ||| I am eating a bread roll. ||| ትንሽ ዳቦ እየበላሁ ነው።
+Zwei Brötchen, bitte. ||| Two bread rolls, please. ||| እባክዎ ሁለት ትንሽ ዳቦ።
+Das Brötchen ist frisch. ||| The bread roll is fresh. ||| ዳቦው ትኩስ ነው።
+## der Kuchen
+Der Kuchen ist süß. ||| The cake is sweet. ||| ኬኩ ጣፋጭ ነው።
+Meine Oma backt einen Kuchen. ||| My grandma is baking a cake. ||| አያቴ ኬክ እየጋገሩ ነው።
+Möchtest du Kuchen? ||| Would you like cake? ||| ኬክ ትፈልጋለህ?
+## der Joghurt
+Der Joghurt ist kalt. ||| The yoghurt is cold. ||| እርጎው ቀዝቃዛ ነው።
+Ich esse Joghurt mit Honig. ||| I eat yoghurt with honey. ||| እርጎ በማር እበላለሁ።
+Wir brauchen Joghurt. ||| We need yoghurt. ||| እርጎ ያስፈልገናል።
+## das Ei
+Ich esse ein Ei. ||| I am eating an egg. ||| እንቁላል እየበላሁ ነው።
+Das Ei ist weich. ||| The egg is soft. ||| እንቁላሉ ለስላሳ ነው።
+Zehn Eier, bitte. ||| Ten eggs, please. ||| እባክዎ አሥር እንቁላሎች።
+## der Reis
+Der Reis ist heiß. ||| The rice is hot. ||| ሩዙ ትኩስ ነው።
+Ich koche Reis. ||| I am cooking rice. ||| ሩዝ እያበሰልኩ ነው።
+Ein Kilo Reis, bitte. ||| A kilo of rice, please. ||| እባክዎ አንድ ኪሎ ሩዝ።
+## das Fleisch
+Das Fleisch ist frisch. ||| The meat is fresh. ||| ሥጋው ትኩስ ነው።
+Ich esse kein Fleisch. ||| I don't eat meat. ||| ሥጋ አልበላም።
+Für Tibs brauchen wir Fleisch. ||| For tibs we need meat. ||| ለጥብስ ሥጋ ያስፈልገናል።
+## der Fisch
+Der Fisch ist frisch. ||| The fish is fresh. ||| ዓሣው ትኩስ ነው።
+Ich esse gern Fisch. ||| I like eating fish. ||| ዓሣ መብላት እወዳለሁ።
+Der Fisch kommt aus dem Tanasee. ||| The fish comes from Lake Tana. ||| ዓሣው ከጣና ሐይቅ የመጣ ነው።
+## die Wurst
+Die Wurst ist lecker. ||| The sausage is tasty. ||| ቋሊማው ጣፋጭ ነው።
+Ich esse Brot mit Wurst. ||| I eat bread with sausage. ||| ዳቦ በቋሊማ እበላለሁ።
+In Deutschland isst man viel Wurst. ||| In Germany people eat a lot of sausage. ||| በጀርመን ብዙ ቋሊማ ይበላል።
+## Hast du Hunger?
+Hast du Hunger? – Ja, sehr! ||| Are you hungry? – Yes, very! ||| ርቦሃል? – አዎ፣ በጣም!
+Hast du Hunger? Es gibt Injera. ||| Are you hungry? There is injera. ||| ርቦሻል? እንጀራ አለ።
+## Ich habe Hunger.
+Ich habe Hunger. Was gibt es zu essen? ||| I am hungry. What is there to eat? ||| ርቦኛል። የሚበላ ምን አለ?
+Mama, ich habe Hunger! ||| Mum, I am hungry! ||| እማዬ፣ ርቦኛል!
+## Guten Appetit!
+Das Essen ist fertig. Guten Appetit! ||| The food is ready. Enjoy your meal! ||| ምግቡ ደርሷል። መልካም ምግብ!
+Guten Appetit! – Danke, gleichfalls! ||| Enjoy your meal! – Thanks, you too! ||| መልካም ምግብ! – አመሰግናለሁ፣ ለአንተም!
+
+# 3.5 No / not a: kein & keine
+## kein
+Ich habe kein Auto. ||| I don't have a car. ||| መኪና የለኝም።
+Das ist kein Tee, das ist Kaffee. ||| That is not tea, that is coffee. ||| ያ ሻይ አይደለም፤ ቡና ነው።
+Wir haben kein Brot. ||| We have no bread. ||| ዳቦ የለንም።
+## keine
+Ich habe keine Zeit. ||| I have no time. ||| ጊዜ የለኝም።
+Wir haben keine Milch. ||| We have no milk. ||| ወተት የለንም።
+Er hat keine Kinder. ||| He has no children. ||| ልጆች የሉትም።
+## Das ist kein Apfel.
+Das ist kein Apfel. Das ist eine Birne. ||| That is not an apple. That is a pear. ||| ያ ፖም አይደለም። ያ ፒር ነው።
+Ist das ein Apfel? – Nein, das ist kein Apfel. ||| Is that an apple? – No, that is not an apple. ||| ያ ፖም ነው? – አይ፣ ያ ፖም አይደለም።
+## Das ist keine Birne.
+Das ist keine Birne. Das ist ein Apfel. ||| That is not a pear. That is an apple. ||| ያ ፒር አይደለም። ያ ፖም ነው።
+Ist das eine Birne? – Nein, das ist keine Birne. ||| Is that a pear? – No, that is not a pear. ||| ያ ፒር ነው? – አይ፣ ያ ፒር አይደለም።
+## Ich möchte kein Stück Kuchen.
+Danke, ich möchte kein Stück Kuchen. ||| Thank you, I don't want a piece of cake. ||| አመሰግናለሁ፣ አንድም ቁራጭ ኬክ አልፈልግም።
+Ich habe keinen Hunger. Ich möchte kein Stück Kuchen. ||| I am not hungry. I don't want a piece of cake. ||| አልራበኝም። አንድም ቁራጭ ኬክ አልፈልግም።
+
+# 3.6 Article overview
+## der, die, das
+Der Tisch, die Tür, das Haus. ||| The table, the door, the house. ||| ጠረጴዛው፣ በሩ፣ ቤቱ።
+Der, die, das: Lerne jedes Nomen mit Artikel. ||| Der, die, das: learn every noun with its article. ||| der፣ die፣ das፦ እያንዳንዱን ስም ከመስተኣምሩ ጋር ተማር።
+## ein, eine
+Ein Apfel und eine Banane, bitte. ||| An apple and a banana, please. ||| እባክዎ አንድ ፖምና አንድ ሙዝ።
+Ich habe ein Kind und eine Katze. ||| I have a child and a cat. ||| አንድ ልጅና አንዲት ድመት አሉኝ።
+## mein, meine
+Das sind mein Vater und meine Mutter. ||| Those are my father and my mother. ||| እነዚህ አባቴና እናቴ ናቸው።
+Mein Bruder und meine Schwester wohnen hier. ||| My brother and my sister live here. ||| ወንድሜና እህቴ እዚህ ይኖራሉ።
+## kein, keine
+Ich habe kein Auto und keine Zeit. ||| I have no car and no time. ||| መኪናም ጊዜም የለኝም።
+Wir haben kein Brot und keine Milch. ||| We have no bread and no milk. ||| ዳቦም ወተትም የለንም።
+
+# 3.8 Drinks
+## das Bier
+Das Bier ist kalt. ||| The beer is cold. ||| ቢራው ቀዝቃዛ ነው።
+Ein Bier, bitte. ||| A beer, please. ||| እባክዎ አንድ ቢራ።
+Ich trinke kein Bier. ||| I don't drink beer. ||| ቢራ አልጠጣም።
+## das Mineralwasser
+Ein Mineralwasser, bitte. ||| A mineral water, please. ||| እባክዎ አንድ የታሸገ ውሃ።
+Das Mineralwasser ist kalt. ||| The mineral water is cold. ||| የታሸገው ውሃ ቀዝቃዛ ነው።
+Ich trinke viel Mineralwasser. ||| I drink a lot of mineral water. ||| ብዙ የታሸገ ውሃ እጠጣለሁ።
+## der Orangensaft
+Ich trinke Orangensaft zum Frühstück. ||| I drink orange juice for breakfast. ||| ለቁርስ የብርቱካን ጭማቂ እጠጣለሁ።
+Der Orangensaft ist frisch. ||| The orange juice is fresh. ||| የብርቱካን ጭማቂው ትኩስ ነው።
+Einen Orangensaft, bitte. ||| An orange juice, please. ||| እባክዎ አንድ የብርቱካን ጭማቂ።
+## Hast du Durst?
+Hast du Durst? Hier ist Wasser. ||| Are you thirsty? Here is water. ||| ጠምቶሃል? ውሃ ይኸው።
+Hast du Durst? – Ja, ein bisschen. ||| Are you thirsty? – Yes, a little. ||| ጠምቶሻል? – አዎ፣ ትንሽ።
+## Bist du durstig?
+Bist du durstig? Möchtest du Saft? ||| Are you thirsty? Would you like juice? ||| ጠምቶሃል? ጭማቂ ትፈልጋለህ?
+Bist du durstig? – Nein, danke. ||| Are you thirsty? – No, thank you. ||| ጠምቶሻል? – አይ፣ አመሰግናለሁ።
+## Ich habe Durst.
+Ich habe Durst. Ein Wasser, bitte. ||| I am thirsty. A water, please. ||| ጠምቶኛል። እባክዎ አንድ ውሃ።
+Es ist heiß und ich habe Durst. ||| It is hot and I am thirsty. ||| ሞቃት ነው፤ ጠምቶኛል።
+## Was möchtest du trinken?
+Was möchtest du trinken? – Einen Tee, bitte. ||| What would you like to drink? – A tea, please. ||| ምን መጠጣት ትፈልጋለህ? – እባክህ አንድ ሻይ።
+Was möchtest du trinken, Kaffee oder Saft? ||| What would you like to drink, coffee or juice? ||| ምን መጠጣት ትፈልጊያለሽ፣ ቡና ወይስ ጭማቂ?
+## Was möchten Sie trinken?
+Guten Tag! Was möchten Sie trinken? ||| Good day! What would you like to drink? ||| ጤና ይስጥልኝ! ምን መጠጣት ይፈልጋሉ?
+Was möchten Sie trinken? – Ein Mineralwasser, bitte. ||| What would you like to drink? – A mineral water, please. ||| ምን መጠጣት ይፈልጋሉ? – እባክዎ አንድ የታሸገ ውሃ።
+## Schmeckt gut!
+Der Kuchen? Schmeckt gut! ||| The cake? Tastes good! ||| ኬኩ? ይጣፍጣል!
+Mmh, schmeckt gut! Danke! ||| Mmm, tastes good! Thanks! ||| እምም፣ ይጣፍጣል! አመሰግናለሁ!
+## Prost!
+Prost! Auf deinen Geburtstag! ||| Cheers! To your birthday! ||| ለጤናችን! ለልደትህ!
+Wir trinken Saft. Prost! ||| We are drinking juice. Cheers! ||| ጭማቂ እየጠጣን ነው። ለጤናችን!
+
+# 3.9 The verb haben (to have)
+## haben
+Wir haben ein Haus. ||| We have a house. ||| ቤት አለን።
+Haben Sie Zeit? ||| Do you have time? ||| ጊዜ አለዎት?
+Die Kinder haben Hunger. ||| The children are hungry. ||| ልጆቹ ርቧቸዋል።
+## ich habe
+Ich habe ein Auto. ||| I have a car. ||| መኪና አለኝ።
+Ich habe zwei Brüder. ||| I have two brothers. ||| ሁለት ወንድሞች አሉኝ።
+Ich habe heute Zeit. ||| I have time today. ||| ዛሬ ጊዜ አለኝ።
+## du hast
+Du hast ein schönes Haus. ||| You have a beautiful house. ||| ቆንጆ ቤት አለህ።
+Hast du Geschwister? ||| Do you have siblings? ||| ወንድሞችና እህቶች አሉህ?
+Du hast recht. ||| You are right. ||| ልክ ነህ።
+## er hat
+Er hat einen Hund. ||| He has a dog. ||| ውሻ አለው።
+Er hat keine Zeit. ||| He has no time. ||| ጊዜ የለውም።
+Er hat zwei Kinder. ||| He has two children. ||| ሁለት ልጆች አሉት።
+## wir haben
+Wir haben Hunger. ||| We are hungry. ||| ርቦናል።
+Wir haben einen Garten. ||| We have a garden. ||| የአትክልት ቦታ አለን።
+Wir haben heute Deutschkurs. ||| We have German class today. ||| ዛሬ የጀርመንኛ ኮርስ አለን።
+## ihr habt
+Habt ihr Zeit? ||| Do you all have time? ||| ጊዜ አላችሁ?
+Ihr habt ein schönes Haus. ||| You all have a beautiful house. ||| ቆንጆ ቤት አላችሁ።
+Habt ihr Kinder? ||| Do you all have children? ||| ልጆች አሏችሁ?
+## sie haben
+Sie haben drei Kinder. ||| They have three children. ||| ሦስት ልጆች አሏቸው።
+Sie haben ein Geschäft. ||| They have a business. ||| ንግድ አላቸው።
+Die Nachbarn haben einen Hund. ||| The neighbours have a dog. ||| ጎረቤቶቹ ውሻ አላቸው።
+
+# 3.11 Numbers 20–100
+## einundzwanzig
+Ich bin einundzwanzig Jahre alt. ||| I am twenty-one years old. ||| የሃያ አንድ ዓመት ወጣት ነኝ።
+Das kostet einundzwanzig Euro. ||| That costs twenty-one euros. ||| ይህ ሃያ አንድ ዩሮ ያወጣል።
+Der Bus Nummer einundzwanzig kommt. ||| Bus number twenty-one is coming. ||| ቁጥር ሃያ አንድ አውቶቡስ እየመጣ ነው።
+## zweiundzwanzig
+Meine Schwester ist zweiundzwanzig. ||| My sister is twenty-two. ||| እህቴ ሃያ ሁለት ዓመቷ ነው።
+Wir sind zweiundzwanzig im Kurs. ||| There are twenty-two of us in the course. ||| በኮርሱ ውስጥ ሃያ ሁለት ነን።
+Ich wohne in der Hausnummer zweiundzwanzig. ||| I live at house number twenty-two. ||| የምኖረው በቤት ቁጥር ሃያ ሁለት ነው።
+## dreißig
+Ich bin dreißig Jahre alt. ||| I am thirty years old. ||| የሠላሳ ዓመት ሰው ነኝ።
+Der Monat hat dreißig Tage. ||| The month has thirty days. ||| ወሩ ሠላሳ ቀናት አሉት።
+Das kostet dreißig Euro. ||| That costs thirty euros. ||| ይህ ሠላሳ ዩሮ ያወጣል።
+## vierzig
+Mein Vater ist vierzig. ||| My father is forty. ||| አባቴ አርባ ዓመቱ ነው።
+Wir warten vierzig Minuten. ||| We wait forty minutes. ||| አርባ ደቂቃ እንጠብቃለን።
+Das kostet vierzig Euro. ||| That costs forty euros. ||| ይህ አርባ ዩሮ ያወጣል።
+## fünfzig
+Meine Mutter ist fünfzig. ||| My mother is fifty. ||| እናቴ ሃምሳ ዓመቷ ነው።
+Das Zimmer kostet fünfzig Euro. ||| The room costs fifty euros. ||| ክፍሉ ሃምሳ ዩሮ ያወጣል።
+Es sind fünfzig Kilometer. ||| It is fifty kilometres. ||| ሃምሳ ኪሎ ሜትር ነው።
+## sechzig
+Mein Onkel ist sechzig Jahre alt. ||| My uncle is sixty years old. ||| አጎቴ ስድሳ ዓመቱ ነው።
+Eine Stunde hat sechzig Minuten. ||| An hour has sixty minutes. ||| አንድ ሰዓት ስድሳ ደቂቃዎች አሉት።
+Das kostet sechzig Euro. ||| That costs sixty euros. ||| ይህ ስድሳ ዩሮ ያወጣል።
+## siebzig
+Mein Opa ist siebzig. ||| My grandpa is seventy. ||| አያቴ ሰባ ዓመታቸው ነው።
+Das kostet siebzig Euro. ||| That costs seventy euros. ||| ይህ ሰባ ዩሮ ያወጣል።
+Es sind siebzig Kilometer bis Adama. ||| It is seventy kilometres to Adama. ||| እስከ አዳማ ሰባ ኪሎ ሜትር ነው።
+## achtzig
+Meine Oma ist achtzig. ||| My grandma is eighty. ||| አያቴ ሰማንያ ዓመታቸው ነው።
+Das Auto fährt achtzig. ||| The car is going at eighty. ||| መኪናው በሰዓት ሰማንያ እየሄደ ነው።
+Das kostet achtzig Euro. ||| That costs eighty euros. ||| ይህ ሰማንያ ዩሮ ያወጣል።
+## neunzig
+Mein Urgroßvater ist neunzig. ||| My great-grandfather is ninety. ||| ቅድመ አያቴ ዘጠና ዓመታቸው ነው።
+Das kostet neunzig Euro. ||| That costs ninety euros. ||| ይህ ዘጠና ዩሮ ያወጣል።
+Der Film dauert neunzig Minuten. ||| The film lasts ninety minutes. ||| ፊልሙ ዘጠና ደቂቃ ይፈጃል።
+## hundert
+Das kostet hundert Euro. ||| That costs a hundred euros. ||| ይህ መቶ ዩሮ ያወጣል።
+Ich zähle bis hundert. ||| I count to a hundred. ||| እስከ መቶ እቆጥራለሁ።
+Hundert Meter, dann links. ||| A hundred metres, then left. ||| መቶ ሜትር፣ ከዚያ ወደ ግራ።
+
+# 3.12 Prices
+## der Preis
+Der Preis ist gut. ||| The price is good. ||| ዋጋው ጥሩ ነው።
+Was ist der Preis? ||| What is the price? ||| ዋጋው ስንት ነው?
+Der Preis ist zu hoch. ||| The price is too high. ||| ዋጋው በጣም ውድ ነው።
+## der Euro
+Das kostet ein Euro. ||| That costs one euro. ||| ይህ አንድ ዩሮ ያወጣል።
+Ich habe zehn Euro. ||| I have ten euros. ||| አሥር ዩሮ አለኝ።
+In Deutschland bezahlt man mit Euro. ||| In Germany people pay with euros. ||| በጀርመን በዩሮ ይከፈላል።
+## der Cent
+Das kostet fünfzig Cent. ||| That costs fifty cents. ||| ይህ ሃምሳ ሳንቲም ያወጣል።
+Ein Euro hat hundert Cent. ||| A euro has a hundred cents. ||| አንድ ዩሮ መቶ ሳንቲም አለው።
+Hast du zwanzig Cent? ||| Do you have twenty cents? ||| ሃያ ሳንቲም አለህ?
+## das Kilo
+Ein Kilo Tomaten, bitte. ||| A kilo of tomatoes, please. ||| እባክዎ አንድ ኪሎ ቲማቲም።
+Das Kilo kostet zwei Euro. ||| The kilo costs two euros. ||| ኪሎው ሁለት ዩሮ ነው።
+Ich brauche zwei Kilo Reis. ||| I need two kilos of rice. ||| ሁለት ኪሎ ሩዝ ያስፈልገኛል።
+## das Wechselgeld
+Hier ist Ihr Wechselgeld. ||| Here is your change. ||| መልስዎ ይኸው።
+Das Wechselgeld stimmt nicht. ||| The change is not right. ||| መልሱ ትክክል አይደለም።
+Vergiss das Wechselgeld nicht! ||| Don't forget the change! ||| መልሱን አትርሳ!
+## Wie viel kostet das?
+Wie viel kostet das? – Drei Euro. ||| How much does that cost? – Three euros. ||| ይህ ስንት ነው? – ሦስት ዩሮ።
+Entschuldigung, wie viel kostet das Brot? ||| Excuse me, how much does the bread cost? ||| ይቅርታ፣ ዳቦው ስንት ነው?
+## Was kostet das?
+Was kostet das? – Das kostet fünf Euro. ||| What does that cost? – That costs five euros. ||| ይህ ስንት ነው? – አምስት ዩሮ ነው።
+Die Bananen, was kostet das Kilo? ||| The bananas, what does the kilo cost? ||| ሙዙ፣ ኪሎው ስንት ነው?
+## Das kostet …
+Das kostet zwei Euro fünfzig. ||| That costs two euros fifty. ||| ይህ ሁለት ዩሮ ከሃምሳ ነው።
+Das kostet nicht viel, nur ein Euro. ||| That doesn't cost much, only one euro. ||| ብዙ አያወጣም፤ አንድ ዩሮ ብቻ ነው።
+## Das macht …
+Das macht zehn Euro, bitte. ||| That comes to ten euros, please. ||| በአጠቃላይ አሥር ዩሮ ነው፣ እባክዎ።
+Brot und Milch? Das macht vier Euro. ||| Bread and milk? That comes to four euros. ||| ዳቦና ወተት? በአጠቃላይ አራት ዩሮ ይሆናል።
+
+# 3.13 What do you like to eat?
+## Was isst du gerne?
+Was isst du gerne? – Ich esse gerne Injera. ||| What do you like to eat? – I like to eat injera. ||| ምን መብላት ትወዳለህ? – እንጀራ መብላት እወዳለሁ።
+Was isst du gerne zum Frühstück? ||| What do you like to eat for breakfast? ||| ለቁርስ ምን መብላት ትወጃለሽ?
+## Was trinkst du gerne?
+Was trinkst du gerne? – Kaffee. ||| What do you like to drink? – Coffee. ||| ምን መጠጣት ትወዳለህ? – ቡና።
+Was trinkst du gerne am Morgen? ||| What do you like to drink in the morning? ||| ጠዋት ምን መጠጣት ትወጃለሽ?
+## Isst du gerne Fisch?
+Isst du gerne Fisch? – Ja, sehr gerne. ||| Do you like to eat fish? – Yes, very much. ||| ዓሣ መብላት ትወዳለህ? – አዎ፣ በጣም።
+Isst du gerne Fisch oder Fleisch? ||| Do you like to eat fish or meat? ||| ዓሣ ወይስ ሥጋ መብላት ትወጃለሽ?
+## Trinkst du gerne Tee?
+Trinkst du gerne Tee? – Ja, mit Milch. ||| Do you like to drink tea? – Yes, with milk. ||| ሻይ መጠጣት ትወዳለህ? – አዎ፣ በወተት።
+Trinkst du gerne Tee oder Kaffee? ||| Do you like to drink tea or coffee? ||| ሻይ ወይስ ቡና መጠጣት ትወጃለሽ?
+## Ja, ich esse gerne Fisch.
+Ja, ich esse gerne Fisch, aber kein Fleisch. ||| Yes, I like to eat fish, but not meat. ||| አዎ፣ ዓሣ መብላት እወዳለሁ፤ ሥጋ ግን አልበላም።
+Isst du gerne Fisch? – Ja, ich esse gerne Fisch. ||| Do you like to eat fish? – Yes, I like to eat fish. ||| ዓሣ መብላት ትወዳለህ? – አዎ፣ ዓሣ መብላት እወዳለሁ።
+## Nein, ich trinke nicht gerne Tee.
+Nein, ich trinke nicht gerne Tee. Ich trinke Kaffee. ||| No, I don't like to drink tea. I drink coffee. ||| አይ፣ ሻይ መጠጣት አልወድም። ቡና እጠጣለሁ።
+Trinkst du gerne Tee? – Nein, ich trinke nicht gerne Tee. ||| Do you like to drink tea? – No, I don't like to drink tea. ||| ሻይ መጠጣት ትወዳለህ? – አይ፣ ሻይ መጠጣት አልወድም።
+## Was ist dein Lieblingsessen?
+Was ist dein Lieblingsessen? – Doro Wot! ||| What is your favourite food? – Doro wot! ||| የምትወደው ምግብ ምንድን ነው? – ዶሮ ወጥ!
+Was ist dein Lieblingsessen? – Pizza. ||| What is your favourite food? – Pizza. ||| የምትወጂው ምግብ ምንድን ነው? – ፒዛ።
+
+# 3.14 The verb essen (to eat)
+## essen
+Wir essen um sieben Uhr. ||| We eat at seven o'clock. ||| አንድ ሰዓት እንበላለን።
+Was möchtest du essen? ||| What would you like to eat? ||| ምን መብላት ትፈልጋለህ?
+In Äthiopien essen wir Injera. ||| In Ethiopia we eat injera. ||| በኢትዮጵያ እንጀራ እንበላለን።
+## ich esse
+Ich esse einen Apfel. ||| I am eating an apple. ||| ፖም እየበላሁ ነው።
+Ich esse gern Reis. ||| I like eating rice. ||| ሩዝ መብላት እወዳለሁ።
+Ich esse kein Fleisch. ||| I don't eat meat. ||| ሥጋ አልበላም።
+## du isst
+Du isst sehr schnell. ||| You eat very fast. ||| በጣም በፍጥነት ትበላለህ።
+Was isst du? ||| What are you eating? ||| ምን እየበላህ ነው?
+Isst du Fisch? ||| Do you eat fish? ||| ዓሣ ትበላለህ?
+## sie isst
+Sie isst einen Salat. ||| She is eating a salad. ||| ሰላጣ እየበላች ነው።
+Sie isst kein Fleisch. ||| She does not eat meat. ||| ሥጋ አትበላም።
+Meine Tochter isst gern Eis. ||| My daughter likes eating ice cream. ||| ሴት ልጄ አይስክሬም መብላት ትወዳለች።
+## wir essen
+Wir essen zusammen. ||| We eat together. ||| አብረን እንበላለን።
+Wir essen Injera mit Wot. ||| We eat injera with wot. ||| እንጀራ በወጥ እንበላለን።
+Am Sonntag essen wir bei Oma. ||| On Sunday we eat at grandma's. ||| እሑድ አያቴ ጋ እንበላለን።
+## ihr esst
+Was esst ihr heute? ||| What are you all eating today? ||| ዛሬ ምን ትበላላችሁ?
+Ihr esst viel Obst. ||| You all eat a lot of fruit. ||| ብዙ ፍራፍሬ ትበላላችሁ።
+Esst ihr gern Fisch? ||| Do you all like eating fish? ||| ዓሣ መብላት ትወዳላችሁ?
+## sie essen
+Die Kinder essen Kuchen. ||| The children are eating cake. ||| ልጆቹ ኬክ እየበሉ ነው።
+Sie essen im Restaurant. ||| They are eating at the restaurant. ||| ምግብ ቤት ውስጥ እየበሉ ነው።
+Meine Eltern essen spät. ||| My parents eat late. ||| ወላጆቼ ዘግይተው ይበላሉ።
+
+# 3.15 At the restaurant
+## der Kellner
+Der Kellner bringt das Essen. ||| The waiter brings the food. ||| አስተናጋጁ ምግቡን ያመጣል።
+Der Kellner ist sehr freundlich. ||| The waiter is very friendly. ||| አስተናጋጁ በጣም ተግባቢ ነው።
+Wo ist der Kellner? ||| Where is the waiter? ||| አስተናጋጁ የት ነው?
+## die Gäste
+Die Gäste kommen um acht. ||| The guests come at eight. ||| እንግዶቹ ሁለት ሰዓት ይመጣሉ።
+Die Gäste essen und trinken. ||| The guests eat and drink. ||| እንግዶቹ ይበላሉ ይጠጣሉም።
+Wir haben heute Gäste. ||| We have guests today. ||| ዛሬ እንግዶች አሉን።
+## das Menü
+Das Menü kostet zwanzig Euro. ||| The set menu costs twenty euros. ||| ሜኑው ሃያ ዩሮ ያወጣል።
+Ich nehme das Menü. ||| I'll have the set menu. ||| ሜኑውን እወስዳለሁ።
+Das Menü ist heute Fisch. ||| The set menu today is fish. ||| የዛሬው ሜኑ ዓሣ ነው።
+## die Speise, das Essen
+Das Essen ist fertig. ||| The food is ready. ||| ምግቡ ደርሷል።
+Die Speise ist sehr lecker. ||| The dish is very tasty. ||| ምግቡ በጣም ጣፋጭ ነው።
+Das Essen im Restaurant ist gut. ||| The food at the restaurant is good. ||| የምግብ ቤቱ ምግብ ጥሩ ነው።
+## die Getränke
+Die Getränke sind kalt. ||| The drinks are cold. ||| መጠጦቹ ቀዝቃዛ ናቸው።
+Die Getränke kommen gleich. ||| The drinks are coming right away. ||| መጠጦቹ አሁኑኑ ይመጣሉ።
+Was kosten die Getränke? ||| What do the drinks cost? ||| መጠጦቹ ስንት ናቸው?
+## der Nachtisch, die Nachspeise
+Zum Nachtisch gibt es Eis. ||| For dessert there is ice cream. ||| ከምግብ በኋላ አይስክሬም አለ።
+Möchten Sie eine Nachspeise? ||| Would you like a dessert? ||| ከምግብ በኋላ የሚበላ ጣፋጭ ይፈልጋሉ?
+Der Nachtisch ist sehr süß. ||| The dessert is very sweet. ||| ጣፋጩ በጣም ጣፋጭ ነው።
+## bestellen
+Ich möchte bestellen, bitte. ||| I would like to order, please. ||| ማዘዝ እፈልጋለሁ፣ እባክዎ።
+Wir bestellen eine Pizza. ||| We are ordering a pizza. ||| ፒዛ እናዝዛለን።
+Was bestellst du? ||| What are you ordering? ||| ምን ታዛለህ?
+## bereit
+Sind Sie bereit? ||| Are you ready? ||| ዝግጁ ነዎት?
+Das Essen ist bereit. ||| The food is ready. ||| ምግቡ ዝግጁ ነው።
+Ich bin bereit. ||| I am ready. ||| ዝግጁ ነኝ።
+## köstlich
+Das Essen ist köstlich! ||| The food is delicious! ||| ምግቡ በጣም ጣፋጭ ነው!
+Der Kuchen ist köstlich. ||| The cake is delicious. ||| ኬኩ በጣም ጣፋጭ ነው።
+Doro Wot ist köstlich. ||| Doro wot is delicious. ||| ዶሮ ወጥ በጣም ጣፋጭ ነው።
+## die Rechnung
+Die Rechnung, bitte! ||| The bill, please! ||| ሂሳቡን እባክዎ!
+Die Rechnung ist hoch. ||| The bill is high. ||| ሂሳቡ ብዙ ነው።
+Ich bezahle die Rechnung. ||| I'll pay the bill. ||| ሂሳቡን እኔ እከፍላለሁ።
+## bekommen
+Was bekommen Sie? ||| What would you like? (What do you get?) ||| ምን ይፈልጋሉ?
+Ich bekomme einen Kaffee. ||| I'll get a coffee. ||| አንድ ቡና ይሁንልኝ።
+Wir bekommen heute Besuch. ||| We are getting visitors today. ||| ዛሬ እንግዶች ይመጡልናል።
+## das Bargeld
+Ich habe kein Bargeld. ||| I have no cash. ||| ጥሬ ገንዘብ የለኝም።
+Zahlen Sie mit Bargeld? ||| Are you paying in cash? ||| በጥሬ ገንዘብ ነው የሚከፍሉት?
+Das Bargeld ist in der Tasche. ||| The cash is in the bag. ||| ጥሬ ገንዘቡ ቦርሳው ውስጥ ነው።
+## die Kreditkarte
+Kann ich mit Kreditkarte zahlen? ||| Can I pay by credit card? ||| በክሬዲት ካርድ መክፈል እችላለሁ?
+Meine Kreditkarte ist neu. ||| My credit card is new. ||| የክሬዲት ካርዴ አዲስ ነው።
+Ich habe keine Kreditkarte. ||| I don't have a credit card. ||| የክሬዲት ካርድ የለኝም።
+## das Trinkgeld
+In Deutschland gibt man Trinkgeld. ||| In Germany people give a tip. ||| በጀርመን ጉርሻ ይሰጣል።
+Das ist Ihr Trinkgeld. ||| That is your tip. ||| ይህ ጉርሻዎ ነው።
+Wie viel Trinkgeld gibst du? ||| How much tip do you give? ||| ምን ያህል ጉርሻ ትሰጣለህ?
+## etwas zum Essen
+Ich möchte etwas zum Essen. ||| I would like something to eat. ||| የሚበላ ነገር እፈልጋለሁ።
+Hast du etwas zum Essen? ||| Do you have something to eat? ||| የሚበላ ነገር አለህ?
+## etwas zum Trinken
+Möchten Sie etwas zum Trinken? ||| Would you like something to drink? ||| የሚጠጣ ነገር ይፈልጋሉ?
+Ich brauche etwas zum Trinken. ||| I need something to drink. ||| የሚጠጣ ነገር ያስፈልገኛል።
+## ein Glas Wein
+Ich nehme ein Glas Wein. ||| I'll have a glass of wine. ||| አንድ ብርጭቆ ወይን ጠጅ እወስዳለሁ።
+Möchtest du ein Glas Wein? ||| Would you like a glass of wine? ||| አንድ ብርጭቆ ወይን ጠጅ ትፈልጋለህ?
+## Was darf es sein?
+Guten Abend! Was darf es sein? ||| Good evening! What can I get you? ||| እንደምን አመሹ! ምን ልታዘዝ?
+Was darf es sein? – Einen Kaffee, bitte. ||| What can I get you? – A coffee, please. ||| ምን ልታዘዝ? – እባክዎ አንድ ቡና።
+## Ich möchte … bitte.
+Ich möchte einen Tee, bitte. ||| I would like a tea, please. ||| አንድ ሻይ እፈልጋለሁ፣ እባክዎ።
+Ich möchte die Suppe, bitte. ||| I would like the soup, please. ||| ሾርባውን እፈልጋለሁ፣ እባክዎ።
+## Ich nehme …
+Ich nehme den Fisch. ||| I'll have the fish. ||| ዓሣውን እወስዳለሁ።
+Ich nehme einen Orangensaft. ||| I'll have an orange juice. ||| የብርቱካን ጭማቂ እወስዳለሁ።
+## Kommt gleich!
+Ein Wasser, bitte. – Kommt gleich! ||| A water, please. – Coming right up! ||| እባክዎ አንድ ውሃ። – አሁኑኑ ይደርሳል!
+Die Rechnung? Kommt gleich! ||| The bill? Coming right up! ||| ሂሳቡ? አሁኑኑ ይደርሳል!
+## In Ordnung?
+Ich bringe Wasser. In Ordnung? ||| I'll bring water. All right? ||| ውሃ አመጣለሁ። እሺ?
+Wir essen um acht. In Ordnung? ||| We eat at eight. All right? ||| ሁለት ሰዓት እንበላለን። ደህና ነው?
+## Können wir bitte die Rechnung bekommen?
+Entschuldigung! Können wir bitte die Rechnung bekommen? ||| Excuse me! Can we have the bill, please? ||| ይቅርታ! እባክዎ ሂሳቡን ሊያመጡልን ይችላሉ?
+Das Essen war gut. Können wir bitte die Rechnung bekommen? ||| The food was good. Can we have the bill, please? ||| ምግቡ ጥሩ ነበር። እባክዎ ሂሳቡን ሊያመጡልን ይችላሉ?
+## Zahlen Sie mit Karte oder Bargeld?
+Das macht 30 Euro. Zahlen Sie mit Karte oder Bargeld? ||| That comes to 30 euros. Are you paying by card or in cash? ||| በአጠቃላይ 30 ዩሮ ነው። በካርድ ነው ወይስ በጥሬ ገንዘብ የሚከፍሉት?
+Zahlen Sie mit Karte oder Bargeld? – Mit Karte, bitte. ||| Are you paying by card or in cash? – By card, please. ||| በካርድ ነው ወይስ በጥሬ ገንዘብ የሚከፍሉት? – በካርድ፣ እባክዎ።
+## Stimmt so.
+Das macht 18 Euro. – Hier sind 20. Stimmt so. ||| That comes to 18 euros. – Here are 20. Keep the change. ||| በአጠቃላይ 18 ዩሮ ነው። – 20 ይኸው። መልሱን ያስቀምጡት።
+Danke, stimmt so! ||| Thanks, keep the change! ||| አመሰግናለሁ፣ መልሱን ያስቀምጡት!
+
+# 3.16 I like … (mögen)
+## mögen
+Wir mögen Kaffee. ||| We like coffee. ||| ቡና እንወዳለን።
+Die Kinder mögen Eis. ||| The children like ice cream. ||| ልጆቹ አይስክሬም ይወዳሉ።
+Mögen Sie Fisch? ||| Do you like fish? ||| ዓሣ ይወዳሉ?
+## ich mag
+Ich mag Bananen. ||| I like bananas. ||| ሙዝ እወዳለሁ።
+Ich mag dich. ||| I like you. ||| እወድሃለሁ።
+Ich mag keinen Tee. ||| I don't like tea. ||| ሻይ አልወድም።
+## du magst
+Magst du Kuchen? ||| Do you like cake? ||| ኬክ ትወዳለህ?
+Du magst Musik, oder? ||| You like music, don't you? ||| ሙዚቃ ትወዳለህ፣ አይደል?
+Was magst du? ||| What do you like? ||| ምን ትወዳለህ?
+## er mag
+Er mag Fußball. ||| He likes football. ||| እግር ኳስ ይወዳል።
+Er mag keinen Fisch. ||| He doesn't like fish. ||| ዓሣ አይወድም።
+Mein Bruder mag Pizza. ||| My brother likes pizza. ||| ወንድሜ ፒዛ ይወዳል።
+## Ich mag Kaffee.
+Ich mag Kaffee, aber keinen Tee. ||| I like coffee, but not tea. ||| ቡና እወዳለሁ፤ ሻይ ግን አልወድም።
+Ich mag Kaffee aus Äthiopien. ||| I like coffee from Ethiopia. ||| የኢትዮጵያ ቡና እወዳለሁ።
+## Ich mag keinen Fisch.
+Ich mag keinen Fisch. Ich esse Fleisch. ||| I don't like fish. I eat meat. ||| ዓሣ አልወድም። ሥጋ እበላለሁ።
+Danke, aber ich mag keinen Fisch. ||| Thanks, but I don't like fish. ||| አመሰግናለሁ፤ ግን ዓሣ አልወድም።
+## Ich auch.
+Ich mag Kaffee. – Ich auch. ||| I like coffee. – Me too. ||| ቡና እወዳለሁ። – እኔም።
+Ich habe Hunger. – Ich auch! ||| I am hungry. – Me too! ||| ርቦኛል። – እኔም!
+## Ich nicht.
+Ich mag Fisch. – Ich nicht. ||| I like fish. – I don't. ||| ዓሣ እወዳለሁ። – እኔ ግን አልወድም።
+Wir gehen ins Kino. – Ich nicht, ich bin müde. ||| We are going to the cinema. – Not me, I am tired. ||| ወደ ሲኒማ እንሄዳለን። – እኔ አልሄድም፤ ደክሞኛል።
+## Ich auch nicht.
+Ich mag keinen Fisch. – Ich auch nicht. ||| I don't like fish. – Me neither. ||| ዓሣ አልወድም። – እኔም አልወድም።
+Ich habe keine Zeit. – Ich auch nicht. ||| I have no time. – Me neither. ||| ጊዜ የለኝም። – እኔም የለኝም።
+## Ich schon.
+Ich mag keinen Tee. – Ich schon. ||| I don't like tea. – I do. ||| ሻይ አልወድም። – እኔ ግን እወዳለሁ።
+Du magst keinen Fisch? Ich schon! ||| You don't like fish? I do! ||| ዓሣ አትወድም? እኔ ግን እወዳለሁ!
+## lecker
+Das Essen ist lecker. ||| The food is tasty. ||| ምግቡ ጣፋጭ ነው።
+Der Kuchen ist sehr lecker. ||| The cake is very tasty. ||| ኬኩ በጣም ጣፋጭ ነው።
+Lecker, danke! ||| Tasty, thanks! ||| ጣፋጭ ነው፣ አመሰግናለሁ!
+## Das schmeckt gut.
+Mmh, das schmeckt gut. ||| Mmm, that tastes good. ||| እምም፣ ይጣፍጣል።
+Die Suppe? Das schmeckt gut. ||| The soup? That tastes good. ||| ሾርባው? ይጣፍጣል።
+
+# 3.17 Breakfast & meals
+## das Frühstück
+Das Frühstück ist fertig. ||| Breakfast is ready. ||| ቁርሱ ደርሷል።
+Ich esse um sieben Uhr Frühstück. ||| I eat breakfast at seven o'clock. ||| አንድ ሰዓት ቁርስ እበላለሁ።
+Das Frühstück ist im Hotel. ||| Breakfast is at the hotel. ||| ቁርሱ ሆቴሉ ውስጥ ነው።
+## zum Frühstück
+Zum Frühstück esse ich Brot. ||| For breakfast I eat bread. ||| ለቁርስ ዳቦ እበላለሁ።
+Was trinkst du zum Frühstück? ||| What do you drink for breakfast? ||| ለቁርስ ምን ትጠጣለህ?
+Zum Frühstück gibt es Kaffee und Eier. ||| For breakfast there is coffee and eggs. ||| ለቁርስ ቡናና እንቁላል አለ።
+## das Abendessen
+Das Abendessen ist um acht. ||| Dinner is at eight. ||| እራቱ ሁለት ሰዓት ነው።
+Was gibt es zum Abendessen? ||| What is there for dinner? ||| ለእራት ምን አለ?
+Ich koche das Abendessen. ||| I am cooking dinner. ||| እራቱን እያበሰልኩ ነው።
+## das Müsli
+Ich esse Müsli mit Milch. ||| I eat muesli with milk. ||| ሙስሊ በወተት እበላለሁ።
+Das Müsli ist gesund. ||| The muesli is healthy. ||| ሙስሊው ለጤና ጥሩ ነው።
+Zum Frühstück esse ich Müsli. ||| For breakfast I eat muesli. ||| ለቁርስ ሙስሊ እበላለሁ።
+## die Marmelade
+Ich esse Brot mit Marmelade. ||| I eat bread with jam. ||| ዳቦ በማርማላታ እበላለሁ።
+Die Marmelade ist süß. ||| The jam is sweet. ||| ማርማላታው ጣፋጭ ነው።
+Die Marmelade ist aus Erdbeeren. ||| The jam is made of strawberries. ||| ማርማላታው ከእንጆሪ የተሠራ ነው።
+## der Honig
+Der Honig ist süß. ||| The honey is sweet. ||| ማሩ ጣፋጭ ነው።
+Ich trinke Tee mit Honig. ||| I drink tea with honey. ||| ሻይ በማር እጠጣለሁ።
+Der Honig kommt aus Äthiopien. ||| The honey comes from Ethiopia. ||| ማሩ ከኢትዮጵያ የመጣ ነው።
+## die Butter
+Ich esse Brot mit Butter. ||| I eat bread with butter. ||| ዳቦ በቅቤ እበላለሁ።
+Die Butter ist im Kühlschrank. ||| The butter is in the fridge. ||| ቅቤው ማቀዝቀዣው ውስጥ ነው።
+Wir brauchen Butter. ||| We need butter. ||| ቅቤ ያስፈልገናል።
+## die Suppe
+Die Suppe ist heiß. ||| The soup is hot. ||| ሾርባው ትኩስ ነው።
+Ich koche eine Suppe. ||| I am cooking a soup. ||| ሾርባ እያበሰልኩ ነው።
+Die Suppe ist lecker. ||| The soup is tasty. ||| ሾርባው ጣፋጭ ነው።
+## der Salat
+Ich esse einen Salat. ||| I am eating a salad. ||| ሰላጣ እየበላሁ ነው።
+Der Salat ist frisch. ||| The salad is fresh. ||| ሰላጣው ትኩስ ነው።
+Der Salat hat Tomaten und Gurken. ||| The salad has tomatoes and cucumbers. ||| ሰላጣው ቲማቲምና ኪያር አለው።
+## die Nudeln
+Die Nudeln sind fertig. ||| The pasta is ready. ||| ፓስታው ደርሷል።
+Ich koche Nudeln mit Tomaten. ||| I cook pasta with tomatoes. ||| ፓስታ በቲማቲም አበስላለሁ።
+Die Kinder essen gern Nudeln. ||| The children like eating pasta. ||| ልጆቹ ፓስታ መብላት ይወዳሉ።
+## das Eis
+Das Eis ist kalt. ||| The ice cream is cold. ||| አይስክሬሙ ቀዝቃዛ ነው።
+Ich esse gern Eis. ||| I like eating ice cream. ||| አይስክሬም መብላት እወዳለሁ።
+Ein Eis, bitte. ||| An ice cream, please. ||| እባክዎ አንድ አይስክሬም።
+## die Tasse
+Die Tasse ist voll. ||| The cup is full. ||| ሲኒው ሞልቷል።
+Die Tasse ist neu. ||| The cup is new. ||| ሲኒው አዲስ ነው።
+Ich brauche eine Tasse. ||| I need a cup. ||| ሲኒ ያስፈልገኛል።
+## eine Tasse Kaffee
+Eine Tasse Kaffee, bitte. ||| A cup of coffee, please. ||| እባክዎ አንድ ሲኒ ቡና።
+Am Morgen trinke ich eine Tasse Kaffee. ||| In the morning I drink a cup of coffee. ||| ጠዋት አንድ ሲኒ ቡና እጠጣለሁ።
+## Was isst du zum Frühstück?
+Was isst du zum Frühstück? – Brot mit Honig. ||| What do you eat for breakfast? – Bread with honey. ||| ለቁርስ ምን ትበላለህ? – ዳቦ በማር።
+Was isst du zum Frühstück? – Ich esse Firfir. ||| What do you eat for breakfast? – I eat firfir. ||| ለቁርስ ምን ትበያለሽ? – ፍርፍር እበላለሁ።
+
+# 3.18 Compound nouns
+## der Apfelkuchen
+Der Apfelkuchen ist lecker. ||| The apple cake is tasty. ||| የፖም ኬኩ ጣፋጭ ነው።
+Meine Oma backt Apfelkuchen. ||| My grandma bakes apple cake. ||| አያቴ የፖም ኬክ ይጋግራሉ።
+Ein Stück Apfelkuchen, bitte. ||| A piece of apple cake, please. ||| እባክዎ አንድ ቁራጭ የፖም ኬክ።
+## der Apfelsaft
+Ich trinke Apfelsaft. ||| I drink apple juice. ||| የፖም ጭማቂ እጠጣለሁ።
+Der Apfelsaft ist kalt. ||| The apple juice is cold. ||| የፖም ጭማቂው ቀዝቃዛ ነው።
+Einen Apfelsaft, bitte. ||| An apple juice, please. ||| እባክዎ አንድ የፖም ጭማቂ።
+## der Schokoladenkuchen
+Der Schokoladenkuchen ist süß. ||| The chocolate cake is sweet. ||| የቸኮሌት ኬኩ ጣፋጭ ነው።
+Die Kinder mögen Schokoladenkuchen. ||| The children like chocolate cake. ||| ልጆቹ የቸኮሌት ኬክ ይወዳሉ።
+Zum Geburtstag gibt es Schokoladenkuchen. ||| For the birthday there is chocolate cake. ||| ለልደቱ የቸኮሌት ኬክ አለ።
+## die Kartoffelsuppe
+Die Kartoffelsuppe ist heiß. ||| The potato soup is hot. ||| የድንች ሾርባው ትኩስ ነው።
+Ich koche eine Kartoffelsuppe. ||| I am cooking a potato soup. ||| የድንች ሾርባ እያበሰልኩ ነው።
+Die Kartoffelsuppe schmeckt gut. ||| The potato soup tastes good. ||| የድንች ሾርባው ይጣፍጣል።
+## die Tomatensuppe
+Ich möchte die Tomatensuppe. ||| I would like the tomato soup. ||| የቲማቲም ሾርባውን እፈልጋለሁ።
+Die Tomatensuppe ist rot. ||| The tomato soup is red. ||| የቲማቲም ሾርባው ቀይ ነው።
+Die Tomatensuppe ist lecker. ||| The tomato soup is tasty. ||| የቲማቲም ሾርባው ጣፋጭ ነው።
+## das Käsebrot
+Ich esse ein Käsebrot. ||| I am eating a cheese sandwich. ||| የአይብ ሳንድዊች እየበላሁ ነው።
+Das Käsebrot ist für die Schule. ||| The cheese sandwich is for school. ||| የአይብ ሳንድዊቹ ለትምህርት ቤት ነው።
+Ein Käsebrot, bitte. ||| A cheese sandwich, please. ||| እባክዎ አንድ የአይብ ሳንድዊች።
+## der Obstsalat
+Der Obstsalat ist frisch. ||| The fruit salad is fresh. ||| የፍራፍሬ ሰላጣው ትኩስ ነው።
+Zum Nachtisch gibt es Obstsalat. ||| For dessert there is fruit salad. ||| ከምግብ በኋላ የፍራፍሬ ሰላጣ አለ።
+Der Obstsalat hat Bananen und Orangen. ||| The fruit salad has bananas and oranges. ||| የፍራፍሬ ሰላጣው ሙዝና ብርቱካን አለው።
+## die Kaffeetasse
+Die Kaffeetasse ist klein. ||| The coffee cup is small. ||| የቡና ሲኒው ትንሽ ነው።
+Wo ist meine Kaffeetasse? ||| Where is my coffee cup? ||| የቡና ሲኒዬ የት ነው?
+Die Kaffeetasse ist aus Äthiopien. ||| The coffee cup is from Ethiopia. ||| የቡና ሲኒው ከኢትዮጵያ የመጣ ነው።

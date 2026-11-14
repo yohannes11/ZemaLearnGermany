@@ -1,0 +1,510 @@
+{
+  "_about": "What the course search must do. Checked against the website's static/course/js/search.js (apps/course/tests/test_search.py, with Node) and the app's lib/features/search/search_engine.dart (mobile/test/search_test.dart). 'queries' use the real course: each 'expect' entry must be among the first 'within' results (all kinds, best first); 'first' must be the best; 'none' means nothing is found. 'filters' ({types, pos, unit, section, level}) narrow a query, and every result must fit them; with an empty 'q' they browse the course.",
+  "fold": [
+    [
+      "Schön",
+      "schon"
+    ],
+    [
+      "schoen",
+      "schon"
+    ],
+    [
+      "Straße",
+      "strasse"
+    ],
+    [
+      "Tschüss!",
+      "tschuss!"
+    ],
+    [
+      "Café",
+      "cafe"
+    ],
+    [
+      "ÄÖÜ",
+      "aou"
+    ]
+  ],
+  "same_sound": [
+    [
+      "gooten",
+      "guten"
+    ],
+    [
+      "shoen",
+      "schön"
+    ],
+    [
+      "vas",
+      "was"
+    ],
+    [
+      "fielen",
+      "vielen"
+    ],
+    [
+      "nain",
+      "nein"
+    ],
+    [
+      "hoyte",
+      "heute"
+    ],
+    [
+      "tsait",
+      "Zeit"
+    ],
+    [
+      "kafe",
+      "Kaffee"
+    ],
+    [
+      "ikh",
+      "ich"
+    ],
+    [
+      "zon",
+      "Sohn"
+    ]
+  ],
+  "transliterate": [
+    [
+      "ዳንኬ",
+      "danke"
+    ],
+    [
+      "ጉተን",
+      "guten"
+    ],
+    [
+      "ታግ",
+      "tag"
+    ],
+    [
+      "ያ",
+      "ja"
+    ],
+    [
+      "ሻይ",
+      "schaj"
+    ]
+  ],
+  "queries": [
+    {
+      "q": "schön",
+      "first": [
+        "word",
+        "schön"
+      ]
+    },
+    {
+      "q": "schoen",
+      "first": [
+        "word",
+        "schön"
+      ]
+    },
+    {
+      "q": "shoen",
+      "expect": [
+        [
+          "word",
+          "schön"
+        ]
+      ],
+      "within": 5
+    },
+    {
+      "q": "tschuess",
+      "first": [
+        "word",
+        "Tschüss!"
+      ]
+    },
+    {
+      "q": "gooten tag",
+      "expect": [
+        [
+          "word",
+          "Guten Tag!"
+        ]
+      ],
+      "within": 3
+    },
+    {
+      "q": "fielen dank",
+      "first": [
+        "word",
+        "Vielen Dank!"
+      ]
+    },
+    {
+      "q": "Wohnnung",
+      "expect": [
+        [
+          "word",
+          "die Wohnung"
+        ]
+      ],
+      "within": 3
+    },
+    {
+      "q": "Verkaeufer",
+      "first": [
+        "word",
+        "der Verkäufer"
+      ]
+    },
+    {
+      "q": "kuchn",
+      "expect": [
+        [
+          "word",
+          "der Kuchen"
+        ],
+        [
+          "word",
+          "die Küche"
+        ]
+      ],
+      "within": 2
+    },
+    {
+      "q": "apple",
+      "expect": [
+        [
+          "word",
+          "der Apfel"
+        ]
+      ],
+      "within": 5
+    },
+    {
+      "q": "the bill",
+      "expect": [
+        [
+          "word",
+          "die Rechnung"
+        ]
+      ],
+      "within": 3
+    },
+    {
+      "q": "Ich esse einen Apfel",
+      "expect": [
+        [
+          "word",
+          "ich esse"
+        ],
+        [
+          "word",
+          "der Apfel"
+        ]
+      ],
+      "within": 6
+    },
+    {
+      "q": "Apfelkuchen",
+      "first": [
+        "word",
+        "der Apfelkuchen"
+      ]
+    },
+    {
+      "q": "ዳንኬ",
+      "expect": [
+        [
+          "word",
+          "Danke schön!"
+        ]
+      ],
+      "within": 5
+    },
+    {
+      "q": "ጉተን ታግ",
+      "expect": [
+        [
+          "word",
+          "Guten Tag!"
+        ]
+      ],
+      "within": 3
+    },
+    {
+      "q": "ምግብ ማዘዝ",
+      "first": [
+        "topic",
+        "Ordering food at a restaurant"
+      ]
+    },
+    {
+      "q": "ቤተሰብ",
+      "expect": [
+        [
+          "topic",
+          "Family"
+        ]
+      ],
+      "within": 3
+    },
+    {
+      "q": "Accusative case",
+      "expect": [
+        [
+          "lesson",
+          "g6-accusative"
+        ],
+        [
+          "topic",
+          "The accusative case"
+        ]
+      ],
+      "within": 3
+    },
+    {
+      "q": "verb conjugation",
+      "first": [
+        "topic",
+        "Verb conjugation (present tense)"
+      ]
+    },
+    {
+      "q": "past tense",
+      "expect": [
+        [
+          "topic",
+          "Past tense"
+        ],
+        [
+          "lesson",
+          "g7-perfect"
+        ]
+      ],
+      "within": 4
+    },
+    {
+      "q": "articles",
+      "expect": [
+        [
+          "topic",
+          "Articles: der, die, das"
+        ],
+        [
+          "chapter",
+          "2.2"
+        ]
+      ],
+      "within": 8
+    },
+    {
+      "q": "separable verbs",
+      "expect": [
+        [
+          "lesson",
+          "g5-separable"
+        ],
+        [
+          "chapter",
+          "5.7"
+        ]
+      ],
+      "within": 5
+    },
+    {
+      "q": "how to order food at a restaurant",
+      "first": [
+        "topic",
+        "Ordering food at a restaurant"
+      ],
+      "expect": [
+        [
+          "word",
+          "bestellen"
+        ],
+        [
+          "chapter",
+          "3.15"
+        ]
+      ],
+      "within": 10
+    },
+    {
+      "q": "words used for expressing doubt",
+      "first": [
+        "topic",
+        "Expressing doubt and uncertainty"
+      ],
+      "expect": [
+        [
+          "word",
+          "vielleicht"
+        ],
+        [
+          "word",
+          "Ich weiß nicht."
+        ]
+      ],
+      "within": 14
+    },
+    {
+      "q": "where is the bathroom",
+      "first": [
+        "word",
+        "Entschuldigung, wo ist das Badezimmer?"
+      ]
+    },
+    {
+      "q": "I don't understand",
+      "expect": [
+        [
+          "word",
+          "Ich verstehe das nicht."
+        ],
+        [
+          "topic",
+          "When you don't understand"
+        ]
+      ],
+      "within": 3
+    },
+    {
+      "q": "what time is it",
+      "expect": [
+        [
+          "chapter",
+          "5.2"
+        ],
+        [
+          "topic",
+          "Telling the time"
+        ]
+      ],
+      "within": 10
+    },
+    {
+      "q": "qqqxxzz",
+      "none": true
+    },
+    {
+      "q": "essen",
+      "filters": {
+        "pos": [
+          "verb"
+        ]
+      },
+      "first": [
+        "word",
+        "essen"
+      ]
+    },
+    {
+      "q": "",
+      "filters": {
+        "section": "3.15",
+        "types": [
+          "word"
+        ]
+      },
+      "expect": [
+        [
+          "word",
+          "bestellen"
+        ],
+        [
+          "word",
+          "die Rechnung"
+        ]
+      ],
+      "within": 40
+    },
+    {
+      "q": "der Mann",
+      "filters": {
+        "section": "2.1"
+      },
+      "first": [
+        "word",
+        "der Mann"
+      ]
+    },
+    {
+      "q": "Apfel",
+      "filters": {
+        "unit": 3
+      },
+      "expect": [
+        [
+          "word",
+          "der Apfel"
+        ],
+        [
+          "word",
+          "der Apfelkuchen"
+        ]
+      ],
+      "within": 6
+    },
+    {
+      "q": "",
+      "filters": {
+        "pos": [
+          "verb"
+        ],
+        "unit": 5
+      },
+      "expect": [
+        [
+          "word",
+          "aufstehen"
+        ],
+        [
+          "word",
+          "waschen"
+        ]
+      ],
+      "within": 60
+    },
+    {
+      "q": "reading",
+      "filters": {
+        "types": [
+          "reading"
+        ]
+      },
+      "expect": [
+        [
+          "lesson",
+          "g3-reading"
+        ]
+      ],
+      "within": 10
+    },
+    {
+      "q": "how to order food at a restaurant",
+      "filters": {
+        "types": [
+          "word"
+        ]
+      },
+      "expect": [
+        [
+          "word",
+          "bestellen"
+        ],
+        [
+          "word",
+          "die Rechnung"
+        ]
+      ],
+      "within": 12
+    },
+    {
+      "q": "Apfel",
+      "filters": {
+        "level": "B1"
+      },
+      "none": true
+    }
+  ]
+}

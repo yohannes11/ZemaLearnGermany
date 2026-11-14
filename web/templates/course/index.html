@@ -31,7 +31,9 @@
     <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
     <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
     <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.4-5.7L4 8.6"/><path d="M4 3.5v5.1h5.1"/></symbol>
     <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
     <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></symbol>
   </svg>
 
@@ -47,6 +49,13 @@
           <div class="brand-sub" id="brand-sub"></div>
         </div>
       </div>
+      <!-- Looks like a search field, so learners see at once that they can search; opens the search window. -->
+      <button class="search-box" type="button" onclick="openSearch()" aria-label="{% t "Search the course" %}" aria-haspopup="dialog" aria-keyshortcuts="/">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+        <span class="search-box-label" aria-hidden="true">{% t "Search" %}</span>
+        <span class="search-box-hint" aria-hidden="true">{% t "A word, a sentence, grammar or a question" %}</span>
+        <kbd class="search-box-key" aria-hidden="true">/</kbd>
+      </button>
       <div class="overall" title="{% t "Words learned in this unit" %}">
         <span class="label"><strong id="learned-count">0</strong> / <span id="total-count">0</span> {% t "words" %}</span>
         <div class="bar"><i id="progress-fill"></i></div>
@@ -146,7 +155,7 @@
             <button class="learn-view-btn" data-view="single" onclick="setLearnView('single')">{% t "One word" %}</button>
             <button class="learn-view-btn" data-view="grid" onclick="setLearnView('grid')">{% t "All words" %}</button>
           </div>
-          <button class="btn" type="button" id="reveal-all"><svg class="icon"><use href="#i-eye"/></svg><span>{% t "Reveal all" %}</span></button>
+          <button class="btn btn-ghost learn-search" type="button" onclick="searchHere()"><svg class="icon"><use href="#i-search"/></svg><span>{% t "Search this chapter" %}</span></button>
         </div>
         <div id="learn-grammar"></div>
         <div id="learn-content"></div>
@@ -321,6 +330,29 @@
     <ol class="onpage" id="onpage-sheet-list"></ol>
   </dialog>
 
+  <dialog id="search" class="search-dialog" aria-labelledby="search-title" data-amharic="{% static 'course/js/course-am.js' %}">
+    <div class="dialog-head">
+      <h2 id="search-title">{% t "Search the course" %}</h2>
+      <button class="btn btn-ghost labelled" type="button" onclick="document.getElementById('search').close()">
+        <svg class="icon"><use href="#i-close"/></svg><span class="btn-label">{% t "Close" %}</span>
+      </button>
+    </div>
+    <div class="search-field">
+      <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+      <input type="search" id="search-input" autocomplete="off" spellcheck="false" enterkeyhint="search"
+             placeholder="{% t "A word, a sentence, grammar or a question" %}" aria-describedby="search-help" aria-controls="search-results">
+      <button class="btn btn-ghost search-clear" type="button" id="search-clear" hidden>{% t "Clear" %}</button>
+    </div>
+    <p class="search-help" id="search-help">{% t "Type in German, English or Amharic. The spelling does not have to be perfect." %}</p>
+    <div class="search-scope" id="search-scope" hidden></div>
+    <div class="search-suggest" id="search-suggest" hidden></div>
+    <details class="search-filters" id="search-filters">
+      <summary><svg class="icon" aria-hidden="true"><use href="#i-settings"/></svg><span>{% t "Filters" %}</span><span class="search-filter-count" id="search-filter-count" hidden></span></summary>
+      <div class="search-filter-body" id="search-filter-body"></div>
+    </details>
+    <div class="search-results" id="search-results" aria-live="polite"></div>
+  </dialog>
+
   <dialog id="settings" aria-labelledby="settings-title">
     <div class="dialog-head">
       <h2 id="settings-title">{% t "Settings" %}</h2>
@@ -448,5 +480,6 @@
   {% if lang == "am" %}<script src="{% static 'course/js/course-am.js' %}"></script>{% endif %}
   <script src="{% static 'core/js/tally.js' %}"></script>
   <script src="{% static 'core/js/tally-view.js' %}"></script>
+  <script src="{% static 'course/js/search.js' %}"></script>
   <script src="{% static 'course/js/course.js' %}"></script>
 {% endblock %}

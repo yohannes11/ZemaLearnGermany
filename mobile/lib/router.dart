@@ -8,6 +8,7 @@ import 'core/settings.dart';
 import 'core/sync/engine.dart';
 import 'features/lessons/quiz_session.dart';
 import 'features/onboarding/onboarding.dart';
+import 'features/search/search_screen.dart';
 import 'features/vocabulary/card_session.dart';
 import 'features/vocabulary/speak_coach.dart';
 import 'features/vocabulary/srs.dart';
@@ -58,6 +59,14 @@ final router = GoRouter(
         StatefulShellBranch(routes: [GoRoute(path: '/me', builder: (_, _) => const MeScreen())]),
       ],
     ),
+    GoRoute(
+      path: '/search',
+      parentNavigatorKey: _root,
+      pageBuilder: (_, s) => MaterialPage(
+        fullscreenDialog: true,
+        child: _withCourse((_) => SearchScreen(unit: int.tryParse(s.uri.queryParameters['unit'] ?? ''), section: s.uri.queryParameters['section'])),
+      ),
+    ),
     GoRoute(path: '/sign-in', parentNavigatorKey: _root, pageBuilder: (_, _) => const MaterialPage(fullscreenDialog: true, child: SignInScreen())),
     GoRoute(path: '/session/cards', parentNavigatorKey: _root, pageBuilder: (_, s) => _session(_cards(s))),
     GoRoute(
@@ -77,7 +86,7 @@ final router = GoRouter(
       })),
     ),
     for (final (mode, build) in <(String, Widget Function(WordScope, GoRouterState))>[
-      ('learn', (scope, _) => WordPages(scope: scope)),
+      ('learn', (scope, s) => WordPages(scope: scope, from: int.tryParse(s.uri.queryParameters['from'] ?? '') ?? 0)),
       ('match', (scope, _) => MatchGame(scope: scope)),
       ('practice', (scope, _) => PracticeSession(scope: scope)),
       ('speak', (scope, s) => SpeakCoach(scope: scope, from: int.tryParse(s.uri.queryParameters['from'] ?? '') ?? 0)),
@@ -147,7 +156,7 @@ class _Missing extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(),
-        body: const Center(child: Padding(padding: EdgeInsets.all(24), child: Text('This is no longer in the course.', textAlign: TextAlign.center))),
+        body: Center(child: Padding(padding: const EdgeInsets.all(24), child: Text(T('This is no longer in the course.'), textAlign: TextAlign.center))),
       );
 }
 

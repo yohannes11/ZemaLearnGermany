@@ -13,6 +13,7 @@ from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_GET, require_http_methods, require_POST
 
+from apps.core.i18n import LANGUAGES
 from apps.core.utils import BadJSON, form_error, json_error, read_json
 
 from .decorators import api_login_required
@@ -166,6 +167,9 @@ def web_session_link(request):
     if not url_has_allowed_host_and_scheme(next_url, allowed_hosts=None):
         next_url = reverse("course:index")
     url = request.build_absolute_uri(f"{reverse('accounts:handoff')}?code={code}&next={next_url}")
+    # The website opens in the app's language (the page remembers it, as any ?lang= does).
+    if request.GET.get("lang") in LANGUAGES:
+        url += f"&lang={request.GET['lang']}"
     return JsonResponse({"url": url, "expiresIn": HANDOFF_MAX_AGE})
 
 

@@ -16,8 +16,8 @@ class Strings {
     try {
       final catalogue = jsonDecode(await rootBundle.loadString('assets/locale/am.json')) as Map<String, dynamic>;
       _amharic = {
-        // The course's own strings win over the site's where both have one.
-        for (final section in ['site', 'course'])
+        // The course's own strings win over the site's where both have one; the app's own come between.
+        for (final section in ['site', 'app', 'course'])
           ...?(catalogue[section] as Map?)?.map((k, v) => MapEntry('$k', '$v')),
       };
     } catch (_) {

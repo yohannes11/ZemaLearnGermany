@@ -1,0 +1,289 @@
+# Unit 1: example sentences for every word. German ||| English ||| Amharic
+# Three for a single word, two for a phrase; A1 German that uses the course's own words.
+
+# 1.1 Greetings & farewells
+## Hi!
+Hi, Selam! ||| Hi, Selam! ||| ሃይ ሰላም!
+Hi! Ich bin Dawit. ||| Hi! I am Dawit. ||| ሃይ! እኔ ዳዊት ነኝ።
+## der Morgen
+Der Morgen ist kalt. ||| The morning is cold. ||| ጠዋቱ ቀዝቃዛ ነው።
+Am Morgen trinke ich Kaffee. ||| In the morning I drink coffee. ||| ጠዋት ቡና እጠጣለሁ።
+Guten Morgen, Liya! ||| Good morning, Liya! ||| እንደምን አደርሽ ሊያ!
+## der Abend
+Der Abend ist schön. ||| The evening is beautiful. ||| ምሽቱ ውብ ነው።
+Am Abend lerne ich Deutsch. ||| In the evening I learn German. ||| ምሽት ላይ ጀርመንኛ እማራለሁ።
+Guten Abend, Herr Tesfaye! ||| Good evening, Mr Tesfaye! ||| እንደምን አመሹ አቶ ተስፋዬ!
+## Guten Tag!
+Guten Tag! Wie heißen Sie? ||| Good day! What is your name? ||| ጤና ይስጥልኝ! ስምዎ ማን ነው?
+Guten Tag, Frau Bekele! ||| Good day, Mrs Bekele! ||| ጤና ይስጥልኝ ወይዘሮ በቀለ!
+## Guten Abend!
+Guten Abend! Wie geht es Ihnen? ||| Good evening! How are you? ||| እንደምን አመሹ! እንዴት ነዎት?
+Guten Abend, Dawit! ||| Good evening, Dawit! ||| እንደምን አመሸህ ዳዊት!
+## Gute Nacht!
+Gute Nacht und bis morgen! ||| Good night and see you tomorrow! ||| ደህና እደሩ፤ ነገ እንገናኝ!
+Ich bin müde. Gute Nacht! ||| I am tired. Good night! ||| ደክሞኛል። ደህና እደሩ!
+## Auf Wiedersehen!
+Auf Wiedersehen, Frau Bekele! ||| Goodbye, Mrs Bekele! ||| ደህና ይሁኑ ወይዘሮ በቀለ!
+Danke schön und auf Wiedersehen! ||| Thank you very much and goodbye! ||| በጣም አመሰግናለሁ፤ ደህና ይሁኑ!
+
+# 1.2 Introducing each other
+## der Vorname
+Mein Vorname ist Liya. ||| My first name is Liya. ||| የመጀመሪያ ስሜ ሊያ ነው።
+Wie ist Ihr Vorname? ||| What is your first name? ||| የመጀመሪያ ስምዎ ማን ነው?
+Der Vorname ist Dawit. ||| The first name is Dawit. ||| የመጀመሪያ ስሙ ዳዊት ነው።
+## der Nachname
+Mein Nachname ist Tesfaye. ||| My last name is Tesfaye. ||| የአባቴ ስም ተስፋዬ ነው።
+Wie ist Ihr Nachname? ||| What is your last name? ||| የአባትዎ ስም ማን ነው?
+Wie schreibt man den Nachnamen? ||| How do you spell the last name? ||| የአባት ስሙ እንዴት ይጻፋል?
+## heißen
+Ich heiße Selam. ||| My name is Selam. ||| ስሜ ሰላም ነው።
+Wie heißt das Mädchen? ||| What is the girl called? ||| ልጅቷ ማን ትባላለች?
+Wir heißen Liya und Dawit. ||| We are called Liya and Dawit. ||| እኛ ሊያና ዳዊት እንባላለን።
+## Wie ist dein Name?
+Hallo! Wie ist dein Name? ||| Hello! What is your name? ||| ሰላም! ስምህ ማን ነው?
+Wie ist dein Name? – Mein Name ist Selam. ||| What is your name? – My name is Selam. ||| ስምሽ ማን ነው? – ስሜ ሰላም ነው።
+## Mein Name ist …
+Mein Name ist Abebe. ||| My name is Abebe. ||| ስሜ አበበ ነው።
+Guten Tag! Mein Name ist Liya Tesfaye. ||| Good day! My name is Liya Tesfaye. ||| ጤና ይስጥልኝ! ስሜ ሊያ ተስፋዬ ነው።
+## Wie heißt du?
+Hallo, wie heißt du? – Ich heiße Dawit. ||| Hello, what is your name? – My name is Dawit. ||| ሰላም፣ ስምህ ማን ነው? – ስሜ ዳዊት ነው።
+Ich heiße Liya. Und wie heißt du? ||| My name is Liya. And what is your name? ||| ስሜ ሊያ ነው። አንተስ ስምህ ማን ነው?
+## Wie heißen Sie?
+Guten Tag! Wie heißen Sie? – Ich heiße Bekele. ||| Good day! What is your name? – My name is Bekele. ||| ጤና ይስጥልኝ! ስምዎ ማን ነው? – ስሜ በቀለ ነው።
+Entschuldigung, wie heißen Sie? ||| Excuse me, what is your name? ||| ይቅርታ፣ ስምዎ ማን ነው?
+
+# 1.3 Who is that?
+## Wer ist das?
+Wer ist das? – Das ist Liya. ||| Who is that? – That is Liya. ||| ያ ማን ነው? – ያቺ ሊያ ናት።
+Wer ist das? – Das ist mein Vater. ||| Who is that? – That is my father. ||| ያ ማን ነው? – ያ አባቴ ነው።
+## Wer bist du?
+Wer bist du? – Ich bin Selam. ||| Who are you? – I am Selam. ||| አንቺ ማን ነሽ? – እኔ ሰላም ነኝ።
+Hallo! Wer bist du? ||| Hello! Who are you? ||| ሰላም! አንተ ማን ነህ?
+## Wer sind Sie?
+Entschuldigung, wer sind Sie? ||| Excuse me, who are you? ||| ይቅርታ፣ እርስዎ ማን ነዎት?
+Wer sind Sie? – Ich bin die Kursleiterin. ||| Who are you? – I am the course teacher. ||| እርስዎ ማን ነዎት? – እኔ የኮርሱ መምህርት ነኝ።
+## Ich weiß nicht.
+Wer ist das? – Ich weiß nicht. ||| Who is that? – I don't know. ||| ያ ማን ነው? – አላውቅም።
+Ich weiß nicht. Und du? ||| I don't know. And you? ||| አላውቅም። አንተስ?
+
+# 1.4 Where are you from?
+## Woher kommst du?
+Woher kommst du? – Aus Äthiopien. ||| Where are you from? – From Ethiopia. ||| ከየት ነህ? – ከኢትዮጵያ።
+Ich komme aus Kenia. Woher kommst du? ||| I come from Kenya. Where are you from? ||| እኔ ከኬንያ ነኝ። አንተስ ከየት ነህ?
+## Ich komme aus…
+Ich komme aus Eritrea. ||| I come from Eritrea. ||| የመጣሁት ከኤርትራ ነው።
+Ich komme aus Deutschland. ||| I come from Germany. ||| የመጣሁት ከጀርመን ነው።
+## aus den Vereinigten Staaten
+Tom kommt aus den Vereinigten Staaten. ||| Tom comes from the United States. ||| ቶም ከአሜሪካ ነው።
+Kommst du aus den Vereinigten Staaten? ||| Do you come from the United States? ||| ከአሜሪካ ነህ?
+## aus der Schweiz
+Anna kommt aus der Schweiz. ||| Anna comes from Switzerland. ||| አና ከስዊዘርላንድ ናት።
+Der Käse kommt aus der Schweiz. ||| The cheese comes from Switzerland. ||| አይቡ ከስዊዘርላንድ ነው።
+## aus der Türkei
+Ayşe kommt aus der Türkei. ||| Ayşe comes from Turkey. ||| አይሼ ከቱርክ ናት።
+Kommen Sie aus der Türkei? ||| Do you come from Turkey? ||| ከቱርክ ነዎት?
+## aus den Niederlanden
+Jan kommt aus den Niederlanden. ||| Jan comes from the Netherlands. ||| ያን ከኔዘርላንድስ ነው።
+Die Blumen kommen aus den Niederlanden. ||| The flowers come from the Netherlands. ||| አበቦቹ ከኔዘርላንድስ ናቸው።
+## aus den Vereinigten Arabischen Emiraten
+Omar kommt aus den Vereinigten Arabischen Emiraten. ||| Omar comes from the UAE. ||| ዑመር ከተባበሩት አረብ ኤምሬቶች ነው።
+Mein Bruder arbeitet in Dubai, in den Vereinigten Arabischen Emiraten. ||| My brother works in Dubai, in the UAE. ||| ወንድሜ በተባበሩት አረብ ኤምሬቶች፣ ዱባይ ይሠራል።
+
+# 1.5 How are you?
+## Wie geht's?
+Hallo, Liya! Wie geht's? ||| Hello, Liya! How are you? ||| ሰላም ሊያ! እንዴት ነሽ?
+Wie geht's? – Gut, danke! ||| How are you? – Fine, thanks! ||| እንዴት ነህ? – ደህና ነኝ፣ አመሰግናለሁ!
+## Wie geht es dir?
+Wie geht es dir, Dawit? ||| How are you, Dawit? ||| ዳዊት፣ እንዴት ነህ?
+Wie geht es dir? – Sehr gut! ||| How are you? – Very good! ||| እንዴት ነሽ? – በጣም ደህና ነኝ!
+## Wie geht es Ihnen?
+Guten Tag, Frau Bekele! Wie geht es Ihnen? ||| Good day, Mrs Bekele! How are you? ||| ጤና ይስጥልኝ ወይዘሮ በቀለ! እንዴት ነዎት?
+Wie geht es Ihnen? – Danke, gut. ||| How are you? – Fine, thank you. ||| እንዴት ነዎት? – ደህና ነኝ፣ አመሰግናለሁ።
+## sehr gut
+Mir geht es sehr gut. ||| I am very well. ||| በጣም ደህና ነኝ።
+Der Kaffee ist sehr gut. ||| The coffee is very good. ||| ቡናው በጣም ጥሩ ነው።
+Du sprichst sehr gut Deutsch. ||| You speak German very well. ||| ጀርመንኛ በጣም በደንብ ትናገራለህ።
+## schlecht
+Mir geht es schlecht. ||| I am not well. ||| ጤና አይሰማኝም።
+Das Wetter ist schlecht. ||| The weather is bad. ||| የአየሩ ሁኔታ መጥፎ ነው።
+Der Kaffee ist schlecht. ||| The coffee is bad. ||| ቡናው መጥፎ ነው።
+## sehr schlecht
+Heute geht es mir sehr schlecht. ||| Today I am very unwell. ||| ዛሬ በጣም ታምሜያለሁ።
+Das Essen ist sehr schlecht. ||| The food is very bad. ||| ምግቡ በጣም መጥፎ ነው።
+Das ist sehr schlecht. ||| That is very bad. ||| ያ በጣም መጥፎ ነው።
+## soso
+Wie geht's? – Soso. ||| How are you? – So-so. ||| እንዴት ነህ? – እንደዚሁ ነው።
+Der Film ist soso. ||| The film is so-so. ||| ፊልሙ እንደዚህ ነው፤ ብዙም አይደለም።
+Mein Deutsch ist soso. ||| My German is so-so. ||| ጀርመንኛዬ ብዙም አይደለም።
+## Super!
+Wie geht es dir? – Super! ||| How are you? – Great! ||| እንዴት ነሽ? – በጣም ጥሩ!
+Super! Das ist richtig. ||| Great! That is right. ||| ድንቅ! ልክ ነው።
+## Es geht.
+Wie geht es dir? – Es geht. ||| How are you? – It's okay. ||| እንዴት ነህ? – እንደዚሁ ነው።
+Es geht. Ich bin ein bisschen müde. ||| It's okay. I am a bit tired. ||| እንደዚሁ ነው። ትንሽ ደክሞኛል።
+## Nicht so gut.
+Wie geht's? – Nicht so gut. ||| How are you? – Not so good. ||| እንዴት ነህ? – ብዙም ጥሩ አይደለሁም።
+Nicht so gut. Ich bin krank. ||| Not so good. I am ill. ||| ብዙም ጥሩ አይደለሁም። ታምሜያለሁ።
+## Und dir?
+Mir geht es gut. Und dir? ||| I am well. And you? ||| ደህና ነኝ። አንተስ?
+Gut, danke. Und dir? ||| Fine, thanks. And you? ||| ደህና ነኝ፣ አመሰግናለሁ። አንቺስ?
+## Auch gut.
+Und dir? – Auch gut, danke. ||| And you? – Good too, thanks. ||| አንተስ? – እኔም ደህና ነኝ፣ አመሰግናለሁ።
+Mir geht es gut. – Mir auch, auch gut. ||| I am well. – Me too, good too. ||| ደህና ነኝ። – እኔም ደህና ነኝ።
+
+# 1.6 Question words
+## Wer?
+Wer ist das? ||| Who is that? ||| ያ ማን ነው?
+Wer kommt heute? ||| Who is coming today? ||| ዛሬ ማን ይመጣል?
+Wer spricht Deutsch? ||| Who speaks German? ||| ጀርመንኛ ማን ይናገራል?
+## Woher?
+Woher kommst du? ||| Where are you from? ||| ከየት ነህ?
+Woher kommt Selam? ||| Where does Selam come from? ||| ሰላም ከየት ናት?
+Woher kommen Sie? ||| Where are you from? ||| ከየት ነዎት?
+## Wo?
+Wo wohnst du? ||| Where do you live? ||| የት ትኖራለህ?
+Wo ist die Schule? ||| Where is the school? ||| ትምህርት ቤቱ የት ነው?
+Wo ist mein Buch? ||| Where is my book? ||| መጽሐፌ የት ነው?
+## Was?
+Was ist das? ||| What is that? ||| ያ ምንድን ነው?
+Was machst du? ||| What are you doing? ||| ምን እየሠራህ ነው?
+Was trinkst du? ||| What are you drinking? ||| ምን ትጠጣለህ?
+
+# 1.7 Personal pronouns
+## du
+Du bist nett. ||| You are kind. ||| ደግ ነህ።
+Wo wohnst du? ||| Where do you live? ||| የት ትኖራለህ?
+Kommst du aus Kenia? ||| Do you come from Kenya? ||| ከኬንያ ነህ?
+## er, sie, es
+Er heißt Dawit, sie heißt Liya. ||| He is called Dawit, she is called Liya. ||| እሱ ዳዊት ይባላል፤ እሷ ሊያ ትባላለች።
+Das ist das Buch. Es ist neu. ||| That is the book. It is new. ||| ያ መጽሐፉ ነው። አዲስ ነው።
+Er kommt aus Kenia, und sie kommt aus Eritrea. ||| He comes from Kenya, and she comes from Eritrea. ||| እሱ ከኬንያ ነው፤ እሷ ደግሞ ከኤርትራ ናት።
+## ihr
+Ihr lernt Deutsch. ||| You all are learning German. ||| እናንተ ጀርመንኛ እየተማራችሁ ነው።
+Woher kommt ihr? ||| Where are you all from? ||| እናንተ ከየት ናችሁ?
+Seid ihr müde? ||| Are you all tired? ||| ደክሟችኋል?
+## sie
+Liya und Dawit? Sie kommen aus Äthiopien. ||| Liya and Dawit? They come from Ethiopia. ||| ሊያና ዳዊት? እነሱ ከኢትዮጵያ ናቸው።
+Die Kinder spielen. Sie sind laut. ||| The children are playing. They are loud. ||| ልጆቹ እየተጫወቱ ነው። ይጮኻሉ።
+Sie wohnen in Berlin. ||| They live in Berlin. ||| እነሱ በርሊን ይኖራሉ።
+## Sie
+Wie heißen Sie? ||| What is your name? (formal) ||| ስምዎ ማን ነው?
+Kommen Sie aus Äthiopien? ||| Do you come from Ethiopia? (formal) ||| ከኢትዮጵያ ነዎት?
+Sprechen Sie Deutsch? ||| Do you speak German? (formal) ||| ጀርመንኛ ይናገራሉ?
+## duzen
+In Deutschland duzen sich die Kinder. ||| In Germany children say “du” to each other. ||| በጀርመን ልጆች እርስ በርሳቸው «አንተ/አንቺ» ይባባላሉ።
+Wir duzen uns. ||| We say “du” to each other. ||| እርስ በርሳችን «አንተ/አንቺ» እንባባላለን።
+Darf ich dich duzen? ||| May I say “du” to you? ||| «አንተ» ብዬ ልጥራህ?
+## siezen
+Ich sieze meine Lehrerin. ||| I say “Sie” to my teacher. ||| መምህርቴን «እርስዎ» እላቸዋለሁ።
+Im Büro siezen wir uns. ||| At the office we say “Sie” to each other. ||| በቢሮ ውስጥ እርስ በርሳችን «እርስዎ» እንባባላለን።
+Sie siezen den Chef. ||| They say “Sie” to the boss. ||| አለቃውን «እርስዎ» ይሉታል።
+## Du kannst mich duzen.
+Ich heiße Dawit. Du kannst mich duzen. ||| My name is Dawit. You can say “du” to me. ||| ስሜ ዳዊት ነው። «አንተ» ብለህ ልትጠራኝ ትችላለህ።
+Bitte, du kannst mich duzen! ||| Please, you can say “du” to me! ||| እባክህ «አንተ» ብለህ ጥራኝ!
+
+# 1.8 First verbs
+## machen
+Was machst du? ||| What are you doing? ||| ምን እየሠራህ ነው?
+Wir machen eine Übung. ||| We are doing an exercise. ||| መልመጃ እየሠራን ነው።
+Ich mache Kaffee. ||| I am making coffee. ||| ቡና እያፈላሁ ነው።
+
+# 1.9 Please, thanks & sorry
+## danke / danke schön
+Danke, das ist nett. ||| Thanks, that is kind. ||| አመሰግናለሁ፣ ደግ ነህ።
+Danke schön für den Tee! ||| Thank you very much for the tea! ||| ስለ ሻዩ በጣም አመሰግናለሁ!
+## bitte / bitte schön
+Ein Kaffee, bitte. ||| A coffee, please. ||| እባክዎ አንድ ቡና።
+Danke! – Bitte schön! ||| Thanks! – You're welcome! ||| አመሰግናለሁ! – ምንም አይደለም!
+## nichts zu danken
+Vielen Dank! – Nichts zu danken. ||| Many thanks! – Don't mention it. ||| በጣም አመሰግናለሁ! – ምስጋና አያስፈልግም።
+Danke für die Hilfe! – Nichts zu danken! ||| Thanks for the help! – Don't mention it! ||| ስለ እርዳታው አመሰግናለሁ! – ምንም አይደለም!
+## gern geschehen
+Danke schön! – Gern geschehen. ||| Thank you very much! – You're welcome. ||| በጣም አመሰግናለሁ! – በደስታ።
+Danke für den Kaffee! – Gern geschehen! ||| Thanks for the coffee! – You're welcome! ||| ስለ ቡናው አመሰግናለሁ! – በደስታ!
+## tut mir leid
+Tut mir leid, ich bin spät. ||| I'm sorry, I am late. ||| ይቅርታ፣ አርፍጃለሁ።
+Tut mir leid, ich habe keine Zeit. ||| I'm sorry, I have no time. ||| አዝናለሁ፣ ጊዜ የለኝም።
+
+# 1.10 A formal conversation
+## Mir geht es gut, danke. Und Ihnen?
+Wie geht es Ihnen? – Mir geht es gut, danke. Und Ihnen? ||| How are you? – I'm fine, thanks. And you? ||| እንዴት ነዎት? – ደህና ነኝ፣ አመሰግናለሁ። እርስዎስ?
+Guten Morgen, Herr Tesfaye! Mir geht es gut, danke. Und Ihnen? ||| Good morning, Mr Tesfaye! I'm fine, thanks. And you? ||| እንደምን አደሩ አቶ ተስፋዬ! ደህና ነኝ፣ አመሰግናለሁ። እርስዎስ?
+## Woher kommen Sie?
+Woher kommen Sie? – Ich komme aus Äthiopien. ||| Where are you from? – I come from Ethiopia. ||| ከየት ነዎት? – የመጣሁት ከኢትዮጵያ ነው።
+Frau Müller, woher kommen Sie? ||| Mrs Müller, where are you from? ||| ወይዘሮ ሙለር፣ ከየት ነዎት?
+## Sie können mich duzen.
+Ich heiße Anna. Sie können mich duzen. ||| My name is Anna. You can say “du” to me. ||| ስሜ አና ነው። «አንቺ» ብለው ሊጠሩኝ ይችላሉ።
+Bitte, Sie können mich duzen. Ich bin Tom. ||| Please, you can say “du” to me. I am Tom. ||| እባክዎ «አንተ» ብለው ሊጠሩኝ ይችላሉ። እኔ ቶም ነኝ።
+## Ich komme aus den Vereinigten Staaten.
+Ich komme aus den Vereinigten Staaten, aus New York. ||| I come from the USA, from New York. ||| የመጣሁት ከአሜሪካ፣ ከኒው ዮርክ ነው።
+Woher kommen Sie? – Ich komme aus den Vereinigten Staaten. ||| Where are you from? – I come from the USA. ||| ከየት ነዎት? – የመጣሁት ከአሜሪካ ነው።
+## Freut mich!
+Ich heiße Liya. – Freut mich! Ich bin Dawit. ||| My name is Liya. – Nice to meet you! I am Dawit. ||| ስሜ ሊያ ነው። – ስለተዋወቅን ደስ ብሎኛል! እኔ ዳዊት ነኝ።
+Das ist Frau Bekele. – Freut mich! ||| This is Mrs Bekele. – Nice to meet you! ||| እኚህ ወይዘሮ በቀለ ናቸው። – ስለተዋወቅን ደስ ብሎኛል!
+
+# 1.11 Countries
+## Äthiopien
+Ich komme aus Äthiopien. ||| I come from Ethiopia. ||| የመጣሁት ከኢትዮጵያ ነው።
+Äthiopien ist schön. ||| Ethiopia is beautiful. ||| ኢትዮጵያ ውብ ናት።
+Addis Abeba ist in Äthiopien. ||| Addis Ababa is in Ethiopia. ||| አዲስ አበባ በኢትዮጵያ ውስጥ ናት።
+## Eritrea
+Sie kommt aus Eritrea. ||| She comes from Eritrea. ||| እሷ ከኤርትራ ናት።
+Asmara ist in Eritrea. ||| Asmara is in Eritrea. ||| አስመራ በኤርትራ ውስጥ ናት።
+Eritrea ist klein. ||| Eritrea is small. ||| ኤርትራ ትንሽ ናት።
+## Kenia
+Er kommt aus Kenia. ||| He comes from Kenya. ||| እሱ ከኬንያ ነው።
+Nairobi ist in Kenia. ||| Nairobi is in Kenya. ||| ናይሮቢ በኬንያ ውስጥ ናት።
+Kenia ist groß. ||| Kenya is big. ||| ኬንያ ትልቅ ናት።
+## Deutschland
+Ich lerne Deutsch für Deutschland. ||| I am learning German for Germany. ||| ለጀርመን ስል ጀርመንኛ እየተማርኩ ነው።
+Berlin ist in Deutschland. ||| Berlin is in Germany. ||| በርሊን በጀርመን ውስጥ ናት።
+Anna kommt aus Deutschland. ||| Anna comes from Germany. ||| አና ከጀርመን ናት።
+## Österreich
+Wien ist in Österreich. ||| Vienna is in Austria. ||| ቪየና በኦስትሪያ ውስጥ ናት።
+In Österreich spricht man Deutsch. ||| In Austria people speak German. ||| በኦስትሪያ ጀርመንኛ ይነገራል።
+Er kommt aus Österreich. ||| He comes from Austria. ||| እሱ ከኦስትሪያ ነው።
+## Frankreich
+Paris ist in Frankreich. ||| Paris is in France. ||| ፓሪስ በፈረንሳይ ውስጥ ናት።
+Marie kommt aus Frankreich. ||| Marie comes from France. ||| ማሪ ከፈረንሳይ ናት።
+In Frankreich spricht man Französisch. ||| In France people speak French. ||| በፈረንሳይ ፈረንሳይኛ ይነገራል።
+## Spanien
+Madrid ist in Spanien. ||| Madrid is in Spain. ||| ማድሪድ በስፔን ውስጥ ናት።
+Carlos kommt aus Spanien. ||| Carlos comes from Spain. ||| ካርሎስ ከስፔን ነው።
+In Spanien ist es oft heiß. ||| In Spain it is often hot. ||| በስፔን ብዙ ጊዜ ሞቃት ነው።
+## Italien
+Rom ist in Italien. ||| Rome is in Italy. ||| ሮም በጣሊያን ውስጥ ናት።
+Marco kommt aus Italien. ||| Marco comes from Italy. ||| ማርኮ ከጣሊያን ነው።
+Der Kaffee aus Italien ist gut. ||| The coffee from Italy is good. ||| የጣሊያን ቡና ጥሩ ነው።
+## Er kommt aus Kenia.
+Das ist Peter. Er kommt aus Kenia. ||| That is Peter. He comes from Kenya. ||| ያ ፒተር ነው። ከኬንያ ነው።
+Woher kommt Peter? – Er kommt aus Kenia. ||| Where does Peter come from? – He comes from Kenya. ||| ፒተር ከየት ነው? – ከኬንያ ነው።
+## Sie kommt aus Eritrea.
+Das ist Helen. Sie kommt aus Eritrea. ||| That is Helen. She comes from Eritrea. ||| ያቺ ሄለን ናት። ከኤርትራ ናት።
+Woher kommt Helen? – Sie kommt aus Eritrea. ||| Where does Helen come from? – She comes from Eritrea. ||| ሄለን ከየት ናት? – ከኤርትራ ናት።
+## Ich wohne in Addis Abeba.
+Ich komme aus Äthiopien. Ich wohne in Addis Abeba. ||| I come from Ethiopia. I live in Addis Ababa. ||| የመጣሁት ከኢትዮጵያ ነው። የምኖረው አዲስ አበባ ነው።
+Wo wohnst du? – Ich wohne in Addis Abeba. ||| Where do you live? – I live in Addis Ababa. ||| የት ትኖራለህ? – የምኖረው አዲስ አበባ ነው።
+
+# 1.12 In the German class
+## der Deutschkurs
+Der Deutschkurs ist am Abend. ||| The German course is in the evening. ||| የጀርመንኛ ኮርሱ ምሽት ላይ ነው።
+Ich mache einen Deutschkurs. ||| I am doing a German course. ||| የጀርመንኛ ኮርስ እየወሰድኩ ነው።
+Der Deutschkurs ist gut. ||| The German course is good. ||| የጀርመንኛ ኮርሱ ጥሩ ነው።
+## der Kursleiter
+Der Kursleiter heißt Herr Müller. ||| The course teacher is called Mr Müller. ||| የኮርሱ መምህር አቶ ሙለር ይባላሉ።
+Der Kursleiter spricht langsam. ||| The course teacher speaks slowly. ||| የኮርሱ መምህር በቀስታ ይናገራሉ።
+Wo ist der Kursleiter? ||| Where is the course teacher? ||| የኮርሱ መምህሩ የት ናቸው?
+## die Kursleiterin
+Die Kursleiterin kommt aus Berlin. ||| The course teacher comes from Berlin. ||| የኮርሱ መምህርቷ ከበርሊን ናቸው።
+Die Kursleiterin ist sehr nett. ||| The course teacher is very kind. ||| የኮርሱ መምህርቷ በጣም ደግ ናቸው።
+Wie heißt die Kursleiterin? ||| What is the course teacher called? ||| የኮርሱ መምህርቷ ማን ይባላሉ?
+## Langsam, bitte.
+Langsam, bitte. Ich lerne noch. ||| Slowly, please. I am still learning. ||| እባክዎ ቀስ ብለው። ገና እየተማርኩ ነው።
+Das ist schnell. Langsam, bitte! ||| That is fast. Slowly, please! ||| ይህ ፈጣን ነው። እባክዎ ቀስ ብለው!
+## Wie sagt man … auf Deutsch?
+Wie sagt man „ቡና“ auf Deutsch? – Kaffee. ||| How do you say “ቡና” in German? – Kaffee. ||| „ቡና“ በጀርመንኛ እንዴት ይባላል? – Kaffee።
+Entschuldigung, wie sagt man „thank you“ auf Deutsch? ||| Excuse me, how do you say “thank you” in German? ||| ይቅርታ፣ „thank you“ በጀርመንኛ እንዴት ይባላል?
+## Entschuldigung, wie bitte?
+Entschuldigung, wie bitte? Noch einmal, bitte. ||| Sorry, pardon? Once more, please. ||| ይቅርታ፣ ምን አሉ? እባክዎ እንደገና።
+Entschuldigung, wie bitte? Ich verstehe das nicht. ||| Sorry, pardon? I don't understand that. ||| ይቅርታ፣ ምን አሉ? ይህ አልገባኝም።

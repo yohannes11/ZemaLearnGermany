@@ -90,7 +90,10 @@ class CourseStore extends ChangeNotifier {
 
   String meaning(Word word) => _shown(bundle?.amharic?.words[word.german] ?? word.english);
 
-  String unitName(Unit unit) => t(unit.label ?? 'Unit ${unit.id}');
+  /// An example sentence's meaning in the learner's language.
+  String exampleMeaning((String, String) example) => _shown(bundle?.amharic?.examples[example.$1] ?? example.$2);
+
+  String unitName(Unit unit) => unit.label != null ? t(unit.label!) : _shown(T('Unit {n}', {'n': unit.id}));
 
   Unit? unit(int id) => units.where((u) => u.id == id).firstOrNull;
 

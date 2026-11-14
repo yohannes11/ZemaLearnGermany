@@ -1,0 +1,591 @@
+# Unit 7: example sentences for every word. German ||| English ||| Amharic
+# Three for a single word, two for a phrase; A1 German that uses the course's own words.
+
+# 7.1 Jobs
+## der Lehrer
+Der Lehrer ist sehr nett. ||| The teacher is very nice. ||| መምህሩ በጣም ደግ ነው።
+Mein Vater ist Lehrer. ||| My father is a teacher. ||| አባቴ መምህር ነው።
+Der Lehrer spricht langsam. ||| The teacher speaks slowly. ||| መምህሩ በቀስታ ይናገራል።
+## die Lehrerin
+Die Lehrerin heißt Frau Bekele. ||| The teacher is called Mrs Bekele. ||| መምህርቷ ወይዘሮ በቀለ ይባላሉ።
+Meine Schwester ist Lehrerin. ||| My sister is a teacher. ||| እህቴ መምህርት ናት።
+Die Lehrerin erklärt die Grammatik. ||| The teacher explains the grammar. ||| መምህርቷ ሰዋስውን ታብራራለች።
+## der Ingenieur
+Der Ingenieur arbeitet in Adama. ||| The engineer works in Adama. ||| መሐንዲሱ አዳማ ውስጥ ይሠራል።
+Dawit ist Ingenieur. ||| Dawit is an engineer. ||| ዳዊት መሐንዲስ ነው።
+Der Ingenieur baut eine Brücke. ||| The engineer is building a bridge. ||| መሐንዲሱ ድልድይ እየገነባ ነው።
+## die Ingenieurin
+Die Ingenieurin kommt aus Gondar. ||| The engineer comes from Gondar. ||| መሐንዲሷ ከጎንደር ናት።
+Liya ist Ingenieurin bei Siemens. ||| Liya is an engineer at Siemens. ||| ሊያ በሲመንስ መሐንዲስ ናት።
+Die Ingenieurin arbeitet viel. ||| The engineer works a lot. ||| መሐንዲሷ ብዙ ትሠራለች።
+## der Verkäufer
+Der Verkäufer ist freundlich. ||| The sales assistant is friendly. ||| ሻጩ ተግባቢ ነው።
+Ich frage den Verkäufer. ||| I ask the sales assistant. ||| ሻጩን እጠይቀዋለሁ።
+Mein Bruder ist Verkäufer. ||| My brother is a sales assistant. ||| ወንድሜ ሻጭ ነው።
+## die Verkäuferin
+Die Verkäuferin hilft mir. ||| The sales assistant helps me. ||| ሻጯ ትረዳኛለች።
+Die Verkäuferin arbeitet im Supermarkt. ||| The sales assistant works in the supermarket. ||| ሻጯ በሱፐርማርኬት ትሠራለች።
+Almaz ist Verkäuferin. ||| Almaz is a sales assistant. ||| አልማዝ ሻጭ ናት።
+## die Kellnerin
+Die Kellnerin bringt den Kaffee. ||| The waitress brings the coffee. ||| አስተናጋጇ ቡናውን ታመጣለች።
+Die Kellnerin ist sehr freundlich. ||| The waitress is very friendly. ||| አስተናጋጇ በጣም ተግባቢ ናት።
+Hanna arbeitet als Kellnerin. ||| Hanna works as a waitress. ||| ሀና አስተናጋጅ ሆና ትሠራለች።
+## der Programmierer
+Der Programmierer arbeitet am Computer. ||| The programmer works at the computer. ||| ፕሮግራመሩ በኮምፒውተር ይሠራል።
+Yonas ist Programmierer. ||| Yonas is a programmer. ||| ዮናስ ፕሮግራመር ነው።
+Der Programmierer arbeitet zu Hause. ||| The programmer works from home. ||| ፕሮግራመሩ ቤት ሆኖ ይሠራል።
+## die Programmiererin
+Die Programmiererin schreibt eine App. ||| The programmer is writing an app. ||| ፕሮግራመሯ አፕ እየጻፈች ነው።
+Meron ist Programmiererin. ||| Meron is a programmer. ||| ሜሮን ፕሮግራመር ናት።
+Die Programmiererin arbeitet in Berlin. ||| The programmer works in Berlin. ||| ፕሮግራመሯ በርሊን ውስጥ ትሠራለች።
+## der Polizist
+Der Polizist hilft uns. ||| The police officer helps us. ||| ፖሊሱ ይረዳናል።
+Der Polizist steht an der Straße. ||| The police officer is standing on the street. ||| ፖሊሱ መንገዱ ላይ ቆሟል።
+Mein Onkel ist Polizist. ||| My uncle is a police officer. ||| አጎቴ ፖሊስ ነው።
+## die Polizistin
+Die Polizistin ist sehr freundlich. ||| The police officer is very friendly. ||| ፖሊሷ በጣም ተግባቢ ናት።
+Fragen Sie die Polizistin! ||| Ask the police officer! ||| ፖሊሷን ይጠይቁ!
+Meine Tante ist Polizistin. ||| My aunt is a police officer. ||| አክስቴ ፖሊስ ናት።
+## der Elektriker
+Der Elektriker kommt morgen. ||| The electrician is coming tomorrow. ||| ኤሌክትሪሻኑ ነገ ይመጣል።
+Wir brauchen einen Elektriker. ||| We need an electrician. ||| ኤሌክትሪሻን ያስፈልገናል።
+Der Elektriker repariert die Lampe. ||| The electrician repairs the lamp. ||| ኤሌክትሪሻኑ መብራቱን ይጠግናል።
+## die Elektrikerin
+Die Elektrikerin ist sehr gut. ||| The electrician is very good. ||| ኤሌክትሪሻኗ በጣም ጎበዝ ናት።
+Selam ist Elektrikerin. ||| Selam is an electrician. ||| ሰላም ኤሌክትሪሻን ናት።
+Die Elektrikerin arbeitet in der Küche. ||| The electrician is working in the kitchen. ||| ኤሌክትሪሻኗ ወጥ ቤት ውስጥ እየሠራች ነው።
+## der Journalist
+Der Journalist schreibt einen Artikel. ||| The journalist is writing an article. ||| ጋዜጠኛው ጽሑፍ እየጻፈ ነው።
+Der Journalist fragt viel. ||| The journalist asks a lot. ||| ጋዜጠኛው ብዙ ይጠይቃል።
+Abebe ist Journalist. ||| Abebe is a journalist. ||| አበበ ጋዜጠኛ ነው።
+## die Journalistin
+Die Journalistin arbeitet für eine Zeitung. ||| The journalist works for a newspaper. ||| ጋዜጠኛዋ ለጋዜጣ ትሠራለች።
+Die Journalistin reist viel. ||| The journalist travels a lot. ||| ጋዜጠኛዋ ብዙ ትጓዛለች።
+Meine Freundin ist Journalistin. ||| My friend is a journalist. ||| ጓደኛዬ ጋዜጠኛ ናት።
+## der Mechaniker
+Der Mechaniker repariert das Auto. ||| The mechanic repairs the car. ||| መካኒኩ መኪናውን ይጠግናል።
+Der Mechaniker ist sehr gut. ||| The mechanic is very good. ||| መካኒኩ በጣም ጎበዝ ነው።
+Tesfaye ist Mechaniker. ||| Tesfaye is a mechanic. ||| ተስፋዬ መካኒክ ነው።
+## die Mechanikerin
+Die Mechanikerin repariert mein Fahrrad. ||| The mechanic repairs my bicycle. ||| መካኒኳ ብስክሌቴን ትጠግናለች።
+Die Mechanikerin arbeitet in einer Werkstatt. ||| The mechanic works in a workshop. ||| መካኒኳ በጋራዥ ውስጥ ትሠራለች።
+Meine Cousine ist Mechanikerin. ||| My cousin is a mechanic. ||| የአጎቴ ልጅ መካኒክ ናት።
+## der Arzt
+Der Arzt ist im Krankenhaus. ||| The doctor is in the hospital. ||| ሐኪሙ ሆስፒታል ውስጥ ነው።
+Ich gehe zum Arzt. ||| I am going to the doctor. ||| ወደ ሐኪም እሄዳለሁ።
+Mein Bruder ist Arzt. ||| My brother is a doctor. ||| ወንድሜ ሐኪም ነው።
+## die Ärztin
+Die Ärztin ist sehr nett. ||| The doctor is very nice. ||| ሐኪሟ በጣም ደግ ናት።
+Die Ärztin arbeitet in Addis Abeba. ||| The doctor works in Addis Ababa. ||| ሐኪሟ አዲስ አበባ ውስጥ ትሠራለች።
+Hanna ist Ärztin. ||| Hanna is a doctor. ||| ሀና ሐኪም ናት።
+## der Krankenpfleger
+Der Krankenpfleger hilft den Patienten. ||| The nurse helps the patients. ||| ነርሱ ታካሚዎቹን ይረዳል።
+Der Krankenpfleger arbeitet in der Nacht. ||| The nurse works at night. ||| ነርሱ ሌሊት ይሠራል።
+Dawit ist Krankenpfleger. ||| Dawit is a nurse. ||| ዳዊት ነርስ ነው።
+## die Krankenschwester
+Die Krankenschwester ist sehr freundlich. ||| The nurse is very friendly. ||| ነርሷ በጣም ተግባቢ ናት።
+Die Krankenschwester bringt das Wasser. ||| The nurse brings the water. ||| ነርሷ ውሃውን ታመጣለች።
+Meine Mutter ist Krankenschwester. ||| My mother is a nurse. ||| እናቴ ነርስ ናት።
+## der Tierarzt
+Der Tierarzt hilft dem Hund. ||| The vet helps the dog. ||| የእንስሳት ሐኪሙ ውሻውን ይረዳል።
+Wir gehen mit der Katze zum Tierarzt. ||| We are taking the cat to the vet. ||| ድመቷን ይዘን ወደ እንስሳት ሐኪም እንሄዳለን።
+Mein Onkel ist Tierarzt. ||| My uncle is a vet. ||| አጎቴ የእንስሳት ሐኪም ነው።
+## die Tierärztin
+Die Tierärztin liebt Tiere. ||| The vet loves animals. ||| የእንስሳት ሐኪሟ እንስሳትን ትወዳለች።
+Die Tierärztin arbeitet auf dem Land. ||| The vet works in the countryside. ||| የእንስሳት ሐኪሟ በገጠር ትሠራለች።
+Meron möchte Tierärztin werden. ||| Meron would like to become a vet. ||| ሜሮን የእንስሳት ሐኪም መሆን ትፈልጋለች።
+## der Zahnarzt
+Ich habe morgen einen Termin beim Zahnarzt. ||| I have an appointment at the dentist's tomorrow. ||| ነገ የጥርስ ሐኪም ቀጠሮ አለኝ።
+Der Zahnarzt ist sehr gut. ||| The dentist is very good. ||| የጥርስ ሐኪሙ በጣም ጎበዝ ነው።
+Die Kinder haben Angst vor dem Zahnarzt. ||| The children are afraid of the dentist. ||| ልጆቹ የጥርስ ሐኪሙን ይፈራሉ።
+## die Zahnärztin
+Die Zahnärztin ist sehr freundlich. ||| The dentist is very friendly. ||| የጥርስ ሐኪሟ በጣም ተግባቢ ናት።
+Meine Tante ist Zahnärztin. ||| My aunt is a dentist. ||| አክስቴ የጥርስ ሐኪም ናት።
+Die Zahnärztin arbeitet bis fünf Uhr. ||| The dentist works until five o'clock. ||| የጥርስ ሐኪሟ እስከ አሥራ አንድ ሰዓት ትሠራለች።
+## der Geschäftsmann
+Der Geschäftsmann reist viel. ||| The businessman travels a lot. ||| ነጋዴው ብዙ ይጓዛል።
+Mein Vater ist Geschäftsmann. ||| My father is a businessman. ||| አባቴ ነጋዴ ነው።
+Der Geschäftsmann hat einen Laden in Merkato. ||| The businessman has a shop in Merkato. ||| ነጋዴው በመርካቶ ሱቅ አለው።
+## die Geschäftsfrau
+Die Geschäftsfrau hat viele Termine. ||| The businesswoman has many appointments. ||| ነጋዴዋ ብዙ ቀጠሮዎች አሏት።
+Almaz ist Geschäftsfrau. ||| Almaz is a businesswoman. ||| አልማዝ ነጋዴ ናት።
+Die Geschäftsfrau verkauft Kaffee. ||| The businesswoman sells coffee. ||| ነጋዴዋ ቡና ትሸጣለች።
+## der Anwalt
+Der Anwalt hilft mir. ||| The lawyer helps me. ||| ጠበቃው ይረዳኛል።
+Ich brauche einen Anwalt. ||| I need a lawyer. ||| ጠበቃ ያስፈልገኛል።
+Der Anwalt arbeitet viel. ||| The lawyer works a lot. ||| ጠበቃው ብዙ ይሠራል።
+## die Anwältin
+Die Anwältin ist sehr gut. ||| The lawyer is very good. ||| ጠበቃዋ በጣም ጎበዝ ናት።
+Meine Schwester ist Anwältin. ||| My sister is a lawyer. ||| እህቴ ጠበቃ ናት።
+Die Anwältin hat heute keine Zeit. ||| The lawyer has no time today. ||| ጠበቃዋ ዛሬ ጊዜ የላትም።
+## der Friseur
+Der Friseur schneidet meine Haare. ||| The hairdresser cuts my hair. ||| ፀጉር አስተካካዩ ፀጉሬን ይቆርጣል።
+Ich gehe zum Friseur. ||| I am going to the hairdresser. ||| ወደ ፀጉር አስተካካይ እሄዳለሁ።
+Der Friseur ist neben der Bank. ||| The hairdresser is next to the bank. ||| ፀጉር አስተካካዩ ከባንኩ አጠገብ ነው።
+## die Friseurin
+Die Friseurin ist sehr nett. ||| The hairdresser is very nice. ||| ፀጉር አስተካካይዋ በጣም ደግ ናት።
+Selam ist Friseurin. ||| Selam is a hairdresser. ||| ሰላም ፀጉር አስተካካይ ናት።
+Die Friseurin hat heute viele Kunden. ||| The hairdresser has many customers today. ||| ፀጉር አስተካካይዋ ዛሬ ብዙ ደንበኞች አሏት።
+## der Koch
+Der Koch kocht sehr gut. ||| The cook cooks very well. ||| ምግብ አብሳዩ በጣም ጥሩ ያበስላል።
+Der Koch arbeitet im Restaurant. ||| The chef works in the restaurant. ||| ሼፉ ምግብ ቤት ውስጥ ይሠራል።
+Mein Bruder ist Koch. ||| My brother is a cook. ||| ወንድሜ ምግብ አብሳይ ነው።
+## die Köchin
+Die Köchin macht Doro Wot. ||| The cook is making doro wot. ||| ምግብ አብሳይዋ ዶሮ ወጥ እየሠራች ነው።
+Die Köchin ist sehr gut. ||| The chef is very good. ||| ሼፏ በጣም ጎበዝ ናት።
+Meine Oma war Köchin. ||| My grandma was a cook. ||| አያቴ ምግብ አብሳይ ነበሩ።
+## Was bist du von Beruf?
+Was bist du von Beruf? – Ich bin Arzt. ||| What do you do for a living? – I am a doctor. ||| ሥራህ ምንድን ነው? – ሐኪም ነኝ።
+Was bist du von Beruf, Liya? ||| What do you do for a living, Liya? ||| ሊያ፣ ሥራሽ ምንድን ነው?
+## Ich bin Lehrerin von Beruf.
+Ich bin Lehrerin von Beruf. Ich arbeite in einer Schule. ||| I am a teacher by profession. I work in a school. ||| ሙያዬ መምህርነት ነው። በትምህርት ቤት እሠራለሁ።
+Was bist du von Beruf? – Ich bin Lehrerin von Beruf. ||| What do you do for a living? – I am a teacher by profession. ||| ሥራሽ ምንድን ነው? – ሙያዬ መምህርነት ነው።
+
+# 7.2 What can you do?
+## Gitarre spielen
+Ich kann Gitarre spielen. ||| I can play the guitar. ||| ጊታር መጫወት እችላለሁ።
+Mein Bruder spielt jeden Tag Gitarre. ||| My brother plays the guitar every day. ||| ወንድሜ በየቀኑ ጊታር ይጫወታል።
+## Skateboard fahren
+Die Kinder fahren im Park Skateboard. ||| The children skateboard in the park. ||| ልጆቹ በፓርኩ ውስጥ ስኬትቦርድ ይነዳሉ።
+Kannst du Skateboard fahren? ||| Can you skateboard? ||| ስኬትቦርድ መንዳት ትችላለህ?
+## Ski laufen
+Im Winter laufen wir Ski. ||| In winter we go skiing. ||| በክረምት በበረዶ ላይ ሸርተቴ እንጫወታለን።
+Ich kann nicht Ski laufen. ||| I can't ski. ||| በበረዶ ላይ ሸርተቴ መጫወት አልችልም።
+## Was kannst du gut machen?
+Was kannst du gut machen? – Ich kann gut kochen. ||| What are you good at? – I am good at cooking. ||| ምን በደንብ መሥራት ትችላለህ? – በደንብ ምግብ ማብሰል እችላለሁ።
+Was kannst du gut machen, Dawit? ||| What are you good at, Dawit? ||| ዳዊት፣ ምን በደንብ መሥራት ትችላለህ?
+## Was kannst du nicht gut machen?
+Was kannst du nicht gut machen? – Singen! ||| What are you not good at? – Singing! ||| ምን በደንብ መሥራት አትችልም? – መዝፈን!
+Und was kannst du nicht gut machen? ||| And what are you not good at? ||| ምንስ በደንብ መሥራት አትችዪም?
+## Sie kann sehr gut tanzen.
+Meine Schwester? Sie kann sehr gut tanzen. ||| My sister? She can dance very well. ||| እህቴ? በጣም ጥሩ መደነስ ትችላለች።
+Sie kann sehr gut tanzen, aber nicht singen. ||| She can dance very well, but not sing. ||| በጣም ጥሩ መደነስ ትችላለች፤ መዝፈን ግን አትችልም።
+## Er kann gar nicht kochen.
+Er kann gar nicht kochen. Er isst im Restaurant. ||| He can't cook at all. He eats in a restaurant. ||| ምግብ ማብሰል በፍጹም አይችልም። ምግብ ቤት ይበላል።
+Mein Bruder? Er kann gar nicht kochen. ||| My brother? He can't cook at all. ||| ወንድሜ? ምግብ ማብሰል በፍጹም አይችልም።
+
+# 7.3 können (can)
+## können
+Wir können Deutsch sprechen. ||| We can speak German. ||| ጀርመንኛ መናገር እንችላለን።
+Können Sie mir helfen? ||| Can you help me? ||| ሊረዱኝ ይችላሉ?
+Die Kinder können schon lesen. ||| The children can already read. ||| ልጆቹ ማንበብ ይችላሉ።
+## ich kann
+Ich kann gut schwimmen. ||| I can swim well. ||| በደንብ መዋኘት እችላለሁ።
+Ich kann heute nicht kommen. ||| I can't come today. ||| ዛሬ መምጣት አልችልም።
+## du kannst
+Du kannst sehr gut Deutsch. ||| You know German very well. ||| ጀርመንኛ በጣም ጥሩ ትችላለህ።
+Du kannst morgen kommen. ||| You can come tomorrow. ||| ነገ መምጣት ትችያለሽ።
+## sie kann
+Sie kann Auto fahren. ||| She can drive a car. ||| መኪና መንዳት ትችላለች።
+Liya ist krank. Sie kann nicht kommen. ||| Liya is ill. She can't come. ||| ሊያ ታማለች። መምጣት አትችልም።
+## wir können
+Wir können zusammen lernen. ||| We can learn together. ||| አብረን መማር እንችላለን።
+Wir können am Samstag ins Kino gehen. ||| We can go to the cinema on Saturday. ||| ቅዳሜ ሲኒማ ቤት መሄድ እንችላለን።
+## ihr könnt
+Ihr könnt hier spielen. ||| You (all) can play here. ||| እዚህ መጫወት ትችላላችሁ።
+Könnt ihr morgen kommen? ||| Can you (all) come tomorrow? ||| ነገ መምጣት ትችላላችሁ?
+## sie können
+Sie können gut Fußball spielen. ||| They can play football well. ||| በደንብ እግር ኳስ መጫወት ይችላሉ።
+Die Kinder sind müde. Sie können nicht mehr laufen. ||| The children are tired. They can't walk any more. ||| ልጆቹ ደክመዋል። ከዚህ በላይ መራመድ አይችሉም።
+
+# 7.4 müssen, dürfen, sollen
+## müssen
+Wir müssen jetzt gehen. ||| We have to go now. ||| አሁን መሄድ አለብን።
+Kinder müssen in die Schule gehen. ||| Children must go to school. ||| ልጆች ትምህርት ቤት መሄድ አለባቸው።
+Müssen Sie heute arbeiten? ||| Do you have to work today? ||| ዛሬ መሥራት አለብዎት?
+## ich muss
+Ich muss heute arbeiten. ||| I have to work today. ||| ዛሬ መሥራት አለብኝ።
+Ich muss früh aufstehen. ||| I have to get up early. ||| ቀደም ብዬ መነሣት አለብኝ።
+## du musst
+Du musst mehr Wasser trinken. ||| You must drink more water. ||| ተጨማሪ ውሃ መጠጣት አለብህ።
+Du musst nicht kommen. ||| You don't have to come. ||| መምጣት የለብሽም።
+## es muss
+Es muss heute fertig sein. ||| It must be finished today. ||| ዛሬ መጠናቀቅ አለበት።
+Das Fenster ist kaputt. Es muss repariert werden. ||| The window is broken. It must be repaired. ||| መስኮቱ ተሰብሯል። መጠገን አለበት።
+## wir müssen
+Wir müssen einkaufen. ||| We have to go shopping. ||| ዕቃ መግዛት አለብን።
+Wir müssen um acht Uhr da sein. ||| We have to be there at eight o'clock. ||| ሁለት ሰዓት ላይ እዚያ መገኘት አለብን።
+## ihr müsst
+Ihr müsst leise sein. ||| You (all) must be quiet. ||| ዝም ማለት አለባችሁ።
+Ihr müsst die Hausaufgaben machen. ||| You (all) must do the homework. ||| የቤት ሥራውን መሥራት አለባችሁ።
+## sie müssen
+Sie müssen heute lange arbeiten. ||| They have to work long hours today. ||| ዛሬ ረጅም ሰዓት መሥራት አለባቸው።
+Die Kinder müssen um neun Uhr schlafen. ||| The children must sleep at nine o'clock. ||| ልጆቹ ሦስት ሰዓት ላይ መተኛት አለባቸው።
+## dürfen
+Hier dürfen Sie nicht rauchen. ||| You are not allowed to smoke here. ||| እዚህ ማጨስ አይፈቀድልዎትም።
+Kinder dürfen hier spielen. ||| Children are allowed to play here. ||| ልጆች እዚህ መጫወት ይፈቀድላቸዋል።
+Dürfen wir hier fotografieren? ||| May we take photos here? ||| እዚህ ፎቶ ማንሳት ይፈቀድልናል?
+## ich darf
+Darf ich reinkommen? ||| May I come in? ||| መግባት እችላለሁ?
+Ich darf heute lange schlafen. ||| I am allowed to sleep in today. ||| ዛሬ ረጅም ሰዓት መተኛት ተፈቅዶልኛል።
+## du darfst
+Du darfst ein Eis essen. ||| You may eat an ice cream. ||| አይስክሬም መብላት ተፈቅዶልሃል።
+Du darfst hier nicht parken. ||| You are not allowed to park here. ||| እዚህ መኪና ማቆም አይፈቀድልሽም።
+## er darf
+Er darf heute fernsehen. ||| He is allowed to watch TV today. ||| ዛሬ ቴሌቪዥን ማየት ተፈቅዶለታል።
+Er ist krank. Er darf keinen Kaffee trinken. ||| He is ill. He is not allowed to drink coffee. ||| ታሟል። ቡና መጠጣት አይፈቀድለትም።
+## wir dürfen
+Wir dürfen hier schwimmen. ||| We are allowed to swim here. ||| እዚህ መዋኘት ተፈቅዶልናል።
+Dürfen wir jetzt gehen? ||| May we go now? ||| አሁን መሄድ እንችላለን?
+## ihr dürft
+Ihr dürft jetzt spielen. ||| You (all) may play now. ||| አሁን መጫወት ተፈቅዶላችኋል።
+Ihr dürft hier nicht laut sein. ||| You (all) are not allowed to be loud here. ||| እዚህ መጮኽ አይፈቀድላችሁም።
+## sie dürfen
+Die Kinder dürfen bis zehn Uhr aufbleiben. ||| The children are allowed to stay up until ten o'clock. ||| ልጆቹ እስከ አራት ሰዓት ማምሸት ተፈቅዶላቸዋል።
+Sie dürfen hier nicht parken. ||| They are not allowed to park here. ||| እዚህ መኪና ማቆም አይፈቀድላቸውም።
+## sollen
+Was sollen wir machen? ||| What should we do? ||| ምን ማድረግ አለብን?
+Der Arzt sagt, Sie sollen mehr schlafen. ||| The doctor says you should sleep more. ||| ሐኪሙ ተጨማሪ መተኛት እንዳለብዎ ይናገራል።
+Sollen wir den Bus nehmen? ||| Should we take the bus? ||| አውቶቡሱን እንያዝ?
+## ich soll
+Ich soll viel Wasser trinken. ||| I am supposed to drink a lot of water. ||| ብዙ ውሃ መጠጣት ይገባኛል።
+Soll ich das Fenster aufmachen? ||| Shall I open the window? ||| መስኮቱን ልክፈት?
+## du sollst
+Du sollst deine Mutter anrufen. ||| You are supposed to call your mother. ||| እናትህን መደወል ይገባሃል።
+Du sollst nicht so viel arbeiten. ||| You shouldn't work so much. ||| ይህን ያህል መሥራት አይገባሽም።
+## es soll
+Morgen soll es regnen. ||| It is supposed to rain tomorrow. ||| ነገ ይዘንባል ተብሏል።
+Das Essen soll heiß sein. ||| The food should be hot. ||| ምግቡ ትኩስ መሆን ይገባዋል።
+## wir sollen
+Wir sollen um acht Uhr da sein. ||| We are supposed to be there at eight o'clock. ||| ሁለት ሰዓት ላይ እዚያ መገኘት ይገባናል።
+Sollen wir Kaffee machen? ||| Shall we make coffee? ||| ቡና እናፍላ?
+## ihr sollt
+Ihr sollt leise sein. ||| You (all) are supposed to be quiet. ||| ዝም ማለት ይገባችኋል።
+Ihr sollt die Übung machen. ||| You (all) are supposed to do the exercise. ||| መልመጃውን መሥራት ይገባችኋል።
+## sie sollen
+Die Kinder sollen jetzt schlafen. ||| The children are supposed to sleep now. ||| ልጆቹ አሁን መተኛት ይገባቸዋል።
+Sie sollen morgen anrufen. ||| They are supposed to call tomorrow. ||| ነገ መደወል ይገባቸዋል።
+
+# 7.5 wollen & möchten
+## ich will
+Ich will nach Deutschland reisen. ||| I want to travel to Germany. ||| ወደ ጀርመን መጓዝ እፈልጋለሁ።
+Ich will jetzt nicht schlafen. ||| I don't want to sleep now. ||| አሁን መተኛት አልፈልግም።
+## du willst
+Was willst du essen? ||| What do you want to eat? ||| ምን መብላት ትፈልጋለህ?
+Willst du mitkommen? ||| Do you want to come along? ||| አብረሽ መምጣት ትፈልጊያለሽ?
+## er will
+Er will Arzt werden. ||| He wants to become a doctor. ||| ሐኪም መሆን ይፈልጋል።
+Er will heute Fußball spielen. ||| He wants to play football today. ||| ዛሬ እግር ኳስ መጫወት ይፈልጋል።
+## wir wollen
+Wir wollen ein Auto kaufen. ||| We want to buy a car. ||| መኪና መግዛት እንፈልጋለን።
+Wir wollen am Wochenende wandern. ||| We want to go hiking at the weekend. ||| ቅዳሜና እሑድ በእግር መጓዝ እንፈልጋለን።
+## ihr wollt
+Was wollt ihr trinken? ||| What do you (all) want to drink? ||| ምን መጠጣት ትፈልጋላችሁ?
+Wollt ihr ins Kino gehen? ||| Do you (all) want to go to the cinema? ||| ሲኒማ ቤት መሄድ ትፈልጋላችሁ?
+## sie wollen
+Die Kinder wollen spielen. ||| The children want to play. ||| ልጆቹ መጫወት ይፈልጋሉ።
+Sie wollen in Berlin wohnen. ||| They want to live in Berlin. ||| በርሊን ውስጥ መኖር ይፈልጋሉ።
+## möchten
+Was möchten Sie trinken? ||| What would you like to drink? ||| ምን መጠጣት ይፈልጋሉ?
+Möchten Sie einen Kaffee? ||| Would you like a coffee? ||| ቡና ይፈልጋሉ?
+Wir möchten bitte zahlen. ||| We would like to pay, please. ||| እባክዎ መክፈል እንፈልጋለን።
+## ich möchte
+Ich möchte einen Tee, bitte. ||| I would like a tea, please. ||| አንድ ሻይ እፈልጋለሁ፣ እባክዎ።
+Ich möchte Deutsch lernen. ||| I would like to learn German. ||| ጀርመንኛ መማር እፈልጋለሁ።
+## du möchtest
+Was möchtest du essen? ||| What would you like to eat? ||| ምን መብላት ትፈልጋለህ?
+Möchtest du noch Kaffee? ||| Would you like more coffee? ||| ተጨማሪ ቡና ትፈልጊያለሽ?
+## sie möchte
+Sie möchte ein Wasser. ||| She would like a water. ||| ውሃ ትፈልጋለች።
+Liya möchte Ärztin werden. ||| Liya would like to become a doctor. ||| ሊያ ሐኪም መሆን ትፈልጋለች።
+## wir möchten
+Wir möchten einen Tisch für vier Personen. ||| We would like a table for four people. ||| ለአራት ሰዎች ጠረጴዛ እንፈልጋለን።
+Wir möchten nach Lalibela fahren. ||| We would like to go to Lalibela. ||| ወደ ላሊበላ መሄድ እንፈልጋለን።
+## ihr möchtet
+Was möchtet ihr trinken? ||| What would you (all) like to drink? ||| ምን መጠጣት ትፈልጋላችሁ?
+Möchtet ihr Kuchen? ||| Would you (all) like cake? ||| ኬክ ትፈልጋላችሁ?
+## sie möchten
+Sie möchten ein Zimmer für zwei Nächte. ||| They would like a room for two nights. ||| ለሁለት ሌሊት ክፍል ይፈልጋሉ።
+Die Kinder möchten ein Eis. ||| The children would like an ice cream. ||| ልጆቹ አይስክሬም ይፈልጋሉ።
+
+# 7.6 Learning German
+## besser
+Mein Deutsch ist jetzt besser. ||| My German is better now. ||| ጀርመንኛዬ አሁን የተሻለ ነው።
+Tee ist besser als Kaffee. ||| Tea is better than coffee. ||| ሻይ ከቡና ይሻላል።
+Heute geht es mir besser. ||| Today I feel better. ||| ዛሬ ተሽሎኛል።
+## am besten
+Liya spricht am besten Deutsch. ||| Liya speaks German best. ||| ከሁሉ የተሻለ ጀርመንኛ የምትናገረው ሊያ ናት።
+Am besten lernst du jeden Tag. ||| It's best if you learn every day. ||| ከሁሉ የሚሻለው በየቀኑ መማር ነው።
+## verbessern
+Ich will mein Deutsch verbessern. ||| I want to improve my German. ||| ጀርመንኛዬን ማሻሻል እፈልጋለሁ።
+Die Lehrerin verbessert die Fehler. ||| The teacher corrects the mistakes. ||| መምህርቷ ስሕተቶቹን ታርማለች።
+Wie kann ich meine Aussprache verbessern? ||| How can I improve my pronunciation? ||| አነባበቤን እንዴት ማሻሻል እችላለሁ?
+## verschieden
+Wir haben verschiedene Hobbys. ||| We have different hobbies. ||| የተለያዩ የትርፍ ጊዜ ማሳለፊያዎች አሉን።
+Es gibt verschiedene Übungen. ||| There are various exercises. ||| የተለያዩ መልመጃዎች አሉ።
+Die Brüder sind sehr verschieden. ||| The brothers are very different. ||| ወንድማማቾቹ በጣም የተለያዩ ናቸው።
+## auswählen
+Wähl bitte ein Wort aus. ||| Please choose a word. ||| እባክህ አንድ ቃል ምረጥ።
+Ich wähle das rote Kleid aus. ||| I choose the red dress. ||| ቀዩን ቀሚስ እመርጣለሁ።
+Hier kannst du die Lektion auswählen. ||| Here you can choose the lesson. ||| እዚህ ትምህርቱን መምረጥ ትችላለህ።
+## verbringen
+Ich verbringe viel Zeit mit meiner Familie. ||| I spend a lot of time with my family. ||| ከቤተሰቤ ጋር ብዙ ጊዜ አሳልፋለሁ።
+Wo verbringst du den Urlaub? ||| Where are you spending the holiday? ||| ዕረፍትህን የት ታሳልፋለህ?
+Wir verbringen das Wochenende in Bishoftu. ||| We are spending the weekend in Bishoftu. ||| ቅዳሜና እሑድን ቢሾፍቱ እናሳልፋለን።
+## vielleicht
+Vielleicht regnet es morgen. ||| Maybe it will rain tomorrow. ||| ምናልባት ነገ ይዘንባል።
+Kommst du? – Vielleicht. ||| Are you coming? – Maybe. ||| ትመጣለህ? – ምናልባት።
+Vielleicht hast du recht. ||| Perhaps you are right. ||| ምናልባት ልክ ነህ።
+## das Vokabular
+Das Vokabular ist neu. ||| The vocabulary is new. ||| የቃላት ዝርዝሩ አዲስ ነው።
+Ich lerne jeden Tag das Vokabular. ||| I learn the vocabulary every day. ||| በየቀኑ የቃላት ዝርዝሩን እማራለሁ።
+Das Vokabular ist nicht schwer. ||| The vocabulary is not difficult. ||| የቃላት ዝርዝሩ ከባድ አይደለም።
+## das Hörverstehen
+Das Hörverstehen ist schwer für mich. ||| Listening comprehension is difficult for me. ||| የማዳመጥ ግንዛቤ ለእኔ ከባድ ነው።
+Heute üben wir das Hörverstehen. ||| Today we practise listening comprehension. ||| ዛሬ የማዳመጥ ግንዛቤን እንለማመዳለን።
+Mit Musik verbessere ich das Hörverstehen. ||| With music I improve my listening comprehension. ||| በሙዚቃ የማዳመጥ ግንዛቤዬን አሻሽላለሁ።
+## die Aussprache
+Die Aussprache ist wichtig. ||| Pronunciation is important. ||| አነባበብ አስፈላጊ ነው።
+Deine Aussprache ist sehr gut. ||| Your pronunciation is very good. ||| አነባበብህ በጣም ጥሩ ነው።
+Die Aussprache von „ü“ ist schwer. ||| The pronunciation of “ü” is difficult. ||| የ„ü“ አነባበብ ከባድ ነው።
+## der Gesprächspartner
+Ich suche einen Gesprächspartner. ||| I am looking for a conversation partner. ||| የውይይት አጋር እየፈለግሁ ነው።
+Mein Gesprächspartner kommt aus Hamburg. ||| My conversation partner comes from Hamburg. ||| የውይይት አጋሬ ከሃምቡርግ ነው።
+Wir treffen unseren Gesprächspartner im Café. ||| We meet our conversation partner at the café. ||| የውይይት አጋራችንን ካፌ ውስጥ እናገኘዋለን።
+
+# 7.7 Writing an email
+## der Betreff
+Der Betreff ist leer. ||| The subject is empty. ||| ርዕሰ ጉዳዩ ባዶ ነው።
+Schreib bitte einen Betreff. ||| Please write a subject. ||| እባክህ ርዕሰ ጉዳይ ጻፍ።
+Der Betreff ist „Termin am Montag“. ||| The subject is “Appointment on Monday”. ||| ርዕሰ ጉዳዩ „የሰኞ ቀጠሮ“ ነው።
+## der Empfänger
+Der Empfänger ist Herr Müller. ||| The recipient is Mr Müller. ||| ተቀባዩ አቶ ሙለር ናቸው።
+Wer ist der Empfänger? ||| Who is the recipient? ||| ተቀባዩ ማን ነው?
+Der Empfänger wohnt in Berlin. ||| The recipient lives in Berlin. ||| ተቀባዩ በርሊን ውስጥ ይኖራል።
+## der Absender
+Wer ist der Absender? ||| Who is the sender? ||| ላኪው ማን ነው?
+Der Absender ist meine Bank. ||| The sender is my bank. ||| ላኪው ባንኬ ነው።
+Der Absender steht oben. ||| The sender is at the top. ||| ላኪው ከላይ ተጽፏል።
+## der Anhang
+Der Anhang ist ein Foto. ||| The attachment is a photo. ||| አባሪው ፎቶ ነው።
+Im Anhang ist mein Lebenslauf. ||| My CV is in the attachment. ||| የሕይወት ታሪኬ አባሪው ውስጥ ነው።
+Ich kann den Anhang nicht öffnen. ||| I can't open the attachment. ||| አባሪውን መክፈት አልችልም።
+## senden
+Ich sende dir eine Nachricht. ||| I am sending you a message. ||| መልዕክት እልክልሃለሁ።
+Bitte senden Sie mir die Adresse. ||| Please send me the address. ||| እባክዎ አድራሻውን ይላኩልኝ።
+Sie sendet die E-Mail heute. ||| She is sending the email today. ||| ኢሜይሉን ዛሬ ትልካለች።
+## löschen
+Ich lösche die alte Nachricht. ||| I am deleting the old message. ||| አሮጌውን መልዕክት እሰርዛለሁ።
+Lösch bitte das Foto! ||| Please delete the photo! ||| እባክህ ፎቶውን ሰርዝ!
+Er löscht die E-Mail. ||| He deletes the email. ||| ኢሜይሉን ይሰርዛል።
+## schreiben
+Ich schreibe eine E-Mail. ||| I am writing an email. ||| ኢሜይል እየጻፍኩ ነው።
+Schreib mir bitte! ||| Please write to me! ||| እባክህ ጻፍልኝ!
+Wie schreibt man das? ||| How do you spell that? ||| ይህ እንዴት ይጻፋል?
+## Sehr geehrte Frau Müller
+Sehr geehrte Frau Müller, vielen Dank für Ihre E-Mail. ||| Dear Ms Müller, many thanks for your email. ||| ለክብርት ወ/ሮ ሙለር፣ ስለ ኢሜይልዎ በጣም አመሰግናለሁ።
+Sehr geehrte Frau Müller, ich habe eine Frage. ||| Dear Ms Müller, I have a question. ||| ለክብርት ወ/ሮ ሙለር፣ አንድ ጥያቄ አለኝ።
+## Sehr geehrter Herr Müller
+Sehr geehrter Herr Müller, im Anhang ist mein Lebenslauf. ||| Dear Mr Müller, my CV is attached. ||| ለክቡር አቶ ሙለር፣ የሕይወት ታሪኬ ተያይዟል።
+Sehr geehrter Herr Müller, ich möchte einen Termin. ||| Dear Mr Müller, I would like an appointment. ||| ለክቡር አቶ ሙለር፣ ቀጠሮ እፈልጋለሁ።
+## Sehr geehrte Damen und Herren
+Sehr geehrte Damen und Herren, ich suche eine Wohnung. ||| Dear Sir or Madam, I am looking for an apartment. ||| ለሚመለከተው ሁሉ፣ አፓርታማ እየፈለግሁ ነው።
+Sehr geehrte Damen und Herren, ich möchte mich anmelden. ||| Dear Sir or Madam, I would like to register. ||| ለሚመለከተው ሁሉ፣ መመዝገብ እፈልጋለሁ።
+## Liebe Anna, lieber Tom
+Liebe Anna, lieber Tom, wie geht es euch? ||| Dear Anna, dear Tom, how are you? ||| ውድ አና፣ ውድ ቶም፣ እንዴት ናችሁ?
+Liebe Anna, lieber Tom, danke für die Einladung! ||| Dear Anna, dear Tom, thanks for the invitation! ||| ውድ አና፣ ውድ ቶም፣ ስለ ግብዣው አመሰግናለሁ!
+## Mit freundlichen Grüßen
+Mit freundlichen Grüßen, Selam Tesfaye ||| Kind regards, Selam Tesfaye ||| ከሰላምታ ጋር፣ ሰላም ተስፋዬ
+Ich schreibe am Ende „Mit freundlichen Grüßen“. ||| At the end I write “Kind regards”. ||| መጨረሻ ላይ „ከሰላምታ ጋር“ እጽፋለሁ።
+## Viele Grüße
+Viele Grüße aus Addis Abeba! ||| Best wishes from Addis Ababa! ||| ከአዲስ አበባ ብዙ ሰላምታ!
+Viele Grüße an deine Familie! ||| Best wishes to your family! ||| ለቤተሰብህ ብዙ ሰላምታ!
+## Liebe Grüße
+Liebe Grüße, deine Liya ||| Love, your Liya ||| ሞቅ ያለ ሰላምታ፣ ሊያህ
+Liebe Grüße und bis bald! ||| Warm wishes and see you soon! ||| ሞቅ ያለ ሰላምታ፤ በቅርቡ እንገናኝ!
+## Alles Gute
+Alles Gute zum Geburtstag! ||| Happy birthday! ||| መልካም ልደት!
+Alles Gute für die Prüfung! ||| All the best for the exam! ||| ለፈተናው መልካም ዕድል!
+
+# 7.8 Years & dates of birth
+## Wann bist du geboren?
+Wann bist du geboren? – 1999. ||| When were you born? – In 1999. ||| መቼ ነው የተወለድከው? – በ1999።
+Wann bist du geboren, Selam? ||| When were you born, Selam? ||| ሰላም፣ መቼ ነው የተወለድሽው?
+## Wann ist er gestorben?
+Wann ist er gestorben? – 1848. ||| When did he die? – In 1848. ||| መቼ ነው የሞተው? – በ1848።
+Dein Opa? Wann ist er gestorben? ||| Your grandpa? When did he die? ||| አያትህ? መቼ ነው የሞቱት?
+## neunzehnhundertneunundneunzig
+Ich bin neunzehnhundertneunundneunzig geboren. ||| I was born in 1999. ||| በ1999 ተወለድኩ።
+Neunzehnhundertneunundneunzig war ich in Gondar. ||| In 1999 I was in Gondar. ||| በ1999 ጎንደር ነበርኩ።
+Das Foto ist von neunzehnhundertneunundneunzig. ||| The photo is from 1999. ||| ፎቶው የ1999 ነው።
+## zweitausendeins
+Meine Schwester ist zweitausendeins geboren. ||| My sister was born in 2001. ||| እህቴ በ2001 ተወለደች።
+Zweitausendeins war ich ein Kind. ||| In 2001 I was a child. ||| በ2001 ልጅ ነበርኩ።
+Das Auto ist von zweitausendeins. ||| The car is from 2001. ||| መኪናው የ2001 ነው።
+## achtzehnhundertachtundvierzig
+Er ist achtzehnhundertachtundvierzig gestorben. ||| He died in 1848. ||| በ1848 ሞተ።
+Das Haus ist von achtzehnhundertachtundvierzig. ||| The house is from 1848. ||| ቤቱ የ1848 ነው።
+Achtzehnhundertachtundvierzig ist ein wichtiges Jahr. ||| 1848 is an important year. ||| 1848 አስፈላጊ ዓመት ነው።
+
+# 7.9 The perfect with haben
+## hat gegessen
+Er hat schon gegessen. ||| He has already eaten. ||| አስቀድሞ በልቷል።
+Liya hat Injera gegessen. ||| Liya ate injera. ||| ሊያ እንጀራ በላች።
+## hat gefunden
+Sie hat ihren Schlüssel gefunden. ||| She has found her key. ||| ቁልፏን አግኝታለች።
+Dawit hat eine Wohnung gefunden. ||| Dawit has found an apartment. ||| ዳዊት አፓርታማ አግኝቷል።
+## hat geholfen
+Meine Mutter hat mir geholfen. ||| My mother helped me. ||| እናቴ ረድታኛለች።
+Wer hat dir geholfen? ||| Who helped you? ||| ማን ረዳህ?
+## hat genommen
+Er hat den Bus genommen. ||| He took the bus. ||| አውቶቡሱን ያዘ።
+Wer hat meinen Stift genommen? ||| Who has taken my pen? ||| እስክሪብቶዬን ማን ወሰደ?
+## hat geschrieben
+Sie hat eine E-Mail geschrieben. ||| She has written an email. ||| ኢሜይል ጽፋለች።
+Abebe hat mir eine Nachricht geschrieben. ||| Abebe wrote me a message. ||| አበበ መልዕክት ጻፈልኝ።
+## hat gesprochen
+Er hat mit dem Lehrer gesprochen. ||| He spoke with the teacher. ||| ከመምህሩ ጋር ተናገረ።
+Sie hat am Telefon Deutsch gesprochen. ||| She spoke German on the phone. ||| በስልክ ጀርመንኛ ተናግራለች።
+## hat getroffen
+Sie hat ihre Freundin getroffen. ||| She has met her friend. ||| ጓደኛዋን አግኝታለች።
+Yonas hat gestern Meron getroffen. ||| Yonas met Meron yesterday. ||| ዮናስ ትናንት ሜሮንን አገኛት።
+## hat getrunken
+Er hat zu viel Kaffee getrunken. ||| He has drunk too much coffee. ||| በጣም ብዙ ቡና ጠጥቷል።
+Sie hat ein Glas Wasser getrunken. ||| She drank a glass of water. ||| አንድ ብርጭቆ ውሃ ጠጣች።
+
+# 7.10 The perfect with sein
+## ist gekommen
+Er ist gestern gekommen. ||| He came yesterday. ||| ትናንት መጣ።
+Der Bus ist nicht gekommen. ||| The bus hasn't come. ||| አውቶቡሱ አልመጣም።
+## ist gegangen
+Sie ist nach Hause gegangen. ||| She has gone home. ||| ወደ ቤት ሄዳለች።
+Abebe ist ins Kino gegangen. ||| Abebe went to the cinema. ||| አበበ ሲኒማ ቤት ሄደ።
+## ist gefahren
+Er ist mit dem Auto gefahren. ||| He went by car. ||| በመኪና ሄደ።
+Sie ist nach Hawassa gefahren. ||| She has gone to Hawassa. ||| ወደ ሐዋሳ ሄዳለች።
+## ist gereist
+Sie ist nach Deutschland gereist. ||| She has travelled to Germany. ||| ወደ ጀርመን ተጉዛለች።
+Er ist viel gereist. ||| He has travelled a lot. ||| ብዙ ተጉዟል።
+## ist geblieben
+Er ist zu Hause geblieben. ||| He stayed at home. ||| ቤት ቆየ።
+Sie ist zwei Wochen in Berlin geblieben. ||| She stayed in Berlin for two weeks. ||| በርሊን ውስጥ ሁለት ሳምንት ቆየች።
+
+# 7.11 Talking about work
+## der Student
+Der Student lernt viel. ||| The student studies a lot. ||| ተማሪው ብዙ ያጠናል።
+Mein Bruder ist Student. ||| My brother is a student. ||| ወንድሜ የዩኒቨርሲቲ ተማሪ ነው።
+Der Student wohnt in Addis Abeba. ||| The student lives in Addis Ababa. ||| ተማሪው አዲስ አበባ ውስጥ ይኖራል።
+## die Studentin
+Die Studentin kommt aus Bahir Dar. ||| The student comes from Bahir Dar. ||| ተማሪዋ ከባሕር ዳር ናት።
+Meron ist Studentin. ||| Meron is a student. ||| ሜሮን የዩኒቨርሲቲ ተማሪ ናት።
+Die Studentin lernt Deutsch. ||| The student is learning German. ||| ተማሪዋ ጀርመንኛ ትማራለች።
+## der Rentner
+Der Rentner hat viel Zeit. ||| The pensioner has a lot of time. ||| ጡረተኛው ብዙ ጊዜ አላቸው።
+Mein Opa ist Rentner. ||| My grandpa is a pensioner. ||| አያቴ ጡረተኛ ናቸው።
+Der Rentner liest jeden Tag die Zeitung. ||| The pensioner reads the newspaper every day. ||| ጡረተኛው በየቀኑ ጋዜጣ ያነባሉ።
+## die Rentnerin
+Die Rentnerin geht gern spazieren. ||| The pensioner likes going for walks. ||| ጡረተኛዋ ለእግር ጉዞ መውጣት ይወዳሉ።
+Meine Oma ist Rentnerin. ||| My grandma is a pensioner. ||| አያቴ ጡረተኛ ናቸው።
+Die Rentnerin wohnt allein. ||| The pensioner lives alone. ||| ጡረተኛዋ ብቻቸውን ይኖራሉ።
+## Was sind Sie von Beruf?
+Was sind Sie von Beruf? – Ich bin Anwalt. ||| What do you do? – I am a lawyer. ||| ሥራዎ ምንድን ነው? – ጠበቃ ነኝ።
+Frau Bekele, was sind Sie von Beruf? ||| Mrs Bekele, what do you do? ||| ወይዘሮ በቀለ፣ ሥራዎ ምንድን ነው?
+## Was machst du beruflich?
+Was machst du beruflich? – Ich bin Programmierer. ||| What do you do for a living? – I am a programmer. ||| ሥራህ ምንድን ነው? – ፕሮግራመር ነኝ።
+Und du, was machst du beruflich? ||| And you, what do you do for a living? ||| አንቺስ፣ ሥራሽ ምንድን ነው?
+## Ich arbeite als Krankenpfleger.
+Ich arbeite als Krankenpfleger im Krankenhaus. ||| I work as a nurse in the hospital. ||| ሆስፒታል ውስጥ ነርስ ሆኜ እሠራለሁ።
+Ich arbeite als Krankenpfleger, oft in der Nacht. ||| I work as a nurse, often at night. ||| ነርስ ሆኜ እሠራለሁ፤ ብዙ ጊዜ ሌሊት።
+## Ich arbeite bei Ethiopian Airlines.
+Ich arbeite bei Ethiopian Airlines als Pilot. ||| I work for Ethiopian Airlines as a pilot. ||| በኢትዮጵያ አየር መንገድ አብራሪ ሆኜ እሠራለሁ።
+Ich arbeite bei Ethiopian Airlines in Addis Abeba. ||| I work for Ethiopian Airlines in Addis Ababa. ||| አዲስ አበባ ውስጥ በኢትዮጵያ አየር መንገድ እሠራለሁ።
+## Ich studiere Medizin.
+Ich studiere Medizin in Gondar. ||| I study medicine in Gondar. ||| ጎንደር ውስጥ ሕክምና እማራለሁ።
+Ich studiere Medizin. Ich möchte Ärztin werden. ||| I study medicine. I would like to become a doctor. ||| ሕክምና እማራለሁ። ሐኪም መሆን እፈልጋለሁ።
+## Ich mache eine Ausbildung.
+Ich mache eine Ausbildung als Koch. ||| I am training to be a cook. ||| በምግብ ማብሰል የሙያ ሥልጠና እየወሰድኩ ነው።
+Ich mache eine Ausbildung in Deutschland. ||| I am doing vocational training in Germany. ||| በጀርመን የሙያ ሥልጠና እየወሰድኩ ነው።
+## Ich mache ein Praktikum.
+Ich mache ein Praktikum bei einer Bank. ||| I am doing an internship at a bank. ||| በአንድ ባንክ የተግባር ልምምድ እያደረግሁ ነው።
+Ich mache ein Praktikum für drei Monate. ||| I am doing an internship for three months. ||| ለሦስት ወር የተግባር ልምምድ እያደረግሁ ነው።
+## Ich arbeite im Moment nicht.
+Ich arbeite im Moment nicht. Ich suche Arbeit. ||| I'm not working at the moment. I am looking for work. ||| አሁን አልሠራም። ሥራ እየፈለግሁ ነው።
+Ich arbeite im Moment nicht, ich lerne Deutsch. ||| I'm not working at the moment, I am learning German. ||| አሁን አልሠራም፤ ጀርመንኛ እየተማርኩ ነው።
+
+# 7.12 At the office
+## der Computer
+Der Computer ist neu. ||| The computer is new. ||| ኮምፒውተሩ አዲስ ነው።
+Ich arbeite am Computer. ||| I work at the computer. ||| በኮምፒውተር እሠራለሁ።
+Der Computer ist kaputt. ||| The computer is broken. ||| ኮምፒውተሩ ተበላሽቷል።
+## der Laptop
+Mein Laptop ist zu langsam. ||| My laptop is too slow. ||| ላፕቶፔ በጣም ቀርፋፋ ነው።
+Ich nehme den Laptop mit. ||| I am taking the laptop with me. ||| ላፕቶፑን ይዤ እሄዳለሁ።
+Der Laptop liegt auf dem Tisch. ||| The laptop is on the table. ||| ላፕቶፑ ጠረጴዛው ላይ ነው።
+## der Drucker
+Der Drucker funktioniert nicht. ||| The printer isn't working. ||| ማተሚያው አይሠራም።
+Wo ist der Drucker? ||| Where is the printer? ||| ማተሚያው የት ነው?
+Der Drucker hat kein Papier. ||| The printer has no paper. ||| ማተሚያው ወረቀት የለውም።
+## die Maus
+Die Maus ist kaputt. ||| The mouse is broken. ||| ማውሱ ተበላሽቷል።
+Ich brauche eine neue Maus. ||| I need a new mouse. ||| አዲስ ማውስ ያስፈልገኛል።
+In der Küche ist eine Maus! ||| There is a mouse in the kitchen! ||| ወጥ ቤት ውስጥ አይጥ አለ!
+## die Tastatur
+Die Tastatur ist deutsch. ||| The keyboard is German. ||| የቁልፍ ሰሌዳው የጀርመንኛ ነው።
+Wo ist das „ß“ auf der Tastatur? ||| Where is the “ß” on the keyboard? ||| „ß“ በቁልፍ ሰሌዳው ላይ የት ነው?
+Die Tastatur ist schmutzig. ||| The keyboard is dirty. ||| የቁልፍ ሰሌዳው ቆሽሿል።
+## der Bildschirm
+Der Bildschirm ist groß. ||| The screen is big. ||| ስክሪኑ ትልቅ ነው።
+Der Bildschirm ist schwarz. ||| The screen is black. ||| ስክሪኑ ጥቁር ነው።
+Mein Handy hat einen kleinen Bildschirm. ||| My phone has a small screen. ||| ሞባይሌ ትንሽ ስክሪን አለው።
+## das Passwort
+Wie ist das Passwort? ||| What is the password? ||| የይለፍ ቃሉ ምንድን ነው?
+Ich habe mein Passwort vergessen. ||| I have forgotten my password. ||| የይለፍ ቃሌን ረስቻለሁ።
+Das Passwort ist zu kurz. ||| The password is too short. ||| የይለፍ ቃሉ በጣም አጭር ነው።
+## die Nachricht
+Ich habe eine Nachricht von Dawit. ||| I have a message from Dawit. ||| ከዳዊት መልዕክት አለኝ።
+Schreib mir eine Nachricht! ||| Write me a message! ||| መልዕክት ጻፍልኝ!
+Die Nachricht ist kurz. ||| The message is short. ||| መልዕክቱ አጭር ነው።
+## der Termin
+Ich habe einen Termin um zehn Uhr. ||| I have an appointment at ten o'clock. ||| አራት ሰዓት ላይ ቀጠሮ አለኝ።
+Der Termin ist am Montag. ||| The appointment is on Monday. ||| ቀጠሮው ሰኞ ነው።
+Ich möchte einen Termin beim Arzt. ||| I would like an appointment with the doctor. ||| የሐኪም ቀጠሮ እፈልጋለሁ።
+## der Kalender
+Der Kalender hängt an der Wand. ||| The calendar hangs on the wall. ||| የቀን መቁጠሪያው ግድግዳው ላይ ተሰቅሏል።
+Ich schreibe den Termin in den Kalender. ||| I write the appointment in the calendar. ||| ቀጠሮውን በቀን መቁጠሪያው ላይ እጽፋለሁ።
+Der äthiopische Kalender hat dreizehn Monate. ||| The Ethiopian calendar has thirteen months. ||| የኢትዮጵያ የቀን መቁጠሪያ አሥራ ሦስት ወራት አሉት።
+## der Stift
+Der Stift ist blau. ||| The pen is blue. ||| እስክሪብቶው ሰማያዊ ነው።
+Hast du einen Stift? ||| Do you have a pen? ||| እስክሪብቶ አለህ?
+Der Stift schreibt nicht. ||| The pen doesn't write. ||| እስክሪብቶው አይጽፍም።
+## das Tablet
+Das Tablet ist neu. ||| The tablet is new. ||| ታብሌቱ አዲስ ነው።
+Die Kinder spielen mit dem Tablet. ||| The children play with the tablet. ||| ልጆቹ በታብሌቱ ይጫወታሉ።
+Ich lese die Zeitung auf dem Tablet. ||| I read the newspaper on the tablet. ||| ጋዜጣውን በታብሌቱ ላይ አነባለሁ።
+## das WLAN
+Das WLAN funktioniert nicht. ||| The Wi-Fi isn't working. ||| ዋይፋዩ አይሠራም።
+Gibt es hier WLAN? ||| Is there Wi-Fi here? ||| እዚህ ዋይፋይ አለ?
+Wie ist das Passwort für das WLAN? ||| What is the password for the Wi-Fi? ||| የዋይፋዩ የይለፍ ቃል ምንድን ነው?
+## die Visitenkarte
+Hier ist meine Visitenkarte. ||| Here is my business card. ||| የሥራ ካርዴ ይኸውና።
+Die Visitenkarte ist auf Englisch. ||| The business card is in English. ||| የሥራ ካርዱ በእንግሊዝኛ ነው።
+Haben Sie eine Visitenkarte? ||| Do you have a business card? ||| የሥራ ካርድ አለዎት?
+## Ich brauche einen Stift.
+Ich brauche einen Stift. Hast du einen? ||| I need a pen. Do you have one? ||| እስክሪብቶ ያስፈልገኛል። አለህ?
+Entschuldigung, ich brauche einen Stift. ||| Excuse me, I need a pen. ||| ይቅርታ፣ እስክሪብቶ ያስፈልገኛል።
+
+# 7.13 On the phone
+## telefonieren
+Ich telefoniere mit meiner Mutter. ||| I am on the phone with my mother. ||| ከእናቴ ጋር በስልክ እያወራሁ ነው።
+Er telefoniert jeden Tag lange. ||| He talks on the phone for a long time every day. ||| በየቀኑ ረጅም ሰዓት በስልክ ያወራል።
+Kann ich kurz telefonieren? ||| Can I make a quick phone call? ||| በስልክ ትንሽ ማውራት እችላለሁ?
+## Firma Kebede, guten Tag!
+Firma Kebede, guten Tag! Hier ist Hanna. ||| Kebede company, hello! This is Hanna. ||| ከበደ ድርጅት፣ ጤና ይስጥልኝ! ሀና ነኝ።
+Firma Kebede, guten Tag! Was kann ich für Sie tun? ||| Kebede company, hello! What can I do for you? ||| ከበደ ድርጅት፣ ጤና ይስጥልኝ! ምን ልርዳዎት?
+## Hier ist Selam Tesfaye.
+Guten Tag, hier ist Selam Tesfaye. ||| Hello, this is Selam Tesfaye. ||| ጤና ይስጥልኝ፣ ሰላም ተስፋዬ ነኝ።
+Hier ist Selam Tesfaye. Ist Frau Bekele da? ||| This is Selam Tesfaye. Is Ms Bekele there? ||| ሰላም ተስፋዬ ነኝ። ወ/ሮ በቀለ አሉ?
+## Was kann ich für Sie tun?
+Guten Tag! Was kann ich für Sie tun? ||| Hello! What can I do for you? ||| ጤና ይስጥልኝ! ምን ልርዳዎት?
+Was kann ich für Sie tun? – Ich möchte einen Termin. ||| What can I do for you? – I would like an appointment. ||| ምን ልርዳዎት? – ቀጠሮ እፈልጋለሁ።
+## Ist Frau Bekele da?
+Guten Tag, ist Frau Bekele da? ||| Hello, is Ms Bekele there? ||| ጤና ይስጥልኝ፣ ወ/ሮ በቀለ አሉ?
+Ist Frau Bekele da? – Ja, einen Moment, bitte. ||| Is Ms Bekele there? – Yes, one moment, please. ||| ወ/ሮ በቀለ አሉ? – አዎ፣ አንድ ጊዜ፣ እባክዎ።
+## Einen Moment, bitte.
+Einen Moment, bitte. Ich verbinde Sie. ||| One moment, please. I'll put you through. ||| አንድ ጊዜ፣ እባክዎ። አገናኝዎታለሁ።
+Einen Moment, bitte. Ich suche einen Stift. ||| One moment, please. I'm looking for a pen. ||| አንድ ጊዜ፣ እባክዎ። እስክሪብቶ እየፈለግሁ ነው።
+## Sie ist leider nicht da.
+Frau Bekele? Sie ist leider nicht da. ||| Ms Bekele? I'm afraid she isn't here. ||| ወ/ሮ በቀለ? እንደ አለመታደል ሆኖ የሉም።
+Sie ist leider nicht da. Rufen Sie morgen an. ||| I'm afraid she isn't here. Call tomorrow. ||| እንደ አለመታደል ሆኖ የሉም። ነገ ይደውሉ።
+## Auf Wiederhören!
+Danke für den Anruf. Auf Wiederhören! ||| Thanks for the call. Goodbye! ||| ስለ ስልኩ አመሰግናለሁ። ደህና ይሁኑ!
+Bis morgen, Herr Müller. Auf Wiederhören! ||| Until tomorrow, Mr Müller. Goodbye! ||| እስከ ነገ፣ አቶ ሙለር። ደህና ይሁኑ!

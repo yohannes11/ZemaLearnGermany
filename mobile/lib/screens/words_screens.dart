@@ -10,6 +10,7 @@ import '../features/lessons/lesson_content.dart' show Panel;
 import '../features/progress/progress.dart';
 import '../features/vocabulary/srs.dart';
 import '../features/vocabulary/word_widgets.dart';
+import '../features/search/search_screen.dart';
 import '../ui/primitives.dart';
 import '../ui/theme.dart';
 import '../ui/watch.dart';
@@ -29,6 +30,7 @@ class WordsScreen extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(title: Txt(T('Vocabulary'), role: TextRole.title)),
           body: PageList(children: [
+            const SearchEntry(),
             const StatChips(),
             AppCard(
               raised: true,
@@ -36,16 +38,16 @@ class WordsScreen extends StatelessWidget {
               child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: gapped([
                 ListRowPlain(
                   leading: Badge2(icon: Icons.psychology_rounded, colour: c.xp, background: c.goldSoft, size: 52),
-                  kicker: 'Smart review',
+                  kicker: T('Smart review'),
                   kickerColour: c.xp,
-                  title: due > 0 ? '$due ${due == 1 ? 'word' : 'words'} due' : 'All caught up',
+                  title: due == 1 ? T('1 word due') : due > 0 ? T('{n} words due', {'n': due}) : T('All caught up'),
                   detail: due > 0
-                      ? 'Up to $reviewSessionSize per session, the most overdue first.'
+                      ? T('Up to {n} per session, the most overdue first.', {'n': reviewSessionSize})
                       : upcoming != null
-                          ? 'Next review ${describeDay(upcoming)}.'
-                          : 'Learn some words and they will come back here for review.',
+                          ? T('Next review: {day}.', {'day': describeDay(upcoming)})
+                          : T('Learn some words and they will come back here for review.'),
                 ),
-                if (due > 0) AppButton(label: 'Start review', kind: ButtonKind.gold, icon: Icons.play_arrow_rounded, onPressed: () => context.push('/session/cards?review=1')),
+                if (due > 0) AppButton(label: T('Start review'), kind: ButtonKind.gold, icon: Icons.play_arrow_rounded, onPressed: () => context.push('/session/cards?review=1')),
               ], Space.md)),
             ),
             Txt(T('{known} of {total} words', {'known': knownCount, 'total': all.length}), role: TextRole.caption, colour: c.muted),
@@ -75,7 +77,7 @@ class SectionCard extends StatelessWidget {
     return AppCard(
       accent: accent ? c.goldBright : null,
       onTap: () => context.push(path),
-      semanticLabel: '${course.t(section.title)}, $done of ${section.words.length} learned',
+      semanticLabel: T('{title}, {done} of {total} learned', {'title': course.t(section.title), 'done': done, 'total': section.words.length}),
       child: ListRow(
         title: course.t(section.title),
         below: Bar(value: section.words.isEmpty ? 0 : done / section.words.length, colour: complete ? c.green : c.goldBright, height: 6),
@@ -131,16 +133,16 @@ class StudyModes extends StatelessWidget {
         );
     return Column(children: gapped([
       Row(children: [
-        mode(Icons.menu_book_rounded, T('Learn'), 'Word by word', '/session/learn/$scope'),
+        mode(Icons.menu_book_rounded, T('Learn'), T('Word by word'), '/session/learn/$scope'),
         const SizedBox(width: Space.sm),
-        mode(Icons.style_rounded, T('Flashcards'), 'Swipe what you know', '/session/cards?scope=$scope'),
+        mode(Icons.style_rounded, T('Flashcards'), T('Swipe what you know'), '/session/cards?scope=$scope'),
       ]),
       Row(children: [
-        mode(Icons.extension_rounded, T('Match'), '10 pairs', '/session/match/$scope'),
+        mode(Icons.extension_rounded, T('Match'), T('10 pairs'), '/session/match/$scope'),
         const SizedBox(width: Space.sm),
-        mode(Icons.keyboard_rounded, T('Practice'), 'Type the translation', '/session/practice/$scope'),
+        mode(Icons.keyboard_rounded, T('Practice'), T('Type the translation'), '/session/practice/$scope'),
         const SizedBox(width: Space.sm),
-        mode(Icons.mic_rounded, T('Speak'), 'Say it out loud', '/session/speak/$scope'),
+        mode(Icons.mic_rounded, T('Speak'), T('Say it out loud'), '/session/speak/$scope'),
       ]),
     ], Space.sm));
   }
@@ -159,14 +161,12 @@ class SectionScreen extends StatefulWidget {
 }
 
 class _SectionScreenState extends State<SectionScreen> {
-  var _revealAll = false;
-
   @override
   Widget build(BuildContext context) => CourseGate(builder: (context) {
         final c = context.c;
         final found = course.section(widget.sectionKey);
         if (found == null) {
-          return Scaffold(appBar: AppBar(), body: const Center(child: Txt('This section is no longer in the course.')));
+          return Scaffold(appBar: AppBar(), body: Center(child: Txt(T('This section is no longer in the course.'))));
         }
         final (:unit, :section) = found;
         final known = sync.state.learned.toSet();
@@ -181,7 +181,7 @@ class _SectionScreenState extends State<SectionScreen> {
             Txt(T('{known} of {total} words', {'known': done, 'total': section.words.length}), role: TextRole.caption, colour: c.muted),
             Bar(value: section.words.isEmpty ? 0 : done / section.words.length, colour: c.goldBright),
             AppButton(
-              label: left > 0 ? 'Learn $left new ${left == 1 ? 'word' : 'words'}' : 'Practise all words again',
+              label: left == 1 ? T('Learn 1 new word') : left > 0 ? T('Learn {n} new words', {'n': left}) : T('Practise all words again'),
               kind: ButtonKind.gold,
               icon: Icons.style_rounded,
               onPressed: () => context.push('/session/cards?scope=${section.key}'),
@@ -199,22 +199,9 @@ class _SectionScreenState extends State<SectionScreen> {
                 ),
               ),
             OfflineCard(unit: unit),
-            Row(children: [
-              Expanded(child: Txt(T('German'), role: TextRole.heading)),
-              TextButton.icon(
-                onPressed: () => setState(() {
-                  _revealAll = !_revealAll;
-                  if (_revealAll) {
-                    for (final w in section.words) {
-                      learnWord(w.german);
-                    }
-                  }
-                }),
-                icon: Icon(_revealAll ? Icons.visibility_off_outlined : Icons.visibility_outlined),
-                label: Text(_revealAll ? T('Hide all') : T('Reveal all')),
-              ),
-            ]),
-            for (final word in section.words) WordRow(word: word, learned: known.contains(word.german), open: _revealAll),
+            Txt(T('German'), role: TextRole.heading),
+            SearchEntry(unit: unit.id, section: section.key),
+            for (final word in section.words) WordRow(word: word, learned: known.contains(word.german)),
             if (_nextSection(unit, section) case final next?)
               AppButton(
                 label: '${T('Next chapter:')} ${course.t(next.title)}',
@@ -242,7 +229,7 @@ class UnitScreen extends StatelessWidget {
   Widget build(BuildContext context) => CourseGate(builder: (context) {
         final c = context.c;
         final unit = course.unit(id);
-        if (unit == null) return Scaffold(appBar: AppBar(), body: const Center(child: Txt('This unit is no longer in the course.')));
+        if (unit == null) return Scaffold(appBar: AppBar(), body: Center(child: Txt(T('This unit is no longer in the course.'))));
         final p = unitProgress(unit);
         final lessonsDone = unit.grammar.where(lessonPassed).length;
         return Scaffold(
@@ -253,7 +240,7 @@ class UnitScreen extends StatelessWidget {
             Bar(value: p.total == 0 ? 0 : p.done / p.total, colour: c.goldBright),
             for (final s in unit.sections) SectionCard(section: s, path: '/section/${s.key}', accent: true),
             Panel(title: T('All chapters'), children: [
-              Txt('Practise every word of the unit at once.', role: TextRole.caption, colour: c.muted),
+              Txt(T('Practise every word of the unit at once.'), role: TextRole.caption, colour: c.muted),
               StudyModes(scope: 'unit:${unit.id}'),
             ]),
             SectionHeader(course.t(unit.lessonsLabel ?? 'Grammar'), detail: '$lessonsDone/${unit.grammar.length}'),
@@ -282,11 +269,11 @@ class LessonCard extends StatelessWidget {
     return AppCard(
       accent: accent ? c.brand : null,
       onTap: () => context.push(path),
-      semanticLabel: '$name: ${course.t(lesson.title)}${complete ? ', completed' : best != null ? ', best score $best' : ''}',
+      semanticLabel: '$name: ${course.t(lesson.title)}${complete ? ', ${T('completed')}' : best != null ? ', ${T('best score {n}', {'n': best})}' : ''}',
       child: ListRow(
         leading: Badge2(icon: complete ? Icons.check_rounded : icon, colour: complete ? c.brandInk : c.brand, background: complete ? c.green : c.brandSoft),
         title: course.t(lesson.title),
-        detail: '$name${best != null ? ' · best $best' : ''}',
+        detail: '$name${best != null ? ' · ${T('best {n}', {'n': best})}' : ''}',
       ),
     );
   }
@@ -295,8 +282,8 @@ class LessonCard extends StatelessWidget {
 /// What a lesson is, for its badge: grammar (or what the unit calls its lessons), reading, unit test or trainer.
 (IconData, String) lessonLook(Lesson lesson, Unit unit) {
   if (lesson.custom == 'review') return (Icons.emoji_events_outlined, T('Unit test'));
-  if (lesson.custom != null) return (Icons.fitness_center_rounded, 'Trainer');
-  if (lesson.blocks.any((b) => b.reading.isNotEmpty)) return (Icons.auto_stories_outlined, 'Reading');
+  if (lesson.custom != null) return (Icons.fitness_center_rounded, T('Trainer'));
+  if (lesson.blocks.any((b) => b.reading.isNotEmpty)) return (Icons.auto_stories_outlined, T('Reading'));
   return (Icons.extension_outlined, course.t(unit.lessonsLabel ?? 'Grammar'));
 }
 
@@ -313,8 +300,8 @@ class ListeningCard extends StatelessWidget {
       onTap: () => context.push('/session/listening/${unit.id}'),
       child: ListRow(
         leading: Badge2(icon: Icons.headphones_rounded, colour: c.brandInk, background: c.brand),
-        title: 'Listening practice',
-        detail: 'Hear it, pick what was said',
+        title: T('Listening practice'),
+        detail: T('Hear it, pick what was said'),
       ),
     );
   }

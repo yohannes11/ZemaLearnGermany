@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/course.dart';
+import '../core/i18n.dart';
 import '../core/session.dart';
 import '../core/settings.dart';
 import '../core/sync/engine.dart';
@@ -35,15 +36,15 @@ class CourseGate extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(Space.lg),
               child: course.error == null
-                  ? CircularProgressIndicator(color: c.brand, semanticsLabel: 'Loading the course')
+                  ? CircularProgressIndicator(color: c.brand, semanticsLabel: T('Loading the course'))
                   : Column(mainAxisSize: MainAxisSize.min, children: [
                       Badge2(icon: Icons.wifi_off_rounded, colour: c.muted, background: c.surface2, size: 72),
                       const SizedBox(height: Space.md),
-                      const Txt('The course downloads once', role: TextRole.heading, align: TextAlign.center),
+                      Txt(T('The course downloads once'), role: TextRole.heading, align: TextAlign.center),
                       const SizedBox(height: Space.sm),
-                      Txt('Connect to the internet to get it. After that it works offline.', colour: c.muted, align: TextAlign.center),
+                      Txt(T('Connect to the internet to get it. After that it works offline.'), colour: c.muted, align: TextAlign.center),
                       const SizedBox(height: Space.md),
-                      AppButton(label: 'Try again', icon: Icons.refresh_rounded, onPressed: course.refresh),
+                      AppButton(label: T('Try again'), icon: Icons.refresh_rounded, onPressed: course.refresh),
                     ]),
             ),
           ),

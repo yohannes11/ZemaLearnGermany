@@ -36,8 +36,8 @@ PICTURES = {
     'danke / danke schön': '🙏', 'gern geschehen': '😊', 'Entschuldigung': '🙇', 'tut mir leid': '😔',
     'Äthiopien': '🇪🇹', 'Eritrea': '🇪🇷', 'Kenia': '🇰🇪', 'Deutschland': '🇩🇪', 'Österreich': '🇦🇹',
     'Frankreich': '🇫🇷', 'Spanien': '🇪🇸', 'Italien': '🇮🇹', 'Ich komme aus Äthiopien.': '🇪🇹',
-    'Er kommt aus Kenia.': '🇰🇪', 'Sie kommt aus Eritrea.': '🇪🇷', 'Ich wohne in Addis Abeba.': '🇪🇹',
-    'Ich lerne Deutsch.': '🇩🇪', 'der Deutschkurs': '🇩🇪', 'der Kursleiter': '👨‍🏫', 'die Kursleiterin': '👩‍🏫',
+    'Er kommt aus Kenia.': '🇰🇪', 'Sie kommt aus Eritrea.': '🇪🇷', 'Ich wohne in Addis Abeba.': '🏙️',
+    'der Kursleiter': '👨‍🏫', 'die Kursleiterin': '👩‍🏫',
     'Ich verstehe das nicht.': '😕', 'Noch einmal, bitte.': '🔁', 'Langsam, bitte.': '🐢',
     'Entschuldigung, wie bitte?': '👂', 'Wie bitte?': '👂',
 
@@ -46,10 +46,9 @@ PICTURES = {
     'die Schwester': '👧', 'die Geschwister': '👧👦', 'der Opa, der Großvater': '👴',
     'die Oma, die Großmutter': '👵', 'die Großeltern': '👵👴', 'mein Vater': '👨‍👦', 'meine Mutter': '👩‍👧',
     'meine Eltern': '👪', 'die Sprache': '🗣️', 'Welche Sprachen sprichst du?': '🗣️',
-    'Deutsch': '🇩🇪', 'Englisch': '🇬🇧', 'Französisch': '🇫🇷', 'Spanisch': '🇪🇸', 'Portugiesisch': '🇵🇹',
-    'Japanisch': '🇯🇵', 'Chinesisch': '🇨🇳', 'Amharisch': '🇪🇹', 'Tigrinya': '🇪🇷', 'Oromo': '🇪🇹',
-    'Italienisch': '🇮🇹', 'Türkisch': '🇹🇷', 'Russisch': '🇷🇺', 'Ich spreche Deutsch.': '🇩🇪',
-    'Ich spreche ein bisschen Englisch.': '🇬🇧', 'Sprichst du Englisch?': '🇬🇧',
+    # Languages get no flag: a language is not a country (Tigrinya and Oromo are spoken in regions, English in
+    # many countries). See COUNTRIES below.
+    'Ich spreche Deutsch.': '🗣️', 'Ich spreche ein bisschen Englisch.': '🗣️', 'Sprichst du Englisch?': '🗣️',
     'Wie ist deine Telefonnummer?': '☎️', 'Wie lautet deine Telefonnummer?': '☎️', 'die Telefonnummer': '☎️',
     'Wo wohnst du?': '🏠', 'Wo wohnen Sie?': '🏠', 'Ich wohne in …': '🏠',
     'Bist du verheiratet?': '💍', 'Sind Sie verheiratet?': '💍', 'verheiratet': '💍', 'geschieden': '💔',
@@ -224,3 +223,16 @@ PICTURES = {
     'nach Deutschland': '🇩🇪', 'in die Schweiz': '🇨🇭', 'eine Reise machen': '🧳',
     'Freunde besuchen': '🧑‍🤝‍🧑',
 }
+
+
+# A flag only ever pictures a country: the word must name one of these. Languages, regions and cities get none.
+COUNTRIES = ('Äthiopien', 'Eritrea', 'Kenia', 'Deutschland', 'Österreich', 'Frankreich', 'Spanien', 'Italien',
+             'Schweiz', 'Türkei', 'Niederlande', 'Vereinigten Staaten', 'Vereinigten Arabischen Emirat')
+
+
+def is_flag(emoji):
+    return any(0x1F1E6 <= ord(c) <= 0x1F1FF for c in emoji)
+
+
+for _word, _emoji in PICTURES.items():
+    assert not is_flag(_emoji) or any(c in _word for c in COUNTRIES), f'a flag for {_word!r}, which is not a country'

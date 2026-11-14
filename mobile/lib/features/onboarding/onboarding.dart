@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../core/api/client.dart';
 import '../../core/api/models.dart';
 import '../../core/course.dart';
+import '../../core/i18n.dart';
 import '../../core/settings.dart';
 import '../../ui/primitives.dart';
 import '../../ui/theme.dart';
@@ -107,7 +108,7 @@ class _OnboardingState extends State<Onboarding> {
               height: 48,
               child: Row(children: [
                 Expanded(child: Txt('Zema German', role: TextRole.overline, colour: c.brand)),
-                if (_index < last) TextButton(onPressed: () => _goTo(last), child: Txt('Skip', role: TextRole.label, colour: c.muted)),
+                if (_index < last) TextButton(onPressed: () => _goTo(last), child: Txt(T('Skip'), role: TextRole.label, colour: c.muted)),
               ]),
             ),
           ),
@@ -136,7 +137,7 @@ class _OnboardingState extends State<Onboarding> {
             padding: const EdgeInsets.all(Space.lg),
             child: Column(children: [
               Semantics(
-                label: 'Page ${_index + 1} of ${slides.length}',
+                label: T('Page {n} of {total}', {'n': _index + 1, 'total': slides.length}),
                 excludeSemantics: true,
                 child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   for (var i = 0; i < slides.length; i++)
@@ -151,7 +152,7 @@ class _OnboardingState extends State<Onboarding> {
               ),
               const SizedBox(height: Space.lg),
               AppButton(
-                label: _index == last ? 'Start learning' : 'Next',
+                label: _index == last ? T('Start learning') : T('Next'),
                 icon: _index == last ? Icons.rocket_launch_outlined : Icons.arrow_forward_rounded,
                 kind: _index == last ? ButtonKind.gold : ButtonKind.primary,
                 onPressed: () => _index == last ? _finish() : _goTo(_index + 1),
@@ -216,9 +217,9 @@ class _WelcomeSlide extends StatelessWidget {
           Positioned(left: 0, right: 0, bottom: 0, height: 10, child: ColoredBox(color: c.goldBright)),
         ]),
       ),
-      const Txt('Learn German, a few minutes a day', role: TextRole.title),
-      Txt('Real recordings, short lessons and a streak that keeps you going. Made for Amharic and English speakers.', colour: c.muted),
-      const Txt('Explanations in', role: TextRole.label),
+      Txt(T('Learn German, a few minutes a day'), role: TextRole.title),
+      Txt(T('Real recordings, short lessons and a streak that keeps you going. Made for Amharic and English speakers.'), colour: c.muted),
+      Txt(T('Explanations in'), role: TextRole.label),
       Row(children: [
         for (final (code, name) in const [('en', 'English'), ('am', 'አማርኛ')]) ...[
           Expanded(child: _Choice(selected: lang == code, label: name, onTap: () => onLang(code), child: Txt(name, role: TextRole.subheading))),
@@ -248,11 +249,11 @@ class _ReasonSlide extends StatelessWidget {
             Positioned(
               right: Space.sm,
               bottom: Space.xs,
-              child: Text('Photo: ${path.image!.credit}', style: TextStyle(fontSize: 10, color: c.onImage, shadows: const [Shadow(blurRadius: 3)])),
+              child: Text(T('Photo: {credit}', {'credit': path.image!.credit}), style: TextStyle(fontSize: 10, color: c.onImage, shadows: const [Shadow(blurRadius: 3)])),
             ),
           ]),
         ),
-      Txt(path.title, role: TextRole.heading),
+      Txt(T(path.title), role: TextRole.heading),
       Row(children: [
         for (final (i, stat) in figures.indexed) ...[
           if (i > 0) const SizedBox(width: Space.sm),
@@ -261,14 +262,14 @@ class _ReasonSlide extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: Space.md, vertical: Space.sm + 4),
               decoration: BoxDecoration(color: c.goldSoft, borderRadius: BorderRadius.circular(Radii.lg)),
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                FittedBox(fit: BoxFit.scaleDown, child: Txt(stat.display, role: TextRole.heading, colour: c.xp)),
-                Txt(stat.label, role: TextRole.caption),
+                FittedBox(fit: BoxFit.scaleDown, child: Txt(T(stat.display), role: TextRole.heading, colour: c.xp)),
+                Txt(T(stat.label), role: TextRole.caption),
               ]),
             ),
           ),
         ],
       ]),
-      Txt(path.body, colour: c.muted),
+      Txt(T(path.body), colour: c.muted),
       if (path.needs != null)
         Container(
           padding: const EdgeInsets.all(Space.sm),
@@ -276,13 +277,13 @@ class _ReasonSlide extends StatelessWidget {
           child: Row(children: [
             Icon(Icons.school_outlined, size: 18, color: c.brand),
             const SizedBox(width: Space.sm),
-            Expanded(child: Txt(path.needs!, role: TextRole.label, colour: c.brand)),
+            Expanded(child: Txt(T(path.needs!), role: TextRole.label, colour: c.brand)),
           ]),
         ),
       if (source != null)
         InkWell(
           onTap: () => launchUrl(Uri.parse(source.url), mode: LaunchMode.inAppBrowserView),
-          child: Txt('Source: ${source.publisher}, ${source.date} ›', role: TextRole.caption, colour: c.subtle),
+          child: Txt('${T('Source: {publisher}, {date}', {'publisher': source.publisher, 'date': source.date})} ›', role: TextRole.caption, colour: c.subtle),
         ),
     ], Space.md));
   }
@@ -314,15 +315,15 @@ class _HowSlide extends StatelessWidget {
           child: Column(children: [Badge2(icon: icon, colour: colour, background: bg), const SizedBox(height: Space.sm), Txt(text, role: TextRole.caption, align: TextAlign.center)]),
         );
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: gapped([
-      const Txt('Two ways to learn, one streak', role: TextRole.title),
-      feature(Icons.style_rounded, c.xp, c.goldSoft, 'Words',
-          'Flashcards, matching, typing and speaking, with real recordings and pictures. Smart review brings each word back just before you forget it.'),
-      feature(Icons.school_rounded, c.brand, c.brandSoft, 'Lessons',
-          'Short grammar lessons, reading texts, unit tests and listening practice, with exercises that check you right away.'),
+      Txt(T('Two ways to learn, one streak'), role: TextRole.title),
+      feature(Icons.style_rounded, c.xp, c.goldSoft, T('Words'),
+          T('Flashcards, matching, typing and speaking, with real recordings and pictures. Smart review brings each word back just before you forget it.')),
+      feature(Icons.school_rounded, c.brand, c.brandSoft, T('Lessons'),
+          T('Short grammar lessons, reading texts, unit tests and listening practice, with exercises that check you right away.')),
       Row(children: [
-        perk(Icons.local_fire_department_rounded, c.flame, c.flameSoft, 'Keep a daily streak'),
-        perk(Icons.bolt_rounded, c.xp, c.goldSoft, 'Earn XP for every answer'),
-        perk(Icons.shield_rounded, c.brand, c.brandSoft, 'Level up as you go'),
+        perk(Icons.local_fire_department_rounded, c.flame, c.flameSoft, T('Keep a daily streak')),
+        perk(Icons.bolt_rounded, c.xp, c.goldSoft, T('Earn XP for every answer')),
+        perk(Icons.shield_rounded, c.brand, c.brandSoft, T('Level up as you go')),
       ]),
     ], Space.md));
   }
@@ -337,16 +338,16 @@ class _GoalSlide extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = context.c;
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: gapped([
-      const Txt('Pick a daily goal', role: TextRole.title),
-      Txt('You can change it any time under Me. Small and steady wins.', colour: c.muted),
+      Txt(T('Pick a daily goal'), role: TextRole.title),
+      Txt(T('You can change it any time under Me. Small and steady wins.'), colour: c.muted),
       for (final option in dailyGoals)
         _Choice(
           selected: goal == option.xp,
           onTap: () => onGoal(option.xp),
-          label: '${option.name}, ${option.time}, ${option.xp} XP',
+          label: '${T(option.name)}, ${T(option.time)}, ${option.xp} XP',
           child: Row(children: [
-            Expanded(child: Txt(option.name, role: TextRole.subheading)),
-            Txt(option.time, role: TextRole.caption, colour: c.muted),
+            Expanded(child: Txt(T(option.name), role: TextRole.subheading)),
+            Txt(T(option.time), role: TextRole.caption, colour: c.muted),
             const SizedBox(width: Space.md),
             Txt('${option.xp} XP', role: TextRole.label, colour: c.xp),
           ]),

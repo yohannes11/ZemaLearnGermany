@@ -142,9 +142,9 @@ class HandoffTests(TransactionTestCase):
     def setUp(self):
         self.user = User.objects.create_user("liya", "liya@example.com", "learning-german-26", name="Liya")
 
-    def link(self):
+    def link(self, query=""):
         token = issue_token(self.user)
-        response = self.client.post("/api/v1/auth/web-session/", HTTP_AUTHORIZATION=f"Bearer {token}")
+        response = self.client.post(f"/api/v1/auth/web-session/{query}", HTTP_AUTHORIZATION=f"Bearer {token}")
         self.assertEqual(response.status_code, 200)
         return json.loads(response.content)["url"].replace("http://testserver", "")
 
@@ -167,3 +167,9 @@ class HandoffTests(TransactionTestCase):
         code = self.client.get(url).context["code"]
         response = self.client.post("/api/auth/continue/", {"code": code, "next": "https://evil.example/"})
         self.assertRedirects(response, "/learn/", fetch_redirect_response=False)
+
+    def test_link_opens_in_the_apps_language(self):
+        page = self.client.get(self.link("?lang=am"))
+        self.assertContains(page, "እንደ Liya ይቀጥሉ")
+        self.assertEqual(self.client.cookies["zema_lang"].value, "am")  # the course after it stays in Amharic
+        self.assertNotIn("lang=", self.link("?lang=xx"))  # only languages the site has

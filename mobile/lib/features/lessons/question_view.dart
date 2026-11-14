@@ -227,7 +227,7 @@ class _Option extends StatelessWidget {
       child: Semantics(
         inMutuallyExclusiveGroup: true,
         checked: state != 0,
-        label: state == 0 ? label : '$label, ${state == 1 ? 'correct' : 'wrong'}',
+        label: state == 0 ? label : '$label, ${state == 1 ? T('correct') : T('wrong')}',
         excludeSemantics: true,
         child: ChunkyBox(
           face: bg,

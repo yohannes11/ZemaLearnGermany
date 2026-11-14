@@ -7,6 +7,7 @@ import '../core/sync/engine.dart';
 import '../features/gamification/tally_view.dart';
 import '../features/lessons/lesson_content.dart';
 import '../features/progress/progress.dart';
+import '../features/search/search_screen.dart';
 import '../ui/primitives.dart';
 import '../ui/theme.dart';
 import '../ui/watch.dart';
@@ -24,6 +25,7 @@ class LessonsScreen extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(title: Txt(T('Lessons'), role: TextRole.title)),
           body: PageList(gap: Space.sm, children: [
+            const SearchEntry(),
             const StatChips(),
             Txt(T('{passed} of {total} lessons', {'passed': done, 'total': all.length}), role: TextRole.caption, colour: c.muted),
             Bar(value: all.isEmpty ? 0 : done / all.length),
@@ -50,7 +52,7 @@ class LessonScreen extends StatelessWidget {
   Widget build(BuildContext context) => CourseGate(builder: (context) {
         final c = context.c;
         final found = course.lesson(lessonKey);
-        if (found == null) return Scaffold(appBar: AppBar(), body: const Center(child: Txt('This lesson is no longer in the course.')));
+        if (found == null) return Scaffold(appBar: AppBar(), body: Center(child: Txt(T('This lesson is no longer in the course.'))));
         final (:unit, :lesson) = found;
         final (_, kind) = lessonLook(lesson, unit);
         final best = sync.state.grammar[lesson.key];
@@ -93,7 +95,7 @@ class LessonScreen extends StatelessWidget {
                   child: Column(children: gapped([
                     if (open != null)
                       AppButton(
-                        label: 'Continue · question ${(open['position'] as num).toInt() + 1} of ${(open['items'] as List).length}',
+                        label: T('Continue · question {n} of {total}', {'n': (open['position'] as num).toInt() + 1, 'total': (open['items'] as List).length}),
                         icon: Icons.play_circle_fill_rounded,
                         kind: ButtonKind.gold,
                         onPressed: () => context.push('/session/quiz/${lesson.key}?resume=1'),

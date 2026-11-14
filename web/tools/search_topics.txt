@@ -1,0 +1,389 @@
+# Search topics: what learners look for in their own words, linked to the course. Built into course-data.js
+# (COURSE.topics) by course_content.py, which checks every link; the website and the app search them offline.
+#
+#   ## Title (English; its Amharic goes in web/locale/am.json, "course" section)
+#   kind: grammar | topic
+#   en: English ways of asking for it, comma-separated (words or short phrases)
+#   am: Amharic ways of asking for it, comma-separated
+#   chapters: vocabulary chapter keys
+#   lessons: grammar lesson keys
+#   words: German entries exactly as in the course, separated by " | "
+
+# ---------------- Grammar ----------------
+
+## Articles: der, die, das
+kind: grammar
+en: articles, article, definite article, indefinite article, the, a, an, der die das, ein eine, gender, noun gender, masculine, feminine, neuter
+am: አርቲክል, መስተኣምር, ጾታ, የስም ጾታ, ተባዕታይ, አንስታይ
+chapters: 2.2, 3.3, 3.5, 3.6
+lessons: g2-gender, g3-articles, g-countries
+words: der | die | das | die (Plural) | ein | eine | kein | keine | der, die, das | ein, eine
+
+## The accusative case
+kind: grammar
+en: accusative, accusative case, cases, case, direct object, object, den einen keinen
+am: ተሳቢ, ተሳቢ ስም, ሙያ
+chapters: 6.5, 6.9
+lessons: g6-accusative
+words: Ich mag keinen Fisch. | Ich habe einen Sohn. | Ich brauche einen Stift. | Ich finde ihn …
+
+## Verb conjugation (present tense)
+kind: grammar
+en: conjugation, conjugate, conjugating, verb conjugation, verb endings, endings, verb forms, present tense, present, regular verbs, irregular verbs, vowel change, sein haben
+am: የግሥ እርባታ, ግሥ, ግሦች, የአሁን ጊዜ, እርባታ
+chapters: 1.8, 2.5, 3.9, 3.14, 5.11, 5.15
+lessons: g-present, g2-sein, g2-sprechen, g2-verbs-plural, g3-haben-essen, g5-vowel, g6-vowel-e
+words: sein | haben | essen | wissen | sprechen | kommen
+
+## Past tense
+kind: grammar
+en: past tense, past, perfect tense, perfect, preterite, participle, yesterday, last week, what did you do, what happened, was, were, had
+am: ያለፈ ጊዜ, ኀላፊ ጊዜ, ትናንት, ባለፈው, ምን አደረግክ
+chapters: 7.9, 7.10, 9.1, 9.2, 9.3, 9.4
+lessons: g7-perfect, g9-perfect-haben, g9-sein-haben, g9-war-hatte, g9-reading
+words: Was hast du gestern gemacht? | Was ist passiert? | ich war | ich hatte | gestern
+
+## Modal verbs: can, must, may, want
+kind: grammar
+en: modal verbs, modals, can, could, must, have to, may, allowed, permission, should, want, would like, ability, obligation
+am: መቻል, አለብኝ, ይገባል, ፈቃድ, ተፈቅዷል, መፈለግ
+chapters: 7.2, 7.3, 7.4, 7.5
+lessons: g7-modals, g3-moegen
+words: können | müssen | dürfen | sollen | wollen | möchten
+
+## Separable verbs
+kind: grammar
+en: separable verbs, separable, prefix verbs, verb prefix, aufstehen, anrufen, einkaufen
+am: ተነጣይ ግሦች, ቅጥያ ያላቸው ግሦች
+chapters: 5.7, 8.4
+lessons: g5-separable, g8-separable
+words: aufstehen | anrufen | einkaufen | einsteigen | umsteigen | Ich stehe um 7 Uhr auf.
+
+## Word order and questions
+kind: grammar
+en: word order, sentence order, sentence structure, verb position, verb second, where the verb goes, questions, asking questions, yes no questions, question words, w questions
+am: የቃላት ቅደም ተከተል, የዓረፍተ ነገር አወቃቀር, ጥያቄ, የጥያቄ ቃላት
+chapters: 1.6
+lessons: g1-word-order, g3-questions, g5-word-order
+words: Wer? | Wie? | Woher? | Wo? | Was?
+
+## Personal pronouns, du and Sie
+kind: grammar
+en: pronouns, personal pronouns, i you he she it we they, formal, informal, polite you, du or sie, duzen, siezen
+am: ተውላጠ ስም, አንተ, እርስዎ, ጨዋ አነጋገር, የአክብሮት
+chapters: 1.7, 4.5, 1.10
+lessons: g1-du-sie, g4-it
+words: ich | du | er, sie, es | wir | ihr | Sie | duzen | siezen
+
+## Possessives: my, your, his, her
+kind: grammar
+en: possessive, possessives, possessive articles, my, your, his, her, our, whose, mein meine
+am: የባለቤትነት, የእኔ, የአንተ, የእሱ, የእሷ, የማን
+chapters: 2.4, 4.13, 2.17
+lessons: g2-mein, g4-possessive, g2-names-s
+words: mein | meine | dein / deine | sein / seine | ihr / ihre | Selams Bruder
+
+## Saying no: nicht, kein, doch
+kind: grammar
+en: negation, negative, not, no, saying no, nicht, kein, doch, contradict
+am: አሉታ, አይደለም, አይ, የለም
+chapters: 4.4, 3.5, 2.16
+lessons: g4-nicht, g2-doch
+words: nicht | kein | keine | nein | doch
+
+## Plural
+kind: grammar
+en: plural, plurals, more than one, singular
+am: ብዙ ቁጥር, ነጠላ ቁጥር
+chapters: 2.2
+lessons: g3-plural
+words: die (Plural)
+
+## Compound nouns
+kind: grammar
+en: compound nouns, compounds, compound words, long words, joining words
+am: ውሁድ ስም, ጥምር ቃላት
+chapters: 3.18
+lessons: g3-compounds
+
+## Prepositions: in, am, um, mit
+kind: grammar
+en: prepositions, preposition, in, on, at, with, from, to, until, since, im, am, um, mit, von bis
+am: መስተዋድድ, ውስጥ, ላይ, ጋር, ከ እስከ
+chapters: 4.8, 5.3, 8.1, 4.2
+lessons: g5-am-um, g8-mit, g9-time
+words: um | von … bis | vor | nach | mit dem Bus | im Garten | in der Küche | neben
+
+## Pronunciation and the alphabet
+kind: grammar
+en: pronunciation, pronounce, sounds, sound, alphabet, spelling, spell, letters, umlaut, umlauts, vowels, accent, how to say
+am: አነባበብ, አጠራር, ፊደል, ፊደላት, ድምፅ, አናባቢ
+chapters: 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.7
+lessons: g0-welcome, g0-vowels, g0-umlauts, g0-pairs, g0-consonants, g0-sch-ch, g0-alphabet
+words: die Aussprache | buchstabieren | Wie schreibt man das? | das Alphabet
+
+## Numbers
+kind: grammar
+en: numbers, number, counting, count, digits, how many, prices, years, phone number, hundred, thousand
+am: ቁጥር, ቁጥሮች, መቁጠር, ዋጋ, ዓመት
+chapters: 0.6, 2.10, 3.11, 4.14, 7.8, 2.9
+lessons: g0-numbers, g4-prices, g7-years
+words: eins | zwei | drei | zwanzig | hundert | eintausend
+
+# ---------------- Everyday situations ----------------
+
+## Greetings and saying goodbye
+kind: topic
+en: greetings, greeting, greet, hello, hi, goodbye, bye, good morning, good evening, good night, say hello, say goodbye
+am: ሰላምታ, ሰላም, ደህና ሁን, ደህና ሁኚ, እንደምን አደርክ, ቻው
+chapters: 1.1
+words: Hallo! | Guten Morgen! | Guten Tag! | Guten Abend! | Gute Nacht! | Tschüss! | Auf Wiedersehen!
+
+## Introducing yourself
+kind: topic
+en: introduce, introducing, introduction, introduce yourself, my name, name, names, meet, nice to meet you, where are you from, about me
+am: ራስን ማስተዋወቅ, ማስተዋወቅ, ስም, ስሜ, ከየት ነህ, ተዋወቅ
+chapters: 1.2, 1.4, 1.10, 2.11, 2.13
+lessons: g1-reading
+words: Ich heiße… | Mein Name ist … | Wie heißt du? | Woher kommst du? | Ich komme aus… | Freut mich!
+
+## Being polite: please, thank you, sorry
+kind: topic
+en: polite, politeness, please, thank you, thanks, sorry, excuse me, apologise, apologize, apology, you're welcome
+am: ጨዋነት, እባክህ, እባክዎ, አመሰግናለሁ, ይቅርታ, ምንም አይደለም
+chapters: 1.9
+words: danke / danke schön | bitte / bitte schön | Entschuldigung | tut mir leid | gern geschehen | nichts zu danken | Vielen Dank!
+
+## When you don't understand
+kind: topic
+en: don't understand, not understand, understand, repeat, again, slowly, slower, pardon, what does it mean, how do you say, in german, help in class
+am: አልገባኝም, መረዳት, ድገም, ደግሙ, ቀስ ብለው, እንዴት ይባላል
+chapters: 1.12, 0.0
+words: Wie bitte? | Noch einmal, bitte. | Langsam, bitte. | Ich verstehe das nicht. | Wie sagt man … auf Deutsch? | Können Sie das bitte wiederholen? | Wie heißt das auf Deutsch?
+
+## How are you?
+kind: topic
+en: how are you, feelings, feeling, mood, fine, good, bad, well
+am: እንዴት ነህ, እንዴት ነሽ, ደህና, ስሜት
+chapters: 1.5
+words: Wie geht's? | Wie geht es dir? | Wie geht es Ihnen? | gut | schlecht | Es geht.
+
+## Family
+kind: topic
+en: family, relatives, parents, mother, father, children, siblings, brother, sister, married, single, husband, wife
+am: ቤተሰብ, ዘመድ, ወላጆች, እናት, አባት, ልጆች, ወንድም, እህት, ባል, ሚስት, ያገባ
+chapters: 2.1, 2.15, 2.12, 2.17
+lessons: g2-reading
+words: die Mutter | der Vater | die Eltern | die Kinder | die Geschwister | verheiratet
+
+## Age and personal details
+kind: topic
+en: age, how old, birthday, born, address, form, personal details, personal information, phone number, email address, date of birth
+am: ዕድሜ, ስንት ዓመትህ, ልደት, አድራሻ, ቅጽ, የግል መረጃ, ስልክ ቁጥር
+chapters: 2.14, 2.13, 2.9, 7.8, 4.17
+words: Wie alt bist du? | Ich bin 25 Jahre alt. | Wann bist du geboren? | die Telefonnummer | die E-Mail-Adresse | die Postleitzahl
+
+## Languages and countries
+kind: topic
+en: languages, language, speak, countries, country, nationality, where from, which languages
+am: ቋንቋ, ቋንቋዎች, መናገር, አገር, አገሮች, ዜግነት
+chapters: 2.6, 1.4, 1.11
+lessons: g-countries, g2-sprechen
+words: die Sprache | Welche Sprachen sprichst du? | Ich spreche Deutsch. | Ich komme aus Äthiopien.
+
+## Ordering food at a restaurant
+kind: topic
+en: order food, ordering, order, restaurant, cafe, café, menu, waiter, waitress, bill, check, pay, tip, eat out, table, ask for the bill
+am: ምግብ ማዘዝ, ማዘዝ, ምግብ ቤት, ሬስቶራንት, ካፌ, ሂሳብ, መክፈል, አስተናጋጅ, ጉርሻ
+chapters: 3.15, 3.8
+lessons: g3-moegen, g3-reading
+words: Ich möchte … bitte. | Ich nehme … | Was darf es sein? | Können wir bitte die Rechnung bekommen? | die Rechnung | bestellen | der Kellner | das Menü | das Trinkgeld | Stimmt so. | Was möchten Sie trinken?
+
+## Shopping and prices
+kind: topic
+en: shopping, shop, buy, buying, price, prices, cost, how much, money, cheap, expensive, supermarket, market, change, pay
+am: መገብየት, ግብይት, መግዛት, ዋጋ, ስንት ነው, ገንዘብ, ርካሽ, ውድ, ሱቅ, ገበያ
+chapters: 3.1, 3.12, 4.18, 4.3
+lessons: g4-prices
+words: Wie viel kostet das? | Was kostet das? | Das kostet … | kaufen | kosten | billig | teuer | der Supermarkt | einkaufen gehen
+
+## Food and drink
+kind: topic
+en: food, eat, eating, drink, drinks, hungry, hunger, thirsty, thirst, breakfast, lunch, dinner, meals, fruit, vegetables
+am: ምግብ, መብላት, መጠጥ, መጠጣት, ርቦኛል, ጠምቶኛል, ቁርስ, ምሳ, እራት, ፍራፍሬ, አትክልት
+chapters: 3.2, 3.4, 3.8, 3.17, 3.13, 3.14
+words: Ich habe Hunger. | Ich habe Durst. | Guten Appetit! | das Frühstück | essen | trinken
+
+## Likes and dislikes
+kind: topic
+en: like, likes, dislike, love, hate, favourite, favorite, preference, prefer, enjoy, taste, tasty
+am: መውደድ, እወዳለሁ, አልወድም, ተወዳጅ, ጣፋጭ, ምርጫ
+chapters: 3.16, 3.13, 5.8, 6.8, 4.10
+lessons: g3-moegen
+words: mögen | Ich mag Kaffee. | Ich mag keinen Fisch. | Es gefällt mir. | Es gefällt mir nicht. | lecker | Was isst du gerne? | Ich lese gern.
+
+## Opinions, agreeing and disagreeing
+kind: topic
+en: opinion, opinions, think, what do you think, agree, agreeing, disagree, disagreeing, right, wrong, i think, view
+am: አስተያየት, ሐሳብ, ይመስለኛል, መስማማት, አልስማማም, ልክ ነው, ልክ አይደለም
+chapters: 6.9, 6.11, 6.13, 4.18
+words: Wie findest du …? | Ich finde es … | Was denkst du? | Das stimmt. | Das stimmt nicht. | Genau. | Ich denke … | Unsinn! | Das finde ich auch.
+
+## Expressing doubt and uncertainty
+kind: topic
+en: doubt, doubts, doubtful, unsure, not sure, uncertain, uncertainty, maybe, perhaps, don't know, really, is that true, are you sure, guess
+am: ጥርጣሬ, መጠራጠር, ምናልባት, አላውቅም, እርግጠኛ አይደለሁም, እርግጠኛ, በእውነት
+chapters: 6.11
+words: vielleicht | Vielleicht. | Ich weiß nicht. | Das weiß ich noch nicht. | Bist du sicher? | Stimmt das? | Ist das richtig? | Ich glaube, … | Ich denke … | wirklich
+
+## Home and furniture
+kind: topic
+en: home, house, apartment, flat, rooms, room, furniture, kitchen, bathroom, bedroom, living room, garden, rent, moving
+am: ቤት, አፓርታማ, ክፍል, ክፍሎች, የቤት ዕቃ, ወጥ ቤት, መታጠቢያ ቤት, መኝታ ቤት
+chapters: 4.1, 4.6, 4.7, 4.9, 4.11
+lessons: g4-reading
+words: die Wohnung | das Haus | das Zimmer | die Küche | das Badezimmer | der Tisch
+
+## Asking where things are
+kind: topic
+en: where is, directions, direction, left, right, location, way, find, next to, behind, in front, north, south
+am: የት ነው, አቅጣጫ, ግራ, ቀኝ, አጠገብ, ቦታ, መንገድ
+chapters: 4.2, 4.8, 6.2
+words: Wo ist es? | Entschuldigung, wo ist das Badezimmer? | links | rechts | neben | vorne | hinten
+
+## Describing things and colours
+kind: topic
+en: describe, describing, description, adjectives, colour, colours, color, colors, big, small, old, new, material
+am: መግለጽ, ቀለም, ቀለሞች, ትልቅ, ትንሽ, ቅጽል
+chapters: 4.3, 4.12, 6.10, 4.16, 4.15
+lessons: g4-things
+words: Wie ist etwas? | Welche Farbe hat …? | groß | klein | schön | Was ist das?
+
+## Telling the time
+kind: topic
+en: time, telling the time, clock, what time, o'clock, hours, minutes, half past, quarter past, quarter to, when
+am: ሰዓት, ስንት ሰዓት ነው, ጊዜ, ደቂቃ, ተኩል, ሩብ
+chapters: 5.2, 5.5, 5.3, 5.12
+lessons: g5-time, g5-am-um
+words: Wie spät ist es? | Wie viel Uhr ist es? | Es ist halb zwei. | Um wie viel Uhr? | die Uhr
+
+## Days, months and dates
+kind: topic
+en: days, day, week, weekdays, months, month, seasons, date, dates, calendar, weekend, today, tomorrow, yesterday
+am: ቀን, ቀናት, ሳምንት, ወር, ወራት, ወቅት, ቀን መቁጠሪያ, ዛሬ, ነገ, ትናንት
+chapters: 5.6, 5.9, 5.12, 9.1
+words: der Montag | Welcher Tag ist heute? | die Monate | die Jahreszeiten | das Wochenende | heute | morgen
+
+## Daily routine
+kind: topic
+en: daily routine, routine, my day, every day, morning, get up, habits, work, sleep
+am: የዕለት ተዕለት ተግባር, ዕለታዊ, ቀኔ, ጠዋት, መነሣት
+chapters: 5.1, 5.7, 6.12
+lessons: g5-reading
+words: aufstehen | sich die Zähne putzen | zur Arbeit fahren | nach Hause kommen | schlafen gehen | jeden Tag
+
+## Making plans and invitations
+kind: topic
+en: plans, plan, making plans, invite, invitation, appointment, date, meet up, going out, suggest, suggestion, accept, decline, say no, free time, party
+am: ዕቅድ, ቀጠሮ, ግብዣ, መጋበዝ, መውጣት, መገናኘት, ጊዜ አለህ
+chapters: 5.10, 5.13, 5.14
+lessons: g5-plans
+words: Hast du am Samstag Zeit? | Gehen wir ins Kino? | Gute Idee! | Ja, gern. | Tut mir leid, ich kann leider nicht. | Um wie viel Uhr? | eine Party machen
+
+## Weather
+kind: topic
+en: weather, rain, raining, sun, sunny, cold, hot, warm, temperature, snow, wind, cloudy, forecast
+am: የአየር ሁኔታ, ዝናብ, ፀሐይ, ቀዝቃዛ, ሞቃት, በረዶ, ነፋስ, ደመና
+chapters: 6.1, 6.2
+words: das Wetter | Wie ist das Wetter? | es regnet | die Sonne scheint | kalt | heiß
+
+## Hobbies and free time
+kind: topic
+en: hobbies, hobby, free time, leisure, sport, sports, interests, music, games, what do you do for fun
+am: የትርፍ ጊዜ ማሳለፊያ, የትርፍ ጊዜ, ስፖርት, ሙዚቃ, ጨዋታ
+chapters: 6.4, 6.14, 6.3, 6.5, 5.8
+lessons: g6-reading
+words: Was sind deine Hobbys? | Was machst du in deiner Freizeit? | Mein Hobby ist Lesen. | Fußball spielen | Musik hören
+
+## How often?
+kind: topic
+en: how often, frequency, always, never, sometimes, often, rarely, every day
+am: ምን ያህል ጊዜ, ሁልጊዜ, በፍጹም, አንዳንድ ጊዜ, ብዙ ጊዜ
+chapters: 6.12
+lessons: g6-how-often
+words: immer | manchmal | selten | nie | Wie oft …?
+
+## Jobs and work
+kind: topic
+en: job, jobs, work, working, profession, occupation, career, what do you do, office, colleague, employer
+am: ሥራ, ሙያ, ቢሮ, ሠራተኛ, ምን ትሠራለህ
+chapters: 7.1, 7.11, 7.12
+lessons: g7-jobs, g7-reading
+words: Was bist du von Beruf? | Was machst du beruflich? | Ich arbeite als Krankenpfleger. | die Arbeit | arbeiten
+
+## On the phone and email
+kind: topic
+en: phone, telephone, call, phone call, email, e-mail, letter, write, writing, message, formal letter
+am: ስልክ, መደወል, ኢሜይል, ደብዳቤ, መጻፍ, መልዕክት
+chapters: 7.13, 7.7, 2.9, 4.17
+lessons: g7-phone
+words: telefonieren | Auf Wiederhören! | Einen Moment, bitte. | Sehr geehrte Damen und Herren | Mit freundlichen Grüßen | anrufen
+
+## Skills: what you can do
+kind: topic
+en: skills, skill, ability, abilities, good at, can do, talent
+am: ችሎታ, ክህሎት, መቻል, ጎበዝ
+chapters: 7.2, 7.3
+lessons: g7-modals
+words: Was kannst du gut machen? | Sie kann sehr gut tanzen. | Er kann gar nicht kochen. | können
+
+## Learning German
+kind: topic
+en: learning, learn, study, studying, vocabulary, practice, practise, improve, course, class, lesson, teacher
+am: መማር, ማጥናት, ጀርመንኛ, የቃላት ዝርዝር, ማሻሻል, ኮርስ, ክፍል, አስተማሪ
+chapters: 1.12, 7.6
+words: Ich lerne Deutsch. | der Deutschkurs | verbessern | das Vokabular | die Aussprache
+
+## Travel and transport
+kind: topic
+en: travel, travelling, traveling, transport, bus, train, plane, flight, airport, station, ticket, trip, journey, luggage, getting around, taxi
+am: ጉዞ, መጓዝ, መጓጓዣ, አውቶቡስ, ባቡር, አውሮፕላን, በረራ, አውሮፕላን ማረፊያ, ትኬት, ሻንጣ
+chapters: 8.1, 8.2, 8.3, 8.4, 8.5, 8.6
+lessons: g8-mit, g8-separable, g8-reading
+words: der Bahnhof | der Flughafen | die Fahrkarte | Gute Reise! | Kannst du mich abholen? | umsteigen
+
+## Seeing a doctor and the pharmacy
+kind: topic
+en: doctor, ill, sick, health, pharmacy, medicine, appointment, dentist, hospital, surgery
+am: ሐኪም, ታምሜ, ጤና, መድኃኒት ቤት, መድኃኒት, ቀጠሮ, ሆስፒታል
+chapters: 9.5, 7.1
+words: der Arzt | die Ärztin | die Apotheke | die Praxis | Wann ist die Praxis geöffnet? | der Termin | der Zahnarzt
+
+## Opening hours
+kind: topic
+en: opening hours, open, closed, when is it open, bank, pharmacy, shop hours
+am: የሥራ ሰዓት, ክፍት, ዝግ, ባንክ
+chapters: 9.5
+lessons: g9-time
+words: die Öffnungszeiten | geöffnet | geschlossen | von Montag bis Freitag | ab 8 Uhr
+
+## Holidays, festivals and celebrations
+kind: topic
+en: holidays, holiday, festival, festivals, celebrate, celebration, christmas, easter, new year, birthday, party, vacation
+am: በዓል, በዓላት, ማክበር, ገና, ፋሲካ, አዲስ ዓመት, ልደት, ድግስ, ዕረፍት
+chapters: 9.6, 6.3, 5.10
+words: das Fest | feiern | Weihnachten | Ostern | Wann hast du Geburtstag? | der Urlaub | der Geburtstag
+
+## Compliments and thanks
+kind: topic
+en: compliment, compliments, praise, well done, great, you are good at
+am: ሙገሳ, ማመስገን, ጎበዝ, በጣም ጥሩ
+chapters: 6.13
+words: Du kannst toll tanzen! | Sie können super kochen! | Ich finde das toll. | Herzlichen Dank!
+
+## Everyday objects
+kind: topic
+en: objects, things, everyday things, what is that, what is this, items
+am: ዕቃ, ዕቃዎች, ይህ ምንድን ነው
+chapters: 4.15, 4.16
+words: Was ist das? | der Schlüssel | das Handy | die Tasche

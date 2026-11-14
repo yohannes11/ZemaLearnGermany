@@ -235,6 +235,31 @@ Where do you (all) work? ||| እናንተ የት ትሠራላችሁ?
 We live together. ||| አብረን እንኖራለን።
 Where do you live? (informal, one person) ||| የት ትኖራለህ/ትኖሪያለሽ? (ለአንድ ሰው)
 
+## g2-family-tree
+A family tree shows who is who. A line between two people joins a couple; the lines below them lead to their children. ||| የቤተሰብ ዛፍ ማን ማን እንደሆነ ያሳያል። በሁለት ሰዎች መካከል ያለ መስመር ባልና ሚስትን ያገናኛል፤ ከሥራቸው ያሉት መስመሮች ወደ ልጆቻቸው ይመራሉ።
+You are <em class="de">ich</em>, at the bottom in the middle. Press a person to hear their word. In the exercise, the people have numbers: match each number to the right word. ||| እርስዎ <em class="de">ich</em> ነዎት፤ ከታች በመሃል ያሉት። ቃሉን ለመስማት አንድን ሰው ይጫኑ። በመልመጃው ውስጥ ሰዎቹ ቁጥር አላቸው፤ እያንዳንዱን ቁጥር ከትክክለኛው ቃል ጋር ያዛምዱ።
+Groups ||| ቡድኖች
+One word for several people ||| ለብዙ ሰዎች አንድ ቃል
+grandpa + grandma = the grandparents ||| ወንድ አያት + ሴት አያት = አያቶች
+father + mother = the parents ||| አባት + እናት = ወላጆች
+brothers + sisters = the siblings ||| ወንድሞች + እህቶች = ወንድሞችና እህቶች
+men and boys: der Vater, der Opa, der Bruder, der Onkel ||| ወንዶችና ወንድ ልጆች፦ der Vater, der Opa, der Bruder, der Onkel
+women and girls: die Mutter, die Oma, die Schwester, die Tante ||| ሴቶችና ሴት ልጆች፦ die Mutter, die Oma, die Schwester, die Tante
+groups: die Eltern, die Großeltern, die Geschwister ||| ቡድኖች፦ die Eltern, die Großeltern, die Geschwister
+Your family tree ||| የቤተሰብዎ ዛፍ
+Who is who in your family? ||| በቤተሰብዎ ውስጥ ማን ማን ነው?
+Choose the German word. ||| የጀርመንኛውን ቃል ይምረጡ።
+Your father's mother is your … ||| የአባትዎ እናት ለእርስዎ … ናቸው።
+Your father's father is your … ||| የአባትዎ አባት ለእርስዎ … ናቸው።
+Your father's sister is your … ||| የአባትዎ እህት ለእርስዎ … ናት።
+Your father's brother is your … ||| የአባትዎ ወንድም ለእርስዎ … ነው።
+Your father's wife is your … ||| የአባትዎ ሚስት ለእርስዎ … ናት።
+Your mother's husband is your … ||| የእናትዎ ባል ለእርስዎ … ነው።
+Your parents' son (not you) is your … ||| የወላጆችዎ ወንድ ልጅ (እርስዎ ያልሆኑት) ለእርስዎ … ነው።
+Your parents' daughter (not you) is your … ||| የወላጆችዎ ሴት ልጅ (እርስዎ ያልሆኑት) ለእርስዎ … ናት።
+Your uncle's daughter is your … ||| የአጎትዎ ሴት ልጅ ለእርስዎ … ናት።
+Your aunt's son is your … ||| የአክስትዎ ወንድ ልጅ ለእርስዎ … ነው።
+
 ## g2-reading
 now ||| አሁን
 as an engineer ||| እንደ መሐንዲስ

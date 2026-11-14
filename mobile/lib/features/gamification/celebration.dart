@@ -112,7 +112,7 @@ class _CelebrationState extends State<Celebration> with SingleTickerProviderStat
                               duration: Motion.celebrate,
                               curve: Curves.easeOutCubic,
                               builder: (context, v, _) => Semantics(
-                                label: '${widget.xpGained} XP earned',
+                                label: T('{n} XP earned', {'n': widget.xpGained}),
                                 excludeSemantics: true,
                                 child: Txt('+$v XP', role: TextRole.title, colour: c.xp),
                               ),
@@ -126,14 +126,14 @@ class _CelebrationState extends State<Celebration> with SingleTickerProviderStat
                             child: Row(mainAxisSize: MainAxisSize.min, children: [
                               Icon(Icons.shield_rounded, color: c.brandInk),
                               const SizedBox(width: Space.sm),
-                              Txt('Level ${game.level.level} reached!', role: TextRole.subheading, colour: c.brandInk),
+                              Txt(T('Level {n} reached!', {'n': game.level.level}), role: TextRole.subheading, colour: c.brandInk),
                             ]),
                           )),
                         _in(0.24, Row(children: [
                           for (final stat in widget.stats) ...[_StatBox(icon: stat.icon, value: stat.value, label: stat.label), const SizedBox(width: Space.sm)],
                           Expanded(
                             child: _Box(
-                              label: 'Daily goal: ${game.todayXp} of ${game.dailyGoal} XP',
+                              label: T('Daily goal: {xp} of {goal} XP', {'xp': game.todayXp, 'goal': game.dailyGoal}),
                               children: [
                                 GoalRing(value: game.todayXp / game.dailyGoal, size: 44, stroke: 6),
                                 Txt('${min(game.todayXp, game.dailyGoal)}/${game.dailyGoal}', role: TextRole.label),
@@ -146,7 +146,7 @@ class _CelebrationState extends State<Celebration> with SingleTickerProviderStat
                           const TallyView(feel: true),
                           const SizedBox(height: Space.xs),
                           Txt(
-                            game.goalMet ? 'Today struck off · ${T('{n}-day streak', {'n': game.streak})}' : T('{n}-day streak', {'n': game.streak}),
+                            game.goalMet ? '${T('Today struck off')} · ${T('{n}-day streak', {'n': game.streak})}' : T('{n}-day streak', {'n': game.streak}),
                             role: TextRole.label,
                             colour: game.goalMet ? c.flame : c.muted,
                           ),

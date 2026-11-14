@@ -1,0 +1,217 @@
+# Unit 8: example sentences for every word. German ||| English ||| Amharic
+# Three for a single word, two for a phrase; A1 German that uses the course's own words.
+
+# 8.1 Getting around
+## der Bus
+Der Bus kommt um acht Uhr. ||| The bus comes at eight o'clock. ||| አውቶቡሱ ሁለት ሰዓት ላይ ይመጣል።
+Der Bus ist voll. ||| The bus is full. ||| አውቶቡሱ ሞልቷል።
+Wo hält der Bus? ||| Where does the bus stop? ||| አውቶቡሱ የት ይቆማል?
+## die U-Bahn
+Die U-Bahn ist schnell. ||| The underground is fast. ||| የምድር ውስጥ ባቡሩ ፈጣን ነው።
+Die U-Bahn fährt alle fünf Minuten. ||| The underground runs every five minutes. ||| የምድር ውስጥ ባቡሩ በየአምስት ደቂቃው ይሄዳል።
+Wo ist die U-Bahn? ||| Where is the underground? ||| የምድር ውስጥ ባቡሩ የት ነው?
+## die S-Bahn
+Die S-Bahn fährt zum Flughafen. ||| The suburban train goes to the airport. ||| የከተማ ዳርቻ ባቡሩ ወደ አውሮፕላን ማረፊያ ይሄዳል።
+Die S-Bahn hat Verspätung. ||| The suburban train is delayed. ||| የከተማ ዳርቻ ባቡሩ ዘግይቷል።
+Ich nehme die S-Bahn. ||| I take the suburban train. ||| የከተማ ዳርቻ ባቡሩን እይዛለሁ።
+## die Straßenbahn
+Die Straßenbahn ist neu. ||| The tram is new. ||| ትራሙ አዲስ ነው።
+Die Straßenbahn hält hier. ||| The tram stops here. ||| ትራሙ እዚህ ይቆማል።
+In Addis Abeba gibt es eine Straßenbahn. ||| In Addis Ababa there is a tram. ||| በአዲስ አበባ ቀላል ባቡር አለ።
+## das Auto
+Das Auto ist rot. ||| The car is red. ||| መኪናው ቀይ ነው።
+Wir fahren mit dem Auto. ||| We are going by car. ||| በመኪና እንሄዳለን።
+Mein Auto ist kaputt. ||| My car is broken. ||| መኪናዬ ተበላሽቷል።
+## das Flugzeug
+Das Flugzeug ist groß. ||| The plane is big. ||| አውሮፕላኑ ትልቅ ነው።
+Das Flugzeug fliegt nach Frankfurt. ||| The plane is flying to Frankfurt. ||| አውሮፕላኑ ወደ ፍራንክፈርት ይበራል።
+Ich reise mit dem Flugzeug. ||| I travel by plane. ||| በአውሮፕላን እጓዛለሁ።
+## mit dem Bus
+Ich fahre mit dem Bus zur Arbeit. ||| I go to work by bus. ||| በአውቶቡስ ወደ ሥራ እሄዳለሁ።
+Kommst du mit dem Bus? ||| Are you coming by bus? ||| በአውቶቡስ ትመጣለህ?
+## mit dem Zug
+Wir fahren mit dem Zug nach Dschibuti. ||| We go to Djibouti by train. ||| በባቡር ወደ ጅቡቲ እንሄዳለን።
+Mit dem Zug dauert es zwei Stunden. ||| By train it takes two hours. ||| በባቡር ሁለት ሰዓት ይፈጃል።
+## mit der U-Bahn
+Ich fahre mit der U-Bahn in die Stadt. ||| I go into town by underground. ||| በምድር ውስጥ ባቡር ወደ ከተማ እሄዳለሁ።
+Mit der U-Bahn ist es schnell. ||| By underground it is fast. ||| በምድር ውስጥ ባቡር ፈጣን ነው።
+## zu Fuß
+Ich gehe zu Fuß zur Schule. ||| I walk to school. ||| በእግሬ ወደ ትምህርት ቤት እሄዳለሁ።
+Zu Fuß sind es zehn Minuten. ||| On foot it is ten minutes. ||| በእግር አሥር ደቂቃ ነው።
+
+# 8.2 Station & airport
+## der Bahnhof
+Der Bahnhof ist nicht weit. ||| The station is not far. ||| ባቡር ጣቢያው ሩቅ አይደለም።
+Wo ist der Bahnhof? ||| Where is the station? ||| ባቡር ጣቢያው የት ነው?
+Ich warte am Bahnhof. ||| I am waiting at the station. ||| ባቡር ጣቢያው ላይ እየጠበቅሁ ነው።
+## der Hauptbahnhof
+Der Hauptbahnhof ist groß. ||| The main station is big. ||| ዋናው ባቡር ጣቢያ ትልቅ ነው።
+Wie komme ich zum Hauptbahnhof? ||| How do I get to the main station? ||| ወደ ዋናው ባቡር ጣቢያ እንዴት እሄዳለሁ?
+Wir treffen uns am Hauptbahnhof. ||| We are meeting at the main station. ||| ዋናው ባቡር ጣቢያ ላይ እንገናኛለን።
+## der Flughafen
+Der Flughafen ist in Bole. ||| The airport is in Bole. ||| አውሮፕላን ማረፊያው ቦሌ ነው።
+Ich fahre zum Flughafen. ||| I am going to the airport. ||| ወደ አውሮፕላን ማረፊያ እሄዳለሁ።
+Der Flughafen in Frankfurt ist sehr groß. ||| The airport in Frankfurt is very big. ||| የፍራንክፈርት አውሮፕላን ማረፊያ በጣም ትልቅ ነው።
+## die Haltestelle
+Die Haltestelle ist da vorne. ||| The stop is up ahead. ||| ፌርማታው እዚያ ፊት ለፊት ነው።
+Wo ist die nächste Haltestelle? ||| Where is the next stop? ||| ቀጣዩ ፌርማታ የት ነው?
+Ich warte an der Haltestelle. ||| I am waiting at the stop. ||| ፌርማታው ላይ እየጠበቅሁ ነው።
+## das Gleis
+Der Zug kommt auf Gleis 3. ||| The train arrives on platform 3. ||| ባቡሩ በመድረክ 3 ይመጣል።
+Welches Gleis? ||| Which platform? ||| የትኛው መድረክ?
+Das Gleis ist dort drüben. ||| The platform is over there. ||| መድረኩ እዚያ ማዶ ነው።
+## der Bahnsteig
+Der Bahnsteig ist voll. ||| The platform is full. ||| መሳፈሪያ መድረኩ ሞልቷል።
+Wir warten auf dem Bahnsteig. ||| We are waiting on the platform. ||| መሳፈሪያ መድረኩ ላይ እየጠበቅን ነው።
+Der Bahnsteig ist sehr lang. ||| The platform is very long. ||| መሳፈሪያ መድረኩ በጣም ረጅም ነው።
+## die Fahrkarte
+Die Fahrkarte kostet drei Euro. ||| The ticket costs three euros. ||| ትኬቱ ሦስት ዩሮ ያስከፍላል።
+Ich kaufe eine Fahrkarte. ||| I am buying a ticket. ||| ትኬት እገዛለሁ።
+Wo ist meine Fahrkarte? ||| Where is my ticket? ||| ትኬቴ የት ነው?
+## der Flug
+Der Flug ist lang. ||| The flight is long. ||| በረራው ረጅም ነው።
+Mein Flug geht um zehn Uhr. ||| My flight leaves at ten o'clock. ||| በረራዬ አራት ሰዓት ላይ ነው።
+Wie war der Flug? ||| How was the flight? ||| በረራው እንዴት ነበር?
+## die Verspätung
+Der Zug hat Verspätung. ||| The train is delayed. ||| ባቡሩ ዘግይቷል።
+Die Verspätung ist zwanzig Minuten. ||| The delay is twenty minutes. ||| መዘግየቱ ሃያ ደቂቃ ነው።
+Entschuldigung für die Verspätung! ||| Sorry for the delay! ||| ስለ መዘግየቱ ይቅርታ!
+## der Ausgang
+Wo ist der Ausgang? ||| Where is the exit? ||| መውጫው የት ነው?
+Der Ausgang ist links. ||| The exit is on the left. ||| መውጫው በግራ በኩል ነው።
+Der Flug nach Rom ist an Ausgang 12. ||| The flight to Rome is at gate 12. ||| ወደ ሮም የሚሄደው በረራ በመሳፈሪያ በር 12 ነው።
+## die Abfahrt
+Die Abfahrt ist um neun Uhr. ||| The departure is at nine o'clock. ||| መነሻው ሦስት ሰዓት ላይ ነው።
+Wann ist die Abfahrt? ||| When is the departure? ||| መነሻው መቼ ነው?
+Die Abfahrt ist pünktlich. ||| The departure is on time. ||| መነሻው በሰዓቱ ነው።
+## die Ankunft
+Die Ankunft ist um sieben Uhr. ||| The arrival is at seven o'clock. ||| መድረሻው አንድ ሰዓት ላይ ነው።
+Wann ist die Ankunft in Berlin? ||| When is the arrival in Berlin? ||| በርሊን የሚደረሰው መቼ ነው?
+Die Ankunft ist am Abend. ||| The arrival is in the evening. ||| መድረሻው ማታ ነው።
+
+# 8.3 Luggage
+## das Gepäck
+Das Gepäck ist schwer. ||| The luggage is heavy. ||| ሻንጣው ከባድ ነው።
+Wo ist mein Gepäck? ||| Where is my luggage? ||| ሻንጣዬ የት ነው?
+Ich habe nicht viel Gepäck. ||| I don't have much luggage. ||| ብዙ ጓዝ የለኝም።
+## der Koffer
+Der Koffer ist groß. ||| The suitcase is big. ||| ሻንጣው ትልቅ ነው።
+Mein Koffer ist blau. ||| My suitcase is blue. ||| ሻንጣዬ ሰማያዊ ነው።
+Ich packe den Koffer. ||| I am packing the suitcase. ||| ሻንጣውን እያዘጋጀሁ ነው።
+## der Rucksack
+Der Rucksack ist leicht. ||| The backpack is light. ||| የጀርባ ቦርሳው ቀላል ነው።
+Im Rucksack ist Wasser. ||| There is water in the backpack. ||| የጀርባ ቦርሳው ውስጥ ውሃ አለ።
+Ich nehme nur einen Rucksack mit. ||| I am only taking a backpack along. ||| የጀርባ ቦርሳ ብቻ ይዤ እሄዳለሁ።
+## der Pass
+Hier ist mein Pass. ||| Here is my passport. ||| ፓስፖርቴ ይኸውና።
+Der Pass ist neu. ||| The passport is new. ||| ፓስፖርቱ አዲስ ነው።
+Ich brauche einen Pass. ||| I need a passport. ||| ፓስፖርት ያስፈልገኛል።
+## das Visum
+Ich brauche ein Visum für Deutschland. ||| I need a visa for Germany. ||| ለጀርመን ቪዛ ያስፈልገኛል።
+Das Visum ist im Pass. ||| The visa is in the passport. ||| ቪዛው ፓስፖርቱ ውስጥ ነው።
+Hast du schon ein Visum? ||| Do you already have a visa? ||| ቪዛ አግኝተሃል?
+## der Akku
+Der Akku ist leer. ||| The battery is flat. ||| ባትሪው አልቋል።
+Mein Akku ist fast leer. ||| My battery is almost flat. ||| ባትሪዬ ሊያልቅ ነው።
+Der Akku ist neu. ||| The battery is new. ||| ባትሪው አዲስ ነው።
+## das Ladegerät
+Hast du ein Ladegerät? ||| Do you have a charger? ||| ቻርጀር አለህ?
+Das Ladegerät ist im Koffer. ||| The charger is in the suitcase. ||| ቻርጀሩ ሻንጣው ውስጥ ነው።
+Ich habe mein Ladegerät vergessen. ||| I have forgotten my charger. ||| ቻርጀሬን ረስቻለሁ።
+
+# 8.4 Travel verbs
+## abfahren
+Der Zug fährt um acht Uhr ab. ||| The train departs at eight o'clock. ||| ባቡሩ ሁለት ሰዓት ላይ ይነሳል።
+Wann fährt der Bus ab? ||| When does the bus leave? ||| አውቶቡሱ መቼ ይነሳል?
+Wir fahren morgen früh ab. ||| We leave early tomorrow. ||| ነገ ጠዋት እንነሳለን።
+## ankommen
+Der Zug kommt um zehn Uhr an. ||| The train arrives at ten o'clock. ||| ባቡሩ አራት ሰዓት ላይ ይደርሳል።
+Wir kommen am Abend an. ||| We arrive in the evening. ||| ማታ እንደርሳለን።
+Wann kommt das Flugzeug an? ||| When does the plane arrive? ||| አውሮፕላኑ መቼ ይደርሳል?
+## abfliegen
+Das Flugzeug fliegt um neun Uhr ab. ||| The plane takes off at nine o'clock. ||| አውሮፕላኑ ሦስት ሰዓት ላይ ይነሳል።
+Wir fliegen morgen ab. ||| We fly out tomorrow. ||| ነገ እንበራለን።
+Von wo fliegst du ab? ||| Where are you flying from? ||| ከየት ነው የምትበረው?
+## abholen
+Ich hole dich am Flughafen ab. ||| I'll pick you up at the airport. ||| አውሮፕላን ማረፊያ መጥቼ እቀበልሃለሁ።
+Wer holt die Kinder ab? ||| Who is picking up the children? ||| ልጆቹን ማን ሄዶ ይቀበላቸዋል?
+Meine Mutter holt mich ab. ||| My mother is picking me up. ||| እናቴ መጥታ ትቀበለኛለች።
+## einsteigen
+Wir steigen in den Bus ein. ||| We get on the bus. ||| አውቶቡሱ ላይ እንሳፈራለን።
+Bitte schnell einsteigen! ||| Please get on quickly! ||| እባክዎ በፍጥነት ይሳፈሩ!
+Wo steigst du ein? ||| Where do you get on? ||| የት ትሳፈራለህ?
+## aussteigen
+Ich steige hier aus. ||| I am getting off here. ||| እዚህ እወርዳለሁ።
+Wo müssen wir aussteigen? ||| Where do we have to get off? ||| የት መውረድ አለብን?
+Sie steigt am Bahnhof aus. ||| She gets off at the station. ||| ባቡር ጣቢያው ላይ ትወርዳለች።
+## umsteigen
+Wir müssen in Berlin umsteigen. ||| We have to change in Berlin. ||| በርሊን ላይ መቀየር አለብን።
+Muss ich umsteigen? ||| Do I have to change? ||| መቀየር አለብኝ?
+Hier steigen wir in die U-Bahn um. ||| Here we change to the underground. ||| እዚህ ወደ ምድር ውስጥ ባቡር እንቀይራለን።
+## fliegen
+Ich fliege nach Deutschland. ||| I am flying to Germany. ||| ወደ ጀርመን እበራለሁ።
+Wir fliegen mit Ethiopian Airlines. ||| We fly with Ethiopian Airlines. ||| በኢትዮጵያ አየር መንገድ እንበራለን።
+Die Vögel fliegen nach Süden. ||| The birds fly south. ||| ወፎቹ ወደ ደቡብ ይበራሉ።
+## landen
+Das Flugzeug landet in Frankfurt. ||| The plane lands in Frankfurt. ||| አውሮፕላኑ ፍራንክፈርት ያርፋል።
+Wann landet der Flug? ||| When does the flight land? ||| በረራው መቼ ያርፋል?
+Wir landen in zehn Minuten. ||| We land in ten minutes. ||| በአሥር ደቂቃ ውስጥ እናርፋለን።
+## Ich steige in Frankfurt um.
+Ich fliege nach Berlin. Ich steige in Frankfurt um. ||| I am flying to Berlin. I change in Frankfurt. ||| ወደ በርሊን እበራለሁ። ፍራንክፈርት ላይ እቀይራለሁ።
+Musst du umsteigen? – Ja, ich steige in Frankfurt um. ||| Do you have to change? – Yes, I change in Frankfurt. ||| መቀየር አለብህ? – አዎ፣ ፍራንክፈርት ላይ እቀይራለሁ።
+
+# 8.5 On the way
+## Wann kommst du an?
+Wann kommst du an? – Um acht Uhr. ||| When do you arrive? – At eight o'clock. ||| መቼ ትደርሳለህ? – ሁለት ሰዓት ላይ።
+Wann kommst du an? Ich hole dich ab. ||| When do you arrive? I'll pick you up. ||| መቼ ትደርሺያለሽ? መጥቼ እቀበልሻለሁ።
+## Wann fliegst du ab?
+Wann fliegst du ab? – Am Montag. ||| When does your flight leave? – On Monday. ||| መቼ ትበራለህ? – ሰኞ።
+Wann fliegst du ab, morgen oder übermorgen? ||| When does your flight leave, tomorrow or the day after? ||| መቼ ትበሪያለሽ፣ ነገ ወይስ ከነገ ወዲያ?
+## Kannst du mich abholen?
+Ich komme um acht Uhr an. Kannst du mich abholen? ||| I arrive at eight o'clock. Can you pick me up? ||| ሁለት ሰዓት ላይ እደርሳለሁ። መጥተህ ልትቀበለኝ ትችላለህ?
+Kannst du mich am Bahnhof abholen? ||| Can you pick me up at the station? ||| ባቡር ጣቢያ መጥተሽ ልትቀበይኝ ትችያለሽ?
+## Natürlich hole ich dich ab.
+Natürlich hole ich dich ab. Wann kommst du an? ||| Of course I will pick you up. When do you arrive? ||| እርግጥ ነው፣ መጥቼ እቀበልሃለሁ። መቼ ትደርሳለህ?
+Keine Sorge, natürlich hole ich dich ab! ||| Don't worry, of course I will pick you up! ||| አትጨነቂ፣ እርግጥ ነው መጥቼ እቀበልሻለሁ!
+## Hoffentlich haben wir keine Verspätung.
+Das Wetter ist schlecht. Hoffentlich haben wir keine Verspätung. ||| The weather is bad. Hopefully we won't be delayed. ||| የአየሩ ሁኔታ መጥፎ ነው። ተስፋ አደርጋለሁ አንዘገይም።
+Hoffentlich haben wir keine Verspätung, ich habe einen Termin. ||| Hopefully we won't be delayed, I have an appointment. ||| ተስፋ አደርጋለሁ አንዘገይም፤ ቀጠሮ አለኝ።
+## Ich freue mich auf dich!
+Bis morgen! Ich freue mich auf dich! ||| See you tomorrow! I'm looking forward to seeing you! ||| እስከ ነገ! አንቺን ለማየት ጓጉቻለሁ!
+Ich freue mich auf dich! Gute Reise! ||| I'm looking forward to seeing you! Have a good trip! ||| አንተን ለማየት ጓጉቻለሁ! መልካም ጉዞ!
+## Verstehe!
+Der Zug fährt von Gleis 4 ab. – Verstehe! ||| The train departs from platform 4. – I see! ||| ባቡሩ ከመድረክ 4 ይነሳል። – ገባኝ!
+Ah, verstehe! Danke schön. ||| Ah, I see! Thank you very much. ||| አሃ፣ ገባኝ! በጣም አመሰግናለሁ።
+## Alles klar!
+Wir treffen uns um acht Uhr. – Alles klar! ||| We'll meet at eight o'clock. – All right! ||| ሁለት ሰዓት ላይ እንገናኛለን። – እሺ!
+Alles klar, bis morgen! ||| All right, see you tomorrow! ||| እሺ፣ እስከ ነገ!
+## Bist du sicher?
+Der Bus kommt nicht? Bist du sicher? ||| The bus isn't coming? Are you sure? ||| አውቶቡሱ አይመጣም? እርግጠኛ ነህ?
+Bist du sicher? Das ist Gleis 3. ||| Are you sure? That is platform 3. ||| እርግጠኛ ነሽ? ያ መድረክ 3 ነው።
+## Gute Reise!
+Gute Reise und bis bald! ||| Have a good trip and see you soon! ||| መልካም ጉዞ፤ በቅርቡ እንገናኝ!
+Du fliegst morgen? Gute Reise! ||| You are flying tomorrow? Have a good trip! ||| ነገ ትበራለህ? መልካም ጉዞ!
+
+# 8.6 Announcements
+## Achtung!
+Achtung! Der Zug fährt ab. ||| Attention! The train is departing. ||| ትኩረት! ባቡሩ እየተነሳ ነው።
+Achtung, das ist heiß! ||| Careful, that is hot! ||| ጥንቃቄ፣ ያ ትኩስ ነው!
+## Bitte Vorsicht!
+Bitte Vorsicht an Gleis 2! ||| Please be careful at platform 2! ||| እባክዎ በመድረክ 2 ይጠንቀቁ!
+Bitte Vorsicht, der Boden ist nass. ||| Please be careful, the floor is wet. ||| እባክዎ ይጠንቀቁ፣ ወለሉ እርጥብ ነው።
+## Der Zug fährt von Gleis 4 ab.
+Der Zug nach Berlin? Der Zug fährt von Gleis 4 ab. ||| The train to Berlin? The train departs from platform 4. ||| ወደ በርሊን የሚሄደው ባቡር? ባቡሩ ከመድረክ 4 ይነሳል።
+Achtung! Der Zug fährt von Gleis 4 ab. ||| Attention! The train departs from platform 4. ||| ትኩረት! ባቡሩ ከመድረክ 4 ይነሳል።
+## Der nächste Halt ist Frankfurt Hauptbahnhof.
+Der nächste Halt ist Frankfurt Hauptbahnhof. Bitte aussteigen. ||| The next stop is Frankfurt main station. Please get off. ||| ቀጣዩ ማቆሚያ ፍራንክፈርት ዋናው ባቡር ጣቢያ ነው። እባክዎ ይውረዱ።
+Der nächste Halt ist Frankfurt Hauptbahnhof. Hier können Sie umsteigen. ||| The next stop is Frankfurt main station. You can change here. ||| ቀጣዩ ማቆሚያ ፍራንክፈርት ዋናው ባቡር ጣቢያ ነው። እዚህ መቀየር ይችላሉ።
+## Das Flugzeug landet um 6:40 Uhr.
+Das Flugzeug landet um 6:40 Uhr in Addis Abeba. ||| The plane lands in Addis Ababa at 6:40. ||| አውሮፕላኑ ከሌሊቱ 12:40 (6:40) ላይ አዲስ አበባ ያርፋል።
+Das Flugzeug landet um 6:40 Uhr. Kannst du mich abholen? ||| The plane lands at 6:40. Can you pick me up? ||| አውሮፕላኑ ከሌሊቱ 12:40 (6:40) ላይ ያርፋል። መጥተህ ልትቀበለኝ ትችላለህ?
+## Bitte steigen Sie ein.
+Der Zug fährt gleich ab. Bitte steigen Sie ein. ||| The train is about to depart. Please get on. ||| ባቡሩ አሁን ይነሳል። እባክዎ ይሳፈሩ።
+Bitte steigen Sie ein und nehmen Sie Platz. ||| Please get on and take a seat. ||| እባክዎ ይሳፈሩና ይቀመጡ።
+## die Endstation
+Die Endstation ist der Hauptbahnhof. ||| The last stop is the main station. ||| የመጨረሻው ማቆሚያ ዋናው ባቡር ጣቢያ ነው።
+Ich fahre bis zur Endstation. ||| I am going to the last stop. ||| እስከ መጨረሻው ማቆሚያ እሄዳለሁ።
+Endstation! Bitte alle aussteigen. ||| Last stop! Everyone please get off. ||| የመጨረሻ ማቆሚያ! እባካችሁ ሁላችሁም ውረዱ።

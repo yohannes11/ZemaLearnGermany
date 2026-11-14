@@ -1,0 +1,616 @@
+# Unit 4: example sentences for every word. German ||| English ||| Amharic
+# Three for a single word, two for a phrase; A1 German that uses the course's own words.
+
+# 4.1 Rooms
+## die Wohnung
+Die Wohnung ist hell. ||| The apartment is bright. ||| አፓርታማው ብሩህ ነው።
+Meine Wohnung hat drei Zimmer. ||| My apartment has three rooms. ||| አፓርታማዬ ሦስት ክፍሎች አሉት።
+Die Wohnung ist im zweiten Stock. ||| The apartment is on the second floor. ||| አፓርታማው ሁለተኛ ፎቅ ላይ ነው።
+## das Zimmer
+Das Zimmer ist klein. ||| The room is small. ||| ክፍሉ ትንሽ ነው።
+Mein Zimmer ist sehr schön. ||| My room is very nice. ||| ክፍሌ በጣም ቆንጆ ነው።
+Das Haus hat fünf Zimmer. ||| The house has five rooms. ||| ቤቱ አምስት ክፍሎች አሉት።
+## das Wohnzimmer
+Das Wohnzimmer ist groß. ||| The living room is big. ||| ሳሎኑ ትልቅ ነው።
+Im Wohnzimmer steht ein Sofa. ||| There is a sofa in the living room. ||| ሳሎኑ ውስጥ ሶፋ አለ።
+Wir trinken Kaffee im Wohnzimmer. ||| We drink coffee in the living room. ||| ሳሎን ውስጥ ቡና እንጠጣለን።
+## das Schlafzimmer
+Das Schlafzimmer ist ruhig. ||| The bedroom is quiet. ||| መኝታ ቤቱ ጸጥ ያለ ነው።
+Das Bett steht im Schlafzimmer. ||| The bed is in the bedroom. ||| አልጋው መኝታ ቤት ውስጥ ነው።
+Unser Schlafzimmer ist klein. ||| Our bedroom is small. ||| መኝታ ቤታችን ትንሽ ነው።
+## das Kinderzimmer
+Das Kinderzimmer ist bunt. ||| The children's room is colourful. ||| የልጆቹ ክፍል ባለ ብዙ ቀለም ነው።
+Die Kinder spielen im Kinderzimmer. ||| The children play in the children's room. ||| ልጆቹ በልጆች ክፍል ውስጥ ይጫወታሉ።
+Das Kinderzimmer ist neben dem Bad. ||| The children's room is next to the bathroom. ||| የልጆቹ ክፍል ከመታጠቢያ ቤቱ አጠገብ ነው።
+## das Arbeitszimmer
+Das Arbeitszimmer ist hell. ||| The study is bright. ||| የሥራ ክፍሉ ብሩህ ነው።
+Mein Vater arbeitet im Arbeitszimmer. ||| My father works in the study. ||| አባቴ በሥራ ክፍሉ ውስጥ ይሠራል።
+Im Arbeitszimmer steht ein Computer. ||| There is a computer in the study. ||| የሥራ ክፍሉ ውስጥ ኮምፒውተር አለ።
+## die Küche
+Die Küche ist modern. ||| The kitchen is modern. ||| ማዕድ ቤቱ ዘመናዊ ነው።
+Meine Mutter kocht in der Küche. ||| My mother cooks in the kitchen. ||| እናቴ ማዕድ ቤት ውስጥ ታበስላለች።
+Die Küche ist sehr klein. ||| The kitchen is very small. ||| ማዕድ ቤቱ በጣም ትንሽ ነው።
+## das Badezimmer
+Das Badezimmer ist sauber. ||| The bathroom is clean. ||| መታጠቢያ ቤቱ ንጹሕ ነው።
+Das Badezimmer hat eine Dusche. ||| The bathroom has a shower. ||| መታጠቢያ ቤቱ ሻወር አለው።
+Wo ist das Badezimmer? ||| Where is the bathroom? ||| መታጠቢያ ቤቱ የት ነው?
+## das Bad
+Das Bad ist klein. ||| The bathroom is small. ||| መታጠቢያ ቤቱ ትንሽ ነው።
+Das Bad ist neben der Küche. ||| The bathroom is next to the kitchen. ||| መታጠቢያ ቤቱ ከማዕድ ቤቱ አጠገብ ነው።
+Ist das Bad frei? ||| Is the bathroom free? ||| መታጠቢያ ቤቱ ባዶ ነው?
+
+# 4.2 Where is it?
+## links
+Die Küche ist links. ||| The kitchen is on the left. ||| ማዕድ ቤቱ በግራ በኩል ነው።
+Gehen Sie hier links. ||| Go left here. ||| እዚህ ወደ ግራ ይታጠፉ።
+Links ist die Schule. ||| On the left is the school. ||| በግራ በኩል ትምህርት ቤቱ አለ።
+## rechts
+Das Bad ist rechts. ||| The bathroom is on the right. ||| መታጠቢያ ቤቱ በቀኝ በኩል ነው።
+Dann gehen Sie rechts. ||| Then go right. ||| ከዚያ ወደ ቀኝ ይሂዱ።
+Rechts ist der Supermarkt. ||| On the right is the supermarket. ||| በቀኝ በኩል ሱፐርማርኬቱ አለ።
+## vorne
+Das Wohnzimmer ist vorne. ||| The living room is at the front. ||| ሳሎኑ ፊት ለፊት ነው።
+Vorne ist ein Garten. ||| At the front there is a garden. ||| ፊት ለፊት የአትክልት ቦታ አለ።
+Ich sitze vorne. ||| I sit at the front. ||| ፊት ለፊት እቀመጣለሁ።
+## hinten
+Der Garten ist hinten. ||| The garden is at the back. ||| የአትክልት ቦታው ኋላ ነው።
+Das Schlafzimmer ist hinten. ||| The bedroom is at the back. ||| መኝታ ቤቱ ኋላ ነው።
+Die Kinder sitzen hinten. ||| The children sit at the back. ||| ልጆቹ ኋላ ይቀመጣሉ።
+## neben
+Das Bad ist neben dem Schlafzimmer. ||| The bathroom is next to the bedroom. ||| መታጠቢያ ቤቱ ከመኝታ ቤቱ አጠገብ ነው።
+Ich wohne neben der Schule. ||| I live next to the school. ||| የምኖረው ከትምህርት ቤቱ አጠገብ ነው።
+Die Lampe steht neben dem Sofa. ||| The lamp is next to the sofa. ||| መብራቱ ከሶፋው አጠገብ ነው።
+## Wo ist es?
+Mein Handy! Wo ist es? ||| My phone! Where is it? ||| ሞባይሌ! የት ነው?
+Das Bad? Wo ist es? – Links. ||| The bathroom? Where is it? – On the left. ||| መታጠቢያ ቤቱ? የት ነው? – በግራ በኩል።
+## Entschuldigung, wo ist das Badezimmer?
+Entschuldigung, wo ist das Badezimmer? – Hier rechts. ||| Excuse me, where is the bathroom? – Here on the right. ||| ይቅርታ፣ መታጠቢያ ቤቱ የት ነው? – እዚህ በቀኝ በኩል።
+Entschuldigung, wo ist das Badezimmer? – Hinten links. ||| Excuse me, where is the bathroom? – At the back on the left. ||| ይቅርታ፣ መታጠቢያ ቤቱ የት ነው? – ኋላ በግራ በኩል።
+
+# 4.3 Describing things
+## Wie ist etwas?
+Wie ist etwas? Groß oder klein? ||| What is something like? Big or small? ||| አንድ ነገር እንዴት ነው? ትልቅ ወይስ ትንሽ?
+Wie ist etwas? Beschreibe es! ||| What is something like? Describe it! ||| አንድ ነገር እንዴት ነው? ግለጸው!
+## billig
+Das Brot ist billig. ||| The bread is cheap. ||| ዳቦው ርካሽ ነው።
+Die Wohnung ist nicht billig. ||| The apartment is not cheap. ||| አፓርታማው ርካሽ አይደለም።
+Hier ist alles billig. ||| Everything is cheap here. ||| እዚህ ሁሉም ነገር ርካሽ ነው።
+## teuer
+Das Auto ist teuer. ||| The car is expensive. ||| መኪናው ውድ ነው።
+Die Wohnung ist sehr teuer. ||| The apartment is very expensive. ||| አፓርታማው በጣም ውድ ነው።
+Ist das teuer? ||| Is that expensive? ||| ያ ውድ ነው?
+## hässlich
+Die Lampe ist hässlich. ||| The lamp is ugly. ||| መብራቱ አስቀያሚ ነው።
+Das Sofa ist nicht hässlich. ||| The sofa is not ugly. ||| ሶፋው አስቀያሚ አይደለም።
+Ich finde das Bild hässlich. ||| I find the picture ugly. ||| ሥዕሉ አስቀያሚ ይመስለኛል።
+## dunkel
+Das Zimmer ist dunkel. ||| The room is dark. ||| ክፍሉ ጨለማ ነው።
+Im Winter ist es früh dunkel. ||| In winter it gets dark early. ||| በክረምት ቶሎ ይጨልማል።
+Der Keller ist dunkel. ||| The cellar is dark. ||| ከመሬት በታች ያለው ክፍል ጨለማ ነው።
+## hell
+Die Küche ist hell. ||| The kitchen is bright. ||| ማዕድ ቤቱ ብሩህ ነው።
+Das Wohnzimmer ist sehr hell. ||| The living room is very bright. ||| ሳሎኑ በጣም ብሩህ ነው።
+Am Morgen ist es hell. ||| In the morning it is light. ||| ጠዋት ብርሃን ነው።
+## klein
+Das Bad ist klein. ||| The bathroom is small. ||| መታጠቢያ ቤቱ ትንሽ ነው።
+Meine Wohnung ist klein. ||| My apartment is small. ||| አፓርታማዬ ትንሽ ነው።
+Das Kind ist noch klein. ||| The child is still small. ||| ልጁ ገና ትንሽ ነው።
+## groß
+Das Haus ist groß. ||| The house is big. ||| ቤቱ ትልቅ ነው።
+Der Garten ist sehr groß. ||| The garden is very big. ||| የአትክልት ቦታው በጣም ትልቅ ነው።
+Addis Abeba ist groß. ||| Addis Ababa is big. ||| አዲስ አበባ ትልቅ ናት።
+
+# 4.4 nicht (not)
+## Die Küche ist nicht klein.
+Die Küche ist nicht klein, sie ist groß. ||| The kitchen is not small, it is big. ||| ማዕድ ቤቱ ትንሽ አይደለም፤ ትልቅ ነው።
+Ist die Küche klein? – Nein, die Küche ist nicht klein. ||| Is the kitchen small? – No, the kitchen is not small. ||| ማዕድ ቤቱ ትንሽ ነው? – አይ፣ ማዕድ ቤቱ ትንሽ አይደለም።
+## Das Auto ist nicht neu.
+Das Auto ist nicht neu, aber es fährt gut. ||| The car is not new, but it runs well. ||| መኪናው አዲስ አይደለም፤ ግን በደንብ ይሄዳል።
+Ist das Auto neu? – Nein, das Auto ist nicht neu. ||| Is the car new? – No, the car is not new. ||| መኪናው አዲስ ነው? – አይ፣ መኪናው አዲስ አይደለም።
+
+# 4.5 er, sie, es for things
+## er (der Tisch)
+Der Tisch ist neu. Er ist aus Holz. ||| The table is new. It is made of wood. ||| ጠረጴዛው አዲስ ነው። ከእንጨት የተሠራ ነው።
+Wo ist der Schlüssel? – Er ist hier. ||| Where is the key? – It is here. ||| ቁልፉ የት ነው? – እዚህ ነው።
+## sie (die Lampe)
+Die Lampe ist schön. Sie ist modern. ||| The lamp is beautiful. It is modern. ||| መብራቱ ቆንጆ ነው። ዘመናዊ ነው።
+Wo ist die Tasche? – Sie ist im Auto. ||| Where is the bag? – It is in the car. ||| ቦርሳው የት ነው? – መኪናው ውስጥ ነው።
+## es (das Bett)
+Das Bett ist groß. Es ist bequem. ||| The bed is big. It is comfortable. ||| አልጋው ትልቅ ነው። ምቹ ነው።
+Wo ist das Handy? – Es ist in der Tasche. ||| Where is the phone? – It is in the bag. ||| ሞባይሉ የት ነው? – ቦርሳው ውስጥ ነው።
+## sie (die Stühle)
+Die Stühle sind neu. Sie sind schwarz. ||| The chairs are new. They are black. ||| ወንበሮቹ አዲስ ናቸው። ጥቁር ናቸው።
+Wo sind die Schlüssel? – Sie sind auf dem Tisch. ||| Where are the keys? – They are on the table. ||| ቁልፎቹ የት ናቸው? – ጠረጴዛው ላይ ናቸው።
+
+# 4.6 Talking about a home
+## Das ist doch toll!
+Du hast einen Garten? Das ist doch toll! ||| You have a garden? That's really great! ||| የአትክልት ቦታ አለህ? ይህማ በጣም ጥሩ ነው!
+Die Wohnung ist hell und billig. Das ist doch toll! ||| The apartment is bright and cheap. That's really great! ||| አፓርታማው ብሩህና ርካሽ ነው። ይህማ በጣም ጥሩ ነው!
+## Wie ist deine Wohnung?
+Wie ist deine Wohnung? – Klein, aber schön. ||| What is your apartment like? – Small, but nice. ||| ቤትህ እንዴት ነው? – ትንሽ ነው፤ ግን ቆንጆ ነው።
+Wie ist deine Wohnung in Berlin? ||| What is your apartment in Berlin like? ||| በርሊን ያለው ቤትሽ እንዴት ነው?
+## Hast du auch einen Balkon?
+Ich habe einen Garten. Hast du auch einen Balkon? ||| I have a garden. Do you have a balcony too? ||| የአትክልት ቦታ አለኝ። አንተስ በረንዳም አለህ?
+Hast du auch einen Balkon? – Ja, einen kleinen. ||| Do you have a balcony too? – Yes, a small one. ||| በረንዳም አለሽ? – አዎ፣ ትንሽ።
+## Ist die Wohnung teuer?
+Ist die Wohnung teuer? – Nein, sie ist günstig. ||| Is the apartment expensive? – No, it is good value. ||| ቤቱ ውድ ነው? – አይ፣ ተመጣጣኝ ዋጋ አለው።
+Die Wohnung ist schön. Ist die Wohnung teuer? ||| The apartment is nice. Is the apartment expensive? ||| ቤቱ ቆንጆ ነው። ቤቱ ውድ ነው?
+
+# 4.7 Floors & outside
+## das Erdgeschoss
+Die Küche ist im Erdgeschoss. ||| The kitchen is on the ground floor. ||| ማዕድ ቤቱ ምድር ቤት ነው።
+Wir wohnen im Erdgeschoss. ||| We live on the ground floor. ||| የምንኖረው ምድር ቤት ነው።
+Das Erdgeschoss hat zwei Zimmer. ||| The ground floor has two rooms. ||| ምድር ቤቱ ሁለት ክፍሎች አሉት።
+## der Stock
+Im dritten Stock wohnt meine Tante. ||| My aunt lives on the third floor. ||| አክስቴ ሦስተኛ ፎቅ ላይ ትኖራለች።
+In welchem Stock wohnst du? ||| Which floor do you live on? ||| በስንተኛው ፎቅ ላይ ትኖራለህ?
+Mein Büro ist im vierten Stock. ||| My office is on the fourth floor. ||| ቢሮዬ አራተኛ ፎቅ ላይ ነው።
+## der erste Stock
+Der erste Stock hat zwei Schlafzimmer. ||| The first floor has two bedrooms. ||| አንደኛው ፎቅ ሁለት መኝታ ቤቶች አሉት።
+Der erste Stock ist hell. ||| The first floor is bright. ||| አንደኛው ፎቅ ብሩህ ነው።
+## der zweite Stock
+Der zweite Stock ist neu. ||| The second floor is new. ||| ሁለተኛው ፎቅ አዲስ ነው።
+Der zweite Stock hat einen Balkon. ||| The second floor has a balcony. ||| ሁለተኛው ፎቅ በረንዳ አለው።
+## der Dachboden
+Der Dachboden ist dunkel. ||| The attic is dark. ||| ጣሪያ ሥር ያለው ክፍል ጨለማ ነው።
+Die alten Bücher sind auf dem Dachboden. ||| The old books are in the attic. ||| አሮጌዎቹ መጻሕፍት ጣሪያ ሥር ባለው ክፍል ውስጥ ናቸው።
+Wir haben keinen Dachboden. ||| We don't have an attic. ||| ጣሪያ ሥር ያለ ክፍል የለንም።
+## der Garten
+Der Garten ist schön. ||| The garden is beautiful. ||| የአትክልት ቦታው ውብ ነው።
+Wir haben einen Garten. ||| We have a garden. ||| የአትክልት ቦታ አለን።
+Im Garten wachsen Tomaten. ||| Tomatoes grow in the garden. ||| በአትክልት ቦታው ቲማቲም ይበቅላል።
+## der Balkon
+Der Balkon ist klein. ||| The balcony is small. ||| በረንዳው ትንሽ ነው።
+Wir trinken Kaffee auf dem Balkon. ||| We drink coffee on the balcony. ||| በረንዳ ላይ ቡና እንጠጣለን።
+Die Wohnung hat einen Balkon. ||| The apartment has a balcony. ||| አፓርታማው በረንዳ አለው።
+## die Garage
+Das Auto ist in der Garage. ||| The car is in the garage. ||| መኪናው ጋራዥ ውስጥ ነው።
+Die Garage ist groß. ||| The garage is big. ||| ጋራዡ ትልቅ ነው።
+Wir haben keine Garage. ||| We don't have a garage. ||| ጋራዥ የለንም።
+## die Treppe
+Die Treppe ist steil. ||| The stairs are steep. ||| ደረጃው ቀጥ ያለ ነው።
+Ich gehe die Treppe hoch. ||| I go up the stairs. ||| ደረጃውን እወጣለሁ።
+Die Treppe ist aus Holz. ||| The stairs are made of wood. ||| ደረጃው ከእንጨት የተሠራ ነው።
+## der Keller
+Der Keller ist kalt. ||| The cellar is cold. ||| ከመሬት በታች ያለው ክፍል ቀዝቃዛ ነው።
+Die Waschmaschine ist im Keller. ||| The washing machine is in the basement. ||| የልብስ ማጠቢያ ማሽኑ ከመሬት በታች ባለው ክፍል ውስጥ ነው።
+Haben Sie einen Keller? ||| Do you have a cellar? ||| ከመሬት በታች ክፍል አለዎት?
+
+# 4.8 Where? im / in der
+## im ersten Stock
+Ich wohne im ersten Stock. ||| I live on the first floor. ||| የምኖረው አንደኛ ፎቅ ላይ ነው።
+Das Bad ist im ersten Stock. ||| The bathroom is on the first floor. ||| መታጠቢያ ቤቱ አንደኛ ፎቅ ላይ ነው።
+## im zweiten Stock
+Die Wohnung ist im zweiten Stock. ||| The apartment is on the second floor. ||| አፓርታማው ሁለተኛ ፎቅ ላይ ነው።
+Das Büro ist im zweiten Stock. ||| The office is on the second floor. ||| ቢሮው ሁለተኛ ፎቅ ላይ ነው።
+## im Garten
+Die Kinder spielen im Garten. ||| The children are playing in the garden. ||| ልጆቹ በአትክልት ቦታው ውስጥ እየተጫወቱ ነው።
+Wir essen heute im Garten. ||| Today we eat in the garden. ||| ዛሬ በግቢ ውስጥ እንበላለን።
+## im Flur
+Die Schuhe sind im Flur. ||| The shoes are in the hallway. ||| ጫማዎቹ መተላለፊያው ውስጥ ናቸው።
+Im Flur ist ein Spiegel. ||| There is a mirror in the hallway. ||| መተላለፊያው ውስጥ መስታወት አለ።
+## im Zimmer
+Ich bin im Zimmer. ||| I am in the room. ||| ክፍሉ ውስጥ ነኝ።
+Im Zimmer ist es warm. ||| It is warm in the room. ||| ክፍሉ ውስጥ ሞቃት ነው።
+## im Schlafzimmer
+Das Bett ist im Schlafzimmer. ||| The bed is in the bedroom. ||| አልጋው መኝታ ቤት ውስጥ ነው።
+Der Schrank steht im Schlafzimmer. ||| The wardrobe is in the bedroom. ||| ቁም ሣጥኑ መኝታ ቤት ውስጥ ነው።
+## im Wohnzimmer
+Wir sitzen im Wohnzimmer. ||| We are sitting in the living room. ||| ሳሎን ውስጥ ተቀምጠናል።
+Der Fernseher ist im Wohnzimmer. ||| The TV is in the living room. ||| ቴሌቪዥኑ ሳሎን ውስጥ ነው።
+## im Arbeitszimmer
+Ich arbeite im Arbeitszimmer. ||| I work in the study. ||| የሥራ ክፍል ውስጥ እሠራለሁ።
+Der Computer ist im Arbeitszimmer. ||| The computer is in the study. ||| ኮምፒውተሩ የሥራ ክፍል ውስጥ ነው።
+## in der Garage
+Das Fahrrad ist in der Garage. ||| The bicycle is in the garage. ||| ብስክሌቱ ጋራዥ ውስጥ ነው።
+Mein Vater ist in der Garage. ||| My father is in the garage. ||| አባቴ ጋራዥ ውስጥ ነው።
+## in der Wohnung
+In der Wohnung ist es ruhig. ||| It is quiet in the apartment. ||| ቤቱ ውስጥ ጸጥ ያለ ነው።
+In der Wohnung wohnen vier Personen. ||| Four people live in the apartment. ||| ቤቱ ውስጥ አራት ሰዎች ይኖራሉ።
+## in der Küche
+Mama ist in der Küche. ||| Mum is in the kitchen. ||| እማዬ ማዕድ ቤት ውስጥ ናት።
+In der Küche ist ein Kühlschrank. ||| There is a fridge in the kitchen. ||| ማዕድ ቤት ውስጥ ማቀዝቀዣ አለ።
+
+# 4.9 Furniture
+## der Schrank
+Der Schrank ist groß. ||| The wardrobe is big. ||| ቁም ሣጥኑ ትልቅ ነው።
+Die Kleidung ist im Schrank. ||| The clothes are in the wardrobe. ||| ልብሶቹ ቁም ሣጥኑ ውስጥ ናቸው።
+Der Schrank ist aus Holz. ||| The wardrobe is made of wood. ||| ቁም ሣጥኑ ከእንጨት የተሠራ ነው።
+## das Sofa
+Das Sofa ist bequem. ||| The sofa is comfortable. ||| ሶፋው ምቹ ነው።
+Wir kaufen ein neues Sofa. ||| We are buying a new sofa. ||| አዲስ ሶፋ እንገዛለን።
+Das Sofa ist im Wohnzimmer. ||| The sofa is in the living room. ||| ሶፋው ሳሎን ውስጥ ነው።
+## die Couch
+Ich sitze auf der Couch. ||| I am sitting on the couch. ||| ሶፋው ላይ ተቀምጫለሁ።
+Die Couch ist blau. ||| The couch is blue. ||| ሶፋው ሰማያዊ ነው።
+Die Couch ist neu. ||| The couch is new. ||| ሶፋው አዲስ ነው።
+## der Tisch
+Der Tisch ist rund. ||| The table is round. ||| ጠረጴዛው ክብ ነው።
+Das Essen steht auf dem Tisch. ||| The food is on the table. ||| ምግቡ ጠረጴዛው ላይ ነው።
+Der Tisch ist aus Holz. ||| The table is made of wood. ||| ጠረጴዛው ከእንጨት የተሠራ ነው።
+## der Couchtisch
+Der Couchtisch ist klein. ||| The coffee table is small. ||| የሶፋ ጠረጴዛው ትንሽ ነው።
+Die Tassen stehen auf dem Couchtisch. ||| The cups are on the coffee table. ||| ሲኒዎቹ የሶፋ ጠረጴዛው ላይ ናቸው።
+Der Couchtisch ist aus Glas. ||| The coffee table is made of glass. ||| የሶፋ ጠረጴዛው ከመስታወት የተሠራ ነው።
+## der Stuhl
+Der Stuhl ist bequem. ||| The chair is comfortable. ||| ወንበሩ ምቹ ነው።
+Wir brauchen noch einen Stuhl. ||| We need one more chair. ||| አንድ ተጨማሪ ወንበር ያስፈልገናል።
+Der Stuhl ist kaputt. ||| The chair is broken. ||| ወንበሩ ተሰብሯል።
+## der Fernseher
+Der Fernseher ist neu. ||| The TV is new. ||| ቴሌቪዥኑ አዲስ ነው።
+Der Fernseher ist zu laut. ||| The TV is too loud. ||| ቴሌቪዥኑ በጣም ይጮኻል።
+Wir haben keinen Fernseher. ||| We don't have a TV. ||| ቴሌቪዥን የለንም።
+## die Lampe
+Die Lampe ist hell. ||| The lamp is bright. ||| መብራቱ ብሩህ ነው።
+Die Lampe steht auf dem Tisch. ||| The lamp is on the table. ||| መብራቱ ጠረጴዛው ላይ ነው።
+Ich kaufe eine Lampe. ||| I am buying a lamp. ||| መብራት እገዛለሁ።
+## der Teppich
+Der Teppich ist rot. ||| The carpet is red. ||| ምንጣፉ ቀይ ነው።
+Der Teppich ist sehr alt. ||| The carpet is very old. ||| ምንጣፉ በጣም አሮጌ ነው።
+Der Teppich liegt im Wohnzimmer. ||| The rug is in the living room. ||| ምንጣፉ ሳሎን ውስጥ ነው።
+## das Regal
+Die Bücher stehen im Regal. ||| The books are on the shelf. ||| መጻሕፍቱ መደርደሪያው ላይ ናቸው።
+Das Regal ist voll. ||| The shelf is full. ||| መደርደሪያው ሞልቷል።
+Das Regal ist aus Holz. ||| The shelf is made of wood. ||| መደርደሪያው ከእንጨት የተሠራ ነው።
+
+# 4.10 Do you like it?
+## Wie gefällt dir …?
+Wie gefällt dir die Wohnung? ||| How do you like the apartment? ||| አፓርታማውን እንዴት ወደድከው?
+Wie gefällt dir Berlin? ||| How do you like Berlin? ||| በርሊን እንዴት ትመስልሻለች?
+## Wie gefallen dir …?
+Wie gefallen dir die Stühle? ||| How do you like the chairs? ||| ወንበሮቹ እንዴት ይመስሉሃል?
+Wie gefallen dir meine Schuhe? ||| How do you like my shoes? ||| ጫማዎቼ እንዴት ይመስሉሻል?
+## Wie gefällt Ihnen …?
+Wie gefällt Ihnen das Zimmer? ||| How do you like the room? ||| ክፍሉ እንዴት ይመስልዎታል?
+Wie gefällt Ihnen Deutschland? ||| How do you like Germany? ||| ጀርመን እንዴት ትመስልዎታለች?
+## Es gefällt mir.
+Das Sofa? Es gefällt mir. ||| The sofa? I like it. ||| ሶፋው? ወድጄዋለሁ።
+Das Haus ist klein, aber es gefällt mir. ||| The house is small, but I like it. ||| ቤቱ ትንሽ ነው፤ ግን ወድጄዋለሁ።
+## Es gefällt mir sehr.
+Das Bild ist schön. Es gefällt mir sehr. ||| The picture is beautiful. I like it a lot. ||| ሥዕሉ ውብ ነው። በጣም ወድጄዋለሁ።
+Wie gefällt dir das Zimmer? – Es gefällt mir sehr. ||| How do you like the room? – I like it a lot. ||| ክፍሉን እንዴት ወደድከው? – በጣም ወድጄዋለሁ።
+## Es gefällt mir sehr gut.
+Die Wohnung? Es gefällt mir sehr gut. ||| The apartment? I like it very much. ||| አፓርታማው? እጅግ በጣም ወድጄዋለሁ።
+Danke für das Buch! Es gefällt mir sehr gut. ||| Thanks for the book! I like it very much. ||| ስለ መጽሐፉ አመሰግናለሁ! እጅግ በጣም ወድጄዋለሁ።
+## Es gefällt mir nicht.
+Die Lampe ist hässlich. Es gefällt mir nicht. ||| The lamp is ugly. I don't like it. ||| መብራቱ አስቀያሚ ነው። አልወደድኩትም።
+Das Zimmer ist dunkel. Es gefällt mir nicht. ||| The room is dark. I don't like it. ||| ክፍሉ ጨለማ ነው። አልወደድኩትም።
+## Es gefällt mir nicht so gut.
+Die Farbe? Es gefällt mir nicht so gut. ||| The colour? I don't like it that much. ||| ቀለሙ? ብዙም አልወደድኩትም።
+Das Sofa ist schön, aber es gefällt mir nicht so gut. ||| The sofa is nice, but I don't like it that much. ||| ሶፋው ቆንጆ ነው፤ ግን ብዙም አልወደድኩትም።
+## Es gefällt mir überhaupt nicht.
+Das Essen? Es gefällt mir überhaupt nicht. ||| The food? I don't like it at all. ||| ምግቡ? ፈጽሞ አልወደድኩትም።
+Die Musik ist zu laut. Es gefällt mir überhaupt nicht. ||| The music is too loud. I don't like it at all. ||| ሙዚቃው በጣም ይጮኻል። ፈጽሞ አልወደድኩትም።
+
+# 4.11 Kitchen & bathroom
+## der Küchenschrank
+Die Tassen sind im Küchenschrank. ||| The cups are in the kitchen cupboard. ||| ሲኒዎቹ የማዕድ ቤቱ ቁም ሣጥን ውስጥ ናቸው።
+Der Küchenschrank ist weiß. ||| The kitchen cupboard is white. ||| የማዕድ ቤቱ ቁም ሣጥን ነጭ ነው።
+Der Küchenschrank ist voll. ||| The kitchen cupboard is full. ||| የማዕድ ቤቱ ቁም ሣጥን ሞልቷል።
+## der Herd
+Der Herd ist heiß. ||| The stove is hot. ||| ምድጃው ጋሏል።
+Die Suppe ist auf dem Herd. ||| The soup is on the stove. ||| ሾርባው ምድጃው ላይ ነው።
+Der Herd ist neu. ||| The stove is new. ||| ምድጃው አዲስ ነው።
+## der Kühlschrank
+Die Milch ist im Kühlschrank. ||| The milk is in the fridge. ||| ወተቱ ማቀዝቀዣው ውስጥ ነው።
+Der Kühlschrank ist leer. ||| The fridge is empty. ||| ማቀዝቀዣው ባዶ ነው።
+Wir brauchen einen neuen Kühlschrank. ||| We need a new fridge. ||| አዲስ ማቀዝቀዣ ያስፈልገናል።
+## die Spüle
+Die Teller sind in der Spüle. ||| The plates are in the sink. ||| ሳህኖቹ የዕቃ ማጠቢያው ውስጥ ናቸው።
+Die Spüle ist sauber. ||| The sink is clean. ||| የዕቃ ማጠቢያው ንጹሕ ነው።
+Die Spüle ist unter dem Fenster. ||| The sink is under the window. ||| የዕቃ ማጠቢያው ከመስኮቱ ሥር ነው።
+## die Waschmaschine
+Die Waschmaschine ist im Bad. ||| The washing machine is in the bathroom. ||| የልብስ ማጠቢያ ማሽኑ መታጠቢያ ቤት ውስጥ ነው።
+Die Waschmaschine ist kaputt. ||| The washing machine is broken. ||| የልብስ ማጠቢያ ማሽኑ ተበላሽቷል።
+Wir kaufen eine Waschmaschine. ||| We are buying a washing machine. ||| የልብስ ማጠቢያ ማሽን እንገዛለን።
+## die Dusche
+Die Dusche ist im Bad. ||| The shower is in the bathroom. ||| ሻወሩ መታጠቢያ ቤት ውስጥ ነው።
+Ich gehe unter die Dusche. ||| I am taking a shower. ||| ሻወር እወስዳለሁ።
+Die Dusche ist kalt. ||| The shower is cold. ||| ሻወሩ ቀዝቃዛ ነው።
+## die Badewanne
+Die Badewanne ist groß. ||| The bathtub is big. ||| የገላ መታጠቢያ ገንዳው ትልቅ ነው።
+Das Bad hat keine Badewanne. ||| The bathroom has no bathtub. ||| መታጠቢያ ቤቱ የገላ መታጠቢያ ገንዳ የለውም።
+Das Kind sitzt in der Badewanne. ||| The child is sitting in the bathtub. ||| ልጁ የገላ መታጠቢያ ገንዳው ውስጥ ተቀምጧል።
+## das Waschbecken
+Das Waschbecken ist weiß. ||| The washbasin is white. ||| የእጅ መታጠቢያው ነጭ ነው።
+Die Seife liegt am Waschbecken. ||| The soap is by the washbasin. ||| ሳሙናው ከእጅ መታጠቢያው አጠገብ ነው።
+Das Waschbecken ist klein. ||| The washbasin is small. ||| የእጅ መታጠቢያው ትንሽ ነው።
+## der Spiegel
+Der Spiegel ist groß. ||| The mirror is big. ||| መስታወቱ ትልቅ ነው።
+Der Spiegel hängt im Bad. ||| The mirror hangs in the bathroom. ||| መስታወቱ መታጠቢያ ቤት ውስጥ ተሰቅሏል።
+Ich schaue in den Spiegel. ||| I look in the mirror. ||| መስታወት እመለከታለሁ።
+## die Toilette
+Wo ist die Toilette, bitte? ||| Where is the toilet, please? ||| መጸዳጃ ቤቱ የት ነው፣ እባክዎ?
+Die Toilette ist neben dem Bad. ||| The toilet is next to the bathroom. ||| መጸዳጃ ቤቱ ከመታጠቢያ ቤቱ አጠገብ ነው።
+Die Toilette ist besetzt. ||| The toilet is occupied. ||| መጸዳጃ ቤቱ ሰው አለበት።
+
+# 4.12 Colours
+## weiß
+Die Wand ist weiß. ||| The wall is white. ||| ግድግዳው ነጭ ነው።
+Die Milch ist weiß. ||| The milk is white. ||| ወተቱ ነጭ ነው።
+Das Hemd ist weiß. ||| The shirt is white. ||| ሸሚዙ ነጭ ነው።
+## schwarz
+Der Kaffee ist schwarz. ||| The coffee is black. ||| ቡናው ጥቁር ነው።
+Meine Tasche ist schwarz. ||| My bag is black. ||| ቦርሳዬ ጥቁር ነው።
+Die Katze ist schwarz. ||| The cat is black. ||| ድመቷ ጥቁር ናት።
+## blau
+Der Himmel ist blau. ||| The sky is blue. ||| ሰማዩ ሰማያዊ ነው።
+Das Sofa ist blau. ||| The sofa is blue. ||| ሶፋው ሰማያዊ ነው።
+Meine Lieblingsfarbe ist blau. ||| My favourite colour is blue. ||| የምወደው ቀለም ሰማያዊ ነው።
+## grün
+Das Gras ist grün. ||| The grass is green. ||| ሣሩ አረንጓዴ ነው።
+Die Gurke ist grün. ||| The cucumber is green. ||| ኪያሩ አረንጓዴ ነው።
+Die Tür ist grün. ||| The door is green. ||| በሩ አረንጓዴ ነው።
+## orange
+Die Orange ist orange. ||| The orange is orange. ||| ብርቱካኑ ብርቱካናማ ነው።
+Das Taxi ist orange. ||| The taxi is orange. ||| ታክሲው ብርቱካናማ ነው።
+Ich habe eine orange Tasche. ||| I have an orange bag. ||| ብርቱካናማ ቦርሳ አለኝ።
+## braun
+Der Tisch ist braun. ||| The table is brown. ||| ጠረጴዛው ቡናማ ነው።
+Meine Augen sind braun. ||| My eyes are brown. ||| ዓይኖቼ ቡናማ ናቸው።
+Das Brot ist braun. ||| The bread is brown. ||| ዳቦው ቡናማ ነው።
+## lila
+Die Blume ist lila. ||| The flower is purple. ||| አበባው ሐምራዊ ነው።
+Mein Kleid ist lila. ||| My dress is purple. ||| ቀሚሴ ሐምራዊ ነው።
+Die Lampe ist lila. ||| The lamp is purple. ||| መብራቱ ሐምራዊ ነው።
+## grau
+Der Himmel ist heute grau. ||| The sky is grey today. ||| ሰማዩ ዛሬ ግራጫ ነው።
+Die Katze ist grau. ||| The cat is grey. ||| ድመቷ ግራጫ ናት።
+Das Auto ist grau. ||| The car is grey. ||| መኪናው ግራጫ ነው።
+## dunkelblau
+Die Jacke ist dunkelblau. ||| The jacket is dark blue. ||| ጃኬቱ ጥቁር ሰማያዊ ነው።
+Das Sofa ist dunkelblau. ||| The sofa is dark blue. ||| ሶፋው ጥቁር ሰማያዊ ነው።
+Ich mag Dunkelblau. ||| I like dark blue. ||| ጥቁር ሰማያዊ እወዳለሁ።
+## hellgrün
+Die Wand ist hellgrün. ||| The wall is light green. ||| ግድግዳው ፈካ ያለ አረንጓዴ ነው።
+Das Kinderzimmer ist hellgrün. ||| The children's room is light green. ||| የልጆቹ ክፍል ፈካ ያለ አረንጓዴ ነው።
+Die Tasse ist hellgrün. ||| The cup is light green. ||| ሲኒው ፈካ ያለ አረንጓዴ ነው።
+## Welche Farbe hat …?
+Welche Farbe hat dein Auto? – Rot. ||| What colour is your car? – Red. ||| መኪናህ ምን ዓይነት ቀለም ነው? – ቀይ።
+Welche Farbe hat das Sofa? ||| What colour is the sofa? ||| ሶፋው ምን ዓይነት ቀለም ነው?
+## Welche Farbe haben …?
+Welche Farbe haben die Stühle? – Schwarz. ||| What colour are the chairs? – Black. ||| ወንበሮቹ ምን ዓይነት ቀለም ናቸው? – ጥቁር።
+Welche Farbe haben deine Augen? ||| What colour are your eyes? ||| ዓይኖችህ ምን ዓይነት ቀለም ናቸው?
+
+# 4.13 your, his, her
+## dein / deine
+Ist das dein Buch? ||| Is that your book? ||| ያ የአንተ መጽሐፍ ነው?
+Wie heißt deine Mutter? ||| What is your mother called? ||| እናትህ ማን ትባላለች?
+Dein Zimmer ist schön. ||| Your room is nice. ||| ክፍልህ ቆንጆ ነው።
+## sein / seine
+Das ist sein Auto. ||| That is his car. ||| ያ የእሱ መኪና ነው።
+Seine Schwester heißt Liya. ||| His sister is called Liya. ||| እህቱ ሊያ ትባላለች።
+Dawit und seine Eltern wohnen in Adama. ||| Dawit and his parents live in Adama. ||| ዳዊትና ወላጆቹ አዳማ ይኖራሉ።
+## ihr / ihre
+Das ist ihr Handy. ||| That is her phone. ||| ያ የእሷ ሞባይል ነው።
+Ihre Wohnung ist groß. ||| Her apartment is big. ||| አፓርታማዋ ትልቅ ነው።
+Die Kinder und ihre Eltern sind hier. ||| The children and their parents are here. ||| ልጆቹና ወላጆቻቸው እዚህ ናቸው።
+
+# 4.14 Big numbers
+## zweihundert
+Das Sofa kostet zweihundert Euro. ||| The sofa costs two hundred euros. ||| ሶፋው ሁለት መቶ ዩሮ ያወጣል።
+Es sind zweihundert Meter bis zur Schule. ||| It is two hundred metres to the school. ||| እስከ ትምህርት ቤቱ ሁለት መቶ ሜትር ነው።
+Das Buch hat zweihundert Seiten. ||| The book has two hundred pages. ||| መጽሐፉ ሁለት መቶ ገጾች አሉት።
+## dreihundert
+Die Miete ist dreihundert Euro. ||| The rent is three hundred euros. ||| የቤት ኪራዩ ሦስት መቶ ዩሮ ነው።
+Dreihundert Leute wohnen hier. ||| Three hundred people live here. ||| እዚህ ሦስት መቶ ሰዎች ይኖራሉ።
+Das kostet dreihundert Birr. ||| That costs three hundred birr. ||| ይህ ሦስት መቶ ብር ያወጣል።
+## vierhundert
+Der Kühlschrank kostet vierhundert Euro. ||| The fridge costs four hundred euros. ||| ማቀዝቀዣው አራት መቶ ዩሮ ያወጣል።
+Vierhundert Gramm Käse, bitte. ||| Four hundred grams of cheese, please. ||| እባክዎ አራት መቶ ግራም አይብ።
+Die Schule hat vierhundert Schüler. ||| The school has four hundred pupils. ||| ትምህርት ቤቱ አራት መቶ ተማሪዎች አሉት።
+## fünfhundert
+Die Wohnung kostet fünfhundert Euro im Monat. ||| The apartment costs five hundred euros a month. ||| አፓርታማው በወር አምስት መቶ ዩሮ ያወጣል።
+Fünfhundert Meter, dann rechts. ||| Five hundred metres, then right. ||| አምስት መቶ ሜትር፣ ከዚያ ወደ ቀኝ።
+Ich habe fünfhundert Birr. ||| I have five hundred birr. ||| አምስት መቶ ብር አለኝ።
+## sechshundert
+Die Waschmaschine kostet sechshundert Euro. ||| The washing machine costs six hundred euros. ||| የልብስ ማጠቢያ ማሽኑ ስድስት መቶ ዩሮ ያወጣል።
+Sechshundert Gäste kommen zur Hochzeit. ||| Six hundred guests are coming to the wedding. ||| ለሠርጉ ስድስት መቶ እንግዶች ይመጣሉ።
+Das Buch hat sechshundert Seiten. ||| The book has six hundred pages. ||| መጽሐፉ ስድስት መቶ ገጾች አሉት።
+## siebenhundert
+Der Fernseher kostet siebenhundert Euro. ||| The TV costs seven hundred euros. ||| ቴሌቪዥኑ ሰባት መቶ ዩሮ ያወጣል።
+Siebenhundert Kilometer sind weit. ||| Seven hundred kilometres is far. ||| ሰባት መቶ ኪሎ ሜትር ሩቅ ነው።
+Die Firma hat siebenhundert Mitarbeiter. ||| The company has seven hundred employees. ||| ድርጅቱ ሰባት መቶ ሠራተኞች አሉት።
+## achthundert
+Das Sofa kostet achthundert Euro. ||| The sofa costs eight hundred euros. ||| ሶፋው ስምንት መቶ ዩሮ ያወጣል።
+Achthundert Meter bis zum Bahnhof. ||| Eight hundred metres to the station. ||| እስከ ባቡር ጣቢያው ስምንት መቶ ሜትር።
+Ich verdiene achthundert Euro. ||| I earn eight hundred euros. ||| ስምንት መቶ ዩሮ አገኛለሁ።
+## neunhundert
+Die Küche kostet neunhundert Euro. ||| The kitchen costs nine hundred euros. ||| ማዕድ ቤቱ ዘጠኝ መቶ ዩሮ ያወጣል።
+Neunhundert Leute wohnen im Dorf. ||| Nine hundred people live in the village. ||| በመንደሩ ዘጠኝ መቶ ሰዎች ይኖራሉ።
+Das kostet neunhundert Birr. ||| That costs nine hundred birr. ||| ይህ ዘጠኝ መቶ ብር ያወጣል።
+## eintausend
+Das Auto kostet eintausend Euro. ||| The car costs one thousand euros. ||| መኪናው አንድ ሺህ ዩሮ ያወጣል።
+Eintausend Meter sind ein Kilometer. ||| One thousand metres is a kilometre. ||| አንድ ሺህ ሜትር አንድ ኪሎ ሜትር ነው።
+Ich habe eintausend Birr. ||| I have one thousand birr. ||| አንድ ሺህ ብር አለኝ።
+## zweitausend
+Der Flug kostet zweitausend Euro. ||| The flight costs two thousand euros. ||| በረራው ሁለት ሺህ ዩሮ ያወጣል።
+Die Stadt hat zweitausend Einwohner. ||| The town has two thousand inhabitants. ||| ከተማዋ ሁለት ሺህ ነዋሪዎች አሏት።
+Zweitausend Birr, bitte. ||| Two thousand birr, please. ||| እባክዎ ሁለት ሺህ ብር።
+## fünftausend
+Das Auto kostet fünftausend Euro. ||| The car costs five thousand euros. ||| መኪናው አምስት ሺህ ዩሮ ያወጣል።
+Fünftausend Menschen sind im Stadion. ||| Five thousand people are in the stadium. ||| ስታዲየሙ ውስጥ አምስት ሺህ ሰዎች አሉ።
+Von Addis nach Berlin sind es fast fünftausend Kilometer. ||| From Addis to Berlin it is almost five thousand kilometres. ||| ከአዲስ አበባ እስከ በርሊን አምስት ሺህ ኪሎ ሜትር ገደማ ነው።
+## eine Million
+Berlin hat fast vier Millionen Einwohner. ||| Berlin has almost four million inhabitants. ||| በርሊን አራት ሚሊዮን ገደማ ነዋሪዎች አሏት።
+Das Haus kostet eine Million Euro. ||| The house costs a million euros. ||| ቤቱ አንድ ሚሊዮን ዩሮ ያወጣል።
+Eine Million Menschen wohnen in der Stadt. ||| A million people live in the city. ||| በከተማዋ አንድ ሚሊዮን ሰዎች ይኖራሉ።
+
+# 4.15 Everyday objects
+## der Kugelschreiber
+Der Kugelschreiber ist blau. ||| The pen is blue. ||| እስክሪብቶው ሰማያዊ ነው።
+Hast du einen Kugelschreiber? ||| Do you have a pen? ||| እስክሪብቶ አለህ?
+Ich schreibe mit dem Kugelschreiber. ||| I write with the pen. ||| በእስክሪብቶው እጽፋለሁ።
+## der Kuli
+Kannst du mir deinen Kuli geben? ||| Can you give me your pen? ||| እስክሪብቶህን ልትሰጠኝ ትችላለህ?
+Der Kuli ist leer. ||| The pen is empty. ||| እስክሪብቶው ቀለም የለውም።
+Mein Kuli ist weg. ||| My pen is gone. ||| እስክሪብቶዬ ጠፍቷል።
+## der Bleistift
+Der Bleistift ist kurz. ||| The pencil is short. ||| እርሳሱ አጭር ነው።
+Ich schreibe mit Bleistift. ||| I write with a pencil. ||| በእርሳስ እጽፋለሁ።
+Das Kind hat einen Bleistift. ||| The child has a pencil. ||| ልጁ እርሳስ አለው።
+## die Brille
+Meine Brille ist neu. ||| My glasses are new. ||| መነጽሬ አዲስ ነው።
+Wo ist meine Brille? ||| Where are my glasses? ||| መነጽሬ የት ነው?
+Mein Opa trägt eine Brille. ||| My grandpa wears glasses. ||| አያቴ መነጽር ያደርጋሉ።
+## das Heft
+Das Heft ist neu. ||| The exercise book is new. ||| ደብተሩ አዲስ ነው።
+Schreib die Wörter ins Heft. ||| Write the words in the exercise book. ||| ቃላቱን ደብተሩ ላይ ጻፍ።
+Ich brauche ein Heft. ||| I need an exercise book. ||| ደብተር ያስፈልገኛል።
+## die Kamera
+Die Kamera ist teuer. ||| The camera is expensive. ||| ካሜራው ውድ ነው።
+Ich habe eine neue Kamera. ||| I have a new camera. ||| አዲስ ካሜራ አለኝ።
+Die Kamera ist in der Tasche. ||| The camera is in the bag. ||| ካሜራው ቦርሳው ውስጥ ነው።
+## die Kette
+Die Kette ist aus Gold. ||| The necklace is made of gold. ||| የአንገት ጌጡ ከወርቅ የተሠራ ነው።
+Meine Mutter trägt eine Kette. ||| My mother wears a necklace. ||| እናቴ የአንገት ጌጥ ታደርጋለች።
+Die Kette ist sehr schön. ||| The necklace is very beautiful. ||| የአንገት ጌጡ በጣም ቆንጆ ነው።
+## der Schlüssel
+Wo ist mein Schlüssel? ||| Where is my key? ||| ቁልፌ የት ነው?
+Der Schlüssel ist in der Tasche. ||| The key is in the bag. ||| ቁልፉ ቦርሳው ውስጥ ነው።
+Ich habe den Schlüssel. ||| I have the key. ||| ቁልፉ እኔ ጋ ነው።
+## die Tasche
+Die Tasche ist schwer. ||| The bag is heavy. ||| ቦርሳው ከባድ ነው።
+Meine Tasche ist schwarz. ||| My bag is black. ||| ቦርሳዬ ጥቁር ነው።
+Was ist in der Tasche? ||| What is in the bag? ||| ቦርሳው ውስጥ ምን አለ?
+## das Handy
+Mein Handy ist neu. ||| My mobile phone is new. ||| ሞባይሌ አዲስ ነው።
+Wo ist mein Handy? ||| Where is my phone? ||| ሞባይሌ የት ነው?
+Das Handy ist leer. ||| The phone's battery is flat. ||| የሞባይሉ ባትሪ አልቋል።
+## die Flasche
+Die Flasche ist leer. ||| The bottle is empty. ||| ጠርሙሱ ባዶ ነው።
+Eine Flasche Wasser, bitte. ||| A bottle of water, please. ||| እባክዎ አንድ ጠርሙስ ውሃ።
+Die Flasche ist im Kühlschrank. ||| The bottle is in the fridge. ||| ጠርሙሱ ማቀዝቀዣው ውስጥ ነው።
+## das Feuerzeug
+Hast du ein Feuerzeug? ||| Do you have a lighter? ||| ላይተር አለህ?
+Das Feuerzeug ist leer. ||| The lighter is empty. ||| ላይተሩ ጋዝ የለውም።
+Das Feuerzeug liegt auf dem Tisch. ||| The lighter is on the table. ||| ላይተሩ ጠረጴዛው ላይ ነው።
+## der Regenschirm
+Ich brauche einen Regenschirm. ||| I need an umbrella. ||| ዣንጥላ ያስፈልገኛል።
+Der Regenschirm ist rot. ||| The umbrella is red. ||| ዣንጥላው ቀይ ነው።
+Es regnet. Wo ist mein Regenschirm? ||| It is raining. Where is my umbrella? ||| ዝናብ እየዘነበ ነው። ዣንጥላዬ የት ነው?
+## Was ist das?
+Was ist das? – Das ist ein Heft. ||| What is that? – That is an exercise book. ||| ይህ ምንድን ነው? – ይህ ደብተር ነው።
+Was ist das auf dem Tisch? ||| What is that on the table? ||| ጠረጴዛው ላይ ያለው ምንድን ነው?
+## Das ist ein Schlüssel.
+Was ist das? – Das ist ein Schlüssel. ||| What is that? – That is a key. ||| ይህ ምንድን ነው? – ይህ ቁልፍ ነው።
+Das ist ein Schlüssel für die Garage. ||| That is a key for the garage. ||| ይህ የጋራዡ ቁልፍ ነው።
+
+# 4.16 Materials
+## das Holz
+Der Tisch ist aus Holz. ||| The table is made of wood. ||| ጠረጴዛው ከእንጨት የተሠራ ነው።
+Das Holz ist alt. ||| The wood is old. ||| እንጨቱ አሮጌ ነው።
+Wir brauchen Holz für das Feuer. ||| We need wood for the fire. ||| ለእሳቱ እንጨት ያስፈልገናል።
+## das Plastik
+Die Flasche ist aus Plastik. ||| The bottle is made of plastic. ||| ጠርሙሱ ከፕላስቲክ የተሠራ ነው።
+Das Spielzeug ist aus Plastik. ||| The toy is made of plastic. ||| መጫወቻው ከፕላስቲክ የተሠራ ነው።
+Plastik ist nicht gut für die Natur. ||| Plastic is not good for nature. ||| ፕላስቲክ ለተፈጥሮ ጥሩ አይደለም።
+## das Papier
+Das Papier ist weiß. ||| The paper is white. ||| ወረቀቱ ነጭ ነው።
+Ich brauche ein Blatt Papier. ||| I need a sheet of paper. ||| አንድ ወረቀት ያስፈልገኛል።
+Das Buch ist aus Papier. ||| The book is made of paper. ||| መጽሐፉ ከወረቀት የተሠራ ነው።
+## das Metall
+Der Stuhl ist aus Metall. ||| The chair is made of metal. ||| ወንበሩ ከብረት የተሠራ ነው።
+Das Metall ist kalt. ||| The metal is cold. ||| ብረቱ ቀዝቃዛ ነው።
+Die Lampe ist aus Metall. ||| The lamp is made of metal. ||| መብራቱ ከብረት የተሠራ ነው።
+## das Glas
+Das Glas ist voll. ||| The glass is full. ||| ብርጭቆው ሞልቷል።
+Ein Glas Wasser, bitte. ||| A glass of water, please. ||| እባክዎ አንድ ብርጭቆ ውሃ።
+Der Tisch ist aus Glas. ||| The table is made of glass. ||| ጠረጴዛው ከመስታወት የተሠራ ነው።
+## der Stoff
+Der Stoff ist weich. ||| The fabric is soft. ||| ጨርቁ ለስላሳ ነው።
+Das Kleid ist aus Stoff. ||| The dress is made of fabric. ||| ቀሚሱ ከጨርቅ የተሠራ ነው።
+Der Stoff kommt aus Äthiopien. ||| The fabric comes from Ethiopia. ||| ጨርቁ ከኢትዮጵያ የመጣ ነው።
+## das Leder
+Die Schuhe sind aus Leder. ||| The shoes are made of leather. ||| ጫማዎቹ ከቆዳ የተሠሩ ናቸው።
+Das Leder ist braun. ||| The leather is brown. ||| ቆዳው ቡናማ ነው።
+Das Sofa ist aus Leder. ||| The sofa is made of leather. ||| ሶፋው ከቆዳ የተሠራ ነው።
+## aus Holz
+Der Schrank ist aus Holz. ||| The wardrobe is made of wood. ||| ቁም ሣጥኑ ከእንጨት የተሠራ ነው።
+Das Spielzeug ist aus Holz. ||| The toy is made of wood. ||| መጫወቻው ከእንጨት የተሠራ ነው።
+## Die Flasche ist aus Glas.
+Die Flasche ist aus Glas, nicht aus Plastik. ||| The bottle is made of glass, not plastic. ||| ጠርሙሱ ከመስታወት የተሠራ ነው እንጂ ከፕላስቲክ አይደለም።
+Vorsicht! Die Flasche ist aus Glas. ||| Careful! The bottle is made of glass. ||| ተጠንቀቅ! ጠርሙሱ ከመስታወት የተሠራ ነው።
+## Die Tasche ist aus Leder.
+Die Tasche ist aus Leder und sehr teuer. ||| The bag is made of leather and very expensive. ||| ቦርሳው ከቆዳ የተሠራ ሲሆን በጣም ውድ ነው።
+Ist die Tasche aus Leder? – Ja, die Tasche ist aus Leder. ||| Is the bag made of leather? – Yes, the bag is made of leather. ||| ቦርሳው ከቆዳ የተሠራ ነው? – አዎ፣ ቦርሳው ከቆዳ የተሠራ ነው።
+
+# 4.17 Words & email addresses
+## Wie heißt das auf Deutsch?
+Wie heißt das auf Deutsch? – Das heißt „Tisch“. ||| What is that called in German? – It is called “Tisch”. ||| ይህ በጀርመንኛ ምን ይባላል? – „Tisch“ ይባላል።
+Entschuldigung, wie heißt das auf Deutsch? ||| Excuse me, what is that called in German? ||| ይቅርታ፣ ይህ በጀርመንኛ ምን ይባላል?
+## Das heißt …
+Das heißt „Lampe“. ||| It is called “Lampe”. ||| „Lampe“ ይባላል።
+Das heißt auf Deutsch „Schlüssel“. ||| In German it is called “Schlüssel”. ||| በጀርመንኛ „Schlüssel“ ይባላል።
+## Bitte schön!
+Danke für den Kaffee! – Bitte schön! ||| Thanks for the coffee! – You're welcome! ||| ስለ ቡናው አመሰግናለሁ! – ምንም አይደለም!
+Hier ist Ihr Tee. – Danke! – Bitte schön! ||| Here is your tea. – Thanks! – You're welcome! ||| ሻይዎ ይኸው። – አመሰግናለሁ! – ምንም አይደለም!
+## Kein Problem.
+Entschuldigung, ich bin spät! – Kein Problem. ||| Sorry, I am late! – No problem. ||| ይቅርታ፣ አርፍጃለሁ! – ችግር የለም።
+Kannst du mir helfen? – Kein Problem. ||| Can you help me? – No problem. ||| ልትረዳኝ ትችላለህ? – ችግር የለም።
+## Sehr gern.
+Möchtest du Kaffee? – Sehr gern. ||| Would you like coffee? – My pleasure. ||| ቡና ትፈልጋለህ? – በደስታ።
+Danke für die Hilfe! – Sehr gern. ||| Thanks for the help! – My pleasure. ||| ስለ እርዳታው አመሰግናለሁ! – በደስታ።
+## die E-Mail-Adresse
+Meine E-Mail-Adresse ist neu. ||| My email address is new. ||| የኢሜይል አድራሻዬ አዲስ ነው።
+Schreiben Sie bitte Ihre E-Mail-Adresse. ||| Please write your email address. ||| እባክዎ የኢሜይል አድራሻዎን ይጻፉ።
+Die E-Mail-Adresse ist falsch. ||| The email address is wrong. ||| የኢሜይል አድራሻው ስሕተት ነው።
+## der Punkt
+Nach dem Vornamen kommt ein Punkt. ||| After the first name comes a dot. ||| ከመጀመሪያው ስም በኋላ ነጥብ ይመጣል።
+Am Ende kommt ein Punkt. ||| At the end comes a full stop. ||| መጨረሻ ላይ ነጥብ ይመጣል።
+Nach „de“ kommt kein Punkt. ||| After “de” there is no dot. ||| ከ„de“ በኋላ ነጥብ የለም።
+## der Unterstrich
+Meine Adresse hat einen Unterstrich: dawit_a. ||| My address has an underscore: dawit_a. ||| አድራሻዬ የታች መስመር አለው፦ dawit_a።
+Ist das ein Unterstrich oder ein Bindestrich? ||| Is that an underscore or a hyphen? ||| ያ የታች መስመር ነው ወይስ ሰረዝ?
+Schreib einen Unterstrich zwischen den Namen. ||| Write an underscore between the names. ||| በስሞቹ መካከል የታች መስመር ጻፍ።
+## der Bindestrich
+„E-Mail“ schreibt man mit Bindestrich. ||| “E-Mail” is written with a hyphen. ||| „E-Mail“ በሰረዝ ይጻፋል።
+Mein Nachname hat einen Bindestrich. ||| My last name has a hyphen. ||| የአባቴ ስም ሰረዝ አለው።
+Ist das ein Bindestrich? ||| Is that a hyphen? ||| ያ ሰረዝ ነው?
+## Wie ist deine E-Mail-Adresse?
+Wie ist deine E-Mail-Adresse? – selam@mail.de. ||| What is your email address? – selam@mail.de. ||| የኢሜይል አድራሻሽ ምንድን ነው? – selam@mail.de።
+Ich schreibe dir. Wie ist deine E-Mail-Adresse? ||| I'll write to you. What is your email address? ||| እጽፍልሃለሁ። የኢሜይል አድራሻህ ምንድን ነው?
+
+# 4.18 Shopping for furniture
+## der Sessel
+Der Sessel ist bequem. ||| The armchair is comfortable. ||| ባለ መደገፊያ ወንበሩ ምቹ ነው።
+Opa sitzt im Sessel. ||| Grandpa is sitting in the armchair. ||| አያቴ ባለ መደገፊያ ወንበሩ ላይ ተቀምጠዋል።
+Der Sessel ist aus Leder. ||| The armchair is made of leather. ||| ባለ መደገፊያ ወንበሩ ከቆዳ የተሠራ ነው።
+## das Sonderangebot
+Das Sofa ist im Sonderangebot. ||| The sofa is on special offer. ||| ሶፋው በልዩ ቅናሽ ላይ ነው።
+Heute gibt es ein Sonderangebot. ||| Today there is a special offer. ||| ዛሬ ልዩ ቅናሽ አለ።
+Das Sonderangebot ist sehr günstig. ||| The special offer is very good value. ||| ልዩ ቅናሹ በጣም ርካሽ ነው።
+## günstig
+Die Wohnung ist günstig. ||| The apartment is good value. ||| አፓርታማው ተመጣጣኝ ዋጋ አለው።
+Das Sofa ist sehr günstig. ||| The sofa is very cheap. ||| ሶፋው በጣም ርካሽ ነው።
+Hier ist das Obst günstig. ||| Fruit is cheap here. ||| እዚህ ፍራፍሬ ርካሽ ነው።
+## modern
+Die Küche ist modern. ||| The kitchen is modern. ||| ማዕድ ቤቱ ዘመናዊ ነው።
+Das Sofa ist sehr modern. ||| The sofa is very modern. ||| ሶፋው በጣም ዘመናዊ ነው።
+Addis Abeba ist modern. ||| Addis Ababa is modern. ||| አዲስ አበባ ዘመናዊ ናት።
+## zu groß
+Das Sofa ist zu groß für das Zimmer. ||| The sofa is too big for the room. ||| ሶፋው ለክፍሉ በጣም ትልቅ ነው።
+Die Schuhe sind zu groß. ||| The shoes are too big. ||| ጫማዎቹ በጣም ትልቅ ናቸው።
+Die Wohnung ist zu groß für mich. ||| The apartment is too big for me. ||| አፓርታማው ለእኔ በጣም ትልቅ ነው።
+## zu klein
+Der Tisch ist zu klein. ||| The table is too small. ||| ጠረጴዛው በጣም ትንሽ ነው።
+Die Küche ist zu klein. ||| The kitchen is too small. ||| ማዕድ ቤቱ በጣም ትንሽ ነው።
+Die Jacke ist zu klein. ||| The jacket is too small. ||| ጃኬቱ በጣም ትንሽ ነው።
+## Schau mal!
+Schau mal! Das Sofa ist billig. ||| Look! The sofa is cheap. ||| እስኪ ተመልከት! ሶፋው ርካሽ ነው።
+Schau mal, die Lampe! ||| Look, the lamp! ||| እስኪ ተመልከቺ፣ መብራቱን!
+## Wie findest du das Sofa?
+Wie findest du das Sofa? – Schön, aber teuer. ||| What do you think of the sofa? – Nice, but expensive. ||| ሶፋውን እንዴት አየኸው? – ቆንጆ ነው፤ ግን ውድ ነው።
+Wie findest du das Sofa? Ist es zu groß? ||| What do you think of the sofa? Is it too big? ||| ሶፋውን እንዴት አየሽው? በጣም ትልቅ ነው?
+## Das finde ich auch.
+Das Sofa ist zu teuer. – Das finde ich auch. ||| The sofa is too expensive. – I think so too. ||| ሶፋው በጣም ውድ ነው። – እኔም እንደዚያ ይመስለኛል።
+Die Lampe ist schön. – Das finde ich auch! ||| The lamp is beautiful. – I think so too! ||| መብራቱ ቆንጆ ነው። – እኔም እንደዚያ ይመስለኛል!
+## Das finde ich nicht.
+Der Stuhl ist hässlich. – Das finde ich nicht. ||| The chair is ugly. – I don't think so. ||| ወንበሩ አስቀያሚ ነው። – እኔ እንደዚያ አይመስለኝም።
+Das Sofa ist zu groß. – Das finde ich nicht. ||| The sofa is too big. – I don't think so. ||| ሶፋው በጣም ትልቅ ነው። – እኔ እንደዚያ አይመስለኝም።
+## Wie viel kostet der Stuhl?
+Entschuldigung, wie viel kostet der Stuhl? ||| Excuse me, how much is the chair? ||| ይቅርታ፣ ወንበሩ ስንት ነው?
+Wie viel kostet der Stuhl? – 59 Euro. ||| How much is the chair? – 59 euros. ||| ወንበሩ ስንት ነው? – 59 ዩሮ።
+## Er kostet 59 Euro.
+Der Stuhl? Er kostet 59 Euro. ||| The chair? It costs 59 euros. ||| ወንበሩ? ዋጋው 59 ዩሮ ነው።
+Er kostet 59 Euro, das ist günstig. ||| It costs 59 euros, that is good value. ||| ዋጋው 59 ዩሮ ነው፤ ተመጣጣኝ ነው።

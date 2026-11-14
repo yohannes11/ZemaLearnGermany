@@ -1,0 +1,488 @@
+# Unit 6: example sentences for every word. German ||| English ||| Amharic
+# Three for a single word, two for a phrase; A1 German that uses the course's own words.
+
+# 6.1 The weather
+## das Wetter
+Das Wetter ist heute schön. ||| The weather is nice today. ||| ዛሬ የአየር ሁኔታው ጥሩ ነው።
+Wie ist das Wetter in Addis Abeba? ||| What is the weather like in Addis Ababa? ||| በአዲስ አበባ የአየር ሁኔታው እንዴት ነው?
+Das Wetter in Deutschland ist oft kalt. ||| The weather in Germany is often cold. ||| በጀርመን የአየር ሁኔታው ብዙ ጊዜ ቀዝቃዛ ነው።
+## der Regen
+Der Regen ist stark. ||| The rain is heavy. ||| ዝናቡ ኃይለኛ ነው።
+Im Juli gibt es viel Regen. ||| In July there is a lot of rain. ||| በጁላይ ብዙ ዝናብ አለ።
+Ich mag den Regen. ||| I like the rain. ||| ዝናቡን እወደዋለሁ።
+## der Schnee
+Der Schnee ist weiß. ||| The snow is white. ||| በረዶው ነጭ ነው።
+Im Winter gibt es Schnee. ||| In winter there is snow. ||| በክረምት በረዶ አለ።
+Die Kinder spielen im Schnee. ||| The children are playing in the snow. ||| ልጆቹ በበረዶው ውስጥ እየተጫወቱ ነው።
+## warm
+Heute ist es warm. ||| Today it is warm. ||| ዛሬ ሞቃት ነው።
+Der Tee ist warm. ||| The tea is warm. ||| ሻዩ ሞቅ ያለ ነው።
+Die Jacke ist sehr warm. ||| The jacket is very warm. ||| ጃኬቱ በጣም ሞቃት ነው።
+## heiß
+Im Sommer ist es heiß. ||| In summer it is hot. ||| በበጋ በጣም ይሞቃል።
+Vorsicht, der Kaffee ist heiß! ||| Careful, the coffee is hot! ||| ተጠንቀቅ፣ ቡናው ትኩስ ነው!
+In Afar ist es sehr heiß. ||| In Afar it is very hot. ||| በአፋር በጣም ሞቃት ነው።
+## kalt
+Im Winter ist es kalt. ||| In winter it is cold. ||| በክረምት ቀዝቃዛ ነው።
+Mir ist kalt. ||| I am cold. ||| በርዶኛል።
+Das Wasser ist kalt. ||| The water is cold. ||| ውሃው ቀዝቃዛ ነው።
+## es regnet
+Es regnet heute. ||| It is raining today. ||| ዛሬ ዝናብ እየዘነበ ነው።
+Es regnet, nimm einen Regenschirm. ||| It is raining, take an umbrella. ||| ዝናብ እየዘነበ ነው፤ ዣንጥላ ያዝ።
+## es schneit
+Es schneit in Berlin. ||| It is snowing in Berlin. ||| በርሊን ውስጥ በረዶ እየጣለ ነው።
+Schau mal, es schneit! ||| Look, it is snowing! ||| እስኪ ተመልከት፣ በረዶ እየጣለ ነው!
+## die Sonne scheint
+Die Sonne scheint und es ist warm. ||| The sun is shining and it is warm. ||| ፀሐይ እየወጣች ነው፤ ሞቃትም ነው።
+Heute scheint die Sonne. ||| The sun is shining today. ||| ዛሬ ፀሐይ ወጥቷል።
+## es ist sonnig
+Es ist sonnig. Gehen wir spazieren! ||| It is sunny. Let's go for a walk! ||| ፀሐያማ ነው። ለእግር ጉዞ እንውጣ!
+Morgen ist es sonnig und warm. ||| Tomorrow it is sunny and warm. ||| ነገ ፀሐያማና ሞቃት ነው።
+## Wie ist das Wetter?
+Wie ist das Wetter? – Es regnet. ||| What is the weather like? – It is raining. ||| የአየር ሁኔታው እንዴት ነው? – ዝናብ እየዘነበ ነው።
+Wie ist das Wetter in Berlin? – Kalt! ||| What is the weather like in Berlin? – Cold! ||| በርሊን ውስጥ የአየር ሁኔታው እንዴት ነው? – ቀዝቃዛ!
+## Es ist 20 Grad.
+Es ist 20 Grad und sonnig. ||| It's 20 degrees and sunny. ||| 20 ዲግሪና ፀሐያማ ነው።
+Wie warm ist es? – Es ist 20 Grad. ||| How warm is it? – It's 20 degrees. ||| ምን ያህል ይሞቃል? – 20 ዲግሪ ነው።
+
+# 6.2 More weather & directions
+## die Wolke
+Die Wolke ist grau. ||| The cloud is grey. ||| ደመናው ግራጫ ነው።
+Am Himmel sind viele Wolken. ||| There are many clouds in the sky. ||| ሰማይ ላይ ብዙ ደመናዎች አሉ።
+Die Wolken kommen von Westen. ||| The clouds come from the west. ||| ደመናዎቹ ከምዕራብ ይመጣሉ።
+## wolkig
+Heute ist es wolkig. ||| Today it is cloudy. ||| ዛሬ ደመናማ ነው።
+Morgen wird es wolkig. ||| Tomorrow it will be cloudy. ||| ነገ ደመናማ ይሆናል።
+Es ist wolkig, aber warm. ||| It is cloudy, but warm. ||| ደመናማ ነው፤ ግን ሞቃት ነው።
+## der Wind
+Der Wind ist kalt. ||| The wind is cold. ||| ነፋሱ ቀዝቃዛ ነው።
+Der Wind ist heute stark. ||| The wind is strong today. ||| ዛሬ ነፋሱ ኃይለኛ ነው።
+Der Wind kommt von Norden. ||| The wind comes from the north. ||| ነፋሱ ከሰሜን ይመጣል።
+## windig
+Heute ist es windig. ||| Today it is windy. ||| ዛሬ ነፋሻማ ነው።
+Am Meer ist es oft windig. ||| By the sea it is often windy. ||| በባሕር ዳርቻ ብዙ ጊዜ ነፋሻማ ነው።
+Es ist windig und kalt. ||| It is windy and cold. ||| ነፋሻማና ቀዝቃዛ ነው።
+## der Nebel
+Am Morgen ist Nebel. ||| In the morning there is fog. ||| ጠዋት ጭጋግ አለ።
+Der Nebel ist dicht. ||| The fog is thick. ||| ጭጋጉ ወፍራም ነው።
+Im Nebel fahre ich langsam. ||| In the fog I drive slowly. ||| በጭጋግ ውስጥ በቀስታ እነዳለሁ።
+## das Gewitter
+Das Gewitter ist laut. ||| The thunderstorm is loud. ||| ነጎድጓዱ ይጮኻል።
+Heute Abend kommt ein Gewitter. ||| A thunderstorm is coming this evening. ||| ዛሬ ማታ ነጎድጓድ ያለው ዝናብ ይመጣል።
+Die Kinder haben Angst vor dem Gewitter. ||| The children are afraid of the thunderstorm. ||| ልጆቹ ነጎድጓዱን ይፈራሉ።
+## die Temperatur
+Die Temperatur ist hoch. ||| The temperature is high. ||| የሙቀት መጠኑ ከፍተኛ ነው።
+Wie ist die Temperatur heute? ||| What is the temperature today? ||| ዛሬ የሙቀት መጠኑ ስንት ነው?
+Die Temperatur ist 25 Grad. ||| The temperature is 25 degrees. ||| የሙቀት መጠኑ 25 ዲግሪ ነው።
+## das Grad
+Es sind 30 Grad. ||| It is 30 degrees. ||| 30 ዲግሪ ነው።
+Heute sind es nur fünf Grad. ||| Today it is only five degrees. ||| ዛሬ አምስት ዲግሪ ብቻ ነው።
+Wie viel Grad sind es? ||| How many degrees is it? ||| ስንት ዲግሪ ነው?
+## der Norden
+Hamburg liegt im Norden. ||| Hamburg is in the north. ||| ሃምቡርግ በሰሜን ትገኛለች።
+Im Norden ist es kalt. ||| In the north it is cold. ||| በሰሜን ቀዝቃዛ ነው።
+Mekelle ist im Norden von Äthiopien. ||| Mekelle is in the north of Ethiopia. ||| መቀሌ በኢትዮጵያ ሰሜን ትገኛለች።
+## der Süden
+München liegt im Süden. ||| Munich is in the south. ||| ሙኒክ በደቡብ ትገኛለች።
+Im Süden ist es warm. ||| In the south it is warm. ||| በደቡብ ሞቃት ነው።
+Hawassa ist im Süden von Äthiopien. ||| Hawassa is in the south of Ethiopia. ||| ሐዋሳ በኢትዮጵያ ደቡብ ትገኛለች።
+## der Osten
+Die Sonne geht im Osten auf. ||| The sun rises in the east. ||| ፀሐይ በምሥራቅ ትወጣለች።
+Dresden liegt im Osten. ||| Dresden is in the east. ||| ድሬስደን በምሥራቅ ትገኛለች።
+Harar ist im Osten von Äthiopien. ||| Harar is in the east of Ethiopia. ||| ሐረር በኢትዮጵያ ምሥራቅ ትገኛለች።
+## der Westen
+Die Sonne geht im Westen unter. ||| The sun sets in the west. ||| ፀሐይ በምዕራብ ትጠልቃለች።
+Köln liegt im Westen. ||| Cologne is in the west. ||| ኮሎኝ በምዕራብ ትገኛለች።
+Im Westen regnet es. ||| In the west it is raining. ||| በምዕራብ ዝናብ እየዘነበ ነው።
+
+# 6.3 Holidays
+## der Urlaub
+Der Urlaub ist schön. ||| The holiday is nice. ||| ዕረፍቱ ደስ ይላል።
+Im August habe ich Urlaub. ||| In August I have holiday. ||| በኦገስት ዕረፍት አለኝ።
+Wo machst du Urlaub? ||| Where are you going on holiday? ||| ዕረፍትህን የት ታሳልፋለህ?
+## gemütlich
+Das Café ist gemütlich. ||| The café is cosy. ||| ካፌው ምቹ ነው።
+Unsere Wohnung ist klein, aber gemütlich. ||| Our apartment is small, but cosy. ||| አፓርታማችን ትንሽ ነው፤ ግን ምቹ ነው።
+Am Abend ist es gemütlich zu Hause. ||| In the evening it is cosy at home. ||| ማታ ቤት ውስጥ ሞቅ ያለ ነው።
+## das Zelt
+Das Zelt ist klein. ||| The tent is small. ||| ድንኳኑ ትንሽ ነው።
+Wir schlafen im Zelt. ||| We sleep in the tent. ||| በድንኳኑ ውስጥ እንተኛለን።
+Das Zelt ist neu. ||| The tent is new. ||| ድንኳኑ አዲስ ነው።
+## das Meer
+Das Meer ist blau. ||| The sea is blue. ||| ባሕሩ ሰማያዊ ነው።
+Wir fahren ans Meer. ||| We are going to the sea. ||| ወደ ባሕር እንሄዳለን።
+Das Meer ist heute ruhig. ||| The sea is calm today. ||| ዛሬ ባሕሩ ጸጥ ያለ ነው።
+## die Küste
+Die Küste ist schön. ||| The coast is beautiful. ||| የባሕር ዳርቻው ውብ ነው።
+Wir wohnen an der Küste. ||| We live on the coast. ||| የምንኖረው በባሕር ዳርቻ ነው።
+An der Küste ist es windig. ||| On the coast it is windy. ||| በባሕር ዳርቻ ነፋሻማ ነው።
+## schwimmen
+Ich schwimme gern. ||| I like swimming. ||| መዋኘት እወዳለሁ።
+Kannst du schwimmen? ||| Can you swim? ||| መዋኘት ትችላለህ?
+Wir schwimmen im Meer. ||| We swim in the sea. ||| በባሕሩ ውስጥ እንዋኛለን።
+## schnorcheln
+Im Urlaub schnorcheln wir. ||| On holiday we snorkel. ||| በዕረፍት ጊዜ በመተንፈሻ ቱቦ እንዋኛለን።
+Schnorcheln macht Spaß. ||| Snorkelling is fun. ||| በመተንፈሻ ቱቦ መዋኘት ያስደስታል።
+Am Roten Meer kann man gut schnorcheln. ||| At the Red Sea you can snorkel well. ||| በቀይ ባሕር በመተንፈሻ ቱቦ በደንብ መዋኘት ይቻላል።
+## tauchen
+Mein Bruder taucht gern. ||| My brother likes diving. ||| ወንድሜ ጠልቆ መዋኘት ይወዳል።
+Kannst du tauchen? ||| Can you dive? ||| ጠልቀህ መዋኘት ትችላለህ?
+Wir tauchen im Meer. ||| We dive in the sea. ||| በባሕሩ ውስጥ ጠልቀን እንዋኛለን።
+## das Skifahren
+Das Skifahren macht Spaß. ||| Skiing is fun. ||| የበረዶ ላይ ሸርተቴ ያስደስታል።
+Im Winter gehen wir zum Skifahren. ||| In winter we go skiing. ||| በክረምት የበረዶ ላይ ሸርተቴ እንሄዳለን።
+Skifahren ist teuer. ||| Skiing is expensive. ||| የበረዶ ላይ ሸርተቴ ውድ ነው።
+## das Schlittschuhlaufen
+Das Schlittschuhlaufen ist schwer. ||| Ice skating is difficult. ||| በበረዶ ላይ መንሸራተት ከባድ ነው።
+Die Kinder lieben das Schlittschuhlaufen. ||| The children love ice skating. ||| ልጆቹ በበረዶ ላይ መንሸራተት ይወዳሉ።
+Im Winter gehen wir zum Schlittschuhlaufen. ||| In winter we go ice skating. ||| በክረምት በበረዶ ላይ ለመንሸራተት እንሄዳለን።
+## die Natur
+Ich liebe die Natur. ||| I love nature. ||| ተፈጥሮን እወዳለሁ።
+Die Natur in Äthiopien ist schön. ||| The nature in Ethiopia is beautiful. ||| የኢትዮጵያ ተፈጥሮ ውብ ነው።
+Am Wochenende sind wir in der Natur. ||| At the weekend we are out in nature. ||| ቅዳሜና እሑድ ተፈጥሮ ውስጥ እንሆናለን።
+## wandern
+Wir wandern in den Simien-Bergen. ||| We hike in the Simien Mountains. ||| በስሜን ተራሮች በእግር እንጓዛለን።
+Ich wandere gern. ||| I like hiking. ||| በእግር መጓዝ እወዳለሁ።
+Am Sonntag wandern wir. ||| On Sunday we go hiking. ||| እሑድ በእግር እንጓዛለን።
+## Urlaub machen
+Wir machen Urlaub in Bahir Dar. ||| We are going on holiday in Bahir Dar. ||| ባሕር ዳር ዕረፍት እንወጣለን።
+Wo möchtest du Urlaub machen? ||| Where would you like to go on holiday? ||| ዕረፍትህን የት ማሳለፍ ትፈልጋለህ?
+
+# 6.4 Hobbies
+## tanzen
+Ich tanze gern. ||| I like dancing. ||| መደነስ እወዳለሁ።
+Wir tanzen Eskista. ||| We dance eskista. ||| እስክስታ እንደንሳለን።
+Tanzt du mit mir? ||| Will you dance with me? ||| ከእኔ ጋር ትደንሳለህ?
+## reisen
+Ich reise gern. ||| I like travelling. ||| መጓዝ እወዳለሁ።
+Wir reisen nach Deutschland. ||| We are travelling to Germany. ||| ወደ ጀርመን እንጓዛለን።
+Meine Eltern reisen viel. ||| My parents travel a lot. ||| ወላጆቼ ብዙ ይጓዛሉ።
+## joggen
+Ich jogge am Morgen. ||| I jog in the morning. ||| ጠዋት ሩጫ አደርጋለሁ።
+Joggst du gern? ||| Do you like jogging? ||| ሩጫ ማድረግ ትወዳለህ?
+Wir joggen im Park. ||| We jog in the park. ||| በፓርኩ ውስጥ እንሮጣለን።
+## malen
+Meine Tochter malt gern. ||| My daughter likes painting. ||| ሴት ልጄ መሳል ትወዳለች።
+Ich male ein Bild. ||| I am painting a picture. ||| ሥዕል እየሳልኩ ነው።
+Er malt sehr schön. ||| He paints very beautifully. ||| በጣም በሚያምር ሁኔታ ይስላል።
+## die Fotografie
+Die Fotografie ist mein Hobby. ||| Photography is my hobby. ||| ፎቶግራፍ የትርፍ ጊዜ ማሳለፊያዬ ነው።
+Ich interessiere mich für Fotografie. ||| I am interested in photography. ||| ፎቶግራፍ ያስደስተኛል።
+Die Fotografie ist ein schönes Hobby. ||| Photography is a nice hobby. ||| ፎቶግራፍ ጥሩ የትርፍ ጊዜ ማሳለፊያ ነው።
+## Fahrrad fahren
+Ich fahre gern Fahrrad. ||| I like riding a bike. ||| ብስክሌት መንዳት እወዳለሁ።
+Kannst du Fahrrad fahren? ||| Can you ride a bike? ||| ብስክሌት መንዳት ትችላለህ?
+## Freunde treffen
+Am Samstag treffe ich Freunde. ||| On Saturday I meet friends. ||| ቅዳሜ ጓደኞቼን አገኛለሁ።
+Ich treffe gern Freunde im Café. ||| I like meeting friends at the café. ||| ጓደኞቼን ካፌ ውስጥ ማግኘት እወዳለሁ።
+## Computerspiele spielen
+Mein Bruder spielt gern Computerspiele. ||| My brother likes playing computer games. ||| ወንድሜ የኮምፒውተር ጨዋታ መጫወት ይወዳል።
+Die Kinder spielen zu viel Computerspiele. ||| The children play too many computer games. ||| ልጆቹ በጣም ብዙ የኮምፒውተር ጨዋታ ይጫወታሉ።
+## Musik hören
+Ich höre gern Musik. ||| I like listening to music. ||| ሙዚቃ ማዳመጥ እወዳለሁ።
+Im Bus höre ich Musik. ||| On the bus I listen to music. ||| በአውቶቡስ ውስጥ ሙዚቃ አዳምጣለሁ።
+## Musik machen
+Wir machen zusammen Musik. ||| We make music together. ||| አብረን ሙዚቃ እንጫወታለን።
+Mein Onkel macht Musik. ||| My uncle makes music. ||| አጎቴ ሙዚቃ ይጫወታል።
+## Fußball spielen
+Die Kinder spielen Fußball. ||| The children play football. ||| ልጆቹ እግር ኳስ ይጫወታሉ።
+Spielst du gern Fußball? ||| Do you like playing football? ||| እግር ኳስ መጫወት ትወዳለህ?
+## Basketball spielen
+Ich spiele Basketball in der Schule. ||| I play basketball at school. ||| በትምህርት ቤት የቅርጫት ኳስ እጫወታለሁ።
+Mein Sohn spielt gern Basketball. ||| My son likes playing basketball. ||| ልጄ የቅርጫት ኳስ መጫወት ይወዳል።
+## Handball spielen
+In Deutschland spielen viele Handball. ||| In Germany many people play handball. ||| በጀርመን ብዙ ሰዎች የእጅ ኳስ ይጫወታሉ።
+Wir spielen am Montag Handball. ||| We play handball on Monday. ||| ሰኞ የእጅ ኳስ እንጫወታለን።
+## Was sind deine Hobbys?
+Was sind deine Hobbys? – Lesen und Tanzen. ||| What are your hobbies? – Reading and dancing. ||| የትርፍ ጊዜ ማሳለፊያዎችህ ምንድን ናቸው? – ማንበብና መደነስ።
+Ich spiele Fußball. Was sind deine Hobbys? ||| I play football. What are your hobbies? ||| እኔ እግር ኳስ እጫወታለሁ። የአንቺ የትርፍ ጊዜ ማሳለፊያዎች ምንድን ናቸው?
+## Was sind Ihre Hobbys?
+Was sind Ihre Hobbys, Frau Bekele? ||| What are your hobbies, Mrs Bekele? ||| ወይዘሮ በቀለ፣ የትርፍ ጊዜ ማሳለፊያዎችዎ ምንድን ናቸው?
+Was sind Ihre Hobbys? – Ich koche und wandere. ||| What are your hobbies? – I cook and hike. ||| የትርፍ ጊዜ ማሳለፊያዎችዎ ምንድን ናቸው? – አበስላለሁ፤ በእግርም እጓዛለሁ።
+## Was machst du in deiner Freizeit?
+Was machst du in deiner Freizeit? – Ich lese. ||| What do you do in your free time? – I read. ||| በትርፍ ጊዜህ ምን ታደርጋለህ? – አነባለሁ።
+Was machst du in deiner Freizeit am Wochenende? ||| What do you do in your free time at the weekend? ||| ቅዳሜና እሑድ በትርፍ ጊዜሽ ምን ታደርጊያለሽ?
+## Was machen Sie in Ihrer Freizeit?
+Was machen Sie in Ihrer Freizeit? – Ich male. ||| What do you do in your free time? – I paint. ||| በትርፍ ጊዜዎ ምን ያደርጋሉ? – እስላለሁ።
+Herr Tesfaye, was machen Sie in Ihrer Freizeit? ||| Mr Tesfaye, what do you do in your free time? ||| አቶ ተስፋዬ፣ በትርፍ ጊዜዎ ምን ያደርጋሉ?
+
+# 6.5 What do you need?
+## der Jogginganzug
+Der Jogginganzug ist bequem. ||| The tracksuit is comfortable. ||| የስፖርት ልብሱ ምቹ ነው።
+Ich trage einen Jogginganzug. ||| I am wearing a tracksuit. ||| የስፖርት ልብስ ለብሻለሁ።
+Mein Jogginganzug ist blau. ||| My tracksuit is blue. ||| የስፖርት ልብሴ ሰማያዊ ነው።
+## die Tennisschuhe
+Die Tennisschuhe sind neu. ||| The trainers are new. ||| የስፖርት ጫማዎቹ አዲስ ናቸው።
+Ich brauche Tennisschuhe. ||| I need trainers. ||| የስፖርት ጫማ ያስፈልገኛል።
+Wo sind meine Tennisschuhe? ||| Where are my trainers? ||| የስፖርት ጫማዎቼ የት ናቸው?
+## das Fahrrad
+Das Fahrrad ist alt. ||| The bicycle is old. ||| ብስክሌቱ አሮጌ ነው።
+Ich fahre mit dem Fahrrad zur Arbeit. ||| I ride my bike to work. ||| በብስክሌት ወደ ሥራ እሄዳለሁ።
+Mein Fahrrad ist rot. ||| My bicycle is red. ||| ብስክሌቴ ቀይ ነው።
+## der Helm
+Der Helm ist wichtig. ||| The helmet is important. ||| የራስ ቁሩ አስፈላጊ ነው።
+Trag bitte einen Helm! ||| Please wear a helmet! ||| እባክህ የራስ ቁር አድርግ!
+Mein Helm ist schwarz. ||| My helmet is black. ||| የራስ ቁሬ ጥቁር ነው።
+## das Schwimmbad
+Das Schwimmbad ist groß. ||| The swimming pool is big. ||| የመዋኛ ገንዳው ትልቅ ነው።
+Wir gehen ins Schwimmbad. ||| We are going to the swimming pool. ||| ወደ መዋኛ ገንዳ እንሄዳለን።
+Das Schwimmbad ist am Montag zu. ||| The swimming pool is closed on Monday. ||| የመዋኛ ገንዳው ሰኞ ዝግ ነው።
+## die Badehose
+Die Badehose ist blau. ||| The swimming trunks are blue. ||| የዋና ልብሱ ሰማያዊ ነው።
+Ich brauche eine Badehose. ||| I need swimming trunks. ||| የወንድ የዋና ልብስ ያስፈልገኛል።
+Hast du deine Badehose? ||| Do you have your swimming trunks? ||| የዋና ልብስህን ይዘሃል?
+## der Badeanzug
+Der Badeanzug ist rot. ||| The swimsuit is red. ||| የዋና ልብሱ ቀይ ነው።
+Ich kaufe einen Badeanzug. ||| I am buying a swimsuit. ||| የሴት የዋና ልብስ እገዛለሁ።
+Mein Badeanzug ist in der Tasche. ||| My swimsuit is in the bag. ||| የዋና ልብሴ ቦርሳው ውስጥ ነው።
+## die Jacke
+Die Jacke ist warm. ||| The jacket is warm. ||| ጃኬቱ ሞቃት ነው።
+Nimm eine Jacke mit! ||| Take a jacket with you! ||| ጃኬት ያዝ!
+Meine Jacke ist neu. ||| My jacket is new. ||| ጃኬቴ አዲስ ነው።
+## die Mütze
+Die Mütze ist warm. ||| The hat is warm. ||| ኮፍያው ሞቃት ነው።
+Im Winter trage ich eine Mütze. ||| In winter I wear a hat. ||| በክረምት ኮፍያ አደርጋለሁ።
+Die Mütze ist rot. ||| The cap is red. ||| ኮፍያው ቀይ ነው።
+## mitnehmen
+Ich nehme einen Regenschirm mit. ||| I am taking an umbrella along. ||| ዣንጥላ ይዤ እሄዳለሁ።
+Was nimmst du mit? ||| What are you taking along? ||| ምን ይዘህ ትሄዳለህ?
+Nimm Wasser mit! ||| Take water along! ||| ውሃ ይዘህ ሂድ!
+
+# 6.8 Favourites
+## der Lieblingsfilm
+Mein Lieblingsfilm ist alt. ||| My favourite film is old. ||| ተወዳጅ ፊልሜ አሮጌ ነው።
+Was ist dein Lieblingsfilm? ||| What is your favourite film? ||| ተወዳጅ ፊልምህ የትኛው ነው?
+Der Lieblingsfilm von Liya ist lustig. ||| Liya's favourite film is funny. ||| የሊያ ተወዳጅ ፊልም አስቂኝ ነው።
+## das Lieblingsbuch
+Mein Lieblingsbuch ist „Fikir Eske Mekabir“. ||| My favourite book is “Fikir Eske Mekabir”. ||| ተወዳጅ መጽሐፌ „ፍቅር እስከ መቃብር“ ነው።
+Was ist dein Lieblingsbuch? ||| What is your favourite book? ||| ተወዳጅ መጽሐፍህ የትኛው ነው?
+Mein Lieblingsbuch ist auf Amharisch. ||| My favourite book is in Amharic. ||| ተወዳጅ መጽሐፌ በአማርኛ ነው።
+## die Lieblingsmusik
+Meine Lieblingsmusik ist äthiopischer Jazz. ||| My favourite music is Ethiopian jazz. ||| ተወዳጅ ሙዚቃዬ የኢትዮጵያ ጃዝ ነው።
+Was ist deine Lieblingsmusik? ||| What is your favourite music? ||| ተወዳጅ ሙዚቃህ ምንድን ነው?
+Die Lieblingsmusik meiner Mutter ist alt. ||| My mother's favourite music is old. ||| የእናቴ ተወዳጅ ሙዚቃ የድሮ ነው።
+## das Lieblingslied
+Das ist mein Lieblingslied! ||| That is my favourite song! ||| ይህ ተወዳጅ ዘፈኔ ነው!
+Was ist dein Lieblingslied? ||| What is your favourite song? ||| ተወዳጅ ዘፈንህ የትኛው ነው?
+Wir singen mein Lieblingslied. ||| We sing my favourite song. ||| ተወዳጅ ዘፈኔን እንዘፍናለን።
+## das Lieblingsessen
+Mein Lieblingsessen ist Injera mit Shiro. ||| My favourite food is injera with shiro. ||| ተወዳጅ ምግቤ እንጀራ በሽሮ ነው።
+Was ist dein Lieblingsessen? ||| What is your favourite food? ||| ተወዳጅ ምግብህ ምንድን ነው?
+Pizza ist das Lieblingsessen der Kinder. ||| Pizza is the children's favourite food. ||| ፒዛ የልጆቹ ተወዳጅ ምግብ ነው።
+## das Lieblingsgetränk
+Mein Lieblingsgetränk ist Kaffee. ||| My favourite drink is coffee. ||| ተወዳጅ መጠጤ ቡና ነው።
+Was ist dein Lieblingsgetränk? ||| What is your favourite drink? ||| ተወዳጅ መጠጥህ ምንድን ነው?
+Sein Lieblingsgetränk ist Tee. ||| His favourite drink is tea. ||| የእሱ ተወዳጅ መጠጥ ሻይ ነው።
+## die Lieblingsfarbe
+Meine Lieblingsfarbe ist grün. ||| My favourite colour is green. ||| ተወዳጅ ቀለሜ አረንጓዴ ነው።
+Was ist deine Lieblingsfarbe? ||| What is your favourite colour? ||| ተወዳጅ ቀለምህ ምንድን ነው?
+Ihre Lieblingsfarbe ist lila. ||| Her favourite colour is purple. ||| የእሷ ተወዳጅ ቀለም ሐምራዊ ነው።
+
+# 6.9 Opinions
+## Wie findest du …?
+Wie findest du den Film? – Spannend! ||| What do you think of the film? – Exciting! ||| ፊልሙ እንዴት ይመስልሃል? – አጓጊ ነው!
+Wie findest du meine Wohnung? ||| What do you think of my apartment? ||| አፓርታማዬ እንዴት ይመስልሻል?
+## Ich finde es …
+Das Buch? Ich finde es langweilig. ||| The book? I find it boring. ||| መጽሐፉ? አሰልቺ ይመስለኛል።
+Ich finde es toll hier. ||| I find it great here. ||| እዚህ በጣም ጥሩ ይመስለኛል።
+## Ich finde ihn …
+Der Film? Ich finde ihn spannend. ||| The film? I find it exciting. ||| ፊልሙ? አጓጊ ይመስለኛል።
+Der neue Lehrer? Ich finde ihn nett. ||| The new teacher? I find him nice. ||| አዲሱ አስተማሪ? ደግ ይመስለኛል።
+## Ich finde sie …
+Die Lampe? Ich finde sie schön. ||| The lamp? I find it beautiful. ||| መብራቱ? ቆንጆ ይመስለኛል።
+Deine Schwester? Ich finde sie sehr nett. ||| Your sister? I find her very nice. ||| እህትህ? በጣም ደግ ትመስለኛለች።
+
+# 6.10 Describing things
+## kompliziert
+Die Aufgabe ist kompliziert. ||| The task is complicated. ||| ሥራው ውስብስብ ነው።
+Deutsch ist nicht so kompliziert. ||| German is not so complicated. ||| ጀርመንኛ ያን ያህል ውስብስብ አይደለም።
+Das Formular ist sehr kompliziert. ||| The form is very complicated. ||| ቅጹ በጣም ውስብስብ ነው።
+## einfach
+Die Übung ist einfach. ||| The exercise is easy. ||| መልመጃው ቀላል ነው።
+Das ist ganz einfach! ||| That is really simple! ||| ይህ በጣም ቀላል ነው!
+Das Rezept ist einfach. ||| The recipe is simple. ||| የምግብ አዘገጃጀቱ ቀላል ነው።
+## schwer
+Die Tasche ist schwer. ||| The bag is heavy. ||| ቦርሳው ከባድ ነው።
+Die Prüfung ist schwer. ||| The exam is difficult. ||| ፈተናው ከባድ ነው።
+Deutsch ist nicht so schwer. ||| German is not so difficult. ||| ጀርመንኛ ያን ያህል ከባድ አይደለም።
+## leicht
+Die Übung ist leicht. ||| The exercise is easy. ||| መልመጃው ቀላል ነው።
+Die Tasche ist leicht. ||| The bag is light. ||| ቦርሳው ቀላል ነው።
+Das ist nicht leicht. ||| That is not easy. ||| ያ ቀላል አይደለም።
+## interessant
+Das Buch ist interessant. ||| The book is interesting. ||| መጽሐፉ የሚስብ ነው።
+Das Museum ist sehr interessant. ||| The museum is very interesting. ||| ሙዚየሙ በጣም አስደሳች ነው።
+Ich finde Deutsch interessant. ||| I find German interesting. ||| ጀርመንኛ የሚስብ ሆኖ አግኝቼዋለሁ።
+## spannend
+Der Film ist spannend. ||| The film is exciting. ||| ፊልሙ አጓጊ ነው።
+Das Spiel war sehr spannend. ||| The match was very exciting. ||| ጨዋታው በጣም አጓጊ ነበር።
+Das Buch ist spannend. ||| The book is exciting. ||| መጽሐፉ አጓጊ ነው።
+## langweilig
+Der Film ist langweilig. ||| The film is boring. ||| ፊልሙ አሰልቺ ነው።
+Mir ist langweilig. ||| I am bored. ||| ሰልችቶኛል።
+Die Arbeit ist nicht langweilig. ||| The work is not boring. ||| ሥራው አሰልቺ አይደለም።
+## praktisch
+Das Handy ist praktisch. ||| The phone is practical. ||| ሞባይሉ ጠቃሚ ነው።
+Die Tasche ist sehr praktisch. ||| The bag is very practical. ||| ቦርሳው በጣም ጠቃሚ ነው።
+Ein Fahrrad ist praktisch in der Stadt. ||| A bicycle is practical in the city. ||| ብስክሌት በከተማ ውስጥ ጠቃሚ ነው።
+## freundlich
+Die Leute sind freundlich. ||| The people are friendly. ||| ሰዎቹ ተግባቢ ናቸው።
+Der Kellner ist sehr freundlich. ||| The waiter is very friendly. ||| አስተናጋጁ በጣም ተግባቢ ነው።
+Sie ist immer freundlich. ||| She is always friendly. ||| ሁልጊዜ ተግባቢ ናት።
+## nett
+Der Lehrer ist nett. ||| The teacher is nice. ||| አስተማሪው ደግ ነው።
+Das ist sehr nett von dir. ||| That is very kind of you. ||| በጣም ደግ ነህ።
+Meine Nachbarn sind nett. ||| My neighbours are nice. ||| ጎረቤቶቼ ደጎች ናቸው።
+## zu
+Das ist zu teuer. ||| That is too expensive. ||| ያ በጣም ውድ ነው።
+Der Kaffee ist zu heiß. ||| The coffee is too hot. ||| ቡናው በጣም ትኩስ ነው።
+Die Musik ist zu laut. ||| The music is too loud. ||| ሙዚቃው በጣም ይጮኻል።
+
+# 6.11 Agreeing & disagreeing
+## Stimmt das?
+Du kommst aus Kenia? Stimmt das? ||| You come from Kenya? Is that right? ||| ከኬንያ ነህ? ይህ እውነት ነው?
+Der Kurs beginnt um neun. Stimmt das? ||| The course begins at nine. Is that right? ||| ኮርሱ ሦስት ሰዓት ይጀምራል። ይህ እውነት ነው?
+## Ist das richtig?
+Ist das richtig? „Der Tisch“? ||| Is that correct? “Der Tisch”? ||| ይህ ትክክል ነው? „der Tisch“?
+Ich schreibe „Straße“ mit ß. Ist das richtig? ||| I write “Straße” with ß. Is that correct? ||| „Straße“ በ ß እጽፋለሁ። ይህ ትክክል ነው?
+## Was denkst du?
+Was denkst du? Gehen wir ins Kino? ||| What do you think? Shall we go to the cinema? ||| ምን ይመስልሃል? ሲኒማ እንሂድ?
+Das Sofa ist teuer. Was denkst du? ||| The sofa is expensive. What do you think? ||| ሶፋው ውድ ነው። ምን ይመስልሻል?
+## Denkst du, wir sollen …?
+Denkst du, wir sollen den Bus nehmen? ||| Do you think we should take the bus? ||| አውቶቡሱን ብንይዝ ይሻላል ብለህ ታስባለህ?
+Denkst du, wir sollen früher gehen? ||| Do you think we should go earlier? ||| ቀደም ብለን ብንሄድ ይሻላል ብለሽ ታስቢያለሽ?
+## Das stimmt.
+Deutsch ist schwer. – Das stimmt. ||| German is difficult. – That's right. ||| ጀርመንኛ ከባድ ነው። – ልክ ነው።
+Addis Abeba ist groß. – Das stimmt. ||| Addis Ababa is big. – That's right. ||| አዲስ አበባ ትልቅ ናት። – ልክ ነው።
+## Das stimmt nicht.
+Berlin ist im Süden. – Das stimmt nicht. ||| Berlin is in the south. – That's not right. ||| በርሊን በደቡብ ናት። – ልክ አይደለም።
+Das stimmt nicht! Ich bin nicht müde. ||| That's not right! I am not tired. ||| ልክ አይደለም! አልደከመኝም።
+## Das ist richtig.
+Zwei plus zwei ist vier? – Das ist richtig. ||| Two plus two is four? – That's correct. ||| ሁለት ሲደመር ሁለት አራት ነው? – ትክክል ነው።
+Das ist richtig, sehr gut! ||| That's correct, very good! ||| ትክክል ነው፤ በጣም ጥሩ!
+## Das ist nicht richtig.
+„Die Tisch“? Das ist nicht richtig. ||| “Die Tisch”? That's not correct. ||| „die Tisch“? ትክክል አይደለም።
+Das ist nicht richtig. Es heißt „der Tisch“. ||| That's not correct. It is “der Tisch”. ||| ትክክል አይደለም። „der Tisch“ ነው።
+## Natürlich.
+Hilfst du mir? – Natürlich. ||| Will you help me? – Of course. ||| ትረዳኛለህ? – በእርግጥ።
+Kommst du zur Party? – Natürlich! ||| Are you coming to the party? – Of course! ||| ወደ ግብዣው ትመጣለህ? – በእርግጥ!
+## Genau.
+Du kommst aus Gondar? – Genau. ||| You come from Gondar? – Exactly. ||| ከጎንደር ነህ? – በትክክል።
+Genau, das ist richtig. ||| Exactly, that is correct. ||| ልክ ነው፤ ትክክል ነው።
+## Nein, leider nicht.
+Hast du Zeit? – Nein, leider nicht. ||| Do you have time? – No, unfortunately not. ||| ጊዜ አለህ? – አይ፣ እንደ አለመታደል ሆኖ።
+Gibt es noch Kuchen? – Nein, leider nicht. ||| Is there still cake? – No, unfortunately not. ||| ኬክ አሁንም አለ? – አይ፣ እንደ አለመታደል ሆኖ።
+## Ich denke …
+Ich denke, es regnet morgen. ||| I think it will rain tomorrow. ||| ነገ የሚዘንብ ይመስለኛል።
+Ich denke, das ist richtig. ||| I think that is correct. ||| ያ ትክክል ይመስለኛል።
+## Unsinn!
+Deutsch ist zu schwer für mich? Unsinn! ||| German is too difficult for me? Nonsense! ||| ጀርመንኛ ለእኔ በጣም ከባድ ነው? ከንቱ ነገር!
+Unsinn! Du bist nicht zu alt. ||| Nonsense! You are not too old. ||| ከንቱ ነገር! በጣም አላረጀህም።
+## Quatsch!
+Quatsch! Das stimmt nicht. ||| Rubbish! That's not right. ||| ቀልድ ነው! ልክ አይደለም።
+Ich bin zu dick? Quatsch! ||| I am too fat? Rubbish! ||| በጣም ወፍሬያለሁ? ቀልድ ነው!
+
+# 6.12 How often?
+## immer
+Ich trinke immer Kaffee. ||| I always drink coffee. ||| ሁልጊዜ ቡና እጠጣለሁ።
+Er ist immer pünktlich. ||| He is always on time. ||| ሁልጊዜ በሰዓቱ ይደርሳል።
+Sie lacht immer. ||| She always laughs. ||| ሁልጊዜ ትስቃለች።
+## manchmal
+Manchmal regnet es. ||| Sometimes it rains. ||| አንዳንድ ጊዜ ይዘንባል።
+Ich gehe manchmal ins Kino. ||| I sometimes go to the cinema. ||| አንዳንድ ጊዜ ሲኒማ ቤት እሄዳለሁ።
+Manchmal bin ich müde. ||| Sometimes I am tired. ||| አንዳንድ ጊዜ ይደክመኛል።
+## selten
+Ich esse selten Fleisch. ||| I rarely eat meat. ||| አልፎ አልፎ ሥጋ እበላለሁ።
+Es schneit selten. ||| It rarely snows. ||| አልፎ አልፎ በረዶ ይጥላል።
+Wir sehen selten fern. ||| We rarely watch TV. ||| አልፎ አልፎ ቴሌቪዥን እናያለን።
+## nie
+Ich trinke nie Alkohol. ||| I never drink alcohol. ||| በፍጹም አልኮል አልጠጣም።
+Er ist nie spät. ||| He is never late. ||| መቼም አያረፍድም።
+Ich rauche nie. ||| I never smoke. ||| በፍጹም አላጨስም።
+## fast nie
+Ich esse fast nie Fisch. ||| I hardly ever eat fish. ||| እምብዛም ዓሣ አልበላም።
+Es regnet hier fast nie. ||| It hardly ever rains here. ||| እዚህ እምብዛም አይዘንብም።
+## jeden Tag
+Ich lerne jeden Tag Deutsch. ||| I learn German every day. ||| በየቀኑ ጀርመንኛ እማራለሁ።
+Wir trinken jeden Tag Kaffee. ||| We drink coffee every day. ||| በየቀኑ ቡና እንጠጣለን።
+## Wie oft …?
+Wie oft gehst du ins Kino? ||| How often do you go to the cinema? ||| ምን ያህል ጊዜ ሲኒማ ቤት ትሄዳለህ?
+Wie oft lernst du Deutsch? – Jeden Tag. ||| How often do you learn German? – Every day. ||| ምን ያህል ጊዜ ጀርመንኛ ትማራለህ? – በየቀኑ።
+## Ich koche oft.
+Ich koche oft für meine Familie. ||| I often cook for my family. ||| ብዙ ጊዜ ለቤተሰቤ ምግብ አበስላለሁ።
+Kochst du oft? – Ja, ich koche oft. ||| Do you often cook? – Yes, I often cook. ||| ብዙ ጊዜ ታበስላለህ? – አዎ፣ ብዙ ጊዜ ምግብ አበስላለሁ።
+## Ich tanze nie.
+Ich tanze nie. Ich bin zu schüchtern. ||| I never dance. I am too shy. ||| በፍጹም አልደንስም። በጣም አፍራለሁ።
+Tanzt du oft? – Nein, ich tanze nie. ||| Do you often dance? – No, I never dance. ||| ብዙ ጊዜ ትደንሳለህ? – አይ፣ በፍጹም አልደንስም።
+
+# 6.13 Compliments & opinions
+## Du kannst toll tanzen!
+Wow, du kannst toll tanzen! ||| Wow, you dance really well! ||| ዋው፣ በጣም ጥሩ ትደንሳለህ!
+Du kannst toll tanzen! Wo hast du das gelernt? ||| You dance really well! Where did you learn that? ||| በጣም ጥሩ ትደንሻለሽ! የት ተማርሽው?
+## Sie können super kochen!
+Das Essen ist lecker. Sie können super kochen! ||| The food is tasty. You are a great cook! ||| ምግቡ ጣፋጭ ነው። በጣም ጥሩ ምግብ ያበስላሉ!
+Danke für das Essen! Sie können super kochen! ||| Thanks for the meal! You are a great cook! ||| ስለ ምግቡ አመሰግናለሁ! በጣም ጥሩ ምግብ ያበስላሉ!
+## Vielen Dank!
+Vielen Dank für die Hilfe! ||| Many thanks for the help! ||| ስለ እርዳታው በጣም አመሰግናለሁ!
+Vielen Dank! Das ist sehr nett. ||| Many thanks! That is very kind. ||| በጣም አመሰግናለሁ! በጣም ደግ ነዎት።
+## Herzlichen Dank!
+Herzlichen Dank für das Geschenk! ||| Thank you so much for the present! ||| ስለ ስጦታው ከልብ አመሰግናለሁ!
+Herzlichen Dank für die Einladung! ||| Thank you so much for the invitation! ||| ስለ ግብዣው ከልብ አመሰግናለሁ!
+## Ich finde das toll.
+Du lernst Deutsch? Ich finde das toll. ||| You are learning German? I think that is great. ||| ጀርመንኛ እየተማርክ ነው? ይህ በጣም ጥሩ ይመስለኛል።
+Ich finde das toll, danke! ||| I think that is great, thanks! ||| ይህ በጣም ጥሩ ይመስለኛል፤ አመሰግናለሁ!
+## Ich finde das lustig.
+Der Film? Ich finde das lustig. ||| The film? I think that is funny. ||| ፊልሙ? ይህ አስቂኝ ይመስለኛል።
+Ich finde das lustig, aber er nicht. ||| I think that is funny, but he doesn't. ||| ይህ አስቂኝ ይመስለኛል፤ እሱ ግን አይስማማም።
+## Ich finde das komisch.
+Er kommt nicht? Ich finde das komisch. ||| He isn't coming? I think that is strange. ||| አይመጣም? ይህ እንግዳ ይመስለኛል።
+Ich finde das komisch. Das Essen schmeckt anders. ||| I think that is strange. The food tastes different. ||| ይህ እንግዳ ይመስለኛል። ምግቡ የተለየ ጣዕም አለው።
+## Ich finde das blöd.
+Der Bus kommt nicht. Ich finde das blöd. ||| The bus isn't coming. I think that is stupid. ||| አውቶቡሱ አይመጣም። ይህ ሞኝነት ይመስለኛል።
+Ich finde das blöd, aber es ist so. ||| I think that is stupid, but that's how it is. ||| ይህ ሞኝነት ይመስለኛል፤ ግን እንደዚያ ነው።
+## Das macht Spaß.
+Deutsch lernen? Das macht Spaß. ||| Learning German? That is fun. ||| ጀርመንኛ መማር? ይህ ያስደስታል።
+Wir tanzen zusammen. Das macht Spaß! ||| We dance together. That is fun! ||| አብረን እንደንሳለን። ይህ ያስደስታል!
+## wirklich
+Das ist wirklich gut. ||| That is really good. ||| ያ በእውነት ጥሩ ነው።
+Wirklich? Du kommst aus Gondar? ||| Really? You come from Gondar? ||| በእውነት? ከጎንደር ነህ?
+Ich bin wirklich müde. ||| I am really tired. ||| በእውነት ደክሞኛል።
+
+# 6.14 More free-time activities
+## singen
+Ich singe gern. ||| I like singing. ||| መዝፈን እወዳለሁ።
+Die Kinder singen ein Lied. ||| The children are singing a song. ||| ልጆቹ ዘፈን እየዘፈኑ ነው።
+Sie singt sehr schön. ||| She sings very beautifully. ||| በጣም በሚያምር ሁኔታ ትዘፍናለች።
+## backen
+Ich backe einen Kuchen. ||| I am baking a cake. ||| ኬክ እየጋገርኩ ነው።
+Meine Oma backt Brot. ||| My grandma bakes bread. ||| አያቴ ዳቦ ይጋግራሉ።
+Backst du gern? ||| Do you like baking? ||| መጋገር ትወዳለህ?
+## reiten
+Ich reite gern. ||| I like riding. ||| ፈረስ መጋለብ እወዳለሁ።
+Kannst du reiten? ||| Can you ride a horse? ||| ፈረስ መጋለብ ትችላለህ?
+Mein Opa reitet jeden Tag. ||| My grandpa rides every day. ||| አያቴ በየቀኑ ፈረስ ይጋልባሉ።
+## fotografieren
+Ich fotografiere gern. ||| I like taking photos. ||| ፎቶ ማንሳት እወዳለሁ።
+Darf ich hier fotografieren? ||| May I take photos here? ||| እዚህ ፎቶ ማንሳት እችላለሁ?
+Er fotografiert die Natur. ||| He photographs nature. ||| ተፈጥሮን ፎቶ ያነሣል።
+## Schach spielen
+Ich spiele gern Schach. ||| I like playing chess. ||| ቼዝ መጫወት እወዳለሁ።
+Spielst du mit mir Schach? ||| Will you play chess with me? ||| ከእኔ ጋር ቼዝ ትጫወታለህ?
+## Ski fahren
+Im Winter fahren wir Ski. ||| In winter we ski. ||| በክረምት የበረዶ ላይ ሸርተቴ እንጫወታለን።
+Kannst du Ski fahren? ||| Can you ski? ||| የበረዶ ላይ ሸርተቴ መጫወት ትችላለህ?
+## Rad fahren
+Ich fahre gern Rad. ||| I like cycling. ||| ብስክሌት መንዳት እወዳለሁ።
+Am Sonntag fahren wir Rad. ||| On Sunday we cycle. ||| እሑድ ብስክሌት እንነዳለን።
+## Tennis spielen
+Ich spiele am Samstag Tennis. ||| I play tennis on Saturday. ||| ቅዳሜ ቴኒስ እጫወታለሁ።
+Spielst du gern Tennis? ||| Do you like playing tennis? ||| ቴኒስ መጫወት ትወዳለህ?
+## in der Freizeit
+In der Freizeit lese ich. ||| In my free time I read. ||| በትርፍ ጊዜዬ አነባለሁ።
+Was machst du in der Freizeit? ||| What do you do in your free time? ||| በትርፍ ጊዜህ ምን ታደርጋለህ?
+## Mein Hobby ist Lesen.
+Mein Hobby ist Lesen. Ich lese jeden Tag. ||| My hobby is reading. I read every day. ||| የትርፍ ጊዜ ማሳለፊያዬ ማንበብ ነው። በየቀኑ አነባለሁ።
+Was ist dein Hobby? – Mein Hobby ist Lesen. ||| What is your hobby? – My hobby is reading. ||| የትርፍ ጊዜ ማሳለፊያህ ምንድን ነው? – የትርፍ ጊዜ ማሳለፊያዬ ማንበብ ነው።
+## Ich lese gern.
+Ich lese gern Bücher auf Amharisch. ||| I like reading books in Amharic. ||| በአማርኛ መጻሕፍትን ማንበብ እወዳለሁ።
+Liest du gern? – Ja, ich lese gern. ||| Do you like reading? – Yes, I like reading. ||| ማንበብ ትወዳለህ? – አዎ፣ ማንበብ እወዳለሁ።
