@@ -882,6 +882,7 @@ svg.icon {
   line-height: 1.05;
   letter-spacing: -0.025em;
   overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 .wv-word::first-letter { color: var(--brand); }
@@ -926,6 +927,78 @@ svg.icon {
 
 .wv-nav .btn:last-child { justify-self: end; }
 .wv-nav .btn { min-width: 150px; }
+
+/* Learn: previous and next sit on either side of the word card, halfway down, each with its word below. */
+.wv-stage {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr) 88px;
+  align-items: center;
+  gap: 4px;
+}
+.wv-stage .word-page { grid-column: 2; grid-row: 1; }
+.wv-arrow-prev { grid-column: 1; grid-row: 1; }
+.wv-arrow-next { grid-column: 3; grid-row: 1; }
+
+.wv-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+  border: 0;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.wv-arrow-disc {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--brand);
+  box-shadow: var(--shadow);
+  transition: transform var(--t) var(--ease), background var(--t) var(--ease), border-color var(--t) var(--ease), box-shadow var(--t) var(--ease);
+}
+.wv-arrow-disc svg { width: 28px; height: 28px; stroke-width: 2.6; transition: transform var(--t) var(--ease); }
+.wv-arrow-next .wv-arrow-disc { background: var(--brand-fill); border-color: var(--brand-hover); color: var(--brand-ink); box-shadow: var(--brand-lift), var(--shadow); }
+.wv-arrow-label {
+  max-width: 88px;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--muted);
+}
+.wv-arrow-next .wv-arrow-label { color: var(--brand); }
+
+.wv-arrow:hover .wv-arrow-disc { transform: translateY(-2px) scale(1.05); }
+.wv-arrow-prev:hover .wv-arrow-disc { background: var(--brand-soft); border-color: var(--brand); }
+.wv-arrow-next:hover .wv-arrow-disc { background: var(--brand-fill-hover); }
+.wv-arrow-prev:hover .wv-arrow-disc svg { transform: translateX(-2px); }
+.wv-arrow-next:hover .wv-arrow-disc svg { transform: translateX(2px); }
+.wv-arrow:active .wv-arrow-disc { transform: scale(0.94); box-shadow: var(--inset); }
+.wv-arrow:focus-visible { outline: none; }
+.wv-arrow:focus-visible .wv-arrow-disc { outline: 3px solid var(--focus); outline-offset: 3px; }
+.wv-arrow:disabled { cursor: not-allowed; opacity: 0.35; }
+.wv-arrow:disabled .wv-arrow-disc { transform: none; box-shadow: none; background: var(--surface); border-color: var(--border-strong); }
+.wv-arrow:disabled .wv-arrow-disc svg { transform: none; }
+
+/* Phones: no room beside the card, so the buttons sit on its edges and the card makes room for them. */
+@media (max-width: 640px) {
+  .wv-stage { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .wv-stage .word-page { grid-column: 1; padding-left: 56px; padding-right: 56px; }
+  .wv-arrow-prev, .wv-arrow-next { grid-column: 1; z-index: 1; width: 56px; gap: 4px; padding: 0; }
+  .wv-arrow-prev { justify-self: start; }
+  .wv-arrow-next { justify-self: end; }
+  .wv-arrow-disc { width: 44px; height: 44px; }
+  .wv-arrow-disc svg { width: 22px; height: 22px; }
+  .wv-arrow-label { max-width: 56px; font-size: var(--fs-xs); }
+}
 
 .turn-back { animation-name: page-in-back !important; transform-origin: right center !important; }
 

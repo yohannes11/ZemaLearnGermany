@@ -2102,22 +2102,27 @@ function renderWordPage(direction) {
   content.innerHTML = `
     <div class="narrow">
       <div class="fc-progress"><span>${T('Word {n} of {total}', { n: learnIndex + 1, total: words.length })}</span><div class="bar"><i style="width:${Math.round((learnIndex + 1) / words.length * 100)}%"></i></div></div>
-      <div class="panel word-page view-enter ${direction === 'back' ? 'turn-back' : ''}">
-        ${known ? `<span class="wv-learned">${icon('check')}${T('Learned')}</span>` : ''}
-        <span class="wv-section"></span>
-        <div class="wv-word"></div>
-        <div class="wv-listen"></div>
-        <div class="wv-meaning"></div>
-        <button class="btn btn-ghost" type="button" id="wv-speak">${icon('mic')}${T('Say it with {name}', { name: COACH[currentVoice].name })}</button>
-      </div>
-      <div class="wv-nav">
-        <button class="btn" type="button" id="wv-prev" ${learnIndex === 0 ? 'disabled' : ''}>← ${T('Previous')}</button>
-        <button class="btn btn-primary" type="button" id="wv-next">${learnIndex + 1 < words.length ? `${T('Next word')} →` : `${T('Finish chapter')} →`}</button>
+      <div class="wv-stage">
+        <div class="panel word-page view-enter ${direction === 'back' ? 'turn-back' : ''}">
+          ${known ? `<span class="wv-learned">${icon('check')}${T('Learned')}</span>` : ''}
+          <span class="wv-section"></span>
+          <div class="wv-word"></div>
+          <div class="wv-listen"></div>
+          <div class="wv-meaning"></div>
+          <button class="btn btn-ghost" type="button" id="wv-speak">${icon('mic')}${T('Say it with {name}', { name: COACH[currentVoice].name })}</button>
+        </div>
+        <button class="wv-arrow wv-arrow-prev" type="button" id="wv-prev" ${learnIndex === 0 ? 'disabled' : ''}>
+          <span class="wv-arrow-disc">${icon('chev-left')}</span><span class="wv-arrow-label">${T('Previous')}</span>
+        </button>
+        <button class="wv-arrow wv-arrow-next" type="button" id="wv-next">
+          <span class="wv-arrow-disc">${icon('chev-right')}</span><span class="wv-arrow-label">${learnIndex + 1 < words.length ? T('Next word') : T('Finish chapter')}</span>
+        </button>
       </div>
       <div class="kbd-hint"><kbd>←</kbd> <kbd>→</kbd> ${T('move between words')}</div>
     </div>`;
   content.querySelector('.wv-section').textContent = currentScope === 'all' ? `${section} · ${SECTION_TITLES[section]}` : T('German');
   content.querySelector('.wv-word').textContent = item.german;
+  content.querySelector('.wv-word').lang = 'de'; // long compounds break at German syllables, not mid-letter
   const picture = wordPicture(item, 'wv-pic');
   if (picture) content.querySelector('.wv-word').before(picture);
   const listen = listenButton(item.german);
