@@ -1,0 +1,63 @@
+# Why each answer is right, for the exercises of the Start unit. Read by tools/course_content.py.
+# question ||| English explanation ||| Amharic explanation
+# The question is the gap sentence with the answer in [brackets], or "prompt => answer".
+
+## g0-welcome
+Which one do you hear? => das Taxi ||| Taxi sounds as in English; Kaffee starts with k, Hotel with h. ||| Taxi ልክ እንደ እንግሊዝኛው ይሰማል፤ Kaffee በk፣ Hotel ደግሞ በh ይጀምራል።
+Which one do you hear? => Ich lerne Deutsch. ||| You hear the word Deutsch: Ich lerne Deutsch = I am learning German. ||| Deutsch የሚለውን ቃል ይሰማሉ፦ Ich lerne Deutsch = ጀርመንኛ እየተማርኩ ነው።
+Build the sentence. => Ich lerne Deutsch. ||| Ich first, then the verb lerne, then what you learn. ||| መጀመሪያ Ich፣ ከዚያ ግሡ lerne፣ ከዚያ የሚማሩት ነገር።
+Build the sentence. => Ich verstehe das nicht. ||| nicht comes at the end: Ich verstehe das nicht. ||| nicht መጨረሻ ላይ ይመጣል፦ Ich verstehe das nicht።
+
+## g0-pairs
+dr[ei] ||| ei sounds like "eye": drei = three. ||| ei እንደ «አይ» ይነበባል፦ drei = ሦስት።
+v[ie]r ||| ie is a long "ee": vier = four. ||| ie ረጅም «ኢ» ነው፦ vier = አራት።
+s[ie]ben ||| ie is a long "ee": sieben = seven. ||| ie ረጅም «ኢ» ነው፦ sieben = ሰባት።
+n[ei]n ||| ei sounds like "eye": nein = no. ||| ei እንደ «አይ» ይነበባል፦ nein = አይ።
+m[ei]n ||| ei sounds like "eye": mein = my. ||| ei እንደ «አይ» ይነበባል፦ mein = የእኔ።
+die Z[ei]t ||| ei sounds like "eye": die Zeit = the time. ||| ei እንደ «አይ» ይነበባል፦ die Zeit = ጊዜ።
+die L[ie]be ||| ie is a long "ee": die Liebe = the love. ||| ie ረጅም «ኢ» ነው፦ die Liebe = ፍቅር።
+h[eu]te ||| eu sounds like "oy": heute = today. ||| eu እንደ «ኦይ» ይነበባል፦ heute = ዛሬ።
+das H[au]s ||| au sounds like "ow" in "how": das Haus = the house. ||| au እንደ «አው» ይነበባል፦ das Haus = ቤት።
+n[eu]n ||| eu sounds like "oy": neun = nine. ||| eu እንደ «ኦይ» ይነበባል፦ neun = ዘጠኝ።
+die Fr[au] ||| au sounds like "ow" in "how": die Frau = the woman. ||| au እንደ «አው» ይነበባል፦ die Frau = ሴት።
+
+## g0-consonants
+How does the w in "Wasser" sound? => like English v ||| German w sounds like English v: Wasser sounds like "vasser". ||| የጀርመንኛ w እንደ እንግሊዝኛ v («ቨ») ይሰማል፦ Wasser «ቫሰር» ይባላል።
+How does the w in "Wein" sound? => like English v ||| German w sounds like English v: Wein sounds like "vine". ||| የጀርመንኛ w እንደ እንግሊዝኛ v («ቨ») ይሰማል፦ Wein «ቫይን» ይባላል።
+How does the v in "Vater" sound? => like English f ||| German v usually sounds like f: Vater sounds like "fahter". ||| የጀርመንኛ v ብዙውን ጊዜ እንደ f («ፈ») ይሰማል፦ Vater «ፋተር» ይባላል።
+How does the v in "vier" sound? => like English f ||| German v usually sounds like f: vier sounds like "feer". ||| የጀርመንኛ v ብዙውን ጊዜ እንደ f («ፈ») ይሰማል፦ vier «ፊር» ይባላል።
+How does the z in "Zeit" sound? => like "ts" ||| German z sounds like "ts": Zeit sounds like "tsite". ||| የጀርመንኛ z እንደ «ትስ» ይሰማል፦ Zeit «ትሳይት» ይባላል።
+How does the z in "zwei" sound? => like "ts" ||| German z sounds like "ts": zwei sounds like "tsvy". ||| የጀርመንኛ z እንደ «ትስ» ይሰማል፦ zwei «ትስቫይ» ይባላል።
+How does the j in "ja" sound? => like English y ||| German j sounds like English y: ja sounds like "yah". ||| የጀርመንኛ j እንደ እንግሊዝኛ y («የ») ይሰማል፦ ja «ያ» ይባላል።
+How does the ß in "Straße" sound? => like "ss" ||| ß is a sharp double s: Straße sounds like "shtrahsse". ||| ß ጠንካራ ድርብ s ነው፦ Straße «ሽትራሰ» ይባላል።
+
+## g0-sch-ch
+How do you say the chs in "sechs"? => ks ||| chs together sounds like ks: sechs sounds like "zeks". ||| chs አንድ ላይ እንደ «ክስ» ይሰማል፦ sechs «ዜክስ» ይባላል።
+
+## g0-numbers
+Which one do you hear? => 2 ||| zwei (2) starts with "tsv"; drei (3) starts with dr. ||| zwei (2) በ«ትስቭ» ይጀምራል፤ drei (3) በdr ይጀምራል።
+Which one do you hear? => 3 ||| drei (3) starts with dr; zwei (2) starts with "tsv". ||| drei (3) በdr ይጀምራል፤ zwei (2) በ«ትስቭ» ይጀምራል።
+Which one do you hear? => 6 ||| sechs (6) ends in "ks"; sieben (7) has two syllables. ||| sechs (6) በ«ክስ» ያልቃል፤ sieben (7) ሁለት ቀለሞች አሉት።
+Which one do you hear? => 7 ||| sieben (7) has two syllables: sie-ben. sechs (6) has one. ||| sieben (7) ሁለት ቀለሞች አሉት፦ sie-ben። sechs (6) አንድ ብቻ ነው።
+Which one do you hear? => 11 ||| elf (11) is short and starts with e; zwölf (12) starts with "tsv". ||| elf (11) አጭር ነው፣ በe ይጀምራል፤ zwölf (12) በ«ትስቭ» ይጀምራል።
+Which one do you hear? => 12 ||| zwölf (12) starts with "tsv" and has ö; elf (11) starts with e. ||| zwölf (12) በ«ትስቭ» ይጀምራል፣ ö አለው፤ elf (11) በe ይጀምራል።
+Which one do you hear? => 9 ||| neun (9) has eu, said "oy"; zehn (10) starts with "ts". ||| neun (9) eu («ኦይ») አለው፤ zehn (10) በ«ትስ» ይጀምራል።
+drei + vier = [sieben] ||| 3 + 4 = 7, and 7 is sieben. ||| 3 + 4 = 7፤ 7 ደግሞ sieben ነው።
+zehn + zwei = [zwölf] ||| 10 + 2 = 12, and 12 is zwölf. ||| 10 + 2 = 12፤ 12 ደግሞ zwölf ነው።
+acht − fünf = [drei] ||| 8 − 5 = 3, and 3 is drei. ||| 8 − 5 = 3፤ 3 ደግሞ drei ነው።
+neun + zwei = [elf] ||| 9 + 2 = 11, and 11 is elf. ||| 9 + 2 = 11፤ 11 ደግሞ elf ነው።
+eins + drei = [vier] ||| 1 + 3 = 4, and 4 is vier. ||| 1 + 3 = 4፤ 4 ደግሞ vier ነው።
+
+## g0-alphabet
+Which one do you hear? => Selam ||| S-E-L-A-M: e after the S, a before the M. ||| S-E-L-A-M፦ ከS በኋላ e፣ ከM በፊት a።
+Which one do you hear? => Dawit ||| D-A-W-I-T: a German W ("vay") and a T at the end. ||| D-A-W-I-T፦ የጀርመንኛ W («ቬ») እና መጨረሻ ላይ T።
+Which one do you hear? => Tigist ||| T-I-G-I-S-T: the letter I comes twice. ||| T-I-G-I-S-T፦ I የሚለው ፊደል ሁለት ጊዜ ይመጣል።
+Which one do you hear? => Yonas ||| The name starts with Y ("üpsilon"); a J would be "jot". ||| ስሙ በY («ዩፕሲሎን») ይጀምራል፤ J ቢሆን «ዮት» ይባል ነበር።
+Which one do you hear? => Meron ||| M-E-R-O-N: first E, then O. ||| M-E-R-O-N፦ መጀመሪያ E፣ ከዚያ O።
+Which one do you hear? => Hawassa ||| H-A-W-A-S-S-A: it starts with H and has a double S. ||| H-A-W-A-S-S-A፦ በH ይጀምራል፤ ድርብ S አለው።
+How do you say the letter J? => jot ||| J is called "jot" and sounds like English y. ||| J «ዮት» ይባላል፤ እንደ እንግሊዝኛ y ይሰማል።
+How do you say the letter V? => fau ||| V is called "fau", like the f sound it usually makes. ||| V «ፋው» ይባላል፤ ብዙውን ጊዜ እንደሚያሰማው የf ድምፅ።
+How do you say the letter W? => we ||| W is called "we", said "vay". ||| W «ቬ» ይባላል።
+How do you say the letter Z? => zett ||| Z is called "zett", said "tset". ||| Z «ትሴት» ይባላል።
+How do you say the letter I? => i ||| I is called "i", like the "ee" in "see". ||| I «ኢ» ይባላል።
+Write what you hear. => Hanna ||| H-A-N-N-A: Hanna has a double N. ||| H-A-N-N-A፦ Hanna ድርብ N አለው።

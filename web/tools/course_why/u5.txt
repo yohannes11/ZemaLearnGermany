@@ -1,0 +1,76 @@
+# Why each answer is right, for the exercises of Unit 5. Read by tools/course_content.py.
+# question ||| English explanation ||| Amharic explanation (none for a German sentence quoted from a reading text)
+
+## g5-time
+9:15 → Es ist [Viertel nach neun]. ||| Viertel is a quarter of an hour; nach = past: a quarter past nine. ||| Viertel ሩብ ሰዓት ነው፤ nach = አልፎ፦ ከዘጠኝ ሩብ አልፎ።
+9:45 → Es ist [Viertel vor zehn]. ||| vor = to: a quarter to ten. ||| vor = ጉዳይ፦ ለአሥር ሩብ ጉዳይ።
+9:05 → Es ist [fünf nach neun]. ||| Five minutes past nine: fünf nach neun. ||| ከዘጠኝ አምስት ደቂቃ አልፎ፦ fünf nach neun።
+9:55 → Es ist [fünf vor zehn]. ||| Five minutes to ten: fünf vor zehn. ||| ለአሥር አምስት ደቂቃ ጉዳይ፦ fünf vor zehn።
+9:25 → Es ist [fünf vor halb zehn]. ||| 9:30 is halb zehn, and 9:25 is five minutes before it. ||| 9:30 halb zehn ነው፤ 9:25 ደግሞ ከእሱ አምስት ደቂቃ በፊት ነው።
+9:35 → Es ist [fünf nach halb zehn]. ||| 9:30 is halb zehn, and 9:35 is five minutes after it. ||| 9:30 halb zehn ነው፤ 9:35 ደግሞ ከእሱ አምስት ደቂቃ በኋላ ነው።
+7:00 → Es ist [sieben Uhr]. ||| A full hour: the number, then Uhr. ||| ሙሉ ሰዓት፦ ቁጥሩ፣ ከዚያ Uhr።
+
+## g5-word-order
+At 8 he goes to work. => Um 8 Uhr geht er zur Arbeit. ||| The verb comes second: after Um 8 Uhr comes geht, then er. ||| ግሡ ሁለተኛ ይመጣል፦ ከUm 8 Uhr በኋላ geht፣ ከዚያ er።
+Today I am cooking. => Heute koche ich. ||| The verb comes second: after Heute comes koche, then ich. ||| ግሡ ሁለተኛ ይመጣል፦ ከHeute በኋላ koche፣ ከዚያ ich።
+On Monday I play football. => Am Montag spiele ich Fußball. ||| The verb comes second: after Am Montag comes spiele, then ich. ||| ግሡ ሁለተኛ ይመጣል፦ ከAm Montag በኋላ spiele፣ ከዚያ ich።
+In the evening we watch TV. => Am Abend sehen wir fern. ||| The verb comes second: after Am Abend comes sehen, then wir. ||| ግሡ ሁለተኛ ይመጣል፦ ከAm Abend በኋላ sehen፣ ከዚያ wir።
+Tomorrow she works. => Morgen arbeitet sie. ||| The verb comes second: after Morgen comes arbeitet, then sie. ||| ግሡ ሁለተኛ ይመጣል፦ ከMorgen በኋላ arbeitet፣ ከዚያ sie።
+I work from 8 to 2. => Ich arbeite von 8 bis 2 Uhr. ||| The verb comes second: Ich, then arbeite. ||| ግሡ ሁለተኛ ይመጣል፦ Ich፣ ከዚያ arbeite።
+At noon we eat lunch. => Um 12 Uhr essen wir Mittagessen. ||| The verb comes second: after Um 12 Uhr comes essen, then wir. ||| ግሡ ሁለተኛ ይመጣል፦ ከUm 12 Uhr በኋላ essen፣ ከዚያ wir።
+Today I have time. => Heute habe ich Zeit. ||| The verb comes second: after Heute comes habe, then ich. ||| ግሡ ሁለተኛ ይመጣል፦ ከHeute በኋላ habe፣ ከዚያ ich።
+
+## g5-separable
+aufstehen · ich · um 7 Uhr => Ich stehe um 7 Uhr auf. ||| stehe in second place, and the prefix auf goes to the end. ||| stehe በሁለተኛ ቦታ፤ መነሻው auf ደግሞ ወደ መጨረሻ ይሄዳል።
+anrufen · er · seine Mutter => Er ruft seine Mutter an. ||| ruft in second place, and the prefix an goes to the end. ||| ruft በሁለተኛ ቦታ፤ መነሻው an ደግሞ ወደ መጨረሻ ይሄዳል።
+einkaufen · wir · am Samstag => Wir kaufen am Samstag ein. ||| kaufen in second place, and the prefix ein goes to the end. ||| kaufen በሁለተኛ ቦታ፤ መነሻው ein ደግሞ ወደ መጨረሻ ይሄዳል።
+fernsehen · du · am Abend => Du siehst am Abend fern. ||| siehst in second place, and the prefix fern goes to the end. ||| siehst በሁለተኛ ቦታ፤ መነሻው fern ደግሞ ወደ መጨረሻ ይሄዳል።
+aufmachen · sie · das Fenster => Sie macht das Fenster auf. ||| macht in second place, and the prefix auf goes to the end. ||| macht በሁለተኛ ቦታ፤ መነሻው auf ደግሞ ወደ መጨረሻ ይሄዳል።
+aufräumen · ihr · das Zimmer => Ihr räumt das Zimmer auf. ||| räumt in second place, and the prefix auf goes to the end. ||| räumt በሁለተኛ ቦታ፤ መነሻው auf ደግሞ ወደ መጨረሻ ይሄዳል።
+zumachen · ich · die Tür => Ich mache die Tür zu. ||| mache in second place, and the prefix zu goes to the end. ||| mache በሁለተኛ ቦታ፤ መነሻው zu ደግሞ ወደ መጨረሻ ይሄዳል።
+anziehen · er · die Jacke => Er zieht die Jacke an. ||| zieht in second place, and the prefix an goes to the end. ||| zieht በሁለተኛ ቦታ፤ መነሻው an ደግሞ ወደ መጨረሻ ይሄዳል።
+
+## g5-vowel
+Du [fährst] zur Arbeit. ||| du: a → ä, fährst. ||| du፦ a → ä፣ fährst።
+Er [schläft] bis 9 Uhr. ||| er: a → ä, schläft. ||| er፦ a → ä፣ schläft።
+Wir [fahren] nach Hause. ||| wir has no umlaut: fahren. ||| wir ኡምላውት የለውም፦ fahren።
+Sie [wäscht] die Wäsche. ||| sie (she): a → ä, wäscht. ||| sie (እሷ)፦ a → ä፣ wäscht።
+Ich [fahre] mit dem Bus. ||| ich has no umlaut: fahre. ||| ich ኡምላውት የለውም፦ fahre።
+[Schläfst] du gut? ||| du: a → ä, schläfst; in a yes/no question the verb comes first. ||| du፦ a → ä፣ schläfst፤ በአዎ/አይ ጥያቄ ግሡ መጀመሪያ ይመጣል።
+Mein Vater [fährt] ein Auto. ||| mein Vater is like er: a → ä, fährt. ||| mein Vater እንደ er ነው፦ a → ä፣ fährt።
+
+## g5-am-um
+[Am] Montag habe ich Deutschkurs. ||| Days take am: am Montag. ||| ቀናት am ይወስዳሉ፦ am Montag።
+Der Kurs beginnt [um] neun Uhr. ||| Clock times take um: um neun Uhr. ||| የሰዓት ጊዜዎች um ይወስዳሉ፦ um neun Uhr።
+[Am] Abend sehe ich fern. ||| Parts of the day take am: am Abend. ||| የቀኑ ክፍሎች am ይወስዳሉ፦ am Abend።
+[In der] Nacht schlafe ich. ||| The night is the exception: in der Nacht. ||| ሌሊት የተለየ ነው፦ in der Nacht።
+Wir treffen uns [um] halb vier. ||| Clock times take um: um halb vier. ||| የሰዓት ጊዜዎች um ይወስዳሉ፦ um halb vier።
+Ich habe [im] Mai Geburtstag. ||| Months take im: im Mai. ||| ወሮች im ይወስዳሉ፦ im Mai።
+Was machst du [am] Wochenende? ||| The weekend takes am: am Wochenende. ||| ቅዳሜና እሁድ am ይወስዳል፦ am Wochenende።
+[Im] Sommer ist es heiß. ||| Seasons take im: im Sommer. ||| ወቅቶች im ይወስዳሉ፦ im Sommer።
+Build the sentence. => Am Samstag gehe ich ins Kino. ||| Am Samstag first, the verb gehe second, then ich. ||| መጀመሪያ Am Samstag፣ ግሡ gehe ሁለተኛ፣ ከዚያ ich።
+Build the sentence. => Der Film beginnt um acht Uhr. ||| Der Film first, the verb beginnt second, then um + the time. ||| መጀመሪያ Der Film፣ ግሡ beginnt ሁለተኛ፣ ከዚያ um + ሰዓቱ።
+Build the sentence. => Am Abend habe ich keine Zeit. ||| Am Abend first, the verb habe second, then ich. ||| መጀመሪያ Am Abend፣ ግሡ habe ሁለተኛ፣ ከዚያ ich።
+on Friday at seven => am Freitag um sieben ||| Days take am, clock times take um. ||| ቀናት am፣ የሰዓት ጊዜዎች um ይወስዳሉ።
+
+## g5-plans
+Your friend asks: Gehen wir ins Kino? You want to go. => Ja, gern! Gute Idee! ||| Ja, gern! Gute Idee! = Yes, gladly! Good idea! ||| Ja, gern! Gute Idee! = አዎ፣ በደስታ! ጥሩ ሐሳብ!
+You are not free. How do you say no politely? => Tut mir leid, ich habe leider keine Zeit. ||| Tut mir leid (I'm sorry) and leider (unfortunately) make the no polite. "Nein. Keine Lust." sounds rude. ||| Tut mir leid (አዝናለሁ) እና leider (እንደ አለመታደል) «አይ»ን ትሑት ያደርጋሉ። «Nein. Keine Lust.» ባለጌ ይመስላል።
+You don't know yet. => Das weiß ich noch nicht. ||| ich goes with weiß, with no ending. ||| ich ከweiß ጋር ይሄዳል፣ ያለ መጨረሻ።
+How do you suggest going to a café? => Gehen wir ins Café? ||| To suggest something, the verb comes first, then wir: Gehen wir …? ||| አንድ ነገር ለማቅረብ ግሡ መጀመሪያ፣ ከዚያ wir ይመጣል፦ Gehen wir …?
+Ich [weiß] es nicht. ||| ich goes with weiß, with no ending. ||| ich ከweiß ጋር ይሄዳል፣ ያለ መጨረሻ።
+[Weißt] du, wo das Kino ist? ||| du goes with weißt. ||| du ከweißt ጋር ይሄዳል።
+Wir [wissen] das schon. ||| wir goes with wissen. ||| wir ከwissen ጋር ይሄዳል።
+Hast du am Freitag [Zeit]? ||| Zeit haben = to have time, to be free. ||| Zeit haben = ጊዜ መኖር፣ ነፃ መሆን።
+[Lust] auf Kino? ||| Lust auf …? = Do you fancy …? ||| Lust auf …? = … ትፈልጋለህ/ትፈልጊያለሽ?
+Put the conversation in order. => Hast du heute Abend Zeit? Ja. Was machen wir? Gehen wir ins Konzert? Gute Idee! Wann denn? Um acht Uhr. Okay, bis dann! ||| Ask if the other is free, suggest something, agree, fix the time, say goodbye. ||| ሌላው ነፃ መሆኑን መጠየቅ፣ ሐሳብ ማቅረብ፣ መስማማት፣ ሰዓቱን መወሰን፣ መሰናበት።
+Put the conversation in order. => Lust auf Kaffee? Tut mir leid, heute habe ich keine Zeit. Und morgen? Morgen kann ich. Am Nachmittag? Ja, um drei Uhr! ||| A suggestion, a polite no, another day, then the time. ||| ሐሳብ፣ ትሑት «አይ»፣ ሌላ ቀን፣ ከዚያ ሰዓቱ።
+Build the question. => Hast du am Samstag Zeit? ||| Yes/no question: the verb comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ መጀመሪያ ይመጣል።
+
+## g5-reading
+Selam möchte ins Museum gehen. => richtig ||| Selam: Hast du heute Nachmittag Zeit? Gehen wir ins Museum?
+Selam und Dawit gehen am Abend ins Kino. => richtig ||| Selam: Lust auf Kino? Dawit: Gute Idee!
+Wann beginnt der Film? => um Viertel nach acht ||| The text says: Der Film beginnt um Viertel nach acht. ||| ጽሑፉ እንዲህ ይላል፦ Der Film beginnt um Viertel nach acht።
+Wann holt Dawit Selam ab? => um halb acht ||| The text says: Ich hole dich um halb acht ab. ||| ጽሑፉ እንዲህ ይላል፦ Ich hole dich um halb acht ab።
+Was macht Dawit am Nachmittag? => Er arbeitet. ||| The text says: Am Nachmittag arbeite ich. ||| ጽሑፉ እንዲህ ይላል፦ Am Nachmittag arbeite ich።
+Am Abend habe ich Zeit. => I am free in the evening. ||| am Abend = in the evening; Zeit haben = to have time, to be free. ||| am Abend = ማታ፤ Zeit haben = ጊዜ መኖር፣ ነፃ መሆን።

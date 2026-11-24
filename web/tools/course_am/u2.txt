@@ -260,6 +260,14 @@ Your parents' daughter (not you) is your … ||| የወላጆችዎ ሴት ል�
 Your uncle's daughter is your … ||| የአጎትዎ ሴት ልጅ ለእርስዎ … ናት።
 Your aunt's son is your … ||| የአክስትዎ ወንድ ልጅ ለእርስዎ … ነው።
 
+Your father's father. ||| የአባትዎ አባት።
+Your father's mother. ||| የአባትዎ እናት።
+Your father's sister. ||| የአባትዎ እህት።
+The man married to your mother. ||| ከእናትዎ ጋር የተጋባው ሰው።
+The woman married to your father. ||| ከአባትዎ ጋር የተጋባችው ሴት።
+Your father's brother. ||| የአባትዎ ወንድም።
+Your parents' other son. ||| የወላጆችዎ ሌላው ወንድ ልጅ።
+Your parents' daughter. ||| የወላጆችዎ ሴት ልጅ።
 ## g2-reading
 now ||| አሁን
 as an engineer ||| እንደ መሐንዲስ

@@ -35,6 +35,14 @@ class Palette {
   Color get greenSoft => t.greenSoft;
   Color get red => t.red;
   Color get redSoft => t.redSoft;
+  Color get der => t.der;
+  Color get derSoft => t.derSoft;
+  Color get die => t.die;
+  Color get dieSoft => t.dieSoft;
+  Color get das => t.das;
+  Color get dasSoft => t.dasSoft;
+  Color get plural => t.plural;
+  Color get pluralSoft => t.pluralSoft;
   Color get onImage => Colors.white;
 
   static const light = Palette(lightTokens, xp: Color(0xFFD97706), dark: false);

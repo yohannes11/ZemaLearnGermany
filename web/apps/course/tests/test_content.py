@@ -72,10 +72,43 @@ class CourseContentTests(SimpleTestCase):
     def test_hover_meanings_cover_every_word(self):
         """static/core/hover-words.json (pointing at German on any page) is rebuilt with the course."""
         entries = json.loads((STATIC / "core" / "hover-words.json").read_text(encoding="utf-8"))
-        known = {german for german, _, _ in entries}
+        known = {entry[0] for entry in entries}
         words = {w["german"] for u in self.course["units"] for s in u["sections"] for w in s["words"]}
         self.assertEqual(sorted(words - known), [], "run tools/course_content.py")
-        self.assertTrue(all(english for _, english, _ in entries))
+        self.assertTrue(all(entry[1] for entry in entries))
+
+    def test_every_exercise_explains_its_answer(self):
+        """Every lesson question says why its answer is right (in course_content.py or tools/course_why/), and
+        every person on the family tree says who they are to you."""
+        missing = [f"{g['key']}: {item.get('text') or item.get('prompt') or item.get('before')} → {item['answer']}"
+                   for u in self.course["units"] for g in u["grammar"] if g.get("quiz")
+                   for item in g["quiz"]["items"] if not item.get("why")]
+        self.assertEqual(missing, [], "add an explanation in tools/course_why/u*.txt")
+        trees = [g["tree"] for u in self.course["units"] for g in u["grammar"] if g.get("tree")]
+        self.assertTrue(trees)
+        for tree in trees:
+            self.assertEqual([p["key"] for p in tree["people"] if not p.get("me") and not p.get("why")], [])
+
+    def test_noun_genders(self):
+        """Nouns carry the gender of their article (der, die, das, or plural), for their colours; the pointing
+        tooltip (hover-words.json) has the same."""
+        words = [w for u in self.course["units"] for s in u["sections"] for w in s["words"]]
+        for word in words:
+            gender = word.get("gender")
+            if gender is None:
+                continue
+            self.assertEqual(word["pos"], "noun", word["german"])
+            article = "die" if gender == "plural" else gender
+            self.assertTrue(word["german"].startswith(article + " "), word["german"])
+            self.assertEqual(gender == "plural", "(pl." in word["english"], word["german"])
+        by_word = {w["german"]: w.get("gender") for w in words}
+        self.assertEqual(by_word["der Kaffee"], "der")
+        self.assertEqual(by_word["die Eltern"], "plural")
+        self.assertIsNone(by_word["die Speise, das Essen"])
+        entries = json.loads((STATIC / "core" / "hover-words.json").read_text(encoding="utf-8"))
+        for entry in entries:
+            if len(entry) > 3:
+                self.assertIn(entry[3], ("der", "die", "das", "plural"), entry[0])
 
     def test_amharic_keeps_markup_and_german(self):
         am = load_js_object("course-am.js")

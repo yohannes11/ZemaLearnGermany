@@ -24,7 +24,6 @@ class Question {
     this.listen = false,
     this.shown,
     this.why,
-    this.whyIfWrong,
     this.options = const [],
     this.label,
     this.before,
@@ -51,9 +50,6 @@ class Question {
   /// Shown as the answer afterwards (the item's `show`, else `say`).
   final String? shown;
   final String? why;
-
-  /// An explanation shown only after a wrong answer (verb endings).
-  final String? whyIfWrong;
   final List<String> options;
   final String Function(String option)? label;
 
@@ -101,6 +97,7 @@ Question? _amharicChoice(QuizItem item, Unit unit) {
     label: (o) => o,
     say: item.say,
     shown: right,
+    why: item.why == null || item.why!.isEmpty ? null : course.t(item.why!),
     answerLabel: T('Answer'),
   );
 }
@@ -198,6 +195,8 @@ List<Question> reviewQuestions(Unit unit) {
   for (var i = 0; i < reviewSize - fromLessons.length && i < words.length; i++) {
     final w = words[i];
     final others = shuffle(words.where((o) => o.german != w.german && course.meaning(o) != course.meaning(w))).take(2).toList();
+    // As on the website: the explanation pairs the word with its meaning.
+    final why = '${w.german} = ${course.meaning(w)}';
     fromWords.add(i.isOdd
         ? Question(
             type: QuestionType.choice,
@@ -209,6 +208,7 @@ List<Question> reviewQuestions(Unit unit) {
             say: w.german,
             answerLabel: T('The word'),
             shown: w.german,
+            why: why,
           )
         : Question(
             type: QuestionType.choice,
@@ -219,6 +219,7 @@ List<Question> reviewQuestions(Unit unit) {
             label: (o) => o,
             say: w.german,
             answerLabel: T('Correct form'),
+            why: why,
           ));
   }
   return shuffle([...fromLessons, ...fromWords]);
@@ -296,7 +297,7 @@ List<Question> customQuestions(String kind) {
           label: (o) => '-$o',
           say: '$p ${v.stem}$ending',
           answerLabel: T('Correct form'),
-          whyIfWrong: p == 'du' && ending == 't'
+          why: p == 'du' && ending == 't'
               ? T('The stem ends in ß, so du only adds -t.')
               : T('{who} always takes -{ending}.', {'who': p, 'ending': ending}),
         ));

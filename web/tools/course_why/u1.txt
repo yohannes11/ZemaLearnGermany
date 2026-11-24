@@ -1,0 +1,33 @@
+# Why each answer is right, for the exercises of Unit 1. Read by tools/course_content.py.
+# question ||| English explanation ||| Amharic explanation (none for a German sentence quoted from a reading text)
+
+## g1-word-order
+Build the question. => Woher kommst du? ||| W-word first, then the verb. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ።
+Build the question. => Wie heißen Sie? ||| W-word first, then the verb. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ።
+Build the sentence. => Ich komme aus Äthiopien. ||| In a statement the verb comes second: Ich, then komme. ||| በዓረፍተ ነገር ግሡ ሁለተኛ ይመጣል፦ Ich፣ ከዚያ komme።
+Build the sentence. => Das ist Dawit. ||| In a statement the verb comes second: Das, then ist. ||| በዓረፍተ ነገር ግሡ ሁለተኛ ይመጣል፦ Das፣ ከዚያ ist።
+Build the question. => Wer ist das? ||| W-word first, then the verb. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ።
+Build the question. => Kommst du aus Kenia? ||| Yes/no question: the verb comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ መጀመሪያ ይመጣል።
+Build the question. => Wo wohnst du? ||| W-word first, then the verb. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ።
+Build the question. => Lernst du auch Deutsch? ||| Yes/no question: the verb comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ መጀመሪያ ይመጣል።
+I come from Ethiopia. => Ich komme aus Äthiopien. ||| ich goes with komme, and "from" is aus. ||| ich ከkomme ጋር ይሄዳል፤ «ከ» ደግሞ aus ነው።
+What is your name? (informal) => Wie heißt du? ||| Informal is du: du heißt (heiß + st, with one s). ||| ቅርበት ያለው du ነው፦ du heißt (heiß + st፣ አንድ s ብቻ)።
+Woher kommen Sie? => Where are you from? ||| Woher = where from; Sie is the polite "you". ||| Woher = ከየት፤ Sie የአክብሮት «እርስዎ» ነው።
+
+## g1-du-sie
+Woher [kommen] Sie? ||| Sie (formal) takes the -en form: kommen. ||| Sie (የአክብሮት) የ-en ቅርጹን ይወስዳል፦ kommen።
+Woher [kommst] du? ||| du takes -st: kommst. ||| du -st ይወስዳል፦ kommst።
+Wer [sind] Sie? ||| Sie (formal) goes with sind. ||| Sie (የአክብሮት) ከsind ጋር ይሄዳል።
+Wie geht es [Ihnen]? ||| Formal: Wie geht es Ihnen? To a friend: Wie geht es dir? ||| በአክብሮት፦ Wie geht es Ihnen? ለጓደኛ፦ Wie geht es dir?
+Gut, danke. Und [dir]? ||| To a friend: Und dir? (Ihnen is formal.) ||| ለጓደኛ፦ Und dir? (Ihnen የአክብሮት ነው።)
+Put the conversation in order. => Guten Tag! Ich heiße Abebe Tesfaye. Guten Tag, Herr Tesfaye. Ich bin Anna Weber. Freut mich, Frau Weber. Woher kommen Sie? Ich komme aus Deutschland. Und Sie? Ich komme aus Äthiopien. ||| A polite first meeting with Sie: greet and say your name, answer with Herr or Frau, then ask where the other person is from. ||| በSie የሚደረግ የአክብሮት የመጀመሪያ ትውውቅ፦ ሰላምታና ስም፣ በHerr ወይም Frau መመለስ፣ ከዚያ ከየት እንደመጡ መጠየቅ።
+Put the conversation in order. => Hallo! Ich bin Meron. Und du? Hi, Meron! Ich heiße Jonas. Woher kommst du, Jonas? Aus Österreich. Und du? Ich komme aus Eritrea. ||| Classmates use du: hello and names first, then where each one is from. ||| የክፍል ጓደኞች du ይጠቀማሉ፦ መጀመሪያ ሰላምታና ስሞች፣ ከዚያ እያንዳንዱ ከየት እንደመጣ።
+
+## g1-reading
+Frau Wagner kommt aus Hamburg. => richtig ||| Sie kommt aus Deutschland, aus Hamburg.
+Dawit kommt aus Bahir Dar. => richtig ||| Dawit kommt aus Bahir Dar.
+Dawit lernt Deutsch für die Arbeit. => richtig ||| Dawit sagt: „Ich lerne Deutsch für die Arbeit.“
+Wer ist Frau Wagner? => die Kursleiterin ||| The text says: Die Kursleiterin heißt Frau Wagner. ||| ጽሑፉ እንዲህ ይላል፦ Die Kursleiterin heißt Frau Wagner።
+Was sagt Meron? => Noch einmal, bitte! ||| The text says: Meron fragt: „Wie bitte? Noch einmal, bitte!“ ||| ጽሑፉ እንዲህ ይላል፦ Meron fragt: „Wie bitte? Noch einmal, bitte!“
+Wo wohnt Meron? => Sie wohnt in Addis Abeba. ||| The text says: Meron kommt aus Eritrea, aber sie wohnt in Addis Abeba. ||| ጽሑፉ እንዲህ ይላል፦ Meron kommt aus Eritrea, aber sie wohnt in Addis Abeba።
+Ich lerne Deutsch für die Arbeit. => I am learning German for work. ||| ich lerne = I am learning; für die Arbeit = for work. ||| ich lerne = እየተማርኩ ነው፤ für die Arbeit = ለሥራ።

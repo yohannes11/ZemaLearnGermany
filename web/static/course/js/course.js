@@ -1124,13 +1124,14 @@ function searchItem(r) {
   const open = el('button', 'search-open');
   open.type = 'button';
   if (r.kind === 'word') {
-    const de = el('span', 'search-de', r.id);
+    const de = el('span', 'search-de');
     de.lang = 'de';
+    const gender = showGermanWord(de, r.word);
     const kind = WORD_TYPES.find(([k]) => k === r.pos);
     const place = searchFilters.section && r.sections.includes(searchFilters.section) ? searchFilters.section : r.section;
     const placeUnit = COURSE_UNITS.find(u => u.sections.some(s => s.key === place)).id;
     open.append(de, el('span', 'search-meaning', meaning(r.word)),
-      el('span', 'search-where', searchWhere(placeUnit, place) + (kind ? ` · ${kind[2]}` : '')));
+      el('span', 'search-where', searchWhere(placeUnit, place) + (kind ? ` · ${kind[2]}` : '') + (gender ? ` · ${GENDER_NAMES[gender]()}` : '')));
     if (r.example !== undefined) {
       const [exDe, exEn] = r.word.examples[r.example];
       const example = el('span', 'search-example');
@@ -2121,7 +2122,8 @@ function renderWordPage(direction) {
       <div class="kbd-hint"><kbd>←</kbd> <kbd>→</kbd> ${T('move between words')}</div>
     </div>`;
   content.querySelector('.wv-section').textContent = currentScope === 'all' ? `${section} · ${SECTION_TITLES[section]}` : T('German');
-  content.querySelector('.wv-word').textContent = item.german;
+  const gender = showGermanWord(content.querySelector('.wv-word'), item);
+  if (gender) content.querySelector('.wv-word').after(genderTag(gender));
   content.querySelector('.wv-word').lang = 'de'; // long compounds break at German syllables, not mid-letter
   const picture = wordPicture(item, 'wv-pic');
   if (picture) content.querySelector('.wv-word').before(picture);
@@ -2182,6 +2184,7 @@ function renderLearnGrid() {
   const grid = el('div', 'vocab-grid');
   let index = 0;
   const sections = currentScope === 'all' ? Object.keys(vocabulary) : [currentScope];
+  if (sections.some(section => vocabulary[section].some(nounGender))) content.appendChild(genderKey());
   const seen = new Set();
   sections.forEach(section => {
     if (currentScope === 'all') {
@@ -2212,6 +2215,50 @@ function renderLearnGrid() {
   }
 }
 
+// A noun's gender (der, die, das or plural), from its article; tools/course_content.py works it out.
+function nounGender(item) { return item.gender || null; }
+const GENDER_NAMES = { der: () => T('masculine'), die: () => T('feminine'), das: () => T('neuter'), plural: () => T('plural') };
+
+// Writes a course word into a node: a noun all in its gender's colour (der blue, die rose, das green, plural
+// plum), its article bolder. Used wherever a word is shown with its article: word cards, flashcards, Match,
+// Practice, Speak and search. Never inside lesson exercises, where the colour would give the article away.
+function showGermanWord(node, item) {
+  const gender = nounGender(item);
+  node.textContent = '';
+  delete node.dataset.gender;
+  node.classList.toggle('de-noun', !!gender);
+  if (!gender) { node.textContent = item.german; return null; }
+  node.dataset.gender = gender;
+  item.german.split(/(,\s*)/).forEach(part => {
+    const space = part.indexOf(' ');
+    if (part.startsWith(',') || space < 0) { node.append(part); return; }
+    node.append(el('span', 'article', part.slice(0, space)), part.slice(space));
+  });
+  return gender;
+}
+
+// A small label naming the gender in words, so the colour is never the only sign.
+function genderTag(gender) {
+  const tag = el('span', 'gender-tag', GENDER_NAMES[gender]());
+  tag.dataset.gender = gender;
+  return tag;
+}
+
+// Above the word grid: what each colour means.
+function genderKey() {
+  const key = el('div', 'gender-key');
+  key.appendChild(el('span', 'gender-key-title', T('Noun colours:')));
+  [['der', 'der'], ['die', 'die'], ['das', 'das'], ['plural', 'die']].forEach(([gender, article]) => {
+    const item = el('span', 'gender-key-item');
+    item.dataset.gender = gender;
+    const word = el('b', 'article', article);
+    word.lang = 'de';
+    item.append(word, ' ', GENDER_NAMES[gender]());
+    key.appendChild(item);
+  });
+  return key;
+}
+
 function vocabCard(item, index) {
   const card = el('div', 'vocab-card');
   card.style.setProperty('--i', Math.min(index, 20));
@@ -2220,7 +2267,11 @@ function vocabCard(item, index) {
   card.innerHTML = `<span class="vc-learned" aria-hidden="true"></span>
     <div class="vc-top"><span class="vc-word"></span></div>
     <div class="vc-meaning"><span class="vc-text"></span></div>`;
-  card.querySelector('.vc-word').textContent = item.german;
+  const gender = showGermanWord(card.querySelector('.vc-word'), item);
+  if (gender) {
+    card.dataset.gender = gender;
+    card.querySelector('.vc-meaning').appendChild(genderTag(gender));
+  }
   card.querySelector('.vc-text').textContent = meaning(item);
   card.querySelector('.vc-word').lang = 'de'; // lets long compounds hyphenate at German syllables
   const picture = wordPicture(item, 'vc-pic');
@@ -2573,7 +2624,7 @@ function forLanguage(item) {
   const others = [...new Set(shuffle(fromUnit).concat(shuffle(fromWords)))].filter(o => o !== right).slice(0, 2);
   return {
     type: 'choose', prompt: T('What does “{word}” mean?', { word: item.text }), answer: right,
-    options: [right, ...others], hint: '', say: item.say, show: right, why: '',
+    options: [right, ...others], hint: '', say: item.say, show: right, why: item.why || '',
   };
 }
 
@@ -2584,9 +2635,11 @@ function reviewQuestions() {
   const words = shuffle(wordsIn('all').filter(w => w.german.length <= 40));
   const fromWords = words.slice(0, REVIEW_QUIZ_SIZE - fromLessons.length).map((w, i) => {
     const others = shuffle(words.filter(o => o.german !== w.german && meaning(o) !== meaning(w))).slice(0, 2);
+    // The explanation pairs the word with its meaning, in the learner's language.
+    const why = `${w.german} = ${meaning(w)}`;
     return i % 2
-      ? { type: 'choose', prompt: T('What does “{word}” mean?', { word: w.german }), answer: meaning(w), options: [meaning(w), ...others.map(meaning)], hint: T('Choose the English meaning.'), say: w.german, why: '' }
-      : { type: 'choose', prompt: T('How do you say “{word}” in German?', { word: meaning(w) }), answer: w.german, options: [w.german, ...others.map(o => o.german)], hint: T('Choose the German.'), say: w.german, why: '' };
+      ? { type: 'choose', prompt: T('What does “{word}” mean?', { word: w.german }), answer: meaning(w), options: [meaning(w), ...others.map(meaning)], hint: T('Choose the English meaning.'), say: w.german, why }
+      : { type: 'choose', prompt: T('How do you say “{word}” in German?', { word: meaning(w) }), answer: w.german, options: [w.german, ...others.map(o => o.german)], hint: T('Choose the German.'), say: w.german, why };
   });
   return shuffle([...fromLessons, ...fromWords]).map(withChoices);
 }
@@ -2735,7 +2788,7 @@ function finishGrammar(right, note) {
   fb.querySelector('.alert-answer span').textContent = L(q.show || q.say);
   fb.querySelector('.alert-note').textContent = note !== undefined ? note
     : gQuiz.kind === 'present'
-    ? (right ? '' : explainEnding(q))
+    ? explainEnding(q)
     : gQuiz.kind === 'countries'
     ? (q.answer === 'aus' ? T('No article: this country is used without one.') : q.answer === 'aus der' ? T('Feminine country: die → der after aus.') : T('Plural country: die → den after aus.'))
     : L(q.why || '');
@@ -2813,7 +2866,8 @@ function buildWrite(box, q) {
     area.querySelectorAll('.keys button').forEach(b => { b.disabled = true; });
     area.querySelector('.actions').remove();
     input.classList.add(result.verdict === 'wrong' ? 'is-wrong' : 'is-right');
-    finishGrammar(result.verdict !== 'wrong', result.note || L(q.why || ''));
+    // The checker's note (a missing article, a spelling slip) first, then why the answer is what it is.
+    finishGrammar(result.verdict !== 'wrong', [result.note, L(q.why || '')].filter(Boolean).join(' '));
   };
   area.querySelector('#g-check').onclick = submit;
   input.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); submit(); } });
@@ -3078,9 +3132,11 @@ function answerPin(pin, word, chip) {
     <span class="alert-title">${right ? T('Correct') : T('Not quite')}</span><span class="alert-answer"><small></small><span lang="de"></span></span><span class="alert-note"></span></div>`;
   fb.querySelector('.alert-answer small').textContent = T('Number {n}', { n: pin.number });
   fb.querySelector('.alert-answer span').textContent = pin.person.word.replace(', ', ' · ');
-  fb.querySelector('.alert-note').textContent = right
-    ? wordMeaning(pin.person.word)
-    : T('You chose {word}. This person is {right}: {meaning}.', { word: shortWord(word), right: shortWord(pin.person.word), meaning: wordMeaning(pin.person.word) });
+  // Who the person is to you, so the answer is explained, not just named.
+  const reason = pin.person.why ? ` ${L(pin.person.why)}` : '';
+  fb.querySelector('.alert-note').textContent = (right
+    ? `${wordMeaning(pin.person.word)}${LANG === 'am' ? '።' : '.'}`
+    : T('You chose {word}. This person is {right}: {meaning}.', { word: shortWord(word), right: shortWord(pin.person.word), meaning: wordMeaning(pin.person.word) })) + reason;
   speak(pin.person.word);
 
   updateTreeCount();
@@ -3308,7 +3364,7 @@ function showSpeakWord() {
   const { item } = words[speakIndex];
   document.getElementById('sp-pos').textContent = T('Word {n} of {total}', { n: speakIndex + 1, total: words.length });
   document.getElementById('sp-fill').style.width = Math.round((speakIndex + 1) / words.length * 100) + '%';
-  document.getElementById('sp-word').textContent = item.german;
+  showGermanWord(document.getElementById('sp-word'), item);
   document.getElementById('sp-pic').replaceChildren(...[wordPicture(item, '')].filter(Boolean));
   document.getElementById('sp-meaning').textContent = meaning(item);
   document.getElementById('sp-heard').textContent = '';
@@ -3607,6 +3663,7 @@ function startMatchQuiz(again = null) {
     </div>`;
   const makeTile = (index, side, order) => {
     const tile = el('button', 'mq-tile', side === 'de' ? mqPairs[index].german : meaning(mqPairs[index]));
+    if (side === 'de') showGermanWord(tile, mqPairs[index]);
     tile.type = 'button';
     tile.style.setProperty('--i', order);
     tile.dataset.side = side;
@@ -3795,7 +3852,8 @@ function face(side, card) {
   node.appendChild(el('span', 'fc-lang', german ? T('German') : T('English')));
   const picture = !german && wordPicture(card.item, 'fc-pic');
   if (picture) node.appendChild(picture);
-  node.appendChild(el('div', 'fc-text', german ? card.item.german : meaning(card.item)));
+  const text = node.appendChild(el('div', 'fc-text', german ? card.item.german : meaning(card.item)));
+  if (german) showGermanWord(text, card.item);
   if (german) node.appendChild(listenButton(card.item.german));
   node.appendChild(el('div', 'fc-hint', side === 'front'
     ? (card.dir === 'de-en' ? T('What does it mean? Tap the card to check.') : T('Say it in German, then tap the card.'))
@@ -3997,7 +4055,8 @@ function showPracticeQuestion() {
         <button class="btn btn-primary" id="pr-check" type="button">${T('Check answer')}</button>
       </div>
     </div>`;
-  area.querySelector('.q-text').textContent = toGerman ? meaning(item) : item.german;
+  if (toGerman) area.querySelector('.q-text').textContent = meaning(item);
+  else showGermanWord(area.querySelector('.q-text'), item);
   area.querySelector('.panel').prepend(redoBar(() => startPractice(shuffle([...prRound])), () => prResults.length > 0 || prChecked));
   if (!toGerman) {
     area.querySelector('.q-prompt').appendChild(listenButton(item.german));
@@ -4159,7 +4218,8 @@ async function checkPracticeAnswer(skip = false) {
       <span class="alert-answer"><small>${T('Correct answer')}</small><span id="pr-answer"></span></span>
       <span class="alert-note" id="pr-note"></span>
     </div>`;
-  document.getElementById('pr-answer').textContent = expected;
+  if (toGerman) showGermanWord(document.getElementById('pr-answer'), item);
+  else document.getElementById('pr-answer').textContent = expected;
   document.getElementById('pr-note').textContent = (result.note || '') + (result.byAI ? ` · ${T('Checked by AI')}` : '');
   if (toGerman) speak(item.german);
 

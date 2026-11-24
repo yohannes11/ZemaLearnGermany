@@ -1264,20 +1264,21 @@ def reading(key, code, title, chapters, intro, text_title, paragraphs, glossary,
 FAMILY_HINT = 'Choose the German word.'
 
 # Your family, three generations: grandparents; your aunt, father, mother and uncle; your brother, you and your
-# sister. `word` is the vocabulary entry (its audio and meaning); x is a percentage of the width, row 0 is the top.
+# sister. `word` is the vocabulary entry (its audio and meaning); x is a percentage of the width, row 0 is the top;
+# `why` says who the person is to you, shown after each answer.
 # The aunt and uncle are your father's sister and brother: children of the same grandparents.
 FAMILY_TREE = {
     'title': 'Your family tree',
     'people': [
-        {'key': 'opa', 'word': 'der Opa, der Großvater', 'pic': '1f474', 'x': 33, 'row': 0},
-        {'key': 'oma', 'word': 'die Oma, die Großmutter', 'pic': '1f475', 'x': 67, 'row': 0},
-        {'key': 'tante', 'word': 'die Tante', 'pic': '1f469', 'x': 12, 'row': 1},
-        {'key': 'vater', 'word': 'der Vater', 'pic': '1f468', 'x': 37, 'row': 1},
-        {'key': 'mutter', 'word': 'die Mutter', 'pic': '1f469', 'x': 63, 'row': 1},
-        {'key': 'onkel', 'word': 'der Onkel', 'pic': '1f468', 'x': 88, 'row': 1},
-        {'key': 'bruder', 'word': 'der Bruder', 'pic': '1f466', 'x': 24, 'row': 2},
+        {'key': 'opa', 'word': 'der Opa, der Großvater', 'pic': '1f474', 'x': 33, 'row': 0, 'why': "Your father's father."},
+        {'key': 'oma', 'word': 'die Oma, die Großmutter', 'pic': '1f475', 'x': 67, 'row': 0, 'why': "Your father's mother."},
+        {'key': 'tante', 'word': 'die Tante', 'pic': '1f469', 'x': 12, 'row': 1, 'why': "Your father's sister."},
+        {'key': 'vater', 'word': 'der Vater', 'pic': '1f468', 'x': 37, 'row': 1, 'why': 'The man married to your mother.'},
+        {'key': 'mutter', 'word': 'die Mutter', 'pic': '1f469', 'x': 63, 'row': 1, 'why': 'The woman married to your father.'},
+        {'key': 'onkel', 'word': 'der Onkel', 'pic': '1f468', 'x': 88, 'row': 1, 'why': "Your father's brother."},
+        {'key': 'bruder', 'word': 'der Bruder', 'pic': '1f466', 'x': 24, 'row': 2, 'why': "Your parents' other son."},
         {'key': 'ich', 'word': 'ich', 'me': True, 'x': 50, 'row': 2},
-        {'key': 'schwester', 'word': 'die Schwester', 'pic': '1f467', 'x': 76, 'row': 2},
+        {'key': 'schwester', 'word': 'die Schwester', 'pic': '1f467', 'x': 76, 'row': 2, 'why': "Your parents' daughter."},
     ],
     'couples': [['opa', 'oma'], ['vater', 'mutter']],
     'families': [{'parents': ['opa', 'oma'], 'children': ['tante', 'vater', 'onkel']},
@@ -2888,13 +2889,31 @@ def word_type(word, section):
     return 'noun' if german[0].isupper() else 'adjective'
 
 
+def noun_gender(word):
+    """A noun's gender, from its article, for the colours of der, die, das and plurals: 'der', 'die', 'das',
+    'plural' (a die-noun whose English says "(pl.)"), or None for a noun without one article ("Mama",
+    "die Speise, das Essen")."""
+    if word['pos'] != 'noun':
+        return None
+    articles = {part.split(' ')[0] for part in re.split(r',\s*', word['german'])}
+    if len(articles) != 1:
+        return None
+    article = articles.pop()
+    if article == 'die' and '(pl.' in word['english']:
+        return 'plural'
+    return article if article in ('der', 'die', 'das') else None
+
+
 def add_word_types(course):
-    """Each word's type (POS_TYPES) and each unit's CEFR level, for filtering the search."""
+    """Each word's type (POS_TYPES), each noun's gender and each unit's CEFR level, for filtering the search
+    and colouring nouns."""
     for unit in course['units']:
         unit['level'] = 'A1'
         for section in unit['sections']:
             for word in section['words']:
                 word['pos'] = word_type(word, section['key'])
+                if gender := noun_gender(word):
+                    word['gender'] = gender
 
 
 TOPICS_FILE = Path(__file__).resolve().parent / 'search_topics.txt'
@@ -2951,7 +2970,50 @@ def read_am(path):
     return pairs
 
 
-def build_amharic(course, examples=None):
+WHY_DIR = Path(__file__).resolve().parent / 'course_why'
+
+
+def question_key(item):
+    """How tools/course_why/ names an exercise question: the gap sentence with its answer in [brackets]
+    ("Ich [bin] Lehrerin."), or the question and its answer ("Wer ist das? => Dawit")."""
+    if item['type'] == 'gap':
+        return f"{item['before']}[{item['answer']}]{item['after']}"
+    return f"{item.get('text') or item.get('prompt') or ''} => {item['answer']}"
+
+
+def add_explanations(course):
+    """Why each exercise answer is right (tools/course_why/u*.txt), for questions that do not say it where
+    they are written. Every lesson question must end up with one. Returns the Amharic of the explanations."""
+    lessons = {g['key']: g for u in course['units'] for g in u['grammar']}
+    amharic = {}
+    for path in sorted(WHY_DIR.glob('u*.txt')):
+        lesson = None
+        for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
+            where = f'{path.name}:{number}'
+            if line.startswith('## '):
+                lesson = lessons.get(line[3:].strip())
+                assert lesson and lesson.get('quiz'), f'{where}: no lesson with exercises called {line[3:].strip()!r}'
+                items = {question_key(item): item for item in lesson['quiz']['items']}
+                continue
+            if not line.strip() or line.startswith('#'):
+                continue
+            key, english, am = (line.split(' ||| ') + ['', ''])[:3]
+            assert lesson and english.strip(), f'{where}: expected "question ||| English ||| Amharic" under a ## lesson'
+            item = items.get(key)
+            assert item, f'{where}: no question {key!r} in {lesson["key"]} (did the exercise change?)'
+            assert not item.get('why'), f'{where}: {key!r} already explains itself in course_content.py'
+            item['why'] = english.strip()
+            if am.strip():
+                assert amharic.get(item['why'], am.strip()) == am.strip(), f'{where}: two translations of {item["why"]!r}'
+                amharic[item['why']] = am.strip()
+    unexplained = [f"{g['key']}: {question_key(item)}" for g in lessons.values() if g.get('quiz')
+                   for item in g['quiz']['items'] if not item.get('why')]
+    if unexplained:
+        print(f'{len(unexplained)} exercise questions without an explanation (tools/course_why/), e.g. {unexplained[0]}')
+    return amharic
+
+
+def build_amharic(course, examples=None, explanations=None):
     """The Amharic course content for the Amharic interface: word meanings by German word, and the
     English lesson texts by their English. German stays German: it is what the course teaches."""
     from course_am_strings import course_strings
@@ -2959,7 +3021,7 @@ def build_amharic(course, examples=None):
     words = {}
     for path in sorted(AM_DIR.glob('words*.txt')):
         words.update(read_am(path))
-    text = {}
+    text = dict(explanations or {})
     for path in sorted(AM_DIR.glob('u[0-9]*.txt')):
         for source, target in read_am(path).items():
             assert text.get(source, target) == target, f'{path.name}: two translations of {source!r}'
@@ -2984,12 +3046,14 @@ if __name__ == '__main__':
     examples = add_examples(COURSE)
     add_topics(COURSE)
     add_word_types(COURSE)
-    am = build_amharic(COURSE, examples)
+    explanations = add_explanations(COURSE)
+    am = build_amharic(COURSE, examples, explanations)
     (Path(__file__).resolve().parent.parent / 'static' / 'course' / 'js' / 'course-am.js').write_text(
         '/* Amharic meanings and lesson texts for the Amharic interface. Generated from tools/course_am/. */\n'
         'window.COURSE_AM = ' + json.dumps(am, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')
     # Every German word and phrase with its meaning, for pointing at German on any page (static/core/js/hover-read.js).
-    meanings = [[w['german'], w['english'], am['words'].get(w['german'])]
+    # A noun's entry ends with its gender, so pointing at it shows der, die, das or plural in their colours.
+    meanings = [[w['german'], w['english'], am['words'].get(w['german'])] + ([w['gender']] if 'gender' in w else [])
                 for u in COURSE['units'] for s in u['sections'] for w in s['words']]
     meanings += [[de, en, am['text'].get(en)] for u in COURSE['units'] for g in u['grammar']
                  for b in g.get('blocks', []) for de, en in b.get('glossary', [])]

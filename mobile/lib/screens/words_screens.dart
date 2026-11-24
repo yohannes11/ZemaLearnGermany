@@ -201,6 +201,7 @@ class _SectionScreenState extends State<SectionScreen> {
             OfflineCard(unit: unit),
             Txt(T('German'), role: TextRole.heading),
             SearchEntry(unit: unit.id, section: section.key),
+            if (section.words.any((w) => nounGender(w) != null)) const GenderKey(),
             for (final word in section.words) WordRow(word: word, learned: known.contains(word.german)),
             if (_nextSection(unit, section) case final next?)
               AppButton(

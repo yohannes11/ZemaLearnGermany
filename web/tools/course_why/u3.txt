@@ -1,0 +1,65 @@
+# Why each answer is right, for the exercises of Unit 3. Read by tools/course_content.py.
+# question ||| English explanation ||| Amharic explanation (none for a German sentence quoted from a reading text)
+
+## g3-articles
+Das ist [eine] Banane. ||| die Banane is feminine: eine. ||| die Banane አንስታይ ነው፦ eine።
+Das ist [kein] Apfel. ||| der Apfel is masculine, and "not a" is kein. ||| der Apfel ተባዕታይ ነው፤ «… አይደለም» ደግሞ kein ነው።
+Das ist [keine] Birne. ||| die Birne is feminine, and "not a" is keine. ||| die Birne አንስታይ ነው፤ «… አይደለም» ደግሞ keine ነው።
+Das ist [eine] Tomate. ||| die Tomate is feminine: eine. ||| die Tomate አንስታይ ነው፦ eine።
+Das ist [ein] Kuchen. ||| der Kuchen is masculine: ein. ||| der Kuchen ተባዕታይ ነው፦ ein።
+Das ist [keine] Gurke. ||| die Gurke is feminine, and "not a" is keine. ||| die Gurke አንስታይ ነው፤ «… አይደለም» ደግሞ keine ነው።
+
+## g3-plural
+die Banane → die [Bananen] ||| A feminine word ending in -e adds -n. ||| በ-e የሚያልቅ አንስታይ ቃል -n ይጨምራል።
+der Fisch → die [Fische] ||| Many masculine words add -e. ||| ብዙ ተባዕታይ ቃላት -e ይጨምራሉ።
+das Ei → die [Eier] ||| Many short neuter words add -er. ||| ብዙ አጫጭር ገለልተኛ ቃላት -er ይጨምራሉ።
+die Tomate → die [Tomaten] ||| A feminine word ending in -e adds -n. ||| በ-e የሚያልቅ አንስታይ ቃል -n ይጨምራል።
+der Paprika → die [Paprikas] ||| A word ending in a vowel like -a adds -s. ||| እንደ -a ባለ አናባቢ የሚያልቅ ቃል -s ይጨምራል።
+die Kartoffel → die [Kartoffeln] ||| A feminine word ending in -el adds -n. ||| በ-el የሚያልቅ አንስታይ ቃል -n ይጨምራል።
+die Erdbeere → die [Erdbeeren] ||| A feminine word ending in -e adds -n. ||| በ-e የሚያልቅ አንስታይ ቃል -n ይጨምራል።
+
+## g3-questions
+Do you like to eat fish? => Isst du gerne Fisch? ||| Yes/no question: the verb isst comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ isst መጀመሪያ ይመጣል።
+Do we need potatoes? => Brauchen wir Kartoffeln? ||| Yes/no question: the verb brauchen comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ brauchen መጀመሪያ ይመጣል።
+Is this a banana? => Ist das eine Banane? ||| Yes/no question: the verb ist comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ ist መጀመሪያ ይመጣል።
+Are you hungry? => Hast du Hunger? ||| Yes/no question: the verb hast comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ hast መጀመሪያ ይመጣል።
+Do you like to drink tea? => Trinkst du gerne Tee? ||| Yes/no question: the verb trinkst comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ trinkst መጀመሪያ ይመጣል።
+Is the cake tasty? => Ist der Kuchen köstlich? ||| Yes/no question: the verb ist comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ ist መጀመሪያ ይመጣል።
+Do you need bread? => Brauchst du Brot? ||| Yes/no question: the verb brauchst comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ brauchst መጀመሪያ ይመጣል።
+Does the apple cost 1 euro? => Kostet der Apfel einen Euro? ||| Yes/no question: the verb kostet comes first. ||| የአዎ/አይ ጥያቄ፦ ግሡ kostet መጀመሪያ ይመጣል።
+
+## g3-haben-essen
+Ich [habe] Hunger. ||| ich goes with habe. ||| ich ከhabe ጋር ይሄዳል።
+[Hast] du Durst? ||| du goes with hast; in a yes/no question the verb comes first. ||| du ከhast ጋር ይሄዳል፤ በአዎ/አይ ጥያቄ ግሡ መጀመሪያ ይመጣል።
+Er [hat] zwei Kinder. ||| er, sie and es go with hat. ||| er፣ sie እና es ከhat ጋር ይሄዳሉ።
+Wir [haben] keine Milch. ||| wir goes with haben. ||| wir ከhaben ጋር ይሄዳል።
+Ihr [habt] einen Garten. ||| ihr goes with habt. ||| ihr ከhabt ጋር ይሄዳል።
+Ich [esse] gerne Fisch. ||| ich keeps the e: esse. ||| ich eን ይይዛል፦ esse።
+Sie [isst] kein Fleisch. ||| sie (she): e → i, isst. ||| sie (እሷ)፦ e → i፣ isst።
+Wir [essen] Reis. ||| wir keeps the e: essen. ||| wir eን ይይዛል፦ essen።
+
+## g3-moegen
+Ich [mag] Kaffee sehr. ||| Liking something in general is mögen: ich mag, with no ending. ||| አንድን ነገር በአጠቃላይ መውደድ mögen ነው፦ ich mag፣ ያለ መጨረሻ።
+[Magst] du Fisch? ||| du goes with magst; in a yes/no question the verb comes first. ||| du ከmagst ጋር ይሄዳል፤ በአዎ/አይ ጥያቄ ግሡ መጀመሪያ ይመጣል።
+Er [mag] keine Tomaten. ||| er goes with mag, like ich: no ending. ||| er ከmag ጋር ይሄዳል፣ እንደ ich፦ ያለ መጨረሻ።
+Ihr [mögt] Schokolade, oder? ||| ihr goes with mögt: the ö comes back, then -t. ||| ihr ከmögt ጋር ይሄዳል፦ ö ይመለሳል፣ ከዚያ -t።
+Was [möchten] Sie trinken? ||| Ordering politely is möchten, and Sie (formal) takes möchten. ||| በትሕትና ማዘዝ möchten ነው፤ Sie (የአክብሮት) möchten ይወስዳል።
+Was [nimmst] du? ||| nehmen changes with du: nimmst (e → i, and mm). ||| nehmen ከdu ጋር ይቀየራል፦ nimmst (e → i፣ እና mm)።
+Sie [nimmt] den Salat. ||| nehmen changes with sie (she): nimmt (e → i, and mm). ||| nehmen ከsie (እሷ) ጋር ይቀየራል፦ nimmt (e → i፣ እና mm)።
+A friend says: Ich mag Kaffee. You like it too. => Ich auch! ||| You agree with a yes: Ich auch! = me too. ||| በ«አዎ» ይስማማሉ፦ Ich auch! = እኔም።
+A friend says: Ich mag keinen Fisch. You don't like fish either. => Ich auch nicht! ||| You agree with a no: Ich auch nicht! = me neither. ||| በ«አይ» ይስማማሉ፦ Ich auch nicht! = እኔም አልወድም።
+Build the sentence. => Ich möchte eine Tasse Kaffee. ||| In a statement the verb comes second: Ich, then möchte, then what you want. ||| በዓረፍተ ነገር ግሡ ሁለተኛ ይመጣል፦ Ich፣ ከዚያ möchte፣ ከዚያ የሚፈልጉት።
+I like tea. => Ich mag Tee. ||| Liking something in general is mögen: ich mag, with no ending. ||| አንድን ነገር በአጠቃላይ መውደድ mögen ነው፦ ich mag፣ ያለ መጨረሻ።
+
+## g3-compounds
+What is a Kaffeetasse? => a cup for coffee ||| The last word is the main word: a Tasse (cup) for Kaffee. ||| የመጨረሻው ቃል ዋናው ቃል ነው፦ ለKaffee የሚሆን Tasse (ኩባያ)።
+What is a Tomatensuppe? => a soup made with tomatoes ||| The last word is the main word: a Suppe (soup) made with tomatoes. ||| የመጨረሻው ቃል ዋናው ቃል ነው፦ በቲማቲም የተሠራ Suppe (ሾርባ)።
+the apple juice => der Apfelsaft ||| Apfel + Saft; the last word gives the article: der Saft. ||| Apfel + Saft፤ መስተኣምሩን የመጨረሻው ቃል ይሰጣል፦ der Saft።
+the cheese sandwich => das Käsebrot ||| Käse + Brot; the last word gives the article: das Brot. ||| Käse + Brot፤ መስተኣምሩን የመጨረሻው ቃል ይሰጣል፦ das Brot።
+
+## g3-reading
+Dawit nimmt einen Obstsalat. => richtig ||| Ja, natürlich. Ein Kaffee und ein Obstsalat.
+Was isst Selam? => ein Käsebrot ||| The text says: Ich nehme einen Tee und ein Käsebrot, bitte. ||| ጽሑፉ እንዲህ ይላል፦ Ich nehme einen Tee und ein Käsebrot, bitte።
+Was kostet alles zusammen? => 14,50 Euro ||| The text says: Das macht zusammen 14 Euro 50. ||| ጽሑፉ እንዲህ ይላል፦ Das macht zusammen 14 Euro 50።
+Put the conversation in order. => Guten Tag! Was möchten Sie? Einen Tee, bitte. Tut mir leid, wir haben keinen Tee mehr. Schade! Dann nehme ich einen Kaffee. Gern! ||| The waiter greets and asks, you order, the waiter says there is none left, and you choose something else. ||| አስተናጋጁ ሰላምታ ሰጥቶ ይጠይቃል፣ እርስዎ ያዛሉ፣ እንዳለቀ ይነግርዎታል፣ እርስዎም ሌላ ይመርጣሉ።
+I would like a coffee, please. => Ich möchte einen Kaffee, bitte. ||| To order: Ich möchte …; after möchte, der Kaffee becomes einen Kaffee. ||| ለማዘዝ፦ Ich möchte …፤ ከmöchte በኋላ der Kaffee → einen Kaffee ይሆናል።

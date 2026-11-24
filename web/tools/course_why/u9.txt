@@ -1,0 +1,68 @@
+# Why each answer is right, for the exercises of Unit 9. Read by tools/course_content.py.
+# question ||| English explanation ||| Amharic explanation (none for a German sentence quoted from a reading text)
+
+## g9-perfect-haben
+Ich habe gestern viel [gearbeitet]. ||| Regular verb: ge + arbeit + et (the stem ends in t, so an e comes in). ||| መደበኛ ግሥ፦ ge + arbeit + et (ሥሩ በt ስለሚያልቅ e ይገባል)።
+Wir haben Kaffee [getrunken]. ||| trinken is irregular: ge + trunk + en. ||| trinken መደበኛ ያልሆነ ግሥ ነው፦ ge + trunk + en።
+Hast du die Zeitung [gelesen]? ||| lesen is irregular: ge + les + en. ||| lesen መደበኛ ያልሆነ ግሥ ነው፦ ge + les + en።
+Am Abend haben wir [ferngesehen]. ||| Separable: ge goes in the middle: fern + ge + sehen. ||| ተነጣይ፦ ge መሃል ላይ ይገባል፦ fern + ge + sehen።
+Was [hast] du am Sonntag gemacht? ||| machen is not movement: haben, and du goes with hast. ||| machen እንቅስቃሴ አይደለም፦ haben፤ du ደግሞ ከhast ጋር ይሄዳል።
+Er hat ein Foto [gemacht]. ||| Regular verb: ge + mach + t. ||| መደበኛ ግሥ፦ ge + mach + t።
+The participle of schlafen: => geschlafen ||| schlafen keeps its vowel and ends in -en: geschlafen. ||| schlafen አናባቢውን ይይዛል፤ በ-en ያልቃል፦ geschlafen።
+The participle of kaufen: => gekauft ||| Regular verb: ge + kauf + t. ||| መደበኛ ግሥ፦ ge + kauf + t።
+Build the sentence. => Ich habe gestern Zeitung gelesen. ||| habe in second place, the participle gelesen at the end. ||| habe በሁለተኛ ቦታ፤ ፓርቲሲፕሉ gelesen መጨረሻ ላይ።
+Build the question. => Was hast du am Wochenende gemacht? ||| W-word first, then hast; the participle gemacht goes to the end. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ hast፤ ፓርቲሲፕሉ gemacht ወደ መጨረሻ ይሄዳል።
+I cooked. => Ich habe gekocht. ||| haben + participle: ge + koch + t. ||| haben + ፓርቲሲፕል፦ ge + koch + t።
+We went shopping. => Wir haben eingekauft. ||| Separable: ge goes in the middle: ein + ge + kauft. ||| ተነጣይ፦ ge መሃል ላይ ይገባል፦ ein + ge + kauft።
+
+## g9-sein-haben
+Ich [bin] nach Adama gefahren. ||| fahren is movement: sein. ||| fahren እንቅስቃሴ ነው፦ sein።
+Wir [haben] Pizza gegessen. ||| essen is not movement: haben. ||| essen እንቅስቃሴ አይደለም፦ haben።
+[Bist] du schon einmal geflogen? ||| fliegen is movement: sein; du goes with bist. ||| fliegen እንቅስቃሴ ነው፦ sein፤ du ከbist ጋር ይሄዳል።
+Sie [ist] zu Hause geblieben. ||| bleiben uses sein. ||| bleiben sein ይጠቀማል።
+Er [hat] lange geschlafen. ||| schlafen is not movement: haben. ||| schlafen እንቅስቃሴ አይደለም፦ haben።
+Wann [bist] du angekommen? ||| ankommen is movement: sein; du goes with bist. ||| ankommen እንቅስቃሴ ነው፦ sein፤ du ከbist ጋር ይሄዳል።
+Was [ist] passiert? ||| passieren (to happen) uses sein. ||| passieren (መከሰት) sein ይጠቀማል።
+Ihr [habt] viel gelernt. ||| lernen is not movement: haben. ||| lernen እንቅስቃሴ አይደለም፦ haben።
+Ich bin nach Hause [gegangen]. ||| gehen is irregular: gegangen. ||| gehen መደበኛ ያልሆነ ግሥ ነው፦ gegangen።
+Wir sind nach Frankfurt [geflogen]. ||| fliegen is irregular: geflogen. ||| fliegen መደበኛ ያልሆነ ግሥ ነው፦ geflogen።
+Build the sentence. => Ich bin spät nach Hause gekommen. ||| kommen is movement, so bin in second place; gekommen goes to the end. ||| kommen እንቅስቃሴ ነው፤ ስለዚህ bin በሁለተኛ ቦታ፤ gekommen ወደ መጨረሻ ይሄዳል።
+Build the question. => Bist du mit dem Zug gefahren? ||| Yes/no question: bist comes first, and gefahren goes to the end. ||| የአዎ/አይ ጥያቄ፦ bist መጀመሪያ ይመጣል፤ gefahren ወደ መጨረሻ ይሄዳል።
+I stayed at home. => Ich bin zu Hause geblieben. ||| bleiben uses sein. ||| bleiben sein ይጠቀማል።
+He flew to Germany. => Er ist nach Deutschland geflogen. ||| fliegen is movement: sein, and er goes with ist. ||| fliegen እንቅስቃሴ ነው፦ sein፤ er ከist ጋር ይሄዳል።
+
+## g9-war-hatte
+Gestern [war] ich krank. ||| sein in the past: ich war. ||| sein ባለፈ ጊዜ፦ ich war።
+Wie [war] die Reise? ||| die Reise is one thing, like sie: war. ||| die Reise አንድ ነገር ነው፣ እንደ sie፦ war።
+Wir [hatten] viel Spaß. ||| haben in the past: wir hatten. ||| haben ባለፈ ጊዜ፦ wir hatten።
+[Warst] du schon in Gondar? ||| sein in the past: du warst. ||| sein ባለፈ ጊዜ፦ du warst።
+Ihr [wart] sehr müde. ||| sein in the past: ihr wart. ||| sein ባለፈ ጊዜ፦ ihr wart።
+Ich [hatte] keine Zeit. ||| haben in the past: ich hatte. ||| haben ባለፈ ጊዜ፦ ich hatte።
+Meine Eltern [waren] im Urlaub. ||| meine Eltern are sie (they): waren. ||| meine Eltern sie (እነሱ) ናቸው፦ waren።
+[Hattest] du Glück mit dem Wetter? ||| haben in the past: du hattest. ||| haben ባለፈ ጊዜ፦ du hattest።
+A shorter way to say "Ich bin in Rom gewesen": => Ich war in Rom. ||| For sein, German usually uses war instead of the perfect. ||| ለsein ጀርመንኛ ብዙውን ጊዜ ከፔርፌክቱ ይልቅ war ይጠቀማል።
+Build the sentence. => Letztes Jahr war ich in Lalibela. ||| Letztes Jahr first, the verb war second, then ich. ||| መጀመሪያ Letztes Jahr፣ ግሡ war ሁለተኛ፣ ከዚያ ich።
+The trip was nice. => Die Reise war schön. ||| sein in the past: die Reise war. ||| sein ባለፈ ጊዜ፦ die Reise war።
+We had a lot of fun. => Wir hatten viel Spaß. ||| haben in the past: wir hatten. ||| haben ባለፈ ጊዜ፦ wir hatten።
+
+## g9-time
+Die Bank ist [von] 9 bis 16 Uhr geöffnet. ||| From … to … is von … bis … ||| ከ… እስከ … von … bis … ነው።
+[Ab] 20 Uhr ist die Apotheke geschlossen. ||| ab = from a time on (and after). ||| ab = ከአንድ ጊዜ ጀምሮ (ከዚያ በኋላ)።
+Ich habe [im] April Geburtstag. ||| Months take im: im April. ||| ወሮች im ይወስዳሉ፦ im April።
+Das Fest gibt es [seit] 1810. ||| seit = since: it started in 1810 and is still going. ||| seit = ጀምሮ፦ በ1810 ተጀምሮ አሁንም ቀጥሏል።
+Wir fahren [nach] Hamburg. ||| Cities take nach: nach Hamburg. ||| ከተሞች nach ይወስዳሉ፦ nach Hamburg።
+Sie fliegt [in die] Schweiz. ||| A country with an article takes in: die Schweiz → in die Schweiz. ||| መስተኣምር ያለው አገር in ይወስዳል፦ die Schweiz → in die Schweiz።
+Ich fliege [nach] Äthiopien. ||| Countries without an article take nach: nach Äthiopien. ||| መስተኣምር የሌለው አገር nach ይወስዳል፦ nach Äthiopien።
+[Im] Winter ist es in Berlin kalt. ||| Seasons take im: im Winter. ||| ወቅቶች im ይወስዳሉ፦ im Winter።
+Ich lerne [seit] drei Monaten Deutsch. ||| seit = for, when it started in the past and is still going. ||| seit = ለ…፣ ባለፈው ተጀምሮ አሁንም ሲቀጥል።
+The shop is open from 8 am to 8 pm: => von 8 bis 20 Uhr ||| From … to … is von … bis …, and 8 pm is 20 Uhr. ||| ከ… እስከ … von … bis … ነው፤ 8 pm (በኢትዮጵያ አቆጣጠር ምሽት 2 ሰዓት) ደግሞ 20 Uhr ነው።
+Build the sentence. => Die Praxis ist am Montag geschlossen. ||| Die Praxis, the verb ist second, then when (am Montag). ||| Die Praxis፣ ግሡ ist ሁለተኛ፣ ከዚያ መቼ (am Montag)።
+When is the bank open? => Wann ist die Bank geöffnet? ||| W-word first, then the verb. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ።
+
+## g9-reading
+Selam wohnt seit einem Jahr in Deutschland. => richtig ||| Ich bin Selam und ich wohne seit einem Jahr in Deutschland.
+Im Sommer hat Selam ihre Familie besucht. => richtig ||| Im Sommer bin ich nach Addis Abeba geflogen. Ich habe meine Familie besucht.
+Enkutatash ist das äthiopische Neujahr. => richtig ||| Im September haben wir Enkutatash gefeiert, das äthiopische Neujahr.
+Was hat Selam in Hamburg gesehen? => den Hafen ||| The text says: Ich bin mit dem Zug gefahren und habe den Hafen gesehen. ||| ጽሑፉ እንዲህ ይላል፦ Ich bin mit dem Zug gefahren und habe den Hafen gesehen።
+Wann feiert man Enkutatash? => im September ||| The text says: Im September haben wir Enkutatash gefeiert. ||| ጽሑፉ እንዲህ ይላል፦ Im September haben wir Enkutatash gefeiert።
+Ich hatte viel Spaß. => I had a lot of fun. ||| hatte = had (haben in the past); viel Spaß = a lot of fun. ||| hatte = ነበረኝ (haben ባለፈ ጊዜ)፤ viel Spaß = ብዙ ደስታ።

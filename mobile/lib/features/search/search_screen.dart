@@ -10,6 +10,7 @@ import '../../ui/primitives.dart';
 import '../../ui/theme.dart';
 import '../../ui/watch.dart';
 import '../lessons/lesson_content.dart' show ListenButton;
+import '../vocabulary/word_widgets.dart' show GermanWord, NounGenderLook, nounGender;
 import 'search_engine.dart';
 
 const _tries = ['Danke', 'schoen', 'how to order food', 'accusative', 'past tense', 'ምግብ'];
@@ -383,11 +384,12 @@ class _SearchScreenState extends State<SearchScreen> {
             child: AppCard(
               onTap: () => _openWord(r),
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Txt(word.german, role: TextRole.subheading),
+                GermanWord(word, role: TextRole.subheading),
                 Txt(course.meaning(word)),
                 Txt(
                   '${_where(course.section(_placeOf(r))?.unit.id ?? r.unit!, _placeOf(r))}'
-                  '${_wordTypes.where((t) => t.$1 == r.pos).map((t) => ' · ${t.$3}').firstOrNull ?? ''}',
+                  '${_wordTypes.where((t) => t.$1 == r.pos).map((t) => ' · ${t.$3}').firstOrNull ?? ''}'
+                  '${nounGender(word) == null ? '' : ' · ${nounGender(word)!.label}'}',
                   role: TextRole.caption,
                   colour: c.muted,
                 ),

@@ -30,6 +30,28 @@
   background-color: var(--brand-soft);
   box-shadow: 0 0 0 4px var(--brand-soft);
 }
+/* Nouns: the tooltip and the marked word take the gender's colour (--g, set by data-gender in zema.css). */
+.hover-tip-de[data-gender] { color: var(--g); }
+.hover-tip-gender {
+  justify-self: start;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--g-soft);
+  color: var(--g);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  line-height: 1.6;
+}
+.hover-tip-noun { font-size: var(--fs-sm); }
+.hover-reading[data-hover-gender] {
+  background-color: var(--g-soft);
+  box-shadow: 0 0 0 4px var(--g-soft);
+  color: var(--g);
+}
+::highlight(gender-der) { background-color: var(--der-soft); color: var(--der); }
+::highlight(gender-die) { background-color: var(--die-soft); color: var(--die); }
+::highlight(gender-das) { background-color: var(--das-soft); color: var(--das); }
+::highlight(gender-plural) { background-color: var(--plural-soft); color: var(--plural); }
 @media (prefers-reduced-motion: reduce) {
   .hover-tip { animation: none; }
 }

@@ -50,6 +50,19 @@
   --red: #b42318;
   --red-soft: #fcebe8;
 
+  /* Noun genders, by article (word cards, study modes, and the pointing tooltip on every page): manuscript
+     pigments, as quiet as the brand's own emerald and gold. der lapis blue, die madder rose, das moss green
+     (yellower than the brand emerald), plural a soft plum, lighter than lapis so the two stay apart for
+     colour-blind readers too. Each reads at 4.5:1 or more on the card and on its own tint. */
+  --der: #3d5a90;
+  --der-soft: #eceded;
+  --die: #8d4660;
+  --die-soft: #f4ebe8;
+  --das: #576925;
+  --das-soft: #eeeee2;
+  --plural: #805e8f;
+  --plural-soft: #f2eded;
+
   /* Type: an editorial serif for headings and German words, the brand sans for everything you operate */
   --font: 'Plus Jakarta Sans', 'Noto Sans Ethiopic', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --display: 'Newsreader', 'Noto Sans Ethiopic', Georgia, 'Times New Roman', serif;
@@ -127,6 +140,14 @@
   --indigo: #2b5544;
   --red: #f07d6d;
   --red-soft: rgba(240, 125, 109, 0.13);
+  --der: #9db8e8;
+  --der-soft: rgba(157, 184, 232, 0.14);
+  --die: #e2a2b7;
+  --die-soft: rgba(226, 162, 183, 0.14);
+  --das: #b4c789;
+  --das-soft: rgba(180, 199, 137, 0.14);
+  --plural: #d8c0e8;
+  --plural-soft: rgba(216, 192, 232, 0.14);
   --highlight: inset 0 1px 0 rgba(255, 255, 255, 0.05);
   --shadow-sm: var(--highlight), 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow: var(--highlight), 0 1px 2px rgba(0, 0, 0, 0.3), 0 16px 32px -16px rgba(0, 0, 0, 0.55);
@@ -161,3 +182,10 @@ p { text-wrap: pretty; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* A noun's gender colour: any element with data-gender (or, while pointed at, data-hover-gender) gets it
+   as --g, with --g-soft as its tint. */
+[data-gender="der"], [data-hover-gender="der"] { --g: var(--der); --g-soft: var(--der-soft); }
+[data-gender="die"], [data-hover-gender="die"] { --g: var(--die); --g-soft: var(--die-soft); }
+[data-gender="das"], [data-hover-gender="das"] { --g: var(--das); --g-soft: var(--das-soft); }
+[data-gender="plural"], [data-hover-gender="plural"] { --g: var(--plural); --g-soft: var(--plural-soft); }

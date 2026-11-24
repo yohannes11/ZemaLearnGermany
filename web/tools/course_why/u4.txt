@@ -1,0 +1,72 @@
+# Why each answer is right, for the exercises of Unit 4. Read by tools/course_content.py.
+# question ||| English explanation ||| Amharic explanation (none for a German sentence quoted from a reading text)
+
+## g4-possessive
+[deine] Wohnung ||| "your" (du) is dein; die Wohnung is feminine: deine. ||| «ያንተ/ያንቺ» (du) dein ነው፤ die Wohnung አንስታይ ነው፦ deine።
+[sein] Garten ||| "his" is sein; der Garten is masculine: sein. ||| «የእሱ» sein ነው፤ der Garten ተባዕታይ ነው፦ sein።
+[ihr] Haus ||| "her" is ihr; das Haus is neuter: ihr. ||| «የእሷ» ihr ነው፤ das Haus ገለልተኛ ነው፦ ihr።
+[unsere] Küche ||| "our" is unser; die Küche is feminine: unsere. ||| «የእኛ» unser ነው፤ die Küche አንስታይ ነው፦ unsere።
+[euer] Balkon ||| "your" (ihr) is euer; der Balkon is masculine: euer. ||| «የእናንተ» (ihr) euer ነው፤ der Balkon ተባዕታይ ነው፦ euer።
+[Ihr] Name ||| Formal "your" is Ihr, with a capital I; der Name is masculine: Ihr. ||| የአክብሮት «የእርስዎ» Ihr ነው፣ በትልቅ I፤ der Name ተባዕታይ ነው፦ Ihr።
+[meine] Eltern ||| Eltern is plural: meine. ||| Eltern ብዙ ቁጥር ነው፦ meine።
+[dein] Zimmer ||| "your" (du) is dein; das Zimmer is neuter: dein. ||| «ያንተ/ያንቺ» (du) dein ነው፤ das Zimmer ገለልተኛ ነው፦ dein።
+[seine] Lampe ||| "his" is sein; die Lampe is feminine: seine. ||| «የእሱ» sein ነው፤ die Lampe አንስታይ ነው፦ seine።
+[ihre] Kinder ||| "their" is ihr; Kinder is plural: ihre. ||| «የእነሱ» ihr ነው፤ Kinder ብዙ ቁጥር ነው፦ ihre።
+
+## g4-nicht
+Die Küche ist [nicht] klein. ||| nicht goes with an adjective (klein); kein only goes before a noun. ||| nicht ከቅጽል (klein) ጋር ይሄዳል፤ kein ከስም በፊት ብቻ ይመጣል።
+Das ist [kein] Stuhl. ||| Before a noun, "not a" is kein; der Stuhl is masculine: kein. ||| ከስም በፊት «… አይደለም» kein ነው፤ der Stuhl ተባዕታይ ነው፦ kein።
+Das Bett ist [nicht] neu. ||| nicht goes with an adjective (neu); kein only goes before a noun. ||| nicht ከቅጽል (neu) ጋር ይሄዳል፤ kein ከስም በፊት ብቻ ይመጣል።
+Das ist [keine] Lampe. ||| Before a noun, "not a" is kein; die Lampe is feminine: keine. ||| ከስም በፊት «… አይደለም» kein ነው፤ die Lampe አንስታይ ነው፦ keine።
+Die Wohnung ist [nicht] teuer. ||| nicht goes with an adjective (teuer); kein only goes before a noun. ||| nicht ከቅጽል (teuer) ጋር ይሄዳል፤ kein ከስም በፊት ብቻ ይመጣል።
+Das sind [keine] Stühle. ||| Before a plural noun: keine. ||| ከብዙ ቁጥር ስም በፊት፦ keine።
+Das Sofa ist [nicht] schön. ||| nicht goes with an adjective (schön); kein only goes before a noun. ||| nicht ከቅጽል (schön) ጋር ይሄዳል፤ kein ከስም በፊት ብቻ ይመጣል።
+Das ist [kein] Sofa. ||| Before a noun, "not a" is kein; das Sofa is neuter: kein. ||| ከስም በፊት «… አይደለም» kein ነው፤ das Sofa ገለልተኛ ነው፦ kein።
+Der Garten ist [nicht] groß. ||| nicht goes with an adjective (groß); kein only goes before a noun. ||| nicht ከቅጽል (groß) ጋር ይሄዳል፤ kein ከስም በፊት ብቻ ይመጣል።
+
+## g4-it
+Der Tisch ist neu. [Er] ist schön. ||| der Tisch is masculine, so "it" is er. ||| der Tisch ተባዕታይ ነው፤ ስለዚህ «እሱ» er ነው።
+Die Lampe ist alt. [Sie] ist hässlich. ||| die Lampe is feminine, so "it" is sie. ||| die Lampe አንስታይ ነው፤ ስለዚህ «እሱ» sie ነው።
+Das Bett ist groß. [Es] ist teuer. ||| das Bett is neuter, so "it" is es. ||| das Bett ገለልተኛ ነው፤ ስለዚህ «እሱ» es ነው።
+Die Stühle sind neu. [Sie] sind billig. ||| die Stühle is plural, so "they" is sie. ||| die Stühle ብዙ ቁጥር ነው፤ ስለዚህ «እነሱ» sie ነው።
+Der Garten ist klein. [Er] ist schön. ||| der Garten is masculine, so "it" is er. ||| der Garten ተባዕታይ ነው፤ ስለዚህ «እሱ» er ነው።
+Die Küche ist hell. [Sie] ist neu. ||| die Küche is feminine, so "it" is sie. ||| die Küche አንስታይ ነው፤ ስለዚህ «እሱ» sie ነው።
+Das Sofa ist rot. [Es] ist gemütlich. ||| das Sofa is neuter, so "it" is es. ||| das Sofa ገለልተኛ ነው፤ ስለዚህ «እሱ» es ነው።
+Der Schrank ist braun. [Er] ist alt. ||| der Schrank is masculine, so "it" is er. ||| der Schrank ተባዕታይ ነው፤ ስለዚህ «እሱ» er ነው።
+Das Zimmer ist dunkel. [Es] ist klein. ||| das Zimmer is neuter, so "it" is es. ||| das Zimmer ገለልተኛ ነው፤ ስለዚህ «እሱ» es ነው።
+
+## g4-prices
+Which one do you hear? => 250 ||| zweihundertfünfzig: zweihundert (200), then fünfzig (50). ||| zweihundertfünfzig፦ zweihundert (200)፣ ከዚያ fünfzig (50)።
+Which one do you hear? => 317 ||| dreihundertsiebzehn: dreihundert (300), then siebzehn (17). ||| dreihundertsiebzehn፦ dreihundert (300)፣ ከዚያ siebzehn (17)።
+Which one do you hear? => 1.200 ||| eintausendzweihundert: tausend (1000), then zweihundert (200). ||| eintausendzweihundert፦ tausend (1000)፣ ከዚያ zweihundert (200)።
+Which one do you hear? => 68 ||| achtundsechzig: German says the 8 first, then und, then 60. ||| achtundsechzig፦ ጀርመንኛ መጀመሪያ 8ን፣ ከዚያ und፣ ከዚያ 60ን ይላል።
+Which one do you hear? => 9,99 € ||| neun Euro neunundneunzig: the euros, then the cents. ||| neun Euro neunundneunzig፦ መጀመሪያ ዩሮው፣ ከዚያ ሳንቲሙ።
+Which one do you hear? => 4,50 € ||| vier Euro fünfzig: the euros, then the cents. ||| vier Euro fünfzig፦ መጀመሪያ ዩሮው፣ ከዚያ ሳንቲሙ።
+How do you say 145? => hundertfünfundvierzig ||| hundert, then the 5 before the 40: fünfundvierzig. ||| hundert፣ ከዚያ 5 ከ40 በፊት፦ fünfundvierzig።
+How do you say 2 000? => zweitausend ||| tausend is a thousand: zwei + tausend. ||| tausend ሺህ ነው፦ zwei + tausend።
+How do you say 0,80 €? => achtzig Cent ||| Under one euro, say only the cents: achtzig Cent. ||| ከአንድ ዩሮ በታች ሳንቲሙን ብቻ ይላሉ፦ achtzig Cent።
+Der Tisch kostet [neunundneunzig] Euro. ||| 99: the 9 first, then und, then neunzig. ||| 99፦ መጀመሪያ 9፣ ከዚያ und፣ ከዚያ neunzig።
+How much is the lamp? => Wie viel kostet die Lampe? ||| Ask a price with Wie viel kostet …? ||| ዋጋ በWie viel kostet …? ይጠየቃል።
+Write what you hear. => vierhundertzwanzig ||| 420 is vierhundert + zwanzig, written as one word. ||| 420 vierhundert + zwanzig ነው፤ እንደ አንድ ቃል ይጻፋል።
+
+## g4-things
+Das ist [eine] Brille. ||| die Brille is feminine: eine. German counts glasses as one thing. ||| die Brille አንስታይ ነው፦ eine። ጀርመንኛ መነጽርን እንደ አንድ ነገር ይቆጥራል።
+Ist das [ein] Schlüssel? ||| der Schlüssel is masculine: ein. ||| der Schlüssel ተባዕታይ ነው፦ ein።
+Nein, das ist [kein] Feuerzeug. ||| Before a noun, "not a" is kein; das Feuerzeug is neuter: kein. ||| ከስም በፊት «… አይደለም» kein ነው፤ das Feuerzeug ገለልተኛ ነው፦ kein።
+Das ist [keine] Tasche, das ist ein Rucksack. ||| Before a noun, "not a" is kein; die Tasche is feminine: keine. ||| ከስም በፊት «… አይደለም» kein ነው፤ die Tasche አንስታይ ነው፦ keine።
+Die Flasche ist [aus] Plastik. ||| "Made of" is aus: aus Plastik. ||| «ከ… የተሠራ» aus ነው፦ aus Plastik።
+Der Kuli ist neu. [Er] ist blau. ||| der Kuli is masculine, so "it" is er. ||| der Kuli ተባዕታይ ነው፤ ስለዚህ «እሱ» er ነው።
+Das Heft ist alt. [Es] ist aus Papier. ||| das Heft is neuter, so "it" is es. ||| das Heft ገለልተኛ ነው፤ ስለዚህ «እሱ» es ነው።
+Die Kette ist schön. [Sie] ist aus Metall. ||| die Kette is feminine, so "it" is sie. ||| die Kette አንስታይ ነው፤ ስለዚህ «እሱ» sie ነው።
+What is an umbrella (Regenschirm) usually made of? => aus Stoff und Metall ||| An umbrella is cloth (Stoff) on a metal frame (Metall). ||| ጃንጥላ በብረት (Metall) ፍሬም ላይ ያለ ጨርቅ (Stoff) ነው።
+Build the sentence. => Die Tasche ist aus Leder. ||| Die Tasche, then the verb ist, then aus + the material. ||| Die Tasche፣ ከዚያ ግሡ ist፣ ከዚያ aus + ቁሱ።
+Build the question. => Wie heißt das auf Deutsch? ||| W-word first, then the verb. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ።
+That is not a key. => Das ist kein Schlüssel. ||| Before a noun, "not a" is kein; der Schlüssel is masculine: kein. ||| ከስም በፊት «… አይደለም» kein ነው፤ der Schlüssel ተባዕታይ ነው፦ kein።
+
+## g4-reading
+Yonas wohnt in Leipzig. => richtig ||| Yonas wohnt jetzt in Leipzig.
+Lena findet den Sessel schön. => richtig ||| Lena: Schau mal, der Sessel! Er ist so schön.
+Wie viel kostet der Tisch? => 49 Euro ||| The text says: Nur 49 Euro. Das ist ein Sonderangebot. ||| ጽሑፉ እንዲህ ይላል፦ Nur 49 Euro. Das ist ein Sonderangebot።
+Wann geht Yonas ins Möbelgeschäft? => am Samstag ||| The text says: Am Samstag geht er mit Lena in ein Möbelgeschäft. ||| ጽሑፉ እንዲህ ይላል፦ Am Samstag geht er mit Lena in ein Möbelgeschäft።
+Was nimmt Yonas? => Er nimmt den Tisch. ||| The text says: Ich nehme den Tisch. ||| ጽሑፉ እንዲህ ይላል፦ Ich nehme den Tisch።
+Das ist aber günstig! => That's really cheap! ||| günstig = cheap; aber here does not mean "but", it shows surprise. ||| günstig = ርካሽ፤ aber እዚህ «ግን» ማለት አይደለም፣ መደነቅን ያሳያል።

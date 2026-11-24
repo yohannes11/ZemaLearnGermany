@@ -7,12 +7,15 @@ List<(String, String)> _pairs(Object? list) =>
     [...?(list as List?)?.map((p) => ('${(p as List)[0]}', '${p.length > 1 ? p[1] : ''}'))];
 
 class Word {
-  const Word({required this.german, required this.english, this.pic = const [], this.examples = const [], this.pos = ''});
+  const Word({required this.german, required this.english, this.pic = const [], this.examples = const [], this.pos = '', this.gender = ''});
   final String german;
   final String english;
 
   /// noun, verb, adjective, phrase, number or small (pronouns, articles, particles); for the search filters.
   final String pos;
+
+  /// A noun's gender, from its article: der, die, das or plural; empty for other words.
+  final String gender;
 
   /// Twemoji picture codes; compound words show their parts.
   final List<String> pic;
@@ -26,6 +29,7 @@ class Word {
         pic: _strings(j['pic']),
         examples: _pairs(j['examples']),
         pos: j['pos'] as String? ?? '',
+        gender: j['gender'] as String? ?? '',
       );
 }
 

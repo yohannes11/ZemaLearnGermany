@@ -1,0 +1,60 @@
+# Why each answer is right, for the exercises of Unit 7. Read by tools/course_content.py.
+# question ||| English explanation ||| Amharic explanation (none for a German sentence quoted from a reading text)
+
+## g7-modals
+Ich [kann] gut tanzen. ||| ich has no ending with modal verbs: kann. ||| ich ከረዳት ግሦች ጋር መጨረሻ የለውም፦ kann።
+Du [musst] heute arbeiten. ||| du takes -st, and the umlaut goes: musst. ||| du -st ይወስዳል፤ ኡምላውቱ ይጠፋል፦ musst።
+Wir [dürfen] hier schwimmen. ||| wir takes the full form: dürfen. ||| wir ሙሉውን ቅርጽ ይወስዳል፦ dürfen።
+Er [will] Deutsch lernen. ||| er has no ending with modal verbs: will. ||| er ከረዳት ግሦች ጋር መጨረሻ የለውም፦ will።
+[Möchtest] du einen Kaffee? ||| du takes -st: möchtest; in a yes/no question the verb comes first. ||| du -st ይወስዳል፦ möchtest፤ በአዎ/አይ ጥያቄ ግሡ መጀመሪያ ይመጣል።
+Ihr [sollt] pünktlich sein. ||| ihr takes -t: sollt. ||| ihr -t ይወስዳል፦ sollt።
+Ihr [müsst] viel lernen. ||| ihr takes -t and keeps the umlaut: müsst. ||| ihr -t ይወስዳል፤ ኡምላውቱንም ይይዛል፦ müsst።
+Ich [möchte] ein Glas Wasser. ||| ich has no ending: möchte. ||| ich መጨረሻ የለውም፦ möchte።
+Du [darfst] jetzt nicht fernsehen. ||| du takes -st, and the umlaut goes: darfst. ||| du -st ይወስዳል፤ ኡምላውቱ ይጠፋል፦ darfst።
+
+## g7-perfect
+Ich [habe] Kaffee getrunken. ||| trinken is not movement: haben. ||| trinken እንቅስቃሴ አይደለም፦ haben።
+Wir [haben] Pizza gegessen. ||| essen is not movement: haben. ||| essen እንቅስቃሴ አይደለም፦ haben።
+Du [hast] einen Brief geschrieben. ||| schreiben is not movement: haben. ||| schreiben እንቅስቃሴ አይደለም፦ haben።
+Ihr [habt] Deutsch gesprochen. ||| sprechen is not movement: haben. ||| sprechen እንቅስቃሴ አይደለም፦ haben።
+Er [hat] mir geholfen. ||| helfen is not movement: haben. ||| helfen እንቅስቃሴ አይደለም፦ haben።
+
+## g7-years
+1999 → [neunzehnhundertneunundneunzig] ||| Years up to 1999 are said in hundreds: neunzehnhundert (19 hundred) + neunundneunzig. ||| እስከ 1999 ያሉ ዓመታት በመቶዎች ይነገራሉ፦ neunzehnhundert (19 መቶ) + neunundneunzig።
+2001 → [zweitausendeins] ||| From 2000 on, years are said like numbers: zweitausend + eins. ||| ከ2000 ጀምሮ ዓመታት እንደ ቁጥር ይነገራሉ፦ zweitausend + eins።
+1848 → [achtzehnhundertachtundvierzig] ||| In hundreds: achtzehnhundert (18 hundred) + achtundvierzig. ||| በመቶዎች፦ achtzehnhundert (18 መቶ) + achtundvierzig።
+1990 → [neunzehnhundertneunzig] ||| In hundreds: neunzehnhundert (19 hundred) + neunzig. ||| በመቶዎች፦ neunzehnhundert (19 መቶ) + neunzig።
+2024 → [zweitausendvierundzwanzig] ||| From 2000 on, like a number: zweitausend + vierundzwanzig. ||| ከ2000 ጀምሮ እንደ ቁጥር፦ zweitausend + vierundzwanzig።
+1975 → [neunzehnhundertfünfundsiebzig] ||| In hundreds: neunzehnhundert (19 hundred) + fünfundsiebzig. ||| በመቶዎች፦ neunzehnhundert (19 መቶ) + fünfundsiebzig።
+2010 → [zweitausendzehn] ||| From 2000 on, like a number: zweitausend + zehn. ||| ከ2000 ጀምሮ እንደ ቁጥር፦ zweitausend + zehn።
+
+## g7-jobs
+The female form of der Lehrer: => die Lehrerin ||| Add -in for a woman: der Lehrer → die Lehrerin. ||| ለሴት -in ይጨመራል፦ der Lehrer → die Lehrerin።
+The female form of der Arzt: => die Ärztin ||| Add -in, and a → ä: der Arzt → die Ärztin. ||| -in ይጨመራል፤ a → ä፦ der Arzt → die Ärztin።
+The female form of der Koch: => die Köchin ||| Add -in, and o → ö: der Koch → die Köchin. ||| -in ይጨመራል፤ o → ö፦ der Koch → die Köchin።
+Ich arbeite [als] Kellnerin. ||| Your job goes with als: als Kellnerin. ||| ሥራዎ ከals ጋር ይሄዳል፦ als Kellnerin።
+Er arbeitet [bei] Siemens. ||| A company goes with bei: bei Siemens. ||| ድርጅት ከbei ጋር ይሄዳል፦ bei Siemens።
+Meron arbeitet als Ärztin [in] einem Krankenhaus. ||| A place goes with in: in einem Krankenhaus. ||| ቦታ ከin ጋር ይሄዳል፦ in einem Krankenhaus።
+Ich bin Lehrerin [von] Beruf. ||| von Beruf = by profession. ||| von Beruf = በሙያ።
+Was machst du [beruflich]? ||| beruflich = for a living: Was machst du beruflich? ||| beruflich = ለኑሮ (በሥራ)፦ Was machst du beruflich?
+Build the sentence. => Ich arbeite als Krankenpfleger. ||| Ich, then the verb arbeite, then als + the job. ||| Ich፣ ከዚያ ግሡ arbeite፣ ከዚያ als + ሥራው።
+Build the question. => Was sind Sie von Beruf? ||| W-word first, then the verb. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ።
+I am a student. (said by a woman) => Ich bin Studentin. ||| A woman adds -in, and no ein/eine with jobs: Ich bin Studentin. ||| ሴት -in ትጨምራለች፤ ከሥራ ጋር ein/eine አይመጣም፦ Ich bin Studentin።
+
+## g7-phone
+Put the conversation in order. => Firma Kebede, guten Tag! Guten Tag, hier ist Selam Tesfaye. Guten Tag, Frau Tesfaye. Was kann ich für Sie tun? Ist Herr Bekele da? Einen Moment, bitte … Herr Bekele ist leider nicht da. Okay, vielen Dank. Auf Wiederhören! ||| The company answers with its name, you say who you are, ask for the person, hear he is not there, thank and say goodbye. ||| ድርጅቱ በስሙ ይመልሳል፣ እርስዎ ማን እንደሆኑ ይናገራሉ፣ ሰውዬውን ይጠይቃሉ፣ እንደሌለ ይሰማሉ፣ አመስግነው ይሰናበታሉ።
+How do you end a phone call? => Auf Wiederhören! ||| On the phone you only hear each other: Auf Wiederhören. Auf Wiedersehen is for meeting in person. ||| በስልክ የሚሰማሙት ብቻ ነው፦ Auf Wiederhören። Auf Wiedersehen በአካል ሲገናኙ ነው።
+You call a company. How do you introduce yourself? => Hier ist Dawit Girma. ||| On the phone you say who you are with Hier ist … ||| በስልክ ማን እንደሆኑ በHier ist … ይናገራሉ።
+The person is not there. What does the secretary say? => Sie ist leider nicht da. ||| nicht goes with da (there); kein only goes before a noun. ||| nicht ከda (እዚህ) ጋር ይሄዳል፤ kein ከስም በፊት ብቻ ይመጣል።
+Haben Sie [den] Kalender? ||| After haben: der Kalender → den Kalender (accusative). ||| ከhaben በኋላ፦ der Kalender → den Kalender (ተሳቢ)።
+Wir haben morgen [einen] Termin. ||| After haben: der Termin → einen Termin (accusative). ||| ከhaben በኋላ፦ der Termin → einen Termin (ተሳቢ)።
+Ich komme nicht ins [WLAN]. ||| das WLAN is the Wi-Fi; ins WLAN kommen = get onto the Wi-Fi. ||| das WLAN ዋይፋይ ነው፤ ins WLAN kommen = ዋይፋይ ላይ መግባት።
+The plural of der Termin: => die Termine ||| Many masculine words add -e: die Termine. ||| ብዙ ተባዕታይ ቃላት -e ይጨምራሉ፦ die Termine።
+The plural of das Passwort: => die Passwörter ||| das Wort → die Wörter, so das Passwort → die Passwörter. ||| das Wort → die Wörter፤ ስለዚህ das Passwort → die Passwörter።
+
+## g7-reading
+Meron arbeitet bei einer Firma in Addis Abeba. => richtig ||| Meron Haile arbeitet als Assistentin bei einer Firma in Addis Abeba.
+Merons Passwort ist neu. => richtig ||| Samuel: „Das Passwort ist neu. Hier ist es.“
+Wer hilft Meron? => Samuel ||| The text says: Ihr Kollege Samuel hilft. ||| ጽሑፉ እንዲህ ይላል፦ Ihr Kollege Samuel hilft።
+Woher kommt Jan Weber? => aus Deutschland ||| The text says: Um neun Uhr hat sie einen Termin mit Jan Weber aus Deutschland. ||| ጽሑፉ እንዲህ ይላል፦ Um neun Uhr hat sie einen Termin mit Jan Weber aus Deutschland።
+Ich komme leider zu spät. => Unfortunately, I'm late. ||| leider = unfortunately; zu spät kommen = to be late. ||| leider = እንደ አለመታደል፤ zu spät kommen = መዘግየት።

@@ -73,6 +73,7 @@ def lesson_strings(lesson: dict) -> list[str]:
             found += [c for row in table['rows'] for c in row if looks_english(c)]
     if lesson.get('tree'):
         add(lesson['tree']['title'])
+        found += [p['why'] for p in lesson['tree']['people'] if p.get('why')]
     for title, text in lesson.get('rules', []):
         add(title)
         add(text)

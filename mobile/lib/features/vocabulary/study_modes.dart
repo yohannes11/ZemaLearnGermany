@@ -19,7 +19,7 @@ import '../lessons/questions.dart' show shuffle;
 import '../lessons/quiz_session.dart';
 import '../progress/progress.dart';
 import 'word_picture.dart';
-import 'word_widgets.dart' show ExampleList;
+import 'word_widgets.dart' show ExampleList, GenderTag, GermanWord, nounGender;
 
 /// Words for a study mode: a section, or a whole unit (`unit:<id>`, the website's "All chapters").
 class WordScope {
@@ -139,7 +139,7 @@ class _MatchGameState extends State<MatchGame> {
             constraints: const BoxConstraints(minHeight: 52),
             padding: const EdgeInsets.symmetric(horizontal: Space.sm, vertical: Space.sm),
             alignment: Alignment.center,
-            child: Txt(text, role: TextRole.label, align: TextAlign.center),
+            child: german ? GermanWord(_pairs[pair], role: TextRole.label, align: TextAlign.center) : Txt(text, role: TextRole.label, align: TextAlign.center),
           ),
         ),
       ),
@@ -307,7 +307,7 @@ class _PracticeSessionState extends State<PracticeSession> {
               child: ListView(children: gapped([
                 Txt(_toGerman ? T('Translate from English') : T('Translate from German'), role: TextRole.overline, colour: c.muted),
                 Row(children: [
-                  Expanded(child: Txt(_toGerman ? course.meaning(word) : word.german, role: TextRole.title)),
+                  Expanded(child: _toGerman ? Txt(course.meaning(word), role: TextRole.title) : GermanWord(word, role: TextRole.title)),
                   if (!_toGerman) ListenButton(word.german, size: 44),
                 ]),
                 AnswerField(
@@ -326,7 +326,7 @@ class _PracticeSessionState extends State<PracticeSession> {
                     child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: gapped([
                       Txt(label, role: TextRole.heading, colour: colour),
                       Txt(T('Correct answer'), role: TextRole.overline, colour: c.muted),
-                      Txt(expected, role: TextRole.bodyStrong),
+                      _toGerman ? GermanWord(word) : Txt(expected, role: TextRole.bodyStrong),
                       if (checked.note.isNotEmpty) Txt(checked.note),
                     ], Space.xs)),
                   ),
@@ -444,7 +444,8 @@ class _WordPagesState extends State<WordPages> {
                             Txt(T('Learned'), role: TextRole.label, colour: c.green),
                           ]),
                         WordPicture(codes: word.pic, size: 84),
-                        Txt(word.german, role: TextRole.german, align: TextAlign.center),
+                        GermanWord(word, role: TextRole.german, align: TextAlign.center),
+                        if (nounGender(word) case final gender?) GenderTag(gender),
                         ListenButton(word.german, size: 56),
                         Txt(course.meaning(word), role: TextRole.title, colour: c.brand, align: TextAlign.center),
                         ExampleList(word: word),

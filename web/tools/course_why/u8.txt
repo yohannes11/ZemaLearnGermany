@@ -1,0 +1,39 @@
+# Why each answer is right, for the exercises of Unit 8. Read by tools/course_content.py.
+# question ||| English explanation ||| Amharic explanation (none for a German sentence quoted from a reading text)
+
+## g8-separable
+Build the sentence. => Ich komme um acht Uhr an. ||| ankommen: komme in second place, and an goes to the end. ||| ankommen፦ komme በሁለተኛ ቦታ፤ an ወደ መጨረሻ ይሄዳል።
+Build the question. => Wann fährt der Zug ab? ||| abfahren: Wann first, then fährt, and ab goes to the end. ||| abfahren፦ መጀመሪያ Wann፣ ከዚያ fährt፤ ab ወደ መጨረሻ ይሄዳል።
+Build the question. => Holst du mich ab? ||| abholen: in a yes/no question holst comes first, and ab goes to the end. ||| abholen፦ በአዎ/አይ ጥያቄ holst መጀመሪያ ይመጣል፤ ab ወደ መጨረሻ ይሄዳል።
+Build the sentence. => Wir steigen in Frankfurt um. ||| umsteigen: steigen in second place, and um goes to the end. ||| umsteigen፦ steigen በሁለተኛ ቦታ፤ um ወደ መጨረሻ ይሄዳል።
+Build the question. => Kannst du mich abholen? ||| With a modal verb (kannst), abholen stays in one piece at the end. ||| ከረዳት ግሥ (kannst) ጋር abholen ሳይለያይ መጨረሻ ላይ ይቆያል።
+Build the sentence. => Der Bus fährt um zehn Uhr ab. ||| abfahren: fährt in second place, and ab goes to the end. ||| abfahren፦ fährt በሁለተኛ ቦታ፤ ab ወደ መጨረሻ ይሄዳል።
+Wann kommst du in Berlin [an]? ||| ankommen = to arrive; an goes to the end. ||| ankommen = መድረስ፤ an ወደ መጨረሻ ይሄዳል።
+Ich hole dich am Flughafen [ab]. ||| abholen = to pick up; ab goes to the end. ||| abholen = ሄዶ መቀበል፤ ab ወደ መጨረሻ ይሄዳል።
+Bitte steigen Sie hier [aus]. ||| aussteigen = to get off; aus goes to the end. ||| aussteigen = መውረድ፤ aus ወደ መጨረሻ ይሄዳል።
+Mein Flug [fliegt] um 22 Uhr ab. ||| abfliegen splits: fliegt in second place, ab already at the end. ||| abfliegen ይለያያል፦ fliegt በሁለተኛ ቦታ፤ ab አስቀድሞ መጨረሻ ላይ ነው።
+When do you arrive? => Wann kommst du an? ||| ankommen: Wann, then kommst, and an goes to the end. ||| ankommen፦ Wann፣ ከዚያ kommst፤ an ወደ መጨረሻ ይሄዳል።
+Can you pick me up? => Kannst du mich abholen? ||| With a modal verb (kannst), abholen stays in one piece at the end. ||| ከረዳት ግሥ (kannst) ጋር abholen ሳይለያይ መጨረሻ ላይ ይቆያል።
+Write what you hear. => Der Zug fährt von Gleis drei ab. ||| abfahren: fährt in second place, and ab goes to the end. Gleis = platform. ||| abfahren፦ fährt በሁለተኛ ቦታ፤ ab ወደ መጨረሻ ይሄዳል። Gleis = መሳፈሪያ መድረክ።
+
+## g8-mit
+Ich fahre mit [dem] Bus. ||| After mit, der becomes dem: der Bus → mit dem Bus. ||| ከmit በኋላ der → dem ይሆናል፦ der Bus → mit dem Bus።
+Sie fährt mit [der] U-Bahn. ||| After mit, die becomes der: die U-Bahn → mit der U-Bahn. ||| ከmit በኋላ die → der ይሆናል፦ die U-Bahn → mit der U-Bahn።
+Wir fahren mit [dem] Auto nach Adama. ||| After mit, das becomes dem: das Auto → mit dem Auto. ||| ከmit በኋላ das → dem ይሆናል፦ das Auto → mit dem Auto።
+Fährst du mit [dem] Fahrrad? ||| After mit, das becomes dem: das Fahrrad → mit dem Fahrrad. ||| ከmit በኋላ das → dem ይሆናል፦ das Fahrrad → mit dem Fahrrad።
+Ich fahre mit [der] Straßenbahn. ||| After mit, die becomes der: die Straßenbahn → mit der Straßenbahn. ||| ከmit በኋላ die → der ይሆናል፦ die Straßenbahn → mit der Straßenbahn።
+Er kommt mit [dem] Taxi. ||| After mit, das becomes dem: das Taxi → mit dem Taxi. ||| ከmit በኋላ das → dem ይሆናል፦ das Taxi → mit dem Taxi።
+Ich gehe zu [Fuß]. ||| On foot is a fixed phrase: zu Fuß. ||| በእግር የተወሰነ አገላለጽ ነው፦ zu Fuß።
+How do you say "by train"? => mit dem Zug ||| After mit, der becomes dem: der Zug → mit dem Zug. ||| ከmit በኋላ der → dem ይሆናል፦ der Zug → mit dem Zug።
+How do you say "by plane"? => mit dem Flugzeug ||| After mit, das becomes dem: das Flugzeug → mit dem Flugzeug. ||| ከmit በኋላ das → dem ይሆናል፦ das Flugzeug → mit dem Flugzeug።
+Build the sentence. => Ich fahre mit dem Bus zur Arbeit. ||| Ich, the verb fahre, then how (mit dem Bus), then where (zur Arbeit). ||| Ich፣ ግሡ fahre፣ ከዚያ በምን (mit dem Bus)፣ ከዚያ ወዴት (zur Arbeit)።
+by underground => mit der U-Bahn ||| After mit, die becomes der: die U-Bahn → mit der U-Bahn. ||| ከmit በኋላ die → der ይሆናል፦ die U-Bahn → mit der U-Bahn።
+on foot => zu Fuß ||| On foot is a fixed phrase: zu Fuß. ||| በእግር የተወሰነ አገላለጽ ነው፦ zu Fuß።
+
+## g8-reading
+Dawits Flug startet in Addis Abeba. => richtig ||| Mein Flug startet heute um 22:30 Uhr in Addis Abeba.
+Dawit kommt um 5:40 Uhr in Frankfurt an. => richtig ||| Lena: Wann kommst du in Frankfurt an? Dawit: Um 5:40 Uhr.
+Lena freut sich auf Dawit. => richtig ||| Ich freue mich so auf dich.
+Wo steigt Dawit um? => in Frankfurt ||| The text says: Um 5:40 Uhr. Dann steige ich in den Zug nach Leipzig um. ||| ጽሑፉ እንዲህ ይላል፦ Um 5:40 Uhr. Dann steige ich in den Zug nach Leipzig um።
+Wann kommt Dawit in Leipzig an? => um 9:15 Uhr ||| The text says: Ich komme um 9:15 Uhr am Hauptbahnhof an. ||| ጽሑፉ እንዲህ ይላል፦ Ich komme um 9:15 Uhr am Hauptbahnhof an።
+Wer holt Dawit ab? => Lena holt ihn ab. ||| The text says: Natürlich hole ich dich ab! ||| ጽሑፉ እንዲህ ይላል፦ Natürlich hole ich dich ab!

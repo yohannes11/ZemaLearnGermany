@@ -31,7 +31,8 @@ window.COURSE = {
          "The coffee from Ethiopia is good."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Taxi",
@@ -53,7 +54,8 @@ window.COURSE = {
          "Where is the taxi?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "Hallo!",
@@ -256,7 +258,8 @@ window.COURSE = {
          "What is your name?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Mann",
@@ -278,7 +281,8 @@ window.COURSE = {
          "Who is the man?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Tee",
@@ -300,7 +304,8 @@ window.COURSE = {
          "Would you like tea or coffee?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Bett",
@@ -322,7 +327,8 @@ window.COURSE = {
          "The bed is very big."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "wir",
@@ -445,7 +451,8 @@ window.COURSE = {
          "My mother lives in Addis Ababa."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Jahr",
@@ -464,7 +471,8 @@ window.COURSE = {
          "A year has twelve months."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "kommen",
@@ -511,7 +519,8 @@ window.COURSE = {
          "The cheese comes from Switzerland."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Mädchen",
@@ -533,7 +542,8 @@ window.COURSE = {
          "The girl is playing."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "spät",
@@ -618,7 +628,8 @@ window.COURSE = {
          "The spoon is new."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Tür",
@@ -640,7 +651,8 @@ window.COURSE = {
          "The door is red."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "müde",
@@ -681,7 +693,8 @@ window.COURSE = {
          "The exercise is difficult."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Tschüss!",
@@ -768,7 +781,8 @@ window.COURSE = {
          "The time is nice."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Wie?",
@@ -805,7 +819,8 @@ window.COURSE = {
          "That is love."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "viel",
@@ -887,7 +902,8 @@ window.COURSE = {
          "There are many houses here."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "das Haus",
@@ -909,7 +925,8 @@ window.COURSE = {
          "Where is the house?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Frau",
@@ -931,7 +948,8 @@ window.COURSE = {
          "Who is the woman?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "auch",
@@ -978,7 +996,8 @@ window.COURSE = {
          "I drink a lot of water."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Wein",
@@ -1000,7 +1019,8 @@ window.COURSE = {
          "I don't drink wine."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Vater",
@@ -1022,7 +1042,8 @@ window.COURSE = {
          "My father lives in Bahir Dar."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Zahl",
@@ -1044,7 +1065,8 @@ window.COURSE = {
          "Write the number, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Zug",
@@ -1066,7 +1088,8 @@ window.COURSE = {
          "The train is late."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "ja",
@@ -1129,7 +1152,8 @@ window.COURSE = {
          "The sun is beautiful."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Straße",
@@ -1151,7 +1175,8 @@ window.COURSE = {
          "The street is new."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Tag",
@@ -1170,7 +1195,8 @@ window.COURSE = {
          "A day has 24 hours."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "und",
@@ -1239,7 +1265,8 @@ window.COURSE = {
          "Where is the school?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "schnell",
@@ -1327,7 +1354,8 @@ window.COURSE = {
          "I live in the city."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "ich",
@@ -1387,7 +1415,8 @@ window.COURSE = {
          "We need milk."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Nacht",
@@ -1409,7 +1438,8 @@ window.COURSE = {
          "At night I sleep."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Buch",
@@ -1431,7 +1461,8 @@ window.COURSE = {
          "The book is good."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "kochen",
@@ -1475,7 +1506,8 @@ window.COURSE = {
          "The apple is good."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Brot",
@@ -1497,7 +1529,8 @@ window.COURSE = {
          "We are buying bread."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       }
      ]
     },
@@ -1789,7 +1822,8 @@ window.COURSE = {
          "The German alphabet is easy."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Buchstabe",
@@ -1811,7 +1845,8 @@ window.COURSE = {
          "My name has five letters."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Umlaut",
@@ -1830,7 +1865,8 @@ window.COURSE = {
          "German has three umlauts: ä, ö, ü."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Eszett",
@@ -1849,7 +1885,8 @@ window.COURSE = {
          "“Heißen” has a ß."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "buchstabieren",
@@ -2142,7 +2179,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "das Taxi",
-        "why": ""
+        "why": "Taxi sounds as in English; Kaffee starts with k, Hotel with h."
        },
        {
         "type": "listen",
@@ -2155,7 +2192,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "Ich lerne Deutsch.",
-        "why": ""
+        "why": "You hear the word Deutsch: Ich lerne Deutsch = I am learning German."
        },
        {
         "type": "gap",
@@ -2196,7 +2233,8 @@ window.COURSE = {
         "answer": "Ich lerne Deutsch.",
         "alts": [],
         "hint": "I am learning German.",
-        "say": "Ich lerne Deutsch."
+        "say": "Ich lerne Deutsch.",
+        "why": "Ich first, then the verb lerne, then what you learn."
        },
        {
         "type": "order",
@@ -2210,7 +2248,8 @@ window.COURSE = {
         "answer": "Ich verstehe das nicht.",
         "alts": [],
         "hint": "I don't understand that.",
-        "say": "Ich verstehe das nicht."
+        "say": "Ich verstehe das nicht.",
+        "why": "nicht comes at the end: Ich verstehe das nicht."
        }
       ]
      }
@@ -2789,7 +2828,7 @@ window.COURSE = {
         ],
         "hint": "three",
         "say": "drei",
-        "why": "",
+        "why": "ei sounds like \"eye\": drei = three.",
         "listen": true
        },
        {
@@ -2803,7 +2842,7 @@ window.COURSE = {
         ],
         "hint": "four",
         "say": "vier",
-        "why": "",
+        "why": "ie is a long \"ee\": vier = four.",
         "listen": true
        },
        {
@@ -2817,7 +2856,7 @@ window.COURSE = {
         ],
         "hint": "seven",
         "say": "sieben",
-        "why": "",
+        "why": "ie is a long \"ee\": sieben = seven.",
         "listen": true
        },
        {
@@ -2831,7 +2870,7 @@ window.COURSE = {
         ],
         "hint": "no",
         "say": "nein",
-        "why": "",
+        "why": "ei sounds like \"eye\": nein = no.",
         "listen": true
        },
        {
@@ -2845,7 +2884,7 @@ window.COURSE = {
         ],
         "hint": "my",
         "say": "mein",
-        "why": "",
+        "why": "ei sounds like \"eye\": mein = my.",
         "listen": true
        },
        {
@@ -2859,7 +2898,7 @@ window.COURSE = {
         ],
         "hint": "the time",
         "say": "die Zeit",
-        "why": "",
+        "why": "ei sounds like \"eye\": die Zeit = the time.",
         "listen": true
        },
        {
@@ -2873,7 +2912,7 @@ window.COURSE = {
         ],
         "hint": "the love",
         "say": "die Liebe",
-        "why": "",
+        "why": "ie is a long \"ee\": die Liebe = the love.",
         "listen": true
        },
        {
@@ -2888,7 +2927,7 @@ window.COURSE = {
         ],
         "hint": "today",
         "say": "heute",
-        "why": "",
+        "why": "eu sounds like \"oy\": heute = today.",
         "listen": true
        },
        {
@@ -2903,7 +2942,7 @@ window.COURSE = {
         ],
         "hint": "the house",
         "say": "das Haus",
-        "why": "",
+        "why": "au sounds like \"ow\" in \"how\": das Haus = the house.",
         "listen": true
        },
        {
@@ -2918,7 +2957,7 @@ window.COURSE = {
         ],
         "hint": "nine",
         "say": "neun",
-        "why": "",
+        "why": "eu sounds like \"oy\": neun = nine.",
         "listen": true
        },
        {
@@ -2933,7 +2972,7 @@ window.COURSE = {
         ],
         "hint": "the woman",
         "say": "die Frau",
-        "why": "",
+        "why": "au sounds like \"ow\" in \"how\": die Frau = the woman.",
         "listen": true
        }
       ]
@@ -3059,7 +3098,7 @@ window.COURSE = {
         ],
         "hint": "Choose the right sound.",
         "say": "das Wasser",
-        "why": ""
+        "why": "German w sounds like English v: Wasser sounds like \"vasser\"."
        },
        {
         "type": "choose",
@@ -3072,7 +3111,7 @@ window.COURSE = {
         ],
         "hint": "Choose the right sound.",
         "say": "der Wein",
-        "why": ""
+        "why": "German w sounds like English v: Wein sounds like \"vine\"."
        },
        {
         "type": "choose",
@@ -3085,7 +3124,7 @@ window.COURSE = {
         ],
         "hint": "Choose the right sound.",
         "say": "der Vater",
-        "why": ""
+        "why": "German v usually sounds like f: Vater sounds like \"fahter\"."
        },
        {
         "type": "choose",
@@ -3098,7 +3137,7 @@ window.COURSE = {
         ],
         "hint": "Choose the right sound.",
         "say": "vier",
-        "why": ""
+        "why": "German v usually sounds like f: vier sounds like \"feer\"."
        },
        {
         "type": "choose",
@@ -3111,7 +3150,7 @@ window.COURSE = {
         ],
         "hint": "Choose the right sound.",
         "say": "die Zeit",
-        "why": ""
+        "why": "German z sounds like \"ts\": Zeit sounds like \"tsite\"."
        },
        {
         "type": "choose",
@@ -3124,7 +3163,7 @@ window.COURSE = {
         ],
         "hint": "Choose the right sound.",
         "say": "zwei",
-        "why": ""
+        "why": "German z sounds like \"ts\": zwei sounds like \"tsvy\"."
        },
        {
         "type": "choose",
@@ -3137,7 +3176,7 @@ window.COURSE = {
         ],
         "hint": "Choose the right sound.",
         "say": "ja",
-        "why": ""
+        "why": "German j sounds like English y: ja sounds like \"yah\"."
        },
        {
         "type": "choose",
@@ -3163,7 +3202,7 @@ window.COURSE = {
         ],
         "hint": "Choose the right sound.",
         "say": "die Straße",
-        "why": ""
+        "why": "ß is a sharp double s: Straße sounds like \"shtrahsse\"."
        },
        {
         "type": "choose",
@@ -3407,7 +3446,7 @@ window.COURSE = {
         ],
         "hint": "Choose the right sound.",
         "say": "sechs",
-        "why": ""
+        "why": "chs together sounds like ks: sechs sounds like \"zeks\"."
        }
       ]
      }
@@ -3568,7 +3607,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "zwei",
-        "why": ""
+        "why": "zwei (2) starts with \"tsv\"; drei (3) starts with dr."
        },
        {
         "type": "listen",
@@ -3581,7 +3620,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "drei",
-        "why": ""
+        "why": "drei (3) starts with dr; zwei (2) starts with \"tsv\"."
        },
        {
         "type": "listen",
@@ -3594,7 +3633,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "sechs",
-        "why": ""
+        "why": "sechs (6) ends in \"ks\"; sieben (7) has two syllables."
        },
        {
         "type": "listen",
@@ -3607,7 +3646,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "sieben",
-        "why": ""
+        "why": "sieben (7) has two syllables: sie-ben. sechs (6) has one."
        },
        {
         "type": "listen",
@@ -3620,7 +3659,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "elf",
-        "why": ""
+        "why": "elf (11) is short and starts with e; zwölf (12) starts with \"tsv\"."
        },
        {
         "type": "listen",
@@ -3633,7 +3672,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "zwölf",
-        "why": ""
+        "why": "zwölf (12) starts with \"tsv\" and has ö; elf (11) starts with e."
        },
        {
         "type": "listen",
@@ -3646,7 +3685,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "neun",
-        "why": ""
+        "why": "neun (9) has eu, said \"oy\"; zehn (10) starts with \"ts\"."
        },
        {
         "type": "gap",
@@ -3660,7 +3699,7 @@ window.COURSE = {
         ],
         "hint": "3 + 4",
         "say": "drei plus vier ist sieben",
-        "why": ""
+        "why": "3 + 4 = 7, and 7 is sieben."
        },
        {
         "type": "gap",
@@ -3674,7 +3713,7 @@ window.COURSE = {
         ],
         "hint": "10 + 2",
         "say": "zehn plus zwei ist zwölf",
-        "why": ""
+        "why": "10 + 2 = 12, and 12 is zwölf."
        },
        {
         "type": "gap",
@@ -3688,7 +3727,7 @@ window.COURSE = {
         ],
         "hint": "8 − 5",
         "say": "acht minus fünf ist drei",
-        "why": ""
+        "why": "8 − 5 = 3, and 3 is drei."
        },
        {
         "type": "gap",
@@ -3702,7 +3741,7 @@ window.COURSE = {
         ],
         "hint": "9 + 2",
         "say": "neun plus zwei ist elf",
-        "why": ""
+        "why": "9 + 2 = 11, and 11 is elf."
        },
        {
         "type": "gap",
@@ -3716,7 +3755,7 @@ window.COURSE = {
         ],
         "hint": "1 + 3",
         "say": "eins plus drei ist vier",
-        "why": ""
+        "why": "1 + 3 = 4, and 4 is vier."
        }
       ]
      }
@@ -3852,7 +3891,7 @@ window.COURSE = {
         ],
         "hint": "Listen to the spelling, then choose the name.",
         "say": "es, e, el, a, em",
-        "why": ""
+        "why": "S-E-L-A-M: e after the S, a before the M."
        },
        {
         "type": "listen",
@@ -3865,7 +3904,7 @@ window.COURSE = {
         ],
         "hint": "Listen to the spelling, then choose the name.",
         "say": "de, a, we, i, te",
-        "why": ""
+        "why": "D-A-W-I-T: a German W (\"vay\") and a T at the end."
        },
        {
         "type": "listen",
@@ -3878,7 +3917,7 @@ window.COURSE = {
         ],
         "hint": "Listen to the spelling, then choose the name.",
         "say": "te, i, ge, i, es, te",
-        "why": ""
+        "why": "T-I-G-I-S-T: the letter I comes twice."
        },
        {
         "type": "listen",
@@ -3891,7 +3930,7 @@ window.COURSE = {
         ],
         "hint": "Listen to the spelling, then choose the name.",
         "say": "üpsilon, o, en, a, es",
-        "why": ""
+        "why": "The name starts with Y (\"üpsilon\"); a J would be \"jot\"."
        },
        {
         "type": "listen",
@@ -3904,7 +3943,7 @@ window.COURSE = {
         ],
         "hint": "Listen to the spelling, then choose the name.",
         "say": "em, e, er, o, en",
-        "why": ""
+        "why": "M-E-R-O-N: first E, then O."
        },
        {
         "type": "listen",
@@ -3917,7 +3956,7 @@ window.COURSE = {
         ],
         "hint": "Listen to the spelling, then choose the town.",
         "say": "ha, a, we, a, es, es, a",
-        "why": ""
+        "why": "H-A-W-A-S-S-A: it starts with H and has a double S."
        },
        {
         "type": "choose",
@@ -3930,7 +3969,7 @@ window.COURSE = {
         ],
         "hint": "Choose the letter name.",
         "say": "jot",
-        "why": ""
+        "why": "J is called \"jot\" and sounds like English y."
        },
        {
         "type": "choose",
@@ -3943,7 +3982,7 @@ window.COURSE = {
         ],
         "hint": "Choose the letter name.",
         "say": "fau",
-        "why": ""
+        "why": "V is called \"fau\", like the f sound it usually makes."
        },
        {
         "type": "choose",
@@ -3956,7 +3995,7 @@ window.COURSE = {
         ],
         "hint": "Choose the letter name.",
         "say": "we",
-        "why": ""
+        "why": "W is called \"we\", said \"vay\"."
        },
        {
         "type": "choose",
@@ -3969,7 +4008,7 @@ window.COURSE = {
         ],
         "hint": "Choose the letter name.",
         "say": "zett",
-        "why": ""
+        "why": "Z is called \"zett\", said \"tset\"."
        },
        {
         "type": "choose",
@@ -3982,7 +4021,7 @@ window.COURSE = {
         ],
         "hint": "It sounds like the \"ee\" in \"see\".",
         "say": "i",
-        "why": ""
+        "why": "I is called \"i\", like the \"ee\" in \"see\"."
        },
        {
         "type": "write",
@@ -3993,7 +4032,7 @@ window.COURSE = {
         "alts": [],
         "hint": "A name, spelled letter by letter.",
         "say": "ha, a, en, en, a",
-        "why": ""
+        "why": "H-A-N-N-A: Hanna has a double N."
        }
       ]
      }
@@ -4076,7 +4115,8 @@ window.COURSE = {
          "Good morning, Liya!"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Tag",
@@ -4095,7 +4135,8 @@ window.COURSE = {
          "A day has 24 hours."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Abend",
@@ -4117,7 +4158,8 @@ window.COURSE = {
          "Good evening, Mr Tesfaye!"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "Guten Morgen!",
@@ -4253,7 +4295,8 @@ window.COURSE = {
          "What is your name?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Vorname",
@@ -4272,7 +4315,8 @@ window.COURSE = {
          "The first name is Dawit."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Nachname",
@@ -4291,7 +4335,8 @@ window.COURSE = {
          "How do you spell the last name?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "heißen",
@@ -4416,7 +4461,8 @@ window.COURSE = {
          "Who is the man?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Frau",
@@ -4438,7 +4484,8 @@ window.COURSE = {
          "Who is the woman?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Wer ist das?",
@@ -5774,7 +5821,8 @@ window.COURSE = {
          "The German course is good."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Kursleiter",
@@ -5796,7 +5844,8 @@ window.COURSE = {
          "Where is the course teacher?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Kursleiterin",
@@ -5818,7 +5867,8 @@ window.COURSE = {
          "What is the course teacher called?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Ich lerne Deutsch.",
@@ -6062,7 +6112,8 @@ window.COURSE = {
         "answer": "Woher kommst du?",
         "alts": [],
         "hint": "Where are you from?",
-        "say": "Woher kommst du?"
+        "say": "Woher kommst du?",
+        "why": "W-word first, then the verb."
        },
        {
         "type": "order",
@@ -6075,7 +6126,8 @@ window.COURSE = {
         "answer": "Wie heißen Sie?",
         "alts": [],
         "hint": "What is your name? (formal)",
-        "say": "Wie heißen Sie?"
+        "say": "Wie heißen Sie?",
+        "why": "W-word first, then the verb."
        },
        {
         "type": "order",
@@ -6089,7 +6141,8 @@ window.COURSE = {
         "answer": "Ich komme aus Äthiopien.",
         "alts": [],
         "hint": "I come from Ethiopia.",
-        "say": "Ich komme aus Äthiopien."
+        "say": "Ich komme aus Äthiopien.",
+        "why": "In a statement the verb comes second: Ich, then komme."
        },
        {
         "type": "order",
@@ -6102,7 +6155,8 @@ window.COURSE = {
         "answer": "Das ist Dawit.",
         "alts": [],
         "hint": "That is Dawit.",
-        "say": "Das ist Dawit."
+        "say": "Das ist Dawit.",
+        "why": "In a statement the verb comes second: Das, then ist."
        },
        {
         "type": "order",
@@ -6115,7 +6169,8 @@ window.COURSE = {
         "answer": "Wer ist das?",
         "alts": [],
         "hint": "Who is that?",
-        "say": "Wer ist das?"
+        "say": "Wer ist das?",
+        "why": "W-word first, then the verb."
        },
        {
         "type": "order",
@@ -6129,7 +6184,8 @@ window.COURSE = {
         "answer": "Kommst du aus Kenia?",
         "alts": [],
         "hint": "Do you come from Kenya?",
-        "say": "Kommst du aus Kenia?"
+        "say": "Kommst du aus Kenia?",
+        "why": "Yes/no question: the verb comes first."
        },
        {
         "type": "order",
@@ -6142,7 +6198,8 @@ window.COURSE = {
         "answer": "Wo wohnst du?",
         "alts": [],
         "hint": "Where do you live?",
-        "say": "Wo wohnst du?"
+        "say": "Wo wohnst du?",
+        "why": "W-word first, then the verb."
        },
        {
         "type": "order",
@@ -6156,7 +6213,8 @@ window.COURSE = {
         "answer": "Lernst du auch Deutsch?",
         "alts": [],
         "hint": "Are you learning German too?",
-        "say": "Lernst du auch Deutsch?"
+        "say": "Lernst du auch Deutsch?",
+        "why": "Yes/no question: the verb comes first."
        },
        {
         "type": "choose",
@@ -6193,7 +6251,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Ich komme aus Äthiopien.",
-        "why": ""
+        "why": "ich goes with komme, and \"from\" is aus."
        },
        {
         "type": "write",
@@ -6206,7 +6264,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Wie heißt du?",
-        "why": ""
+        "why": "Informal is du: du heißt (heiß + st, with one s)."
        },
        {
         "type": "write",
@@ -6220,7 +6278,7 @@ window.COURSE = {
         "hint": "",
         "say": "Woher kommen Sie?",
         "show": "Where are you from?",
-        "why": ""
+        "why": "Woher = where from; Sie is the polite \"you\"."
        }
       ]
      }
@@ -6397,7 +6455,7 @@ window.COURSE = {
         ],
         "hint": "Where are you from? (formal)",
         "say": "Woher kommen Sie?",
-        "why": ""
+        "why": "Sie (formal) takes the -en form: kommen."
        },
        {
         "type": "gap",
@@ -6411,7 +6469,7 @@ window.COURSE = {
         ],
         "hint": "Where are you from? (informal)",
         "say": "Woher kommst du?",
-        "why": ""
+        "why": "du takes -st: kommst."
        },
        {
         "type": "gap",
@@ -6425,7 +6483,7 @@ window.COURSE = {
         ],
         "hint": "Who are you? (formal)",
         "say": "Wer sind Sie?",
-        "why": ""
+        "why": "Sie (formal) goes with sind."
        },
        {
         "type": "gap",
@@ -6439,7 +6497,7 @@ window.COURSE = {
         ],
         "hint": "How are you? (formal)",
         "say": "Wie geht es Ihnen?",
-        "why": ""
+        "why": "Formal: Wie geht es Ihnen? To a friend: Wie geht es dir?"
        },
        {
         "type": "gap",
@@ -6453,7 +6511,7 @@ window.COURSE = {
         ],
         "hint": "Fine, thanks. And you? (to a friend)",
         "say": "Gut, danke. Und dir?",
-        "why": ""
+        "why": "To a friend: Und dir? (Ihnen is formal.)"
        },
        {
         "type": "order",
@@ -6469,7 +6527,8 @@ window.COURSE = {
         "answer": "Guten Tag! Ich heiße Abebe Tesfaye. Guten Tag, Herr Tesfaye. Ich bin Anna Weber. Freut mich, Frau Weber. Woher kommen Sie? Ich komme aus Deutschland. Und Sie? Ich komme aus Äthiopien.",
         "hint": "A formal first meeting",
         "say": "",
-        "show": "Guten Tag! Ich heiße Abebe Tesfaye. → Guten Tag, Herr Tesfaye. Ich bin Anna Weber. → Freut mich, Frau Weber. Woher kommen Sie? → Ich komme aus Deutschland. Und Sie? → Ich komme aus Äthiopien."
+        "show": "Guten Tag! Ich heiße Abebe Tesfaye. → Guten Tag, Herr Tesfaye. Ich bin Anna Weber. → Freut mich, Frau Weber. Woher kommen Sie? → Ich komme aus Deutschland. Und Sie? → Ich komme aus Äthiopien.",
+        "why": "A polite first meeting with Sie: greet and say your name, answer with Herr or Frau, then ask where the other person is from."
        },
        {
         "type": "order",
@@ -6485,7 +6544,8 @@ window.COURSE = {
         "answer": "Hallo! Ich bin Meron. Und du? Hi, Meron! Ich heiße Jonas. Woher kommst du, Jonas? Aus Österreich. Und du? Ich komme aus Eritrea.",
         "hint": "Two classmates",
         "say": "",
-        "show": "Hallo! Ich bin Meron. Und du? → Hi, Meron! Ich heiße Jonas. → Woher kommst du, Jonas? → Aus Österreich. Und du? → Ich komme aus Eritrea."
+        "show": "Hallo! Ich bin Meron. Und du? → Hi, Meron! Ich heiße Jonas. → Woher kommst du, Jonas? → Aus Österreich. Und du? → Ich komme aus Eritrea.",
+        "why": "Classmates use du: hello and names first, then where each one is from."
        }
       ]
      }
@@ -6551,7 +6611,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Sie kommt aus Deutschland, aus Hamburg."
        },
        {
         "type": "choose",
@@ -6590,7 +6650,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Dawit kommt aus Bahir Dar."
        },
        {
         "type": "choose",
@@ -6603,7 +6663,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Dawit sagt: „Ich lerne Deutsch für die Arbeit.“"
        },
        {
         "type": "choose",
@@ -6629,7 +6689,7 @@ window.COURSE = {
         ],
         "hint": "Who is Frau Wagner?",
         "say": "die Kursleiterin",
-        "why": ""
+        "why": "The text says: Die Kursleiterin heißt Frau Wagner."
        },
        {
         "type": "choose",
@@ -6642,7 +6702,7 @@ window.COURSE = {
         ],
         "hint": "What does Meron say?",
         "say": "Noch einmal, bitte!",
-        "why": ""
+        "why": "The text says: Meron fragt: „Wie bitte? Noch einmal, bitte!“"
        },
        {
         "type": "write",
@@ -6656,7 +6716,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Sie wohnt in Addis Abeba.",
-        "why": ""
+        "why": "The text says: Meron kommt aus Eritrea, aber sie wohnt in Addis Abeba."
        },
        {
         "type": "write",
@@ -6671,7 +6731,7 @@ window.COURSE = {
         "hint": "",
         "say": "Ich lerne Deutsch für die Arbeit.",
         "show": "I am learning German for work.",
-        "why": ""
+        "why": "ich lerne = I am learning; für die Arbeit = for work."
        }
       ]
      }
@@ -6718,7 +6778,8 @@ window.COURSE = {
          "My mother lives in Addis Ababa."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Vater",
@@ -6740,7 +6801,8 @@ window.COURSE = {
          "My father lives in Bahir Dar."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Eltern",
@@ -6762,7 +6824,8 @@ window.COURSE = {
          "What are your parents called?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "der Mann",
@@ -6784,7 +6847,8 @@ window.COURSE = {
          "Who is the man?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Frau",
@@ -6806,7 +6870,8 @@ window.COURSE = {
          "Who is the woman?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Kinder",
@@ -6829,7 +6894,8 @@ window.COURSE = {
          "The children are at school."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "der Sohn",
@@ -6851,7 +6917,8 @@ window.COURSE = {
          "Her son plays football."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Tochter",
@@ -6873,7 +6940,8 @@ window.COURSE = {
          "His daughter is learning German."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Bruder",
@@ -6895,7 +6963,8 @@ window.COURSE = {
          "My brother is a teacher."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Schwester",
@@ -6917,7 +6986,8 @@ window.COURSE = {
          "My sister is twenty."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Geschwister",
@@ -6940,7 +7010,8 @@ window.COURSE = {
          "My siblings live in Ethiopia."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "der Opa, der Großvater",
@@ -6962,7 +7033,8 @@ window.COURSE = {
          "My grandfather lives in Gondar."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Oma, die Großmutter",
@@ -6984,7 +7056,8 @@ window.COURSE = {
          "My grandmother is very kind."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Großeltern",
@@ -7007,7 +7080,8 @@ window.COURSE = {
          "I love my grandparents."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "die Tante",
@@ -7026,7 +7100,8 @@ window.COURSE = {
          "That is my aunt Almaz."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Onkel",
@@ -7045,7 +7120,8 @@ window.COURSE = {
          "My uncle lives in Kenya."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Cousine",
@@ -7064,7 +7140,8 @@ window.COURSE = {
          "My cousin is learning German too."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Cousin",
@@ -7083,7 +7160,8 @@ window.COURSE = {
          "My cousin lives in Bahir Dar."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       }
      ]
     },
@@ -7193,7 +7271,8 @@ window.COURSE = {
          "Who is the man?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Frau",
@@ -7215,7 +7294,8 @@ window.COURSE = {
          "Who is the woman?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Wer ist das?",
@@ -7574,7 +7654,8 @@ window.COURSE = {
          "The language is difficult."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "sprechen",
@@ -8011,7 +8092,8 @@ window.COURSE = {
          "The phone number is 0911 23 45 67."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Wie ist deine Telefonnummer?",
@@ -8692,7 +8774,8 @@ window.COURSE = {
          "Do you have a boyfriend?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Freundin",
@@ -8714,7 +8797,8 @@ window.COURSE = {
          "Do you have a girlfriend?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Bist du verheiratet?",
@@ -8919,7 +9003,8 @@ window.COURSE = {
          "What is your name?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Vorname",
@@ -8938,7 +9023,8 @@ window.COURSE = {
          "The first name is Dawit."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Mittelname",
@@ -8957,7 +9043,8 @@ window.COURSE = {
          "Do you have a middle name?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Spitzname",
@@ -8976,7 +9063,8 @@ window.COURSE = {
          "His nickname is funny."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Nachname",
@@ -8995,7 +9083,8 @@ window.COURSE = {
          "How do you spell the last name?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Straße",
@@ -9017,7 +9106,8 @@ window.COURSE = {
          "The street is new."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Hausnummer",
@@ -9036,7 +9126,8 @@ window.COURSE = {
          "The house number is on the door."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Stadt",
@@ -9058,7 +9149,8 @@ window.COURSE = {
          "I live in the city."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Postleitzahl",
@@ -9080,7 +9172,8 @@ window.COURSE = {
          "Please write the postcode."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Handynummer",
@@ -9102,7 +9195,8 @@ window.COURSE = {
          "I'll write down my mobile number for you."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Datum",
@@ -9124,7 +9218,8 @@ window.COURSE = {
          "The date is at the top."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Unterschrift",
@@ -9146,7 +9241,8 @@ window.COURSE = {
          "The signature goes at the bottom."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       }
      ]
     },
@@ -9174,7 +9270,8 @@ window.COURSE = {
          "Please write your age."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "jung",
@@ -9333,7 +9430,8 @@ window.COURSE = {
          "The grandson visits the grandma."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Enkelin",
@@ -9355,7 +9453,8 @@ window.COURSE = {
          "The granddaughter plays with grandpa."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Enkelkinder",
@@ -9378,7 +9477,8 @@ window.COURSE = {
          "The grandchildren are playing in the garden."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "der Ehemann",
@@ -9400,7 +9500,8 @@ window.COURSE = {
          "This is my husband."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Ehefrau",
@@ -9422,7 +9523,8 @@ window.COURSE = {
          "This is my wife."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Partner",
@@ -9444,7 +9546,8 @@ window.COURSE = {
          "Her partner is very kind."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Partnerin",
@@ -9466,7 +9569,8 @@ window.COURSE = {
          "The partner works a lot."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Mama",
@@ -9532,7 +9636,8 @@ window.COURSE = {
          "What is the child called?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "Ich bin Single.",
@@ -9962,7 +10067,7 @@ window.COURSE = {
         ],
         "hint": "I am a teacher.",
         "say": "Ich bin Lehrerin.",
-        "why": ""
+        "why": "ich goes with bin."
        },
        {
         "type": "gap",
@@ -9977,7 +10082,7 @@ window.COURSE = {
         ],
         "hint": "You are my friend.",
         "say": "Du bist mein Freund.",
-        "why": ""
+        "why": "du goes with bist."
        },
        {
         "type": "gap",
@@ -9992,7 +10097,7 @@ window.COURSE = {
         ],
         "hint": "He is married.",
         "say": "Er ist verheiratet.",
-        "why": ""
+        "why": "er, sie and es go with ist."
        },
        {
         "type": "gap",
@@ -10007,7 +10112,7 @@ window.COURSE = {
         ],
         "hint": "We are siblings.",
         "say": "Wir sind Geschwister.",
-        "why": ""
+        "why": "wir goes with sind."
        },
        {
         "type": "gap",
@@ -10022,7 +10127,7 @@ window.COURSE = {
         ],
         "hint": "You (all) are on time.",
         "say": "Ihr seid pünktlich.",
-        "why": ""
+        "why": "ihr goes with seid."
        },
        {
         "type": "gap",
@@ -10037,7 +10142,7 @@ window.COURSE = {
         ],
         "hint": "They are my parents.",
         "say": "Sie sind meine Eltern.",
-        "why": ""
+        "why": "sie (they) goes with sind."
        },
        {
         "type": "gap",
@@ -10052,7 +10157,7 @@ window.COURSE = {
         ],
         "hint": "That is my sister.",
         "say": "Das ist meine Schwester.",
-        "why": ""
+        "why": "One person (das, meine Schwester) goes with ist."
        },
        {
         "type": "gap",
@@ -10067,7 +10172,7 @@ window.COURSE = {
         ],
         "hint": "Are you Mr Schmidt? (formal)",
         "say": "Sind Sie Herr Schmidt?",
-        "why": ""
+        "why": "Sie (formal) goes with sind; in a yes/no question the verb comes first."
        },
        {
         "type": "gap",
@@ -10082,7 +10187,7 @@ window.COURSE = {
         ],
         "hint": "Are you single?",
         "say": "Bist du ledig?",
-        "why": ""
+        "why": "du goes with bist; in a yes/no question the verb comes first."
        },
        {
         "type": "gap",
@@ -10097,7 +10202,7 @@ window.COURSE = {
         ],
         "hint": "My grandma is 80.",
         "say": "Meine Oma ist 80.",
-        "why": ""
+        "why": "meine Oma is one person, like sie: ist."
        }
       ]
      }
@@ -10210,7 +10315,7 @@ window.COURSE = {
         ],
         "hint": "I speak German.",
         "say": "Ich spreche Deutsch.",
-        "why": ""
+        "why": "ich keeps the e: spreche."
        },
        {
         "type": "gap",
@@ -10255,7 +10360,7 @@ window.COURSE = {
         ],
         "hint": "We speak Spanish.",
         "say": "Wir sprechen Spanisch.",
-        "why": ""
+        "why": "wir keeps the e: sprechen."
        },
        {
         "type": "gap",
@@ -10285,7 +10390,7 @@ window.COURSE = {
         ],
         "hint": "My mother speaks Portuguese.",
         "say": "Meine Mutter spricht Portugiesisch.",
-        "why": ""
+        "why": "meine Mutter is like sie (she): e → i, spricht."
        },
        {
         "type": "gap",
@@ -10300,7 +10405,7 @@ window.COURSE = {
         ],
         "hint": "Do you speak Chinese? (formal)",
         "say": "Sprechen Sie Chinesisch?",
-        "why": ""
+        "why": "Sie (formal) keeps the e: sprechen."
        },
        {
         "type": "gap",
@@ -10315,7 +10420,7 @@ window.COURSE = {
         ],
         "hint": "They speak French.",
         "say": "Sie sprechen Französisch.",
-        "why": ""
+        "why": "sie (they) keeps the e: sprechen."
        },
        {
         "type": "gap",
@@ -10330,7 +10435,7 @@ window.COURSE = {
         ],
         "hint": "You speak a little German.",
         "say": "Du sprichst ein bisschen Deutsch.",
-        "why": ""
+        "why": "du: e → i, sprichst."
        }
       ]
      }
@@ -10689,7 +10794,7 @@ window.COURSE = {
         ],
         "hint": "my mother (die Mutter)",
         "say": "meine Mutter",
-        "why": ""
+        "why": "die Mutter is feminine: meine."
        },
        {
         "type": "gap",
@@ -10702,7 +10807,7 @@ window.COURSE = {
         ],
         "hint": "my father (der Vater)",
         "say": "mein Vater",
-        "why": ""
+        "why": "der Vater is masculine: mein."
        },
        {
         "type": "gap",
@@ -10715,7 +10820,7 @@ window.COURSE = {
         ],
         "hint": "my parents (plural)",
         "say": "meine Eltern",
-        "why": ""
+        "why": "Eltern is plural: meine."
        },
        {
         "type": "gap",
@@ -10728,7 +10833,7 @@ window.COURSE = {
         ],
         "hint": "my brother (der Bruder)",
         "say": "mein Bruder",
-        "why": ""
+        "why": "der Bruder is masculine: mein."
        },
        {
         "type": "gap",
@@ -10741,7 +10846,7 @@ window.COURSE = {
         ],
         "hint": "my sister (die Schwester)",
         "say": "meine Schwester",
-        "why": ""
+        "why": "die Schwester is feminine: meine."
        },
        {
         "type": "gap",
@@ -10754,7 +10859,7 @@ window.COURSE = {
         ],
         "hint": "my grandparents (plural)",
         "say": "meine Großeltern",
-        "why": ""
+        "why": "Großeltern is plural: meine."
        },
        {
         "type": "gap",
@@ -10767,7 +10872,7 @@ window.COURSE = {
         ],
         "hint": "my name (der Name)",
         "say": "mein Name",
-        "why": ""
+        "why": "der Name is masculine: mein."
        },
        {
         "type": "gap",
@@ -10780,7 +10885,7 @@ window.COURSE = {
         ],
         "hint": "my phone number (die Telefonnummer)",
         "say": "meine Telefonnummer",
-        "why": ""
+        "why": "die Telefonnummer is feminine: meine."
        },
        {
         "type": "gap",
@@ -10793,7 +10898,7 @@ window.COURSE = {
         ],
         "hint": "my child (das Kind)",
         "say": "mein Kind",
-        "why": ""
+        "why": "das Kind is neuter: mein."
        },
        {
         "type": "gap",
@@ -10806,7 +10911,7 @@ window.COURSE = {
         ],
         "hint": "my aunt (die Tante)",
         "say": "meine Tante",
-        "why": ""
+        "why": "die Tante is feminine: meine."
        },
        {
         "type": "gap",
@@ -10819,7 +10924,7 @@ window.COURSE = {
         ],
         "hint": "my uncle (der Onkel)",
         "say": "mein Onkel",
-        "why": ""
+        "why": "der Onkel is masculine: mein."
        }
       ]
      }
@@ -10918,7 +11023,7 @@ window.COURSE = {
         ],
         "hint": "Yes, it is.",
         "say": "Ist das deine Mutter? – Ja, das ist meine Mutter.",
-        "why": ""
+        "why": "A normal question: \"yes\" is ja."
        },
        {
         "type": "gap",
@@ -10946,7 +11051,7 @@ window.COURSE = {
         ],
         "hint": "No, I am single.",
         "say": "Bist du verheiratet? – Nein, ich bin ledig.",
-        "why": ""
+        "why": "The answer is no: nein."
        },
        {
         "type": "gap",
@@ -10960,7 +11065,7 @@ window.COURSE = {
         ],
         "hint": "Yes, I am married.",
         "say": "Bist du nicht verheiratet? – Doch, ich bin verheiratet.",
-        "why": ""
+        "why": "A question with nicht: \"yes\" is doch."
        },
        {
         "type": "gap",
@@ -10988,7 +11093,7 @@ window.COURSE = {
         ],
         "hint": "No, I have no children.",
         "say": "Hast du keine Kinder? – Nein, ich habe keine Kinder.",
-        "why": ""
+        "why": "You agree that there are no children: German says nein, where Amharic says \"yes, I have none\"."
        },
        {
         "type": "gap",
@@ -11002,7 +11107,7 @@ window.COURSE = {
         ],
         "hint": "Yes, very well.",
         "say": "Sprichst du Amharisch? – Ja, sehr gut.",
-        "why": ""
+        "why": "A normal question: \"yes\" is ja."
        },
        {
         "type": "gap",
@@ -11016,7 +11121,7 @@ window.COURSE = {
         ],
         "hint": "Yes, a little.",
         "say": "Sprichst du kein Englisch? – Doch, ein bisschen.",
-        "why": ""
+        "why": "A question with kein: \"yes\" is doch."
        },
        {
         "type": "gap",
@@ -11030,7 +11135,7 @@ window.COURSE = {
         ],
         "hint": "No, from Ethiopia.",
         "say": "Kommst du nicht aus Kenia? – Nein, ich komme aus Äthiopien.",
-        "why": ""
+        "why": "You agree that you are not from Kenya: German says nein, where Amharic says \"yes, I am not\"."
        },
        {
         "type": "gap",
@@ -11044,7 +11149,7 @@ window.COURSE = {
         ],
         "hint": "Yes, he is my brother.",
         "say": "Ist Dawit nicht dein Bruder? – Doch, er ist mein Bruder.",
-        "why": ""
+        "why": "A question with nicht: \"yes\" is doch."
        },
        {
         "type": "order",
@@ -11059,7 +11164,8 @@ window.COURSE = {
         "answer": "Ist das nicht deine Schwester?",
         "alts": [],
         "hint": "Isn't that your sister?",
-        "say": "Ist das nicht deine Schwester?"
+        "say": "Ist das nicht deine Schwester?",
+        "why": "Yes/no question: the verb comes first, and nicht goes before deine Schwester."
        },
        {
         "type": "choose",
@@ -11178,7 +11284,7 @@ window.COURSE = {
         ],
         "hint": "That is Dawit's mother.",
         "say": "Das ist Dawits Mutter.",
-        "why": ""
+        "why": "German adds -s with no apostrophe."
        },
        {
         "type": "gap",
@@ -11192,7 +11298,7 @@ window.COURSE = {
         ],
         "hint": "Who is Hanna's father?",
         "say": "Wer ist Hannas Vater?",
-        "why": ""
+        "why": "German adds -s with no apostrophe."
        },
        {
         "type": "gap",
@@ -11219,7 +11325,7 @@ window.COURSE = {
         ],
         "hint": "Abebe is Dawit's father. Dawit is Abebe's …",
         "say": "Sohn",
-        "why": ""
+        "why": "Abebe is the father, so Dawit is his son: Sohn."
        },
        {
         "type": "choose",
@@ -11232,7 +11338,7 @@ window.COURSE = {
         ],
         "hint": "Almaz is Hanna's grandma. Hanna is Almaz's …",
         "say": "Enkelin",
-        "why": ""
+        "why": "Almaz is the grandmother, so Hanna is her granddaughter: Enkelin."
        },
        {
         "type": "choose",
@@ -11245,7 +11351,7 @@ window.COURSE = {
         ],
         "hint": "Yonas is Selam's brother. Selam is Yonas's …",
         "say": "Schwester",
-        "why": ""
+        "why": "Selam is a woman with the same parents as Yonas: his sister, Schwester."
        },
        {
         "type": "choose",
@@ -11258,7 +11364,7 @@ window.COURSE = {
         ],
         "hint": "Tigist is the sister of Dawit's mother. She is Dawit's …",
         "say": "Tante",
-        "why": ""
+        "why": "Your mother's sister is your aunt: Tante."
        },
        {
         "type": "choose",
@@ -11271,7 +11377,7 @@ window.COURSE = {
         ],
         "hint": "Samuel is the son of Dawit's uncle. He is Dawit's …",
         "say": "Cousin",
-        "why": ""
+        "why": "Your uncle's son is your cousin: Cousin."
        },
        {
         "type": "order",
@@ -11285,7 +11391,8 @@ window.COURSE = {
         "answer": "Das ist Merons Tochter.",
         "alts": [],
         "hint": "That is Meron's daughter.",
-        "say": "Das ist Merons Tochter."
+        "say": "Das ist Merons Tochter.",
+        "why": "Das ist, then whose: Merons (no apostrophe), then Tochter."
        },
        {
         "type": "write",
@@ -11296,7 +11403,7 @@ window.COURSE = {
         "alts": [],
         "hint": "Remember: -s, no apostrophe.",
         "say": "Selams Bruder",
-        "why": ""
+        "why": "Name + s, no apostrophe: Selams Bruder."
        },
        {
         "type": "write",
@@ -11308,7 +11415,7 @@ window.COURSE = {
         "hint": "",
         "say": "Hannas Eltern wohnen in Adama.",
         "show": "Hanna's parents live in Adama.",
-        "why": ""
+        "why": "Hannas = Hanna's; die Eltern = the parents; wohnen = live."
        }
       ]
      }
@@ -11444,7 +11551,7 @@ window.COURSE = {
         ],
         "hint": "We live in Hawassa.",
         "say": "Wir wohnen in Hawassa.",
-        "why": ""
+        "why": "wir takes -en: wohnen."
        },
        {
         "type": "gap",
@@ -11458,7 +11565,7 @@ window.COURSE = {
         ],
         "hint": "Where do you (all) live?",
         "say": "Wo wohnt ihr?",
-        "why": ""
+        "why": "ihr takes -t: wohnt."
        },
        {
         "type": "gap",
@@ -11486,7 +11593,7 @@ window.COURSE = {
         ],
         "hint": "You work a lot.",
         "say": "Du arbeitest viel.",
-        "why": ""
+        "why": "du takes -st, and the stem ends in t, so an e comes in: arbeitest."
        },
        {
         "type": "gap",
@@ -11500,7 +11607,7 @@ window.COURSE = {
         ],
         "hint": "You (all) have two children.",
         "say": "Ihr habt zwei Kinder.",
-        "why": ""
+        "why": "ihr goes with habt."
        },
        {
         "type": "gap",
@@ -11514,7 +11621,7 @@ window.COURSE = {
         ],
         "hint": "Dawit and Selam live together.",
         "say": "Dawit und Selam leben zusammen.",
-        "why": ""
+        "why": "Two people are sie (they), which takes -en: leben."
        },
        {
         "type": "gap",
@@ -11528,7 +11635,7 @@ window.COURSE = {
         ],
         "hint": "Do you (all) live in Germany?",
         "say": "Lebt ihr in Deutschland?",
-        "why": ""
+        "why": "ihr takes -t: lebt; in a yes/no question the verb comes first."
        },
        {
         "type": "gap",
@@ -11542,7 +11649,7 @@ window.COURSE = {
         ],
         "hint": "They have no children.",
         "say": "Sie haben keine Kinder.",
-        "why": ""
+        "why": "sie (they) goes with haben."
        },
        {
         "type": "order",
@@ -11556,7 +11663,8 @@ window.COURSE = {
         "answer": "Wir wohnen in Adama.",
         "alts": [],
         "hint": "We live in Adama.",
-        "say": "Wir wohnen in Adama."
+        "say": "Wir wohnen in Adama.",
+        "why": "In a statement the verb comes second: Wir, then wohnen."
        },
        {
         "type": "order",
@@ -11569,7 +11677,8 @@ window.COURSE = {
         "answer": "Wo arbeitet ihr?",
         "alts": [],
         "hint": "Where do you (all) work?",
-        "say": "Wo arbeitet ihr?"
+        "say": "Wo arbeitet ihr?",
+        "why": "W-word first, then the verb."
        },
        {
         "type": "write",
@@ -11582,7 +11691,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Wir leben zusammen.",
-        "why": ""
+        "why": "wir goes with leben; zusammen = together."
        },
        {
         "type": "write",
@@ -11595,7 +11704,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Wo wohnst du?",
-        "why": ""
+        "why": "W-word first, then the verb; du takes -st: wohnst."
        }
       ]
      }
@@ -11660,7 +11769,7 @@ window.COURSE = {
         ],
         "hint": "Choose the German word.",
         "say": "die Oma, die Großmutter",
-        "why": ""
+        "why": "Your father's mother is your grandmother: die Oma, or die Großmutter."
        },
        {
         "type": "choose",
@@ -11673,7 +11782,7 @@ window.COURSE = {
         ],
         "hint": "Choose the German word.",
         "say": "der Opa, der Großvater",
-        "why": ""
+        "why": "Your father's father is your grandfather: der Opa, or der Großvater."
        },
        {
         "type": "choose",
@@ -11686,7 +11795,7 @@ window.COURSE = {
         ],
         "hint": "Choose the German word.",
         "say": "die Tante",
-        "why": ""
+        "why": "Your father's sister is your aunt: die Tante."
        },
        {
         "type": "choose",
@@ -11699,7 +11808,7 @@ window.COURSE = {
         ],
         "hint": "Choose the German word.",
         "say": "der Onkel",
-        "why": ""
+        "why": "Your father's brother is your uncle: der Onkel."
        },
        {
         "type": "choose",
@@ -11712,7 +11821,7 @@ window.COURSE = {
         ],
         "hint": "Choose the German word.",
         "say": "die Mutter",
-        "why": ""
+        "why": "Your father's wife is your mother: die Mutter."
        },
        {
         "type": "choose",
@@ -11725,7 +11834,7 @@ window.COURSE = {
         ],
         "hint": "Choose the German word.",
         "say": "der Vater",
-        "why": ""
+        "why": "Your mother's husband is your father: der Vater."
        },
        {
         "type": "choose",
@@ -11738,7 +11847,7 @@ window.COURSE = {
         ],
         "hint": "Choose the German word.",
         "say": "der Bruder",
-        "why": ""
+        "why": "Your parents' other son is your brother: der Bruder. He is their Sohn."
        },
        {
         "type": "choose",
@@ -11751,7 +11860,7 @@ window.COURSE = {
         ],
         "hint": "Choose the German word.",
         "say": "die Schwester",
-        "why": ""
+        "why": "Your parents' other daughter is your sister: die Schwester. She is their Tochter."
        },
        {
         "type": "choose",
@@ -11764,7 +11873,7 @@ window.COURSE = {
         ],
         "hint": "Choose the German word.",
         "say": "die Cousine",
-        "why": ""
+        "why": "Your uncle's daughter is your cousin; a female cousin is die Cousine."
        },
        {
         "type": "choose",
@@ -11777,7 +11886,7 @@ window.COURSE = {
         ],
         "hint": "Choose the German word.",
         "say": "der Cousin",
-        "why": ""
+        "why": "Your aunt's son is your cousin; a male cousin is der Cousin."
        }
       ]
      },
@@ -11789,49 +11898,56 @@ window.COURSE = {
         "word": "der Opa, der Großvater",
         "pic": "1f474",
         "x": 33,
-        "row": 0
+        "row": 0,
+        "why": "Your father's father."
        },
        {
         "key": "oma",
         "word": "die Oma, die Großmutter",
         "pic": "1f475",
         "x": 67,
-        "row": 0
+        "row": 0,
+        "why": "Your father's mother."
        },
        {
         "key": "tante",
         "word": "die Tante",
         "pic": "1f469",
         "x": 12,
-        "row": 1
+        "row": 1,
+        "why": "Your father's sister."
        },
        {
         "key": "vater",
         "word": "der Vater",
         "pic": "1f468",
         "x": 37,
-        "row": 1
+        "row": 1,
+        "why": "The man married to your mother."
        },
        {
         "key": "mutter",
         "word": "die Mutter",
         "pic": "1f469",
         "x": 63,
-        "row": 1
+        "row": 1,
+        "why": "The woman married to your father."
        },
        {
         "key": "onkel",
         "word": "der Onkel",
         "pic": "1f468",
         "x": 88,
-        "row": 1
+        "row": 1,
+        "why": "Your father's brother."
        },
        {
         "key": "bruder",
         "word": "der Bruder",
         "pic": "1f466",
         "x": 24,
-        "row": 2
+        "row": 2,
+        "why": "Your parents' other son."
        },
        {
         "key": "ich",
@@ -11845,7 +11961,8 @@ window.COURSE = {
         "word": "die Schwester",
         "pic": "1f467",
         "x": 76,
-        "row": 2
+        "row": 2,
+        "why": "Your parents' daughter."
        }
       ],
       "couples": [
@@ -11946,7 +12063,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Ich komme aus Äthiopien, aus Hawassa."
        },
        {
         "type": "choose",
@@ -11972,7 +12089,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Mein Mann heißt Samuel."
        },
        {
         "type": "choose",
@@ -11998,7 +12115,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Ich habe zwei Brüder, aber keine Schwester."
        },
        {
         "type": "choose",
@@ -12024,7 +12141,7 @@ window.COURSE = {
         ],
         "hint": "How old is Liya?",
         "say": "drei Jahre",
-        "why": ""
+        "why": "The text says: Sie heißt Liya und ist drei Jahre alt."
        },
        {
         "type": "choose",
@@ -12037,7 +12154,7 @@ window.COURSE = {
         ],
         "hint": "Who speaks German very well?",
         "say": "Yonas",
-        "why": ""
+        "why": "The text says: Mein Bruder Yonas spricht sehr gut Deutsch."
        },
        {
         "type": "write",
@@ -12051,7 +12168,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Er ist Ingenieur.",
-        "why": ""
+        "why": "The text says: Er ist 31 und arbeitet als Ingenieur."
        },
        {
         "type": "write",
@@ -12063,7 +12180,7 @@ window.COURSE = {
         "hint": "",
         "say": "Wir haben eine Tochter.",
         "show": "We have a daughter.",
-        "why": ""
+        "why": "wir haben = we have; eine Tochter = a daughter."
        }
       ]
      }
@@ -12107,7 +12224,8 @@ window.COURSE = {
          "My neighbour is very kind."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Supermarkt",
@@ -12129,7 +12247,8 @@ window.COURSE = {
          "The supermarket is closed on Sunday."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Laden",
@@ -12151,7 +12270,8 @@ window.COURSE = {
          "There is fresh bread in the shop."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Geschäft",
@@ -12173,7 +12293,8 @@ window.COURSE = {
          "The shop is closed today."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "einkaufen gehen",
@@ -12280,7 +12401,8 @@ window.COURSE = {
          "A kilo of potatoes, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Tomate",
@@ -12302,7 +12424,8 @@ window.COURSE = {
          "The tomatoes are fresh."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Brot",
@@ -12324,7 +12447,8 @@ window.COURSE = {
          "We are buying bread."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Banane",
@@ -12346,7 +12470,8 @@ window.COURSE = {
          "The bananas come from Ethiopia."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Saft",
@@ -12368,7 +12493,8 @@ window.COURSE = {
          "Would you like juice?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       }
      ]
     },
@@ -12396,7 +12522,8 @@ window.COURSE = {
          "The apple is good."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Birne",
@@ -12418,7 +12545,8 @@ window.COURSE = {
          "The pears are green."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Banane",
@@ -12440,7 +12568,8 @@ window.COURSE = {
          "The bananas come from Ethiopia."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Orange",
@@ -12462,7 +12591,8 @@ window.COURSE = {
          "The oranges come from Spain."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Erdbeere",
@@ -12484,7 +12614,8 @@ window.COURSE = {
          "The strawberries are tasty."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Traube",
@@ -12506,7 +12637,8 @@ window.COURSE = {
          "The grapes are sweet."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Kartoffel",
@@ -12528,7 +12660,8 @@ window.COURSE = {
          "A kilo of potatoes, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Tomate",
@@ -12550,7 +12683,8 @@ window.COURSE = {
          "The tomatoes are fresh."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der/die Paprika",
@@ -12594,7 +12728,8 @@ window.COURSE = {
          "The cucumber is fresh."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Zwiebel",
@@ -12616,7 +12751,8 @@ window.COURSE = {
          "A kilo of onions, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       }
      ]
     },
@@ -12724,7 +12860,8 @@ window.COURSE = {
          "Bread and rice are foods."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "das Brötchen",
@@ -12743,7 +12880,8 @@ window.COURSE = {
          "The bread roll is fresh."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Kuchen",
@@ -12765,7 +12903,8 @@ window.COURSE = {
          "Would you like cake?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Joghurt",
@@ -12784,7 +12923,8 @@ window.COURSE = {
          "We need yoghurt."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Käse",
@@ -12806,7 +12946,8 @@ window.COURSE = {
          "The cheese comes from Switzerland."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Ei",
@@ -12828,7 +12969,8 @@ window.COURSE = {
          "Ten eggs, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Reis",
@@ -12850,7 +12992,8 @@ window.COURSE = {
          "A kilo of rice, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Fleisch",
@@ -12872,7 +13015,8 @@ window.COURSE = {
          "For tibs we need meat."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Fisch",
@@ -12894,7 +13038,8 @@ window.COURSE = {
          "The fish comes from Lake Tana."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Wurst",
@@ -12916,7 +13061,8 @@ window.COURSE = {
          "In Germany people eat a lot of sausage."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Hast du Hunger?",
@@ -13156,7 +13302,8 @@ window.COURSE = {
          "I don't drink beer."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Tee",
@@ -13178,7 +13325,8 @@ window.COURSE = {
          "Would you like tea or coffee?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Wasser",
@@ -13200,7 +13348,8 @@ window.COURSE = {
          "I drink a lot of water."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Mineralwasser",
@@ -13222,7 +13371,8 @@ window.COURSE = {
          "I drink a lot of mineral water."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Milch",
@@ -13244,7 +13394,8 @@ window.COURSE = {
          "We need milk."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Wein",
@@ -13266,7 +13417,8 @@ window.COURSE = {
          "I don't drink wine."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Kaffee",
@@ -13288,7 +13440,8 @@ window.COURSE = {
          "The coffee from Ethiopia is good."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Orangensaft",
@@ -13312,7 +13465,8 @@ window.COURSE = {
          "An orange juice, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "Hast du Durst?",
@@ -13804,7 +13958,8 @@ window.COURSE = {
          "The price is too high."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Euro",
@@ -13826,7 +13981,8 @@ window.COURSE = {
          "In Germany people pay with euros."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Cent",
@@ -13848,7 +14004,8 @@ window.COURSE = {
          "Do you have twenty cents?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Kilo",
@@ -13870,7 +14027,8 @@ window.COURSE = {
          "I need two kilos of rice."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Wechselgeld",
@@ -13892,7 +14050,8 @@ window.COURSE = {
          "Don't forget the change!"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "Wie viel kostet das?",
@@ -14268,7 +14427,8 @@ window.COURSE = {
          "Where is the waiter?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Gäste",
@@ -14290,7 +14450,8 @@ window.COURSE = {
          "We have guests today."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "das Menü",
@@ -14309,7 +14470,8 @@ window.COURSE = {
          "The set menu today is fish."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Speise, das Essen",
@@ -14353,7 +14515,8 @@ window.COURSE = {
          "What do the drinks cost?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "der Nachtisch, die Nachspeise",
@@ -14457,7 +14620,8 @@ window.COURSE = {
          "I'll pay the bill."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "bekommen",
@@ -14498,7 +14662,8 @@ window.COURSE = {
          "The cash is in the bag."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Kreditkarte",
@@ -14520,7 +14685,8 @@ window.COURSE = {
          "I don't have a credit card."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Trinkgeld",
@@ -14542,7 +14708,8 @@ window.COURSE = {
          "How much tip do you give?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "etwas zum Essen",
@@ -14971,7 +15138,8 @@ window.COURSE = {
          "Breakfast is at the hotel."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "zum Frühstück",
@@ -15015,7 +15183,8 @@ window.COURSE = {
          "I am cooking dinner."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Müsli",
@@ -15037,7 +15206,8 @@ window.COURSE = {
          "For breakfast I eat muesli."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Marmelade",
@@ -15060,7 +15230,8 @@ window.COURSE = {
          "The jam is made of strawberries."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Honig",
@@ -15082,7 +15253,8 @@ window.COURSE = {
          "The honey comes from Ethiopia."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Butter",
@@ -15104,7 +15276,8 @@ window.COURSE = {
          "We need butter."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Suppe",
@@ -15126,7 +15299,8 @@ window.COURSE = {
          "The soup is tasty."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Salat",
@@ -15148,7 +15322,8 @@ window.COURSE = {
          "The salad has tomatoes and cucumbers."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Nudeln",
@@ -15170,7 +15345,8 @@ window.COURSE = {
          "The children like eating pasta."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "das Eis",
@@ -15192,7 +15368,8 @@ window.COURSE = {
          "An ice cream, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Tasse",
@@ -15214,7 +15391,8 @@ window.COURSE = {
          "I need a cup."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "eine Tasse Kaffee",
@@ -15280,7 +15458,8 @@ window.COURSE = {
          "A piece of apple cake, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Apfelsaft",
@@ -15304,7 +15483,8 @@ window.COURSE = {
          "An apple juice, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Schokoladenkuchen",
@@ -15328,7 +15508,8 @@ window.COURSE = {
          "For the birthday there is chocolate cake."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Kartoffelsuppe",
@@ -15352,7 +15533,8 @@ window.COURSE = {
          "The potato soup tastes good."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Tomatensuppe",
@@ -15376,7 +15558,8 @@ window.COURSE = {
          "The tomato soup is tasty."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Käsebrot",
@@ -15400,7 +15583,8 @@ window.COURSE = {
          "A cheese sandwich, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Obstsalat",
@@ -15424,7 +15608,8 @@ window.COURSE = {
          "The fruit salad has bananas and oranges."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Kaffeetasse",
@@ -15446,7 +15631,8 @@ window.COURSE = {
          "The coffee cup is from Ethiopia."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       }
      ]
     }
@@ -15557,7 +15743,7 @@ window.COURSE = {
         ],
         "hint": "That is a banana.",
         "say": "Das ist eine Banane.",
-        "why": ""
+        "why": "die Banane is feminine: eine."
        },
        {
         "type": "gap",
@@ -15572,7 +15758,7 @@ window.COURSE = {
         ],
         "hint": "That is not an apple.",
         "say": "Das ist kein Apfel.",
-        "why": ""
+        "why": "der Apfel is masculine, and \"not a\" is kein."
        },
        {
         "type": "gap",
@@ -15617,7 +15803,7 @@ window.COURSE = {
         ],
         "hint": "That is not a pear.",
         "say": "Das ist keine Birne.",
-        "why": ""
+        "why": "die Birne is feminine, and \"not a\" is keine."
        },
        {
         "type": "gap",
@@ -15647,7 +15833,7 @@ window.COURSE = {
         ],
         "hint": "That is a tomato.",
         "say": "Das ist eine Tomate.",
-        "why": ""
+        "why": "die Tomate is feminine: eine."
        },
        {
         "type": "gap",
@@ -15677,7 +15863,7 @@ window.COURSE = {
         ],
         "hint": "That is a cake.",
         "say": "Das ist ein Kuchen.",
-        "why": ""
+        "why": "der Kuchen is masculine: ein."
        },
        {
         "type": "gap",
@@ -15692,7 +15878,7 @@ window.COURSE = {
         ],
         "hint": "That is not a cucumber.",
         "say": "Das ist keine Gurke.",
-        "why": ""
+        "why": "die Gurke is feminine, and \"not a\" is keine."
        }
       ]
      }
@@ -15791,7 +15977,7 @@ window.COURSE = {
         ],
         "hint": "banana → bananas",
         "say": "die Banane → die Bananen",
-        "why": ""
+        "why": "A feminine word ending in -e adds -n."
        },
        {
         "type": "gap",
@@ -15805,7 +15991,7 @@ window.COURSE = {
         ],
         "hint": "fish → fish (plural)",
         "say": "der Fisch → die Fische",
-        "why": ""
+        "why": "Many masculine words add -e."
        },
        {
         "type": "gap",
@@ -15819,7 +16005,7 @@ window.COURSE = {
         ],
         "hint": "egg → eggs",
         "say": "das Ei → die Eier",
-        "why": ""
+        "why": "Many short neuter words add -er."
        },
        {
         "type": "gap",
@@ -15861,7 +16047,7 @@ window.COURSE = {
         ],
         "hint": "tomato → tomatoes",
         "say": "die Tomate → die Tomaten",
-        "why": ""
+        "why": "A feminine word ending in -e adds -n."
        },
        {
         "type": "gap",
@@ -15875,7 +16061,7 @@ window.COURSE = {
         ],
         "hint": "pepper → peppers",
         "say": "der Paprika → die Paprikas",
-        "why": ""
+        "why": "A word ending in a vowel like -a adds -s."
        },
        {
         "type": "gap",
@@ -15889,7 +16075,7 @@ window.COURSE = {
         ],
         "hint": "potato → potatoes",
         "say": "die Kartoffel → die Kartoffeln",
-        "why": ""
+        "why": "A feminine word ending in -el adds -n."
        },
        {
         "type": "gap",
@@ -15903,7 +16089,7 @@ window.COURSE = {
         ],
         "hint": "strawberry → strawberries",
         "say": "die Erdbeere → die Erdbeeren",
-        "why": ""
+        "why": "A feminine word ending in -e adds -n."
        }
       ]
      }
@@ -15962,7 +16148,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Isst du gerne Fisch?",
-        "why": ""
+        "why": "Yes/no question: the verb isst comes first."
        },
        {
         "type": "choose",
@@ -15975,7 +16161,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Brauchen wir Kartoffeln?",
-        "why": ""
+        "why": "Yes/no question: the verb brauchen comes first."
        },
        {
         "type": "choose",
@@ -15988,7 +16174,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Ist das eine Banane?",
-        "why": ""
+        "why": "Yes/no question: the verb ist comes first."
        },
        {
         "type": "choose",
@@ -16001,7 +16187,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Hast du Hunger?",
-        "why": ""
+        "why": "Yes/no question: the verb hast comes first."
        },
        {
         "type": "choose",
@@ -16014,7 +16200,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Trinkst du gerne Tee?",
-        "why": ""
+        "why": "Yes/no question: the verb trinkst comes first."
        },
        {
         "type": "choose",
@@ -16027,7 +16213,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Ist der Kuchen köstlich?",
-        "why": ""
+        "why": "Yes/no question: the verb ist comes first."
        },
        {
         "type": "choose",
@@ -16040,7 +16226,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Brauchst du Brot?",
-        "why": ""
+        "why": "Yes/no question: the verb brauchst comes first."
        },
        {
         "type": "choose",
@@ -16053,7 +16239,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Kostet der Apfel einen Euro?",
-        "why": ""
+        "why": "Yes/no question: the verb kostet comes first."
        }
       ]
      }
@@ -16191,7 +16377,7 @@ window.COURSE = {
         ],
         "hint": "I am hungry.",
         "say": "Ich habe Hunger.",
-        "why": ""
+        "why": "ich goes with habe."
        },
        {
         "type": "gap",
@@ -16206,7 +16392,7 @@ window.COURSE = {
         ],
         "hint": "Are you thirsty?",
         "say": "Hast du Durst?",
-        "why": ""
+        "why": "du goes with hast; in a yes/no question the verb comes first."
        },
        {
         "type": "gap",
@@ -16221,7 +16407,7 @@ window.COURSE = {
         ],
         "hint": "He has two children.",
         "say": "Er hat zwei Kinder.",
-        "why": ""
+        "why": "er, sie and es go with hat."
        },
        {
         "type": "gap",
@@ -16236,7 +16422,7 @@ window.COURSE = {
         ],
         "hint": "We don't have any milk.",
         "say": "Wir haben keine Milch.",
-        "why": ""
+        "why": "wir goes with haben."
        },
        {
         "type": "gap",
@@ -16251,7 +16437,7 @@ window.COURSE = {
         ],
         "hint": "You (all) have a garden.",
         "say": "Ihr habt einen Garten.",
-        "why": ""
+        "why": "ihr goes with habt."
        },
        {
         "type": "gap",
@@ -16266,7 +16452,7 @@ window.COURSE = {
         ],
         "hint": "I like to eat fish.",
         "say": "Ich esse gerne Fisch.",
-        "why": ""
+        "why": "ich keeps the e: esse."
        },
        {
         "type": "gap",
@@ -16296,7 +16482,7 @@ window.COURSE = {
         ],
         "hint": "She doesn't eat meat.",
         "say": "Sie isst kein Fleisch.",
-        "why": ""
+        "why": "sie (she): e → i, isst."
        },
        {
         "type": "gap",
@@ -16311,7 +16497,7 @@ window.COURSE = {
         ],
         "hint": "We eat rice.",
         "say": "Wir essen Reis.",
-        "why": ""
+        "why": "wir keeps the e: essen."
        },
        {
         "type": "gap",
@@ -16466,7 +16652,7 @@ window.COURSE = {
         ],
         "hint": "I like coffee a lot.",
         "say": "Ich mag Kaffee sehr.",
-        "why": ""
+        "why": "Liking something in general is mögen: ich mag, with no ending."
        },
        {
         "type": "gap",
@@ -16480,7 +16666,7 @@ window.COURSE = {
         ],
         "hint": "Do you like fish?",
         "say": "Magst du Fisch?",
-        "why": ""
+        "why": "du goes with magst; in a yes/no question the verb comes first."
        },
        {
         "type": "gap",
@@ -16494,7 +16680,7 @@ window.COURSE = {
         ],
         "hint": "He doesn't like tomatoes.",
         "say": "Er mag keine Tomaten.",
-        "why": ""
+        "why": "er goes with mag, like ich: no ending."
        },
        {
         "type": "gap",
@@ -16508,7 +16694,7 @@ window.COURSE = {
         ],
         "hint": "You (all) like chocolate, right?",
         "say": "Ihr mögt Schokolade, oder?",
-        "why": ""
+        "why": "ihr goes with mögt: the ö comes back, then -t."
        },
        {
         "type": "gap",
@@ -16536,7 +16722,7 @@ window.COURSE = {
         ],
         "hint": "What would you like to drink?",
         "say": "Was möchten Sie trinken?",
-        "why": ""
+        "why": "Ordering politely is möchten, and Sie (formal) takes möchten."
        },
        {
         "type": "gap",
@@ -16550,7 +16736,7 @@ window.COURSE = {
         ],
         "hint": "What are you having?",
         "say": "Was nimmst du?",
-        "why": ""
+        "why": "nehmen changes with du: nimmst (e → i, and mm)."
        },
        {
         "type": "gap",
@@ -16564,7 +16750,7 @@ window.COURSE = {
         ],
         "hint": "She is having the salad.",
         "say": "Sie nimmt den Salat.",
-        "why": ""
+        "why": "nehmen changes with sie (she): nimmt (e → i, and mm)."
        },
        {
         "type": "choose",
@@ -16577,7 +16763,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Ich auch!",
-        "why": ""
+        "why": "You agree with a yes: Ich auch! = me too."
        },
        {
         "type": "choose",
@@ -16590,7 +16776,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Ich auch nicht!",
-        "why": ""
+        "why": "You agree with a no: Ich auch nicht! = me neither."
        },
        {
         "type": "choose",
@@ -16618,7 +16804,8 @@ window.COURSE = {
         "answer": "Ich möchte eine Tasse Kaffee.",
         "alts": [],
         "hint": "I would like a cup of coffee.",
-        "say": "Ich möchte eine Tasse Kaffee."
+        "say": "Ich möchte eine Tasse Kaffee.",
+        "why": "In a statement the verb comes second: Ich, then möchte, then what you want."
        },
        {
         "type": "write",
@@ -16631,7 +16818,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Ich mag Tee.",
-        "why": ""
+        "why": "Liking something in general is mögen: ich mag, with no ending."
        }
       ]
      }
@@ -16822,7 +17009,7 @@ window.COURSE = {
         ],
         "hint": "The last word is the main word.",
         "say": "die Kaffeetasse",
-        "why": ""
+        "why": "The last word is the main word: a Tasse (cup) for Kaffee."
        },
        {
         "type": "choose",
@@ -16835,7 +17022,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "die Tomatensuppe",
-        "why": ""
+        "why": "The last word is the main word: a Suppe (soup) made with tomatoes."
        },
        {
         "type": "choose",
@@ -16859,7 +17046,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "der Apfelsaft",
-        "why": ""
+        "why": "Apfel + Saft; the last word gives the article: der Saft."
        },
        {
         "type": "write",
@@ -16870,7 +17057,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "das Käsebrot",
-        "why": ""
+        "why": "Käse + Brot; the last word gives the article: das Brot."
        }
       ]
      }
@@ -16974,7 +17161,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Ja, natürlich. Ein Kaffee und ein Obstsalat."
        },
        {
         "type": "choose",
@@ -17000,7 +17187,7 @@ window.COURSE = {
         ],
         "hint": "What does Selam eat?",
         "say": "ein Käsebrot",
-        "why": ""
+        "why": "The text says: Ich nehme einen Tee und ein Käsebrot, bitte."
        },
        {
         "type": "choose",
@@ -17013,7 +17200,7 @@ window.COURSE = {
         ],
         "hint": "How much is it altogether?",
         "say": "14 Euro 50",
-        "why": ""
+        "why": "The text says: Das macht zusammen 14 Euro 50."
        },
        {
         "type": "order",
@@ -17029,7 +17216,8 @@ window.COURSE = {
         "answer": "Guten Tag! Was möchten Sie? Einen Tee, bitte. Tut mir leid, wir haben keinen Tee mehr. Schade! Dann nehme ich einen Kaffee. Gern!",
         "hint": "Ordering in a café",
         "say": "",
-        "show": "Guten Tag! Was möchten Sie? → Einen Tee, bitte. → Tut mir leid, wir haben keinen Tee mehr. → Schade! Dann nehme ich einen Kaffee. → Gern!"
+        "show": "Guten Tag! Was möchten Sie? → Einen Tee, bitte. → Tut mir leid, wir haben keinen Tee mehr. → Schade! Dann nehme ich einen Kaffee. → Gern!",
+        "why": "The waiter greets and asks, you order, the waiter says there is none left, and you choose something else."
        },
        {
         "type": "write",
@@ -17043,7 +17231,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Ich möchte einen Kaffee, bitte.",
-        "why": ""
+        "why": "To order: Ich möchte …; after möchte, der Kaffee becomes einen Kaffee."
        }
       ]
      }
@@ -17090,7 +17278,8 @@ window.COURSE = {
          "The apartment is on the second floor."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Haus",
@@ -17112,7 +17301,8 @@ window.COURSE = {
          "Where is the house?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Zimmer",
@@ -17134,7 +17324,8 @@ window.COURSE = {
          "The house has five rooms."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Wohnzimmer",
@@ -17156,7 +17347,8 @@ window.COURSE = {
          "We drink coffee in the living room."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Schlafzimmer",
@@ -17178,7 +17370,8 @@ window.COURSE = {
          "Our bedroom is small."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Kinderzimmer",
@@ -17200,7 +17393,8 @@ window.COURSE = {
          "The children's room is next to the bathroom."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Arbeitszimmer",
@@ -17222,7 +17416,8 @@ window.COURSE = {
          "There is a computer in the study."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Küche",
@@ -17244,7 +17439,8 @@ window.COURSE = {
          "The kitchen is very small."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Badezimmer",
@@ -17266,7 +17462,8 @@ window.COURSE = {
          "Where is the bathroom?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Bad",
@@ -17288,7 +17485,8 @@ window.COURSE = {
          "Is the bathroom free?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       }
      ]
     },
@@ -17887,7 +18085,8 @@ window.COURSE = {
          "The ground floor has two rooms."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Stock",
@@ -17906,7 +18105,8 @@ window.COURSE = {
          "My office is on the fourth floor."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der erste Stock",
@@ -17955,7 +18155,8 @@ window.COURSE = {
          "We don't have an attic."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Garten",
@@ -17977,7 +18178,8 @@ window.COURSE = {
          "Tomatoes grow in the garden."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Balkon",
@@ -17996,7 +18198,8 @@ window.COURSE = {
          "The apartment has a balcony."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Garage",
@@ -18018,7 +18221,8 @@ window.COURSE = {
          "We don't have a garage."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Treppe",
@@ -18037,7 +18241,8 @@ window.COURSE = {
          "The stairs are made of wood."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Keller",
@@ -18056,7 +18261,8 @@ window.COURSE = {
          "Do you have a cellar?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       }
      ]
     },
@@ -18252,7 +18458,8 @@ window.COURSE = {
          "The wardrobe is made of wood."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Sofa",
@@ -18274,7 +18481,8 @@ window.COURSE = {
          "The sofa is in the living room."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Couch",
@@ -18296,7 +18504,8 @@ window.COURSE = {
          "The couch is new."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Tisch",
@@ -18315,7 +18524,8 @@ window.COURSE = {
          "The table is made of wood."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Couchtisch",
@@ -18334,7 +18544,8 @@ window.COURSE = {
          "The coffee table is made of glass."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Stuhl",
@@ -18356,7 +18567,8 @@ window.COURSE = {
          "The chair is broken."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Bett",
@@ -18378,7 +18590,8 @@ window.COURSE = {
          "The bed is very big."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Fernseher",
@@ -18400,7 +18613,8 @@ window.COURSE = {
          "We don't have a TV."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Lampe",
@@ -18422,7 +18636,8 @@ window.COURSE = {
          "I am buying a lamp."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Teppich",
@@ -18441,7 +18656,8 @@ window.COURSE = {
          "The rug is in the living room."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Regal",
@@ -18460,7 +18676,8 @@ window.COURSE = {
          "The shelf is made of wood."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       }
      ]
     },
@@ -18644,7 +18861,8 @@ window.COURSE = {
          "The kitchen cupboard is full."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Herd",
@@ -18663,7 +18881,8 @@ window.COURSE = {
          "The stove is new."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Kühlschrank",
@@ -18682,7 +18901,8 @@ window.COURSE = {
          "We need a new fridge."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Spüle",
@@ -18704,7 +18924,8 @@ window.COURSE = {
          "The sink is under the window."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Waschmaschine",
@@ -18723,7 +18944,8 @@ window.COURSE = {
          "We are buying a washing machine."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Dusche",
@@ -18745,7 +18967,8 @@ window.COURSE = {
          "The shower is cold."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Badewanne",
@@ -18767,7 +18990,8 @@ window.COURSE = {
          "The child is sitting in the bathtub."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Waschbecken",
@@ -18786,7 +19010,8 @@ window.COURSE = {
          "The washbasin is small."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Spiegel",
@@ -18808,7 +19033,8 @@ window.COURSE = {
          "I look in the mirror."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Toilette",
@@ -18830,7 +19056,8 @@ window.COURSE = {
          "The toilet is occupied."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       }
      ]
     },
@@ -19452,7 +19679,8 @@ window.COURSE = {
          "I write with the pen."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Kuli",
@@ -19474,7 +19702,8 @@ window.COURSE = {
          "My pen is gone."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Bleistift",
@@ -19496,7 +19725,8 @@ window.COURSE = {
          "The child has a pencil."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Brille",
@@ -19518,7 +19748,8 @@ window.COURSE = {
          "My grandpa wears glasses."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Heft",
@@ -19540,7 +19771,8 @@ window.COURSE = {
          "I need an exercise book."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Kamera",
@@ -19562,7 +19794,8 @@ window.COURSE = {
          "The camera is in the bag."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Kette",
@@ -19584,7 +19817,8 @@ window.COURSE = {
          "The necklace is very beautiful."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Schlüssel",
@@ -19606,7 +19840,8 @@ window.COURSE = {
          "I have the key."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Tasche",
@@ -19628,7 +19863,8 @@ window.COURSE = {
          "What is in the bag?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Handy",
@@ -19650,7 +19886,8 @@ window.COURSE = {
          "The phone's battery is flat."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Flasche",
@@ -19669,7 +19906,8 @@ window.COURSE = {
          "The bottle is in the fridge."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Feuerzeug",
@@ -19688,7 +19926,8 @@ window.COURSE = {
          "The lighter is on the table."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Regenschirm",
@@ -19710,7 +19949,8 @@ window.COURSE = {
          "It is raining. Where is my umbrella?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "Was ist das?",
@@ -19771,7 +20011,8 @@ window.COURSE = {
          "We need wood for the fire."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Plastik",
@@ -19790,7 +20031,8 @@ window.COURSE = {
          "Plastic is not good for nature."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Papier",
@@ -19812,7 +20054,8 @@ window.COURSE = {
          "The book is made of paper."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Metall",
@@ -19834,7 +20077,8 @@ window.COURSE = {
          "The lamp is made of metal."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Glas",
@@ -19853,7 +20097,8 @@ window.COURSE = {
          "The table is made of glass."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Stoff",
@@ -19875,7 +20120,8 @@ window.COURSE = {
          "The fabric comes from Ethiopia."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Leder",
@@ -19894,7 +20140,8 @@ window.COURSE = {
          "The sofa is made of leather."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "aus Holz",
@@ -20069,7 +20316,8 @@ window.COURSE = {
          "The email address is wrong."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Punkt",
@@ -20088,7 +20336,8 @@ window.COURSE = {
          "After “de” there is no dot."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Unterstrich",
@@ -20107,7 +20356,8 @@ window.COURSE = {
          "Write an underscore between the names."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Bindestrich",
@@ -20126,7 +20376,8 @@ window.COURSE = {
          "Is that a hyphen?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "Wie ist deine E-Mail-Adresse?",
@@ -20169,7 +20420,8 @@ window.COURSE = {
          "The armchair is made of leather."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Sonderangebot",
@@ -20191,7 +20443,8 @@ window.COURSE = {
          "The special offer is very good value."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "günstig",
@@ -20506,7 +20759,7 @@ window.COURSE = {
         ],
         "hint": "your apartment (du)",
         "say": "deine Wohnung",
-        "why": ""
+        "why": "\"your\" (du) is dein; die Wohnung is feminine: deine."
        },
        {
         "type": "gap",
@@ -20521,7 +20774,7 @@ window.COURSE = {
         ],
         "hint": "his garden",
         "say": "sein Garten",
-        "why": ""
+        "why": "\"his\" is sein; der Garten is masculine: sein."
        },
        {
         "type": "gap",
@@ -20536,7 +20789,7 @@ window.COURSE = {
         ],
         "hint": "her house (das Haus)",
         "say": "ihr Haus",
-        "why": ""
+        "why": "\"her\" is ihr; das Haus is neuter: ihr."
        },
        {
         "type": "gap",
@@ -20551,7 +20804,7 @@ window.COURSE = {
         ],
         "hint": "our kitchen",
         "say": "unsere Küche",
-        "why": ""
+        "why": "\"our\" is unser; die Küche is feminine: unsere."
        },
        {
         "type": "gap",
@@ -20566,7 +20819,7 @@ window.COURSE = {
         ],
         "hint": "your balcony (ihr)",
         "say": "euer Balkon",
-        "why": ""
+        "why": "\"your\" (ihr) is euer; der Balkon is masculine: euer."
        },
        {
         "type": "gap",
@@ -20581,7 +20834,7 @@ window.COURSE = {
         ],
         "hint": "your name (formal)",
         "say": "Ihr Name",
-        "why": ""
+        "why": "Formal \"your\" is Ihr, with a capital I; der Name is masculine: Ihr."
        },
        {
         "type": "gap",
@@ -20596,7 +20849,7 @@ window.COURSE = {
         ],
         "hint": "my parents",
         "say": "meine Eltern",
-        "why": ""
+        "why": "Eltern is plural: meine."
        },
        {
         "type": "gap",
@@ -20611,7 +20864,7 @@ window.COURSE = {
         ],
         "hint": "your room (du)",
         "say": "dein Zimmer",
-        "why": ""
+        "why": "\"your\" (du) is dein; das Zimmer is neuter: dein."
        },
        {
         "type": "gap",
@@ -20626,7 +20879,7 @@ window.COURSE = {
         ],
         "hint": "his lamp",
         "say": "seine Lampe",
-        "why": ""
+        "why": "\"his\" is sein; die Lampe is feminine: seine."
        },
        {
         "type": "gap",
@@ -20641,7 +20894,7 @@ window.COURSE = {
         ],
         "hint": "their children",
         "say": "ihre Kinder",
-        "why": ""
+        "why": "\"their\" is ihr; Kinder is plural: ihre."
        }
       ]
      }
@@ -20719,7 +20972,7 @@ window.COURSE = {
         ],
         "hint": "The kitchen is not small.",
         "say": "Die Küche ist nicht klein.",
-        "why": ""
+        "why": "nicht goes with an adjective (klein); kein only goes before a noun."
        },
        {
         "type": "gap",
@@ -20733,7 +20986,7 @@ window.COURSE = {
         ],
         "hint": "That is not a chair.",
         "say": "Das ist kein Stuhl.",
-        "why": ""
+        "why": "Before a noun, \"not a\" is kein; der Stuhl is masculine: kein."
        },
        {
         "type": "gap",
@@ -20747,7 +21000,7 @@ window.COURSE = {
         ],
         "hint": "The bed is not new.",
         "say": "Das Bett ist nicht neu.",
-        "why": ""
+        "why": "nicht goes with an adjective (neu); kein only goes before a noun."
        },
        {
         "type": "gap",
@@ -20761,7 +21014,7 @@ window.COURSE = {
         ],
         "hint": "That is not a lamp.",
         "say": "Das ist keine Lampe.",
-        "why": ""
+        "why": "Before a noun, \"not a\" is kein; die Lampe is feminine: keine."
        },
        {
         "type": "gap",
@@ -20775,7 +21028,7 @@ window.COURSE = {
         ],
         "hint": "The apartment is not expensive.",
         "say": "Die Wohnung ist nicht teuer.",
-        "why": ""
+        "why": "nicht goes with an adjective (teuer); kein only goes before a noun."
        },
        {
         "type": "gap",
@@ -20789,7 +21042,7 @@ window.COURSE = {
         ],
         "hint": "Those are not chairs.",
         "say": "Das sind keine Stühle.",
-        "why": ""
+        "why": "Before a plural noun: keine."
        },
        {
         "type": "gap",
@@ -20803,7 +21056,7 @@ window.COURSE = {
         ],
         "hint": "The sofa is not nice.",
         "say": "Das Sofa ist nicht schön.",
-        "why": ""
+        "why": "nicht goes with an adjective (schön); kein only goes before a noun."
        },
        {
         "type": "gap",
@@ -20817,7 +21070,7 @@ window.COURSE = {
         ],
         "hint": "That is not a sofa.",
         "say": "Das ist kein Sofa.",
-        "why": ""
+        "why": "Before a noun, \"not a\" is kein; das Sofa is neuter: kein."
        },
        {
         "type": "gap",
@@ -20831,7 +21084,7 @@ window.COURSE = {
         ],
         "hint": "The garden is not big.",
         "say": "Der Garten ist nicht groß.",
-        "why": ""
+        "why": "nicht goes with an adjective (groß); kein only goes before a noun."
        }
       ]
      }
@@ -20904,7 +21157,7 @@ window.COURSE = {
         ],
         "hint": "The table is new. It is nice.",
         "say": "Der Tisch ist neu. Er ist schön.",
-        "why": ""
+        "why": "der Tisch is masculine, so \"it\" is er."
        },
        {
         "type": "gap",
@@ -20918,7 +21171,7 @@ window.COURSE = {
         ],
         "hint": "The lamp is old. It is ugly.",
         "say": "Die Lampe ist alt. Sie ist hässlich.",
-        "why": ""
+        "why": "die Lampe is feminine, so \"it\" is sie."
        },
        {
         "type": "gap",
@@ -20932,7 +21185,7 @@ window.COURSE = {
         ],
         "hint": "The bed is big. It is expensive.",
         "say": "Das Bett ist groß. Es ist teuer.",
-        "why": ""
+        "why": "das Bett is neuter, so \"it\" is es."
        },
        {
         "type": "gap",
@@ -20946,7 +21199,7 @@ window.COURSE = {
         ],
         "hint": "The chairs are new. They are cheap.",
         "say": "Die Stühle sind neu. Sie sind billig.",
-        "why": ""
+        "why": "die Stühle is plural, so \"they\" is sie."
        },
        {
         "type": "gap",
@@ -20960,7 +21213,7 @@ window.COURSE = {
         ],
         "hint": "The garden is small. It is nice.",
         "say": "Der Garten ist klein. Er ist schön.",
-        "why": ""
+        "why": "der Garten is masculine, so \"it\" is er."
        },
        {
         "type": "gap",
@@ -20974,7 +21227,7 @@ window.COURSE = {
         ],
         "hint": "The kitchen is bright. It is new.",
         "say": "Die Küche ist hell. Sie ist neu.",
-        "why": ""
+        "why": "die Küche is feminine, so \"it\" is sie."
        },
        {
         "type": "gap",
@@ -20988,7 +21241,7 @@ window.COURSE = {
         ],
         "hint": "The sofa is red. It is cosy.",
         "say": "Das Sofa ist rot. Es ist gemütlich.",
-        "why": ""
+        "why": "das Sofa is neuter, so \"it\" is es."
        },
        {
         "type": "gap",
@@ -21002,7 +21255,7 @@ window.COURSE = {
         ],
         "hint": "The wardrobe is brown. It is old.",
         "say": "Der Schrank ist braun. Er ist alt.",
-        "why": ""
+        "why": "der Schrank is masculine, so \"it\" is er."
        },
        {
         "type": "gap",
@@ -21016,7 +21269,7 @@ window.COURSE = {
         ],
         "hint": "The room is dark. It is small.",
         "say": "Das Zimmer ist dunkel. Es ist klein.",
-        "why": ""
+        "why": "das Zimmer is neuter, so \"it\" is es."
        }
       ]
      }
@@ -21148,7 +21401,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "zweihundertfünfzig",
-        "why": ""
+        "why": "zweihundertfünfzig: zweihundert (200), then fünfzig (50)."
        },
        {
         "type": "listen",
@@ -21161,7 +21414,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "dreihundertsiebzehn",
-        "why": ""
+        "why": "dreihundertsiebzehn: dreihundert (300), then siebzehn (17)."
        },
        {
         "type": "listen",
@@ -21174,7 +21427,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "tausendzweihundert",
-        "why": ""
+        "why": "eintausendzweihundert: tausend (1000), then zweihundert (200)."
        },
        {
         "type": "listen",
@@ -21187,7 +21440,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "achtundsechzig",
-        "why": ""
+        "why": "achtundsechzig: German says the 8 first, then und, then 60."
        },
        {
         "type": "listen",
@@ -21200,7 +21453,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "neun Euro neunundneunzig",
-        "why": ""
+        "why": "neun Euro neunundneunzig: the euros, then the cents."
        },
        {
         "type": "listen",
@@ -21213,7 +21466,7 @@ window.COURSE = {
         ],
         "hint": "Press play as often as you like, then choose.",
         "say": "vier Euro fünfzig",
-        "why": ""
+        "why": "vier Euro fünfzig: the euros, then the cents."
        },
        {
         "type": "choose",
@@ -21226,7 +21479,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "hundertfünfundvierzig",
-        "why": ""
+        "why": "hundert, then the 5 before the 40: fünfundvierzig."
        },
        {
         "type": "choose",
@@ -21239,7 +21492,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "zweitausend",
-        "why": ""
+        "why": "tausend is a thousand: zwei + tausend."
        },
        {
         "type": "choose",
@@ -21252,7 +21505,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "achtzig Cent",
-        "why": ""
+        "why": "Under one euro, say only the cents: achtzig Cent."
        },
        {
         "type": "gap",
@@ -21266,7 +21519,7 @@ window.COURSE = {
         ],
         "hint": "The table costs 99 euros.",
         "say": "Der Tisch kostet neunundneunzig Euro.",
-        "why": ""
+        "why": "99: the 9 first, then und, then neunzig."
        },
        {
         "type": "write",
@@ -21279,7 +21532,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Wie viel kostet die Lampe?",
-        "why": ""
+        "why": "Ask a price with Wie viel kostet …?"
        },
        {
         "type": "write",
@@ -21292,7 +21545,7 @@ window.COURSE = {
         ],
         "hint": "Write the number you hear as one word.",
         "say": "vierhundertzwanzig",
-        "why": ""
+        "why": "420 is vierhundert + zwanzig, written as one word."
        }
       ]
      }
@@ -21404,7 +21657,7 @@ window.COURSE = {
         ],
         "hint": "Those are glasses.",
         "say": "Das ist eine Brille.",
-        "why": ""
+        "why": "die Brille is feminine: eine. German counts glasses as one thing."
        },
        {
         "type": "gap",
@@ -21418,7 +21671,7 @@ window.COURSE = {
         ],
         "hint": "Is that a key?",
         "say": "Ist das ein Schlüssel?",
-        "why": ""
+        "why": "der Schlüssel is masculine: ein."
        },
        {
         "type": "gap",
@@ -21432,7 +21685,7 @@ window.COURSE = {
         ],
         "hint": "No, that isn't a lighter.",
         "say": "Nein, das ist kein Feuerzeug.",
-        "why": ""
+        "why": "Before a noun, \"not a\" is kein; das Feuerzeug is neuter: kein."
        },
        {
         "type": "gap",
@@ -21446,7 +21699,7 @@ window.COURSE = {
         ],
         "hint": "That isn't a bag, it's a backpack.",
         "say": "Das ist keine Tasche, das ist ein Rucksack.",
-        "why": ""
+        "why": "Before a noun, \"not a\" is kein; die Tasche is feminine: keine."
        },
        {
         "type": "gap",
@@ -21460,7 +21713,7 @@ window.COURSE = {
         ],
         "hint": "The bottle is made of plastic.",
         "say": "Die Flasche ist aus Plastik.",
-        "why": ""
+        "why": "\"Made of\" is aus: aus Plastik."
        },
        {
         "type": "gap",
@@ -21474,7 +21727,7 @@ window.COURSE = {
         ],
         "hint": "The pen is new. It is blue.",
         "say": "Der Kuli ist neu. Er ist blau.",
-        "why": ""
+        "why": "der Kuli is masculine, so \"it\" is er."
        },
        {
         "type": "gap",
@@ -21488,7 +21741,7 @@ window.COURSE = {
         ],
         "hint": "The exercise book is old. It is made of paper.",
         "say": "Das Heft ist alt. Es ist aus Papier.",
-        "why": ""
+        "why": "das Heft is neuter, so \"it\" is es."
        },
        {
         "type": "gap",
@@ -21502,7 +21755,7 @@ window.COURSE = {
         ],
         "hint": "The necklace is beautiful. It is made of metal.",
         "say": "Die Kette ist schön. Sie ist aus Metall.",
-        "why": ""
+        "why": "die Kette is feminine, so \"it\" is sie."
        },
        {
         "type": "choose",
@@ -21515,7 +21768,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Der Regenschirm ist aus Stoff und Metall.",
-        "why": ""
+        "why": "An umbrella is cloth (Stoff) on a metal frame (Metall)."
        },
        {
         "type": "order",
@@ -21530,7 +21783,8 @@ window.COURSE = {
         "answer": "Die Tasche ist aus Leder.",
         "alts": [],
         "hint": "The bag is made of leather.",
-        "say": "Die Tasche ist aus Leder."
+        "say": "Die Tasche ist aus Leder.",
+        "why": "Die Tasche, then the verb ist, then aus + the material."
        },
        {
         "type": "order",
@@ -21545,7 +21799,8 @@ window.COURSE = {
         "answer": "Wie heißt das auf Deutsch?",
         "alts": [],
         "hint": "What is that called in German?",
-        "say": "Wie heißt das auf Deutsch?"
+        "say": "Wie heißt das auf Deutsch?",
+        "why": "W-word first, then the verb."
        },
        {
         "type": "write",
@@ -21556,7 +21811,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Das ist kein Schlüssel.",
-        "why": ""
+        "why": "Before a noun, \"not a\" is kein; der Schlüssel is masculine: kein."
        }
       ]
      }
@@ -21626,7 +21881,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Yonas wohnt jetzt in Leipzig."
        },
        {
         "type": "choose",
@@ -21652,7 +21907,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Lena: Schau mal, der Sessel! Er ist so schön."
        },
        {
         "type": "choose",
@@ -21691,7 +21946,7 @@ window.COURSE = {
         ],
         "hint": "How much is the table?",
         "say": "49 Euro",
-        "why": ""
+        "why": "The text says: Nur 49 Euro. Das ist ein Sonderangebot."
        },
        {
         "type": "choose",
@@ -21704,7 +21959,7 @@ window.COURSE = {
         ],
         "hint": "When does Yonas go to the furniture shop?",
         "say": "am Samstag",
-        "why": ""
+        "why": "The text says: Am Samstag geht er mit Lena in ein Möbelgeschäft."
        },
        {
         "type": "write",
@@ -21718,7 +21973,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Er nimmt den Tisch.",
-        "why": ""
+        "why": "The text says: Ich nehme den Tisch."
        },
        {
         "type": "write",
@@ -21735,7 +21990,7 @@ window.COURSE = {
         "hint": "",
         "say": "Das ist aber günstig!",
         "show": "That's really cheap!",
-        "why": ""
+        "why": "günstig = cheap; aber here does not mean \"but\", it shows surprise."
        }
       ]
      }
@@ -21782,7 +22037,8 @@ window.COURSE = {
          "The clock hangs on the wall."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Zähne",
@@ -21804,7 +22060,8 @@ window.COURSE = {
          "I brush my teeth twice a day."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "die Arbeit",
@@ -21826,7 +22083,8 @@ window.COURSE = {
          "The work is fun."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "arbeiten",
@@ -21892,7 +22150,8 @@ window.COURSE = {
          "I am cooking lunch."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Besuch",
@@ -21911,7 +22170,8 @@ window.COURSE = {
          "Thanks for the visit!"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "fernsehen",
@@ -21999,7 +22259,8 @@ window.COURSE = {
          "The computer game is very exciting."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "schlafen",
@@ -22490,7 +22751,8 @@ window.COURSE = {
          "Today is Monday."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Dienstag",
@@ -22509,7 +22771,8 @@ window.COURSE = {
          "Tomorrow is Tuesday."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Mittwoch",
@@ -22528,7 +22791,8 @@ window.COURSE = {
          "On Wednesday many Ethiopians fast."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Donnerstag",
@@ -22547,7 +22811,8 @@ window.COURSE = {
          "We are meeting on Thursday."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Freitag",
@@ -22566,7 +22831,8 @@ window.COURSE = {
          "On Friday many Ethiopians fast."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Samstag",
@@ -22585,7 +22851,8 @@ window.COURSE = {
          "On Saturday we are having a party."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Sonntag",
@@ -22604,7 +22871,8 @@ window.COURSE = {
          "On Sunday the shops are closed."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "am Montag",
@@ -22980,7 +23248,8 @@ window.COURSE = {
          "My birthday is in January."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Februar",
@@ -22999,7 +23268,8 @@ window.COURSE = {
          "February has 28 days."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der März",
@@ -23018,7 +23288,8 @@ window.COURSE = {
          "My brother's birthday is in March."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der April",
@@ -23037,7 +23308,8 @@ window.COURSE = {
          "Easter is in April."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Mai",
@@ -23056,7 +23328,8 @@ window.COURSE = {
          "In May the flowers bloom."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Juni",
@@ -23075,7 +23348,8 @@ window.COURSE = {
          "In June the children have holidays."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Juli",
@@ -23094,7 +23368,8 @@ window.COURSE = {
          "July has 31 days."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der August",
@@ -23113,7 +23388,8 @@ window.COURSE = {
          "My birthday is in August."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der September",
@@ -23132,7 +23408,8 @@ window.COURSE = {
          "September is beautiful."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Oktober",
@@ -23151,7 +23428,8 @@ window.COURSE = {
          "In October I fly to Berlin."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der November",
@@ -23170,7 +23448,8 @@ window.COURSE = {
          "In November it often rains."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Dezember",
@@ -23189,7 +23468,8 @@ window.COURSE = {
          "In December it often snows."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Frühling",
@@ -23211,7 +23491,8 @@ window.COURSE = {
          "In spring it is warm."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Sommer",
@@ -23233,7 +23514,8 @@ window.COURSE = {
          "In summer I eat a lot of ice cream."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Herbst",
@@ -23255,7 +23537,8 @@ window.COURSE = {
          "In autumn school begins."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Winter",
@@ -23277,7 +23560,8 @@ window.COURSE = {
          "In winter I wear a jacket."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Monate",
@@ -23299,7 +23583,8 @@ window.COURSE = {
          "I am learning the months in German."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "die Jahreszeiten",
@@ -23322,7 +23607,8 @@ window.COURSE = {
          "The seasons are very different."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       }
      ]
     },
@@ -23391,7 +23677,8 @@ window.COURSE = {
          "The time is nice."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Geburtstag",
@@ -23413,7 +23700,8 @@ window.COURSE = {
          "Happy birthday!"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "beginnen",
@@ -23783,7 +24071,8 @@ window.COURSE = {
          "The late morning is over quickly."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Mittag",
@@ -23805,7 +24094,8 @@ window.COURSE = {
          "Until midday I have class."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Nachmittag",
@@ -23824,7 +24114,8 @@ window.COURSE = {
          "The afternoon is long."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "am Morgen",
@@ -23963,7 +24254,8 @@ window.COURSE = {
          "What are you doing at the weekend?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "am Wochenende",
@@ -24006,7 +24298,8 @@ window.COURSE = {
          "The cinema is full."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Museum",
@@ -24028,7 +24321,8 @@ window.COURSE = {
          "We are visiting the museum."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Theater",
@@ -24050,7 +24344,8 @@ window.COURSE = {
          "The play begins at eight."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Café",
@@ -24072,7 +24367,8 @@ window.COURSE = {
          "The café opens at eight."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Konzert",
@@ -24094,7 +24390,8 @@ window.COURSE = {
          "Do you have tickets for the concert?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Restaurant",
@@ -24116,7 +24413,8 @@ window.COURSE = {
          "The restaurant has Ethiopian food."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Fitnessstudio",
@@ -24138,7 +24436,8 @@ window.COURSE = {
          "The gym is full."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Bar",
@@ -24160,7 +24459,8 @@ window.COURSE = {
          "The bar opens at ten."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "ins Kino gehen",
@@ -24672,7 +24972,7 @@ window.COURSE = {
         ],
         "hint": "quarter past nine",
         "say": "9:15 → Es ist Viertel nach neun.",
-        "why": ""
+        "why": "Viertel is a quarter of an hour; nach = past: a quarter past nine."
        },
        {
         "type": "gap",
@@ -24686,7 +24986,7 @@ window.COURSE = {
         ],
         "hint": "quarter to ten",
         "say": "9:45 → Es ist Viertel vor zehn.",
-        "why": ""
+        "why": "vor = to: a quarter to ten."
        },
        {
         "type": "gap",
@@ -24700,7 +25000,7 @@ window.COURSE = {
         ],
         "hint": "five past nine",
         "say": "9:05 → Es ist fünf nach neun.",
-        "why": ""
+        "why": "Five minutes past nine: fünf nach neun."
        },
        {
         "type": "gap",
@@ -24714,7 +25014,7 @@ window.COURSE = {
         ],
         "hint": "five to ten",
         "say": "9:55 → Es ist fünf vor zehn.",
-        "why": ""
+        "why": "Five minutes to ten: fünf vor zehn."
        },
        {
         "type": "gap",
@@ -24728,7 +25028,7 @@ window.COURSE = {
         ],
         "hint": "twenty-five past nine",
         "say": "9:25 → Es ist fünf vor halb zehn.",
-        "why": ""
+        "why": "9:30 is halb zehn, and 9:25 is five minutes before it."
        },
        {
         "type": "gap",
@@ -24756,7 +25056,7 @@ window.COURSE = {
         ],
         "hint": "twenty-five to ten",
         "say": "9:35 → Es ist fünf nach halb zehn.",
-        "why": ""
+        "why": "9:30 is halb zehn, and 9:35 is five minutes after it."
        },
        {
         "type": "gap",
@@ -24770,7 +25070,7 @@ window.COURSE = {
         ],
         "hint": "seven o'clock",
         "say": "7:00 → Es ist sieben Uhr.",
-        "why": ""
+        "why": "A full hour: the number, then Uhr."
        }
       ]
      }
@@ -24834,7 +25134,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Um 8 Uhr geht er zur Arbeit.",
-        "why": ""
+        "why": "The verb comes second: after Um 8 Uhr comes geht, then er."
        },
        {
         "type": "choose",
@@ -24847,7 +25147,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Heute koche ich.",
-        "why": ""
+        "why": "The verb comes second: after Heute comes koche, then ich."
        },
        {
         "type": "choose",
@@ -24860,7 +25160,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Am Montag spiele ich Fußball.",
-        "why": ""
+        "why": "The verb comes second: after Am Montag comes spiele, then ich."
        },
        {
         "type": "choose",
@@ -24873,7 +25173,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Am Abend sehen wir fern.",
-        "why": ""
+        "why": "The verb comes second: after Am Abend comes sehen, then wir."
        },
        {
         "type": "choose",
@@ -24886,7 +25186,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Morgen arbeitet sie.",
-        "why": ""
+        "why": "The verb comes second: after Morgen comes arbeitet, then sie."
        },
        {
         "type": "choose",
@@ -24899,7 +25199,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Ich arbeite von 8 bis 2 Uhr.",
-        "why": ""
+        "why": "The verb comes second: Ich, then arbeite."
        },
        {
         "type": "choose",
@@ -24912,7 +25212,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Um 12 Uhr essen wir Mittagessen.",
-        "why": ""
+        "why": "The verb comes second: after Um 12 Uhr comes essen, then wir."
        },
        {
         "type": "choose",
@@ -24925,7 +25225,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Heute habe ich Zeit.",
-        "why": ""
+        "why": "The verb comes second: after Heute comes habe, then ich."
        }
       ]
      }
@@ -25036,7 +25336,7 @@ window.COURSE = {
         ],
         "hint": "I get up at 7.",
         "say": "Ich stehe um 7 Uhr auf.",
-        "why": ""
+        "why": "stehe in second place, and the prefix auf goes to the end."
        },
        {
         "type": "choose",
@@ -25049,7 +25349,7 @@ window.COURSE = {
         ],
         "hint": "He calls his mother.",
         "say": "Er ruft seine Mutter an.",
-        "why": ""
+        "why": "ruft in second place, and the prefix an goes to the end."
        },
        {
         "type": "choose",
@@ -25062,7 +25362,7 @@ window.COURSE = {
         ],
         "hint": "We go shopping on Saturday.",
         "say": "Wir kaufen am Samstag ein.",
-        "why": ""
+        "why": "kaufen in second place, and the prefix ein goes to the end."
        },
        {
         "type": "choose",
@@ -25075,7 +25375,7 @@ window.COURSE = {
         ],
         "hint": "You watch TV in the evening.",
         "say": "Du siehst am Abend fern.",
-        "why": ""
+        "why": "siehst in second place, and the prefix fern goes to the end."
        },
        {
         "type": "choose",
@@ -25088,7 +25388,7 @@ window.COURSE = {
         ],
         "hint": "She opens the window.",
         "say": "Sie macht das Fenster auf.",
-        "why": ""
+        "why": "macht in second place, and the prefix auf goes to the end."
        },
        {
         "type": "choose",
@@ -25101,7 +25401,7 @@ window.COURSE = {
         ],
         "hint": "You (all) tidy the room.",
         "say": "Ihr räumt das Zimmer auf.",
-        "why": ""
+        "why": "räumt in second place, and the prefix auf goes to the end."
        },
        {
         "type": "choose",
@@ -25114,7 +25414,7 @@ window.COURSE = {
         ],
         "hint": "I close the door.",
         "say": "Ich mache die Tür zu.",
-        "why": ""
+        "why": "mache in second place, and the prefix zu goes to the end."
        },
        {
         "type": "choose",
@@ -25127,7 +25427,7 @@ window.COURSE = {
         ],
         "hint": "He puts on the jacket.",
         "say": "Er zieht die Jacke an.",
-        "why": ""
+        "why": "zieht in second place, and the prefix an goes to the end."
        }
       ]
      }
@@ -25233,7 +25533,7 @@ window.COURSE = {
         ],
         "hint": "You drive to work.",
         "say": "Du fährst zur Arbeit.",
-        "why": ""
+        "why": "du: a → ä, fährst."
        },
        {
         "type": "gap",
@@ -25248,7 +25548,7 @@ window.COURSE = {
         ],
         "hint": "He sleeps until 9.",
         "say": "Er schläft bis 9 Uhr.",
-        "why": ""
+        "why": "er: a → ä, schläft."
        },
        {
         "type": "gap",
@@ -25263,7 +25563,7 @@ window.COURSE = {
         ],
         "hint": "We go home.",
         "say": "Wir fahren nach Hause.",
-        "why": ""
+        "why": "wir has no umlaut: fahren."
        },
        {
         "type": "gap",
@@ -25278,7 +25578,7 @@ window.COURSE = {
         ],
         "hint": "She does the washing.",
         "say": "Sie wäscht die Wäsche.",
-        "why": ""
+        "why": "sie (she): a → ä, wäscht."
        },
        {
         "type": "gap",
@@ -25308,7 +25608,7 @@ window.COURSE = {
         ],
         "hint": "I go by bus.",
         "say": "Ich fahre mit dem Bus.",
-        "why": ""
+        "why": "ich has no umlaut: fahre."
        },
        {
         "type": "gap",
@@ -25323,7 +25623,7 @@ window.COURSE = {
         ],
         "hint": "Do you sleep well?",
         "say": "Schläfst du gut?",
-        "why": ""
+        "why": "du: a → ä, schläfst; in a yes/no question the verb comes first."
        },
        {
         "type": "gap",
@@ -25338,7 +25638,7 @@ window.COURSE = {
         ],
         "hint": "My father drives a car.",
         "say": "Mein Vater fährt ein Auto.",
-        "why": ""
+        "why": "mein Vater is like er: a → ä, fährt."
        }
       ]
      }
@@ -25457,7 +25757,7 @@ window.COURSE = {
         ],
         "hint": "On Monday I have German class.",
         "say": "Am Montag habe ich Deutschkurs.",
-        "why": ""
+        "why": "Days take am: am Montag."
        },
        {
         "type": "gap",
@@ -25471,7 +25771,7 @@ window.COURSE = {
         ],
         "hint": "The course starts at nine.",
         "say": "Der Kurs beginnt um neun Uhr.",
-        "why": ""
+        "why": "Clock times take um: um neun Uhr."
        },
        {
         "type": "gap",
@@ -25485,7 +25785,7 @@ window.COURSE = {
         ],
         "hint": "In the evening I watch TV.",
         "say": "Am Abend sehe ich fern.",
-        "why": ""
+        "why": "Parts of the day take am: am Abend."
        },
        {
         "type": "gap",
@@ -25499,7 +25799,7 @@ window.COURSE = {
         ],
         "hint": "At night I sleep.",
         "say": "In der Nacht schlafe ich.",
-        "why": ""
+        "why": "The night is the exception: in der Nacht."
        },
        {
         "type": "gap",
@@ -25513,7 +25813,7 @@ window.COURSE = {
         ],
         "hint": "We're meeting at half past three.",
         "say": "Wir treffen uns um halb vier.",
-        "why": ""
+        "why": "Clock times take um: um halb vier."
        },
        {
         "type": "gap",
@@ -25527,7 +25827,7 @@ window.COURSE = {
         ],
         "hint": "My birthday is in May.",
         "say": "Ich habe im Mai Geburtstag.",
-        "why": ""
+        "why": "Months take im: im Mai."
        },
        {
         "type": "gap",
@@ -25541,7 +25841,7 @@ window.COURSE = {
         ],
         "hint": "What are you doing at the weekend?",
         "say": "Was machst du am Wochenende?",
-        "why": ""
+        "why": "The weekend takes am: am Wochenende."
        },
        {
         "type": "gap",
@@ -25555,7 +25855,7 @@ window.COURSE = {
         ],
         "hint": "In summer it is hot.",
         "say": "Im Sommer ist es heiß.",
-        "why": ""
+        "why": "Seasons take im: im Sommer."
        },
        {
         "type": "order",
@@ -25573,7 +25873,8 @@ window.COURSE = {
          "Ich gehe am Samstag ins Kino."
         ],
         "hint": "On Saturday I am going to the cinema.",
-        "say": "Am Samstag gehe ich ins Kino."
+        "say": "Am Samstag gehe ich ins Kino.",
+        "why": "Am Samstag first, the verb gehe second, then ich."
        },
        {
         "type": "order",
@@ -25591,7 +25892,8 @@ window.COURSE = {
          "Um acht Uhr beginnt der Film."
         ],
         "hint": "The film starts at eight.",
-        "say": "Der Film beginnt um acht Uhr."
+        "say": "Der Film beginnt um acht Uhr.",
+        "why": "Der Film first, the verb beginnt second, then um + the time."
        },
        {
         "type": "order",
@@ -25609,7 +25911,8 @@ window.COURSE = {
          "Ich habe am Abend keine Zeit."
         ],
         "hint": "I'm not free in the evening.",
-        "say": "Am Abend habe ich keine Zeit."
+        "say": "Am Abend habe ich keine Zeit.",
+        "why": "Am Abend first, the verb habe second, then ich."
        },
        {
         "type": "write",
@@ -25624,7 +25927,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "am Freitag um sieben",
-        "why": ""
+        "why": "Days take am, clock times take um."
        }
       ]
      }
@@ -25743,7 +26046,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Ja, gern! Gute Idee!",
-        "why": ""
+        "why": "Ja, gern! Gute Idee! = Yes, gladly! Good idea!"
        },
        {
         "type": "choose",
@@ -25756,7 +26059,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Tut mir leid, ich habe leider keine Zeit.",
-        "why": ""
+        "why": "Tut mir leid (I'm sorry) and leider (unfortunately) make the no polite. \"Nein. Keine Lust.\" sounds rude."
        },
        {
         "type": "choose",
@@ -25769,7 +26072,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Das weiß ich noch nicht.",
-        "why": ""
+        "why": "ich goes with weiß, with no ending."
        },
        {
         "type": "choose",
@@ -25782,7 +26085,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Gehen wir ins Café?",
-        "why": ""
+        "why": "To suggest something, the verb comes first, then wir: Gehen wir …?"
        },
        {
         "type": "gap",
@@ -25796,7 +26099,7 @@ window.COURSE = {
         ],
         "hint": "I don't know.",
         "say": "Ich weiß es nicht.",
-        "why": ""
+        "why": "ich goes with weiß, with no ending."
        },
        {
         "type": "gap",
@@ -25810,7 +26113,7 @@ window.COURSE = {
         ],
         "hint": "Do you know where the cinema is?",
         "say": "Weißt du, wo das Kino ist?",
-        "why": ""
+        "why": "du goes with weißt."
        },
        {
         "type": "gap",
@@ -25824,7 +26127,7 @@ window.COURSE = {
         ],
         "hint": "We know that already.",
         "say": "Wir wissen das schon.",
-        "why": ""
+        "why": "wir goes with wissen."
        },
        {
         "type": "gap",
@@ -25838,7 +26141,7 @@ window.COURSE = {
         ],
         "hint": "Are you free on Friday?",
         "say": "Hast du am Freitag Zeit?",
-        "why": ""
+        "why": "Zeit haben = to have time, to be free."
        },
        {
         "type": "gap",
@@ -25852,7 +26155,7 @@ window.COURSE = {
         ],
         "hint": "Fancy the cinema?",
         "say": "Lust auf Kino?",
-        "why": ""
+        "why": "Lust auf …? = Do you fancy …?"
        },
        {
         "type": "order",
@@ -25869,7 +26172,8 @@ window.COURSE = {
         "answer": "Hast du heute Abend Zeit? Ja. Was machen wir? Gehen wir ins Konzert? Gute Idee! Wann denn? Um acht Uhr. Okay, bis dann!",
         "hint": "Making a plan",
         "say": "",
-        "show": "Hast du heute Abend Zeit? → Ja. Was machen wir? → Gehen wir ins Konzert? → Gute Idee! Wann denn? → Um acht Uhr. → Okay, bis dann!"
+        "show": "Hast du heute Abend Zeit? → Ja. Was machen wir? → Gehen wir ins Konzert? → Gute Idee! Wann denn? → Um acht Uhr. → Okay, bis dann!",
+        "why": "Ask if the other is free, suggest something, agree, fix the time, say goodbye."
        },
        {
         "type": "order",
@@ -25885,7 +26189,8 @@ window.COURSE = {
         "answer": "Lust auf Kaffee? Tut mir leid, heute habe ich keine Zeit. Und morgen? Morgen kann ich. Am Nachmittag? Ja, um drei Uhr!",
         "hint": "Another day",
         "say": "",
-        "show": "Lust auf Kaffee? → Tut mir leid, heute habe ich keine Zeit. → Und morgen? → Morgen kann ich. Am Nachmittag? → Ja, um drei Uhr!"
+        "show": "Lust auf Kaffee? → Tut mir leid, heute habe ich keine Zeit. → Und morgen? → Morgen kann ich. Am Nachmittag? → Ja, um drei Uhr!",
+        "why": "A suggestion, a polite no, another day, then the time."
        },
        {
         "type": "order",
@@ -25900,7 +26205,8 @@ window.COURSE = {
         "answer": "Hast du am Samstag Zeit?",
         "alts": [],
         "hint": "Are you free on Saturday?",
-        "say": "Hast du am Samstag Zeit?"
+        "say": "Hast du am Samstag Zeit?",
+        "why": "Yes/no question: the verb comes first."
        }
       ]
      }
@@ -25958,7 +26264,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Selam: Hast du heute Nachmittag Zeit? Gehen wir ins Museum?"
        },
        {
         "type": "choose",
@@ -25997,7 +26303,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Selam: Lust auf Kino? Dawit: Gute Idee!"
        },
        {
         "type": "choose",
@@ -26010,7 +26316,7 @@ window.COURSE = {
         ],
         "hint": "When does the film start?",
         "say": "um Viertel nach acht",
-        "why": ""
+        "why": "The text says: Der Film beginnt um Viertel nach acht."
        },
        {
         "type": "choose",
@@ -26023,7 +26329,7 @@ window.COURSE = {
         ],
         "hint": "When does Dawit pick Selam up?",
         "say": "um halb acht",
-        "why": ""
+        "why": "The text says: Ich hole dich um halb acht ab."
        },
        {
         "type": "write",
@@ -26036,7 +26342,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Er arbeitet.",
-        "why": ""
+        "why": "The text says: Am Nachmittag arbeite ich."
        },
        {
         "type": "write",
@@ -26053,7 +26359,7 @@ window.COURSE = {
         "hint": "",
         "say": "Am Abend habe ich Zeit.",
         "show": "I am free in the evening.",
-        "why": ""
+        "why": "am Abend = in the evening; Zeit haben = to have time, to be free."
        }
       ]
      }
@@ -26100,7 +26406,8 @@ window.COURSE = {
          "The weather in Germany is often cold."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Regen",
@@ -26122,7 +26429,8 @@ window.COURSE = {
          "I like the rain."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Schnee",
@@ -26144,7 +26452,8 @@ window.COURSE = {
          "The children are playing in the snow."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Sonne",
@@ -26166,7 +26475,8 @@ window.COURSE = {
          "The sun is beautiful."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "warm",
@@ -26286,7 +26596,8 @@ window.COURSE = {
          "The sun is shining today."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "es ist sonnig",
@@ -26368,7 +26679,8 @@ window.COURSE = {
          "The clouds come from the west."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "wolkig",
@@ -26412,7 +26724,8 @@ window.COURSE = {
          "The wind comes from the north."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "windig",
@@ -26456,7 +26769,8 @@ window.COURSE = {
          "In the fog I drive slowly."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Eis",
@@ -26478,7 +26792,8 @@ window.COURSE = {
          "An ice cream, please."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Gewitter",
@@ -26500,7 +26815,8 @@ window.COURSE = {
          "The children are afraid of the thunderstorm."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Temperatur",
@@ -26522,7 +26838,8 @@ window.COURSE = {
          "The temperature is 25 degrees."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Grad",
@@ -26544,7 +26861,8 @@ window.COURSE = {
          "How many degrees is it?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Norden",
@@ -26566,7 +26884,8 @@ window.COURSE = {
          "Mekelle is in the north of Ethiopia."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Süden",
@@ -26588,7 +26907,8 @@ window.COURSE = {
          "Hawassa is in the south of Ethiopia."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Osten",
@@ -26610,7 +26930,8 @@ window.COURSE = {
          "Harar is in the east of Ethiopia."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Westen",
@@ -26632,7 +26953,8 @@ window.COURSE = {
          "In the west it is raining."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       }
      ]
     },
@@ -26660,7 +26982,8 @@ window.COURSE = {
          "Where are you going on holiday?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "gemütlich",
@@ -26701,7 +27024,8 @@ window.COURSE = {
          "The tent is new."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Meer",
@@ -26723,7 +27047,8 @@ window.COURSE = {
          "The sea is calm today."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Küste",
@@ -26745,7 +27070,8 @@ window.COURSE = {
          "On the coast it is windy."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "schwimmen",
@@ -26833,7 +27159,8 @@ window.COURSE = {
          "Skiing is expensive."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Schlittschuhlaufen",
@@ -26855,7 +27182,8 @@ window.COURSE = {
          "In winter we go ice skating."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Natur",
@@ -26877,7 +27205,8 @@ window.COURSE = {
          "At the weekend we are out in nature."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "wandern",
@@ -27077,7 +27406,8 @@ window.COURSE = {
          "Photography is a nice hobby."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Fahrrad fahren",
@@ -27306,7 +27636,8 @@ window.COURSE = {
          "My tracksuit is blue."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Tennisschuhe",
@@ -27328,7 +27659,8 @@ window.COURSE = {
          "Where are my trainers?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "das Fahrrad",
@@ -27350,7 +27682,8 @@ window.COURSE = {
          "My bicycle is red."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Helm",
@@ -27369,7 +27702,8 @@ window.COURSE = {
          "My helmet is black."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Schwimmbad",
@@ -27391,7 +27725,8 @@ window.COURSE = {
          "The swimming pool is closed on Monday."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Badehose",
@@ -27413,7 +27748,8 @@ window.COURSE = {
          "Do you have your swimming trunks?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Badeanzug",
@@ -27435,7 +27771,8 @@ window.COURSE = {
          "My swimsuit is in the bag."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Jacke",
@@ -27457,7 +27794,8 @@ window.COURSE = {
          "My jacket is new."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Mütze",
@@ -27479,7 +27817,8 @@ window.COURSE = {
          "The cap is red."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "brauchen",
@@ -27547,7 +27886,8 @@ window.COURSE = {
          "Liya's favourite film is funny."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Lieblingsbuch",
@@ -27571,7 +27911,8 @@ window.COURSE = {
          "My favourite book is in Amharic."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Lieblingsmusik",
@@ -27595,7 +27936,8 @@ window.COURSE = {
          "My mother's favourite music is old."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Lieblingslied",
@@ -27619,7 +27961,8 @@ window.COURSE = {
          "We sing my favourite song."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Lieblingsessen",
@@ -27643,7 +27986,8 @@ window.COURSE = {
          "Pizza is the children's favourite food."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Lieblingsgetränk",
@@ -27667,7 +28011,8 @@ window.COURSE = {
          "His favourite drink is tea."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Lieblingsfarbe",
@@ -27691,7 +28036,8 @@ window.COURSE = {
          "Her favourite colour is purple."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       }
      ]
     },
@@ -29157,7 +29503,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "immer",
-        "why": ""
+        "why": "immer = always: more often than oft (often) or manchmal (sometimes)."
        },
        {
         "type": "choose",
@@ -29170,7 +29516,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "nie",
-        "why": ""
+        "why": "nie = never; immer = always, selten = rarely."
        },
        {
         "type": "choose",
@@ -29183,7 +29529,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "sehr gut",
-        "why": ""
+        "why": "sehr gut = very well: better than ein bisschen (a little) or nicht so gut (not so well)."
        },
        {
         "type": "choose",
@@ -29196,7 +29542,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "gar nicht",
-        "why": ""
+        "why": "gar nicht = not at all; nie = never, which is about how often."
        },
        {
         "type": "gap",
@@ -29210,7 +29556,7 @@ window.COURSE = {
         ],
         "hint": "I never drink coffee. I don't like coffee.",
         "say": "Ich trinke nie Kaffee. Ich mag keinen Kaffee.",
-        "why": ""
+        "why": "You don't like coffee, so you never drink it: nie."
        },
        {
         "type": "gap",
@@ -29224,7 +29570,7 @@ window.COURSE = {
         ],
         "hint": "We eat injera every day.",
         "say": "Wir essen jeden Tag Injera.",
-        "why": ""
+        "why": "jeden Tag = every day."
        },
        {
         "type": "gap",
@@ -29238,7 +29584,7 @@ window.COURSE = {
         ],
         "hint": "You dance really well!",
         "say": "Du kannst wirklich toll tanzen!",
-        "why": ""
+        "why": "toll = great: a compliment about how well."
        },
        {
         "type": "choose",
@@ -29251,7 +29597,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Oh, danke!",
-        "why": ""
+        "why": "Thank someone for a compliment: Oh, danke!"
        },
        {
         "type": "order",
@@ -29266,7 +29612,8 @@ window.COURSE = {
         "answer": "Ich gehe oft ins Kino.",
         "alts": [],
         "hint": "I often go to the cinema.",
-        "say": "Ich gehe oft ins Kino."
+        "say": "Ich gehe oft ins Kino.",
+        "why": "The verb gehe comes second, then how often (oft), then where."
        },
        {
         "type": "order",
@@ -29280,7 +29627,8 @@ window.COURSE = {
         "answer": "Kannst du gut schwimmen?",
         "alts": [],
         "hint": "Can you swim well?",
-        "say": "Kannst du gut schwimmen?"
+        "say": "Kannst du gut schwimmen?",
+        "why": "Yes/no question: kannst comes first, and the second verb schwimmen goes to the end."
        },
        {
         "type": "order",
@@ -29296,7 +29644,8 @@ window.COURSE = {
         "answer": "Er kann ein bisschen Gitarre spielen.",
         "alts": [],
         "hint": "He can play the guitar a little.",
-        "say": "Er kann ein bisschen Gitarre spielen."
+        "say": "Er kann ein bisschen Gitarre spielen.",
+        "why": "kann comes second, and the second verb spielen goes to the end."
        },
        {
         "type": "write",
@@ -29307,7 +29656,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Ich tanze nie.",
-        "why": ""
+        "why": "nie (never) comes after the verb: Ich tanze nie."
        }
       ]
      }
@@ -29439,7 +29788,7 @@ window.COURSE = {
         ],
         "hint": "Do you like reading books?",
         "say": "Liest du gern Bücher?",
-        "why": ""
+        "why": "du: e → ie, liest; in a yes/no question the verb comes first."
        },
        {
         "type": "gap",
@@ -29453,7 +29802,7 @@ window.COURSE = {
         ],
         "hint": "He reads the newspaper.",
         "say": "Er liest die Zeitung.",
-        "why": ""
+        "why": "er: e → ie, liest."
        },
        {
         "type": "gap",
@@ -29481,7 +29830,7 @@ window.COURSE = {
         ],
         "hint": "You are meeting friends.",
         "say": "Du triffst Freunde.",
-        "why": ""
+        "why": "du: e → i, triffst."
        },
        {
         "type": "gap",
@@ -29495,7 +29844,7 @@ window.COURSE = {
         ],
         "hint": "Meron is meeting Hanna today.",
         "say": "Meron trifft heute Hanna.",
-        "why": ""
+        "why": "Meron is like sie (she): e → i, trifft."
        },
        {
         "type": "gap",
@@ -29509,7 +29858,7 @@ window.COURSE = {
         ],
         "hint": "We're meeting at eight.",
         "say": "Wir treffen uns um acht.",
-        "why": ""
+        "why": "wir has no vowel change: treffen."
        },
        {
         "type": "gap",
@@ -29523,7 +29872,7 @@ window.COURSE = {
         ],
         "hint": "Can you see the bus?",
         "say": "Siehst du den Bus?",
-        "why": ""
+        "why": "du: e → ie, siehst; in a yes/no question the verb comes first."
        },
        {
         "type": "gap",
@@ -29551,7 +29900,7 @@ window.COURSE = {
         ],
         "hint": "Which language do you speak?",
         "say": "Was sprichst du?",
-        "why": ""
+        "why": "du: e → i, sprichst."
        },
        {
         "type": "gap",
@@ -29576,7 +29925,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Sie liest viel.",
-        "why": ""
+        "why": "sie (she): e → ie, liest."
        },
        {
         "type": "order",
@@ -29593,7 +29942,8 @@ window.COURSE = {
          "Am Samstag trifft er Freunde."
         ],
         "hint": "He is meeting friends on Saturday.",
-        "say": "Er trifft am Samstag Freunde."
+        "say": "Er trifft am Samstag Freunde.",
+        "why": "trifft comes second, then when (am Samstag), then who."
        }
       ]
      }
@@ -29658,7 +30008,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Tigist ist 34 und wohnt in Bahir Dar."
        },
        {
         "type": "choose",
@@ -29684,7 +30034,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Ihr Mann Abebe kann sehr gut kochen."
        },
        {
         "type": "choose",
@@ -29710,7 +30060,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Ihr Sohn Kaleb fotografiert gern."
        },
        {
         "type": "choose",
@@ -29723,7 +30073,7 @@ window.COURSE = {
         ],
         "hint": "What does Tigist do in her free time?",
         "say": "Sie liest und geht spazieren.",
-        "why": ""
+        "why": "The text says: In der Freizeit liest sie gern und sie geht oft am See spazieren."
        },
        {
         "type": "choose",
@@ -29736,7 +30086,7 @@ window.COURSE = {
         ],
         "hint": "What does Tigist think of cooking?",
         "say": "langweilig",
-        "why": ""
+        "why": "The text says: Tigist kocht nie, sie findet Kochen langweilig."
        },
        {
         "type": "write",
@@ -29752,7 +30102,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Sie ist zwölf.",
-        "why": ""
+        "why": "The text says: Ihre Tochter Liya ist zwölf."
        }
       ]
      }
@@ -29799,7 +30149,8 @@ window.COURSE = {
          "The teacher speaks slowly."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Lehrerin",
@@ -29821,7 +30172,8 @@ window.COURSE = {
          "The teacher explains the grammar."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Ingenieur",
@@ -29843,7 +30195,8 @@ window.COURSE = {
          "The engineer is building a bridge."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Ingenieurin",
@@ -29865,7 +30218,8 @@ window.COURSE = {
          "The engineer works a lot."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Verkäufer",
@@ -29887,7 +30241,8 @@ window.COURSE = {
          "My brother is a sales assistant."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Verkäuferin",
@@ -29909,7 +30264,8 @@ window.COURSE = {
          "Almaz is a sales assistant."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Kellner",
@@ -29931,7 +30287,8 @@ window.COURSE = {
          "Where is the waiter?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Kellnerin",
@@ -29953,7 +30310,8 @@ window.COURSE = {
          "Hanna works as a waitress."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Programmierer",
@@ -29975,7 +30333,8 @@ window.COURSE = {
          "The programmer works from home."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Programmiererin",
@@ -29997,7 +30356,8 @@ window.COURSE = {
          "The programmer works in Berlin."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Polizist",
@@ -30019,7 +30379,8 @@ window.COURSE = {
          "My uncle is a police officer."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Polizistin",
@@ -30041,7 +30402,8 @@ window.COURSE = {
          "My aunt is a police officer."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Elektriker",
@@ -30063,7 +30425,8 @@ window.COURSE = {
          "The electrician repairs the lamp."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Elektrikerin",
@@ -30085,7 +30448,8 @@ window.COURSE = {
          "The electrician is working in the kitchen."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Journalist",
@@ -30107,7 +30471,8 @@ window.COURSE = {
          "Abebe is a journalist."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Journalistin",
@@ -30129,7 +30494,8 @@ window.COURSE = {
          "My friend is a journalist."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Mechaniker",
@@ -30151,7 +30517,8 @@ window.COURSE = {
          "Tesfaye is a mechanic."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Mechanikerin",
@@ -30173,7 +30540,8 @@ window.COURSE = {
          "My cousin is a mechanic."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Arzt",
@@ -30195,7 +30563,8 @@ window.COURSE = {
          "My brother is a doctor."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Ärztin",
@@ -30217,7 +30586,8 @@ window.COURSE = {
          "Hanna is a doctor."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Krankenpfleger",
@@ -30239,7 +30609,8 @@ window.COURSE = {
          "Dawit is a nurse."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Krankenschwester",
@@ -30261,7 +30632,8 @@ window.COURSE = {
          "My mother is a nurse."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Tierarzt",
@@ -30283,7 +30655,8 @@ window.COURSE = {
          "My uncle is a vet."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Tierärztin",
@@ -30305,7 +30678,8 @@ window.COURSE = {
          "Meron would like to become a vet."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Zahnarzt",
@@ -30327,7 +30701,8 @@ window.COURSE = {
          "The children are afraid of the dentist."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Zahnärztin",
@@ -30349,7 +30724,8 @@ window.COURSE = {
          "The dentist works until five o'clock."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Geschäftsmann",
@@ -30371,7 +30747,8 @@ window.COURSE = {
          "The businessman has a shop in Merkato."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Geschäftsfrau",
@@ -30393,7 +30770,8 @@ window.COURSE = {
          "The businesswoman sells coffee."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Anwalt",
@@ -30415,7 +30793,8 @@ window.COURSE = {
          "The lawyer works a lot."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Anwältin",
@@ -30437,7 +30816,8 @@ window.COURSE = {
          "The lawyer has no time today."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Friseur",
@@ -30459,7 +30839,8 @@ window.COURSE = {
          "The hairdresser is next to the bank."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Friseurin",
@@ -30481,7 +30862,8 @@ window.COURSE = {
          "The hairdresser has many customers today."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Koch",
@@ -30503,7 +30885,8 @@ window.COURSE = {
          "My brother is a cook."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Köchin",
@@ -30525,7 +30908,8 @@ window.COURSE = {
          "My grandma was a cook."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Was bist du von Beruf?",
@@ -31554,7 +31938,8 @@ window.COURSE = {
          "The vocabulary is not difficult."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Hörverstehen",
@@ -31576,7 +31961,8 @@ window.COURSE = {
          "With music I improve my listening comprehension."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Aussprache",
@@ -31598,7 +31984,8 @@ window.COURSE = {
          "The pronunciation of “ü” is difficult."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Gesprächspartner",
@@ -31617,7 +32004,8 @@ window.COURSE = {
          "We meet our conversation partner at the café."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       }
      ]
     },
@@ -31642,7 +32030,8 @@ window.COURSE = {
          "The subject is “Appointment on Monday”."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Empfänger",
@@ -31664,7 +32053,8 @@ window.COURSE = {
          "The recipient lives in Berlin."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Absender",
@@ -31686,7 +32076,8 @@ window.COURSE = {
          "The sender is at the top."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Anhang",
@@ -31708,7 +32099,8 @@ window.COURSE = {
          "I can't open the attachment."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "senden",
@@ -32252,7 +32644,8 @@ window.COURSE = {
          "The student lives in Addis Ababa."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Studentin",
@@ -32274,7 +32667,8 @@ window.COURSE = {
          "The student is learning German."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Rentner",
@@ -32296,7 +32690,8 @@ window.COURSE = {
          "The pensioner reads the newspaper every day."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Rentnerin",
@@ -32318,7 +32713,8 @@ window.COURSE = {
          "The pensioner lives alone."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Was sind Sie von Beruf?",
@@ -32493,7 +32889,8 @@ window.COURSE = {
          "The computer is broken."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Laptop",
@@ -32515,7 +32912,8 @@ window.COURSE = {
          "The laptop is on the table."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Drucker",
@@ -32537,7 +32935,8 @@ window.COURSE = {
          "The printer has no paper."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Maus",
@@ -32559,7 +32958,8 @@ window.COURSE = {
          "There is a mouse in the kitchen!"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Tastatur",
@@ -32581,7 +32981,8 @@ window.COURSE = {
          "The keyboard is dirty."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Bildschirm",
@@ -32603,7 +33004,8 @@ window.COURSE = {
          "My phone has a small screen."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Passwort",
@@ -32625,7 +33027,8 @@ window.COURSE = {
          "The password is too short."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Nachricht",
@@ -32647,7 +33050,8 @@ window.COURSE = {
          "The message is short."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Termin",
@@ -32669,7 +33073,8 @@ window.COURSE = {
          "I would like an appointment with the doctor."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Kalender",
@@ -32691,7 +33096,8 @@ window.COURSE = {
          "The Ethiopian calendar has thirteen months."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Stift",
@@ -32713,7 +33119,8 @@ window.COURSE = {
          "The pen doesn't write."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Tablet",
@@ -32732,7 +33139,8 @@ window.COURSE = {
          "I read the newspaper on the tablet."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das WLAN",
@@ -32754,7 +33162,8 @@ window.COURSE = {
          "What is the password for the Wi-Fi?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "die Visitenkarte",
@@ -32776,7 +33185,8 @@ window.COURSE = {
          "Do you have a business card?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Ich brauche einen Stift.",
@@ -33089,7 +33499,7 @@ window.COURSE = {
         ],
         "hint": "I can dance well. (können)",
         "say": "Ich kann gut tanzen.",
-        "why": ""
+        "why": "ich has no ending with modal verbs: kann."
        },
        {
         "type": "gap",
@@ -33104,7 +33514,7 @@ window.COURSE = {
         ],
         "hint": "You have to work today. (müssen)",
         "say": "Du musst heute arbeiten.",
-        "why": ""
+        "why": "du takes -st, and the umlaut goes: musst."
        },
        {
         "type": "gap",
@@ -33119,7 +33529,7 @@ window.COURSE = {
         ],
         "hint": "We are allowed to swim here. (dürfen)",
         "say": "Wir dürfen hier schwimmen.",
-        "why": ""
+        "why": "wir takes the full form: dürfen."
        },
        {
         "type": "gap",
@@ -33134,7 +33544,7 @@ window.COURSE = {
         ],
         "hint": "He wants to learn German. (wollen)",
         "say": "Er will Deutsch lernen.",
-        "why": ""
+        "why": "er has no ending with modal verbs: will."
        },
        {
         "type": "gap",
@@ -33149,7 +33559,7 @@ window.COURSE = {
         ],
         "hint": "Would you like a coffee? (möchten)",
         "say": "Möchtest du einen Kaffee?",
-        "why": ""
+        "why": "du takes -st: möchtest; in a yes/no question the verb comes first."
        },
        {
         "type": "gap",
@@ -33164,7 +33574,7 @@ window.COURSE = {
         ],
         "hint": "You (all) should be on time. (sollen)",
         "say": "Ihr sollt pünktlich sein.",
-        "why": ""
+        "why": "ihr takes -t: sollt."
        },
        {
         "type": "gap",
@@ -33194,7 +33604,7 @@ window.COURSE = {
         ],
         "hint": "You (all) have to study a lot. (müssen)",
         "say": "Ihr müsst viel lernen.",
-        "why": ""
+        "why": "ihr takes -t and keeps the umlaut: müsst."
        },
        {
         "type": "gap",
@@ -33209,7 +33619,7 @@ window.COURSE = {
         ],
         "hint": "I would like a glass of water. (möchten)",
         "say": "Ich möchte ein Glas Wasser.",
-        "why": ""
+        "why": "ich has no ending: möchte."
        },
        {
         "type": "gap",
@@ -33224,7 +33634,7 @@ window.COURSE = {
         ],
         "hint": "You aren't allowed to watch TV now. (dürfen)",
         "say": "Du darfst jetzt nicht fernsehen.",
-        "why": ""
+        "why": "du takes -st, and the umlaut goes: darfst."
        }
       ]
      }
@@ -33352,7 +33762,7 @@ window.COURSE = {
         ],
         "hint": "I drank coffee.",
         "say": "Ich habe Kaffee getrunken.",
-        "why": ""
+        "why": "trinken is not movement: haben."
        },
        {
         "type": "gap",
@@ -33378,7 +33788,7 @@ window.COURSE = {
         ],
         "hint": "We ate pizza.",
         "say": "Wir haben Pizza gegessen.",
-        "why": ""
+        "why": "essen is not movement: haben."
        },
        {
         "type": "gap",
@@ -33404,7 +33814,7 @@ window.COURSE = {
         ],
         "hint": "You wrote a letter.",
         "say": "Du hast einen Brief geschrieben.",
-        "why": ""
+        "why": "schreiben is not movement: haben."
        },
        {
         "type": "gap",
@@ -33430,7 +33840,7 @@ window.COURSE = {
         ],
         "hint": "You (all) spoke German.",
         "say": "Ihr habt Deutsch gesprochen.",
-        "why": ""
+        "why": "sprechen is not movement: haben."
        },
        {
         "type": "gap",
@@ -33456,7 +33866,7 @@ window.COURSE = {
         ],
         "hint": "He helped me.",
         "say": "Er hat mir geholfen.",
-        "why": ""
+        "why": "helfen is not movement: haben."
        },
        {
         "type": "gap",
@@ -33556,7 +33966,7 @@ window.COURSE = {
         ],
         "hint": "1999",
         "say": "1999 → neunzehnhundertneunundneunzig",
-        "why": ""
+        "why": "Years up to 1999 are said in hundreds: neunzehnhundert (19 hundred) + neunundneunzig."
        },
        {
         "type": "gap",
@@ -33570,7 +33980,7 @@ window.COURSE = {
         ],
         "hint": "2001",
         "say": "2001 → zweitausendeins",
-        "why": ""
+        "why": "From 2000 on, years are said like numbers: zweitausend + eins."
        },
        {
         "type": "gap",
@@ -33584,7 +33994,7 @@ window.COURSE = {
         ],
         "hint": "1848",
         "say": "1848 → achtzehnhundertachtundvierzig",
-        "why": ""
+        "why": "In hundreds: achtzehnhundert (18 hundred) + achtundvierzig."
        },
        {
         "type": "gap",
@@ -33598,7 +34008,7 @@ window.COURSE = {
         ],
         "hint": "1990",
         "say": "1990 → neunzehnhundertneunzig",
-        "why": ""
+        "why": "In hundreds: neunzehnhundert (19 hundred) + neunzig."
        },
        {
         "type": "gap",
@@ -33612,7 +34022,7 @@ window.COURSE = {
         ],
         "hint": "2024",
         "say": "2024 → zweitausendvierundzwanzig",
-        "why": ""
+        "why": "From 2000 on, like a number: zweitausend + vierundzwanzig."
        },
        {
         "type": "gap",
@@ -33640,7 +34050,7 @@ window.COURSE = {
         ],
         "hint": "1975",
         "say": "1975 → neunzehnhundertfünfundsiebzig",
-        "why": ""
+        "why": "In hundreds: neunzehnhundert (19 hundred) + fünfundsiebzig."
        },
        {
         "type": "gap",
@@ -33654,7 +34064,7 @@ window.COURSE = {
         ],
         "hint": "2010",
         "say": "2010 → zweitausendzehn",
-        "why": ""
+        "why": "From 2000 on, like a number: zweitausend + zehn."
        }
       ]
      }
@@ -33777,7 +34187,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "die Lehrerin",
-        "why": ""
+        "why": "Add -in for a woman: der Lehrer → die Lehrerin."
        },
        {
         "type": "choose",
@@ -33790,7 +34200,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "die Ärztin",
-        "why": ""
+        "why": "Add -in, and a → ä: der Arzt → die Ärztin."
        },
        {
         "type": "choose",
@@ -33803,7 +34213,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "die Köchin",
-        "why": ""
+        "why": "Add -in, and o → ö: der Koch → die Köchin."
        },
        {
         "type": "choose",
@@ -33830,7 +34240,7 @@ window.COURSE = {
         ],
         "hint": "I work as a waitress.",
         "say": "Ich arbeite als Kellnerin.",
-        "why": ""
+        "why": "Your job goes with als: als Kellnerin."
        },
        {
         "type": "gap",
@@ -33844,7 +34254,7 @@ window.COURSE = {
         ],
         "hint": "He works at Siemens.",
         "say": "Er arbeitet bei Siemens.",
-        "why": ""
+        "why": "A company goes with bei: bei Siemens."
        },
        {
         "type": "gap",
@@ -33858,7 +34268,7 @@ window.COURSE = {
         ],
         "hint": "Meron works as a doctor in a hospital.",
         "say": "Meron arbeitet als Ärztin in einem Krankenhaus.",
-        "why": ""
+        "why": "A place goes with in: in einem Krankenhaus."
        },
        {
         "type": "gap",
@@ -33872,7 +34282,7 @@ window.COURSE = {
         ],
         "hint": "I am a teacher by profession.",
         "say": "Ich bin Lehrerin von Beruf.",
-        "why": ""
+        "why": "von Beruf = by profession."
        },
        {
         "type": "gap",
@@ -33886,7 +34296,7 @@ window.COURSE = {
         ],
         "hint": "What do you do for a living?",
         "say": "Was machst du beruflich?",
-        "why": ""
+        "why": "beruflich = for a living: Was machst du beruflich?"
        },
        {
         "type": "order",
@@ -33900,7 +34310,8 @@ window.COURSE = {
         "answer": "Ich arbeite als Krankenpfleger.",
         "alts": [],
         "hint": "I work as a nurse.",
-        "say": "Ich arbeite als Krankenpfleger."
+        "say": "Ich arbeite als Krankenpfleger.",
+        "why": "Ich, then the verb arbeite, then als + the job."
        },
        {
         "type": "order",
@@ -33915,7 +34326,8 @@ window.COURSE = {
         "answer": "Was sind Sie von Beruf?",
         "alts": [],
         "hint": "What do you do? (formal)",
-        "say": "Was sind Sie von Beruf?"
+        "say": "Was sind Sie von Beruf?",
+        "why": "W-word first, then the verb."
        },
        {
         "type": "write",
@@ -33926,7 +34338,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Ich bin Studentin.",
-        "why": ""
+        "why": "A woman adds -in, and no ein/eine with jobs: Ich bin Studentin."
        }
       ]
      }
@@ -34057,7 +34469,8 @@ window.COURSE = {
         "answer": "Firma Kebede, guten Tag! Guten Tag, hier ist Selam Tesfaye. Guten Tag, Frau Tesfaye. Was kann ich für Sie tun? Ist Herr Bekele da? Einen Moment, bitte … Herr Bekele ist leider nicht da. Okay, vielen Dank. Auf Wiederhören!",
         "hint": "A phone call to a company",
         "say": "",
-        "show": "Firma Kebede, guten Tag! → Guten Tag, hier ist Selam Tesfaye. → Guten Tag, Frau Tesfaye. Was kann ich für Sie tun? → Ist Herr Bekele da? → Einen Moment, bitte … Herr Bekele ist leider nicht da. → Okay, vielen Dank. Auf Wiederhören!"
+        "show": "Firma Kebede, guten Tag! → Guten Tag, hier ist Selam Tesfaye. → Guten Tag, Frau Tesfaye. Was kann ich für Sie tun? → Ist Herr Bekele da? → Einen Moment, bitte … Herr Bekele ist leider nicht da. → Okay, vielen Dank. Auf Wiederhören!",
+        "why": "The company answers with its name, you say who you are, ask for the person, hear he is not there, thank and say goodbye."
        },
        {
         "type": "choose",
@@ -34070,7 +34483,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Auf Wiederhören!",
-        "why": ""
+        "why": "On the phone you only hear each other: Auf Wiederhören. Auf Wiedersehen is for meeting in person."
        },
        {
         "type": "choose",
@@ -34083,7 +34496,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Hier ist Dawit Girma.",
-        "why": ""
+        "why": "On the phone you say who you are with Hier ist …"
        },
        {
         "type": "choose",
@@ -34096,7 +34509,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Sie ist leider nicht da.",
-        "why": ""
+        "why": "nicht goes with da (there); kein only goes before a noun."
        },
        {
         "type": "gap",
@@ -34124,7 +34537,7 @@ window.COURSE = {
         ],
         "hint": "Do you have the calendar?",
         "say": "Haben Sie den Kalender?",
-        "why": ""
+        "why": "After haben: der Kalender → den Kalender (accusative)."
        },
        {
         "type": "gap",
@@ -34166,7 +34579,7 @@ window.COURSE = {
         ],
         "hint": "We have an appointment tomorrow.",
         "say": "Wir haben morgen einen Termin.",
-        "why": ""
+        "why": "After haben: der Termin → einen Termin (accusative)."
        },
        {
         "type": "gap",
@@ -34180,7 +34593,7 @@ window.COURSE = {
         ],
         "hint": "I can't get onto the Wi-Fi.",
         "say": "Ich komme nicht ins WLAN.",
-        "why": ""
+        "why": "das WLAN is the Wi-Fi; ins WLAN kommen = get onto the Wi-Fi."
        },
        {
         "type": "choose",
@@ -34193,7 +34606,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "die Termine",
-        "why": ""
+        "why": "Many masculine words add -e: die Termine."
        },
        {
         "type": "choose",
@@ -34206,7 +34619,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "die Passwörter",
-        "why": ""
+        "why": "das Wort → die Wörter, so das Passwort → die Passwörter."
        }
       ]
      }
@@ -34280,7 +34693,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Meron Haile arbeitet als Assistentin bei einer Firma in Addis Abeba."
        },
        {
         "type": "choose",
@@ -34306,7 +34719,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Samuel: „Das Passwort ist neu. Hier ist es.“"
        },
        {
         "type": "choose",
@@ -34345,7 +34758,7 @@ window.COURSE = {
         ],
         "hint": "Who helps Meron?",
         "say": "Samuel",
-        "why": ""
+        "why": "The text says: Ihr Kollege Samuel hilft."
        },
        {
         "type": "choose",
@@ -34358,7 +34771,7 @@ window.COURSE = {
         ],
         "hint": "Where is Jan Weber from?",
         "say": "aus Deutschland",
-        "why": ""
+        "why": "The text says: Um neun Uhr hat sie einen Termin mit Jan Weber aus Deutschland."
        },
        {
         "type": "write",
@@ -34376,7 +34789,7 @@ window.COURSE = {
         "hint": "",
         "say": "Ich komme leider zu spät.",
         "show": "Unfortunately, I'm late.",
-        "why": ""
+        "why": "leider = unfortunately; zu spät kommen = to be late."
        }
       ]
      }
@@ -34423,7 +34836,8 @@ window.COURSE = {
          "Where does the bus stop?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Zug",
@@ -34445,7 +34859,8 @@ window.COURSE = {
          "The train is late."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die U-Bahn",
@@ -34467,7 +34882,8 @@ window.COURSE = {
          "Where is the underground?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die S-Bahn",
@@ -34489,7 +34905,8 @@ window.COURSE = {
          "I take the suburban train."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Straßenbahn",
@@ -34511,7 +34928,8 @@ window.COURSE = {
          "In Addis Ababa there is a tram."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Taxi",
@@ -34533,7 +34951,8 @@ window.COURSE = {
          "Where is the taxi?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Auto",
@@ -34555,7 +34974,8 @@ window.COURSE = {
          "My car is broken."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Fahrrad",
@@ -34577,7 +34997,8 @@ window.COURSE = {
          "My bicycle is red."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "das Flugzeug",
@@ -34599,7 +35020,8 @@ window.COURSE = {
          "I travel by plane."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "mit dem Bus",
@@ -34699,7 +35121,8 @@ window.COURSE = {
          "I am waiting at the station."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Hauptbahnhof",
@@ -34721,7 +35144,8 @@ window.COURSE = {
          "We are meeting at the main station."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Flughafen",
@@ -34743,7 +35167,8 @@ window.COURSE = {
          "The airport in Frankfurt is very big."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Haltestelle",
@@ -34765,7 +35190,8 @@ window.COURSE = {
          "I am waiting at the stop."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "das Gleis",
@@ -34787,7 +35213,8 @@ window.COURSE = {
          "The platform is over there."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Bahnsteig",
@@ -34809,7 +35236,8 @@ window.COURSE = {
          "The platform is very long."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Fahrkarte",
@@ -34831,7 +35259,8 @@ window.COURSE = {
          "Where is my ticket?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Flug",
@@ -34853,7 +35282,8 @@ window.COURSE = {
          "How was the flight?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Verspätung",
@@ -34875,7 +35305,8 @@ window.COURSE = {
          "Sorry for the delay!"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "der Ausgang",
@@ -34894,7 +35325,8 @@ window.COURSE = {
          "The flight to Rome is at gate 12."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "die Abfahrt",
@@ -34916,7 +35348,8 @@ window.COURSE = {
          "The departure is on time."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Ankunft",
@@ -34938,7 +35371,8 @@ window.COURSE = {
          "The arrival is in the evening."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       }
      ]
     },
@@ -34966,7 +35400,8 @@ window.COURSE = {
          "I don't have much luggage."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Koffer",
@@ -34988,7 +35423,8 @@ window.COURSE = {
          "I am packing the suitcase."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Rucksack",
@@ -35010,7 +35446,8 @@ window.COURSE = {
          "I am only taking a backpack along."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "der Pass",
@@ -35032,7 +35469,8 @@ window.COURSE = {
          "I need a passport."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Visum",
@@ -35054,7 +35492,8 @@ window.COURSE = {
          "Do you already have a visa?"
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "der Akku",
@@ -35076,7 +35515,8 @@ window.COURSE = {
          "The battery is new."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "der"
       },
       {
        "german": "das Ladegerät",
@@ -35098,7 +35538,8 @@ window.COURSE = {
          "I have forgotten my charger."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       }
      ]
     },
@@ -35606,7 +36047,8 @@ window.COURSE = {
          "Last stop! Everyone please get off."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       }
      ]
     }
@@ -35738,7 +36180,8 @@ window.COURSE = {
          "Um acht Uhr komme ich an."
         ],
         "hint": "I arrive at eight.",
-        "say": "Ich komme um acht Uhr an."
+        "say": "Ich komme um acht Uhr an.",
+        "why": "ankommen: komme in second place, and an goes to the end."
        },
        {
         "type": "order",
@@ -35753,7 +36196,8 @@ window.COURSE = {
         "answer": "Wann fährt der Zug ab?",
         "alts": [],
         "hint": "When does the train leave?",
-        "say": "Wann fährt der Zug ab?"
+        "say": "Wann fährt der Zug ab?",
+        "why": "abfahren: Wann first, then fährt, and ab goes to the end."
        },
        {
         "type": "order",
@@ -35767,7 +36211,8 @@ window.COURSE = {
         "answer": "Holst du mich ab?",
         "alts": [],
         "hint": "Will you pick me up?",
-        "say": "Holst du mich ab?"
+        "say": "Holst du mich ab?",
+        "why": "abholen: in a yes/no question holst comes first, and ab goes to the end."
        },
        {
         "type": "order",
@@ -35784,7 +36229,8 @@ window.COURSE = {
          "In Frankfurt steigen wir um."
         ],
         "hint": "We change in Frankfurt.",
-        "say": "Wir steigen in Frankfurt um."
+        "say": "Wir steigen in Frankfurt um.",
+        "why": "umsteigen: steigen in second place, and um goes to the end."
        },
        {
         "type": "order",
@@ -35798,7 +36244,8 @@ window.COURSE = {
         "answer": "Kannst du mich abholen?",
         "alts": [],
         "hint": "Can you pick me up?",
-        "say": "Kannst du mich abholen?"
+        "say": "Kannst du mich abholen?",
+        "why": "With a modal verb (kannst), abholen stays in one piece at the end."
        },
        {
         "type": "order",
@@ -35817,7 +36264,8 @@ window.COURSE = {
          "Um zehn Uhr fährt der Bus ab."
         ],
         "hint": "The bus leaves at ten.",
-        "say": "Der Bus fährt um zehn Uhr ab."
+        "say": "Der Bus fährt um zehn Uhr ab.",
+        "why": "abfahren: fährt in second place, and ab goes to the end."
        },
        {
         "type": "gap",
@@ -35831,7 +36279,7 @@ window.COURSE = {
         ],
         "hint": "When do you arrive in Berlin?",
         "say": "Wann kommst du in Berlin an?",
-        "why": ""
+        "why": "ankommen = to arrive; an goes to the end."
        },
        {
         "type": "gap",
@@ -35845,7 +36293,7 @@ window.COURSE = {
         ],
         "hint": "I'll pick you up at the airport.",
         "say": "Ich hole dich am Flughafen ab.",
-        "why": ""
+        "why": "abholen = to pick up; ab goes to the end."
        },
        {
         "type": "gap",
@@ -35859,7 +36307,7 @@ window.COURSE = {
         ],
         "hint": "Please get off here.",
         "say": "Bitte steigen Sie hier aus.",
-        "why": ""
+        "why": "aussteigen = to get off; aus goes to the end."
        },
        {
         "type": "gap",
@@ -35887,7 +36335,7 @@ window.COURSE = {
         ],
         "hint": "My flight leaves at 10 pm.",
         "say": "Mein Flug fliegt um 22 Uhr ab.",
-        "why": ""
+        "why": "abfliegen splits: fliegt in second place, ab already at the end."
        },
        {
         "type": "write",
@@ -35900,7 +36348,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Wann kommst du an?",
-        "why": ""
+        "why": "ankommen: Wann, then kommst, and an goes to the end."
        },
        {
         "type": "write",
@@ -35913,7 +36361,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Kannst du mich abholen?",
-        "why": ""
+        "why": "With a modal verb (kannst), abholen stays in one piece at the end."
        },
        {
         "type": "write",
@@ -35926,7 +36374,7 @@ window.COURSE = {
         ],
         "hint": "An announcement at the station.",
         "say": "Der Zug fährt von Gleis drei ab.",
-        "why": ""
+        "why": "abfahren: fährt in second place, and ab goes to the end. Gleis = platform."
        }
       ]
      }
@@ -36054,7 +36502,7 @@ window.COURSE = {
         ],
         "hint": "I go by bus.",
         "say": "Ich fahre mit dem Bus.",
-        "why": ""
+        "why": "After mit, der becomes dem: der Bus → mit dem Bus."
        },
        {
         "type": "gap",
@@ -36068,7 +36516,7 @@ window.COURSE = {
         ],
         "hint": "She goes by underground.",
         "say": "Sie fährt mit der U-Bahn.",
-        "why": ""
+        "why": "After mit, die becomes der: die U-Bahn → mit der U-Bahn."
        },
        {
         "type": "gap",
@@ -36082,7 +36530,7 @@ window.COURSE = {
         ],
         "hint": "We are driving to Adama.",
         "say": "Wir fahren mit dem Auto nach Adama.",
-        "why": ""
+        "why": "After mit, das becomes dem: das Auto → mit dem Auto."
        },
        {
         "type": "gap",
@@ -36096,7 +36544,7 @@ window.COURSE = {
         ],
         "hint": "Are you cycling?",
         "say": "Fährst du mit dem Fahrrad?",
-        "why": ""
+        "why": "After mit, das becomes dem: das Fahrrad → mit dem Fahrrad."
        },
        {
         "type": "gap",
@@ -36110,7 +36558,7 @@ window.COURSE = {
         ],
         "hint": "I take the tram.",
         "say": "Ich fahre mit der Straßenbahn.",
-        "why": ""
+        "why": "After mit, die becomes der: die Straßenbahn → mit der Straßenbahn."
        },
        {
         "type": "gap",
@@ -36124,7 +36572,7 @@ window.COURSE = {
         ],
         "hint": "He is coming by taxi.",
         "say": "Er kommt mit dem Taxi.",
-        "why": ""
+        "why": "After mit, das becomes dem: das Taxi → mit dem Taxi."
        },
        {
         "type": "gap",
@@ -36138,7 +36586,7 @@ window.COURSE = {
         ],
         "hint": "I am walking.",
         "say": "Ich gehe zu Fuß.",
-        "why": ""
+        "why": "On foot is a fixed phrase: zu Fuß."
        },
        {
         "type": "choose",
@@ -36151,7 +36599,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "mit dem Zug",
-        "why": ""
+        "why": "After mit, der becomes dem: der Zug → mit dem Zug."
        },
        {
         "type": "choose",
@@ -36164,7 +36612,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "mit dem Flugzeug",
-        "why": ""
+        "why": "After mit, das becomes dem: das Flugzeug → mit dem Flugzeug."
        },
        {
         "type": "order",
@@ -36183,7 +36631,8 @@ window.COURSE = {
          "Ich fahre zur Arbeit mit dem Bus."
         ],
         "hint": "I go to work by bus.",
-        "say": "Ich fahre mit dem Bus zur Arbeit."
+        "say": "Ich fahre mit dem Bus zur Arbeit.",
+        "why": "Ich, the verb fahre, then how (mit dem Bus), then where (zur Arbeit)."
        },
        {
         "type": "write",
@@ -36194,7 +36643,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "mit der U-Bahn",
-        "why": ""
+        "why": "After mit, die becomes der: die U-Bahn → mit der U-Bahn."
        },
        {
         "type": "write",
@@ -36205,7 +36654,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "zu Fuß",
-        "why": ""
+        "why": "On foot is a fixed phrase: zu Fuß."
        }
       ]
      }
@@ -36268,7 +36717,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Mein Flug startet heute um 22:30 Uhr in Addis Abeba."
        },
        {
         "type": "choose",
@@ -36294,7 +36743,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Lena: Wann kommst du in Frankfurt an? Dawit: Um 5:40 Uhr."
        },
        {
         "type": "choose",
@@ -36320,7 +36769,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Ich freue mich so auf dich."
        },
        {
         "type": "choose",
@@ -36333,7 +36782,7 @@ window.COURSE = {
         ],
         "hint": "Where does Dawit change?",
         "say": "in Frankfurt",
-        "why": ""
+        "why": "The text says: Um 5:40 Uhr. Dann steige ich in den Zug nach Leipzig um."
        },
        {
         "type": "choose",
@@ -36346,7 +36795,7 @@ window.COURSE = {
         ],
         "hint": "When does Dawit arrive in Leipzig?",
         "say": "um 9:15 Uhr",
-        "why": ""
+        "why": "The text says: Ich komme um 9:15 Uhr am Hauptbahnhof an."
        },
        {
         "type": "write",
@@ -36360,7 +36809,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Lena holt ihn ab.",
-        "why": ""
+        "why": "The text says: Natürlich hole ich dich ab!"
        }
       ]
      }
@@ -37139,7 +37588,8 @@ window.COURSE = {
          "The opening hours are from 9 am to 5 pm."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "plural"
       },
       {
        "german": "geöffnet",
@@ -37205,7 +37655,8 @@ window.COURSE = {
          "Dr Bekele's surgery is new."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Bank",
@@ -37227,7 +37678,8 @@ window.COURSE = {
          "We sit on a bench in the park."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "die Apotheke",
@@ -37249,7 +37701,8 @@ window.COURSE = {
          "I buy tablets at the pharmacy."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "die"
       },
       {
        "german": "Wann ist die Praxis geöffnet?",
@@ -37337,7 +37790,8 @@ window.COURSE = {
          "The festival was very nice."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "feiern",
@@ -37447,7 +37901,8 @@ window.COURSE = {
          "The Ethiopian New Year is in September."
         ]
        ],
-       "pos": "noun"
+       "pos": "noun",
+       "gender": "das"
       },
       {
        "german": "Wann hast du Geburtstag?",
@@ -37693,7 +38148,7 @@ window.COURSE = {
         ],
         "hint": "I worked a lot yesterday.",
         "say": "Ich habe gestern viel gearbeitet.",
-        "why": ""
+        "why": "Regular verb: ge + arbeit + et (the stem ends in t, so an e comes in)."
        },
        {
         "type": "gap",
@@ -37707,7 +38162,7 @@ window.COURSE = {
         ],
         "hint": "We drank coffee.",
         "say": "Wir haben Kaffee getrunken.",
-        "why": ""
+        "why": "trinken is irregular: ge + trunk + en."
        },
        {
         "type": "gap",
@@ -37721,7 +38176,7 @@ window.COURSE = {
         ],
         "hint": "Did you read the newspaper?",
         "say": "Hast du die Zeitung gelesen?",
-        "why": ""
+        "why": "lesen is irregular: ge + les + en."
        },
        {
         "type": "gap",
@@ -37763,7 +38218,7 @@ window.COURSE = {
         ],
         "hint": "In the evening we watched TV.",
         "say": "Am Abend haben wir ferngesehen.",
-        "why": ""
+        "why": "Separable: ge goes in the middle: fern + ge + sehen."
        },
        {
         "type": "gap",
@@ -37777,7 +38232,7 @@ window.COURSE = {
         ],
         "hint": "What did you do on Sunday?",
         "say": "Was hast du am Sonntag gemacht?",
-        "why": ""
+        "why": "machen is not movement: haben, and du goes with hast."
        },
        {
         "type": "gap",
@@ -37791,7 +38246,7 @@ window.COURSE = {
         ],
         "hint": "He took a photo.",
         "say": "Er hat ein Foto gemacht.",
-        "why": ""
+        "why": "Regular verb: ge + mach + t."
        },
        {
         "type": "choose",
@@ -37804,7 +38259,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "geschlafen",
-        "why": ""
+        "why": "schlafen keeps its vowel and ends in -en: geschlafen."
        },
        {
         "type": "choose",
@@ -37817,7 +38272,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "gekauft",
-        "why": ""
+        "why": "Regular verb: ge + kauf + t."
        },
        {
         "type": "order",
@@ -37834,7 +38289,8 @@ window.COURSE = {
          "Gestern habe ich Zeitung gelesen."
         ],
         "hint": "I read the newspaper yesterday.",
-        "say": "Ich habe gestern Zeitung gelesen."
+        "say": "Ich habe gestern Zeitung gelesen.",
+        "why": "habe in second place, the participle gelesen at the end."
        },
        {
         "type": "order",
@@ -37850,7 +38306,8 @@ window.COURSE = {
         "answer": "Was hast du am Wochenende gemacht?",
         "alts": [],
         "hint": "What did you do at the weekend?",
-        "say": "Was hast du am Wochenende gemacht?"
+        "say": "Was hast du am Wochenende gemacht?",
+        "why": "W-word first, then hast; the participle gemacht goes to the end."
        },
        {
         "type": "write",
@@ -37861,7 +38318,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Ich habe gekocht.",
-        "why": ""
+        "why": "haben + participle: ge + koch + t."
        },
        {
         "type": "write",
@@ -37872,7 +38329,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Wir haben eingekauft.",
-        "why": ""
+        "why": "Separable: ge goes in the middle: ein + ge + kauft."
        }
       ]
      }
@@ -37999,7 +38456,7 @@ window.COURSE = {
         ],
         "hint": "I went to Adama.",
         "say": "Ich bin nach Adama gefahren.",
-        "why": ""
+        "why": "fahren is movement: sein."
        },
        {
         "type": "gap",
@@ -38013,7 +38470,7 @@ window.COURSE = {
         ],
         "hint": "We ate pizza.",
         "say": "Wir haben Pizza gegessen.",
-        "why": ""
+        "why": "essen is not movement: haben."
        },
        {
         "type": "gap",
@@ -38027,7 +38484,7 @@ window.COURSE = {
         ],
         "hint": "Have you ever flown?",
         "say": "Bist du schon einmal geflogen?",
-        "why": ""
+        "why": "fliegen is movement: sein; du goes with bist."
        },
        {
         "type": "gap",
@@ -38041,7 +38498,7 @@ window.COURSE = {
         ],
         "hint": "She stayed at home.",
         "say": "Sie ist zu Hause geblieben.",
-        "why": ""
+        "why": "bleiben uses sein."
        },
        {
         "type": "gap",
@@ -38055,7 +38512,7 @@ window.COURSE = {
         ],
         "hint": "He slept for a long time.",
         "say": "Er hat lange geschlafen.",
-        "why": ""
+        "why": "schlafen is not movement: haben."
        },
        {
         "type": "gap",
@@ -38069,7 +38526,7 @@ window.COURSE = {
         ],
         "hint": "When did you arrive?",
         "say": "Wann bist du angekommen?",
-        "why": ""
+        "why": "ankommen is movement: sein; du goes with bist."
        },
        {
         "type": "gap",
@@ -38083,7 +38540,7 @@ window.COURSE = {
         ],
         "hint": "What happened?",
         "say": "Was ist passiert?",
-        "why": ""
+        "why": "passieren (to happen) uses sein."
        },
        {
         "type": "gap",
@@ -38097,7 +38554,7 @@ window.COURSE = {
         ],
         "hint": "You (all) learned a lot.",
         "say": "Ihr habt viel gelernt.",
-        "why": ""
+        "why": "lernen is not movement: haben."
        },
        {
         "type": "gap",
@@ -38111,7 +38568,7 @@ window.COURSE = {
         ],
         "hint": "I went home.",
         "say": "Ich bin nach Hause gegangen.",
-        "why": ""
+        "why": "gehen is irregular: gegangen."
        },
        {
         "type": "gap",
@@ -38125,7 +38582,7 @@ window.COURSE = {
         ],
         "hint": "We flew to Frankfurt.",
         "say": "Wir sind nach Frankfurt geflogen.",
-        "why": ""
+        "why": "fliegen is irregular: geflogen."
        },
        {
         "type": "order",
@@ -38141,7 +38598,8 @@ window.COURSE = {
         "answer": "Ich bin spät nach Hause gekommen.",
         "alts": [],
         "hint": "I came home late.",
-        "say": "Ich bin spät nach Hause gekommen."
+        "say": "Ich bin spät nach Hause gekommen.",
+        "why": "kommen is movement, so bin in second place; gekommen goes to the end."
        },
        {
         "type": "order",
@@ -38157,7 +38615,8 @@ window.COURSE = {
         "answer": "Bist du mit dem Zug gefahren?",
         "alts": [],
         "hint": "Did you go by train?",
-        "say": "Bist du mit dem Zug gefahren?"
+        "say": "Bist du mit dem Zug gefahren?",
+        "why": "Yes/no question: bist comes first, and gefahren goes to the end."
        },
        {
         "type": "write",
@@ -38168,7 +38627,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Ich bin zu Hause geblieben.",
-        "why": ""
+        "why": "bleiben uses sein."
        },
        {
         "type": "write",
@@ -38179,7 +38638,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Er ist nach Deutschland geflogen.",
-        "why": ""
+        "why": "fliegen is movement: sein, and er goes with ist."
        }
       ]
      }
@@ -38307,7 +38766,7 @@ window.COURSE = {
         ],
         "hint": "Yesterday I was ill.",
         "say": "Gestern war ich krank.",
-        "why": ""
+        "why": "sein in the past: ich war."
        },
        {
         "type": "gap",
@@ -38321,7 +38780,7 @@ window.COURSE = {
         ],
         "hint": "How was the trip?",
         "say": "Wie war die Reise?",
-        "why": ""
+        "why": "die Reise is one thing, like sie: war."
        },
        {
         "type": "gap",
@@ -38335,7 +38794,7 @@ window.COURSE = {
         ],
         "hint": "We had a lot of fun.",
         "say": "Wir hatten viel Spaß.",
-        "why": ""
+        "why": "haben in the past: wir hatten."
        },
        {
         "type": "gap",
@@ -38349,7 +38808,7 @@ window.COURSE = {
         ],
         "hint": "Have you ever been to Gondar?",
         "say": "Warst du schon in Gondar?",
-        "why": ""
+        "why": "sein in the past: du warst."
        },
        {
         "type": "gap",
@@ -38363,7 +38822,7 @@ window.COURSE = {
         ],
         "hint": "You (all) were very tired.",
         "say": "Ihr wart sehr müde.",
-        "why": ""
+        "why": "sein in the past: ihr wart."
        },
        {
         "type": "gap",
@@ -38377,7 +38836,7 @@ window.COURSE = {
         ],
         "hint": "I didn't have time.",
         "say": "Ich hatte keine Zeit.",
-        "why": ""
+        "why": "haben in the past: ich hatte."
        },
        {
         "type": "gap",
@@ -38391,7 +38850,7 @@ window.COURSE = {
         ],
         "hint": "My parents were on holiday.",
         "say": "Meine Eltern waren im Urlaub.",
-        "why": ""
+        "why": "meine Eltern are sie (they): waren."
        },
        {
         "type": "gap",
@@ -38405,7 +38864,7 @@ window.COURSE = {
         ],
         "hint": "Were you lucky with the weather?",
         "say": "Hattest du Glück mit dem Wetter?",
-        "why": ""
+        "why": "haben in the past: du hattest."
        },
        {
         "type": "choose",
@@ -38418,7 +38877,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Ich war in Rom.",
-        "why": ""
+        "why": "For sein, German usually uses war instead of the perfect."
        },
        {
         "type": "order",
@@ -38436,7 +38895,8 @@ window.COURSE = {
          "Ich war letztes Jahr in Lalibela."
         ],
         "hint": "Last year I was in Lalibela.",
-        "say": "Letztes Jahr war ich in Lalibela."
+        "say": "Letztes Jahr war ich in Lalibela.",
+        "why": "Letztes Jahr first, the verb war second, then ich."
        },
        {
         "type": "write",
@@ -38447,7 +38907,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Die Reise war schön.",
-        "why": ""
+        "why": "sein in the past: die Reise war."
        },
        {
         "type": "write",
@@ -38458,7 +38918,7 @@ window.COURSE = {
         "alts": [],
         "hint": "",
         "say": "Wir hatten viel Spaß.",
-        "why": ""
+        "why": "haben in the past: wir hatten."
        }
       ]
      }
@@ -38589,7 +39049,7 @@ window.COURSE = {
         ],
         "hint": "The bank is open from 9 to 4.",
         "say": "Die Bank ist von 9 bis 16 Uhr geöffnet.",
-        "why": ""
+        "why": "From … to … is von … bis …"
        },
        {
         "type": "gap",
@@ -38603,7 +39063,7 @@ window.COURSE = {
         ],
         "hint": "From 8 pm the pharmacy is closed.",
         "say": "Ab 20 Uhr ist die Apotheke geschlossen.",
-        "why": ""
+        "why": "ab = from a time on (and after)."
        },
        {
         "type": "gap",
@@ -38617,7 +39077,7 @@ window.COURSE = {
         ],
         "hint": "My birthday is in April.",
         "say": "Ich habe im April Geburtstag.",
-        "why": ""
+        "why": "Months take im: im April."
        },
        {
         "type": "gap",
@@ -38631,7 +39091,7 @@ window.COURSE = {
         ],
         "hint": "The festival has existed since 1810.",
         "say": "Das Fest gibt es seit 1810.",
-        "why": ""
+        "why": "seit = since: it started in 1810 and is still going."
        },
        {
         "type": "gap",
@@ -38645,7 +39105,7 @@ window.COURSE = {
         ],
         "hint": "We are going to Hamburg.",
         "say": "Wir fahren nach Hamburg.",
-        "why": ""
+        "why": "Cities take nach: nach Hamburg."
        },
        {
         "type": "gap",
@@ -38659,7 +39119,7 @@ window.COURSE = {
         ],
         "hint": "She is flying to Switzerland.",
         "say": "Sie fliegt in die Schweiz.",
-        "why": ""
+        "why": "A country with an article takes in: die Schweiz → in die Schweiz."
        },
        {
         "type": "gap",
@@ -38673,7 +39133,7 @@ window.COURSE = {
         ],
         "hint": "I am flying to Ethiopia.",
         "say": "Ich fliege nach Äthiopien.",
-        "why": ""
+        "why": "Countries without an article take nach: nach Äthiopien."
        },
        {
         "type": "gap",
@@ -38687,7 +39147,7 @@ window.COURSE = {
         ],
         "hint": "In winter it is cold in Berlin.",
         "say": "Im Winter ist es in Berlin kalt.",
-        "why": ""
+        "why": "Seasons take im: im Winter."
        },
        {
         "type": "gap",
@@ -38701,7 +39161,7 @@ window.COURSE = {
         ],
         "hint": "I have been learning German for three months.",
         "say": "Ich lerne seit drei Monaten Deutsch.",
-        "why": ""
+        "why": "seit = for, when it started in the past and is still going."
        },
        {
         "type": "choose",
@@ -38714,7 +39174,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "von 8 bis 20 Uhr",
-        "why": ""
+        "why": "From … to … is von … bis …, and 8 pm is 20 Uhr."
        },
        {
         "type": "order",
@@ -38732,7 +39192,8 @@ window.COURSE = {
          "Am Montag ist die Praxis geschlossen."
         ],
         "hint": "The surgery is closed on Monday.",
-        "say": "Die Praxis ist am Montag geschlossen."
+        "say": "Die Praxis ist am Montag geschlossen.",
+        "why": "Die Praxis, the verb ist second, then when (am Montag)."
        },
        {
         "type": "write",
@@ -38745,7 +39206,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Wann ist die Bank geöffnet?",
-        "why": ""
+        "why": "W-word first, then the verb."
        }
       ]
      }
@@ -38811,7 +39272,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Ich bin Selam und ich wohne seit einem Jahr in Deutschland."
        },
        {
         "type": "choose",
@@ -38850,7 +39311,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Im Sommer bin ich nach Addis Abeba geflogen. Ich habe meine Familie besucht."
        },
        {
         "type": "choose",
@@ -38863,7 +39324,7 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": ""
+        "why": "Im September haben wir Enkutatash gefeiert, das äthiopische Neujahr."
        },
        {
         "type": "choose",
@@ -38889,7 +39350,7 @@ window.COURSE = {
         ],
         "hint": "What did Selam see in Hamburg?",
         "say": "den Hafen",
-        "why": ""
+        "why": "The text says: Ich bin mit dem Zug gefahren und habe den Hafen gesehen."
        },
        {
         "type": "write",
@@ -38903,7 +39364,7 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "im September",
-        "why": ""
+        "why": "The text says: Im September haben wir Enkutatash gefeiert."
        },
        {
         "type": "write",
@@ -38918,7 +39379,7 @@ window.COURSE = {
         "hint": "",
         "say": "Ich hatte viel Spaß.",
         "show": "I had a lot of fun.",
-        "why": ""
+        "why": "hatte = had (haben in the past); viel Spaß = a lot of fun."
        }
       ]
      }

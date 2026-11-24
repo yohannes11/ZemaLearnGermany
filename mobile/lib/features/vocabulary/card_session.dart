@@ -18,6 +18,7 @@ import '../lessons/quiz_session.dart';
 import '../progress/progress.dart';
 import 'srs.dart';
 import 'word_picture.dart';
+import 'word_widgets.dart' show GermanWord;
 
 /// A run through a deck of flashcards, then the celebration. Every answer is graded for review, earns XP and is
 /// saved as it is given, so the deck can be continued on another phone. Cards go German → English, English →
@@ -204,8 +205,11 @@ class _Face extends StatelessWidget {
           child: Column(mainAxisSize: MainAxisSize.min, children: gapped([
             Txt(german ? T('German') : T('English'), role: TextRole.overline, colour: c.muted),
             if (!german || !back) WordPicture(codes: word.pic, size: 72),
-            Txt(german ? word.german : course.meaning(word), role: german ? TextRole.german : TextRole.title, align: TextAlign.center),
-            if (back) Txt(german ? course.meaning(word) : word.german, role: TextRole.bodyStrong, colour: c.muted, align: TextAlign.center),
+            german ? GermanWord(word, role: TextRole.german, align: TextAlign.center) : Txt(course.meaning(word), role: TextRole.title, align: TextAlign.center),
+            if (back)
+              german
+                  ? Txt(course.meaning(word), role: TextRole.bodyStrong, colour: c.muted, align: TextAlign.center)
+                  : GermanWord(word, align: TextAlign.center),
             Txt(
               back ? T('Did you know it?') : (german ? T('What does it mean? Tap the card to check.') : T('Say it in German, then tap the card.')),
               role: TextRole.caption,

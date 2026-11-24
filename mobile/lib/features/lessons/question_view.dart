@@ -128,7 +128,8 @@ class _Feedback extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = context.c;
     final colour = result.right ? c.green : c.red;
-    final note = result.note ?? (result.right ? question.why : (question.whyIfWrong ?? question.why));
+    // The checker's note (a missing article, a spelling slip) first, then why the answer is what it is.
+    final note = [result.note, question.why].whereType<String>().where((s) => s.isNotEmpty).join(' ');
     final shown = question.shown ?? (question.type == QuestionType.choice ? question.show(question.answer) : question.answer);
     return TweenAnimationBuilder<double>(
       tween: Tween(begin: 1, end: 0),
@@ -163,7 +164,7 @@ class _Feedback extends StatelessWidget {
                     Txt(shown, role: TextRole.bodyStrong),
                   ],
                 ),
-              if (note != null && note.isNotEmpty) RichTxt(note),
+              if (note.isNotEmpty) RichTxt(note),
               AppButton(
                 label: last ? T('See results') : T('Next question'),
                 kind: result.right ? ButtonKind.primary : ButtonKind.danger,

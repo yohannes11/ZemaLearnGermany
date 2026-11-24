@@ -1,0 +1,35 @@
+# Why each answer is right, for the exercises of Unit 6. Read by tools/course_content.py.
+# question ||| English explanation ||| Amharic explanation (none for a German sentence quoted from a reading text)
+
+## g6-how-often
+Which word means the most often? => immer ||| immer = always: more often than oft (often) or manchmal (sometimes). ||| immer = ሁልጊዜ፦ ከoft (ብዙ ጊዜ) ወይም manchmal (አንዳንድ ጊዜ) የበለጠ።
+Which word means "never"? => nie ||| nie = never; immer = always, selten = rarely. ||| nie = በጭራሽ፤ immer = ሁልጊዜ፣ selten = አልፎ አልፎ።
+Which is the best? => sehr gut ||| sehr gut = very well: better than ein bisschen (a little) or nicht so gut (not so well). ||| sehr gut = በጣም ጥሩ፦ ከein bisschen (ትንሽ) ወይም nicht so gut (ብዙም አይደለም) የተሻለ።
+Which means "not at all"? => gar nicht ||| gar nicht = not at all; nie = never, which is about how often. ||| gar nicht = ፈጽሞ አይደለም፤ nie = በጭራሽ፣ ይህ ስለ ድግግሞሽ ነው።
+Ich trinke [nie] Kaffee. Ich mag keinen Kaffee. ||| You don't like coffee, so you never drink it: nie. ||| ቡና አይወዱም፤ ስለዚህ በጭራሽ አይጠጡም፦ nie።
+Wir essen [jeden Tag] Injera. ||| jeden Tag = every day. ||| jeden Tag = በየቀኑ።
+Du kannst wirklich [toll] tanzen! ||| toll = great: a compliment about how well. ||| toll = ድንቅ፦ ምን ያህል ጥሩ እንደሆነ የሚገልጽ ሙገሳ።
+Your friend says: Du kannst super kochen! What do you answer? => Oh, danke! ||| Thank someone for a compliment: Oh, danke! ||| ለሙገሳ ማመስገን፦ Oh, danke!
+Build the sentence. => Ich gehe oft ins Kino. ||| The verb gehe comes second, then how often (oft), then where. ||| ግሡ gehe ሁለተኛ፣ ከዚያ ምን ያህል ጊዜ (oft)፣ ከዚያ ወዴት።
+Build the question. => Kannst du gut schwimmen? ||| Yes/no question: kannst comes first, and the second verb schwimmen goes to the end. ||| የአዎ/አይ ጥያቄ፦ kannst መጀመሪያ ይመጣል፤ ሁለተኛው ግሥ schwimmen ወደ መጨረሻ ይሄዳል።
+Build the sentence. => Er kann ein bisschen Gitarre spielen. ||| kann comes second, and the second verb spielen goes to the end. ||| kann ሁለተኛ ይመጣል፤ ሁለተኛው ግሥ spielen ወደ መጨረሻ ይሄዳል።
+I never dance. => Ich tanze nie. ||| nie (never) comes after the verb: Ich tanze nie. ||| nie (በጭራሽ) ከግሡ በኋላ ይመጣል፦ Ich tanze nie።
+
+## g6-vowel-e
+[Liest] du gern Bücher? ||| du: e → ie, liest; in a yes/no question the verb comes first. ||| du፦ e → ie፣ liest፤ በአዎ/አይ ጥያቄ ግሡ መጀመሪያ ይመጣል።
+Er [liest] die Zeitung. ||| er: e → ie, liest. ||| er፦ e → ie፣ liest።
+Du [triffst] Freunde. ||| du: e → i, triffst. ||| du፦ e → i፣ triffst።
+Meron [trifft] heute Hanna. ||| Meron is like sie (she): e → i, trifft. ||| Meron እንደ sie (እሷ) ናት፦ e → i፣ trifft።
+Wir [treffen] uns um acht. ||| wir has no vowel change: treffen. ||| wir የአናባቢ ለውጥ የለውም፦ treffen።
+[Siehst] du den Bus? ||| du: e → ie, siehst; in a yes/no question the verb comes first. ||| du፦ e → ie፣ siehst፤ በአዎ/አይ ጥያቄ ግሡ መጀመሪያ ይመጣል።
+Was [sprichst] du? ||| du: e → i, sprichst. ||| du፦ e → i፣ sprichst።
+She reads a lot. => Sie liest viel. ||| sie (she): e → ie, liest. ||| sie (እሷ)፦ e → ie፣ liest።
+Build the sentence. => Er trifft am Samstag Freunde. ||| trifft comes second, then when (am Samstag), then who. ||| trifft ሁለተኛ ይመጣል፣ ከዚያ መቼ (am Samstag)፣ ከዚያ ማንን።
+
+## g6-reading
+Tigist wohnt in Bahir Dar. => richtig ||| Tigist ist 34 und wohnt in Bahir Dar.
+Abebe kann sehr gut kochen. => richtig ||| Ihr Mann Abebe kann sehr gut kochen.
+Kaleb fotografiert gern. => richtig ||| Ihr Sohn Kaleb fotografiert gern.
+Was macht Tigist in der Freizeit? => Sie liest und geht spazieren. ||| The text says: In der Freizeit liest sie gern und sie geht oft am See spazieren. ||| ጽሑፉ እንዲህ ይላል፦ In der Freizeit liest sie gern und sie geht oft am See spazieren።
+Wie findet Tigist Kochen? => langweilig ||| The text says: Tigist kocht nie, sie findet Kochen langweilig. ||| ጽሑፉ እንዲህ ይላል፦ Tigist kocht nie, sie findet Kochen langweilig።
+Wie alt ist Liya? => Sie ist zwölf. ||| The text says: Ihre Tochter Liya ist zwölf. ||| ጽሑፉ እንዲህ ይላል፦ Ihre Tochter Liya ist zwölf።

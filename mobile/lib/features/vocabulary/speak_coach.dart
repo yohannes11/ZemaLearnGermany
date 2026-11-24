@@ -15,6 +15,7 @@ import '../lessons/quiz_session.dart' show SessionHeader;
 import '../progress/progress.dart';
 import 'study_modes.dart';
 import 'word_picture.dart';
+import 'word_widgets.dart' show GermanWord;
 
 const _sayTimes = 3;
 
@@ -285,7 +286,7 @@ class _SpeakCoachState extends State<SpeakCoach> {
                 AppCard(
                   child: Column(children: gapped([
                     WordPicture(codes: word.pic, size: 64),
-                    Txt(word.german, role: TextRole.german, align: TextAlign.center),
+                    GermanWord(word, role: TextRole.german, align: TextAlign.center),
                     Txt(course.meaning(word), colour: c.muted, align: TextAlign.center),
                   ], Space.sm)),
                 ),

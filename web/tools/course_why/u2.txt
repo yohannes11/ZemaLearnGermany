@@ -1,0 +1,92 @@
+# Why each answer is right, for the exercises of Unit 2. Read by tools/course_content.py.
+# question ||| English explanation ||| Amharic explanation (none for a German sentence quoted from a reading text)
+
+## g2-sein
+Ich [bin] Lehrerin. ||| ich goes with bin. ||| ich ከbin ጋር ይሄዳል።
+Du [bist] mein Freund. ||| du goes with bist. ||| du ከbist ጋር ይሄዳል።
+Er [ist] verheiratet. ||| er, sie and es go with ist. ||| er፣ sie እና es ከist ጋር ይሄዳሉ።
+Wir [sind] Geschwister. ||| wir goes with sind. ||| wir ከsind ጋር ይሄዳል።
+Ihr [seid] pünktlich. ||| ihr goes with seid. ||| ihr ከseid ጋር ይሄዳል።
+Sie [sind] meine Eltern. ||| sie (they) goes with sind. ||| sie (እነሱ) ከsind ጋር ይሄዳል።
+Das [ist] meine Schwester. ||| One person (das, meine Schwester) goes with ist. ||| አንድ ሰው (das፣ meine Schwester) ከist ጋር ይሄዳል።
+[Sind] Sie Herr Schmidt? ||| Sie (formal) goes with sind; in a yes/no question the verb comes first. ||| Sie (የአክብሮት) ከsind ጋር ይሄዳል፤ በአዎ/አይ ጥያቄ ግሡ መጀመሪያ ይመጣል።
+[Bist] du ledig? ||| du goes with bist; in a yes/no question the verb comes first. ||| du ከbist ጋር ይሄዳል፤ በአዎ/አይ ጥያቄ ግሡ መጀመሪያ ይመጣል።
+Meine Oma [ist] 80. ||| meine Oma is one person, like sie: ist. ||| meine Oma አንድ ሰው ናት፣ እንደ sie፦ ist።
+
+## g2-sprechen
+Ich [spreche] Deutsch. ||| ich keeps the e: spreche. ||| ich eን ይይዛል፦ spreche።
+Wir [sprechen] Spanisch. ||| wir keeps the e: sprechen. ||| wir eን ይይዛል፦ sprechen።
+Meine Mutter [spricht] Portugiesisch. ||| meine Mutter is like sie (she): e → i, spricht. ||| meine Mutter እንደ sie (እሷ) ነው፦ e → i፣ spricht።
+[Sprechen] Sie Chinesisch? ||| Sie (formal) keeps the e: sprechen. ||| Sie (የአክብሮት) eን ይይዛል፦ sprechen።
+Sie [sprechen] Französisch. ||| sie (they) keeps the e: sprechen. ||| sie (እነሱ) eን ይይዛል፦ sprechen።
+Du [sprichst] ein bisschen Deutsch. ||| du: e → i, sprichst. ||| du፦ e → i፣ sprichst።
+
+## g2-mein
+[meine] Mutter ||| die Mutter is feminine: meine. ||| die Mutter አንስታይ ነው፦ meine።
+[mein] Vater ||| der Vater is masculine: mein. ||| der Vater ተባዕታይ ነው፦ mein።
+[meine] Eltern ||| Eltern is plural: meine. ||| Eltern ብዙ ቁጥር ነው፦ meine።
+[mein] Bruder ||| der Bruder is masculine: mein. ||| der Bruder ተባዕታይ ነው፦ mein።
+[meine] Schwester ||| die Schwester is feminine: meine. ||| die Schwester አንስታይ ነው፦ meine።
+[meine] Großeltern ||| Großeltern is plural: meine. ||| Großeltern ብዙ ቁጥር ነው፦ meine።
+[mein] Name ||| der Name is masculine: mein. ||| der Name ተባዕታይ ነው፦ mein።
+[meine] Telefonnummer ||| die Telefonnummer is feminine: meine. ||| die Telefonnummer አንስታይ ነው፦ meine።
+[mein] Kind ||| das Kind is neuter: mein. ||| das Kind ገለልተኛ ነው፦ mein።
+[meine] Tante ||| die Tante is feminine: meine. ||| die Tante አንስታይ ነው፦ meine።
+[mein] Onkel ||| der Onkel is masculine: mein. ||| der Onkel ተባዕታይ ነው፦ mein።
+
+## g2-doch
+Ist das deine Mutter? – [Ja], das ist meine Mutter. ||| A normal question: "yes" is ja. ||| የተለመደ ጥያቄ፦ «አዎ» ja ነው።
+Bist du verheiratet? – [Nein], ich bin ledig. ||| The answer is no: nein. ||| መልሱ «አይ» ነው፦ nein።
+Bist du nicht verheiratet? – [Doch], ich bin verheiratet. ||| A question with nicht: "yes" is doch. ||| nicht ያለው ጥያቄ፦ «አዎ» doch ነው።
+Hast du keine Kinder? – [Nein], ich habe keine Kinder. ||| You agree that there are no children: German says nein, where Amharic says "yes, I have none". ||| ልጆች እንደሌሉ ያረጋግጣሉ፦ አማርኛ «አዎ፣ የለኝም» ሲል ጀርመንኛ nein ይላል።
+Sprichst du Amharisch? – [Ja], sehr gut. ||| A normal question: "yes" is ja. ||| የተለመደ ጥያቄ፦ «አዎ» ja ነው።
+Sprichst du kein Englisch? – [Doch], ein bisschen. ||| A question with kein: "yes" is doch. ||| kein ያለው ጥያቄ፦ «አዎ» doch ነው።
+Kommst du nicht aus Kenia? – [Nein], ich komme aus Äthiopien. ||| You agree that you are not from Kenya: German says nein, where Amharic says "yes, I am not". ||| ከኬንያ እንዳልሆኑ ያረጋግጣሉ፦ አማርኛ «አዎ፣ አይደለሁም» ሲል ጀርመንኛ nein ይላል።
+Ist Dawit nicht dein Bruder? – [Doch], er ist mein Bruder. ||| A question with nicht: "yes" is doch. ||| nicht ያለው ጥያቄ፦ «አዎ» doch ነው።
+Build the question. => Ist das nicht deine Schwester? ||| Yes/no question: the verb comes first, and nicht goes before deine Schwester. ||| የአዎ/አይ ጥያቄ፦ ግሡ መጀመሪያ ይመጣል፤ nicht ከdeine Schwester በፊት ይገባል።
+
+## g2-names-s
+Das ist [Dawits] Mutter. ||| German adds -s with no apostrophe. ||| ጀርመንኛ ያለ ጭረት -s ይጨምራል።
+Wer ist [Hannas] Vater? ||| German adds -s with no apostrophe. ||| ጀርመንኛ ያለ ጭረት -s ይጨምራል።
+Abebe ist Dawits Vater. Dawit ist Abebes … => Sohn ||| Abebe is the father, so Dawit is his son: Sohn. ||| Abebe አባት ነው፤ ስለዚህ Dawit ወንድ ልጁ ነው፦ Sohn።
+Almaz ist Hannas Oma. Hanna ist Almaz' … => Enkelin ||| Almaz is the grandmother, so Hanna is her granddaughter: Enkelin. ||| Almaz አያት ናት፤ ስለዚህ Hanna የልጅ ልጇ ናት፦ Enkelin።
+Yonas ist Selams Bruder. Selam ist Yonas' … => Schwester ||| Selam is a woman with the same parents as Yonas: his sister, Schwester. ||| Selam ከYonas ጋር አንድ ወላጆች ያሏት ሴት ናት፦ እህቱ፣ Schwester።
+Tigist ist die Schwester von Dawits Mutter. Tigist ist Dawits … => Tante ||| Your mother's sister is your aunt: Tante. ||| የእናትዎ እህት አክስትዎ ናት፦ Tante።
+Samuel ist der Sohn von Dawits Onkel. Samuel ist Dawits … => Cousin ||| Your uncle's son is your cousin: Cousin. ||| የአጎትዎ ወንድ ልጅ የአጎት ልጅዎ ነው፦ Cousin።
+Build the sentence. => Das ist Merons Tochter. ||| Das ist, then whose: Merons (no apostrophe), then Tochter. ||| Das ist፣ ከዚያ የማን፦ Merons (ያለ ጭረት)፣ ከዚያ Tochter።
+Selam's brother => Selams Bruder ||| Name + s, no apostrophe: Selams Bruder. ||| ስም + s፣ ያለ ጭረት፦ Selams Bruder።
+Hannas Eltern wohnen in Adama. => Hanna's parents live in Adama. ||| Hannas = Hanna's; die Eltern = the parents; wohnen = live. ||| Hannas = የHanna፤ die Eltern = ወላጆች፤ wohnen = ይኖራሉ።
+
+## g2-verbs-plural
+Wir [wohnen] in Hawassa. ||| wir takes -en: wohnen. ||| wir -en ይወስዳል፦ wohnen።
+Wo [wohnt] ihr? ||| ihr takes -t: wohnt. ||| ihr -t ይወስዳል፦ wohnt።
+Du [arbeitest] viel. ||| du takes -st, and the stem ends in t, so an e comes in: arbeitest. ||| du -st ይወስዳል፤ ሥሩ በt ስለሚያልቅ e ይገባል፦ arbeitest።
+Ihr [habt] zwei Kinder. ||| ihr goes with habt. ||| ihr ከhabt ጋር ይሄዳል።
+Dawit und Selam [leben] zusammen. ||| Two people are sie (they), which takes -en: leben. ||| ሁለት ሰዎች sie (እነሱ) ናቸው፤ -en ይወስዳል፦ leben።
+[Lebt] ihr in Deutschland? ||| ihr takes -t: lebt; in a yes/no question the verb comes first. ||| ihr -t ይወስዳል፦ lebt፤ በአዎ/አይ ጥያቄ ግሡ መጀመሪያ ይመጣል።
+Sie [haben] keine Kinder. ||| sie (they) goes with haben. ||| sie (እነሱ) ከhaben ጋር ይሄዳል።
+Build the sentence. => Wir wohnen in Adama. ||| In a statement the verb comes second: Wir, then wohnen. ||| በዓረፍተ ነገር ግሡ ሁለተኛ ይመጣል፦ Wir፣ ከዚያ wohnen።
+Build the question. => Wo arbeitet ihr? ||| W-word first, then the verb. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ።
+We live together. => Wir leben zusammen. ||| wir goes with leben; zusammen = together. ||| wir ከleben ጋር ይሄዳል፤ zusammen = አብረን።
+Where do you live? (informal, one person) => Wo wohnst du? ||| W-word first, then the verb; du takes -st: wohnst. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ፤ du -st ይወስዳል፦ wohnst።
+
+## g2-family-tree
+Your father's mother is your … => die Oma, die Großmutter ||| Your father's mother is your grandmother: die Oma, or die Großmutter. ||| የአባትዎ እናት አያትዎ ናት፦ die Oma ወይም die Großmutter።
+Your father's father is your … => der Opa, der Großvater ||| Your father's father is your grandfather: der Opa, or der Großvater. ||| የአባትዎ አባት አያትዎ ነው፦ der Opa ወይም der Großvater።
+Your father's sister is your … => die Tante ||| Your father's sister is your aunt: die Tante. ||| የአባትዎ እህት አክስትዎ ናት፦ die Tante።
+Your father's brother is your … => der Onkel ||| Your father's brother is your uncle: der Onkel. ||| የአባትዎ ወንድም አጎትዎ ነው፦ der Onkel።
+Your father's wife is your … => die Mutter ||| Your father's wife is your mother: die Mutter. ||| የአባትዎ ሚስት እናትዎ ናት፦ die Mutter።
+Your mother's husband is your … => der Vater ||| Your mother's husband is your father: der Vater. ||| የእናትዎ ባል አባትዎ ነው፦ der Vater።
+Your parents' son (not you) is your … => der Bruder ||| Your parents' other son is your brother: der Bruder. He is their Sohn. ||| የወላጆችዎ ሌላ ወንድ ልጅ ወንድምዎ ነው፦ der Bruder። ለእነሱ ደግሞ Sohn ነው።
+Your parents' daughter (not you) is your … => die Schwester ||| Your parents' other daughter is your sister: die Schwester. She is their Tochter. ||| የወላጆችዎ ሌላ ሴት ልጅ እህትዎ ናት፦ die Schwester። ለእነሱ ደግሞ Tochter ናት።
+Your uncle's daughter is your … => die Cousine ||| Your uncle's daughter is your cousin; a female cousin is die Cousine. ||| የአጎትዎ ሴት ልጅ የአጎት ልጅዎ ናት፤ ሴት ስትሆን die Cousine ትባላለች።
+Your aunt's son is your … => der Cousin ||| Your aunt's son is your cousin; a male cousin is der Cousin. ||| የአክስትዎ ወንድ ልጅ የአክስት ልጅዎ ነው፤ ወንድ ሲሆን der Cousin ይባላል።
+
+## g2-reading
+Hanna kommt aus Hawassa. => richtig ||| Ich komme aus Äthiopien, aus Hawassa.
+Samuel ist Hannas Mann. => richtig ||| Mein Mann heißt Samuel.
+Hanna hat zwei Brüder. => richtig ||| Ich habe zwei Brüder, aber keine Schwester.
+Wie alt ist Liya? => drei Jahre ||| The text says: Sie heißt Liya und ist drei Jahre alt. ||| ጽሑፉ እንዲህ ይላል፦ Sie heißt Liya und ist drei Jahre alt።
+Wer spricht sehr gut Deutsch? => Yonas ||| The text says: Mein Bruder Yonas spricht sehr gut Deutsch. ||| ጽሑፉ እንዲህ ይላል፦ Mein Bruder Yonas spricht sehr gut Deutsch።
+Was ist Samuel von Beruf? => Er ist Ingenieur. ||| The text says: Er ist 31 und arbeitet als Ingenieur. ||| ጽሑፉ እንዲህ ይላል፦ Er ist 31 und arbeitet als Ingenieur።
+Wir haben eine Tochter. => We have a daughter. ||| wir haben = we have; eine Tochter = a daughter. ||| wir haben = አለን፤ eine Tochter = (አንዲት) ሴት ልጅ።

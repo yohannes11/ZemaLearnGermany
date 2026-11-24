@@ -844,6 +844,36 @@ svg.icon {
 
 .vocab-card.learned .vc-learned { opacity: 1; }
 
+/* Noun genders: the whole word and a strip down the card's left edge take the gender's colour, and a small
+   label names it in words (der blue, die rose, das green, plural plum; tokens in zema.css). */
+.de-noun[data-gender] { color: var(--g); }
+.mq-tile.matched.de-noun { color: var(--green); } /* a matched pair turns green like the rest */
+[data-gender] .article { font-weight: 800; }
+.vocab-card[data-gender] { border-left: 4px solid var(--g); padding-left: 13px; }
+.vc-meaning { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 8px; }
+.gender-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--g-soft);
+  color: var(--g);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  line-height: 1.5;
+}
+.gender-key {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: var(--fs-sm);
+  color: var(--muted);
+}
+.gender-key-title { font-weight: 600; }
+.gender-key-item { padding: 4px 10px; border-radius: 999px; background: var(--g-soft); color: var(--g); font-weight: 600; }
+.gender-key-item .article { font-family: var(--display); }
+
 .word-page {
   position: relative;
   display: flex;
@@ -886,6 +916,7 @@ svg.icon {
 }
 
 .wv-word::first-letter { color: var(--brand); }
+.wv-word[data-gender]::first-letter { color: var(--g); }
 
 .icon-btn.lg { width: 52px; height: 52px; }
 .icon-btn.lg svg { width: 24px; height: 24px; }
