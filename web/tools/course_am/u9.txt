@@ -90,7 +90,7 @@ A shorter way to say "Ich bin in Rom gewesen": ||| «Ich bin in Rom gewesen» �
 The trip was nice. ||| ጉዞው ጥሩ ነበር።
 
 ## g9-time
-<strong>von … bis</strong>: from … to: <em class="de">von 9 bis 17 Uhr</em>. <strong>ab</strong>: from … on: <em class="de">ab 8 Uhr</em>. ||| <strong>von … bis</strong>፦ ከ… እስከ፦ <em class="de">von 9 bis 17 Uhr</em> (ከሦስት እስከ አሥራ አንድ ሰዓት)። <strong>ab</strong>፦ ከ… ጀምሮ፦ <em class="de">ab 8 Uhr</em> (ከሁለት ሰዓት ጀምሮ)።
+<strong>von … bis</strong>: from … to: <em class="de">von 9 bis 17 Uhr</em>. <strong>ab</strong>: from … on: <em class="de">ab 8 Uhr</em>. ||| <strong>von … bis</strong>፦ ከ… እስከ፦ <em class="de">von 9 bis 17 Uhr</em> (ከ9 ሰዓት እስከ 17 ሰዓት)። <strong>ab</strong>፦ ከ… ጀምሮ፦ <em class="de">ab 8 Uhr</em> (ከሁለት ሰዓት ጀምሮ)።
 <strong>im</strong> with months and seasons: <em class="de">im März, im Winter</em>. <strong>seit</strong>: since, for: <em class="de">seit 2015</em>. ||| <strong>im</strong> ከወራትና ከወቅቶች ጋር፦ <em class="de">im März, im Winter</em>። <strong>seit</strong>፦ ከ… ጀምሮ / ለ… ያህል፦ <em class="de">seit 2015</em>።
 Where to? Cities and most countries take <strong>nach</strong>: <em class="de">nach Berlin, nach Deutschland</em>. Countries with an article take <strong>in die</strong>: <em class="de">in die Schweiz, in die Türkei, in die USA</em>. ||| ወዴት? ከተሞችና አብዛኞቹ አገሮች <strong>nach</strong> ይወስዳሉ፦ <em class="de">nach Berlin, nach Deutschland</em>። መስተኣምር ያላቸው አገሮች <strong>in die</strong> ይወስዳሉ፦ <em class="de">in die Schweiz, in die Türkei, in die USA</em>።
 Overview ||| አጠቃላይ እይታ
@@ -102,7 +102,7 @@ to (city, country) ||| ወደ (ከተማ፣ አገር)
 to (country with die) ||| ወደ (die ያለው አገር)
 Opening hours and festivals ||| የሥራ ሰዓታትና በዓላት
 The surgery is open from Monday to Friday. ||| ክሊኒኩ ከሰኞ እስከ ዓርብ ክፍት ነው።
-From 6 pm the bank is closed. ||| ከምሽቱ 12 ሰዓት (18:00) ጀምሮ ባንኩ ዝግ ነው።
+From 6 pm the bank is closed. ||| ከ18 ሰዓት (18:00) ጀምሮ ባንኩ ዝግ ነው።
 In September we celebrate Enkutatash. ||| በሴፕቴምበር (መስከረም) እንቁጣጣሽን እናከብራለን።
 The Oktoberfest has existed since 1810. ||| ኦክቶበርፌስት ከ1810 ጀምሮ ሲከበር ቆይቷል።
 Last year I flew to Germany. ||| ባለፈው ዓመት ወደ ጀርመን በረርኩ።
@@ -115,8 +115,8 @@ im Mai, seit 2015 ||| im Mai, seit 2015
 nach / in die ||| nach / in die
 nach Berlin, in die Schweiz ||| nach Berlin, in die Schweiz
 Time and place ||| ጊዜና ቦታ
-The bank is open from 9 to 4. ||| ባንኩ ከሦስት እስከ አሥር ሰዓት (9–16) ክፍት ነው።
-From 8 pm the pharmacy is closed. ||| ከምሽቱ ሁለት ሰዓት (20:00) ጀምሮ መድኃኒት ቤቱ ዝግ ነው።
+The bank is open from 9 to 4. ||| ባንኩ ከ9 ሰዓት እስከ 16 ሰዓት (9–16) ክፍት ነው።
+From 8 pm the pharmacy is closed. ||| ከ20 ሰዓት (20:00) ጀምሮ መድኃኒት ቤቱ ዝግ ነው።
 My birthday is in April. ||| ልደቴ በኤፕሪል (ሚያዝያ አካባቢ) ነው።
 The festival has existed since 1810. ||| በዓሉ ከ1810 ጀምሮ ሲከበር ቆይቷል።
 We are going to Hamburg. ||| ወደ ሃምቡርግ እንሄዳለን።
@@ -124,7 +124,7 @@ She is flying to Switzerland. ||| ወደ ስዊዘርላንድ ትበራለች�
 I am flying to Ethiopia. ||| ወደ ኢትዮጵያ እበራለሁ።
 In winter it is cold in Berlin. ||| በክረምት (ዊንተር) በርሊን ቀዝቃዛ ነው።
 I have been learning German for three months. ||| ጀርመንኛ መማር ከጀመርኩ ሦስት ወር ሆኖኛል።
-The shop is open from 8 am to 8 pm: ||| ሱቁ ከጠዋቱ ሁለት ሰዓት እስከ ምሽቱ ሁለት ሰዓት (8–20) ክፍት ነው፦
+The shop is open from 8 am to 8 pm: ||| ሱቁ ከ8 ሰዓት እስከ 20 ሰዓት (8–20) ክፍት ነው፦
 The surgery is closed on Monday. ||| ክሊኒኩ ሰኞ ዝግ ነው።
 When is the bank open? ||| ባንኩ መቼ ክፍት ነው?
 

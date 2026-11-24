@@ -341,7 +341,7 @@ Die Musik ist zu laut. ||| The music is too loud. ||| ሙዚቃው በጣም ይ
 # 6.11 Agreeing & disagreeing
 ## Stimmt das?
 Du kommst aus Kenia? Stimmt das? ||| You come from Kenya? Is that right? ||| ከኬንያ ነህ? ይህ እውነት ነው?
-Der Kurs beginnt um neun. Stimmt das? ||| The course begins at nine. Is that right? ||| ኮርሱ ሦስት ሰዓት ይጀምራል። ይህ እውነት ነው?
+Der Kurs beginnt um neun. Stimmt das? ||| The course begins at nine. Is that right? ||| ኮርሱ ዘጠኝ ሰዓት ይጀምራል። ይህ እውነት ነው?
 ## Ist das richtig?
 Ist das richtig? „Der Tisch“? ||| Is that correct? “Der Tisch”? ||| ይህ ትክክል ነው? „der Tisch“?
 Ich schreibe „Straße“ mit ß. Ist das richtig? ||| I write “Straße” with ß. Is that correct? ||| „Straße“ በ ß እጽፋለሁ። ይህ ትክክል ነው?

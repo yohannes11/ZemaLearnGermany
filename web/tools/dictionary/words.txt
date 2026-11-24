@@ -1,0 +1,497 @@
+# Words the course's sentences use but the vocabulary doesn't teach, for the dictionary (tools/dictionary.py).
+# German ||| part of speech ||| English ||| Amharic
+# Parts of speech: noun, verb, adjective, adverb, pronoun, article, preposition, conjunction, particle,
+# interjection, number, phrase, name, place. Nouns with their article; verbs in the infinitive.
+
+## Small words: prepositions, pronouns, conjunctions
+in ||| preposition ||| in, into ||| ውስጥ
+im ||| preposition ||| in the (in + dem) ||| በ… ውስጥ (in + dem)
+ins ||| preposition ||| into the (in + das) ||| ወደ … ውስጥ (in + das)
+an ||| preposition ||| at, on (a side or edge) ||| አጠገብ፣ ላይ (በጎን)
+am ||| preposition ||| at the, on the (an + dem): am Montag = on Monday ||| በ… (an + dem)፦ am Montag = ሰኞ
+ans ||| preposition ||| to the (an + das) ||| ወደ … (an + das)
+auf ||| preposition ||| on, onto ||| ላይ
+aus ||| preposition ||| from, out of ||| ከ… (የመጣ)፣ ከ… ውስጥ
+mit ||| preposition ||| with ||| ከ… ጋር
+für ||| preposition ||| for ||| ለ…
+von ||| preposition ||| from, of ||| ከ…፣ የ…
+vom ||| preposition ||| from the (von + dem) ||| ከ… (von + dem)
+bis ||| preposition ||| until, up to ||| እስከ
+ab ||| preposition ||| from (a time on) ||| ከ… ጀምሮ
+bei ||| preposition ||| at (someone's place), near ||| … ዘንድ፣ አጠገብ
+beim ||| preposition ||| at the (bei + dem) ||| በ… (bei + dem)
+zum ||| preposition ||| to the (zu + dem) ||| ወደ … (zu + dem)
+zur ||| preposition ||| to the (zu + der) ||| ወደ … (zu + der)
+seit ||| preposition ||| since, for (a time) ||| ከ… ጀምሮ
+gegen ||| preposition ||| against ||| ላይ (በተቃራኒ)፣ ጋር (ለመጋጨት)
+über ||| preposition ||| over, about ||| በላይ፣ ስለ
+unter ||| preposition ||| under ||| ከ… በታች
+zwischen ||| preposition ||| between ||| መካከል
+als ||| conjunction ||| as, than ||| እንደ፣ ከ… (ማነጻጸሪያ)
+oder ||| conjunction ||| or ||| ወይም
+denn ||| particle ||| then (in questions), because ||| ታዲያ (በጥያቄ)፣ ምክንያቱም
+also ||| adverb ||| so, well ||| ስለዚህ፣ እንግዲህ
+man ||| pronoun ||| one, you, people (in general) ||| ሰው (በአጠቃላይ)
+sich ||| pronoun ||| oneself, himself, herself, themselves ||| ራሱ፣ ራሷ፣ ራሳቸው
+ihn ||| pronoun ||| him, it (masculine, accusative) ||| እሱን
+uns ||| pronoun ||| us, to us ||| እኛን፣ ለእኛ
+euch ||| pronoun ||| you all, to you all ||| እናንተን፣ ለእናንተ
+Ihnen ||| pronoun ||| to you (formal) ||| ለእርስዎ
+unser ||| pronoun ||| our ||| የእኛ
+jeder, jede, jedes ||| pronoun ||| every, each ||| እያንዳንዱ፣ ሁሉም
+welcher, welche, welches ||| pronoun ||| which ||| የትኛው
+alle ||| pronoun ||| all, everyone ||| ሁሉም
+alles ||| pronoun ||| everything ||| ሁሉም ነገር
+etwas ||| pronoun ||| something, a little ||| የሆነ ነገር፣ ትንሽ
+nichts ||| pronoun ||| nothing ||| ምንም
+viele ||| pronoun ||| many ||| ብዙ
+
+## Adverbs and particles
+sehr ||| adverb ||| very ||| በጣም
+gerne ||| adverb ||| gladly (= gern) ||| በደስታ (= gern)
+lieber ||| adverb ||| rather, preferably ||| ይልቅ፣ ቢሆን ይሻላል
+hier ||| adverb ||| here ||| እዚህ
+da ||| adverb ||| there, here ||| እዚያ፣ እዚህ
+dort ||| adverb ||| there ||| እዚያ
+drüben ||| adverb ||| over there ||| እዚያ ማዶ
+oben ||| adverb ||| up, upstairs ||| ላይ፣ ፎቅ ላይ
+unten ||| adverb ||| down, downstairs ||| ታች፣ ምድር ቤት
+so ||| adverb ||| so, like this ||| እንዲህ፣ በጣም
+schon ||| adverb ||| already ||| ቀድሞውኑ
+bald ||| adverb ||| soon ||| በቅርቡ
+gleich ||| adverb ||| right away; the same ||| አሁኑኑ፤ ተመሳሳይ
+einmal ||| adverb ||| once ||| አንድ ጊዜ
+zweimal ||| adverb ||| twice ||| ሁለት ጊዜ
+mal ||| particle ||| just, (softens a request): Schau mal! ||| እስቲ (ትእዛዝን ያለዝባል)፦ Schau mal!
+leider ||| adverb ||| unfortunately ||| እንደ አለመታደል ሆኖ
+hoffentlich ||| adverb ||| hopefully ||| ተስፋ አደርጋለሁ
+endlich ||| adverb ||| finally, at last ||| በመጨረሻ
+überhaupt ||| adverb ||| at all ||| ፈጽሞ
+gar ||| adverb ||| at all (gar nicht = not at all) ||| ፈጽሞ (gar nicht = ፈጽሞ አይደለም)
+fast ||| adverb ||| almost ||| ሊደርስ ትንሽ ቀረው፣ ከሞላ ጎደል
+ganz ||| adverb ||| quite, whole ||| በጣም፣ ሙሉ
+nur ||| adverb ||| only ||| ብቻ
+mehr ||| adverb ||| more ||| ተጨማሪ፣ የበለጠ
+bisschen ||| adverb ||| a bit (ein bisschen = a little) ||| ትንሽ (ein bisschen = ትንሽ)
+allein ||| adverb ||| alone ||| ብቻውን
+anders ||| adverb ||| different, differently ||| በተለየ፣ የተለየ
+früher ||| adverb ||| earlier, in the past ||| ቀደም ሲል፣ ድሮ
+früh ||| adverb ||| early ||| በጠዋት፣ ቀደም ብሎ
+lange ||| adverb ||| for a long time ||| ለረጅም ጊዜ
+vorbei ||| adverb ||| past, over ||| አልፎ፣ አለቀ
+weg ||| adverb ||| away, gone ||| ሄዷል፣ የለም
+zurück ||| adverb ||| back ||| ወደ ኋላ፣ ተመልሶ
+übermorgen ||| adverb ||| the day after tomorrow ||| ከነገ ወዲያ
+fern ||| adverb ||| far (fernsehen = to watch TV) ||| ሩቅ (fernsehen = ቴሌቪዥን ማየት)
+spazieren ||| verb ||| to stroll (spazieren gehen = to go for a walk) ||| መንሸራሸር (spazieren gehen = ለእግር ጉዞ መውጣት)
+leid ||| adverb ||| sorry (Es tut mir leid. = I am sorry.) ||| ማዘን (Es tut mir leid. = አዝናለሁ።)
+recht ||| adverb ||| right (Du hast recht. = You are right.) ||| ትክክል (Du hast recht. = ትክክል ነህ።)
+klar ||| adverb ||| clear, of course ||| ግልጽ፣ በእርግጥ
+sicher ||| adverb ||| sure, safe ||| እርግጠኛ፣ ደህና
+plus ||| preposition ||| plus ||| ሲደመር
+warum ||| adverb ||| why ||| ለምን
+wann ||| adverb ||| when ||| መቼ
+okay ||| interjection ||| okay ||| እሺ
+Ah ||| interjection ||| ah ||| አሃ
+Oh ||| interjection ||| oh ||| ኦ
+Wow ||| interjection ||| wow ||| ዋው
+Mmh ||| interjection ||| mmm (tasty) ||| ምምም (ይጣፍጣል)
+Vorsicht ||| interjection ||| careful! ||| ተጠንቀቅ!
+Halt ||| interjection ||| stop! ||| ቁም!
+gleichfalls ||| adverb ||| likewise, you too ||| ላንተም እንዲሁ
+herzlich ||| adjective ||| warm, cordial (Herzlich willkommen! = A warm welcome!) ||| ከልብ (Herzlich willkommen! = እንኳን በደህና መጡ!)
+willkommen ||| adjective ||| welcome ||| እንኳን ደህና መጡ
+zwo ||| number ||| two (said on the phone, so it isn't heard as drei) ||| ሁለት (በስልክ ከdrei እንዳይምታታ)
+neunundneunzig ||| number ||| ninety-nine (99) ||| ዘጠና ዘጠኝ (99)
+Dr ||| noun ||| Dr (Doktor), a title ||| ዶ/ር (Doktor)
+
+## Adjectives
+frisch ||| adjective ||| fresh ||| ትኩስ
+richtig ||| adjective ||| right, correct ||| ትክክል
+frei ||| adjective ||| free ||| ነጻ
+voll ||| adjective ||| full ||| ሙሉ
+leer ||| adjective ||| empty ||| ባዶ
+fertig ||| adjective ||| ready, finished ||| ዝግጁ፣ ጨርሷል
+krank ||| adjective ||| ill, sick ||| ታሟል፣ የታመመ
+gesund ||| adjective ||| healthy ||| ጤናማ
+fit ||| adjective ||| fit ||| ብርቱ፣ ጤናማ
+laut ||| adjective ||| loud ||| ጮክ ያለ
+leise ||| adjective ||| quiet, softly ||| ቀስ ያለ፣ ዝግ ያለ
+ruhig ||| adjective ||| calm, quiet ||| ጸጥ ያለ
+kaputt ||| adjective ||| broken ||| የተበላሸ
+lustig ||| adjective ||| funny ||| አስቂኝ
+komisch ||| adjective ||| strange, funny ||| እንግዳ፣ አስቂኝ
+blöd ||| adjective ||| stupid, silly ||| ደደብ፣ ሞኝ
+süß ||| adjective ||| sweet, cute ||| ጣፋጭ፣ ቆንጆ
+lang ||| adjective ||| long ||| ረጅም
+kurz ||| adjective ||| short ||| አጭር
+hoch ||| adjective ||| high, tall ||| ከፍ ያለ፣ ረጅም
+weit ||| adjective ||| far, wide ||| ሩቅ፣ ሰፊ
+steil ||| adjective ||| steep ||| ገደላማ
+stark ||| adjective ||| strong ||| ጠንካራ
+dick ||| adjective ||| fat, thick ||| ወፍራም
+rund ||| adjective ||| round ||| ክብ
+bunt ||| adjective ||| colourful ||| ባለ ብዙ ቀለም
+weich ||| adjective ||| soft ||| ለስላሳ
+nass ||| adjective ||| wet ||| እርጥብ
+kühl ||| adjective ||| cool ||| ቀዝቃዛ (ትንሽ)
+sonnig ||| adjective ||| sunny ||| ፀሐያማ
+dicht ||| adjective ||| dense, thick ||| ጥቅጥቅ ያለ
+sauber ||| adjective ||| clean ||| ንጹሕ
+schmutzig ||| adjective ||| dirty ||| ቆሻሻ
+bequem ||| adjective ||| comfortable ||| ምቹ
+wichtig ||| adjective ||| important ||| አስፈላጊ
+offen ||| adjective ||| open ||| ክፍት
+besetzt ||| adjective ||| taken, occupied, busy (phone) ||| የተያዘ
+wach ||| adjective ||| awake ||| ነቅቷል
+durstig ||| adjective ||| thirsty ||| የተጠማ
+schüchtern ||| adjective ||| shy ||| ዓይናፋር
+froh ||| adjective ||| glad, happy (Frohe Weihnachten!) ||| ደስተኛ (Frohe … = መልካም …!)
+geehrt ||| adjective ||| honoured (Sehr geehrte Damen und Herren = Dear Sir or Madam) ||| የተከበረ (Sehr geehrte Damen und Herren = የተከበራችሁ ክቡራትና ክቡራን)
+geboren ||| adjective ||| born ||| የተወለደ
+beruflich ||| adjective ||| for work, professional ||| ለሥራ፣ ሙያዊ
+letzte ||| adjective ||| last ||| ያለፈው፣ የመጨረሻ
+nächste ||| adjective ||| next ||| የሚቀጥለው
+erste ||| adjective ||| first ||| የመጀመሪያ
+zweite ||| adjective ||| second ||| ሁለተኛ
+dritte ||| adjective ||| third ||| ሦስተኛ
+vierte ||| adjective ||| fourth ||| አራተኛ
+zehnte ||| adjective ||| tenth ||| አሥረኛ
+halb ||| adjective ||| half (halb zehn = 9:30) ||| ግማሽ (halb zehn = 9:30)
+
+## Verbs
+lernen ||| verb ||| to learn ||| መማር
+wohnen ||| verb ||| to live (in a place) ||| መኖር (በአንድ ቦታ)
+leben ||| verb ||| to live, to be alive ||| መኖር
+finden ||| verb ||| to find; to think (Ich finde das gut.) ||| ማግኘት፤ ማሰብ (Ich finde das gut. = ጥሩ ይመስለኛል።)
+lieben ||| verb ||| to love ||| መውደድ፣ ማፍቀር
+glauben ||| verb ||| to believe, to think ||| ማመን፣ ማሰብ
+denken ||| verb ||| to think ||| ማሰብ
+hoffen ||| verb ||| to hope ||| ተስፋ ማድረግ
+sagen ||| verb ||| to say ||| ማለት
+suchen ||| verb ||| to look for ||| መፈለግ
+warten ||| verb ||| to wait ||| መጠበቅ
+wiederholen ||| verb ||| to repeat ||| መድገም
+sitzen ||| verb ||| to sit ||| መቀመጥ
+liegen ||| verb ||| to lie, to be (located) ||| መተኛት፣ መገኘት
+hängen ||| verb ||| to hang ||| መንጠልጠል
+bringen ||| verb ||| to bring ||| ማምጣት
+bezahlen ||| verb ||| to pay ||| መክፈል
+studieren ||| verb ||| to study (at university) ||| ማጥናት (በዩኒቨርሲቲ)
+verkaufen ||| verb ||| to sell ||| መሸጥ
+erklären ||| verb ||| to explain ||| ማብራራት
+erzählen ||| verb ||| to tell ||| መተረክ፣ መንገር
+bauen ||| verb ||| to build ||| መገንባት
+öffnen ||| verb ||| to open ||| መክፈት
+üben ||| verb ||| to practise ||| መለማመድ
+regnen ||| verb ||| to rain ||| መዝነብ
+schneien ||| verb ||| to snow ||| በረዶ መጣል
+scheinen ||| verb ||| to shine; to seem ||| ማብራት፤ መምሰል
+dauern ||| verb ||| to last, to take (time) ||| መቆየት፣ (ጊዜ) መውሰድ
+klingen ||| verb ||| to sound ||| መሰማት (እንደ…)
+lachen ||| verb ||| to laugh ||| መሳቅ
+rauchen ||| verb ||| to smoke ||| ማጨስ
+parken ||| verb ||| to park ||| መኪና ማቆም
+packen ||| verb ||| to pack ||| መሸከፍ፣ ሻንጣ ማዘጋጀት
+schauen ||| verb ||| to look ||| መመልከት
+starten ||| verb ||| to start, to take off ||| መጀመር፣ መነሣት
+funktionieren ||| verb ||| to work (a machine) ||| መሥራት (ማሽን)
+passieren ||| verb ||| to happen ||| መከሰት
+reparieren ||| verb ||| to repair ||| መጠገን
+verdienen ||| verb ||| to earn ||| ማግኘት (ገቢ)
+verbinden ||| verb ||| to connect, to put through ||| ማገናኘት
+wachsen ||| verb ||| to grow ||| ማደግ
+blühen ||| verb ||| to bloom ||| ማበብ
+fasten ||| verb ||| to fast ||| መጾም
+danken ||| verb ||| to thank ||| ማመስገን
+zählen ||| verb ||| to count ||| መቁጠር
+schreien ||| verb ||| to shout, to scream ||| መጮኽ
+freuen ||| verb ||| sich freuen = to be glad, to look forward ||| sich freuen = መደሰት፣ በጉጉት መጠበቅ
+interessieren ||| verb ||| sich interessieren für = to be interested in ||| sich interessieren für = መፈለግ፣ ፍላጎት ማሳየት
+anmelden ||| verb ||| to sign up, to register ||| መመዝገብ
+mitkommen ||| verb ||| to come along ||| አብሮ መምጣት
+reinkommen ||| verb ||| to come in ||| መግባት
+aufbleiben ||| verb ||| to stay up ||| አለመተኛት፣ ማምሸት
+beschreiben ||| verb ||| to describe ||| መግለጽ
+wählen ||| verb ||| to choose; to dial ||| መምረጥ፤ (ስልክ) መደወል
+putzen ||| verb ||| to clean ||| ማጽዳት
+ziehen ||| verb ||| to pull; to move (house) ||| መጎተት፤ መዛወር
+halten ||| verb ||| to hold, to stop ||| መያዝ፣ መቆም
+tun ||| verb ||| to do ||| ማድረግ
+werden ||| verb ||| to become; will ||| መሆን (ወደፊት)
+treffen ||| verb ||| to meet ||| መገናኘት
+nehmen ||| verb ||| to take ||| መውሰድ
+laufen ||| verb ||| to run, to walk ||| መሮጥ፣ መራመድ
+bleiben ||| verb ||| to stay ||| መቆየት
+sterben ||| verb ||| to die ||| መሞት
+heiraten ||| verb ||| to marry ||| ማግባት
+vergessen ||| verb ||| to forget ||| መርሳት
+gefallen ||| verb ||| to please (Das gefällt mir. = I like that.) ||| ማስደሰት (Das gefällt mir. = ወድጄዋለሁ።)
+schneiden ||| verb ||| to cut ||| መቁረጥ
+schmecken ||| verb ||| to taste (Das schmeckt gut. = That tastes good.) ||| መጣፈጥ (Das schmeckt gut. = ይጣፍጣል።)
+lauten ||| verb ||| to be, to read (Die Antwort lautet … = The answer is …) ||| መሆን (Die Antwort lautet … = መልሱ … ነው)
+stimmen ||| verb ||| to be right (Das stimmt. = That's right.) ||| ትክክል መሆን (Das stimmt. = ትክክል ነው።)
+verstehen ||| verb ||| to understand ||| መረዳት
+gehen ||| verb ||| to go, to walk ||| መሄድ
+geschehen ||| verb ||| to happen (Gern geschehen. = You're welcome.) ||| መከሰት (Gern geschehen. = ምንም አይደል።)
+stehen ||| verb ||| to stand ||| መቆም
+
+## Nouns
+der Beruf ||| noun ||| the job, the profession ||| ሙያ፣ ሥራ
+der Kurs ||| noun ||| the course, the class ||| ኮርስ
+die Minute ||| noun ||| the minute ||| ደቂቃ
+die Stunde ||| noun ||| the hour, the lesson ||| ሰዓት፣ ክፍለ ጊዜ
+die Woche ||| noun ||| the week ||| ሳምንት
+der Monat ||| noun ||| the month ||| ወር
+das Viertel ||| noun ||| the quarter ||| ሩብ
+die Pause ||| noun ||| the break ||| እረፍት
+der Moment ||| noun ||| the moment ||| ቅጽበት
+die Musik ||| noun ||| the music ||| ሙዚቃ
+der Fußball ||| noun ||| the football, soccer ||| እግር ኳስ
+der Basketball ||| noun ||| basketball ||| የቅርጫት ኳስ
+der Handball ||| noun ||| handball ||| የእጅ ኳስ
+das Tennis ||| noun ||| tennis ||| ቴኒስ
+das Schach ||| noun ||| chess ||| ቼዝ
+der Ski ||| noun ||| the ski ||| ስኪ
+das Skateboard ||| noun ||| the skateboard ||| ስኬትቦርድ
+das Rad ||| noun ||| the bike, the wheel ||| ብስክሌት፣ መንኮራኩር
+die Gitarre ||| noun ||| the guitar ||| ጊታር
+der Ball ||| noun ||| the ball ||| ኳስ
+die Party ||| noun ||| the party ||| ድግስ፣ ፓርቲ
+die Freizeit ||| noun ||| the free time ||| የትርፍ ጊዜ
+das Hobby ||| noun ||| the hobby ||| የትርፍ ጊዜ ማሳለፊያ
+der Spaß ||| noun ||| the fun ||| ደስታ፣ ቀልድ
+die Lust ||| noun ||| the wish, the mood (Lust haben = to feel like) ||| ፍላጎት (Lust haben = መፈለግ)
+die Angst ||| noun ||| the fear ||| ፍርሃት
+die Sorge ||| noun ||| the worry ||| ጭንቀት
+der Hunger ||| noun ||| the hunger ||| ረሀብ
+der Durst ||| noun ||| the thirst ||| ጥማት
+der Appetit ||| noun ||| the appetite (Guten Appetit! = Enjoy your meal!) ||| የምግብ ፍላጎት (Guten Appetit! = መልካም ምግብ!)
+das Glück ||| noun ||| the luck, the happiness ||| ዕድል፣ ደስታ
+der Dank ||| noun ||| the thanks (Vielen Dank! = Many thanks!) ||| ምስጋና (Vielen Dank! = በጣም አመሰግናለሁ!)
+der Gruß ||| noun ||| the greeting (Viele Grüße = Best wishes) ||| ሰላምታ (Viele Grüße = መልካም ምኞት)
+das Wiedersehen ||| noun ||| the seeing again (Auf Wiedersehen! = Goodbye!) ||| እንደገና መገናኘት (Auf Wiedersehen! = ደህና ሁን!)
+das Wiederhören ||| noun ||| the hearing again (Auf Wiederhören! = Goodbye, on the phone) ||| እንደገና መሰማማት (Auf Wiederhören! = ደህና ሁን፣ በስልክ)
+der Herr ||| noun ||| the gentleman, Mr ||| ጌታ፣ አቶ
+die Dame ||| noun ||| the lady ||| እመቤት
+die Familie ||| noun ||| the family ||| ቤተሰብ
+die Leute ||| noun ||| the people (pl.) ||| ሰዎች
+der Mensch ||| noun ||| the human being, the person ||| ሰው
+die Person ||| noun ||| the person ||| ሰው
+der Nachbar ||| noun ||| the neighbour ||| ጎረቤት
+der Neffe ||| noun ||| the nephew ||| የወንድም ወይም የእህት ልጅ (ወንድ)
+der Urgroßvater ||| noun ||| the great-grandfather ||| ቅድመ አያት
+das Baby ||| noun ||| the baby ||| ሕፃን
+der Liebling ||| noun ||| the darling, the favourite ||| ተወዳጅ
+der Chef ||| noun ||| the boss ||| አለቃ
+der Mitarbeiter ||| noun ||| the colleague, the employee ||| የሥራ ባልደረባ
+der Kunde ||| noun ||| the customer ||| ደንበኛ
+der Patient ||| noun ||| the patient ||| ታካሚ
+der Schüler ||| noun ||| the pupil ||| ተማሪ
+der Teilnehmer ||| noun ||| the participant ||| ተሳታፊ
+der Pilot ||| noun ||| the pilot ||| አብራሪ
+die Assistentin ||| noun ||| the assistant (woman) ||| ረዳት (ሴት)
+der Einwohner ||| noun ||| the inhabitant ||| ነዋሪ
+der Äthiopier ||| noun ||| the Ethiopian (man) ||| ኢትዮጵያዊ
+der Single ||| noun ||| the single person ||| ያላገባ ሰው
+das Publikum ||| noun ||| the audience ||| ተመልካች
+die Klasse ||| noun ||| the class; great! ||| ክፍል፤ በጣም ጥሩ!
+die Lektion ||| noun ||| the lesson ||| ትምህርት
+die Grammatik ||| noun ||| the grammar ||| ሰዋስው
+das Wort ||| noun ||| the word ||| ቃል
+das Nomen ||| noun ||| the noun ||| ስም (የሰዋስው)
+der Artikel ||| noun ||| the article ||| መስተኣምር (der, die, das)
+der Fehler ||| noun ||| the mistake ||| ስህተት
+die Antwort ||| noun ||| the answer ||| መልስ
+die Aufgabe ||| noun ||| the task, the exercise ||| ተግባር፣ መልመጃ
+die Hausaufgaben ||| noun ||| the homework (pl.) ||| የቤት ሥራ
+die Prüfung ||| noun ||| the exam ||| ፈተና
+die Ausbildung ||| noun ||| the vocational training ||| የሙያ ስልጠና
+das Praktikum ||| noun ||| the internship ||| ተግባራዊ ልምምድ
+die Medizin ||| noun ||| medicine ||| ሕክምና
+die Informatik ||| noun ||| computer science ||| ኮምፒውተር ሳይንስ
+die Muttersprache ||| noun ||| the mother tongue ||| የአፍ መፍቻ ቋንቋ
+die Idee ||| noun ||| the idea ||| ሐሳብ
+das Problem ||| noun ||| the problem ||| ችግር
+die Hilfe ||| noun ||| the help ||| እርዳታ
+die Ordnung ||| noun ||| the order (in Ordnung = all right) ||| ሥርዓት (in Ordnung = ደህና ነው)
+die Nummer ||| noun ||| the number ||| ቁጥር
+die Adresse ||| noun ||| the address ||| አድራሻ
+die E-Mail ||| noun ||| the email ||| ኢሜይል
+der Brief ||| noun ||| the letter ||| ደብዳቤ
+der Anruf ||| noun ||| the phone call ||| የስልክ ጥሪ
+das Telefon ||| noun ||| the telephone ||| ስልክ
+die App ||| noun ||| the app ||| መተግበሪያ
+das Formular ||| noun ||| the form ||| ቅጽ
+der Lebenslauf ||| noun ||| the CV ||| የሕይወት ታሪክ (CV)
+die Einladung ||| noun ||| the invitation ||| ግብዣ
+das Geschenk ||| noun ||| the present, the gift ||| ስጦታ
+die Hochzeit ||| noun ||| the wedding ||| ሠርግ
+das Foto ||| noun ||| the photo ||| ፎቶ
+das Bild ||| noun ||| the picture ||| ሥዕል፣ ፎቶ
+das Lied ||| noun ||| the song ||| ዘፈን
+die Kultur ||| noun ||| the culture ||| ባህል
+die Freiheit ||| noun ||| the freedom ||| ነጻነት
+die Freundschaft ||| noun ||| the friendship ||| ጓደኝነት
+das Ende ||| noun ||| the end ||| መጨረሻ
+die Mitte ||| noun ||| the middle ||| መሃል
+die Seite ||| noun ||| the side, the page ||| ጎን፣ ገጽ
+die Ecke ||| noun ||| the corner ||| ጥግ
+der Platz ||| noun ||| the place, the square, the seat ||| ቦታ፣ አደባባይ፣ መቀመጫ
+die Wand ||| noun ||| the wall ||| ግድግዳ
+der Boden ||| noun ||| the floor, the ground ||| ወለል፣ መሬት
+das Fenster ||| noun ||| the window ||| መስኮት
+der Flur ||| noun ||| the hall, the corridor ||| ኮሪደር
+das Büro ||| noun ||| the office ||| ቢሮ
+die Werkstatt ||| noun ||| the workshop, the garage ||| ዎርክሾፕ፣ ጋራዥ
+das Hotel ||| noun ||| the hotel ||| ሆቴል
+der Park ||| noun ||| the park ||| መናፈሻ
+das Stadion ||| noun ||| the stadium ||| ስታዲየም
+die Kirche ||| noun ||| the church ||| ቤተ ክርስቲያን
+das Dorf ||| noun ||| the village ||| መንደር
+das Land ||| noun ||| the country, the countryside ||| አገር፣ ገጠር
+die Brücke ||| noun ||| the bridge ||| ድልድይ
+die Miete ||| noun ||| the rent ||| ኪራይ
+die Karte ||| noun ||| the card, the map, the ticket ||| ካርድ፣ ካርታ፣ ትኬት
+das Stück ||| noun ||| the piece ||| ቁራጭ
+der Kilometer ||| noun ||| the kilometre ||| ኪሎሜትር
+der Meter ||| noun ||| the metre ||| ሜትር
+das Gramm ||| noun ||| the gram ||| ግራም
+die Million ||| noun ||| the million ||| ሚሊዮን
+der Birr ||| noun ||| the birr (Ethiopian money) ||| ብር
+das Gold ||| noun ||| the gold ||| ወርቅ
+das Feuer ||| noun ||| the fire ||| እሳት
+das Blatt ||| noun ||| the leaf, the sheet (of paper) ||| ቅጠል፣ ወረቀት
+die Blume ||| noun ||| the flower ||| አበባ
+das Gras ||| noun ||| the grass ||| ሣር
+der Himmel ||| noun ||| the sky ||| ሰማይ
+die Jahreszeit ||| noun ||| the season ||| ወቅት
+die Ferien ||| noun ||| the holidays (pl.) ||| የዕረፍት ጊዜ
+der Lieblingstag ||| noun ||| the favourite day ||| ተወዳጅ ቀን
+der Lieblingsmonat ||| noun ||| the favourite month ||| ተወዳጅ ወር
+das Tier ||| noun ||| the animal ||| እንስሳ
+der Hund ||| noun ||| the dog ||| ውሻ
+die Katze ||| noun ||| the cat ||| ድመት
+das Kaninchen ||| noun ||| the rabbit ||| ጥንቸል
+der Vogel ||| noun ||| the bird ||| ወፍ
+das Auge ||| noun ||| the eye ||| ዓይን
+die Hand ||| noun ||| the hand ||| እጅ
+das Haar ||| noun ||| the hair ||| ፀጉር
+der Fuß ||| noun ||| the foot (zu Fuß = on foot) ||| እግር (zu Fuß = በእግር)
+die Tablette ||| noun ||| the tablet, the pill ||| ኪኒን
+das Obst ||| noun ||| the fruit ||| ፍራፍሬ
+die Paprika ||| noun ||| the pepper (vegetable) ||| ቃሪያ
+die Pizza ||| noun ||| the pizza ||| ፒዛ
+die Schokolade ||| noun ||| the chocolate ||| ቸኮሌት
+das Salz ||| noun ||| the salt ||| ጨው
+der Alkohol ||| noun ||| the alcohol ||| አልኮል
+der Teller ||| noun ||| the plate ||| ሰሃን
+das Rezept ||| noun ||| the recipe; the prescription ||| የምግብ አዘገጃጀት፤ የሐኪም ማዘዣ
+die Seife ||| noun ||| the soap ||| ሳሙና
+die Wäsche ||| noun ||| the laundry ||| የሚታጠብ ልብስ
+die Kleidung ||| noun ||| the clothes ||| ልብስ
+das Kleid ||| noun ||| the dress ||| ቀሚስ
+das Hemd ||| noun ||| the shirt ||| ሸሚዝ
+der Schuh ||| noun ||| the shoe ||| ጫማ
+die Farbe ||| noun ||| the colour ||| ቀለም
+das Spiel ||| noun ||| the game ||| ጨዋታ
+das Spielzeug ||| noun ||| the toy ||| መጫወቻ
+der Staat ||| noun ||| the state ||| ግዛት፣ መንግሥት
+
+## Ethiopian food and holidays
+die Injera ||| noun ||| injera (Ethiopian flatbread) ||| እንጀራ
+das Wot ||| noun ||| wot (Ethiopian stew) ||| ወጥ
+das Doro Wot ||| noun ||| doro wot (chicken stew) ||| ዶሮ ወጥ
+das Shiro ||| noun ||| shiro (chickpea stew) ||| ሽሮ
+das Tibs ||| noun ||| tibs (fried meat) ||| ጥብስ
+das Firfir ||| noun ||| firfir (torn injera in sauce) ||| ፍርፍር
+das Enkutatash ||| name ||| Enkutatash, the Ethiopian New Year ||| እንቁጣጣሽ
+das Timkat ||| name ||| Timkat, Ethiopian Epiphany ||| ጥምቀት
+das Meskel ||| name ||| Meskel, the Finding of the True Cross ||| መስቀል
+das Eskista ||| noun ||| eskista (Ethiopian shoulder dance) ||| እስክስታ
+das Oktoberfest ||| name ||| the Oktoberfest (Munich beer festival) ||| ኦክቶበርፌስት (የሙኒክ ፌስቲቫል)
+
+## People's names
+Dawit ||| name ||| Dawit (a man's name) ||| ዳዊት (የወንድ ስም)
+Liya ||| name ||| Liya (a woman's name) ||| ሊያ (የሴት ስም)
+Selam ||| name ||| Selam (a woman's name) ||| ሰላም (የሴት ስም)
+Bekele ||| name ||| Bekele (a man's name) ||| በቀለ (የወንድ ስም)
+Tesfaye ||| name ||| Tesfaye (a man's name) ||| ተስፋዬ (የወንድ ስም)
+Abebe ||| name ||| Abebe (a man's name) ||| አበበ (የወንድ ስም)
+Hanna ||| name ||| Hanna (a woman's name) ||| ሐና (የሴት ስም)
+Yonas ||| name ||| Yonas (a man's name) ||| ዮናስ (የወንድ ስም)
+Meron ||| name ||| Meron (a woman's name) ||| ሜሮን (የሴት ስም)
+Almaz ||| name ||| Almaz (a woman's name) ||| አልማዝ (የሴት ስም)
+Kebede ||| name ||| Kebede (a man's name) ||| ከበደ (የወንድ ስም)
+Tigist ||| name ||| Tigist (a woman's name) ||| ትዕግሥት (የሴት ስም)
+Girma ||| name ||| Girma (a man's name) ||| ግርማ (የወንድ ስም)
+Haile ||| name ||| Haile (a man's name) ||| ኃይሌ (የወንድ ስም)
+Kaleb ||| name ||| Kaleb (a man's name) ||| ካሌብ (የወንድ ስም)
+Samuel ||| name ||| Samuel (a man's name) ||| ሳሙኤል (የወንድ ስም)
+Fikir ||| name ||| Fikir (a woman's name) ||| ፍቅር (የሴት ስም)
+Mimi ||| name ||| Mimi (a woman's name) ||| ሚሚ (የሴት ስም)
+Helen ||| name ||| Helen (a woman's name) ||| ሔለን (የሴት ስም)
+Lucy ||| name ||| Lucy, the famous early human found in Ethiopia ||| ሉሲ (ድንቅነሽ)
+Anna ||| name ||| Anna (a woman's name) ||| አና (የሴት ስም)
+Ana ||| name ||| Ana (a woman's name) ||| አና (የሴት ስም)
+Lena ||| name ||| Lena (a woman's name) ||| ሌና (የሴት ስም)
+Marie ||| name ||| Marie (a woman's name) ||| ማሪ (የሴት ስም)
+Olga ||| name ||| Olga (a woman's name) ||| ኦልጋ (የሴት ስም)
+Yuki ||| name ||| Yuki (a Japanese name) ||| ዩኪ (የጃፓን ስም)
+Li ||| name ||| Li (a Chinese name) ||| ሊ (የቻይና ስም)
+Tom ||| name ||| Tom (a man's name) ||| ቶም (የወንድ ስም)
+Jan ||| name ||| Jan (a man's name) ||| ያን (የወንድ ስም)
+Jonas ||| name ||| Jonas (a man's name) ||| ዮናስ (የወንድ ስም)
+Peter ||| name ||| Peter (a man's name) ||| ፒተር (የወንድ ስም)
+Marco ||| name ||| Marco (a man's name) ||| ማርኮ (የወንድ ስም)
+Carlos ||| name ||| Carlos (a man's name) ||| ካርሎስ (የወንድ ስም)
+Omar ||| name ||| Omar (a man's name) ||| ዑመር (የወንድ ስም)
+Müller ||| name ||| Müller (a family name) ||| ሙለር (የቤተሰብ ስም)
+Weber ||| name ||| Weber (a family name) ||| ቬበር (የቤተሰብ ስም)
+Wagner ||| name ||| Wagner (a family name) ||| ቫግነር (የቤተሰብ ስም)
+Siemens ||| name ||| Siemens (a German company) ||| ሲመንስ (የጀርመን ኩባንያ)
+Ethiopian Airlines ||| name ||| Ethiopian Airlines ||| የኢትዮጵያ አየር መንገድ
+
+## Places
+Addis Abeba ||| place ||| Addis Ababa ||| አዲስ አበባ
+Bahir Dar ||| place ||| Bahir Dar ||| ባሕር ዳር
+Hawassa ||| place ||| Hawassa ||| ሐዋሳ
+Adama ||| place ||| Adama ||| አዳማ
+Gondar ||| place ||| Gondar ||| ጎንደር
+Lalibela ||| place ||| Lalibela ||| ላሊበላ
+Harar ||| place ||| Harar ||| ሐረር
+Mekelle ||| place ||| Mekelle ||| መቀሌ
+Bishoftu ||| place ||| Bishoftu ||| ቢሾፍቱ
+Afar ||| place ||| Afar ||| አፋር
+Bole ||| place ||| Bole (in Addis Ababa) ||| ቦሌ
+die Bolestraße ||| place ||| Bole Road ||| ቦሌ መንገድ
+Merkato ||| place ||| Merkato (the big market in Addis Ababa) ||| መርካቶ
+der Tanasee ||| place ||| Lake Tana ||| ጣና ሐይቅ
+die Simien-Berge ||| place ||| the Simien Mountains ||| የስሜን ተራሮች
+Asmara ||| place ||| Asmara ||| አሥመራ
+Nairobi ||| place ||| Nairobi ||| ናይሮቢ
+Dschibuti ||| place ||| Djibouti ||| ጅቡቲ
+Dubai ||| place ||| Dubai ||| ዱባይ
+Berlin ||| place ||| Berlin ||| በርሊን
+Berlin-Mitte ||| place ||| Berlin-Mitte (the centre of Berlin) ||| በርሊን-ሚተ (የበርሊን መሃል)
+Frankfurt ||| place ||| Frankfurt ||| ፍራንክፈርት
+Hamburg ||| place ||| Hamburg ||| ሃምቡርግ
+München ||| place ||| Munich ||| ሙኒክ
+Köln ||| place ||| Cologne ||| ኮሎኝ
+Leipzig ||| place ||| Leipzig ||| ላይፕዚግ
+Dresden ||| place ||| Dresden ||| ድሬስደን
+Wien ||| place ||| Vienna ||| ቪየና
+Rom ||| place ||| Rome ||| ሮም
+Paris ||| place ||| Paris ||| ፓሪስ
+Madrid ||| place ||| Madrid ||| ማድሪድ
+New York ||| place ||| New York ||| ኒው ዮርክ
+die Hauptstraße ||| place ||| the main street ||| ዋና መንገድ
+die Schweiz ||| place ||| Switzerland ||| ስዊዘርላንድ
+die Türkei ||| place ||| Turkey ||| ቱርክ
+Brasilien ||| place ||| Brazil ||| ብራዚል
+Japan ||| place ||| Japan ||| ጃፓን
+die Niederlande ||| place ||| the Netherlands ||| ኔዘርላንድስ
+die Vereinigten Staaten ||| place ||| the United States ||| አሜሪካ (የተባበሩት መንግሥታት)
+die Vereinigten Arabischen Emirate ||| place ||| the United Arab Emirates ||| የተባበሩት የዓረብ ኤሚሬቶች
+Fikir Eske Mekabir ||| name ||| Fikir Eske Mekabir (“Love unto Death”, a famous Amharic novel) ||| ፍቅር እስከ መቃብር (ታዋቂ የአማርኛ ልብ ወለድ)
+der Jazz ||| noun ||| jazz ||| ጃዝ

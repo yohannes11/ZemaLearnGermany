@@ -125,6 +125,30 @@ function wordPicture(item, className) {
   return box;
 }
 
+// Clocks for the times a German text says (tools/clock_pictures.py builds COURSE.clocks): each time on an
+// analog face at the exact hour said (vier Uhr is 4:00), with the time in digits under it. Decorative for
+// screen readers: the text says the time.
+const clockName = time => { const [h, m] = time.split(':'); return `clock-${h.padStart(2, '0')}${m}`; };
+const clocksFor = text => (window.COURSE.clocks || {})[text];
+
+function clockPics(times, size = '', caption = true) {
+  if (!times || !times.length) return null;
+  const box = el('span', `clock-pics ${size}`.trim());
+  box.setAttribute('aria-hidden', 'true');
+  times.forEach(time => {
+    const figure = el('span', 'clock-pic');
+    const img = el('img');
+    img.src = `${APP.picBase}${clockName(time)}.svg`;
+    img.alt = '';
+    img.loading = 'lazy';
+    img.draggable = false;
+    figure.appendChild(img);
+    if (caption) figure.appendChild(el('span', 'clock-time', time));
+    box.appendChild(figure);
+  });
+  return box;
+}
+
 function listenButton(german) {
   const btn = el('button', 'icon-btn');
   btn.type = 'button';
@@ -148,6 +172,8 @@ function exampleList(item) {
     const text = el('span', 'example-text');
     text.append(german, el('span', 'example-meaning', (AM && AM.examples && AM.examples[de]) || en));
     row.append(listenButton(de), text);
+    const clock = clockPics(clocksFor(de), 'small');
+    if (clock) { row.appendChild(clock); row.classList.add('has-clock'); }
     list.appendChild(row);
   });
   return list;
@@ -2425,6 +2451,9 @@ function lessonTable(table) {
     const tr = el('tr');
     row.forEach((cell, c) => {
       const td = el('td', c === 0 ? '' : 'form', L(cell));
+      // A time in the first column ("9:05") shows its clock.
+      const clock = c === 0 && clockPics(clocksFor(cell), 'small', false);
+      if (clock) { td.prepend(clock); td.classList.add('time-cell'); }
       if (c > 0) td.style.fontSize = '1.1rem';
       if (c === table.highlight) td.classList.add('end');
       tr.appendChild(td);
@@ -2447,6 +2476,8 @@ function readingText(block) {
     p.lang = 'de';
     row.append(p, listenButton(paragraph));
     box.appendChild(row);
+    const clock = clockPics(clocksFor(paragraph), 'small');
+    if (clock) box.appendChild(clock);
   });
   if (block.glossary && block.glossary.length) {
     const list = el('dl', 'glossary');
@@ -2488,6 +2519,8 @@ function renderDataLesson(page, lesson) {
         row.innerHTML = '<div><div class="ex-de"></div><div class="ex-en"></div></div>';
         row.querySelector('.ex-de').textContent = de;
         row.querySelector('.ex-en').textContent = L(en);
+        const clock = clockPics(clocksFor(de), 'small');
+        if (clock) row.appendChild(clock);
         row.appendChild(listenButton(de));
         list.appendChild(row);
       });
@@ -2706,6 +2739,9 @@ function showGrammarQuestion() {
   box.querySelector('.before').textContent = q.before;
   box.querySelector('.after').textContent = q.after;
   box.querySelector('.g-q-hint').textContent = L(q.hint);
+  // A question about a time shows the clock (from its question only, never its answer).
+  const clock = clockPics(q.clocks, 'large');
+  if (clock) box.querySelector('.g-q-prompt').before(clock);
   // Data items: the blank sits exactly where the item puts it (no extra space).
   if (q.type === 'gap') {
     const prompt = box.querySelector('.g-q-prompt');

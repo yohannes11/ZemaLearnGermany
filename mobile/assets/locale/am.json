@@ -259,7 +259,29 @@
     "Hide your progress": "እድገትዎን ደብቅ",
     "Progress": "እድገት",
     "Show chapters": "ንዑስ ክፍሎቹን አሳይ",
-    "Show your progress": "እድገትዎን አሳይ"
+    "Show your progress": "እድገትዎን አሳይ",
+    "In English": "በእንግሊዝኛ",
+    "In Amharic": "በአማርኛ",
+    "This word is not in the course dictionary yet.": "ይህ ቃል ገና በኮርሱ መዝገበ ቃላት ውስጥ የለም።",
+    "Example": "ምሳሌ",
+    "adjective": "ቅጽል",
+    "adverb": "ተውሳከ ግሥ",
+    "article": "መስተኣምር",
+    "conjunction": "መስተጻምር",
+    "interjection": "ቃለ አጋኖ",
+    "name": "የሰው ስም",
+    "noun": "ስም",
+    "number": "ቁጥር",
+    "particle": "ረዳት ቃል",
+    "phrase": "ሐረግ",
+    "place": "የቦታ ስም",
+    "preposition": "መስተዋድድ",
+    "pronoun": "ተውላጠ ስም",
+    "question": "ጥያቄ",
+    "sentence": "ዓረፍተ ነገር",
+    "verb": "ግሥ",
+    "{form} is a form of {word}": "{form} የ{word} አንድ ቅርጽ ነው",
+    "Point beside the sentence to hear all of it.": "ሙሉውን ዓረፍተ ነገር ለመስማት ከዓረፍተ ነገሩ አጠገብ ያመልክቱ።"
   },
   "course": {
     "1 mistake": "1 ስህተት",
@@ -1012,6 +1034,7 @@
     "{n} XP earned": "{n} XP አግኝተዋል",
     "{time} · not on days you have practised · tap to change the time": "{time} · በተለማመዱባቸው ቀናት አይደለም · ሰዓቱን ለመቀየር ይንኩ",
     "{title}, {done} of {total} learned": "{title}፣ {done} ከ{total} ተምረዋል",
-    "{xp} XP to level {n}": "ወደ ደረጃ {n} {xp} XP ቀርቷል"
+    "{xp} XP to level {n}": "ወደ ደረጃ {n} {xp} XP ቀርቷል",
+    "Copy": "ቅዳ"
   }
 }

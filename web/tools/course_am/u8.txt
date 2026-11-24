@@ -7,7 +7,7 @@ With a modal verb (können, möchten …) the verb stays in one piece at the end
 The bracket ||| ቅንፉ
 The small part goes to the end ||| ትንሹ ክፍል ወደ መጨረሻ ይሄዳል
 On the way ||| በጉዞ ላይ
-The train leaves at 7:15. ||| ባቡሩ አንድ ሰዓት ከሩብ (7:15) ላይ ይነሳል።
+The train leaves at 7:15. ||| ባቡሩ ሰባት ሰዓት ከሩብ (7:15) ላይ ይነሳል።
 I get off at the main station. ||| ዋናው ባቡር ጣቢያ ላይ እወርዳለሁ።
 Will you call me from Frankfurt? ||| ከፍራንክፈርት ትደውልልኛለህ/ትደውዪልኛለሽ?
 I would like to arrive on Friday. ||| ዓርብ መድረስ እፈልጋለሁ።
@@ -18,18 +18,18 @@ Kannst du mich abholen? ||| Kannst du mich abholen?
 Infinitive ||| የመዝገበ ቃላት ቅርጽ
 one word: abholen ||| አንድ ቃል፦ abholen
 Separable verbs ||| ተነጣይ ግሦች
-I arrive at eight. ||| ሁለት ሰዓት (8:00) ላይ እደርሳለሁ።
+I arrive at eight. ||| ስምንት ሰዓት (8:00) ላይ እደርሳለሁ።
 When does the train leave? ||| ባቡሩ መቼ ይነሳል?
 Will you pick me up? ||| መጥተህ/መጥተሽ ትቀበለኛለህ/ትቀበይኛለሽ?
 We change in Frankfurt. ||| ፍራንክፈርት ላይ እንቀይራለን።
 Can you pick me up? ||| መጥተህ/መጥተሽ ልትቀበለኝ/ልትቀበይኝ ትችላለህ/ትችያለሽ?
-The bus leaves at ten. ||| አውቶቡሱ አራት ሰዓት (10:00) ላይ ይነሳል።
+The bus leaves at ten. ||| አውቶቡሱ አሥር ሰዓት (10:00) ላይ ይነሳል።
 When do you arrive in Berlin? ||| በርሊን መቼ ትደርሳለህ/ትደርሺያለሽ?
 I'll pick you up at the airport. ||| አውሮፕላን ማረፊያ መጥቼ እቀበልሃለሁ/እቀበልሻለሁ።
 Please get off here. ||| እባክዎ እዚህ ይውረዱ።
 We have to change in Cologne. ||| ኮሎኝ (Köln) ላይ መቀየር አለብን።
 With a modal verb, the verb stays in one piece at the end. ||| ከረዳት ግሥ ጋር ግሡ መጨረሻ ላይ አንድ ሆኖ ይቆያል።
-My flight leaves at 10 pm. ||| በረራዬ ከምሽቱ አራት ሰዓት (22:00) ላይ ይነሳል።
+My flight leaves at 10 pm. ||| በረራዬ 22 ሰዓት (22:00) ላይ ይነሳል።
 When do you arrive? ||| መቼ ትደርሳለህ/ትደርሺያለሽ?
 An announcement at the station. ||| በባቡር ጣቢያ የሚነገር ማስታወቂያ።
 

@@ -1,0 +1,14 @@
+{% load static zema_i18n %}{# Point at German to hear it and see its dictionary entry; select it for a card (static/core/js/hover-read.js). The labels come first, in the page's language. #}
+<script type="application/json" id="hover-read-labels">{
+  "noun": "{% t "noun" %}", "verb": "{% t "verb" %}", "adjective": "{% t "adjective" %}", "adverb": "{% t "adverb" %}",
+  "pronoun": "{% t "pronoun" %}", "article": "{% t "article" %}", "preposition": "{% t "preposition" %}",
+  "conjunction": "{% t "conjunction" %}", "particle": "{% t "particle" %}", "interjection": "{% t "interjection" %}",
+  "number": "{% t "number" %}", "phrase": "{% t "phrase" %}", "sentence": "{% t "sentence" %}", "question": "{% t "question" %}",
+  "name": "{% t "name" %}", "place": "{% t "place" %}",
+  "der": "{% t "masculine" %}", "die": "{% t "feminine" %}", "das": "{% t "neuter" %}", "plural": "{% t "plural" %}",
+  "english": "{% t "In English" %}", "amharic": "{% t "In Amharic" %}", "example": "{% t "Example" %}",
+  "formOf": "{% t "{form} is a form of {word}" %}", "listen": "{% t "Listen" %}", "close": "{% t "Close" %}",
+  "unknown": "{% t "This word is not in the course dictionary yet." %}",
+  "hint": "{% t "Point beside the sentence to hear all of it." %}"
+}</script>
+<script src="{% static 'core/js/hover-read.js' %}" data-words="{% static 'core/hover-words.json' %}" data-sentences="{% static 'core/hover-sentences.json' %}" data-audio="{% get_static_prefix %}audio/"></script>

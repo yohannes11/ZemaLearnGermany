@@ -6,6 +6,7 @@ import '../core/i18n.dart';
 import '../core/sync/engine.dart';
 import '../features/gamification/tally_view.dart';
 import '../features/lessons/lesson_content.dart';
+import '../features/vocabulary/dictionary.dart';
 import '../features/progress/progress.dart';
 import '../features/search/search_screen.dart';
 import '../ui/primitives.dart';
@@ -83,7 +84,7 @@ class LessonScreen extends StatelessWidget {
                     detail: best == null ? T('Score {n} or more to complete it.', {'n': pass}) : T('Best score so far: {best} of {total}.', {'best': best, 'total': size}),
                   ),
                 ),
-                LessonContent(unit: unit, lesson: lesson),
+                WordLookup(child: LessonContent(unit: unit, lesson: lesson)),
               ]),
             ),
             if (hasExercise)

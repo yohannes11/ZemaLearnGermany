@@ -6,6 +6,7 @@ import '../../core/offline/audio.dart';
 import '../../ui/primitives.dart';
 import '../../ui/rich_text.dart';
 import '../../ui/theme.dart';
+import '../vocabulary/word_picture.dart';
 import 'answer_check.dart';
 import 'questions.dart';
 
@@ -65,6 +66,8 @@ class _QuestionViewState extends State<QuestionView> {
           child: ListView(
             children: gapped([
               if (widget.above != null) widget.above!,
+              // A question about a time shows its clock.
+              if (q.clocks.isNotEmpty) Center(child: ClockPictures(q.clocks, size: 112)),
               if (q.prompt.isNotEmpty) RichTxt(q.prompt, role: TextRole.heading),
               if (q.listen && q.say != null)
                 Center(

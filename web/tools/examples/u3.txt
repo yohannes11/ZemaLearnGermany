@@ -12,7 +12,7 @@ Ich gehe in den Supermarkt. ||| I am going to the supermarket. ||| ወደ ሱፐ
 Der Supermarkt ist am Sonntag zu. ||| The supermarket is closed on Sunday. ||| ሱፐርማርኬቱ እሑድ ዝግ ነው።
 ## der Laden
 Der Laden ist klein. ||| The shop is small. ||| ሱቁ ትንሽ ነው።
-Der Laden öffnet um acht Uhr. ||| The shop opens at eight o'clock. ||| ሱቁ ሁለት ሰዓት ይከፈታል።
+Der Laden öffnet um acht Uhr. ||| The shop opens at eight o'clock. ||| ሱቁ ስምንት ሰዓት ይከፈታል።
 Im Laden gibt es frisches Brot. ||| There is fresh bread in the shop. ||| በሱቁ ውስጥ ትኩስ ዳቦ አለ።
 ## das Geschäft
 Das Geschäft ist neu. ||| The shop is new. ||| ሱቁ አዲስ ነው።
@@ -343,7 +343,7 @@ Was ist dein Lieblingsessen? – Pizza. ||| What is your favourite food? – Piz
 
 # 3.14 The verb essen (to eat)
 ## essen
-Wir essen um sieben Uhr. ||| We eat at seven o'clock. ||| አንድ ሰዓት እንበላለን።
+Wir essen um sieben Uhr. ||| We eat at seven o'clock. ||| ሰባት ሰዓት እንበላለን።
 Was möchtest du essen? ||| What would you like to eat? ||| ምን መብላት ትፈልጋለህ?
 In Äthiopien essen wir Injera. ||| In Ethiopia we eat injera. ||| በኢትዮጵያ እንጀራ እንበላለን።
 ## ich esse
@@ -377,7 +377,7 @@ Der Kellner bringt das Essen. ||| The waiter brings the food. ||| አስተና�
 Der Kellner ist sehr freundlich. ||| The waiter is very friendly. ||| አስተናጋጁ በጣም ተግባቢ ነው።
 Wo ist der Kellner? ||| Where is the waiter? ||| አስተናጋጁ የት ነው?
 ## die Gäste
-Die Gäste kommen um acht. ||| The guests come at eight. ||| እንግዶቹ ሁለት ሰዓት ይመጣሉ።
+Die Gäste kommen um acht. ||| The guests come at eight. ||| እንግዶቹ ስምንት ሰዓት ይመጣሉ።
 Die Gäste essen und trinken. ||| The guests eat and drink. ||| እንግዶቹ ይበላሉ ይጠጣሉም።
 Wir haben heute Gäste. ||| We have guests today. ||| ዛሬ እንግዶች አሉን።
 ## das Menü
@@ -451,7 +451,7 @@ Ein Wasser, bitte. – Kommt gleich! ||| A water, please. – Coming right up! |
 Die Rechnung? Kommt gleich! ||| The bill? Coming right up! ||| ሂሳቡ? አሁኑኑ ይደርሳል!
 ## In Ordnung?
 Ich bringe Wasser. In Ordnung? ||| I'll bring water. All right? ||| ውሃ አመጣለሁ። እሺ?
-Wir essen um acht. In Ordnung? ||| We eat at eight. All right? ||| ሁለት ሰዓት እንበላለን። ደህና ነው?
+Wir essen um acht. In Ordnung? ||| We eat at eight. All right? ||| ስምንት ሰዓት እንበላለን። ደህና ነው?
 ## Können wir bitte die Rechnung bekommen?
 Entschuldigung! Können wir bitte die Rechnung bekommen? ||| Excuse me! Can we have the bill, please? ||| ይቅርታ! እባክዎ ሂሳቡን ሊያመጡልን ይችላሉ?
 Das Essen war gut. Können wir bitte die Rechnung bekommen? ||| The food was good. Can we have the bill, please? ||| ምግቡ ጥሩ ነበር። እባክዎ ሂሳቡን ሊያመጡልን ይችላሉ?
@@ -508,14 +508,14 @@ Die Suppe? Das schmeckt gut. ||| The soup? That tastes good. ||| ሾርባው? �
 # 3.17 Breakfast & meals
 ## das Frühstück
 Das Frühstück ist fertig. ||| Breakfast is ready. ||| ቁርሱ ደርሷል።
-Ich esse um sieben Uhr Frühstück. ||| I eat breakfast at seven o'clock. ||| አንድ ሰዓት ቁርስ እበላለሁ።
+Ich esse um sieben Uhr Frühstück. ||| I eat breakfast at seven o'clock. ||| ሰባት ሰዓት ቁርስ እበላለሁ።
 Das Frühstück ist im Hotel. ||| Breakfast is at the hotel. ||| ቁርሱ ሆቴሉ ውስጥ ነው።
 ## zum Frühstück
 Zum Frühstück esse ich Brot. ||| For breakfast I eat bread. ||| ለቁርስ ዳቦ እበላለሁ።
 Was trinkst du zum Frühstück? ||| What do you drink for breakfast? ||| ለቁርስ ምን ትጠጣለህ?
 Zum Frühstück gibt es Kaffee und Eier. ||| For breakfast there is coffee and eggs. ||| ለቁርስ ቡናና እንቁላል አለ።
 ## das Abendessen
-Das Abendessen ist um acht. ||| Dinner is at eight. ||| እራቱ ሁለት ሰዓት ነው።
+Das Abendessen ist um acht. ||| Dinner is at eight. ||| እራቱ ስምንት ሰዓት ነው።
 Was gibt es zum Abendessen? ||| What is there for dinner? ||| ለእራት ምን አለ?
 Ich koche das Abendessen. ||| I am cooking dinner. ||| እራቱን እያበሰልኩ ነው።
 ## das Müsli

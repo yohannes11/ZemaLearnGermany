@@ -238,7 +238,7 @@ Mein Sohn ist vierzehn Jahre alt. ||| My son is fourteen years old. ||| ልጄ �
 Das kostet vierzehn Euro. ||| That costs fourteen euros. ||| ይህ አሥራ አራት ዩሮ ያወጣል።
 Wir haben vierzehn Tage Urlaub. ||| We have fourteen days of holiday. ||| የአሥራ አራት ቀን እረፍት አለን።
 ## fünfzehn
-Es ist fünfzehn Uhr. ||| It is fifteen o'clock (3 pm). ||| ዘጠኝ ሰዓት ነው።
+Es ist fünfzehn Uhr. ||| It is fifteen o'clock (3 pm). ||| አሥራ አምስት ሰዓት ነው።
 Ich warte fünfzehn Minuten. ||| I wait fifteen minutes. ||| አሥራ አምስት ደቂቃ እጠብቃለሁ።
 Die Klasse hat fünfzehn Kinder. ||| The class has fifteen children. ||| ክፍሉ አሥራ አምስት ልጆች አሉት።
 ## sechzehn
@@ -252,11 +252,11 @@ Siebzehn plus drei ist zwanzig. ||| Seventeen plus three is twenty. ||| አሥ�
 ## achtzehn
 Ich bin achtzehn Jahre alt. ||| I am eighteen years old. ||| የአሥራ ስምንት ዓመት ልጅ ነኝ።
 Mit achtzehn darf man Auto fahren. ||| At eighteen you may drive a car. ||| በአሥራ ስምንት ዓመት መኪና መንዳት ይቻላል።
-Es ist achtzehn Uhr. ||| It is eighteen o'clock (6 pm). ||| አሥራ ሁለት ሰዓት ነው።
+Es ist achtzehn Uhr. ||| It is eighteen o'clock (6 pm). ||| አሥራ ስምንት ሰዓት ነው።
 ## neunzehn
 Meine Cousine ist neunzehn. ||| My cousin is nineteen. ||| የአጎቴ ልጅ አሥራ ዘጠኝ ዓመቷ ነው።
 Das kostet neunzehn Euro. ||| That costs nineteen euros. ||| ይህ አሥራ ዘጠኝ ዩሮ ያወጣል።
-Der Zug fährt um neunzehn Uhr. ||| The train leaves at nineteen o'clock (7 pm). ||| ባቡሩ አንድ ሰዓት (ማታ) ይነሣል።
+Der Zug fährt um neunzehn Uhr. ||| The train leaves at nineteen o'clock (7 pm). ||| ባቡሩ አሥራ ዘጠኝ ሰዓት ላይ ይነሣል።
 ## zwanzig
 Ich bin zwanzig Jahre alt. ||| I am twenty years old. ||| የሃያ ዓመት ወጣት ነኝ።
 Das kostet zwanzig Euro. ||| That costs twenty euros. ||| ይህ ሃያ ዩሮ ያወጣል።

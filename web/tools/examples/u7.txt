@@ -101,7 +101,7 @@ Die Kinder haben Angst vor dem Zahnarzt. ||| The children are afraid of the dent
 ## die Zahnärztin
 Die Zahnärztin ist sehr freundlich. ||| The dentist is very friendly. ||| የጥርስ ሐኪሟ በጣም ተግባቢ ናት።
 Meine Tante ist Zahnärztin. ||| My aunt is a dentist. ||| አክስቴ የጥርስ ሐኪም ናት።
-Die Zahnärztin arbeitet bis fünf Uhr. ||| The dentist works until five o'clock. ||| የጥርስ ሐኪሟ እስከ አሥራ አንድ ሰዓት ትሠራለች።
+Die Zahnärztin arbeitet bis fünf Uhr. ||| The dentist works until five o'clock. ||| የጥርስ ሐኪሟ እስከ አምስት ሰዓት ትሠራለች።
 ## der Geschäftsmann
 Der Geschäftsmann reist viel. ||| The businessman travels a lot. ||| ነጋዴው ብዙ ይጓዛል።
 Mein Vater ist Geschäftsmann. ||| My father is a businessman. ||| አባቴ ነጋዴ ነው።
@@ -204,13 +204,13 @@ Es muss heute fertig sein. ||| It must be finished today. ||| ዛሬ መጠና�
 Das Fenster ist kaputt. Es muss repariert werden. ||| The window is broken. It must be repaired. ||| መስኮቱ ተሰብሯል። መጠገን አለበት።
 ## wir müssen
 Wir müssen einkaufen. ||| We have to go shopping. ||| ዕቃ መግዛት አለብን።
-Wir müssen um acht Uhr da sein. ||| We have to be there at eight o'clock. ||| ሁለት ሰዓት ላይ እዚያ መገኘት አለብን።
+Wir müssen um acht Uhr da sein. ||| We have to be there at eight o'clock. ||| ስምንት ሰዓት ላይ እዚያ መገኘት አለብን።
 ## ihr müsst
 Ihr müsst leise sein. ||| You (all) must be quiet. ||| ዝም ማለት አለባችሁ።
 Ihr müsst die Hausaufgaben machen. ||| You (all) must do the homework. ||| የቤት ሥራውን መሥራት አለባችሁ።
 ## sie müssen
 Sie müssen heute lange arbeiten. ||| They have to work long hours today. ||| ዛሬ ረጅም ሰዓት መሥራት አለባቸው።
-Die Kinder müssen um neun Uhr schlafen. ||| The children must sleep at nine o'clock. ||| ልጆቹ ሦስት ሰዓት ላይ መተኛት አለባቸው።
+Die Kinder müssen um neun Uhr schlafen. ||| The children must sleep at nine o'clock. ||| ልጆቹ ዘጠኝ ሰዓት ላይ መተኛት አለባቸው።
 ## dürfen
 Hier dürfen Sie nicht rauchen. ||| You are not allowed to smoke here. ||| እዚህ ማጨስ አይፈቀድልዎትም።
 Kinder dürfen hier spielen. ||| Children are allowed to play here. ||| ልጆች እዚህ መጫወት ይፈቀድላቸዋል።
@@ -231,7 +231,7 @@ Dürfen wir jetzt gehen? ||| May we go now? ||| አሁን መሄድ እንችላ
 Ihr dürft jetzt spielen. ||| You (all) may play now. ||| አሁን መጫወት ተፈቅዶላችኋል።
 Ihr dürft hier nicht laut sein. ||| You (all) are not allowed to be loud here. ||| እዚህ መጮኽ አይፈቀድላችሁም።
 ## sie dürfen
-Die Kinder dürfen bis zehn Uhr aufbleiben. ||| The children are allowed to stay up until ten o'clock. ||| ልጆቹ እስከ አራት ሰዓት ማምሸት ተፈቅዶላቸዋል።
+Die Kinder dürfen bis zehn Uhr aufbleiben. ||| The children are allowed to stay up until ten o'clock. ||| ልጆቹ እስከ አሥር ሰዓት ማምሸት ተፈቅዶላቸዋል።
 Sie dürfen hier nicht parken. ||| They are not allowed to park here. ||| እዚህ መኪና ማቆም አይፈቀድላቸውም።
 ## sollen
 Was sollen wir machen? ||| What should we do? ||| ምን ማድረግ አለብን?
@@ -247,7 +247,7 @@ Du sollst nicht so viel arbeiten. ||| You shouldn't work so much. ||| ይህን 
 Morgen soll es regnen. ||| It is supposed to rain tomorrow. ||| ነገ ይዘንባል ተብሏል።
 Das Essen soll heiß sein. ||| The food should be hot. ||| ምግቡ ትኩስ መሆን ይገባዋል።
 ## wir sollen
-Wir sollen um acht Uhr da sein. ||| We are supposed to be there at eight o'clock. ||| ሁለት ሰዓት ላይ እዚያ መገኘት ይገባናል።
+Wir sollen um acht Uhr da sein. ||| We are supposed to be there at eight o'clock. ||| ስምንት ሰዓት ላይ እዚያ መገኘት ይገባናል።
 Sollen wir Kaffee machen? ||| Shall we make coffee? ||| ቡና እናፍላ?
 ## ihr sollt
 Ihr sollt leise sein. ||| You (all) are supposed to be quiet. ||| ዝም ማለት ይገባችኋል።
@@ -536,7 +536,7 @@ Ich habe eine Nachricht von Dawit. ||| I have a message from Dawit. ||| ከዳ�
 Schreib mir eine Nachricht! ||| Write me a message! ||| መልዕክት ጻፍልኝ!
 Die Nachricht ist kurz. ||| The message is short. ||| መልዕክቱ አጭር ነው።
 ## der Termin
-Ich habe einen Termin um zehn Uhr. ||| I have an appointment at ten o'clock. ||| አራት ሰዓት ላይ ቀጠሮ አለኝ።
+Ich habe einen Termin um zehn Uhr. ||| I have an appointment at ten o'clock. ||| አሥር ሰዓት ላይ ቀጠሮ አለኝ።
 Der Termin ist am Montag. ||| The appointment is on Monday. ||| ቀጠሮው ሰኞ ነው።
 Ich möchte einen Termin beim Arzt. ||| I would like an appointment with the doctor. ||| የሐኪም ቀጠሮ እፈልጋለሁ።
 ## der Kalender

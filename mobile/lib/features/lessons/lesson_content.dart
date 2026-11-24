@@ -7,6 +7,7 @@ import '../../core/offline/audio.dart';
 import '../../ui/primitives.dart';
 import '../../ui/rich_text.dart';
 import '../../ui/theme.dart';
+import '../vocabulary/word_picture.dart';
 import 'questions.dart';
 
 /// A small speaker that plays `german`; nothing when there is no recording.
@@ -89,8 +90,17 @@ class FormTable extends StatelessWidget {
               child: Row(children: [
                 for (final (i, cell) in row.indexed)
                   Expanded(
-                    child: Txt(cell,
-                        role: i == highlight ? TextRole.bodyStrong : TextRole.body, colour: i == highlight ? c.brand : null),
+                    child: Row(children: [
+                      // A time in the first column ("9:05") shows its clock.
+                      if (i == 0 && course.clocksFor(cell).isNotEmpty) ...[
+                        ClockPictures(course.clocksFor(cell), size: 36, caption: false),
+                        const SizedBox(width: Space.sm),
+                      ],
+                      Flexible(
+                        child: Txt(cell,
+                            role: i == highlight ? TextRole.bodyStrong : TextRole.body, colour: i == highlight ? c.brand : null),
+                      ),
+                    ]),
                   ),
                 if (r < say.length && say[r] != null && audio.hasClip(say[r]!)) Icon(Icons.volume_up_rounded, size: 18, color: c.brand),
               ]),
@@ -109,9 +119,12 @@ class ReadingText extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Column(crossAxisAlignment: CrossAxisAlignment.start, children: gapped([
         for (final paragraph in block.reading)
-          Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Expanded(child: Txt(paragraph, style: const TextStyle(height: 1.6))),
-            ListenButton(paragraph),
+          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Expanded(child: Txt(paragraph, style: const TextStyle(height: 1.6))),
+              ListenButton(paragraph),
+            ]),
+            if (course.clocksFor(paragraph).isNotEmpty) ClockPictures(course.clocksFor(paragraph), size: 40),
           ]),
         if (block.glossary.isNotEmpty)
           Column(crossAxisAlignment: CrossAxisAlignment.start, children: gapped([
@@ -178,9 +191,14 @@ class LessonContent extends StatelessWidget {
                   highlight: block.table!.highlight,
                 ),
               for (final (german, meaning) in block.examples)
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Spoken(german),
-                  RichTxt(t(meaning), role: TextRole.caption, colour: context.c.muted),
+                Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Expanded(
+                    child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                      Spoken(german),
+                      RichTxt(t(meaning), role: TextRole.caption, colour: context.c.muted),
+                    ]),
+                  ),
+                  if (course.clocksFor(german).isNotEmpty) ClockPictures(course.clocksFor(german), size: 40),
                 ]),
             ]),
           if (lesson.rules.isNotEmpty) _RuleCards([for (final (r, e) in lesson.rules) (t(r), t(e))]),

@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -24,15 +25,19 @@ def english_lesson_strings(course):
     return module.course_strings(course)
 
 
-def hover_texts(course):
-    """Every German text pointing can read aloud, as tools/hover_texts.py finds them."""
+def tool(name):
+    """A module of tools/ (only importable while tools/ is on the path)."""
     tools = str(Path(settings.BASE_DIR) / "tools")
     sys.path.insert(0, tools)
     try:
-        import hover_texts as module  # tools/ is only importable while on the path
+        return importlib.import_module(name)
     finally:
         sys.path.remove(tools)
-    return module.hover_texts(course)
+
+
+def hover_texts(course):
+    """The German texts pointing reads from a human recording, as tools/hover_texts.py finds them."""
+    return tool("hover_texts").hover_texts(course)
 
 
 def load_course():
@@ -70,12 +75,83 @@ class CourseContentTests(SimpleTestCase):
         self.assertEqual(missing, [], "lesson texts missing in tools/course_am/u*.txt")
 
     def test_hover_meanings_cover_every_word(self):
-        """static/core/hover-words.json (pointing at German on any page) is rebuilt with the course."""
-        entries = json.loads((STATIC / "core" / "hover-words.json").read_text(encoding="utf-8"))
-        known = {entry[0] for entry in entries}
+        """static/core/hover-words.json (pointing at German on any page) is rebuilt with the course: every
+        headword has a part of speech and a meaning, and every vocabulary word is one."""
+        dictionary = json.loads((STATIC / "core" / "hover-words.json").read_text(encoding="utf-8"))
+        parts = tool("dictionary").PARTS
+        known = {entry[0] for entry in dictionary["words"]}
         words = {w["german"] for u in self.course["units"] for s in u["sections"] for w in s["words"]}
         self.assertEqual(sorted(words - known), [], "run tools/course_content.py")
-        self.assertTrue(all(entry[1] for entry in entries))
+        for entry in dictionary["words"]:
+            self.assertIn(entry[1], parts, entry[0])
+            self.assertTrue(entry[2], entry[0])
+
+    def test_every_word_of_the_course_is_in_the_dictionary(self):
+        """Pointing at any word of the course's German finds a dictionary entry (tools/dictionary/)."""
+        dictionary_tool = tool("dictionary")
+        dictionary = json.loads((STATIC / "core" / "hover-words.json").read_text(encoding="utf-8"))
+        missing = dictionary_tool.unknown_words(self.course, dictionary)
+        self.assertEqual(missing, [], "add them to tools/dictionary/words.txt or forms.txt")
+        found = dictionary_tool.find
+        self.assertEqual(found(dictionary, "ist")[0], "sein")
+        self.assertEqual(found(dictionary, "Minuten")[0], "die Minute")
+        self.assertEqual(found(dictionary, "trinke")[0], "trinken")
+        self.assertEqual(found(dictionary, "Kaffee")[0], "der Kaffee")
+
+    def test_clock_times_are_read_exactly(self):
+        """A clock shows the hour as said: vier Uhr is 4:00, halb zehn 9:30, fünf vor halb zehn 9:25."""
+        times = tool("clock_pictures").times
+        cases = {
+            "Es ist vier Uhr.": ["4:00"], "Es ist halb zehn.": ["9:30"], "Es ist fünf vor halb zehn.": ["9:25"],
+            "Es ist fünf nach halb zehn.": ["9:35"], "Es ist Viertel vor zehn.": ["9:45"], "Es ist zehn nach sieben.": ["7:10"],
+            "Es ist fünf vor acht.": ["7:55"], "neun Uhr fünfundzwanzig": ["9:25"], "Es ist halb eins.": ["12:30"],
+            "von 9 bis 17 Uhr": ["9:00", "17:00"], "Das Flugzeug landet um 6:40 Uhr.": ["6:40"],
+            "Ich komme um fünf nach Hause.": ["5:00"], "9:30 → Es ist halb zehn.": ["9:30"],
+            "Ich habe fünf Euro.": [], "Ich bin 8 Jahre alt.": [], "Bis dann!": [],
+        }
+        for text, expected in cases.items():
+            self.assertEqual(times(text), expected, text)
+
+    def test_every_time_taught_has_its_clock(self):
+        """Every time in the course's German has a clock picture, and so has every time-telling exercise."""
+        clocks = self.course["clocks"]
+        name = tool("clock_pictures").name
+        self.assertEqual(clocks["Es ist fünf vor halb zehn."], ["9:25"])
+        items = [i for u in self.course["units"] for g in u["grammar"] for i in g.get("quiz", {}).get("items", [])]
+        every = {t for found in clocks.values() for t in found} | {t for i in items for t in i.get("clocks", [])}
+        missing = sorted(t for t in every if not (STATIC / "course" / "pics" / f"{name(t)}.svg").exists())
+        self.assertEqual(missing, [], "run tools/course_content.py")
+        timed = [i for i in items if (i.get("before") or "").startswith(("9:", "1:", "7:"))]
+        self.assertTrue(timed)
+        for item in timed:
+            self.assertEqual(item["clocks"], [item["before"].split(" ")[0]], item["before"])
+
+    def test_amharic_times_keep_the_hour_on_the_clock(self):
+        """The Amharic says the hour the clock shows (9:00 = ዘጠኝ ሰዓት), never the Ethiopian clock's six-hour
+        shift (ሦስት ሰዓት)."""
+        times = tool("clock_pictures").times
+        am = load_js_object("course-am.js")
+        words = ["አንድ", "ሁለት", "ሦስት", "አራት", "አምስት", "ስድስት", "ሰባት", "ስምንት", "ዘጠኝ", "አሥር", "አሥራ አንድ", "አሥራ ሁለት"]
+        pairs = list(am["examples"].items()) + list(am["words"].items())
+        checked = 0
+        for german, amharic in pairs:
+            for time in times(german):
+                hour = int(time.split(":")[0])
+                shifted = (hour + 6) % 12 or 12
+                if shifted == (hour % 12 or 12) or any(hour % 12 == int(t.split(":")[0]) % 12 for t in times(german) if t != time):
+                    continue
+                word = words[shifted - 1]
+                wrong = rf"(?<!አሥራ )(?<!\w){word} (ሰዓት|ተኩል)|(?<!\d){shifted} ሰዓት"
+                self.assertIsNone(re.search(wrong, amharic), f"{german} → {amharic}")
+                checked += 1
+        self.assertGreater(checked, 100)
+
+    def test_every_example_sentence_has_its_translation(self):
+        """Pointing beside a sentence shows its translation (static/core/hover-sentences.json)."""
+        sentences = json.loads((STATIC / "core" / "hover-sentences.json").read_text(encoding="utf-8"))
+        examples = {de for u in self.course["units"] for s in u["sections"] for w in s["words"] for de, _ in w.get("examples", [])}
+        self.assertEqual(sorted(examples - set(sentences)), [], "run tools/course_content.py")
+        self.assertTrue(all(english for english, _, _ in sentences.values()))
 
     def test_every_exercise_explains_its_answer(self):
         """Every lesson question says why its answer is right (in course_content.py or tools/course_why/), and
@@ -105,10 +181,11 @@ class CourseContentTests(SimpleTestCase):
         self.assertEqual(by_word["der Kaffee"], "der")
         self.assertEqual(by_word["die Eltern"], "plural")
         self.assertIsNone(by_word["die Speise, das Essen"])
-        entries = json.loads((STATIC / "core" / "hover-words.json").read_text(encoding="utf-8"))
-        for entry in entries:
-            if len(entry) > 3:
-                self.assertIn(entry[3], ("der", "die", "das", "plural"), entry[0])
+        dictionary = json.loads((STATIC / "core" / "hover-words.json").read_text(encoding="utf-8"))
+        for entry in dictionary["words"]:
+            if entry[4] is not None:
+                self.assertIn(entry[4], ("der", "die", "das", "plural"), entry[0])
+                self.assertEqual(entry[1], "noun", entry[0])
 
     def test_amharic_keeps_markup_and_german(self):
         am = load_js_object("course-am.js")
@@ -171,7 +248,8 @@ class CourseContentTests(SimpleTestCase):
             self.assertTrue((STATIC / "audio" / "katja" / "normal" / f"{clip}.mp3").exists(), clip)
 
     def test_everything_pointing_reads_has_a_human_recording(self):
-        """Pointing at German never falls back to the browser's computer voice."""
+        """Short German texts and the words of longer ones have human recordings; only whole sentences
+        without one are read by the browser's German voice."""
         manifest = json.loads((STATIC / "audio" / "manifest.json").read_text(encoding="utf-8"))
         missing = [text for text in hover_texts(self.course) if text not in manifest]
         self.assertEqual(missing, [], "run tools/gen_course_audio.py")

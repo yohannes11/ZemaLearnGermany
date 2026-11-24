@@ -1,5 +1,5 @@
 # Word meanings, Units 3–5. German ||| Amharic
-# Clock times: the Ethiopian-clock reading, with the European time in brackets (9 Uhr = ሦስት ሰዓት (9:00)).
+# Clock times: the hour on the clock, never shifted to the Ethiopian clock (9 Uhr = ዘጠኝ ሰዓት (9:00)).
 
 # Unit 3
 die Nachbarin ||| ጎረቤት (ሴት)
@@ -330,7 +330,7 @@ fernsehen ||| ቴሌቪዥን ማየት
 trinken ||| መጠጣት
 das Computerspiel ||| የኮምፒውተር ጨዋታ
 schlafen ||| መተኛት
-Es ist 8 Uhr. ||| ሁለት ሰዓት ነው (8:00)።
+Es ist 8 Uhr. ||| ስምንት ሰዓት ነው (8:00)።
 sich die Zähne putzen ||| ጥርስ መቦረሽ
 sich anziehen ||| ልብስ መልበስ
 zur Arbeit fahren ||| ወደ ሥራ መሄድ (በመኪና ወይም በአውቶቡስ)
@@ -339,22 +339,22 @@ zu Besuch kommen ||| ለጉብኝት መምጣት
 schlafen gehen ||| ለመተኛት መሄድ
 Wie spät ist es? ||| ሰዓቱ ስንት ነው?
 Wie viel Uhr ist es? ||| ሰዓቱ ስንት ነው?
-Es ist neun Uhr. ||| ሦስት ሰዓት ነው (9:00)።
-Es ist ein Uhr. ||| ሰባት ሰዓት ነው (1:00)።
-Es ist halb zwei. ||| ሰባት ተኩል ነው (1:30)።
+Es ist neun Uhr. ||| ዘጠኝ ሰዓት ነው (9:00)።
+Es ist ein Uhr. ||| አንድ ሰዓት ነው (1:00)።
+Es ist halb zwei. ||| አንድ ተኩል ነው (1:30)።
 um ||| … ላይ (በሰዓት)
 von … bis ||| ከ… እስከ
 vor ||| በፊት / … ጉዳይ (ለሰዓት)
 nach ||| በኋላ / … አልፎ (ለሰዓት)
-um acht Uhr ||| ሁለት ሰዓት ላይ (8:00)
-von neun bis fünf ||| ከሦስት እስከ አሥራ አንድ ሰዓት (9–5)
-Es ist fünf nach neun. ||| ሦስት ሰዓት ከአምስት ደቂቃ ነው (9:05)።
-Es ist Viertel nach neun. ||| ሦስት ሰዓት ከሩብ ነው (9:15)።
-Es ist fünf vor halb zehn. ||| ሦስት ሰዓት ከሃያ አምስት ነው (9:25)።
-Es ist halb zehn. ||| ሦስት ተኩል ነው (9:30)።
-Es ist fünf nach halb zehn. ||| ሦስት ሰዓት ከሠላሳ አምስት ነው (9:35)።
-Es ist Viertel vor zehn. ||| ለአራት ሩብ ጉዳይ ነው (9:45)።
-Es ist fünf vor zehn. ||| ለአራት አምስት ጉዳይ ነው (9:55)።
+um acht Uhr ||| ስምንት ሰዓት ላይ (8:00)
+von neun bis fünf ||| ከዘጠኝ እስከ አምስት ሰዓት (9–5)
+Es ist fünf nach neun. ||| ዘጠኝ ሰዓት ከአምስት ደቂቃ ነው (9:05)።
+Es ist Viertel nach neun. ||| ዘጠኝ ሰዓት ከሩብ ነው (9:15)።
+Es ist fünf vor halb zehn. ||| ዘጠኝ ሰዓት ከሃያ አምስት ነው (9:25)።
+Es ist halb zehn. ||| ዘጠኝ ተኩል ነው (9:30)።
+Es ist fünf nach halb zehn. ||| ዘጠኝ ሰዓት ከሠላሳ አምስት ነው (9:35)።
+Es ist Viertel vor zehn. ||| ለአሥር ሩብ ጉዳይ ነው (9:45)።
+Es ist fünf vor zehn. ||| ለአሥር አምስት ጉዳይ ነው (9:55)።
 der Montag ||| ሰኞ
 der Dienstag ||| ማክሰኞ
 der Mittwoch ||| ረቡዕ
@@ -372,7 +372,7 @@ anziehen ||| መልበስ
 einkaufen ||| መገብየት
 aufmachen ||| መክፈት
 zumachen ||| መዝጋት
-Ich stehe um 7 Uhr auf. ||| አንድ ሰዓት ላይ እነሣለሁ (7:00)።
+Ich stehe um 7 Uhr auf. ||| ሰባት ሰዓት ላይ እነሣለሁ (7:00)።
 Was machst du gerne? ||| ምን ማድረግ ትወዳለህ/ትወጃለሽ?
 Was machst du nicht gerne? ||| ምን ማድረግ አትወድም/አትወጅም?
 Kochst du gerne? ||| ምግብ ማብሰል ትወዳለህ/ትወጃለሽ?

@@ -34,6 +34,7 @@ class Question {
     this.text,
     this.toGerman = false,
     this.answerLabel,
+    this.clocks = const [],
   });
 
   final QuestionType type;
@@ -68,6 +69,9 @@ class Question {
 
   /// What the answer under the feedback is called: "Correct form", "You heard", "The word", "Answer".
   final String? answerLabel;
+
+  /// The times the question shows, as clocks (never only its answer's).
+  final List<String> clocks;
 
   String show(String option) => label?.call(option) ?? course.t(option);
 }
@@ -114,6 +118,7 @@ Question fromItem(QuizItem item, Unit unit) {
   final hint = item.hint == null || item.hint!.isEmpty ? null : t(item.hint!);
   final why = item.why == null || item.why!.isEmpty ? null : t(item.why!);
   final label = _feedbackLabel(item);
+  final clocks = [...?(raw['clocks'] as List?)?.map((t) => '$t')];
 
   switch (item.type) {
     case 'order':
@@ -129,6 +134,7 @@ Question fromItem(QuizItem item, Unit unit) {
         lines: raw['mode'] == 'lines',
         alts: alts,
         answerLabel: label,
+        clocks: clocks,
       );
     case 'write':
       return Question(
@@ -144,6 +150,7 @@ Question fromItem(QuizItem item, Unit unit) {
         toGerman: raw['lang'] == 'de',
         alts: alts,
         answerLabel: label,
+        clocks: clocks,
       );
     case 'gap':
       return Question(
@@ -159,6 +166,7 @@ Question fromItem(QuizItem item, Unit unit) {
         before: '${raw['before'] ?? ''}',
         after: '${raw['after'] ?? ''}',
         answerLabel: label,
+        clocks: clocks,
       );
     default: // choose, listen
       return Question(
@@ -172,6 +180,7 @@ Question fromItem(QuizItem item, Unit unit) {
         why: why,
         options: shuffle(item.options),
         answerLabel: label,
+        clocks: clocks,
       );
   }
 }

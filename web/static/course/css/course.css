@@ -2818,3 +2818,16 @@ button.tree-person:hover .tree-pic { border-color: var(--brand); transform: tran
 .redo-btn { min-height: 40px; font-size: var(--fs-sm); }
 .redo-btn .icon { width: 18px; height: 18px; }
 .wv-nav #sp-restart { grid-column: 1 / -1; justify-self: center; min-width: 0; }
+
+/* Clocks for every time taught (tools/clock_pictures.py): the exact time on an analog face, the digits under it. */
+.clock-pics { --clock: 56px; display: inline-flex; flex: none; align-items: flex-start; gap: 12px; }
+.clock-pics.small { --clock: 44px; }
+.clock-pics.large { --clock: 112px; display: flex; justify-content: center; margin: 4px auto 12px; }
+.clock-pic { display: inline-grid; justify-items: center; gap: 2px; }
+.clock-pic img { display: block; width: var(--clock); height: var(--clock); user-select: none; }
+.clock-time { color: var(--muted); font-size: var(--fs-xs); font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
+.clock-pics.large .clock-time { font-size: var(--fs-sm); }
+.example.has-clock { grid-template-columns: auto minmax(0, 1fr) auto; }
+.reading > .clock-pics { margin: -4px 0 8px; }
+.conj-table td.time-cell { white-space: nowrap; }
+.conj-table td.time-cell .clock-pics { vertical-align: middle; margin-right: 10px; }

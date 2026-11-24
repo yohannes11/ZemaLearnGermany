@@ -90,6 +90,9 @@ class CourseStore extends ChangeNotifier {
 
   String meaning(Word word) => _shown(bundle?.amharic?.words[word.german] ?? word.english);
 
+  /// The clock times a German text says, for its clocks.
+  List<String> clocksFor(String german) => bundle?.clocks[german] ?? const [];
+
   /// An example sentence's meaning in the learner's language.
   String exampleMeaning((String, String) example) => _shown(bundle?.amharic?.examples[example.$1] ?? example.$2);
 

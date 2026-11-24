@@ -351,7 +351,7 @@ Achtung! ||| ትኩረት! / ጥንቃቄ!
 Bitte Vorsicht! ||| እባክዎ ይጠንቀቁ!
 Der Zug fährt von Gleis 4 ab. ||| ባቡሩ ከመድረክ 4 ይነሳል።
 Der nächste Halt ist Frankfurt Hauptbahnhof. ||| ቀጣዩ ማቆሚያ ፍራንክፈርት ዋናው ባቡር ጣቢያ ነው።
-Das Flugzeug landet um 6:40 Uhr. ||| አውሮፕላኑ ከሌሊቱ 12:40 (6:40) ላይ ያርፋል።
+Das Flugzeug landet um 6:40 Uhr. ||| አውሮፕላኑ 6:40 ላይ ያርፋል።
 Bitte steigen Sie ein. ||| እባክዎ ይሳፈሩ።
 die Endstation ||| የመጨረሻ ማቆሚያ
 
@@ -405,8 +405,8 @@ die Bank ||| ባንክ / አግዳሚ ወንበር
 die Apotheke ||| መድኃኒት ቤት
 Wann ist die Praxis geöffnet? ||| ክሊኒኩ መቼ ክፍት ነው?
 von Montag bis Freitag ||| ከሰኞ እስከ ዓርብ
-von 9 bis 17 Uhr ||| ከ3 ሰዓት እስከ 11 ሰዓት (9–17)
-ab 8 Uhr ||| ከ2 ሰዓት ጀምሮ (8:00)
+von 9 bis 17 Uhr ||| ከ9 ሰዓት እስከ 17 ሰዓት (9–17)
+ab 8 Uhr ||| ከ8 ሰዓት ጀምሮ (8:00)
 das Fest ||| በዓል / ድግስ
 feiern ||| ማክበር
 Weihnachten ||| ገና

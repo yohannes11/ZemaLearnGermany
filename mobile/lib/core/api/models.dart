@@ -223,7 +223,7 @@ class Amharic {
 }
 
 class CourseBundle {
-  const CourseBundle({required this.version, required this.lang, required this.units, this.topics = const [], this.amharic, this.texts = const {}});
+  const CourseBundle({required this.version, required this.lang, required this.units, this.topics = const [], this.amharic, this.texts = const {}, this.clocks = const {}});
 
   /// Changes whenever the course, its Amharic or an admin's published text changes.
   final String version;
@@ -237,6 +237,10 @@ class CourseBundle {
   /// Text admins changed on the site: wherever `key` would be shown, show the value instead.
   final Map<String, String> texts;
 
+  /// The clock times each German text says ("Es ist halb zehn." -> ["9:30"]), shown as clocks
+  /// (web/tools/clock_pictures.py).
+  final Map<String, List<String>> clocks;
+
   factory CourseBundle.fromJson(Map<String, dynamic> j) => CourseBundle(
         version: j['version'] as String? ?? '',
         lang: j['lang'] as String? ?? 'en',
@@ -244,6 +248,7 @@ class CourseBundle {
         topics: [for (final t in ((j['course'] as Map)['topics'] as List? ?? [])) Topic.fromJson((t as Map).cast())],
         amharic: j['amharic'] == null ? null : Amharic.fromJson((j['amharic'] as Map).cast()),
         texts: {...?(j['texts'] as Map?)?.map((k, v) => MapEntry('$k', '$v'))},
+        clocks: {...?((j['course'] as Map)['clocks'] as Map?)?.map((k, v) => MapEntry('$k', _strings(v)))},
       );
 }
 

@@ -1,0 +1,147 @@
+# Irregular word forms and the headword each belongs to, for the dictionary (tools/dictionary.py).
+# form ||| headword
+# Regular forms are worked out by tools/dictionary.py: lerne/lernst/lernt -> lernen, gemacht -> machen,
+# Minuten -> die Minute, guten -> gut, einen -> ein.
+
+## sein, haben, werden
+bin ||| sein
+bist ||| sein
+ist ||| sein
+sind ||| sein
+seid ||| sein
+sei ||| sein
+war ||| sein
+warst ||| sein
+waren ||| sein
+hast ||| haben
+hat ||| haben
+habt ||| haben
+hatte ||| haben
+hattest ||| haben
+hatten ||| haben
+wird ||| werden
+wirst ||| werden
+
+## Modal verbs
+kann ||| können
+kannst ||| können
+muss ||| müssen
+musst ||| müssen
+darf ||| dürfen
+darfst ||| dürfen
+will ||| wollen
+willst ||| wollen
+soll ||| sollen
+sollst ||| sollen
+mag ||| mögen
+magst ||| mögen
+weißt ||| wissen
+wisst ||| wissen
+
+## Verbs that change their vowel
+spricht ||| sprechen
+sprichst ||| sprechen
+isst ||| essen
+fährt ||| fahren
+fährst ||| fahren
+gibt ||| geben
+gibst ||| geben
+liest ||| lesen
+sieht ||| sehen
+siehst ||| sehen
+schläft ||| schlafen
+schläfst ||| schlafen
+trifft ||| treffen
+triffst ||| treffen
+hilft ||| helfen
+hilfst ||| helfen
+trägt ||| tragen
+trägst ||| tragen
+wäschst ||| waschen
+wäscht ||| waschen
+fällt ||| fallen
+fällst ||| fallen
+tritt ||| treten
+trittst ||| treten
+nimmt ||| nehmen
+nimmst ||| nehmen
+nimm ||| nehmen
+hält ||| halten
+hältst ||| halten
+läuft ||| laufen
+vergiss ||| vergessen
+vergisst ||| vergessen
+gefällt ||| gefallen
+tut ||| tun
+tust ||| tun
+
+## Past participles that don't follow the pattern
+geblieben ||| bleiben
+geflogen ||| fliegen
+gefunden ||| finden
+gegangen ||| gehen
+gegessen ||| essen
+geholfen ||| helfen
+gelaufen ||| laufen
+genommen ||| nehmen
+geschrieben ||| schreiben
+gesprochen ||| sprechen
+gestorben ||| sterben
+getroffen ||| treffen
+getrunken ||| trinken
+gewesen ||| sein
+gehabt ||| haben
+gebracht ||| bringen
+gedacht ||| denken
+
+## Articles and pronouns
+den ||| der
+dem ||| der
+des ||| der
+mir ||| ich
+mich ||| ich
+dir ||| du
+dich ||| du
+deinen ||| dein
+deinem ||| dein
+deiner ||| dein
+deine ||| dein
+ihren ||| ihre
+ihrer ||| ihre
+ihrem ||| ihre
+unsere ||| unser
+unseren ||| unser
+unserem ||| unser
+jeden ||| jeder, jede, jedes
+jedem ||| jeder, jede, jedes
+welchem ||| welcher, welche, welches
+welchen ||| welcher, welche, welches
+
+## Other forms
+besten ||| gut
+deutsche ||| Deutsch
+Eier ||| das Ei
+Doro ||| das Doro Wot
+Emiraten ||| die Vereinigten Arabischen Emirate
+Niederlanden ||| die Niederlande
+Simien-Bergen ||| die Simien-Berge
+Vereinigten ||| die Vereinigten Staaten
+Staaten ||| die Vereinigten Staaten
+
+## Regular-looking forms of the irregular verbs above
+habe ||| haben
+esse ||| essen
+esst ||| essen
+lese ||| lesen
+lest ||| lesen
+vergesse ||| vergessen
+werde ||| werden
+werdet ||| werden
+könnt ||| können
+müsst ||| müssen
+dürft ||| dürfen
+wollt ||| wollen
+sollt ||| sollen
+mögt ||| mögen
+möge ||| mögen
+tue ||| tun

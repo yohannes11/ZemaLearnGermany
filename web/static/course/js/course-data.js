@@ -22288,7 +22288,7 @@ window.COURSE = {
        "german": "Es ist 8 Uhr.",
        "english": "It is 8 o'clock.",
        "pic": [
-        "1f557"
+        "clock-0800"
        ],
        "examples": [
         [
@@ -22453,7 +22453,7 @@ window.COURSE = {
        "german": "Es ist neun Uhr.",
        "english": "It is nine o'clock.",
        "pic": [
-        "1f558"
+        "clock-0900"
        ],
        "examples": [
         [
@@ -22471,7 +22471,7 @@ window.COURSE = {
        "german": "Es ist ein Uhr.",
        "english": "It is one o'clock.",
        "pic": [
-        "1f550"
+        "clock-0100"
        ],
        "examples": [
         [
@@ -22489,7 +22489,7 @@ window.COURSE = {
        "german": "Es ist halb zwei.",
        "english": "It is half past one.",
        "pic": [
-        "1f55c"
+        "clock-0130"
        ],
        "examples": [
         [
@@ -22585,7 +22585,7 @@ window.COURSE = {
        "german": "um acht Uhr",
        "english": "at eight o'clock",
        "pic": [
-        "1f557"
+        "clock-0800"
        ],
        "examples": [
         [
@@ -22602,6 +22602,10 @@ window.COURSE = {
       {
        "german": "von neun bis fünf",
        "english": "from nine until five",
+       "pic": [
+        "clock-0900",
+        "clock-0500"
+       ],
        "examples": [
         [
          "Ich arbeite von neun bis fünf.",
@@ -22623,6 +22627,9 @@ window.COURSE = {
       {
        "german": "Es ist fünf nach neun.",
        "english": "It is five past nine. / 9:05",
+       "pic": [
+        "clock-0905"
+       ],
        "examples": [
         [
          "Es ist fünf nach neun. Du bist spät!",
@@ -22638,6 +22645,9 @@ window.COURSE = {
       {
        "german": "Es ist Viertel nach neun.",
        "english": "It is quarter past nine. / 9:15",
+       "pic": [
+        "clock-0915"
+       ],
        "examples": [
         [
          "Es ist Viertel nach neun. Der Kurs beginnt.",
@@ -22653,6 +22663,9 @@ window.COURSE = {
       {
        "german": "Es ist fünf vor halb zehn.",
        "english": "It is 9:25 (five before half ten).",
+       "pic": [
+        "clock-0925"
+       ],
        "examples": [
         [
          "Es ist fünf vor halb zehn. Wir haben noch fünf Minuten.",
@@ -22669,7 +22682,7 @@ window.COURSE = {
        "german": "Es ist halb zehn.",
        "english": "It is half past nine. / 9:30",
        "pic": [
-        "1f564"
+        "clock-0930"
        ],
        "examples": [
         [
@@ -22686,6 +22699,9 @@ window.COURSE = {
       {
        "german": "Es ist fünf nach halb zehn.",
        "english": "It is 9:35 (five after half ten).",
+       "pic": [
+        "clock-0935"
+       ],
        "examples": [
         [
          "Es ist fünf nach halb zehn. Der Bus kommt gleich.",
@@ -22701,6 +22717,9 @@ window.COURSE = {
       {
        "german": "Es ist Viertel vor zehn.",
        "english": "It is quarter to ten. / 9:45",
+       "pic": [
+        "clock-0945"
+       ],
        "examples": [
         [
          "Es ist Viertel vor zehn. Schnell!",
@@ -22716,6 +22735,9 @@ window.COURSE = {
       {
        "german": "Es ist fünf vor zehn.",
        "english": "It is five to ten. / 9:55",
+       "pic": [
+        "clock-0955"
+       ],
        "examples": [
         [
          "Es ist fünf vor zehn. Der Film beginnt um zehn.",
@@ -23103,7 +23125,7 @@ window.COURSE = {
        "german": "Ich stehe um 7 Uhr auf.",
        "english": "I get up at 7 o'clock.",
        "pic": [
-        "23f0"
+        "clock-0700"
        ],
        "examples": [
         [
@@ -24958,7 +24980,10 @@ window.COURSE = {
         ],
         "hint": "half past nine",
         "say": "9:30 → Es ist halb zehn.",
-        "why": "halb + the NEXT hour."
+        "why": "halb + the NEXT hour.",
+        "clocks": [
+         "9:30"
+        ]
        },
        {
         "type": "gap",
@@ -24972,7 +24997,10 @@ window.COURSE = {
         ],
         "hint": "quarter past nine",
         "say": "9:15 → Es ist Viertel nach neun.",
-        "why": "Viertel is a quarter of an hour; nach = past: a quarter past nine."
+        "why": "Viertel is a quarter of an hour; nach = past: a quarter past nine.",
+        "clocks": [
+         "9:15"
+        ]
        },
        {
         "type": "gap",
@@ -24986,7 +25014,10 @@ window.COURSE = {
         ],
         "hint": "quarter to ten",
         "say": "9:45 → Es ist Viertel vor zehn.",
-        "why": "vor = to: a quarter to ten."
+        "why": "vor = to: a quarter to ten.",
+        "clocks": [
+         "9:45"
+        ]
        },
        {
         "type": "gap",
@@ -25000,7 +25031,10 @@ window.COURSE = {
         ],
         "hint": "five past nine",
         "say": "9:05 → Es ist fünf nach neun.",
-        "why": "Five minutes past nine: fünf nach neun."
+        "why": "Five minutes past nine: fünf nach neun.",
+        "clocks": [
+         "9:05"
+        ]
        },
        {
         "type": "gap",
@@ -25014,7 +25048,10 @@ window.COURSE = {
         ],
         "hint": "five to ten",
         "say": "9:55 → Es ist fünf vor zehn.",
-        "why": "Five minutes to ten: fünf vor zehn."
+        "why": "Five minutes to ten: fünf vor zehn.",
+        "clocks": [
+         "9:55"
+        ]
        },
        {
         "type": "gap",
@@ -25028,7 +25065,10 @@ window.COURSE = {
         ],
         "hint": "twenty-five past nine",
         "say": "9:25 → Es ist fünf vor halb zehn.",
-        "why": "9:30 is halb zehn, and 9:25 is five minutes before it."
+        "why": "9:30 is halb zehn, and 9:25 is five minutes before it.",
+        "clocks": [
+         "9:25"
+        ]
        },
        {
         "type": "gap",
@@ -25042,7 +25082,10 @@ window.COURSE = {
         ],
         "hint": "half past one",
         "say": "1:30 → Es ist halb zwei.",
-        "why": "halb + the NEXT hour: halb zwei."
+        "why": "halb + the NEXT hour: halb zwei.",
+        "clocks": [
+         "1:30"
+        ]
        },
        {
         "type": "gap",
@@ -25056,7 +25099,10 @@ window.COURSE = {
         ],
         "hint": "twenty-five to ten",
         "say": "9:35 → Es ist fünf nach halb zehn.",
-        "why": "9:30 is halb zehn, and 9:35 is five minutes after it."
+        "why": "9:30 is halb zehn, and 9:35 is five minutes after it.",
+        "clocks": [
+         "9:35"
+        ]
        },
        {
         "type": "gap",
@@ -25070,7 +25116,10 @@ window.COURSE = {
         ],
         "hint": "seven o'clock",
         "say": "7:00 → Es ist sieben Uhr.",
-        "why": "A full hour: the number, then Uhr."
+        "why": "A full hour: the number, then Uhr.",
+        "clocks": [
+         "7:00"
+        ]
        }
       ]
      }
@@ -25134,7 +25183,10 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Um 8 Uhr geht er zur Arbeit.",
-        "why": "The verb comes second: after Um 8 Uhr comes geht, then er."
+        "why": "The verb comes second: after Um 8 Uhr comes geht, then er.",
+        "clocks": [
+         "8:00"
+        ]
        },
        {
         "type": "choose",
@@ -25199,7 +25251,11 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Ich arbeite von 8 bis 2 Uhr.",
-        "why": "The verb comes second: Ich, then arbeite."
+        "why": "The verb comes second: Ich, then arbeite.",
+        "clocks": [
+         "8:00",
+         "2:00"
+        ]
        },
        {
         "type": "choose",
@@ -25212,7 +25268,10 @@ window.COURSE = {
         ],
         "hint": "",
         "say": "Um 12 Uhr essen wir Mittagessen.",
-        "why": "The verb comes second: after Um 12 Uhr comes essen, then wir."
+        "why": "The verb comes second: after Um 12 Uhr comes essen, then wir.",
+        "clocks": [
+         "12:00"
+        ]
        },
        {
         "type": "choose",
@@ -25336,7 +25395,10 @@ window.COURSE = {
         ],
         "hint": "I get up at 7.",
         "say": "Ich stehe um 7 Uhr auf.",
-        "why": "stehe in second place, and the prefix auf goes to the end."
+        "why": "stehe in second place, and the prefix auf goes to the end.",
+        "clocks": [
+         "7:00"
+        ]
        },
        {
         "type": "choose",
@@ -25548,7 +25610,10 @@ window.COURSE = {
         ],
         "hint": "He sleeps until 9.",
         "say": "Er schläft bis 9 Uhr.",
-        "why": "er: a → ä, schläft."
+        "why": "er: a → ä, schläft.",
+        "clocks": [
+         "9:00"
+        ]
        },
        {
         "type": "gap",
@@ -25771,7 +25836,10 @@ window.COURSE = {
         ],
         "hint": "The course starts at nine.",
         "say": "Der Kurs beginnt um neun Uhr.",
-        "why": "Clock times take um: um neun Uhr."
+        "why": "Clock times take um: um neun Uhr.",
+        "clocks": [
+         "9:00"
+        ]
        },
        {
         "type": "gap",
@@ -25813,7 +25881,10 @@ window.COURSE = {
         ],
         "hint": "We're meeting at half past three.",
         "say": "Wir treffen uns um halb vier.",
-        "why": "Clock times take um: um halb vier."
+        "why": "Clock times take um: um halb vier.",
+        "clocks": [
+         "3:30"
+        ]
        },
        {
         "type": "gap",
@@ -29858,7 +29929,10 @@ window.COURSE = {
         ],
         "hint": "We're meeting at eight.",
         "say": "Wir treffen uns um acht.",
-        "why": "wir has no vowel change: treffen."
+        "why": "wir has no vowel change: treffen.",
+        "clocks": [
+         "8:00"
+        ]
        },
        {
         "type": "gap",
@@ -34706,7 +34780,10 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "falsch",
-        "why": "Der Termin ist um neun Uhr."
+        "why": "Der Termin ist um neun Uhr.",
+        "clocks": [
+         "10:00"
+        ]
        },
        {
         "type": "choose",
@@ -36001,7 +36078,8 @@ window.COURSE = {
        "german": "Das Flugzeug landet um 6:40 Uhr.",
        "english": "The plane lands at 6:40.",
        "pic": [
-        "1f6ec"
+        "1f6ec",
+        "clock-0640"
        ],
        "examples": [
         [
@@ -36335,7 +36413,10 @@ window.COURSE = {
         ],
         "hint": "My flight leaves at 10 pm.",
         "say": "Mein Flug fliegt um 22 Uhr ab.",
-        "why": "abfliegen splits: fliegt in second place, ab already at the end."
+        "why": "abfliegen splits: fliegt in second place, ab already at the end.",
+        "clocks": [
+         "22:00"
+        ]
        },
        {
         "type": "write",
@@ -36743,7 +36824,10 @@ window.COURSE = {
         "hint": "Richtig (true) or falsch (false)? Look at the text.",
         "say": "",
         "show": "richtig",
-        "why": "Lena: Wann kommst du in Frankfurt an? Dawit: Um 5:40 Uhr."
+        "why": "Lena: Wann kommst du in Frankfurt an? Dawit: Um 5:40 Uhr.",
+        "clocks": [
+         "5:40"
+        ]
        },
        {
         "type": "choose",
@@ -37737,6 +37821,10 @@ window.COURSE = {
       {
        "german": "von 9 bis 17 Uhr",
        "english": "from 9 am to 5 pm",
+       "pic": [
+        "clock-0900",
+        "clock-1700"
+       ],
        "examples": [
         [
          "Die Praxis ist von 9 bis 17 Uhr geöffnet.",
@@ -37752,6 +37840,9 @@ window.COURSE = {
       {
        "german": "ab 8 Uhr",
        "english": "from 8 o'clock",
+       "pic": [
+        "clock-0800"
+       ],
        "examples": [
         [
          "Der Laden ist ab 8 Uhr geöffnet.",
@@ -39049,7 +39140,10 @@ window.COURSE = {
         ],
         "hint": "The bank is open from 9 to 4.",
         "say": "Die Bank ist von 9 bis 16 Uhr geöffnet.",
-        "why": "From … to … is von … bis …"
+        "why": "From … to … is von … bis …",
+        "clocks": [
+         "16:00"
+        ]
        },
        {
         "type": "gap",
@@ -39063,7 +39157,10 @@ window.COURSE = {
         ],
         "hint": "From 8 pm the pharmacy is closed.",
         "say": "Ab 20 Uhr ist die Apotheke geschlossen.",
-        "why": "ab = from a time on (and after)."
+        "why": "ab = from a time on (and after).",
+        "clocks": [
+         "20:00"
+        ]
        },
        {
         "type": "gap",
@@ -41430,5 +41527,454 @@ window.COURSE = {
     "die Tasche"
    ]
   }
- ]
+ ],
+ "clocks": {
+  "Der Zug kommt um acht Uhr.": [
+   "8:00"
+  ],
+  "Der Zug kommt um sechs.": [
+   "6:00"
+  ],
+  "Es ist acht Uhr.": [
+   "8:00"
+  ],
+  "Die Schule beginnt um neun.": [
+   "9:00"
+  ],
+  "Es ist elf Uhr.": [
+   "11:00"
+  ],
+  "Es ist zwölf Uhr.": [
+   "12:00"
+  ],
+  "Es ist fünfzehn Uhr.": [
+   "15:00"
+  ],
+  "Es ist achtzehn Uhr.": [
+   "18:00"
+  ],
+  "Der Zug fährt um neunzehn Uhr.": [
+   "19:00"
+  ],
+  "Der Laden öffnet um acht Uhr.": [
+   "8:00"
+  ],
+  "Wir essen um sieben Uhr.": [
+   "7:00"
+  ],
+  "Die Gäste kommen um acht.": [
+   "8:00"
+  ],
+  "Wir essen um acht. In Ordnung?": [
+   "8:00"
+  ],
+  "Ich esse um sieben Uhr Frühstück.": [
+   "7:00"
+  ],
+  "Das Abendessen ist um acht.": [
+   "8:00"
+  ],
+  "Es ist zehn Uhr.": [
+   "10:00"
+  ],
+  "Die Arbeit beginnt um acht.": [
+   "8:00"
+  ],
+  "Das Mittagessen ist um zwölf.": [
+   "12:00"
+  ],
+  "Der Besuch kommt um sechs.": [
+   "6:00"
+  ],
+  "Es ist 8 Uhr.": [
+   "8:00"
+  ],
+  "Es ist 8 Uhr. Ich gehe zur Arbeit.": [
+   "8:00"
+  ],
+  "Schnell, es ist 8 Uhr!": [
+   "8:00"
+  ],
+  "Ich komme um fünf nach Hause.": [
+   "5:00"
+  ],
+  "Ich gehe um zehn schlafen.": [
+   "10:00"
+  ],
+  "Wie spät ist es? – Es ist acht Uhr.": [
+   "8:00"
+  ],
+  "Wie viel Uhr ist es? – Halb zwei.": [
+   "1:30"
+  ],
+  "Es ist neun Uhr.": [
+   "9:00"
+  ],
+  "Es ist neun Uhr. Der Kurs beginnt.": [
+   "9:00"
+  ],
+  "Wie spät ist es? – Es ist neun Uhr.": [
+   "9:00"
+  ],
+  "Es ist ein Uhr.": [
+   "1:00"
+  ],
+  "Es ist ein Uhr. Zeit für das Mittagessen!": [
+   "1:00"
+  ],
+  "Wie viel Uhr ist es? – Es ist ein Uhr.": [
+   "1:00"
+  ],
+  "Es ist halb zwei.": [
+   "1:30"
+  ],
+  "Es ist halb zwei. Wir haben noch Zeit.": [
+   "1:30"
+  ],
+  "Wie spät ist es? – Es ist halb zwei.": [
+   "1:30"
+  ],
+  "Der Kurs beginnt um neun.": [
+   "9:00"
+  ],
+  "Wir essen um sieben.": [
+   "7:00"
+  ],
+  "Der Kurs ist von neun bis zwölf.": [
+   "9:00",
+   "12:00"
+  ],
+  "Es ist fünf vor acht.": [
+   "7:55"
+  ],
+  "Es ist zehn nach sieben.": [
+   "7:10"
+  ],
+  "um acht Uhr": [
+   "8:00"
+  ],
+  "Ich stehe um acht Uhr auf.": [
+   "8:00"
+  ],
+  "Der Zug fährt um acht Uhr.": [
+   "8:00"
+  ],
+  "von neun bis fünf": [
+   "9:00",
+   "5:00"
+  ],
+  "Ich arbeite von neun bis fünf.": [
+   "9:00",
+   "5:00"
+  ],
+  "Das Büro ist von neun bis fünf offen.": [
+   "9:00",
+   "5:00"
+  ],
+  "Es ist fünf nach neun.": [
+   "9:05"
+  ],
+  "Es ist fünf nach neun. Du bist spät!": [
+   "9:05"
+  ],
+  "Wie spät ist es? – Es ist fünf nach neun.": [
+   "9:05"
+  ],
+  "Es ist Viertel nach neun.": [
+   "9:15"
+  ],
+  "Es ist Viertel nach neun. Der Kurs beginnt.": [
+   "9:15"
+  ],
+  "Wie spät ist es? – Es ist Viertel nach neun.": [
+   "9:15"
+  ],
+  "Es ist fünf vor halb zehn.": [
+   "9:25"
+  ],
+  "Es ist fünf vor halb zehn. Wir haben noch fünf Minuten.": [
+   "9:25"
+  ],
+  "Wie spät ist es? – Es ist fünf vor halb zehn.": [
+   "9:25"
+  ],
+  "Es ist halb zehn.": [
+   "9:30"
+  ],
+  "Es ist halb zehn. Wir machen eine Pause.": [
+   "9:30"
+  ],
+  "Wie spät ist es? – Es ist halb zehn.": [
+   "9:30"
+  ],
+  "Es ist fünf nach halb zehn.": [
+   "9:35"
+  ],
+  "Es ist fünf nach halb zehn. Der Bus kommt gleich.": [
+   "9:35"
+  ],
+  "Wie spät ist es? – Es ist fünf nach halb zehn.": [
+   "9:35"
+  ],
+  "Es ist Viertel vor zehn.": [
+   "9:45"
+  ],
+  "Es ist Viertel vor zehn. Schnell!": [
+   "9:45"
+  ],
+  "Wie spät ist es? – Es ist Viertel vor zehn.": [
+   "9:45"
+  ],
+  "Es ist fünf vor zehn.": [
+   "9:55"
+  ],
+  "Es ist fünf vor zehn. Der Film beginnt um zehn.": [
+   "9:55",
+   "10:00"
+  ],
+  "Wie spät ist es? – Es ist fünf vor zehn.": [
+   "9:55"
+  ],
+  "Der Laden macht um acht auf.": [
+   "8:00"
+  ],
+  "Der Supermarkt macht um acht zu.": [
+   "8:00"
+  ],
+  "Ich stehe um 7 Uhr auf.": [
+   "7:00"
+  ],
+  "Ich stehe um 7 Uhr auf und trinke Kaffee.": [
+   "7:00"
+  ],
+  "Wann stehst du auf? – Ich stehe um 7 Uhr auf.": [
+   "7:00"
+  ],
+  "Der Kurs beginnt um neun. Sei pünktlich!": [
+   "9:00"
+  ],
+  "Das Theater beginnt um acht.": [
+   "8:00"
+  ],
+  "Das Café macht um acht auf.": [
+   "8:00"
+  ],
+  "Die Bar macht um zehn auf.": [
+   "10:00"
+  ],
+  "Es ist drei Uhr. Lust auf Kaffee?": [
+   "3:00"
+  ],
+  "Also um acht im Café. Bis dann!": [
+   "8:00"
+  ],
+  "9:00": [
+   "9:00"
+  ],
+  "neun Uhr": [
+   "9:00"
+  ],
+  "9:05": [
+   "9:05"
+  ],
+  "fünf nach neun": [
+   "9:05"
+  ],
+  "neun Uhr fünf": [
+   "9:05"
+  ],
+  "9:15": [
+   "9:15"
+  ],
+  "Viertel nach neun": [
+   "9:15"
+  ],
+  "neun Uhr fünfzehn": [
+   "9:15"
+  ],
+  "9:25": [
+   "9:25"
+  ],
+  "fünf vor halb zehn": [
+   "9:25"
+  ],
+  "neun Uhr fünfundzwanzig": [
+   "9:25"
+  ],
+  "9:30": [
+   "9:30"
+  ],
+  "halb zehn": [
+   "9:30"
+  ],
+  "neun Uhr dreißig": [
+   "9:30"
+  ],
+  "9:35": [
+   "9:35"
+  ],
+  "fünf nach halb zehn": [
+   "9:35"
+  ],
+  "neun Uhr fünfunddreißig": [
+   "9:35"
+  ],
+  "9:45": [
+   "9:45"
+  ],
+  "Viertel vor zehn": [
+   "9:45"
+  ],
+  "neun Uhr fünfundvierzig": [
+   "9:45"
+  ],
+  "9:55": [
+   "9:55"
+  ],
+  "fünf vor zehn": [
+   "9:55"
+  ],
+  "neun Uhr fünfundfünfzig": [
+   "9:55"
+  ],
+  "Ich arbeite von 8 bis 2 Uhr.": [
+   "8:00",
+   "2:00"
+  ],
+  "Um 8 Uhr geht er zur Arbeit.": [
+   "8:00"
+  ],
+  "Ich stehe jeden Tag um 8 Uhr auf.": [
+   "8:00"
+  ],
+  "um 9 Uhr, um Viertel nach drei": [
+   "9:00",
+   "3:15"
+  ],
+  "Der Film beginnt um acht Uhr.": [
+   "8:00"
+  ],
+  "Am Montag um zehn habe ich einen Termin.": [
+   "10:00"
+  ],
+  "Selam: Am Abend ist das Museum zu. Lust auf Kino? Der Film beginnt um Viertel nach acht.": [
+   "8:15"
+  ],
+  "Dawit: Gute Idee! Ich hole dich um halb acht ab. Bis dann!": [
+   "7:30"
+  ],
+  "Der Kurs beginnt um neun. Stimmt das?": [
+   "9:00"
+  ],
+  "Die Zahnärztin arbeitet bis fünf Uhr.": [
+   "5:00"
+  ],
+  "Wir müssen um acht Uhr da sein.": [
+   "8:00"
+  ],
+  "Die Kinder müssen um neun Uhr schlafen.": [
+   "9:00"
+  ],
+  "Die Kinder dürfen bis zehn Uhr aufbleiben.": [
+   "10:00"
+  ],
+  "Wir sollen um acht Uhr da sein.": [
+   "8:00"
+  ],
+  "Ich habe einen Termin um zehn Uhr.": [
+   "10:00"
+  ],
+  "Um neun Uhr hat sie einen Termin mit Jan Weber aus Deutschland. Aber wo ist der Kalender? Und ihr Passwort ist falsch!": [
+   "9:00"
+  ],
+  "Der Bus kommt um acht Uhr.": [
+   "8:00"
+  ],
+  "Mein Flug geht um zehn Uhr.": [
+   "10:00"
+  ],
+  "Die Abfahrt ist um neun Uhr.": [
+   "9:00"
+  ],
+  "Die Ankunft ist um sieben Uhr.": [
+   "7:00"
+  ],
+  "Der Zug fährt um acht Uhr ab.": [
+   "8:00"
+  ],
+  "Der Zug kommt um zehn Uhr an.": [
+   "10:00"
+  ],
+  "Das Flugzeug fliegt um neun Uhr ab.": [
+   "9:00"
+  ],
+  "Wann kommst du an? – Um acht Uhr.": [
+   "8:00"
+  ],
+  "Ich komme um acht Uhr an. Kannst du mich abholen?": [
+   "8:00"
+  ],
+  "Wir treffen uns um acht Uhr. – Alles klar!": [
+   "8:00"
+  ],
+  "Das Flugzeug landet um 6:40 Uhr.": [
+   "6:40"
+  ],
+  "Das Flugzeug landet um 6:40 Uhr in Addis Abeba.": [
+   "6:40"
+  ],
+  "Das Flugzeug landet um 6:40 Uhr. Kannst du mich abholen?": [
+   "6:40"
+  ],
+  "Der Zug fährt um 7:15 Uhr ab.": [
+   "7:15"
+  ],
+  "Dawit: Hallo Lena! Mein Flug startet heute um 22:30 Uhr in Addis Abeba. Ich fliege über Frankfurt.": [
+   "22:30"
+  ],
+  "Dawit: Um 5:40 Uhr. Dann steige ich in den Zug nach Leipzig um. Ich komme um 9:15 Uhr am Hauptbahnhof an. Kannst du mich abholen?": [
+   "5:40",
+   "9:15"
+  ],
+  "Ich arbeite bis fünf, danach koche ich.": [
+   "5:00"
+  ],
+  "Ich habe gearbeitet, bis acht Uhr.": [
+   "8:00"
+  ],
+  "Ich bin spät angekommen, um elf Uhr.": [
+   "11:00"
+  ],
+  "Die Öffnungszeiten sind von 9 bis 17 Uhr.": [
+   "9:00",
+   "17:00"
+  ],
+  "Der Supermarkt ist bis 20 Uhr geöffnet.": [
+   "20:00"
+  ],
+  "von 9 bis 17 Uhr": [
+   "9:00",
+   "17:00"
+  ],
+  "Die Praxis ist von 9 bis 17 Uhr geöffnet.": [
+   "9:00",
+   "17:00"
+  ],
+  "Ich arbeite von 9 bis 17 Uhr.": [
+   "9:00",
+   "17:00"
+  ],
+  "ab 8 Uhr": [
+   "8:00"
+  ],
+  "Der Laden ist ab 8 Uhr geöffnet.": [
+   "8:00"
+  ],
+  "Ich bin ab 8 Uhr im Büro.": [
+   "8:00"
+  ],
+  "Ab 18 Uhr ist die Bank geschlossen.": [
+   "18:00"
+  ]
+ }
 };

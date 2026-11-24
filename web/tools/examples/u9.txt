@@ -31,7 +31,7 @@ Dann fahren wir nach Hause. ||| Then we go home. ||| ከዚያ ወደ ቤት እ
 Und dann? ||| And then? ||| ከዚያስ?
 ## danach
 Danach gehen wir ins Kino. ||| After that we go to the cinema. ||| ከዚያ በኋላ ሲኒማ ቤት እንሄዳለን።
-Ich arbeite bis fünf, danach koche ich. ||| I work until five, after that I cook. ||| እስከ አሥራ አንድ ሰዓት እሠራለሁ፤ ከዚያ በኋላ ምግብ አበስላለሁ።
+Ich arbeite bis fünf, danach koche ich. ||| I work until five, after that I cook. ||| እስከ አምስት ሰዓት እሠራለሁ፤ ከዚያ በኋላ ምግብ አበስላለሁ።
 Was machst du danach? ||| What are you doing after that? ||| ከዚያ በኋላ ምን ታደርጋለህ?
 ## später
 Ich rufe dich später an. ||| I'll call you later. ||| በኋላ እደውልልሃለሁ።
@@ -43,7 +43,7 @@ Wir essen später. ||| We'll eat later. ||| በኋላ እንበላለን።
 Was hast du gestern gemacht? – Ich habe gearbeitet. ||| What did you do yesterday? – I worked. ||| ትናንት ምን አደረግህ? – ሠርቻለሁ።
 Hallo Liya! Was hast du gestern gemacht? ||| Hello Liya! What did you do yesterday? ||| ሰላም ሊያ! ትናንት ምን አደረግሽ?
 ## Ich habe gearbeitet.
-Ich habe gearbeitet, bis acht Uhr. ||| I worked until eight o'clock. ||| እስከ ሁለት ሰዓት ሠርቻለሁ።
+Ich habe gearbeitet, bis acht Uhr. ||| I worked until eight o'clock. ||| እስከ ስምንት ሰዓት ሠርቻለሁ።
 Am Samstag? Ich habe gearbeitet. ||| On Saturday? I worked. ||| ቅዳሜ? ሠርቻለሁ።
 ## Ich habe eingekauft.
 Ich habe eingekauft: Brot, Milch und Eier. ||| I went shopping: bread, milk and eggs. ||| ገብይቻለሁ፦ ዳቦ፣ ወተትና እንቁላል።
@@ -88,7 +88,7 @@ Letztes Jahr bin ich nach Rom geflogen. ||| Last year I flew to Rome. ||| ባለ
 Ich bin nach Rom geflogen und habe viel fotografiert. ||| I flew to Rome and took lots of photos. ||| ወደ ሮም በርሬ ብዙ ፎቶ አነሣሁ።
 ## Ich bin spät angekommen.
 Der Zug hatte Verspätung. Ich bin spät angekommen. ||| The train was delayed. I arrived late. ||| ባቡሩ ዘግይቶ ነበር። ዘግይቼ ደረስኩ።
-Ich bin spät angekommen, um elf Uhr. ||| I arrived late, at eleven o'clock. ||| ዘግይቼ ደረስኩ፤ አምስት ሰዓት ላይ።
+Ich bin spät angekommen, um elf Uhr. ||| I arrived late, at eleven o'clock. ||| ዘግይቼ ደረስኩ፤ አሥራ አንድ ሰዓት ላይ።
 ## Ich bin zu Hause geblieben.
 Es hat geregnet. Ich bin zu Hause geblieben. ||| It rained. I stayed at home. ||| ዘነበ። ቤት ቆይቻለሁ።
 Ich war krank und bin zu Hause geblieben. ||| I was ill and stayed at home. ||| ታምሜ ስለነበር ቤት ቆየሁ።
@@ -141,9 +141,9 @@ Wir hatten viel Spaß am Meer. ||| We had a lot of fun at the sea. ||| ባሕሩ
 ## die Öffnungszeiten
 Die Öffnungszeiten stehen an der Tür. ||| The opening hours are on the door. ||| የሥራ ሰዓታቱ በሩ ላይ ተጽፈዋል።
 Wie sind die Öffnungszeiten? ||| What are the opening hours? ||| የሥራ ሰዓታቱ ምንድን ናቸው?
-Die Öffnungszeiten sind von 9 bis 17 Uhr. ||| The opening hours are from 9 am to 5 pm. ||| የሥራ ሰዓታቱ ከ3 ሰዓት እስከ 11 ሰዓት ናቸው።
+Die Öffnungszeiten sind von 9 bis 17 Uhr. ||| The opening hours are from 9 am to 5 pm. ||| የሥራ ሰዓታቱ ከ9 ሰዓት እስከ 17 ሰዓት ናቸው።
 ## geöffnet
-Der Supermarkt ist bis 20 Uhr geöffnet. ||| The supermarket is open until 8 pm. ||| ሱፐርማርኬቱ እስከ ምሽቱ 2 ሰዓት ክፍት ነው።
+Der Supermarkt ist bis 20 Uhr geöffnet. ||| The supermarket is open until 8 pm. ||| ሱፐርማርኬቱ እስከ 20 ሰዓት ክፍት ነው።
 Ist die Bank heute geöffnet? ||| Is the bank open today? ||| ባንኩ ዛሬ ክፍት ነው?
 Das Museum ist am Sonntag geöffnet. ||| The museum is open on Sunday. ||| ሙዚየሙ እሑድ ክፍት ነው።
 ## geschlossen
@@ -169,11 +169,11 @@ Wann ist die Praxis geöffnet? – Von Montag bis Freitag. ||| When is the surge
 Ich arbeite von Montag bis Freitag. ||| I work from Monday to Friday. ||| ከሰኞ እስከ ዓርብ እሠራለሁ።
 Die Bank ist von Montag bis Freitag geöffnet. ||| The bank is open from Monday to Friday. ||| ባንኩ ከሰኞ እስከ ዓርብ ክፍት ነው።
 ## von 9 bis 17 Uhr
-Die Praxis ist von 9 bis 17 Uhr geöffnet. ||| The surgery is open from 9 am to 5 pm. ||| ክሊኒኩ ከ3 ሰዓት እስከ 11 ሰዓት ክፍት ነው።
-Ich arbeite von 9 bis 17 Uhr. ||| I work from 9 am to 5 pm. ||| ከ3 ሰዓት እስከ 11 ሰዓት እሠራለሁ።
+Die Praxis ist von 9 bis 17 Uhr geöffnet. ||| The surgery is open from 9 am to 5 pm. ||| ክሊኒኩ ከ9 ሰዓት እስከ 17 ሰዓት ክፍት ነው።
+Ich arbeite von 9 bis 17 Uhr. ||| I work from 9 am to 5 pm. ||| ከ9 ሰዓት እስከ 17 ሰዓት እሠራለሁ።
 ## ab 8 Uhr
-Der Laden ist ab 8 Uhr geöffnet. ||| The shop is open from 8 o'clock. ||| ሱቁ ከ2 ሰዓት ጀምሮ ክፍት ነው።
-Ich bin ab 8 Uhr im Büro. ||| I am in the office from 8 o'clock. ||| ከ2 ሰዓት ጀምሮ ቢሮ ነኝ።
+Der Laden ist ab 8 Uhr geöffnet. ||| The shop is open from 8 o'clock. ||| ሱቁ ከ8 ሰዓት ጀምሮ ክፍት ነው።
+Ich bin ab 8 Uhr im Büro. ||| I am in the office from 8 o'clock. ||| ከ8 ሰዓት ጀምሮ ቢሮ ነኝ።
 
 # 9.6 Festivals & trips
 ## das Fest

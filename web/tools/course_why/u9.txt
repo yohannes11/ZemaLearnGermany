@@ -55,7 +55,7 @@ Sie fliegt [in die] Schweiz. ||| A country with an article takes in: die Schweiz
 Ich fliege [nach] Äthiopien. ||| Countries without an article take nach: nach Äthiopien. ||| መስተኣምር የሌለው አገር nach ይወስዳል፦ nach Äthiopien።
 [Im] Winter ist es in Berlin kalt. ||| Seasons take im: im Winter. ||| ወቅቶች im ይወስዳሉ፦ im Winter።
 Ich lerne [seit] drei Monaten Deutsch. ||| seit = for, when it started in the past and is still going. ||| seit = ለ…፣ ባለፈው ተጀምሮ አሁንም ሲቀጥል።
-The shop is open from 8 am to 8 pm: => von 8 bis 20 Uhr ||| From … to … is von … bis …, and 8 pm is 20 Uhr. ||| ከ… እስከ … von … bis … ነው፤ 8 pm (በኢትዮጵያ አቆጣጠር ምሽት 2 ሰዓት) ደግሞ 20 Uhr ነው።
+The shop is open from 8 am to 8 pm: => von 8 bis 20 Uhr ||| From … to … is von … bis …, and 8 pm is 20 Uhr. ||| ከ… እስከ … von … bis … ነው፤ 8 pm ደግሞ 20 Uhr ነው።
 Build the sentence. => Die Praxis ist am Montag geschlossen. ||| Die Praxis, the verb ist second, then when (am Montag). ||| Die Praxis፣ ግሡ ist ሁለተኛ፣ ከዚያ መቼ (am Montag)።
 When is the bank open? => Wann ist die Bank geöffnet? ||| W-word first, then the verb. ||| መጀመሪያ የW-ቃሉ፣ ከዚያ ግሡ።
 

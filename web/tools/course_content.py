@@ -8,6 +8,9 @@ import json
 import re
 from pathlib import Path
 
+from clock_pictures import name as clock_name
+from clock_pictures import svg as clock_svg
+from clock_pictures import times as clock_times
 from word_pictures import PICTURES
 
 
@@ -2820,8 +2823,46 @@ def add_pictures(course):
     for unit in course['units']:
         for section in unit['sections']:
             for word in section['words']:
-                if word['german'] in PICTURES:
-                    word['pic'] = picture_files(PICTURES[word['german']])
+                files = picture_files(PICTURES[word['german']]) if word['german'] in PICTURES else []
+                # A time is shown as a clock at that exact time (tools/clock_pictures.py).
+                files += [clock_name(time) for time in clock_times(word['german'])]
+                if files:
+                    word['pic'] = files
+
+
+def add_clocks(course):
+    """Every time the course teaches gets a clock: COURSE['clocks'] lists the times each German text says
+    (examples, lesson tables and examples, readings), and an exercise item lists in `clocks` the times its
+    question shows (never only its answer, which the clock would give away). Writes the clock SVGs."""
+    texts = []
+    for unit in course['units']:
+        for section in unit['sections']:
+            for word in section['words']:
+                texts.append(word['german'])
+                texts += [de for de, _ in word.get('examples', [])]
+        for lesson in unit['grammar']:
+            for block in lesson.get('blocks', []):
+                texts += [de for de, _ in block.get('examples', [])]
+                texts += block.get('reading', [])
+                table = block.get('table')
+                if table:
+                    texts += [cell for row in table['rows'] for cell in row if cell]
+            for item in lesson.get('quiz', {}).get('items', []):
+                shown = ' '.join(item.get(key) or '' for key in ('before', 'after', 'prompt', 'text'))
+                found = clock_times(shown)
+                if not found and item.get('options'):
+                    # "Which sentence is correct?": every choice says the same time, so it's shown anyway.
+                    each = [clock_times(option) for option in item['options']]
+                    found = each[0] if each[0] and all(t == each[0] for t in each) else []
+                if found:
+                    item['clocks'] = found
+    clocks = {text: clock_times(text) for text in dict.fromkeys(texts)}
+    course['clocks'] = {text: found for text, found in clocks.items() if found}
+    pics = Path(__file__).resolve().parent.parent / 'static' / 'course' / 'pics'
+    every = {t for found in course['clocks'].values() for t in found}
+    every |= {t for u in course['units'] for g in u['grammar'] for i in g.get('quiz', {}).get('items', []) for t in i.get('clocks', [])}
+    for time in every:
+        (pics / f'{clock_name(time)}.svg').write_text(clock_svg(time), encoding='utf-8')
 
 
 EXAMPLES_DIR = Path(__file__).resolve().parent / 'examples'
@@ -3046,19 +3087,20 @@ if __name__ == '__main__':
     examples = add_examples(COURSE)
     add_topics(COURSE)
     add_word_types(COURSE)
+    add_clocks(COURSE)
     explanations = add_explanations(COURSE)
     am = build_amharic(COURSE, examples, explanations)
     (Path(__file__).resolve().parent.parent / 'static' / 'course' / 'js' / 'course-am.js').write_text(
         '/* Amharic meanings and lesson texts for the Amharic interface. Generated from tools/course_am/. */\n'
         'window.COURSE_AM = ' + json.dumps(am, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')
-    # Every German word and phrase with its meaning, for pointing at German on any page (static/core/js/hover-read.js).
-    # A noun's entry ends with its gender, so pointing at it shows der, die, das or plural in their colours.
-    meanings = [[w['german'], w['english'], am['words'].get(w['german'])] + ([w['gender']] if 'gender' in w else [])
-                for u in COURSE['units'] for s in u['sections'] for w in s['words']]
-    meanings += [[de, en, am['text'].get(en)] for u in COURSE['units'] for g in u['grammar']
-                 for b in g.get('blocks', []) for de, en in b.get('glossary', [])]
-    (Path(__file__).resolve().parent.parent / 'static' / 'core' / 'hover-words.json').write_text(
-        json.dumps(meanings, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    # The dictionary for pointing at German and selecting it on any page (static/core/js/hover-read.js): every
+    # headword with its part of speech, meanings, gender, pronunciation and an example, every word form in the
+    # course, and the course's sentences with their translations (tools/dictionary.py).
+    from dictionary import build as build_dictionary
+    words, sentences = build_dictionary(COURSE, am, am['examples'])
+    core = Path(__file__).resolve().parent.parent / 'static' / 'core'
+    (core / 'hover-words.json').write_text(json.dumps(words, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    (core / 'hover-sentences.json').write_text(json.dumps(sentences, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     out = Path(__file__).resolve().parent.parent / 'static' / 'course' / 'js' / 'course-data.js'
     out.write_text('/* German A1.1, Start unit and Units 1-9. Generated from tools/course_content.py. */\n'
                    'window.COURSE = ' + json.dumps(COURSE, ensure_ascii=False, indent=1) + ';\n', encoding='utf-8')

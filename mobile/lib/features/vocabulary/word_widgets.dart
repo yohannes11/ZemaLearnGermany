@@ -134,6 +134,10 @@ class ExampleList extends StatelessWidget {
                   Txt(course.exampleMeaning(example), role: TextRole.caption, colour: c.muted),
                 ]),
               ),
+              if (course.clocksFor(example.$1).isNotEmpty) ...[
+                const SizedBox(width: Space.sm),
+                ClockPictures(course.clocksFor(example.$1), size: 40),
+              ],
             ]),
           ),
       ]),

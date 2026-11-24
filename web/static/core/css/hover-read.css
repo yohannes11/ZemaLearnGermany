@@ -1,57 +1,107 @@
-/* Point to hear (static/core/js/hover-read.js): the German under the pointer and its meaning, in the shared
-   tokens of static/core/css/zema.css. */
-.hover-tip {
+/* Point to hear and select to look up (static/core/js/hover-read.js): a dictionary entry for German, in the
+   shared tokens of static/core/css/zema.css. The tooltip and the card show the same entry. */
+.hover-tip,
+.dict-card {
   position: fixed;
   z-index: 2147482000;
   display: grid;
-  gap: 2px;
-  max-width: min(320px, calc(100vw - 16px));
-  padding: 8px 16px;
+  gap: 6px;
+  width: max-content;
+  max-width: min(360px, calc(100vw - 16px));
+  padding: 12px 16px;
   border: 1px solid var(--border-strong);
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: var(--shadow-lg);
   font-family: var(--font);
   text-align: left;
-  pointer-events: none;
   animation: hover-tip-in 0.15s ease-out;
 }
-.hover-tip[hidden] { display: none; }
-.hover-tip-de {
-  font-size: var(--fs-base);
+.hover-tip { pointer-events: none; }
+.dict-card { z-index: 2147482001; }
+.hover-tip[hidden],
+.dict-card[hidden] { display: none; }
+@keyframes hover-tip-in { from { opacity: 0; transform: translateY(3px); } }
+
+/* Headword and pronunciation: "der Kaffee  [ˈkafe]". */
+.dict-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.dict-de {
+  font-size: var(--fs-lg);
   font-weight: 700;
   letter-spacing: var(--tracking-tight);
   color: var(--brand);
 }
-.hover-tip-meaning { color: var(--text); font-size: var(--fs-sm); font-weight: 500; }
-@keyframes hover-tip-in { from { opacity: 0; transform: translateY(3px); } }
+.dict-de[data-gender] { color: var(--g); }
+.dict-ipa { color: var(--muted); font-size: var(--fs-sm); }
+
+/* Part of speech, in italics as in a printed dictionary, then the gender in its colour. */
+.dict-pos { color: var(--muted); font-size: var(--fs-sm); font-style: italic; }
+.dict-gender {
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--g-soft);
+  color: var(--g);
+  font-size: var(--fs-xs);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.dict-form { color: var(--text); font-size: var(--fs-sm); }
+
+/* Meanings and the example, each under a small label. */
+.dict-row { display: grid; gap: 1px; }
+.dict-label {
+  color: var(--muted);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.dict-meaning { color: var(--text); font-size: var(--fs-base); font-weight: 500; }
+.dict-senses { margin: 0; padding-left: 1.4em; }
+.dict-senses li + li { margin-top: 1px; }
+.dict-example { padding-top: 6px; border-top: 1px solid var(--border); }
+.dict-example-de { color: var(--text); font-size: var(--fs-sm); font-style: italic; font-weight: 600; }
+.dict-example-meaning { color: var(--muted); font-size: var(--fs-sm); }
+.dict-unknown { color: var(--muted); font-size: var(--fs-sm); }
+.dict-hint { padding-top: 6px; border-top: 1px solid var(--border); color: var(--muted); font-size: var(--fs-xs); }
+
+/* The card's buttons, labelled with words. */
+.dict-card-actions { display: flex; gap: 8px; margin-top: 4px; }
+.dict-card-button {
+  min-height: 36px;
+  padding: 4px 14px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+.dict-card-button:first-child { border-color: var(--brand-fill); background: var(--brand-fill); color: var(--brand-ink); }
+
+/* What is being read: a whole element, or a word or sentence inside a text. Nouns take their gender's colour
+   (--g, set by data-gender in zema.css). */
 .hover-reading {
   border-radius: 4px;
   background-color: var(--brand-soft);
   box-shadow: 0 0 0 4px var(--brand-soft);
 }
-/* Nouns: the tooltip and the marked word take the gender's colour (--g, set by data-gender in zema.css). */
-.hover-tip-de[data-gender] { color: var(--g); }
-.hover-tip-gender {
-  justify-self: start;
-  padding: 1px 8px;
-  border-radius: 999px;
-  background: var(--g-soft);
-  color: var(--g);
-  font-size: var(--fs-xs);
-  font-weight: 700;
-  line-height: 1.6;
-}
-.hover-tip-noun { font-size: var(--fs-sm); }
 .hover-reading[data-hover-gender] {
   background-color: var(--g-soft);
   box-shadow: 0 0 0 4px var(--g-soft);
   color: var(--g);
 }
+::highlight(hover-word) { background-color: var(--brand-soft); color: var(--brand); }
+::highlight(hover-sentence) { background-color: var(--brand-soft); }
 ::highlight(gender-der) { background-color: var(--der-soft); color: var(--der); }
 ::highlight(gender-die) { background-color: var(--die-soft); color: var(--die); }
 ::highlight(gender-das) { background-color: var(--das-soft); color: var(--das); }
 ::highlight(gender-plural) { background-color: var(--plural-soft); color: var(--plural); }
 @media (prefers-reduced-motion: reduce) {
-  .hover-tip { animation: none; }
+  .hover-tip,
+  .dict-card { animation: none; }
 }

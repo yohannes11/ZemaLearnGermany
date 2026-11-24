@@ -93,7 +93,7 @@ I like reading. ||| ማንበብ እወዳለሁ።
 ich: no vowel change. ||| ich፦ የአናባቢ ለውጥ የለም።
 You are meeting friends. ||| ጓደኞችህን/ጓደኞችሽን ታገኛለህ/ታገኚያለሽ።
 Meron is meeting Hanna today. ||| ሜሮን ዛሬ ሐናን ታገኛለች።
-We're meeting at eight. ||| ሁለት ሰዓት (8:00) ላይ እንገናኛለን።
+We're meeting at eight. ||| ስምንት ሰዓት (8:00) ላይ እንገናኛለን።
 Can you see the bus? ||| አውቶቡሱን ታየዋለህ/ታዪዋለሽ?
 Dawit likes eating fish. ||| ዳዊት ዓሣ መብላት ይወዳል።
 isst (eats) is not ist (is). ||| isst (ይበላል) ist (ነው) አይደለም።

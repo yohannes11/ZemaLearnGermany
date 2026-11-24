@@ -2,7 +2,7 @@
 # Clock times: the Ethiopian-clock reading, with the German (European) time in brackets.
 
 ## g5-time
-Germans often say <strong>halb</strong> + the <em>next</em> hour: <em class="de">halb zehn</em> is 9:30 (half on the way to ten). Around half past you count from the half: <em class="de">fünf vor halb zehn</em> is 9:25. ||| ጀርመኖች ብዙ ጊዜ <strong>halb</strong> + <em>የሚቀጥለውን</em> ሰዓት ይላሉ፦ <em class="de">halb zehn</em> ማለት 9:30 ነው (ወደ አሥር የግማሽ መንገድ)። በተኩል አካባቢ ከተኩሉ ይቆጥራሉ፦ <em class="de">fünf vor halb zehn</em> ማለት 9:25 ነው። ያስታውሱ፦ ጀርመን የአውሮፓን ሰዓት ትጠቀማለች፤ 9:00 በኢትዮጵያ አቆጣጠር ሦስት ሰዓት ነው (6 ሰዓት ልዩነት)።
+Germans often say <strong>halb</strong> + the <em>next</em> hour: <em class="de">halb zehn</em> is 9:30 (half on the way to ten). Around half past you count from the half: <em class="de">fünf vor halb zehn</em> is 9:25. ||| ጀርመኖች ብዙ ጊዜ <strong>halb</strong> + <em>የሚቀጥለውን</em> ሰዓት ይላሉ፦ <em class="de">halb zehn</em> ማለት 9:30 ነው (ወደ አሥር የግማሽ መንገድ)። በተኩል አካባቢ ከተኩሉ ይቆጥራሉ፦ <em class="de">fünf vor halb zehn</em> ማለት 9:25 ነው። ያስታውሱ፦ ሰዓቱ ሁልጊዜ በሰዓቱ ላይ እንደሚታየው ይነበባል፦ 9:00 ዘጠኝ ሰዓት ነው።
 The clock ||| ሰዓቱ
 From 9:00 to 9:55 ||| ከ9:00 እስከ 9:55
 Time ||| ሰዓት
@@ -13,23 +13,23 @@ to / past ||| ጉዳይ / አልፎ
 Viertel ||| Viertel
 quarter: Viertel nach, Viertel vor ||| ሩብ፦ Viertel nach (ከሩብ)፣ Viertel vor (ሩብ ጉዳይ)
 What time is it? ||| ሰዓቱ ስንት ነው?
-half past nine ||| ሦስት ተኩል (9:30)
+half past nine ||| ዘጠኝ ተኩል (9:30)
 halb + the NEXT hour. ||| halb + የሚቀጥለው ሰዓት።
-quarter past nine ||| ሦስት ሰዓት ከሩብ (9:15)
-quarter to ten ||| ለአራት ሩብ ጉዳይ (9:45)
-five past nine ||| ሦስት ሰዓት ከአምስት ደቂቃ (9:05)
-five to ten ||| ለአራት አምስት ጉዳይ (9:55)
-twenty-five past nine ||| ሦስት ሰዓት ከሃያ አምስት (9:25)
-half past one ||| ሰባት ተኩል (1:30)
+quarter past nine ||| ዘጠኝ ሰዓት ከሩብ (9:15)
+quarter to ten ||| ለአሥር ሩብ ጉዳይ (9:45)
+five past nine ||| ዘጠኝ ሰዓት ከአምስት ደቂቃ (9:05)
+five to ten ||| ለአሥር አምስት ጉዳይ (9:55)
+twenty-five past nine ||| ዘጠኝ ሰዓት ከሃያ አምስት (9:25)
+half past one ||| አንድ ተኩል (1:30)
 halb + the NEXT hour: halb zwei. ||| halb + የሚቀጥለው ሰዓት፦ halb zwei።
-twenty-five to ten ||| ሦስት ሰዓት ከሠላሳ አምስት (9:35)
-seven o'clock ||| አንድ ሰዓት (7:00)
+twenty-five to ten ||| ዘጠኝ ሰዓት ከሠላሳ አምስት (9:35)
+seven o'clock ||| ሰባት ሰዓት (7:00)
 
 ## g5-word-order
 In a German statement the <strong>verb is always in second place</strong>. The first place can be the subject or something else, such as a time. ||| በጀርመንኛ መግለጫ ዓረፍተ ነገር ውስጥ <strong>ግሡ ሁልጊዜ በሁለተኛ ቦታ ነው</strong>። የመጀመሪያው ቦታ ባለቤቱ ወይም ሌላ ነገር፣ ለምሳሌ ጊዜ፣ ሊሆን ይችላል።
 Position 1 · verb · the rest ||| ቦታ 1 · ግሥ · የቀረው
-I work from 8 to 2. ||| ከ2 ሰዓት እስከ 8 ሰዓት (8–14) እሠራለሁ።
-At 8 he goes to work. ||| ሁለት ሰዓት (8:00) ላይ ወደ ሥራ ይሄዳል።
+I work from 8 to 2. ||| ከ8 ሰዓት እስከ 2 ሰዓት እሠራለሁ።
+At 8 he goes to work. ||| ስምንት ሰዓት (8:00) ላይ ወደ ሥራ ይሄዳል።
 Today I am cooking. ||| ዛሬ እኔ አበስላለሁ።
 On Monday I play football. ||| ሰኞ እግር ኳስ እጫወታለሁ።
 Verb = position 2 ||| ግሥ = ቦታ 2
@@ -45,7 +45,7 @@ Today I have time. ||| ዛሬ ጊዜ አለኝ።
 ## g5-separable
 Some verbs have a prefix that <strong>splits off</strong> in the present tense. The main part is conjugated in second place, and the prefix goes to the <strong>end of the sentence</strong>. ||| አንዳንድ ግሦች በአሁን ጊዜ <strong>የሚለያይ</strong> መነሻ አላቸው። ዋናው ክፍል በሁለተኛ ቦታ ይረባል፤ መነሻው ደግሞ <strong>ወደ ዓረፍተ ነገሩ መጨረሻ</strong> ይሄዳል።
 aufstehen (to get up) ||| aufstehen (መነሣት)
-I get up at 8 every day. ||| በየቀኑ ሁለት ሰዓት (8:00) ላይ እነሣለሁ።
+I get up at 8 every day. ||| በየቀኑ ስምንት ሰዓት (8:00) ላይ እነሣለሁ።
 He calls his mother. ||| እናቱን ይደውልላታል።
 We go shopping on Saturday. ||| ቅዳሜ እንገበያለን።
 Are you opening the window? ||| መስኮቱን ትከፍታለህ/ትከፍቻለሽ?
@@ -54,7 +54,7 @@ Ich stehe … ||| Ich stehe …
 prefix at the end ||| መነሻው መጨረሻ ላይ
 … um 8 Uhr auf. ||| … um 8 Uhr auf.
 aufstehen, anrufen, einkaufen, fernsehen, aufmachen ||| aufstehen, anrufen, einkaufen, fernsehen, aufmachen
-I get up at 7. ||| አንድ ሰዓት (7:00) ላይ እነሣለሁ።
+I get up at 7. ||| ሰባት ሰዓት (7:00) ላይ እነሣለሁ።
 You watch TV in the evening. ||| ማታ ቴሌቪዥን ታያለህ/ታያለሽ።
 She opens the window. ||| እሷ መስኮቱን ትከፍታለች።
 You (all) tidy the room. ||| እናንተ ክፍሉን ታስተካክላላችሁ።
@@ -71,7 +71,7 @@ er fährt ||| er fährt
 ihr fahrt ||| ihr fahrt
 no umlaut for ihr ||| ለihr ኡምላውት የለም
 You drive to work. ||| ወደ ሥራ በመኪና ትሄዳለህ/ትሄጃለሽ።
-He sleeps until 9. ||| እስከ ሦስት ሰዓት (9:00) ይተኛል።
+He sleeps until 9. ||| እስከ ዘጠኝ ሰዓት (9:00) ይተኛል።
 We go home. ||| ወደ ቤት እንሄዳለን።
 She does the washing. ||| እሷ ልብስ ታጥባለች።
 You (all) sleep for a long time. ||| እናንተ ረጅም ሰዓት ትተኛላችሁ።
@@ -92,8 +92,8 @@ days, parts of the day ||| ቀናት፣ የቀኑ ክፍለ ጊዜያት
 the night ||| ሌሊቱ
 Planning the week ||| ሳምንቱን ማቀድ
 On Saturday I am going to the cinema. ||| ቅዳሜ ሲኒማ እሄዳለሁ።
-The film starts at eight. ||| ፊልሙ ሁለት ሰዓት (8:00) ላይ ይጀምራል።
-On Monday at ten I have an appointment. ||| ሰኞ አራት ሰዓት (10:00) ላይ ቀጠሮ አለኝ።
+The film starts at eight. ||| ፊልሙ ስምንት ሰዓት (8:00) ላይ ይጀምራል።
+On Monday at ten I have an appointment. ||| ሰኞ አሥር ሰዓት (10:00) ላይ ቀጠሮ አለኝ።
 At night I sleep. ||| ሌሊት እተኛለሁ።
 In July it rains a lot in Addis. ||| በጁላይ (ሐምሌ) አዲስ አበባ ብዙ ይዘንባል።
 am ||| am
@@ -106,14 +106,14 @@ im ||| im
 Mai, Sommer ||| Mai, Sommer
 am, um, in der or im? ||| am፣ um፣ in der ወይስ im?
 On Monday I have German class. ||| ሰኞ የጀርመንኛ ክፍለ ጊዜ አለኝ።
-The course starts at nine. ||| ኮርሱ ሦስት ሰዓት (9:00) ላይ ይጀምራል።
+The course starts at nine. ||| ኮርሱ ዘጠኝ ሰዓት (9:00) ላይ ይጀምራል።
 In the evening I watch TV. ||| ማታ ቴሌቪዥን አያለሁ።
-We're meeting at half past three. ||| ዘጠኝ ተኩል (3:30) ላይ እንገናኛለን።
+We're meeting at half past three. ||| ሦስት ተኩል (3:30) ላይ እንገናኛለን።
 My birthday is in May. ||| ልደቴ በሜይ (ግንቦት አካባቢ) ነው።
 What are you doing at the weekend? ||| ቅዳሜና እሑድ ምን ታደርጋለህ/ታደርጊያለሽ?
 In summer it is hot. ||| በበጋ ሞቃት ነው።
 I'm not free in the evening. ||| ማታ ነፃ አይደለሁም።
-on Friday at seven ||| ዓርብ አንድ ሰዓት (7:00) ላይ
+on Friday at seven ||| ዓርብ ሰባት ሰዓት (7:00) ላይ
 
 ## g5-plans
 To suggest something: <em class="de">Gehen wir ins Kino?</em>, <em class="de">Hast du am Samstag Zeit?</em> or, casually, <em class="de">Lust auf Kaffee?</em> ||| አንድ ነገር ለማቅረብ፦ <em class="de">Gehen wir ins Kino?</em> (ሲኒማ እንሂድ?)፣ <em class="de">Hast du am Samstag Zeit?</em> (ቅዳሜ ጊዜ አለህ?) ወይም በቀላሉ <em class="de">Lust auf Kaffee?</em> (ቡና?)።

@@ -200,7 +200,7 @@ Die Zahl ist sieben. ||| The number is seven. ||| ቁጥሩ ሰባት ነው።
 Wie ist die Zahl? ||| What is the number? ||| ቁጥሩ ስንት ነው?
 Schreib die Zahl, bitte. ||| Write the number, please. ||| እባክህ ቁጥሩን ጻፍ።
 ## der Zug
-Der Zug kommt um acht Uhr. ||| The train comes at eight o'clock. ||| ባቡሩ ሁለት ሰዓት ይመጣል።
+Der Zug kommt um acht Uhr. ||| The train comes at eight o'clock. ||| ባቡሩ ስምንት ሰዓት ይመጣል።
 Ich fahre mit dem Zug. ||| I go by train. ||| በባቡር እሄዳለሁ።
 Der Zug ist spät. ||| The train is late. ||| ባቡሩ ዘግይቷል።
 ## ja
@@ -308,7 +308,7 @@ Ich habe fünf Euro. ||| I have five euros. ||| አምስት ዩሮ አለኝ።
 Das Mädchen ist fünf. ||| The girl is five. ||| ልጅቷ አምስት ዓመቷ ነው።
 Fünf Minuten, bitte. ||| Five minutes, please. ||| እባክዎ አምስት ደቂቃ።
 ## sechs
-Der Zug kommt um sechs. ||| The train comes at six. ||| ባቡሩ በአሥራ ሁለት ሰዓት ይመጣል።
+Der Zug kommt um sechs. ||| The train comes at six. ||| ባቡሩ በስድስት ሰዓት ይመጣል።
 Ich habe sechs Bücher. ||| I have six books. ||| ስድስት መጻሕፍት አሉኝ።
 Sechs Brote, bitte. ||| Six bread rolls, please. ||| እባክዎ ስድስት ዳቦ።
 ## sieben
@@ -316,11 +316,11 @@ Die Woche hat sieben Tage. ||| The week has seven days. ||| ሳምንት ሰባ�
 Das Kind ist sieben. ||| The child is seven. ||| ልጁ ሰባት ዓመቱ ነው።
 Ich habe sieben Euro. ||| I have seven euros. ||| ሰባት ዩሮ አለኝ።
 ## acht
-Es ist acht Uhr. ||| It is eight o'clock. ||| ሁለት ሰዓት ነው።
+Es ist acht Uhr. ||| It is eight o'clock. ||| ስምንት ሰዓት ነው።
 Wir sind acht. ||| There are eight of us. ||| እኛ ስምንት ነን።
 Ich arbeite acht Stunden. ||| I work eight hours. ||| ስምንት ሰዓት እሠራለሁ።
 ## neun
-Die Schule beginnt um neun. ||| School starts at nine. ||| ትምህርት ቤቱ በሦስት ሰዓት ይጀምራል።
+Die Schule beginnt um neun. ||| School starts at nine. ||| ትምህርት ቤቱ በዘጠኝ ሰዓት ይጀምራል።
 Ich habe neun Äpfel. ||| I have nine apples. ||| ዘጠኝ ፖሞች አሉኝ።
 Das Kind ist neun. ||| The child is nine. ||| ልጁ ዘጠኝ ዓመቱ ነው።
 ## zehn
@@ -328,12 +328,12 @@ Ich habe zehn Euro. ||| I have ten euros. ||| አሥር ዩሮ አለኝ።
 Zehn Minuten, bitte. ||| Ten minutes, please. ||| እባክዎ አሥር ደቂቃ።
 Die Klasse hat zehn Schüler. ||| The class has ten pupils. ||| ክፍሉ አሥር ተማሪዎች አሉት።
 ## elf
-Es ist elf Uhr. ||| It is eleven o'clock. ||| አምስት ሰዓት ነው።
+Es ist elf Uhr. ||| It is eleven o'clock. ||| አሥራ አንድ ሰዓት ነው።
 Mein Sohn ist elf. ||| My son is eleven. ||| ልጄ አሥራ አንድ ዓመቱ ነው።
 Wir sind elf. ||| There are eleven of us. ||| እኛ አሥራ አንድ ነን።
 ## zwölf
 Ein Jahr hat zwölf Monate. ||| A year has twelve months. ||| አንድ ዓመት አሥራ ሁለት ወራት አሉት።
-Es ist zwölf Uhr. ||| It is twelve o'clock. ||| ስድስት ሰዓት ነው።
+Es ist zwölf Uhr. ||| It is twelve o'clock. ||| አሥራ ሁለት ሰዓት ነው።
 Ich habe zwölf Eier. ||| I have twelve eggs. ||| አሥራ ሁለት እንቁላሎች አሉኝ።
 
 # 0.7 The alphabet

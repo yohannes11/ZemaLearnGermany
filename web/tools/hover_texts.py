@@ -1,8 +1,9 @@
-"""Every German text a learner can point at to hear it (static/core/js/hover-read.js), so each one gets a
-recording: tools/gen_course_audio.py records them, and the tests check that none is missing.
+"""German texts pointing reads (static/core/js/hover-read.js) that get a human recording:
+tools/gen_course_audio.py records them, and the tests check that none is missing.
 
-Mirrors the script's rule: a German text of up to six words is read whole; in a longer one, the single word
-under the pointer. German texts are the course's words, examples, readings, glossaries and table forms,
+Pointing reads the word under the pointer, or the whole sentence when pointing beside it. These are the short
+texts (up to six words, read whole as sentences) and every word of the longer ones. Anything else without a
+recording (a long sentence, a word of a short one) is read by the browser's German voice. German texts are the course's words, examples, readings, glossaries and table forms,
 the <em class="de"> phrases in lessons and in course.js, and the lang="de" text of the landing page.
 """
 

@@ -16,7 +16,7 @@ music ||| ሙዚቃ
 Say hello ||| ሰላም ይበሉ
 Greet and thank people ||| ሰዎችን ሰላም ይበሉ፣ ያመስግኑ
 Hello! You can say it at any time of day. ||| ሰላም! በማንኛውም የቀን ሰዓት ሊሉት ይችላሉ።
-Good morning! Until about 10 or 11 o'clock. ||| እንደምን አደሩ! እስከ ጠዋቱ አራት ወይም አምስት ሰዓት (10:00 ወይም 11:00) ገደማ ድረስ።
+Good morning! Until about 10 or 11 o'clock. ||| እንደምን አደሩ! እስከ አሥር ወይም አሥራ አንድ ሰዓት (10:00 ወይም 11:00) ገደማ ድረስ።
 Thank you very much! ||| በጣም አመሰግናለሁ!
 Excuse me, to ask for help. It also means sorry. ||| ይቅርታ፣ እርዳታ ለመጠየቅ። ለመጸጸትም «ይቅርታ» ማለት ነው።
 Say who you are ||| ማን እንደሆኑ ይናገሩ
@@ -38,7 +38,7 @@ Ich heiße … · Ich komme aus … ||| Ich heiße … · Ich komme aus …
 When you did not understand ||| ሳይገባዎት ሲቀር
 Wie bitte? · Noch einmal, bitte. ||| Wie bitte? · Noch einmal, bitte.
 Your first quick wins ||| የመጀመሪያ ቀላል ስኬቶችዎ
-You meet your neighbour at 8 in the morning. What do you say? ||| ጠዋት ሁለት ሰዓት (8:00) ላይ ጎረቤትዎን ያገኛሉ። ምን ይላሉ?
+You meet your neighbour at 8 in the morning. What do you say? ||| ጠዋት ስምንት ሰዓት (8:00) ላይ ጎረቤትዎን ያገኛሉ። ምን ይላሉ?
 Guten Morgen is the greeting for the morning. ||| Guten Morgen የጠዋት ሰላምታ ነው።
 A friend brings you a coffee. What do you say? ||| ጓደኛዎ ቡና ያመጣልዎታል። ምን ይላሉ?
 Danke schön means thank you very much. ||| Danke schön «በጣም አመሰግናለሁ» ማለት ነው።

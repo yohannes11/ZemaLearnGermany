@@ -3,7 +3,7 @@
 
 # 8.1 Getting around
 ## der Bus
-Der Bus kommt um acht Uhr. ||| The bus comes at eight o'clock. ||| አውቶቡሱ ሁለት ሰዓት ላይ ይመጣል።
+Der Bus kommt um acht Uhr. ||| The bus comes at eight o'clock. ||| አውቶቡሱ ስምንት ሰዓት ላይ ይመጣል።
 Der Bus ist voll. ||| The bus is full. ||| አውቶቡሱ ሞልቷል።
 Wo hält der Bus? ||| Where does the bus stop? ||| አውቶቡሱ የት ይቆማል?
 ## die U-Bahn
@@ -70,7 +70,7 @@ Ich kaufe eine Fahrkarte. ||| I am buying a ticket. ||| ትኬት እገዛለ�
 Wo ist meine Fahrkarte? ||| Where is my ticket? ||| ትኬቴ የት ነው?
 ## der Flug
 Der Flug ist lang. ||| The flight is long. ||| በረራው ረጅም ነው።
-Mein Flug geht um zehn Uhr. ||| My flight leaves at ten o'clock. ||| በረራዬ አራት ሰዓት ላይ ነው።
+Mein Flug geht um zehn Uhr. ||| My flight leaves at ten o'clock. ||| በረራዬ አሥር ሰዓት ላይ ነው።
 Wie war der Flug? ||| How was the flight? ||| በረራው እንዴት ነበር?
 ## die Verspätung
 Der Zug hat Verspätung. ||| The train is delayed. ||| ባቡሩ ዘግይቷል።
@@ -81,11 +81,11 @@ Wo ist der Ausgang? ||| Where is the exit? ||| መውጫው የት ነው?
 Der Ausgang ist links. ||| The exit is on the left. ||| መውጫው በግራ በኩል ነው።
 Der Flug nach Rom ist an Ausgang 12. ||| The flight to Rome is at gate 12. ||| ወደ ሮም የሚሄደው በረራ በመሳፈሪያ በር 12 ነው።
 ## die Abfahrt
-Die Abfahrt ist um neun Uhr. ||| The departure is at nine o'clock. ||| መነሻው ሦስት ሰዓት ላይ ነው።
+Die Abfahrt ist um neun Uhr. ||| The departure is at nine o'clock. ||| መነሻው ዘጠኝ ሰዓት ላይ ነው።
 Wann ist die Abfahrt? ||| When is the departure? ||| መነሻው መቼ ነው?
 Die Abfahrt ist pünktlich. ||| The departure is on time. ||| መነሻው በሰዓቱ ነው።
 ## die Ankunft
-Die Ankunft ist um sieben Uhr. ||| The arrival is at seven o'clock. ||| መድረሻው አንድ ሰዓት ላይ ነው።
+Die Ankunft ist um sieben Uhr. ||| The arrival is at seven o'clock. ||| መድረሻው ሰባት ሰዓት ላይ ነው።
 Wann ist die Ankunft in Berlin? ||| When is the arrival in Berlin? ||| በርሊን የሚደረሰው መቼ ነው?
 Die Ankunft ist am Abend. ||| The arrival is in the evening. ||| መድረሻው ማታ ነው።
 
@@ -121,15 +121,15 @@ Ich habe mein Ladegerät vergessen. ||| I have forgotten my charger. ||| ቻር�
 
 # 8.4 Travel verbs
 ## abfahren
-Der Zug fährt um acht Uhr ab. ||| The train departs at eight o'clock. ||| ባቡሩ ሁለት ሰዓት ላይ ይነሳል።
+Der Zug fährt um acht Uhr ab. ||| The train departs at eight o'clock. ||| ባቡሩ ስምንት ሰዓት ላይ ይነሳል።
 Wann fährt der Bus ab? ||| When does the bus leave? ||| አውቶቡሱ መቼ ይነሳል?
 Wir fahren morgen früh ab. ||| We leave early tomorrow. ||| ነገ ጠዋት እንነሳለን።
 ## ankommen
-Der Zug kommt um zehn Uhr an. ||| The train arrives at ten o'clock. ||| ባቡሩ አራት ሰዓት ላይ ይደርሳል።
+Der Zug kommt um zehn Uhr an. ||| The train arrives at ten o'clock. ||| ባቡሩ አሥር ሰዓት ላይ ይደርሳል።
 Wir kommen am Abend an. ||| We arrive in the evening. ||| ማታ እንደርሳለን።
 Wann kommt das Flugzeug an? ||| When does the plane arrive? ||| አውሮፕላኑ መቼ ይደርሳል?
 ## abfliegen
-Das Flugzeug fliegt um neun Uhr ab. ||| The plane takes off at nine o'clock. ||| አውሮፕላኑ ሦስት ሰዓት ላይ ይነሳል።
+Das Flugzeug fliegt um neun Uhr ab. ||| The plane takes off at nine o'clock. ||| አውሮፕላኑ ዘጠኝ ሰዓት ላይ ይነሳል።
 Wir fliegen morgen ab. ||| We fly out tomorrow. ||| ነገ እንበራለን።
 Von wo fliegst du ab? ||| Where are you flying from? ||| ከየት ነው የምትበረው?
 ## abholen
@@ -162,13 +162,13 @@ Musst du umsteigen? – Ja, ich steige in Frankfurt um. ||| Do you have to chang
 
 # 8.5 On the way
 ## Wann kommst du an?
-Wann kommst du an? – Um acht Uhr. ||| When do you arrive? – At eight o'clock. ||| መቼ ትደርሳለህ? – ሁለት ሰዓት ላይ።
+Wann kommst du an? – Um acht Uhr. ||| When do you arrive? – At eight o'clock. ||| መቼ ትደርሳለህ? – ስምንት ሰዓት ላይ።
 Wann kommst du an? Ich hole dich ab. ||| When do you arrive? I'll pick you up. ||| መቼ ትደርሺያለሽ? መጥቼ እቀበልሻለሁ።
 ## Wann fliegst du ab?
 Wann fliegst du ab? – Am Montag. ||| When does your flight leave? – On Monday. ||| መቼ ትበራለህ? – ሰኞ።
 Wann fliegst du ab, morgen oder übermorgen? ||| When does your flight leave, tomorrow or the day after? ||| መቼ ትበሪያለሽ፣ ነገ ወይስ ከነገ ወዲያ?
 ## Kannst du mich abholen?
-Ich komme um acht Uhr an. Kannst du mich abholen? ||| I arrive at eight o'clock. Can you pick me up? ||| ሁለት ሰዓት ላይ እደርሳለሁ። መጥተህ ልትቀበለኝ ትችላለህ?
+Ich komme um acht Uhr an. Kannst du mich abholen? ||| I arrive at eight o'clock. Can you pick me up? ||| ስምንት ሰዓት ላይ እደርሳለሁ። መጥተህ ልትቀበለኝ ትችላለህ?
 Kannst du mich am Bahnhof abholen? ||| Can you pick me up at the station? ||| ባቡር ጣቢያ መጥተሽ ልትቀበይኝ ትችያለሽ?
 ## Natürlich hole ich dich ab.
 Natürlich hole ich dich ab. Wann kommst du an? ||| Of course I will pick you up. When do you arrive? ||| እርግጥ ነው፣ መጥቼ እቀበልሃለሁ። መቼ ትደርሳለህ?
@@ -183,7 +183,7 @@ Ich freue mich auf dich! Gute Reise! ||| I'm looking forward to seeing you! Have
 Der Zug fährt von Gleis 4 ab. – Verstehe! ||| The train departs from platform 4. – I see! ||| ባቡሩ ከመድረክ 4 ይነሳል። – ገባኝ!
 Ah, verstehe! Danke schön. ||| Ah, I see! Thank you very much. ||| አሃ፣ ገባኝ! በጣም አመሰግናለሁ።
 ## Alles klar!
-Wir treffen uns um acht Uhr. – Alles klar! ||| We'll meet at eight o'clock. – All right! ||| ሁለት ሰዓት ላይ እንገናኛለን። – እሺ!
+Wir treffen uns um acht Uhr. – Alles klar! ||| We'll meet at eight o'clock. – All right! ||| ስምንት ሰዓት ላይ እንገናኛለን። – እሺ!
 Alles klar, bis morgen! ||| All right, see you tomorrow! ||| እሺ፣ እስከ ነገ!
 ## Bist du sicher?
 Der Bus kommt nicht? Bist du sicher? ||| The bus isn't coming? Are you sure? ||| አውቶቡሱ አይመጣም? እርግጠኛ ነህ?
@@ -206,8 +206,8 @@ Achtung! Der Zug fährt von Gleis 4 ab. ||| Attention! The train departs from pl
 Der nächste Halt ist Frankfurt Hauptbahnhof. Bitte aussteigen. ||| The next stop is Frankfurt main station. Please get off. ||| ቀጣዩ ማቆሚያ ፍራንክፈርት ዋናው ባቡር ጣቢያ ነው። እባክዎ ይውረዱ።
 Der nächste Halt ist Frankfurt Hauptbahnhof. Hier können Sie umsteigen. ||| The next stop is Frankfurt main station. You can change here. ||| ቀጣዩ ማቆሚያ ፍራንክፈርት ዋናው ባቡር ጣቢያ ነው። እዚህ መቀየር ይችላሉ።
 ## Das Flugzeug landet um 6:40 Uhr.
-Das Flugzeug landet um 6:40 Uhr in Addis Abeba. ||| The plane lands in Addis Ababa at 6:40. ||| አውሮፕላኑ ከሌሊቱ 12:40 (6:40) ላይ አዲስ አበባ ያርፋል።
-Das Flugzeug landet um 6:40 Uhr. Kannst du mich abholen? ||| The plane lands at 6:40. Can you pick me up? ||| አውሮፕላኑ ከሌሊቱ 12:40 (6:40) ላይ ያርፋል። መጥተህ ልትቀበለኝ ትችላለህ?
+Das Flugzeug landet um 6:40 Uhr in Addis Abeba. ||| The plane lands in Addis Ababa at 6:40. ||| አውሮፕላኑ 6:40 ላይ አዲስ አበባ ያርፋል።
+Das Flugzeug landet um 6:40 Uhr. Kannst du mich abholen? ||| The plane lands at 6:40. Can you pick me up? ||| አውሮፕላኑ 6:40 ላይ ያርፋል። መጥተህ ልትቀበለኝ ትችላለህ?
 ## Bitte steigen Sie ein.
 Der Zug fährt gleich ab. Bitte steigen Sie ein. ||| The train is about to depart. Please get on. ||| ባቡሩ አሁን ይነሳል። እባክዎ ይሳፈሩ።
 Bitte steigen Sie ein und nehmen Sie Platz. ||| Please get on and take a seat. ||| እባክዎ ይሳፈሩና ይቀመጡ።

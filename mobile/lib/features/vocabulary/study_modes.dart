@@ -18,6 +18,7 @@ import '../lessons/question_view.dart' show AnswerField, GermanKeys;
 import '../lessons/questions.dart' show shuffle;
 import '../lessons/quiz_session.dart';
 import '../progress/progress.dart';
+import 'dictionary.dart';
 import 'word_picture.dart';
 import 'word_widgets.dart' show ExampleList, GenderTag, GermanWord, nounGender;
 
@@ -432,7 +433,8 @@ class _WordPagesState extends State<WordPages> {
               ]),
               const SizedBox(height: Space.md),
               Expanded(
-                child: AppCard(
+                // Press and hold a word to see its meaning and gender (dictionary.dart).
+                child: WordLookup(child: AppCard(
                   raised: true,
                   child: Center(
                     child: SingleChildScrollView(
@@ -458,7 +460,7 @@ class _WordPagesState extends State<WordPages> {
                       ], Space.md)),
                     ),
                   ),
-                ),
+                )),
               ),
               const SizedBox(height: Space.md),
               Row(children: [
