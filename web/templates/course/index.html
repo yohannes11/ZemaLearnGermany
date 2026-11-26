@@ -80,10 +80,6 @@
   <section class="journey" aria-label="{% t "Your course" %}">
     <nav class="units" id="units" aria-label="{% t "Units" %}"></nav>
     <div class="journey-head">
-      <div class="journey-where">
-        <span class="journey-kicker" id="journey-kicker"></span>
-        <span class="journey-title" id="journey-title"></span>
-      </div>
       <nav class="parts" aria-label="{% t "Parts of this unit" %}">
         <span class="parts-glider" aria-hidden="true"></span>
         <button class="part" type="button" data-part="vocab" onclick="goToPart('vocab')">
@@ -297,7 +293,7 @@
       </section>
       <nav class="pager" id="pager" aria-label="{% t "Previous and next" %}"></nav>
       <div class="ad-slot ad-bottom" data-ad="bottom"></div>
-      <p class="pic-credit">{% t "Word pictures:" %} <a href="https://github.com/jdecked/twemoji" rel="noopener" target="_blank">Twemoji</a> · Twitter, Inc and contributors, <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>.</p>
+      <p class="pic-credit">{% t "Word photos come from Wikimedia Commons." %} <a href="{% url 'course:photos' %}">{% t "See who took each photo" %}</a> · {% t "Icons:" %} <a href="https://github.com/jdecked/twemoji" rel="noopener" target="_blank">Twemoji</a>, Twitter, Inc and contributors, <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>.</p>
     </main>
     <aside class="rail-wrap" aria-label="{% t "Your progress" %}">
       <button class="panel-show" type="button" onclick="setPanel('rail', true)" aria-controls="rail" aria-expanded="false" title="{% t "Show your progress" %}">

@@ -62,8 +62,8 @@ class Audio {
     return load();
   }
 
-  /// The address of a word picture (Twemoji SVG, by its code).
-  String pictureUrl(String code) => '${_index?.pictureBase ?? '${apiUrl()}/static/course/pics/'}$code.svg';
+  /// The address of a word picture: a photo by its file name ('apple.jpg'), or a clock SVG by its code.
+  String pictureUrl(String name) => '${_index?.pictureBase ?? '${apiUrl()}/static/course/pics/'}${name.contains('.') ? name : '$name.svg'}';
 
   bool hasClip(String german) => _manifest.containsKey(german);
 

@@ -200,6 +200,12 @@ class _MeScreenState extends State<MeScreen> {
             ),
             if (isTestBuild) const _TestServer(),
             AppButton(
+              label: T('Photo credits'),
+              kind: ButtonKind.ghost,
+              icon: Icons.photo_library_outlined,
+              onPressed: () => launchUrl(Uri.parse('${apiUrl()}/learn/photos/?lang=${course.lang}'), mode: LaunchMode.inAppBrowserView),
+            ),
+            AppButton(
               label: T('Watch the introduction again'),
               kind: ButtonKind.ghost,
               icon: Icons.play_circle_outline_rounded,

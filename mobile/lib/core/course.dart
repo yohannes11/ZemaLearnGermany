@@ -93,6 +93,9 @@ class CourseStore extends ChangeNotifier {
   /// The clock times a German text says, for its clocks.
   List<String> clocksFor(String german) => bundle?.clocks[german] ?? const [];
 
+  /// The credits for a word's photos, in the order they are shown.
+  List<PhotoCredit> photoCredits(Word word) => [for (final name in word.pic) ?bundle?.photos[name]];
+
   /// An example sentence's meaning in the learner's language.
   String exampleMeaning((String, String) example) => _shown(bundle?.amharic?.examples[example.$1] ?? example.$2);
 

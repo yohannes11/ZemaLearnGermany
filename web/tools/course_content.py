@@ -11,7 +11,9 @@ from pathlib import Path
 from clock_pictures import name as clock_name
 from clock_pictures import svg as clock_svg
 from clock_pictures import times as clock_times
-from word_pictures import PICTURES
+from word_pictures import PHOTOS, PICTURES
+
+PHOTO_CREDITS = Path(__file__).resolve().parent / 'word_photos.json'
 
 
 def w(german, english):
@@ -1267,21 +1269,21 @@ def reading(key, code, title, chapters, intro, text_title, paragraphs, glossary,
 FAMILY_HINT = 'Choose the German word.'
 
 # Your family, three generations: grandparents; your aunt, father, mother and uncle; your brother, you and your
-# sister. `word` is the vocabulary entry (its audio and meaning); x is a percentage of the width, row 0 is the top;
-# `why` says who the person is to you, shown after each answer.
+# sister. `word` is the vocabulary entry (its audio and meaning); `pic` is a photo key from word_pictures.py;
+# x is a percentage of the width, row 0 is the top; `why` says who the person is to you, shown after each answer.
 # The aunt and uncle are your father's sister and brother: children of the same grandparents.
 FAMILY_TREE = {
     'title': 'Your family tree',
     'people': [
-        {'key': 'opa', 'word': 'der Opa, der Großvater', 'pic': '1f474', 'x': 33, 'row': 0, 'why': "Your father's father."},
-        {'key': 'oma', 'word': 'die Oma, die Großmutter', 'pic': '1f475', 'x': 67, 'row': 0, 'why': "Your father's mother."},
-        {'key': 'tante', 'word': 'die Tante', 'pic': '1f469', 'x': 12, 'row': 1, 'why': "Your father's sister."},
-        {'key': 'vater', 'word': 'der Vater', 'pic': '1f468', 'x': 37, 'row': 1, 'why': 'The man married to your mother.'},
-        {'key': 'mutter', 'word': 'die Mutter', 'pic': '1f469', 'x': 63, 'row': 1, 'why': 'The woman married to your father.'},
-        {'key': 'onkel', 'word': 'der Onkel', 'pic': '1f468', 'x': 88, 'row': 1, 'why': "Your father's brother."},
-        {'key': 'bruder', 'word': 'der Bruder', 'pic': '1f466', 'x': 24, 'row': 2, 'why': "Your parents' other son."},
+        {'key': 'opa', 'word': 'der Opa, der Großvater', 'pic': 'old-man', 'x': 33, 'row': 0, 'why': "Your father's father."},
+        {'key': 'oma', 'word': 'die Oma, die Großmutter', 'pic': 'old-woman', 'x': 67, 'row': 0, 'why': "Your father's mother."},
+        {'key': 'tante', 'word': 'die Tante', 'pic': 'aunt', 'x': 12, 'row': 1, 'why': "Your father's sister."},
+        {'key': 'vater', 'word': 'der Vater', 'pic': 'man', 'x': 37, 'row': 1, 'why': 'The man married to your mother.'},
+        {'key': 'mutter', 'word': 'die Mutter', 'pic': 'woman', 'x': 63, 'row': 1, 'why': 'The woman married to your father.'},
+        {'key': 'onkel', 'word': 'der Onkel', 'pic': 'uncle', 'x': 88, 'row': 1, 'why': "Your father's brother."},
+        {'key': 'bruder', 'word': 'der Bruder', 'pic': 'boy', 'x': 24, 'row': 2, 'why': "Your parents' other son."},
         {'key': 'ich', 'word': 'ich', 'me': True, 'x': 50, 'row': 2},
-        {'key': 'schwester', 'word': 'die Schwester', 'pic': '1f467', 'x': 76, 'row': 2, 'why': "Your parents' daughter."},
+        {'key': 'schwester', 'word': 'die Schwester', 'pic': 'girl', 'x': 76, 'row': 2, 'why': "Your parents' daughter."},
     ],
     'couples': [['opa', 'oma'], ['vater', 'mutter']],
     'families': [{'parents': ['opa', 'oma'], 'children': ['tante', 'vater', 'onkel']},
@@ -2789,15 +2791,11 @@ def check(course):
                     assert set(pair) <= keys, (g['key'], pair)
 
 
-def picture_files(emoji):
-    """Twemoji file names for a string of emoji: one per picture, e.g. '🍎+🧃' -> ['1f34e', '+', '1f9c3'].
-    Like Twemoji itself, the variation selector FE0F is dropped except inside ZWJ sequences."""
+def icon_files(emoji):
+    """Twemoji file names for a fallback icon: '🔟' -> ['1f51f'] (static/course/pics/1f51f.svg). Like Twemoji
+    itself, the variation selector FE0F is dropped except inside ZWJ sequences."""
     cps, files, i = [ord(c) for c in emoji], [], 0
     while i < len(cps):
-        if cps[i] == ord('+'):  # compound word: shown as "🍎 + 🍰"
-            files.append('+')
-            i += 1
-            continue
         flag = 0x1F1E6 <= cps[i] <= 0x1F1FF and i + 1 < len(cps) and 0x1F1E6 <= cps[i + 1] <= 0x1F1FF
         seq = cps[i:i + 2] if flag else [cps[i]]
         i += len(seq)
@@ -2816,7 +2814,28 @@ def picture_files(emoji):
     return files
 
 
+def picture_files(spec):
+    """File names for a word's picture (see word_pictures.py). Photos: 'apple+cake' -> ['apple.jpg', '+',
+    'cake.jpg'] (a compound shows its parts). A colour stays a colour: '#d32f2f', shown as a flat swatch. An emoji
+    is the fallback icon where no photo shows the word: '✅' -> ['2705'] (Twemoji SVG), also as a compound's part:
+    '❤️+meal' -> ['2764', '+', 'meal.jpg']."""
+    if spec.startswith('#'):
+        return [spec]
+    files = []
+    for i, part in enumerate(spec.split('+')):
+        if i:
+            files.append('+')
+        if not part.isascii():
+            files += icon_files(part)
+        else:
+            assert part in PHOTOS, f'word_pictures.py: no photo for {part!r}'
+            files.append(f'{part}.jpg')
+    return files
+
+
 def add_pictures(course):
+    """Every word's picture (tools/word_pictures.py), and COURSE['photos']: the credit for each photo shown,
+    by file name (author, licence and Commons page, from tools/word_photos.json)."""
     known = {w['german'] for u in course['units'] for s in u['sections'] for w in s['words']}
     unknown = set(PICTURES) - known
     assert not unknown, f'word_pictures.py names words that are not in the course: {sorted(unknown)}'
@@ -2828,6 +2847,17 @@ def add_pictures(course):
                 files += [clock_name(time) for time in clock_times(word['german'])]
                 if files:
                     word['pic'] = files
+        for lesson in unit['grammar']:
+            for person in lesson.get('tree', {}).get('people', []):
+                if 'pic' in person and not person['pic'].endswith('.jpg'):
+                    person['pic'] = picture_files(person['pic'])[0]
+    credits = json.loads(PHOTO_CREDITS.read_text(encoding='utf-8'))
+    shown = {name for u in course['units'] for s in u['sections'] for w in s['words'] for name in w.get('pic', [])}
+    shown |= {p['pic'] for u in course['units'] for g in u['grammar'] for p in g.get('tree', {}).get('people', []) if 'pic' in p}
+    photos = sorted(name for name in shown if name.endswith('.jpg'))
+    missing = [name for name in photos if name[:-4] not in credits]
+    assert not missing, f'run tools/fetch_word_pictures.py: no photo or credit yet for {missing}'
+    course['photos'] = {name: {k: v for k, v in credits[name[:-4]].items() if k != 'focus'} for name in photos}
 
 
 def add_clocks(course):

@@ -13,7 +13,7 @@ from apps.core.i18n import catalog
 from apps.core.utils import BadJSON, json_error, read_json
 from apps.realtime import notify
 
-from . import sync
+from . import content, sync
 from .models import Progress
 
 
@@ -42,6 +42,23 @@ def index(request):
         },
     }
     return render(request, "course/index.html", {"app_config": app_config})
+
+
+@require_GET
+def photos(request):
+    """Every photo the vocabulary shows, the words it pictures, who took it and the licence it is used under."""
+    data, _ = content.course()
+    words = {}
+    for unit in data["units"]:
+        for section in unit["sections"]:
+            for word in section["words"]:
+                for name in word.get("pic", []):
+                    words.setdefault(name, []).append(word["german"])
+    credits = [
+        {**credit, "src": static(f"course/pics/{name}"), "words": words.get(name, [])}
+        for name, credit in sorted(data.get("photos", {}).items())
+    ]
+    return render(request, "course/photos.html", {"credits": credits, "learn_url": reverse("course:index")})
 
 
 @require_http_methods(["GET", "PUT"])

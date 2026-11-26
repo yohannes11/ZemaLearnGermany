@@ -155,11 +155,23 @@ How it is built:
 
 ## Word pictures
 
-About 60% of the vocabulary has a picture: emoji chosen per word in `tools/word_pictures.py` (compound
-words show their parts, e.g. *der Apfelkuchen* = 🍎 + 🍰; words with no honest picture have none). The
-artwork is [Twemoji](https://github.com/jdecked/twemoji) (CC BY 4.0, credited under the course page),
-stored in `static/course/pics/`. After editing the list, run `python3 tools/course_content.py` and then
-`python3 tools/fetch_word_pictures.py` to download any new SVGs.
+Most of the vocabulary has a real photograph, chosen per word in `tools/word_pictures.py`: `PICTURES` maps a
+word to photo keys (compound words show their parts, e.g. *der Apfelkuchen* = apple + cake), and `PHOTOS` maps
+each key to a file on [Wikimedia Commons](https://commons.wikimedia.org/). Photos are chosen to be clear first,
+and to show life in Ethiopia where that keeps them clear (people, the coffee ceremony, Merkato, Addis minibus
+taxis and the light rail). Colours are shown as a flat swatch, and times as a clock (`tools/clock_pictures.py`).
+Where no photo shows a word clearly (*Das stimmt.*, numbers, directions), it keeps an icon instead: an emoji in
+`PICTURES`, drawn with [Twemoji](https://github.com/jdecked/twemoji) (CC BY 4.0, credited under the course page).
+
+Only freely licensed photos are used (public domain, CC0, CC BY, CC BY-SA; never NC or ND). Each one is credited
+under the word in Learn (author and licence, linked to its Commons page), in the app, and on `/learn/photos/`,
+which lists every photo with its words, author and licence.
+
+After editing `PHOTOS`, run `python3 tools/fetch_word_pictures.py` (needs Pillow, from `requirements-dev.txt`):
+it downloads each new photo, crops it square to 360 px into `static/course/pics/<key>.jpg`, writes its credit
+to `tools/word_photos.json`, fetches any new icon and deletes icons no word uses. Then run
+`python3 tools/course_content.py`. A `(file, focus)` pair in `PHOTOS` moves
+the square crop along the long side (0 = top or left, 1 = bottom or right).
 
 ## The API (`/api/v1/`)
 

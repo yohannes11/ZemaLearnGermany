@@ -17,7 +17,8 @@ class Word {
   /// A noun's gender, from its article: der, die, das or plural; empty for other words.
   final String gender;
 
-  /// Twemoji picture codes; compound words show their parts.
+  /// The word's picture: photo file names ('apple.jpg', credited in [CourseBundle.photos]), a colour as a
+  /// flat swatch ('#d32f2f') or a clock ('clock-0930', an SVG); '+' joins a compound's parts.
   final List<String> pic;
 
   /// Example sentences: (German, English). The Amharic is in [Amharic.examples].
@@ -222,8 +223,17 @@ class Amharic {
       );
 }
 
+/// Who took a vocabulary photo and the licence it is used under (from Wikimedia Commons).
+class PhotoCredit {
+  const PhotoCredit({required this.author, required this.license, required this.page});
+  final String author, license, page;
+
+  factory PhotoCredit.fromJson(Map<String, dynamic> j) =>
+      PhotoCredit(author: '${j['author'] ?? ''}', license: '${j['license'] ?? ''}', page: '${j['page'] ?? ''}');
+}
+
 class CourseBundle {
-  const CourseBundle({required this.version, required this.lang, required this.units, this.topics = const [], this.amharic, this.texts = const {}, this.clocks = const {}});
+  const CourseBundle({required this.version, required this.lang, required this.units, this.topics = const [], this.amharic, this.texts = const {}, this.clocks = const {}, this.photos = const {}});
 
   /// Changes whenever the course, its Amharic or an admin's published text changes.
   final String version;
@@ -241,6 +251,9 @@ class CourseBundle {
   /// (web/tools/clock_pictures.py).
   final Map<String, List<String>> clocks;
 
+  /// The credit for each vocabulary photo, by file name (web/tools/fetch_word_pictures.py).
+  final Map<String, PhotoCredit> photos;
+
   factory CourseBundle.fromJson(Map<String, dynamic> j) => CourseBundle(
         version: j['version'] as String? ?? '',
         lang: j['lang'] as String? ?? 'en',
@@ -249,6 +262,7 @@ class CourseBundle {
         amharic: j['amharic'] == null ? null : Amharic.fromJson((j['amharic'] as Map).cast()),
         texts: {...?(j['texts'] as Map?)?.map((k, v) => MapEntry('$k', '$v'))},
         clocks: {...?((j['course'] as Map)['clocks'] as Map?)?.map((k, v) => MapEntry('$k', _strings(v)))},
+        photos: {...?((j['course'] as Map)['photos'] as Map?)?.map((k, v) => MapEntry('$k', PhotoCredit.fromJson((v as Map).cast())))},
       );
 }
 

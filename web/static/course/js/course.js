@@ -106,23 +106,57 @@ function el(tag, className, text) {
   return node;
 }
 
-// A word's picture (Twemoji SVGs, see tools/word_pictures.py); compounds read "🍎 + 🍰".
+// A word's picture (tools/word_pictures.py): photos from Wikimedia Commons, a flat swatch for a colour, or a
+// clock for a time. Compounds show their parts: der Apfelkuchen reads "apple + cake".
 // Decorative for screen readers: the German and English text carry the meaning.
+const photoCredit = name => (window.COURSE.photos || {})[name];
+const creditText = c => T('Photo: {credit}', { credit: `${c.author}, ${c.license}` });
+
+function picImage(name) {
+  const img = el('img');
+  img.src = `${APP.picBase}${name.includes('.') ? name : `${name}.svg`}`;
+  img.alt = '';
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  img.draggable = false;
+  const credit = photoCredit(name);
+  if (credit) {
+    img.className = 'photo';
+    img.title = creditText(credit);
+  }
+  return img;
+}
+
 function wordPicture(item, className) {
   if (!item.pic) return null;
   const box = el('span', `word-pic ${className}`);
   box.setAttribute('aria-hidden', 'true');
   item.pic.forEach(name => {
     if (name === '+') return box.appendChild(el('span', 'word-pic-plus', '+'));
-    const img = el('img');
-    img.src = `${APP.picBase}${name}.svg`;
-    img.alt = '';
-    img.loading = 'lazy';
-    img.decoding = 'async';
-    img.draggable = false;
-    box.appendChild(img);
+    if (name.startsWith('#')) {
+      const swatch = el('span', `swatch${name === '#ffffff' ? ' light' : ''}`);
+      swatch.style.background = name;
+      return box.appendChild(swatch);
+    }
+    box.appendChild(picImage(name));
   });
   return box;
+}
+
+// Who took each photo of a word, and under which licence, linked to the photo's page on Wikimedia Commons.
+function photoCredits(item) {
+  const credits = (item.pic || []).map(photoCredit).filter(Boolean);
+  if (!credits.length) return null;
+  const line = el('p', 'photo-credit');
+  credits.forEach((c, i) => {
+    if (i) line.append(' · ');
+    const link = el('a', '', creditText(c));
+    link.href = c.page;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    line.appendChild(link);
+  });
+  return line;
 }
 
 // Clocks for the times a German text says (tools/clock_pictures.py builds COURSE.clocks): each time on an
@@ -1273,387 +1307,95 @@ function switchUnit(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// The course as an engraved map in the site's own colours: one town per unit along a road, with each unit's
-// title and progress as its place name. The road is inked where the learner has travelled and dashed
-// ahead; the current town is circled by hand, a passed unit test plants a pennant, the last unit is a castle.
-// The map runs edge to edge and can be panned and zoomed (drag, pinch, ctrl + scroll, the buttons).
-// A strict zig-zag: each name sits on the other side from its neighbours (below in a dip, above on a crest),
-// so names never run into each other.
-// A gentle wave: the towns sit in one row, so the map stays a slim strip above the lesson.
-const MAP_Y = [62, 52, 60, 50, 62, 52, 62, 50, 60, 52]; // hand-placed heights (% of the town area), repeating
-
-// A smooth road through the points (Catmull-Rom), one cubic segment per leg so it can be split anywhere.
-function routeLegs(pts) {
-  return pts.slice(0, -1).map((p1, i) => {
-    const p0 = pts[i - 1] || p1, p2 = pts[i + 1], p3 = pts[i + 2] || p2;
-    const r = v => Math.round(v * 100) / 100;
-    return `C${r(p1.x + (p2.x - p0.x) / 6)} ${r(p1.y + (p2.y - p0.y) / 6)} ${r(p2.x - (p3.x - p1.x) / 6)} ${r(p2.y - (p3.y - p1.y) / 6)} ${p2.x} ${p2.y}`;
-  });
-}
-
-// Under the road: soft washes of colour and a sea in the corner. Decoration only; shapes stretch to fit.
-const MAP_BASE = `
-  <defs>
-    <filter id="m-rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="7"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter>
-  </defs>
-  <g filter="url(#m-rough)">
-    <path class="m-wash m-wash-1" d="M-10 210C70 230 150 250 210 310S290 390 270 410H-10Z"/>
-    <path class="m-wash m-wash-2" d="M270 410C310 330 350 280 430 262S570 244 630 284 670 364 650 410Z"/>
-    <path class="m-wash m-wash-3" d="M650 410C670 300 630 220 710 160S870 60 1010 80V410Z"/>
-    <path class="m-wash m-wash-4" d="M420 -10C440 60 520 92 600 82S700 22 720 -10Z"/>
-    <path class="m-sea" d="M-10 -10H230C200 40 170 90 120 130S40 190 -10 200Z"/>
-    <path class="m-coast-red" d="M-10 200C40 190 70 170 120 130S200 40 230 -10"/>
-    <path class="m-coast" d="M-10 200C40 190 70 170 120 130S200 40 230 -10"/>
-  </g>`;
-
-// Each unit's place on the map is an engraved emblem of its topic, drawn like the symbols on an old map: ink
-// outlines, gold washes and hatched shading, standing on a washed ground. They share one 24-wide grid with the
-// ground at y = 20, so every emblem stands on its point on the road. A pennant flies over a passed unit test.
-const MAP_EMBLEMS = {
-  // Start: pronunciation and numbers, a herald's speaking-horn
-  0: `<path class="town-tower" d="M2 13L16 7V19L2 15Z"/><path class="town-tower" d="M0 13h2v2H0z"/>
-      <ellipse class="town-accent" cx="16" cy="13" rx="2.5" ry="6"/><path class="town-hatch" d="M6 12.5v3M9 11v5.5M12 9.5v7"/>
-      <path class="town-door" d="M20 9q3 4 0 8M22.5 7q4.5 6 0 12"/>`,
-  // 1: introductions and greetings, a banner on two posts
-  1: `<path class="town-door" d="M3 13V20M21 13V20"/>
-      <path class="town-tower" d="M1 4C5 2 9 6 12 4S19 2 23 4V13C19 11 15 15 12 13S5 11 1 13Z"/>
-      <ellipse class="town-accent" cx="1" cy="8.5" rx="1.8" ry="4.5"/><ellipse class="town-accent" cx="23" cy="8.5" rx="1.8" ry="4.5"/>
-      <path class="town-hatch" d="M5 7.5h13M5 10h9"/>`,
-  // 2: family, a family tree
-  2: `<path class="town-tower" d="M10.5 20V12h3v8"/><path class="town-door" d="M10.5 20q-2 0-3.5 1M13.5 20q2 0 3.5 1"/>
-      <path class="town-leaf" d="M12 0C6 0 3 4 4 8C1 9 1 14 5 14H19C23 14 23 9 20 8C21 4 18 0 12 0Z"/>
-      <path class="town-hatch" d="M16 4l3 3M15 7l4 4M13 10l3 3M8 3l-2 2"/>`,
-  // 3: food and shopping, a market stall with its awning and produce
-  3: `<path class="town-door" d="M4 12V5M20 12V5"/><path class="town-tower" d="M3 12h18v8H3z"/>
-      <path class="town-accent" d="M2 5H22L20.5 9H3.5Z"/><path class="town-door" d="M3.5 9q2 2 4.25 0q2 2 4.25 0q2 2 4.25 0q2 2 4.25 0M8 5l-.5 4M12 5v4M16 5l.5 4"/>
-      <circle class="town-accent" cx="8" cy="10.5" r="1.8"/><circle class="town-leaf" cx="12" cy="10.8" r="1.6"/><ellipse class="town-accent" cx="16" cy="11" rx="2.4" ry="1.4"/>
-      <path class="town-hatch" d="M5 14v5M8 14v5M11 14v5M14 14v5M17 14v5"/>`,
-  // 4: home and living, a cottage with a smoking chimney
-  4: `<path class="town-door" d="M17.5 1q-2-2 0-4q2-2 0-4"/><path class="town-tower" d="M16 7V1h3v8"/>
-      <path class="town-tower" d="M4 20V10h16v10Z"/><path class="town-accent" d="M2 11L12 2L22 11Z"/>
-      <path class="town-tower" d="M10 20v-5h4v5"/><path class="town-tower" d="M6 13h3v3H6z"/><path class="town-tower" d="M15 13h3v3h-3z"/>
-      <path class="town-hatch" d="M8 8.5l2 2M12 5.5l3 3M15 8l2 2"/>`,
-  // 5: daily routine and time, an hourglass
-  5: `<path class="town-door" d="M5 2v16M19 2v16"/><path class="town-tower" d="M3 0h18v2H3zM3 18h18v2H3z"/>
-      <path class="town-tower" d="M7 2C7 8 11 9 11 10C11 11 7 12 7 18H17C17 12 13 11 13 10C13 9 17 8 17 2Z"/>
-      <path class="town-accent" d="M8.6 5H15.4C15 7.5 12.6 8.6 12 9.6C11.4 8.6 9 7.5 8.6 5Z"/>
-      <path class="town-accent" d="M8 18C9 15.5 11 14.2 12 13.2C13 14.2 15 15.5 16 18Z"/><path class="town-door" d="M12 10v3.4"/>`,
-  // 6: weather, holidays and hobbies, a sun behind a cloud
-  6: `<path class="town-door" d="M9 -2v-3M9 16v3M0 7h-3M18 7h3M2.6 0.6l-2-2M15.4 0.6l2-2M2.6 13.4l-2 2"/>
-      <circle class="town-accent" cx="9" cy="7" r="5.5"/><path class="town-hatch" d="M6.5 6.5h.01M11.5 6.5h.01M7 9.5q2 1.5 4 0"/>
-      <path class="town-tower" d="M8 19C4.5 19 4.5 13.5 9 13.5C9 9.5 15.5 9.5 16.5 12.5C19.5 11.5 22.5 13.5 21.5 16.5C22.5 18.5 20.5 19.5 19 19Z"/>
-      <path class="town-hatch" d="M10 17h9M12 15.5h6"/>`,
-  // 7: jobs and abilities, a windmill at work
-  7: `<path class="town-tower" d="M8 20L10 8H14L16 20Z"/><path class="town-accent" d="M9.5 8L12 4.5L14.5 8Z"/>
-      <path class="town-tower" d="M11 20v-3.5a1 1 0 0 1 2 0V20"/><path class="town-hatch" d="M11 11h2.5M10.5 14h3.5"/>
-      ${[45, 135, 225, 315].map(a => `<g transform="rotate(${a} 12 6)"><path class="town-door" d="M12 6V-4"/><path class="town-tower" d="M12.4 4.5V-3.5H15.4V4.5Z"/><path class="town-hatch" d="M12.4 -1H15.4M12.4 1.6H15.4"/></g>`).join('')}
-      <circle class="town-accent" cx="12" cy="6" r="1.2"/>`,
-  // 8: travel and transport, a sailing ship on the waves
-  8: `<path class="town-door" d="M12 13V-6"/><path class="town-accent" d="M12 -6L17.5 -4.8L12 -3.6Z"/>
-      <path class="town-tower" d="M6 -3Q12 -1 18 -3V9Q12 11 6 9Z"/><path class="town-hatch" d="M8 1Q12 2.4 16 1M8 5Q12 6.4 16 5"/>
-      <path class="town-tower" d="M1 13H23L20 18.5H4Z"/><path class="town-accent" d="M2.2 14.6H21.8L21.3 15.6H2.7Z"/>
-      <path class="town-wave" d="M0 20.5q3-2 6 0t6 0t6 0t6 0"/>`,
-  // 9: yesterday and last year, the journey's end: a columned gate
-  9: `<path class="town-accent" d="M9.5 3l1-2.6h3l1 2.6"/><path class="town-tower" d="M5 3h14v3H5z"/><path class="town-tower" d="M1 6h22v2.4H1z"/>
-      <path class="town-tower" d="M2.2 8.4h1.8V18H2.2zM6.6 8.4h1.8V18H6.6zM11.1 8.4h1.8V18h-1.8zM15.6 8.4h1.8V18h-1.8zM20 8.4h1.8V18H20z"/>
-      <path class="town-tower" d="M0 18h24v2H0z"/><path class="town-hatch" d="M7 4.5h10"/>`,
+// The course's units as one row of buttons: a familiar icon for each unit's topic, its name under the icon,
+// and how much of it is learned. Every name is always shown, so learners see what each unit holds without
+// pointing at it. On a phone the row scrolls sideways and the current unit is brought into view.
+// Icons: line drawings in the style of the site's other icons, after Lucide (lucide.dev, ISC License,
+// Copyright (c) Lucide Contributors). Stroke only, 24 x 24.
+const UNIT_ICONS = {
+  // Start: pronunciation, the alphabet and numbers: a speech bubble with letters
+  0: `<path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-9l-5 4v-4H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/>
+      <text x="12" y="14" text-anchor="middle" font-size="8" font-weight="700" font-family="inherit" fill="currentColor" stroke="none">Aa</text>`,
+  // 1: introductions and greetings: a waving hand
+  1: `<path d="M18 11V6a2 2 0 0 0-4 0v5M14 10V4a2 2 0 0 0-4 0v6M10 10.5V6a2 2 0 0 0-4 0v8"/>
+      <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>
+      <path d="M3.5 6.5a5 5 0 0 1 2-3M1.5 5a8 8 0 0 1 3-4"/>`,
+  // 2: family and personal details: a family
+  2: `<circle cx="9" cy="7" r="4"/><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+      <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>`,
+  // 3: food and shopping: a shopping cart
+  3: `<circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
+      <path d="M2 2h2l2.7 12.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L22 7H5.1"/>`,
+  // 4: home and living: a house
+  4: `<path d="M3 10a2 2 0 0 1 .7-1.5l7-6a2 2 0 0 1 2.6 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>`,
+  // 5: daily routine and time: a clock
+  5: `<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>`,
+  // 6: weather, holidays and hobbies: the sun behind a cloud
+  6: `<path d="M12 2v2M4.9 4.9l1.4 1.4M20 12h2M19.1 4.9l-1.4 1.4M15.9 12.7a4 4 0 0 0-5.9-4.1"/>
+      <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6z"/>`,
+  // 7: jobs and abilities: a briefcase
+  7: `<rect x="2" y="6" width="20" height="14" rx="2"/><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>`,
+  // 8: travel and transport: an aeroplane
+  8: `<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>`,
+  // 9: yesterday and last year: a calendar with an arrow pointing back
+  9: `<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/>
+      <path d="M16 16H8M11 13l-3 3 3 3"/>`,
 };
-// Any unit without its own emblem keeps the engraved town.
-const MAP_TOWN_EMBLEM = `<path class="town-tower" d="M3 20V11l3-4 3 4v9M9 20V6l3-6 3 6v14M15 20V12l3-4 3 4v8"/>
-  <path class="town-door" d="M11 20v-3a1 1 0 0 1 2 0v3"/>`;
+const UNIT_ICON_DEFAULT = `<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>`; // a book
 
-const MAP_TOWN = (id, flag) => `<svg class="town" viewBox="-2 -12 28 34" aria-hidden="true">
-  <ellipse class="town-ground" cx="12" cy="20" rx="12" ry="2.6"/>
-  ${MAP_EMBLEMS[id] || MAP_TOWN_EMBLEM}
-  ${flag ? '<path class="town-flag-pole" d="M24 4V-9"/><path class="town-flag" d="M24 -9L30 -7 24 -5Z"/>' : ''}
-</svg>`;
+const unitIcon = id => `<svg class="unit-icon" viewBox="0 0 24 24" aria-hidden="true">${UNIT_ICONS[id] || UNIT_ICON_DEFAULT}</svg>`;
 
 function renderUnits() {
   const nav = document.getElementById('units');
-  nav.innerHTML = '';
-  const here = COURSE_UNITS.indexOf(unit);
   const testPass = Math.ceil(REVIEW_QUIZ_SIZE * GRAMMAR_PASS / GRAMMAR_QUIZ_SIZE);
-  const n = COURSE_UNITS.length;
-  // Towns are spread across the whole map, from edge to edge, and at full view clear of the zoom controls.
-  previewUnit(null); // the title below the towns is in place before the map is measured
-  const { w, vw, towns, top, h } = mapSize(nav);
-  const right = w > vw ? 136 : 24 + 52 + 110; // clear of the zoom controls at the right edge
-  const at = COURSE_UNITS.map((u, i) => ({
-    x: Math.round((n > 1 ? 136 + i * (w - 136 - right) / (n - 1) : w / 2) / w * 10000) / 100, // 136: room for a one-line name
-    y: Math.round((top + MAP_Y[i % MAP_Y.length] * towns / 100) / h * 10000) / 100,
-  }));
-  const legs = routeLegs(at);
-  const travelled = `M${at[0].x} ${at[0].y}${legs.slice(0, here).join('')}`;
-  const ahead = `M${at[here].x} ${at[here].y}${legs.slice(here).join('')}`;
-  const map = el('div', 'map');
-  map.innerHTML = `<svg class="map-base" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">${MAP_BASE}</svg>
-    <svg class="map-road" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-      ${here < n - 1 ? `<path class="road-ahead" d="${ahead}"/>` : ''}
-      ${here > 0 ? `<path class="road" d="${travelled}"/>` : ''}
-    </svg>`;
-  nav.appendChild(map);
+  const list = el('ol', 'unit-list');
   COURSE_UNITS.forEach((u, i) => {
     const words = new Map();
     u.sections.forEach(s => s.words.forEach(w => words.set(w.german, w)));
     const known = [...words.keys()].filter(g => learned.has(g)).length;
+    const percent = Math.round(known / words.size * 100);
     const test = u.grammar.find(g => g.custom === 'review');
     const passed = test && grammarScores[test.key] >= testPass;
-    const last = i === n - 1;
-    // Names hang below the towns; only the current one shows until you point at another.
-    const btn = el('button', `bead${last ? ' destination' : ''}`);
+    const item = el('li');
+    const btn = el('button', 'unit-btn');
     btn.type = 'button';
     btn.classList.toggle('active', u === unit);
     btn.classList.toggle('done', !!passed);
     if (u === unit) btn.setAttribute('aria-current', 'true');
-    btn.style.left = `${at[i].x}%`;
-    btn.style.top = `${at[i].y}%`;
-    btn.innerHTML = MAP_TOWN(u.id, passed) + (u === unit
-      ? '<svg class="ink-ring" viewBox="0 0 60 44" aria-hidden="true"><path pathLength="100" d="M44 6C30 0 8 4 4 18S16 42 34 40 58 28 55 15 40 2 26 5"/></svg>'
-      : '');
-    const label = el('span', 'pin-label');
-    label.setAttribute('aria-hidden', 'true');
-    label.append(el('b', '', u.title), el('small', '', `${Math.round(known / words.size * 100)}%${passed ? ' ✓' : ''}`));
-    btn.appendChild(label);
+    btn.innerHTML = `<span class="unit-tile">${unitIcon(u.id)}${passed ? `<span class="unit-check">${icon('check')}</span>` : ''}</span>
+      <span class="unit-num"></span><span class="unit-name"></span>
+      <span class="unit-bar" aria-hidden="true"><i style="width:${percent}%"></i></span>`;
+    btn.querySelector('.unit-num').textContent = unitName(u);
+    btn.querySelector('.unit-name').textContent = u.title;
+    btn.title = `${unitName(u)}: ${u.title} · ${T('{known} of {total} words learned', { known, total: words.size })}`;
     btn.setAttribute('aria-label', `${unitName(u)}: ${u.title}. ${T('{known} of {total} words learned', { known, total: words.size })}${passed ? ` · ${T('Unit test passed')}` : ''}`);
     btn.onclick = () => switchUnit(u.id);
-    btn.onpointerenter = () => previewUnit(u);
-    btn.onfocus = () => {
-      previewUnit(u);
-      // Tabbing to a town that is off screen brings it into view.
-      const r = btn.getBoundingClientRect(), v = nav.getBoundingClientRect();
-      if (r.left < v.left + 40 || r.right > v.right - 40 || r.top < v.top || r.bottom > v.bottom) centreMapOn(i, true);
-    };
-    btn.onpointerleave = btn.onblur = () => previewUnit(null);
-    // Left and right arrows walk the road from town to town.
+    // Left and right arrows move from unit to unit.
     btn.onkeydown = e => {
       const step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
-      const next = step && map.querySelectorAll('.bead')[i + step];
+      const next = step && list.querySelectorAll('.unit-btn')[i + step];
       if (next) { e.preventDefault(); next.focus(); }
     };
-    map.appendChild(btn);
+    item.appendChild(btn);
+    list.appendChild(item);
   });
-  // The controls sit outside the faded viewport, over the map.
-  const journey = nav.parentElement;
-  journey.querySelector('.map-controls')?.remove();
-  journey.appendChild(mapControls());
-  mapView.points = at;
-  mapView.here = here;
-  layoutMap();
-  // A new unit brings its town into view; re-rendering the same unit keeps the learner's pan and zoom.
-  if (mapView.centred !== unit.id) { mapView.centred = unit.id; centreMapOn(here); }
-  wireMap(nav);
-  previewUnit(null);
+  nav.replaceChildren(list);
+  // On a narrow screen the row scrolls: bring the current unit into view, without moving the page.
+  const active = list.querySelector('.unit-btn.active');
+  if (active && nav.scrollWidth > nav.clientWidth) {
+    nav.scrollLeft = active.parentElement.offsetLeft - (nav.clientWidth - active.offsetWidth) / 2;
+  }
   document.getElementById('brand-sub').textContent = `${unitName(unit)} · ${unit.title}`;
   document.getElementById('part-grammar-name').textContent = lessonsLabel();
 }
 
-/* ---------------- Map view: pan and zoom ----------------
-   The map is drawn at a size fitted to the screen (.map) and moved inside its edge-to-edge viewport (#units)
-   with one transform. Towns and labels are scaled back by the zoom, so they stay the same size, as on any map. */
-const mapView = { z: 1, tx: 0, ty: 0, w: 0, h: 0, points: [], here: 0, centred: null, wired: false };
-const MAP_ZOOM = [1, 3];
-
-// Fitted to the screen: as wide as the page, tall enough for the towns to spread out (phones get a wider map
-// to pan across).
-// The map fills the whole top of the page: it runs up behind the top bar, the towns use the middle, and the
-// unit's title and the Vocabulary | Grammar switch sit over its lower edge.
-function mapSize(nav) {
-  const vw = nav.clientWidth;
-  const w = Math.max(1280, vw); // always the full width of the page; phones get a wider map to pan across
-  const towns = Math.round(Math.max(92, Math.min(w / 15, 104))); // a slim strip: the lesson stays in view
-  const bar = document.querySelector('.topbar')?.offsetHeight || 0;
-  const head = nav.parentElement.querySelector('.journey-head')?.offsetHeight || 0;
-  return { vw, w, towns, bar, top: bar + 4, h: bar + 4 + towns + head + 4 };
-}
-
-function layoutMap() {
-  const nav = document.getElementById('units');
-  const map = nav.querySelector('.map');
-  if (!map) return;
-  ({ w: mapView.w, h: mapView.h } = mapSize(nav));
-  map.style.width = `${mapView.w}px`;
-  map.style.height = `${mapView.h}px`;
-  nav.style.height = `${mapView.h}px`;
-  const size = mapSize(nav);
-  nav.parentElement.style.setProperty('--towns-h', `${size.towns}px`);
-  nav.parentElement.style.setProperty('--towns-top', `${size.top}px`);
-  nav.parentElement.style.setProperty('--topbar-h', `${size.bar}px`);
-  applyMapView();
-}
-
-function applyMapView() {
-  const nav = document.getElementById('units');
-  const map = nav.querySelector('.map');
-  if (!map) return;
-  const v = mapView, vw = nav.clientWidth, vh = v.h;
-  v.z = Math.min(MAP_ZOOM[1], Math.max(MAP_ZOOM[0], v.z));
-  const cw = v.w * v.z, ch = v.h * v.z;
-  v.tx = cw <= vw ? (vw - cw) / 2 : Math.min(0, Math.max(vw - cw, v.tx));
-  v.ty = ch <= vh ? 0 : Math.min(0, Math.max(vh - ch, v.ty));
-  map.style.transform = `translate(${v.tx}px, ${v.ty}px) scale(${v.z})`;
-  map.style.setProperty('--z', v.z);
-  const pannable = cw > vw + 1 || v.z > 1;
-  nav.classList.toggle('pannable', pannable);
-  // Zoomed in, a finger drag moves the map in every direction; at full view, up and down still scroll the page.
-  nav.style.touchAction = v.z > 1 ? 'none' : 'pan-y';
-  // Zoomed in, the map slides under the top bar: the bar turns solid, as it does when the page scrolls.
-  document.querySelector('.topbar')?.classList.toggle('over-map', v.z > 1);
-  const zin = document.querySelector('[data-map="in"]'), zout = document.querySelector('[data-map="out"]');
-  if (zin) zin.disabled = v.z >= MAP_ZOOM[1];
-  if (zout) zout.disabled = v.z <= MAP_ZOOM[0];
-}
-
-// Zoom keeping the point under (cx, cy) in place: the cursor, the pinch or the middle of the view.
-function zoomMapAt(z, cx, cy) {
-  const v = mapView;
-  const nz = Math.min(MAP_ZOOM[1], Math.max(MAP_ZOOM[0], z));
-  v.tx = cx - (cx - v.tx) * nz / v.z;
-  v.ty = cy - (cy - v.ty) * nz / v.z;
-  v.z = nz;
-  applyMapView();
-}
-
-function centreMapOn(i, smooth = false) {
-  const nav = document.getElementById('units');
-  const p = mapView.points[i];
-  if (!p) return;
-  mapView.tx = nav.clientWidth / 2 - p.x / 100 * mapView.w * mapView.z;
-  mapView.ty = mapView.h / 2 - p.y / 100 * mapView.h * mapView.z;
-  const map = nav.querySelector('.map');
-  if (smooth && map) {
-    map.classList.add('easing');
-    setTimeout(() => map.classList.remove('easing'), 400);
-  }
-  applyMapView();
-}
-
-function mapControls() {
-  const box = el('div', 'map-controls');
-  const add = (key, label, svg, fn) => {
-    const b = el('button', 'map-ctl');
-    b.type = 'button';
-    b.dataset.map = key;
-    b.setAttribute('aria-label', label);
-    b.title = label;
-    b.innerHTML = svg;
-    b.onclick = e => { e.stopPropagation(); fn(); };
-    box.appendChild(b);
-  };
-  const mid = () => [document.getElementById('units').clientWidth / 2, mapView.h / 2];
-  add('in', T('Zoom in'), icon('plus'), () => { const [x, y] = mid(); smoothZoom(mapView.z * 1.5, x, y); });
-  add('out', T('Zoom out'), icon('dash'), () => { const [x, y] = mid(); smoothZoom(mapView.z / 1.5, x, y); });
-  box.appendChild(el('span', 'map-ctl-rule'));
-  add('here', T('Show where I am'), icon('locate'), () => centreMapOn(mapView.here, true));
-  return box;
-}
-
-function smoothZoom(z, x, y) {
-  const map = document.querySelector('#units .map');
-  map?.classList.add('easing');
-  setTimeout(() => map?.classList.remove('easing'), 400);
-  zoomMapAt(z, x, y);
-}
-
-// Drag to pan (mouse, pen, one finger), pinch to zoom, ctrl + scroll or a trackpad pinch to zoom, sideways
-// scroll to pan, double-click to zoom in, + and - keys. A drag never counts as a click on a town.
-function wireMap(nav) {
-  if (mapView.wired) return;
-  mapView.wired = true;
-  const pointers = new Map();
-  let drag = null, pinch = null, moved = false;
-  const local = e => { const r = nav.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
-
-  nav.addEventListener('pointerdown', e => {
-    if (e.target.closest('.map-controls') || (e.pointerType === 'mouse' && e.button !== 0)) return;
-    pointers.set(e.pointerId, local(e));
-    moved = false;
-    if (pointers.size === 1) drag = { x: e.clientX, y: e.clientY, tx: mapView.tx, ty: mapView.ty, id: e.pointerId };
-    if (pointers.size === 2) {
-      const [a, b] = [...pointers.values()];
-      pinch = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), z: mapView.z };
-      drag = null;
-    }
-  });
-  nav.addEventListener('pointermove', e => {
-    if (!pointers.has(e.pointerId)) return;
-    pointers.set(e.pointerId, local(e));
-    if (pinch && pointers.size === 2) {
-      const [a, b] = [...pointers.values()];
-      moved = true;
-      zoomMapAt(pinch.z * Math.hypot(a[0] - b[0], a[1] - b[1]) / pinch.d, (a[0] + b[0]) / 2, (a[1] + b[1]) / 2);
-      return;
-    }
-    if (!drag || e.pointerId !== drag.id) return;
-    const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
-    if (!moved && Math.hypot(dx, dy) < 5) return;
-    if (!moved) { moved = true; nav.setPointerCapture(e.pointerId); nav.classList.add('dragging'); }
-    mapView.tx = drag.tx + dx;
-    mapView.ty = drag.ty + dy;
-    applyMapView();
-  });
-  const end = e => {
-    pointers.delete(e.pointerId);
-    if (pointers.size < 2) pinch = null;
-    if (!pointers.size) { drag = null; nav.classList.remove('dragging'); }
-  };
-  nav.addEventListener('pointerup', end);
-  nav.addEventListener('pointercancel', end);
-  // Swallow the click that ends a drag, so panning across a town does not open it.
-  nav.addEventListener('click', e => { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
-
-  nav.addEventListener('wheel', e => {
-    const [x, y] = local(e);
-    if (e.ctrlKey || e.metaKey) {
-      e.preventDefault();
-      zoomMapAt(mapView.z * Math.exp(-e.deltaY * 0.01), x, y);
-    } else if (Math.abs(e.deltaX) > Math.abs(e.deltaY) && nav.classList.contains('pannable')) {
-      e.preventDefault();
-      mapView.tx -= e.deltaX;
-      applyMapView();
-    }
-    // Plain up-and-down scrolling is left to the page.
-  }, { passive: false });
-  nav.addEventListener('dblclick', e => {
-    if (e.target.closest('.bead, .map-controls')) return;
-    const [x, y] = local(e);
-    smoothZoom(mapView.z * 1.6, x, y);
-  });
-  nav.addEventListener('keydown', e => {
-    if (e.target.closest('.map-controls') && (e.key === 'Enter' || e.key === ' ')) return;
-    const [x, y] = [nav.clientWidth / 2, mapView.h / 2];
-    if (e.key === '+' || e.key === '=') { e.preventDefault(); smoothZoom(mapView.z * 1.5, x, y); }
-    else if (e.key === '-' || e.key === '_') { e.preventDefault(); smoothZoom(mapView.z / 1.5, x, y); }
-  });
-  // A new width re-spreads the towns (they keep clear of the controls); the zoom is kept.
-  let resizeTimer;
-  let lastWidth = nav.clientWidth;
-  addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      if (nav.clientWidth === lastWidth) return;
-      lastWidth = nav.clientWidth;
-      renderUnits();
-    }, 120);
-  });
-}
-
-// The top bar is see-through over the map at the top of the page, and solid once the page scrolls under it.
+// The top bar is solid once the page scrolls under it.
 {
   const bar = document.querySelector('.topbar');
   const onScroll = () => bar?.classList.toggle('scrolled', window.scrollY > 4);
   addEventListener('scroll', onScroll, { passive: true });
   onScroll();
-}
-
-// Pointing at a bead shows where it leads; leaving it shows the current unit again.
-function previewUnit(u) {
-  const other = u && u !== unit;
-  const shown = other ? u : unit;
-  document.getElementById('journey-kicker').textContent = other
-    ? T('Go to {unit}', { unit: unitName(u) })
-    : `${unitName(unit)} · ${T('stop {n} of {total}', { n: COURSE_UNITS.indexOf(unit) + 1, total: COURSE_UNITS.length })}`;
-  document.getElementById('journey-title').textContent = shown.title;
-  document.querySelector('.journey-where').classList.toggle('preview', !!other);
 }
 
 function renderParts() {
@@ -1907,7 +1649,7 @@ function renderCrumbs() {
   const here = stepLabel(unit, currentScope);
   const index = !isGrammar(currentScope) && currentScope !== 'all' ? SCOPES.indexOf(currentScope) + 1 : 0;
   const crumbs = [
-    { html: T('Course'), cls: 'crumb-course', title: T('All units'), go: () => { backToTop(); document.querySelector('.bead.active')?.focus({ preventScroll: true }); } },
+    { html: T('Course'), cls: 'crumb-course', title: T('All units'), go: () => { backToTop(); document.querySelector('.unit-btn.active')?.focus({ preventScroll: true }); } },
     { html: `${unitName(unit)}<span class="crumb-extra">: </span>`, extra: unit.title, title: `${unitName(unit)}: ${unit.title}`, go: () => { backToTop(); document.querySelector('.part.active')?.focus({ preventScroll: true }); } },
     { html: `${here.part}${icon('down', 'style="width:14px;height:14px"')}`, cls: 'crumb-part', drawer: true, title: here.vocab ? T('All vocabulary sections') : T('All {part} lessons', { part: here.part.toLowerCase() }), go: () => openSidebar() },
     // Phones drop the words "Section" and "Lesson": the crumb reads "2.3" or "G3".
@@ -2153,6 +1895,8 @@ function renderWordPage(direction) {
   content.querySelector('.wv-word').lang = 'de'; // long compounds break at German syllables, not mid-letter
   const picture = wordPicture(item, 'wv-pic');
   if (picture) content.querySelector('.wv-word').before(picture);
+  const credits = photoCredits(item);
+  if (credits) content.querySelector('.word-page').appendChild(credits);
   const listen = listenButton(item.german);
   listen.classList.add('lg');
   content.querySelector('.wv-listen').appendChild(listen);
@@ -2997,11 +2741,7 @@ function familyTree(tree, { pins = null, onPerson = null } = {}) {
       pic.textContent = 'ich';
       pic.lang = 'de';
     } else {
-      const img = el('img');
-      img.src = `${APP.picBase}${person.pic}.svg`;
-      img.alt = '';
-      img.draggable = false;
-      pic.appendChild(img);
+      pic.appendChild(picImage(person.pic));
     }
     node.appendChild(pic);
     const label = el('span', 'tree-label');

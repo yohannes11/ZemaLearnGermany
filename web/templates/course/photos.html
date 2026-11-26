@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static zema_i18n %}
+
+{% block title %}{% t "Photo credits" %} · Zema German{% endblock %}
+
+{% block head %}
+  <meta name="description" content="{% t "Who took each photo in the vocabulary, and the licence that lets us use it." %}">
+  <link rel="stylesheet" href="{% static 'dashboard/css/dashboard.css' %}">
+  <link rel="stylesheet" href="{% static 'course/css/photos.css' %}">
+{% endblock %}
+
+{% block body %}
+  <div class="band" aria-hidden="true"></div>
+  <main class="wrap">
+    <a class="btn" href="{{ learn_url }}">← {% t "Back to the course" %}</a>
+    <h1 class="photos-title">{% t "Photo credits" %}</h1>
+    <p class="photos-intro">{% t "Who took each photo in the vocabulary, and the licence that lets us use it." %}
+      {% t "Every photo comes from Wikimedia Commons. Press a photo's name to see the original." %}
+      {% t "We cropped each photo to a square and made it smaller." %}</p>
+    <p class="photos-intro">{% t "Where no photo fits a word, it shows an icon:" %} <a href="https://github.com/jdecked/twemoji" rel="noopener" target="_blank">Twemoji</a>, Twitter, Inc and contributors, <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>.</p>
+    <ul class="photo-list">
+      {% for c in credits %}
+        <li class="photo-item">
+          <img src="{{ c.src }}" alt="" width="96" height="96" loading="lazy" decoding="async">
+          <div>
+            <p class="photo-words" lang="de">{{ c.words|join:" · " }}</p>
+            <p lang="en"><a href="{{ c.page }}" rel="noopener" target="_blank">{{ c.file }}</a></p>
+            <p lang="en">{{ c.author }} ·
+              {% if c.license_url %}<a href="{{ c.license_url }}" rel="license noopener" target="_blank">{{ c.license }}</a>{% else %}{{ c.license }}{% endif %}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+{% endblock %}

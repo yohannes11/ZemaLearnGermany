@@ -204,11 +204,35 @@ class CourseContentTests(SimpleTestCase):
             for section in unit["sections"]
             for word in section["words"]
             for name in word.get("pic", [])
-            if name != "+"
+            if name != "+" and not name.startswith("#")
         }
-        self.assertGreater(len(names), 300)
-        missing = sorted(name for name in names if not (pics / f"{name}.svg").exists())
+        self.assertGreater(len(names), 200)
+        missing = sorted(n for n in names if not (pics / (n if "." in n else f"{n}.svg")).exists())
         self.assertEqual(missing, [], "run tools/fetch_word_pictures.py")
+
+    def test_every_photo_is_credited(self):
+        photos = self.course["photos"]
+        shown = {
+            name
+            for unit in self.course["units"]
+            for section in unit["sections"]
+            for word in section["words"]
+            for name in word.get("pic", [])
+            if name.endswith(".jpg")
+        }
+        self.assertEqual(shown - set(photos), set())
+        for name, credit in photos.items():
+            self.assertTrue(credit["author"] and credit["license"], name)
+            self.assertTrue(credit["page"].startswith("https://commons.wikimedia.org/wiki/File:"), name)
+            self.assertNotRegex(credit["license"], r"\b(NC|ND)\b", name)
+
+    def test_every_picture_is_a_photo_colour_clock_or_icon(self):
+        known = r"^(\+|#[0-9a-f]{6}|clock-\d{4}|[a-z0-9-]+\.jpg|[0-9a-f]{2,5}(-[0-9a-f]{2,5})*)$"
+        for unit in self.course["units"]:
+            for section in unit["sections"]:
+                for word in section["words"]:
+                    for name in word.get("pic", []):
+                        self.assertRegex(name, known, word["german"])
 
     def test_units_start_with_the_start_unit_and_run_in_order(self):
         self.assertEqual([unit["id"] for unit in self.course["units"]], list(range(10)))

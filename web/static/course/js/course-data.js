@@ -15,7 +15,7 @@ window.COURSE = {
        "german": "der Kaffee",
        "english": "the coffee (m.)",
        "pic": [
-        "2615"
+        "coffee.jpg"
        ],
        "examples": [
         [
@@ -38,7 +38,7 @@ window.COURSE = {
        "german": "das Taxi",
        "english": "the taxi (n.)",
        "pic": [
-        "1f695"
+        "taxi.jpg"
        ],
        "examples": [
         [
@@ -61,7 +61,7 @@ window.COURSE = {
        "german": "Hallo!",
        "english": "Hello!",
        "pic": [
-        "1f44b"
+        "wave.jpg"
        ],
        "examples": [
         [
@@ -79,7 +79,7 @@ window.COURSE = {
        "german": "Guten Morgen!",
        "english": "Good morning!",
        "pic": [
-        "1f305"
+        "sunrise.jpg"
        ],
        "examples": [
         [
@@ -182,7 +182,7 @@ window.COURSE = {
        "german": "Wie bitte?",
        "english": "Pardon?",
        "pic": [
-        "1f442"
+        "ear.jpg"
        ],
        "examples": [
         [
@@ -265,7 +265,7 @@ window.COURSE = {
        "german": "der Mann",
        "english": "the man (m.)",
        "pic": [
-        "1f468"
+        "man.jpg"
        ],
        "examples": [
         [
@@ -288,7 +288,7 @@ window.COURSE = {
        "german": "der Tee",
        "english": "the tea (m.)",
        "pic": [
-        "1f375"
+        "tea.jpg"
        ],
        "examples": [
         [
@@ -311,7 +311,7 @@ window.COURSE = {
        "german": "das Bett",
        "english": "the bed (n.)",
        "pic": [
-        "1f6cf"
+        "bed.jpg"
        ],
        "examples": [
         [
@@ -372,7 +372,7 @@ window.COURSE = {
        "german": "rot",
        "english": "red",
        "pic": [
-        "1f534"
+        "#d32f2f"
        ],
        "examples": [
         [
@@ -413,7 +413,7 @@ window.COURSE = {
        "german": "gut",
        "english": "good",
        "pic": [
-        "1f642"
+        "smile.jpg"
        ],
        "examples": [
         [
@@ -435,7 +435,7 @@ window.COURSE = {
        "german": "die Mutter",
        "english": "the mother (f.)",
        "pic": [
-        "1f469-200d-1f467"
+        "mother.jpg"
        ],
        "examples": [
         [
@@ -503,7 +503,7 @@ window.COURSE = {
        "german": "der Käse",
        "english": "the cheese (m.)",
        "pic": [
-        "1f9c0"
+        "cheese.jpg"
        ],
        "examples": [
         [
@@ -526,7 +526,7 @@ window.COURSE = {
        "german": "das Mädchen",
        "english": "the girl (n.)",
        "pic": [
-        "1f467"
+        "girl.jpg"
        ],
        "examples": [
         [
@@ -568,7 +568,7 @@ window.COURSE = {
        "german": "schön",
        "english": "beautiful",
        "pic": [
-        "1f338"
+        "flowers.jpg"
        ],
        "examples": [
         [
@@ -590,7 +590,7 @@ window.COURSE = {
        "german": "hören",
        "english": "to hear",
        "pic": [
-        "1f442"
+        "ear.jpg"
        ],
        "examples": [
         [
@@ -635,7 +635,7 @@ window.COURSE = {
        "german": "die Tür",
        "english": "the door (f.)",
        "pic": [
-        "1f6aa"
+        "door.jpg"
        ],
        "examples": [
         [
@@ -658,7 +658,7 @@ window.COURSE = {
        "german": "müde",
        "english": "tired",
        "pic": [
-        "1f634"
+        "sleep.jpg"
        ],
        "examples": [
         [
@@ -700,7 +700,7 @@ window.COURSE = {
        "german": "Tschüss!",
        "english": "Bye!",
        "pic": [
-        "1f44b"
+        "wave.jpg"
        ],
        "examples": [
         [
@@ -743,7 +743,7 @@ window.COURSE = {
        "german": "nein",
        "english": "no",
        "pic": [
-        "1f44e"
+        "thumbs-down.jpg"
        ],
        "examples": [
         [
@@ -765,7 +765,7 @@ window.COURSE = {
        "german": "die Zeit",
        "english": "the time (f.)",
        "pic": [
-        "23f3"
+        "hourglass.jpg"
        ],
        "examples": [
         [
@@ -803,7 +803,7 @@ window.COURSE = {
        "german": "die Liebe",
        "english": "the love (f.)",
        "pic": [
-        "2764"
+        "couple.jpg"
        ],
        "examples": [
         [
@@ -886,7 +886,7 @@ window.COURSE = {
        "german": "die Häuser",
        "english": "the houses (pl.)",
        "pic": [
-        "1f3d8"
+        "houses.jpg"
        ],
        "examples": [
         [
@@ -909,7 +909,7 @@ window.COURSE = {
        "german": "das Haus",
        "english": "the house (n.)",
        "pic": [
-        "1f3e0"
+        "house.jpg"
        ],
        "examples": [
         [
@@ -932,7 +932,7 @@ window.COURSE = {
        "german": "die Frau",
        "english": "the woman (f.)",
        "pic": [
-        "1f469"
+        "woman.jpg"
        ],
        "examples": [
         [
@@ -980,7 +980,7 @@ window.COURSE = {
        "german": "das Wasser",
        "english": "the water (n.)",
        "pic": [
-        "1f4a7"
+        "water.jpg"
        ],
        "examples": [
         [
@@ -1003,7 +1003,7 @@ window.COURSE = {
        "german": "der Wein",
        "english": "the wine (m.)",
        "pic": [
-        "1f377"
+        "wine.jpg"
        ],
        "examples": [
         [
@@ -1072,7 +1072,7 @@ window.COURSE = {
        "german": "der Zug",
        "english": "the train (m.)",
        "pic": [
-        "1f686"
+        "train.jpg"
        ],
        "examples": [
         [
@@ -1095,7 +1095,7 @@ window.COURSE = {
        "german": "ja",
        "english": "yes",
        "pic": [
-        "1f44d"
+        "thumbs-up.jpg"
        ],
        "examples": [
         [
@@ -1136,7 +1136,7 @@ window.COURSE = {
        "german": "die Sonne",
        "english": "the sun (f.)",
        "pic": [
-        "2600"
+        "sun.jpg"
        ],
        "examples": [
         [
@@ -1159,7 +1159,7 @@ window.COURSE = {
        "german": "die Straße",
        "english": "the street (f.)",
        "pic": [
-        "1f6e3"
+        "street.jpg"
        ],
        "examples": [
         [
@@ -1221,7 +1221,7 @@ window.COURSE = {
        "german": "gelb",
        "english": "yellow",
        "pic": [
-        "1f7e1"
+        "#fbc02d"
        ],
        "examples": [
         [
@@ -1249,7 +1249,7 @@ window.COURSE = {
        "german": "die Schule",
        "english": "the school (f.)",
        "pic": [
-        "1f3eb"
+        "school.jpg"
        ],
        "examples": [
         [
@@ -1272,7 +1272,7 @@ window.COURSE = {
        "german": "schnell",
        "english": "fast",
        "pic": [
-        "1f407"
+        "hare.jpg"
        ],
        "examples": [
         [
@@ -1294,7 +1294,7 @@ window.COURSE = {
        "german": "sprechen",
        "english": "to speak",
        "pic": [
-        "1f5e3"
+        "conversation.jpg"
        ],
        "examples": [
         [
@@ -1316,7 +1316,7 @@ window.COURSE = {
        "german": "spielen",
        "english": "to play",
        "pic": [
-        "1f3b2"
+        "board-game.jpg"
        ],
        "examples": [
         [
@@ -1338,7 +1338,7 @@ window.COURSE = {
        "german": "die Stadt",
        "english": "the city (f.)",
        "pic": [
-        "1f3d9"
+        "city.jpg"
        ],
        "examples": [
         [
@@ -1399,7 +1399,7 @@ window.COURSE = {
        "german": "die Milch",
        "english": "the milk (f.)",
        "pic": [
-        "1f95b"
+        "milk.jpg"
        ],
        "examples": [
         [
@@ -1422,7 +1422,7 @@ window.COURSE = {
        "german": "die Nacht",
        "english": "the night (f.)",
        "pic": [
-        "1f319"
+        "moon.jpg"
        ],
        "examples": [
         [
@@ -1445,7 +1445,7 @@ window.COURSE = {
        "german": "das Buch",
        "english": "the book (n.)",
        "pic": [
-        "1f4d6"
+        "book.jpg"
        ],
        "examples": [
         [
@@ -1468,7 +1468,7 @@ window.COURSE = {
        "german": "kochen",
        "english": "to cook",
        "pic": [
-        "1f373"
+        "cooking.jpg"
        ],
        "examples": [
         [
@@ -1490,7 +1490,7 @@ window.COURSE = {
        "german": "der Apfel",
        "english": "the apple (m.)",
        "pic": [
-        "1f34e"
+        "apple.jpg"
        ],
        "examples": [
         [
@@ -1513,7 +1513,7 @@ window.COURSE = {
        "german": "das Brot",
        "english": "the bread (n.)",
        "pic": [
-        "1f35e"
+        "bread.jpg"
        ],
        "examples": [
         [
@@ -1806,7 +1806,7 @@ window.COURSE = {
        "german": "das Alphabet",
        "english": "the alphabet (n.)",
        "pic": [
-        "1f524"
+        "alphabet.jpg"
        ],
        "examples": [
         [
@@ -1829,7 +1829,7 @@ window.COURSE = {
        "german": "der Buchstabe",
        "english": "the letter (m.)",
        "pic": [
-        "1f524"
+        "alphabet.jpg"
        ],
        "examples": [
         [
@@ -1892,7 +1892,7 @@ window.COURSE = {
        "german": "buchstabieren",
        "english": "to spell",
        "pic": [
-        "1f524"
+        "alphabet.jpg"
        ],
        "examples": [
         [
@@ -4063,7 +4063,7 @@ window.COURSE = {
        "german": "Hallo!",
        "english": "Hello!",
        "pic": [
-        "1f44b"
+        "wave.jpg"
        ],
        "examples": [
         [
@@ -4081,7 +4081,7 @@ window.COURSE = {
        "german": "Hi!",
        "english": "Hi!",
        "pic": [
-        "1f44b"
+        "wave.jpg"
        ],
        "examples": [
         [
@@ -4099,7 +4099,7 @@ window.COURSE = {
        "german": "der Morgen",
        "english": "the morning (m.)",
        "pic": [
-        "1f305"
+        "sunrise.jpg"
        ],
        "examples": [
         [
@@ -4142,7 +4142,7 @@ window.COURSE = {
        "german": "der Abend",
        "english": "the evening (m.)",
        "pic": [
-        "1f306"
+        "evening.jpg"
        ],
        "examples": [
         [
@@ -4165,7 +4165,7 @@ window.COURSE = {
        "german": "Guten Morgen!",
        "english": "Good morning!",
        "pic": [
-        "1f305"
+        "sunrise.jpg"
        ],
        "examples": [
         [
@@ -4183,7 +4183,7 @@ window.COURSE = {
        "german": "Guten Tag!",
        "english": "Good day!",
        "pic": [
-        "1f44b"
+        "wave.jpg"
        ],
        "examples": [
         [
@@ -4201,7 +4201,7 @@ window.COURSE = {
        "german": "Guten Abend!",
        "english": "Good evening!",
        "pic": [
-        "1f306"
+        "evening.jpg"
        ],
        "examples": [
         [
@@ -4219,7 +4219,7 @@ window.COURSE = {
        "german": "Gute Nacht!",
        "english": "Good night!",
        "pic": [
-        "1f319"
+        "moon.jpg"
        ],
        "examples": [
         [
@@ -4237,7 +4237,7 @@ window.COURSE = {
        "german": "Tschüss!",
        "english": "Bye!",
        "pic": [
-        "1f44b"
+        "wave.jpg"
        ],
        "examples": [
         [
@@ -4255,7 +4255,7 @@ window.COURSE = {
        "german": "Auf Wiedersehen!",
        "english": "Goodbye!",
        "pic": [
-        "1f44b"
+        "wave.jpg"
        ],
        "examples": [
         [
@@ -4445,7 +4445,7 @@ window.COURSE = {
        "german": "der Mann",
        "english": "the man (m.)",
        "pic": [
-        "1f468"
+        "man.jpg"
        ],
        "examples": [
         [
@@ -4468,7 +4468,7 @@ window.COURSE = {
        "german": "die Frau",
        "english": "the woman (f.)",
        "pic": [
-        "1f469"
+        "woman.jpg"
        ],
        "examples": [
         [
@@ -4560,7 +4560,7 @@ window.COURSE = {
        "german": "Woher kommst du?",
        "english": "Where are you from? (informal)",
        "pic": [
-        "1f30d"
+        "globe.jpg"
        ],
        "examples": [
         [
@@ -4578,7 +4578,7 @@ window.COURSE = {
        "german": "Ich komme aus…",
        "english": "I come from…",
        "pic": [
-        "1f30d"
+        "globe.jpg"
        ],
        "examples": [
         [
@@ -4596,7 +4596,7 @@ window.COURSE = {
        "german": "aus den Vereinigten Staaten",
        "english": "from the United States",
        "pic": [
-        "1f1fa-1f1f8"
+        "flag-us.jpg"
        ],
        "examples": [
         [
@@ -4614,7 +4614,7 @@ window.COURSE = {
        "german": "aus der Schweiz",
        "english": "from Switzerland",
        "pic": [
-        "1f1e8-1f1ed"
+        "flag-ch.jpg"
        ],
        "examples": [
         [
@@ -4632,7 +4632,7 @@ window.COURSE = {
        "german": "aus der Türkei",
        "english": "from Turkey",
        "pic": [
-        "1f1f9-1f1f7"
+        "flag-tr.jpg"
        ],
        "examples": [
         [
@@ -4737,7 +4737,7 @@ window.COURSE = {
        "german": "gut",
        "english": "good",
        "pic": [
-        "1f642"
+        "smile.jpg"
        ],
        "examples": [
         [
@@ -4759,7 +4759,7 @@ window.COURSE = {
        "german": "sehr gut",
        "english": "very good",
        "pic": [
-        "1f600"
+        "smile.jpg"
        ],
        "examples": [
         [
@@ -4781,7 +4781,7 @@ window.COURSE = {
        "german": "schlecht",
        "english": "bad",
        "pic": [
-        "1f641"
+        "sad.jpg"
        ],
        "examples": [
         [
@@ -4803,7 +4803,7 @@ window.COURSE = {
        "german": "sehr schlecht",
        "english": "very bad",
        "pic": [
-        "1f62b"
+        "sad.jpg"
        ],
        "examples": [
         [
@@ -4847,7 +4847,7 @@ window.COURSE = {
        "german": "Super!",
        "english": "Great!",
        "pic": [
-        "1f44d"
+        "thumbs-up.jpg"
        ],
        "examples": [
         [
@@ -4916,7 +4916,7 @@ window.COURSE = {
        "german": "Auch gut.",
        "english": "Good too.",
        "pic": [
-        "1f642"
+        "smile.jpg"
        ],
        "examples": [
         [
@@ -4974,7 +4974,7 @@ window.COURSE = {
        "german": "Woher?",
        "english": "Where from?",
        "pic": [
-        "1f30d"
+        "globe.jpg"
        ],
        "examples": [
         [
@@ -5037,7 +5037,7 @@ window.COURSE = {
        "german": "Wie bitte?",
        "english": "Pardon?",
        "pic": [
-        "1f442"
+        "ear.jpg"
        ],
        "examples": [
         [
@@ -5253,7 +5253,7 @@ window.COURSE = {
        "german": "kochen",
        "english": "to cook",
        "pic": [
-        "1f373"
+        "cooking.jpg"
        ],
        "examples": [
         [
@@ -5367,7 +5367,7 @@ window.COURSE = {
        "german": "gern geschehen",
        "english": "you're welcome",
        "pic": [
-        "1f60a"
+        "smile.jpg"
        ],
        "examples": [
         [
@@ -5407,7 +5407,7 @@ window.COURSE = {
        "german": "tut mir leid",
        "english": "I'm sorry",
        "pic": [
-        "1f614"
+        "sad.jpg"
        ],
        "examples": [
         [
@@ -5446,7 +5446,7 @@ window.COURSE = {
        "german": "Mir geht es gut, danke. Und Ihnen?",
        "english": "I'm fine, thanks. And you?",
        "pic": [
-        "1f642"
+        "smile.jpg"
        ],
        "examples": [
         [
@@ -5479,7 +5479,7 @@ window.COURSE = {
        "german": "Woher kommen Sie?",
        "english": "Where are you from? (formal)",
        "pic": [
-        "1f30d"
+        "globe.jpg"
        ],
        "examples": [
         [
@@ -5512,7 +5512,7 @@ window.COURSE = {
        "german": "Ich komme aus den Vereinigten Staaten.",
        "english": "I come from the USA.",
        "pic": [
-        "1f1fa-1f1f8"
+        "flag-us.jpg"
        ],
        "examples": [
         [
@@ -5530,7 +5530,7 @@ window.COURSE = {
        "german": "Freut mich!",
        "english": "Nice to meet you!",
        "pic": [
-        "1f91d"
+        "handshake.jpg"
        ],
        "examples": [
         [
@@ -5598,7 +5598,7 @@ window.COURSE = {
        "german": "Kenia",
        "english": "Kenya",
        "pic": [
-        "1f1f0-1f1ea"
+        "flag-ke.jpg"
        ],
        "examples": [
         [
@@ -5620,7 +5620,7 @@ window.COURSE = {
        "german": "Deutschland",
        "english": "Germany",
        "pic": [
-        "1f1e9-1f1ea"
+        "flag-de.jpg"
        ],
        "examples": [
         [
@@ -5642,7 +5642,7 @@ window.COURSE = {
        "german": "Österreich",
        "english": "Austria",
        "pic": [
-        "1f1e6-1f1f9"
+        "flag-at.jpg"
        ],
        "examples": [
         [
@@ -5664,7 +5664,7 @@ window.COURSE = {
        "german": "Frankreich",
        "english": "France",
        "pic": [
-        "1f1eb-1f1f7"
+        "flag-fr.jpg"
        ],
        "examples": [
         [
@@ -5686,7 +5686,7 @@ window.COURSE = {
        "german": "Spanien",
        "english": "Spain",
        "pic": [
-        "1f1ea-1f1f8"
+        "flag-es.jpg"
        ],
        "examples": [
         [
@@ -5708,7 +5708,7 @@ window.COURSE = {
        "german": "Italien",
        "english": "Italy",
        "pic": [
-        "1f1ee-1f1f9"
+        "flag-it.jpg"
        ],
        "examples": [
         [
@@ -5748,7 +5748,7 @@ window.COURSE = {
        "german": "Er kommt aus Kenia.",
        "english": "He comes from Kenya.",
        "pic": [
-        "1f1f0-1f1ea"
+        "flag-ke.jpg"
        ],
        "examples": [
         [
@@ -5784,7 +5784,7 @@ window.COURSE = {
        "german": "Ich wohne in Addis Abeba.",
        "english": "I live in Addis Ababa.",
        "pic": [
-        "1f3d9"
+        "addis.jpg"
        ],
        "examples": [
         [
@@ -5828,7 +5828,7 @@ window.COURSE = {
        "german": "der Kursleiter",
        "english": "the course teacher (m.)",
        "pic": [
-        "1f468-200d-1f3eb"
+        "teacher-man.jpg"
        ],
        "examples": [
         [
@@ -5925,7 +5925,7 @@ window.COURSE = {
        "german": "Langsam, bitte.",
        "english": "Slowly, please.",
        "pic": [
-        "1f422"
+        "tortoise.jpg"
        ],
        "examples": [
         [
@@ -5958,7 +5958,7 @@ window.COURSE = {
        "german": "Entschuldigung, wie bitte?",
        "english": "Sorry, pardon?",
        "pic": [
-        "1f442"
+        "ear.jpg"
        ],
        "examples": [
         [
@@ -6762,7 +6762,7 @@ window.COURSE = {
        "german": "die Mutter",
        "english": "the mother (f.)",
        "pic": [
-        "1f469-200d-1f467"
+        "mother.jpg"
        ],
        "examples": [
         [
@@ -6831,7 +6831,7 @@ window.COURSE = {
        "german": "der Mann",
        "english": "the husband / the man (m.)",
        "pic": [
-        "1f468"
+        "man.jpg"
        ],
        "examples": [
         [
@@ -6854,7 +6854,7 @@ window.COURSE = {
        "german": "die Frau",
        "english": "the wife / the woman (f.)",
        "pic": [
-        "1f469"
+        "woman.jpg"
        ],
        "examples": [
         [
@@ -6877,8 +6877,7 @@ window.COURSE = {
        "german": "die Kinder",
        "english": "the children / the kids (pl.)",
        "pic": [
-        "1f467",
-        "1f466"
+        "children.jpg"
        ],
        "examples": [
         [
@@ -6901,7 +6900,7 @@ window.COURSE = {
        "german": "der Sohn",
        "english": "the son (m.)",
        "pic": [
-        "1f466"
+        "boy.jpg"
        ],
        "examples": [
         [
@@ -6924,7 +6923,7 @@ window.COURSE = {
        "german": "die Tochter",
        "english": "the daughter (f.)",
        "pic": [
-        "1f467"
+        "girl.jpg"
        ],
        "examples": [
         [
@@ -6947,7 +6946,7 @@ window.COURSE = {
        "german": "der Bruder",
        "english": "the brother (m.)",
        "pic": [
-        "1f466"
+        "boy.jpg"
        ],
        "examples": [
         [
@@ -6970,7 +6969,7 @@ window.COURSE = {
        "german": "die Schwester",
        "english": "the sister (f.)",
        "pic": [
-        "1f467"
+        "girl.jpg"
        ],
        "examples": [
         [
@@ -6993,8 +6992,7 @@ window.COURSE = {
        "german": "die Geschwister",
        "english": "the siblings (pl.)",
        "pic": [
-        "1f467",
-        "1f466"
+        "children.jpg"
        ],
        "examples": [
         [
@@ -7017,7 +7015,7 @@ window.COURSE = {
        "german": "der Opa, der Großvater",
        "english": "grandpa, grandfather (m.)",
        "pic": [
-        "1f474"
+        "old-man.jpg"
        ],
        "examples": [
         [
@@ -7040,7 +7038,7 @@ window.COURSE = {
        "german": "die Oma, die Großmutter",
        "english": "grandma, grandmother (f.)",
        "pic": [
-        "1f475"
+        "old-woman.jpg"
        ],
        "examples": [
         [
@@ -7255,7 +7253,7 @@ window.COURSE = {
        "german": "der Mann",
        "english": "the man (m.)",
        "pic": [
-        "1f468"
+        "man.jpg"
        ],
        "examples": [
         [
@@ -7278,7 +7276,7 @@ window.COURSE = {
        "german": "die Frau",
        "english": "the woman (f.)",
        "pic": [
-        "1f469"
+        "woman.jpg"
        ],
        "examples": [
         [
@@ -7430,7 +7428,7 @@ window.COURSE = {
        "german": "meine Mutter",
        "english": "my mother",
        "pic": [
-        "1f469-200d-1f467"
+        "mother.jpg"
        ],
        "examples": [
         [
@@ -7638,7 +7636,7 @@ window.COURSE = {
        "german": "die Sprache",
        "english": "the language (f.)",
        "pic": [
-        "1f5e3"
+        "conversation.jpg"
        ],
        "examples": [
         [
@@ -7661,7 +7659,7 @@ window.COURSE = {
        "german": "sprechen",
        "english": "to speak",
        "pic": [
-        "1f5e3"
+        "conversation.jpg"
        ],
        "examples": [
         [
@@ -7968,7 +7966,7 @@ window.COURSE = {
        "german": "Welche Sprachen sprichst du?",
        "english": "Which languages do you speak?",
        "pic": [
-        "1f5e3"
+        "conversation.jpg"
        ],
        "examples": [
         [
@@ -7986,7 +7984,7 @@ window.COURSE = {
        "german": "Ich spreche Deutsch.",
        "english": "I speak German.",
        "pic": [
-        "1f5e3"
+        "conversation.jpg"
        ],
        "examples": [
         [
@@ -8004,7 +8002,7 @@ window.COURSE = {
        "german": "Ich spreche ein bisschen Englisch.",
        "english": "I speak a little English.",
        "pic": [
-        "1f5e3"
+        "conversation.jpg"
        ],
        "examples": [
         [
@@ -8022,7 +8020,7 @@ window.COURSE = {
        "german": "Sprichst du Englisch?",
        "english": "Do you speak English?",
        "pic": [
-        "1f5e3"
+        "conversation.jpg"
        ],
        "examples": [
         [
@@ -8076,7 +8074,7 @@ window.COURSE = {
        "german": "die Telefonnummer",
        "english": "the phone number (f.)",
        "pic": [
-        "260e"
+        "telephone.jpg"
        ],
        "examples": [
         [
@@ -8099,7 +8097,7 @@ window.COURSE = {
        "german": "Wie ist deine Telefonnummer?",
        "english": "What is your phone number?",
        "pic": [
-        "260e"
+        "telephone.jpg"
        ],
        "examples": [
         [
@@ -8117,7 +8115,7 @@ window.COURSE = {
        "german": "Wie lautet deine Telefonnummer?",
        "english": "What is your phone number?",
        "pic": [
-        "260e"
+        "telephone.jpg"
        ],
        "examples": [
         [
@@ -8135,7 +8133,7 @@ window.COURSE = {
        "german": "Wie bitte?",
        "english": "Pardon?",
        "pic": [
-        "1f442"
+        "ear.jpg"
        ],
        "examples": [
         [
@@ -8590,7 +8588,7 @@ window.COURSE = {
        "german": "Wo wohnst du?",
        "english": "Where do you live? (informal)",
        "pic": [
-        "1f3e0"
+        "house.jpg"
        ],
        "examples": [
         [
@@ -8608,7 +8606,7 @@ window.COURSE = {
        "german": "Wo wohnen Sie?",
        "english": "Where do you live? (formal)",
        "pic": [
-        "1f3e0"
+        "house.jpg"
        ],
        "examples": [
         [
@@ -8641,7 +8639,7 @@ window.COURSE = {
        "german": "Ich wohne in …",
        "english": "I live in …",
        "pic": [
-        "1f3e0"
+        "house.jpg"
        ],
        "examples": [
         [
@@ -8695,7 +8693,7 @@ window.COURSE = {
        "german": "verheiratet",
        "english": "married",
        "pic": [
-        "1f48d"
+        "wedding-rings.jpg"
        ],
        "examples": [
         [
@@ -8758,7 +8756,7 @@ window.COURSE = {
        "german": "der Freund",
        "english": "the boyfriend / the friend (m.)",
        "pic": [
-        "1f9d1-200d-1f91d-200d-1f9d1"
+        "friends.jpg"
        ],
        "examples": [
         [
@@ -8781,7 +8779,7 @@ window.COURSE = {
        "german": "die Freundin",
        "english": "the girlfriend / the friend (f.)",
        "pic": [
-        "1f9d1-200d-1f91d-200d-1f9d1"
+        "friends.jpg"
        ],
        "examples": [
         [
@@ -8804,7 +8802,7 @@ window.COURSE = {
        "german": "Bist du verheiratet?",
        "english": "Are you married? (informal)",
        "pic": [
-        "1f48d"
+        "wedding-rings.jpg"
        ],
        "examples": [
         [
@@ -8822,7 +8820,7 @@ window.COURSE = {
        "german": "Sind Sie verheiratet?",
        "english": "Are you married? (formal)",
        "pic": [
-        "1f48d"
+        "wedding-rings.jpg"
        ],
        "examples": [
         [
@@ -8840,7 +8838,7 @@ window.COURSE = {
        "german": "Ja, ich bin verheiratet.",
        "english": "Yes, I am married.",
        "pic": [
-        "1f48d"
+        "wedding-rings.jpg"
        ],
        "examples": [
         [
@@ -8873,8 +8871,7 @@ window.COURSE = {
        "german": "Hast du Kinder?",
        "english": "Do you have children? (informal)",
        "pic": [
-        "1f467",
-        "1f466"
+        "children.jpg"
        ],
        "examples": [
         [
@@ -8892,8 +8889,7 @@ window.COURSE = {
        "german": "Haben Sie Kinder?",
        "english": "Do you have children? (formal)",
        "pic": [
-        "1f467",
-        "1f466"
+        "children.jpg"
        ],
        "examples": [
         [
@@ -8911,7 +8907,7 @@ window.COURSE = {
        "german": "Ich habe einen Sohn.",
        "english": "I have a son.",
        "pic": [
-        "1f466"
+        "boy.jpg"
        ],
        "examples": [
         [
@@ -8929,7 +8925,7 @@ window.COURSE = {
        "german": "Ich habe eine Tochter.",
        "english": "I have a daughter.",
        "pic": [
-        "1f467"
+        "girl.jpg"
        ],
        "examples": [
         [
@@ -8947,8 +8943,7 @@ window.COURSE = {
        "german": "Ich habe zwei Kinder.",
        "english": "I have two children.",
        "pic": [
-        "1f467",
-        "1f466"
+        "children.jpg"
        ],
        "examples": [
         [
@@ -9090,7 +9085,7 @@ window.COURSE = {
        "german": "die Straße",
        "english": "the street (f.)",
        "pic": [
-        "1f6e3"
+        "street.jpg"
        ],
        "examples": [
         [
@@ -9133,7 +9128,7 @@ window.COURSE = {
        "german": "die Stadt",
        "english": "the city / the town (f.)",
        "pic": [
-        "1f3d9"
+        "city.jpg"
        ],
        "examples": [
         [
@@ -9179,7 +9174,7 @@ window.COURSE = {
        "german": "die Handynummer",
        "english": "the mobile number (f.)",
        "pic": [
-        "1f4f1"
+        "mobile-phone.jpg"
        ],
        "examples": [
         [
@@ -9202,7 +9197,7 @@ window.COURSE = {
        "german": "das Datum",
        "english": "the date (n.)",
        "pic": [
-        "1f4c5"
+        "calendar.jpg"
        ],
        "examples": [
         [
@@ -9225,7 +9220,7 @@ window.COURSE = {
        "german": "die Unterschrift",
        "english": "the signature (f.)",
        "pic": [
-        "270d"
+        "writing.jpg"
        ],
        "examples": [
         [
@@ -9277,7 +9272,7 @@ window.COURSE = {
        "german": "jung",
        "english": "young",
        "pic": [
-        "1f9d2"
+        "child.jpg"
        ],
        "examples": [
         [
@@ -9299,7 +9294,7 @@ window.COURSE = {
        "german": "alt",
        "english": "old",
        "pic": [
-        "1f474"
+        "old-man.jpg"
        ],
        "examples": [
         [
@@ -9390,7 +9385,7 @@ window.COURSE = {
        "german": "Er ist 70 Jahre alt.",
        "english": "He is 70 years old.",
        "pic": [
-        "1f474"
+        "old-man.jpg"
        ],
        "examples": [
         [
@@ -9414,7 +9409,7 @@ window.COURSE = {
        "german": "der Enkel",
        "english": "the grandson (m.)",
        "pic": [
-        "1f466"
+        "boy.jpg"
        ],
        "examples": [
         [
@@ -9437,7 +9432,7 @@ window.COURSE = {
        "german": "die Enkelin",
        "english": "the granddaughter (f.)",
        "pic": [
-        "1f467"
+        "girl.jpg"
        ],
        "examples": [
         [
@@ -9460,8 +9455,7 @@ window.COURSE = {
        "german": "die Enkelkinder",
        "english": "the grandchildren (pl.)",
        "pic": [
-        "1f467",
-        "1f466"
+        "children.jpg"
        ],
        "examples": [
         [
@@ -9484,7 +9478,7 @@ window.COURSE = {
        "german": "der Ehemann",
        "english": "the husband (m.)",
        "pic": [
-        "1f935"
+        "groom.jpg"
        ],
        "examples": [
         [
@@ -9507,7 +9501,7 @@ window.COURSE = {
        "german": "die Ehefrau",
        "english": "the wife (f.)",
        "pic": [
-        "1f470"
+        "bride.jpg"
        ],
        "examples": [
         [
@@ -9530,7 +9524,7 @@ window.COURSE = {
        "german": "der Partner",
        "english": "the partner (m.)",
        "pic": [
-        "1f491"
+        "couple.jpg"
        ],
        "examples": [
         [
@@ -9553,7 +9547,7 @@ window.COURSE = {
        "german": "die Partnerin",
        "english": "the partner (f.)",
        "pic": [
-        "1f491"
+        "couple.jpg"
        ],
        "examples": [
         [
@@ -9576,7 +9570,7 @@ window.COURSE = {
        "german": "Mama",
        "english": "Mum",
        "pic": [
-        "1f469-200d-1f467"
+        "mother.jpg"
        ],
        "examples": [
         [
@@ -9620,7 +9614,7 @@ window.COURSE = {
        "german": "das Kind",
        "english": "the child (n.)",
        "pic": [
-        "1f9d2"
+        "child.jpg"
        ],
        "examples": [
         [
@@ -9658,7 +9652,7 @@ window.COURSE = {
        "german": "Wir leben zusammen.",
        "english": "We live together.",
        "pic": [
-        "1f46b"
+        "couple.jpg"
        ],
        "examples": [
         [
@@ -9676,7 +9670,7 @@ window.COURSE = {
        "german": "Ich lebe allein.",
        "english": "I live alone.",
        "pic": [
-        "1f9cd"
+        "alone.jpg"
        ],
        "examples": [
         [
@@ -9700,7 +9694,7 @@ window.COURSE = {
        "german": "ja",
        "english": "yes",
        "pic": [
-        "1f44d"
+        "thumbs-up.jpg"
        ],
        "examples": [
         [
@@ -9722,7 +9716,7 @@ window.COURSE = {
        "german": "nein",
        "english": "no",
        "pic": [
-        "1f44e"
+        "thumbs-down.jpg"
        ],
        "examples": [
         [
@@ -11896,7 +11890,7 @@ window.COURSE = {
        {
         "key": "opa",
         "word": "der Opa, der Großvater",
-        "pic": "1f474",
+        "pic": "old-man.jpg",
         "x": 33,
         "row": 0,
         "why": "Your father's father."
@@ -11904,7 +11898,7 @@ window.COURSE = {
        {
         "key": "oma",
         "word": "die Oma, die Großmutter",
-        "pic": "1f475",
+        "pic": "old-woman.jpg",
         "x": 67,
         "row": 0,
         "why": "Your father's mother."
@@ -11912,7 +11906,7 @@ window.COURSE = {
        {
         "key": "tante",
         "word": "die Tante",
-        "pic": "1f469",
+        "pic": "aunt.jpg",
         "x": 12,
         "row": 1,
         "why": "Your father's sister."
@@ -11920,7 +11914,7 @@ window.COURSE = {
        {
         "key": "vater",
         "word": "der Vater",
-        "pic": "1f468",
+        "pic": "man.jpg",
         "x": 37,
         "row": 1,
         "why": "The man married to your mother."
@@ -11928,7 +11922,7 @@ window.COURSE = {
        {
         "key": "mutter",
         "word": "die Mutter",
-        "pic": "1f469",
+        "pic": "woman.jpg",
         "x": 63,
         "row": 1,
         "why": "The woman married to your father."
@@ -11936,7 +11930,7 @@ window.COURSE = {
        {
         "key": "onkel",
         "word": "der Onkel",
-        "pic": "1f468",
+        "pic": "uncle.jpg",
         "x": 88,
         "row": 1,
         "why": "Your father's brother."
@@ -11944,7 +11938,7 @@ window.COURSE = {
        {
         "key": "bruder",
         "word": "der Bruder",
-        "pic": "1f466",
+        "pic": "boy.jpg",
         "x": 24,
         "row": 2,
         "why": "Your parents' other son."
@@ -11959,7 +11953,7 @@ window.COURSE = {
        {
         "key": "schwester",
         "word": "die Schwester",
-        "pic": "1f467",
+        "pic": "girl.jpg",
         "x": 76,
         "row": 2,
         "why": "Your parents' daughter."
@@ -12231,7 +12225,7 @@ window.COURSE = {
        "german": "der Supermarkt",
        "english": "the supermarket (m.)",
        "pic": [
-        "1f6d2"
+        "supermarket.jpg"
        ],
        "examples": [
         [
@@ -12254,7 +12248,7 @@ window.COURSE = {
        "german": "der Laden",
        "english": "the shop / the store (m.)",
        "pic": [
-        "1f3ea"
+        "shop.jpg"
        ],
        "examples": [
         [
@@ -12277,7 +12271,7 @@ window.COURSE = {
        "german": "das Geschäft",
        "english": "the shop / the business (n.)",
        "pic": [
-        "1f3ea"
+        "shop.jpg"
        ],
        "examples": [
         [
@@ -12300,7 +12294,7 @@ window.COURSE = {
        "german": "einkaufen gehen",
        "english": "to go shopping",
        "pic": [
-        "1f6cd"
+        "shopping.jpg"
        ],
        "examples": [
         [
@@ -12341,7 +12335,7 @@ window.COURSE = {
        "german": "kaufen",
        "english": "to buy",
        "pic": [
-        "1f6cd"
+        "shopping.jpg"
        ],
        "examples": [
         [
@@ -12363,7 +12357,7 @@ window.COURSE = {
        "german": "kosten",
        "english": "to cost",
        "pic": [
-        "1f3f7"
+        "price-tag.jpg"
        ],
        "examples": [
         [
@@ -12385,7 +12379,7 @@ window.COURSE = {
        "german": "die Kartoffel",
        "english": "the potato (f.)",
        "pic": [
-        "1f954"
+        "potato.jpg"
        ],
        "examples": [
         [
@@ -12408,7 +12402,7 @@ window.COURSE = {
        "german": "die Tomate",
        "english": "the tomato (f.)",
        "pic": [
-        "1f345"
+        "tomato.jpg"
        ],
        "examples": [
         [
@@ -12431,7 +12425,7 @@ window.COURSE = {
        "german": "das Brot",
        "english": "the bread (n.)",
        "pic": [
-        "1f35e"
+        "bread.jpg"
        ],
        "examples": [
         [
@@ -12454,7 +12448,7 @@ window.COURSE = {
        "german": "die Banane",
        "english": "the banana (f.)",
        "pic": [
-        "1f34c"
+        "banana.jpg"
        ],
        "examples": [
         [
@@ -12477,7 +12471,7 @@ window.COURSE = {
        "german": "der Saft",
        "english": "the juice (m.)",
        "pic": [
-        "1f9c3"
+        "juice.jpg"
        ],
        "examples": [
         [
@@ -12506,7 +12500,7 @@ window.COURSE = {
        "german": "der Apfel",
        "english": "the apple (m.)",
        "pic": [
-        "1f34e"
+        "apple.jpg"
        ],
        "examples": [
         [
@@ -12529,7 +12523,7 @@ window.COURSE = {
        "german": "die Birne",
        "english": "the pear (f.)",
        "pic": [
-        "1f350"
+        "pear.jpg"
        ],
        "examples": [
         [
@@ -12552,7 +12546,7 @@ window.COURSE = {
        "german": "die Banane",
        "english": "the banana (f.)",
        "pic": [
-        "1f34c"
+        "banana.jpg"
        ],
        "examples": [
         [
@@ -12575,7 +12569,7 @@ window.COURSE = {
        "german": "die Orange",
        "english": "the orange (f.)",
        "pic": [
-        "1f34a"
+        "orange-fruit.jpg"
        ],
        "examples": [
         [
@@ -12598,7 +12592,7 @@ window.COURSE = {
        "german": "die Erdbeere",
        "english": "the strawberry (f.)",
        "pic": [
-        "1f353"
+        "strawberry.jpg"
        ],
        "examples": [
         [
@@ -12644,7 +12638,7 @@ window.COURSE = {
        "german": "die Kartoffel",
        "english": "the potato (f.)",
        "pic": [
-        "1f954"
+        "potato.jpg"
        ],
        "examples": [
         [
@@ -12667,7 +12661,7 @@ window.COURSE = {
        "german": "die Tomate",
        "english": "the tomato (f.)",
        "pic": [
-        "1f345"
+        "tomato.jpg"
        ],
        "examples": [
         [
@@ -12690,7 +12684,7 @@ window.COURSE = {
        "german": "der/die Paprika",
        "english": "the pepper / the paprika",
        "pic": [
-        "1fad1"
+        "bell-pepper.jpg"
        ],
        "examples": [
         [
@@ -12712,7 +12706,7 @@ window.COURSE = {
        "german": "die Gurke",
        "english": "the cucumber (f.)",
        "pic": [
-        "1f952"
+        "cucumber.jpg"
        ],
        "examples": [
         [
@@ -12735,7 +12729,7 @@ window.COURSE = {
        "german": "die Zwiebel",
        "english": "the onion (f.)",
        "pic": [
-        "1f9c5"
+        "onion.jpg"
        ],
        "examples": [
         [
@@ -12802,7 +12796,7 @@ window.COURSE = {
        "german": "ein Apfel",
        "english": "an apple",
        "pic": [
-        "1f34e"
+        "apple.jpg"
        ],
        "examples": [
         [
@@ -12820,7 +12814,7 @@ window.COURSE = {
        "german": "eine Banane",
        "english": "a banana",
        "pic": [
-        "1f34c"
+        "banana.jpg"
        ],
        "examples": [
         [
@@ -12844,7 +12838,7 @@ window.COURSE = {
        "german": "die Nahrungsmittel",
        "english": "the food / groceries (pl.)",
        "pic": [
-        "1f6d2"
+        "supermarket.jpg"
        ],
        "examples": [
         [
@@ -12887,7 +12881,7 @@ window.COURSE = {
        "german": "der Kuchen",
        "english": "the cake (m.)",
        "pic": [
-        "1f370"
+        "cake.jpg"
        ],
        "examples": [
         [
@@ -12930,7 +12924,7 @@ window.COURSE = {
        "german": "der Käse",
        "english": "the cheese (m.)",
        "pic": [
-        "1f9c0"
+        "cheese.jpg"
        ],
        "examples": [
         [
@@ -12953,7 +12947,7 @@ window.COURSE = {
        "german": "das Ei",
        "english": "the egg (n.)",
        "pic": [
-        "1f95a"
+        "egg.jpg"
        ],
        "examples": [
         [
@@ -12976,7 +12970,7 @@ window.COURSE = {
        "german": "der Reis",
        "english": "the rice (m.)",
        "pic": [
-        "1f35a"
+        "rice.jpg"
        ],
        "examples": [
         [
@@ -12999,7 +12993,7 @@ window.COURSE = {
        "german": "das Fleisch",
        "english": "the meat (n.)",
        "pic": [
-        "1f969"
+        "meat.jpg"
        ],
        "examples": [
         [
@@ -13022,7 +13016,7 @@ window.COURSE = {
        "german": "der Fisch",
        "english": "the fish (m.)",
        "pic": [
-        "1f41f"
+        "fish.jpg"
        ],
        "examples": [
         [
@@ -13045,7 +13039,7 @@ window.COURSE = {
        "german": "die Wurst",
        "english": "the sausage (f.)",
        "pic": [
-        "1f32d"
+        "sausage.jpg"
        ],
        "examples": [
         [
@@ -13068,7 +13062,7 @@ window.COURSE = {
        "german": "Hast du Hunger?",
        "english": "Are you hungry?",
        "pic": [
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -13086,7 +13080,7 @@ window.COURSE = {
        "german": "Ich habe Hunger.",
        "english": "I am hungry.",
        "pic": [
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -13104,7 +13098,7 @@ window.COURSE = {
        "german": "Guten Appetit!",
        "english": "Enjoy your meal!",
        "pic": [
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -13196,7 +13190,7 @@ window.COURSE = {
        "german": "Ich möchte kein Stück Kuchen.",
        "english": "I don't want a piece of cake.",
        "pic": [
-        "1f370"
+        "cake.jpg"
        ],
        "examples": [
         [
@@ -13286,7 +13280,7 @@ window.COURSE = {
        "german": "das Bier",
        "english": "the beer (n.)",
        "pic": [
-        "1f37a"
+        "beer.jpg"
        ],
        "examples": [
         [
@@ -13309,7 +13303,7 @@ window.COURSE = {
        "german": "der Tee",
        "english": "the tea (m.)",
        "pic": [
-        "1f375"
+        "tea.jpg"
        ],
        "examples": [
         [
@@ -13332,7 +13326,7 @@ window.COURSE = {
        "german": "das Wasser",
        "english": "the water (n.)",
        "pic": [
-        "1f4a7"
+        "water.jpg"
        ],
        "examples": [
         [
@@ -13355,7 +13349,7 @@ window.COURSE = {
        "german": "das Mineralwasser",
        "english": "the mineral water (n.)",
        "pic": [
-        "1f4a7"
+        "water.jpg"
        ],
        "examples": [
         [
@@ -13378,7 +13372,7 @@ window.COURSE = {
        "german": "die Milch",
        "english": "the milk (f.)",
        "pic": [
-        "1f95b"
+        "milk.jpg"
        ],
        "examples": [
         [
@@ -13401,7 +13395,7 @@ window.COURSE = {
        "german": "der Wein",
        "english": "the wine (m.)",
        "pic": [
-        "1f377"
+        "wine.jpg"
        ],
        "examples": [
         [
@@ -13424,7 +13418,7 @@ window.COURSE = {
        "german": "der Kaffee",
        "english": "the coffee (m.)",
        "pic": [
-        "2615"
+        "coffee.jpg"
        ],
        "examples": [
         [
@@ -13447,9 +13441,9 @@ window.COURSE = {
        "german": "der Orangensaft",
        "english": "the orange juice (m.)",
        "pic": [
-        "1f34a",
+        "orange-fruit.jpg",
         "+",
-        "1f9c3"
+        "juice.jpg"
        ],
        "examples": [
         [
@@ -13472,7 +13466,7 @@ window.COURSE = {
        "german": "Hast du Durst?",
        "english": "Are you thirsty?",
        "pic": [
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -13490,7 +13484,7 @@ window.COURSE = {
        "german": "Bist du durstig?",
        "english": "Are you thirsty?",
        "pic": [
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -13508,7 +13502,7 @@ window.COURSE = {
        "german": "Ich habe Durst.",
        "english": "I am thirsty.",
        "pic": [
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -13526,7 +13520,7 @@ window.COURSE = {
        "german": "Was möchtest du trinken?",
        "english": "What would you like to drink? (informal)",
        "pic": [
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -13544,7 +13538,7 @@ window.COURSE = {
        "german": "Was möchten Sie trinken?",
        "english": "What would you like to drink? (formal)",
        "pic": [
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -13580,7 +13574,7 @@ window.COURSE = {
        "german": "Prost!",
        "english": "Cheers!",
        "pic": [
-        "1f37b"
+        "toast-cheers.jpg"
        ],
        "examples": [
         [
@@ -13942,7 +13936,7 @@ window.COURSE = {
        "german": "der Preis",
        "english": "the price (m.)",
        "pic": [
-        "1f3f7"
+        "price-tag.jpg"
        ],
        "examples": [
         [
@@ -13965,7 +13959,7 @@ window.COURSE = {
        "german": "der Euro",
        "english": "the euro (m.)",
        "pic": [
-        "1f4b6"
+        "euro.jpg"
        ],
        "examples": [
         [
@@ -13988,7 +13982,7 @@ window.COURSE = {
        "german": "der Cent",
        "english": "the cent (m.)",
        "pic": [
-        "1fa99"
+        "coins.jpg"
        ],
        "examples": [
         [
@@ -14011,7 +14005,7 @@ window.COURSE = {
        "german": "das Kilo",
        "english": "the kilo (n.)",
        "pic": [
-        "2696"
+        "scale.jpg"
        ],
        "examples": [
         [
@@ -14034,7 +14028,7 @@ window.COURSE = {
        "german": "das Wechselgeld",
        "english": "the change (n.)",
        "pic": [
-        "1fa99"
+        "coins.jpg"
        ],
        "examples": [
         [
@@ -14057,7 +14051,7 @@ window.COURSE = {
        "german": "Wie viel kostet das?",
        "english": "How much does that cost?",
        "pic": [
-        "1f4b6"
+        "euro.jpg"
        ],
        "examples": [
         [
@@ -14075,7 +14069,7 @@ window.COURSE = {
        "german": "Was kostet das?",
        "english": "What does that cost?",
        "pic": [
-        "1f4b6"
+        "euro.jpg"
        ],
        "examples": [
         [
@@ -14093,7 +14087,7 @@ window.COURSE = {
        "german": "Das kostet …",
        "english": "That costs …",
        "pic": [
-        "1f4b6"
+        "euro.jpg"
        ],
        "examples": [
         [
@@ -14111,7 +14105,7 @@ window.COURSE = {
        "german": "Das macht …",
        "english": "That comes to …",
        "pic": [
-        "1f4b6"
+        "euro.jpg"
        ],
        "examples": [
         [
@@ -14135,7 +14129,7 @@ window.COURSE = {
        "german": "Was isst du gerne?",
        "english": "What do you like to eat?",
        "pic": [
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -14153,7 +14147,7 @@ window.COURSE = {
        "german": "Was trinkst du gerne?",
        "english": "What do you like to drink?",
        "pic": [
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -14171,7 +14165,7 @@ window.COURSE = {
        "german": "Isst du gerne Fisch?",
        "english": "Do you like to eat fish?",
        "pic": [
-        "1f41f"
+        "fish.jpg"
        ],
        "examples": [
         [
@@ -14189,7 +14183,7 @@ window.COURSE = {
        "german": "Trinkst du gerne Tee?",
        "english": "Do you like to drink tea?",
        "pic": [
-        "1f375"
+        "tea.jpg"
        ],
        "examples": [
         [
@@ -14207,7 +14201,7 @@ window.COURSE = {
        "german": "Ja, ich esse gerne Fisch.",
        "english": "Yes, I like to eat fish.",
        "pic": [
-        "1f41f"
+        "fish.jpg"
        ],
        "examples": [
         [
@@ -14225,7 +14219,7 @@ window.COURSE = {
        "german": "Nein, ich trinke nicht gerne Tee.",
        "english": "No, I don't like to drink tea.",
        "pic": [
-        "1f375"
+        "tea.jpg"
        ],
        "examples": [
         [
@@ -14243,9 +14237,9 @@ window.COURSE = {
        "german": "Was ist dein Lieblingsessen?",
        "english": "What is your favourite food?",
        "pic": [
-        "2764",
+        "heart.jpg",
         "+",
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -14269,7 +14263,7 @@ window.COURSE = {
        "german": "essen",
        "english": "to eat",
        "pic": [
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -14477,7 +14471,7 @@ window.COURSE = {
        "german": "die Speise, das Essen",
        "english": "the dish, the food",
        "pic": [
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -14499,7 +14493,7 @@ window.COURSE = {
        "german": "die Getränke",
        "english": "the drinks (pl.)",
        "pic": [
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -14522,7 +14516,7 @@ window.COURSE = {
        "german": "der Nachtisch, die Nachspeise",
        "english": "the dessert",
        "pic": [
-        "1f36e"
+        "dessert.jpg"
        ],
        "examples": [
         [
@@ -14604,7 +14598,7 @@ window.COURSE = {
        "german": "die Rechnung",
        "english": "the bill / the check (f.)",
        "pic": [
-        "1f9fe"
+        "bill.jpg"
        ],
        "examples": [
         [
@@ -14646,7 +14640,7 @@ window.COURSE = {
        "german": "das Bargeld",
        "english": "the cash (n.)",
        "pic": [
-        "1f4b5"
+        "cash.jpg"
        ],
        "examples": [
         [
@@ -14669,7 +14663,7 @@ window.COURSE = {
        "german": "die Kreditkarte",
        "english": "the credit card (f.)",
        "pic": [
-        "1f4b3"
+        "credit-card.jpg"
        ],
        "examples": [
         [
@@ -14692,7 +14686,7 @@ window.COURSE = {
        "german": "das Trinkgeld",
        "english": "the tip (n.)",
        "pic": [
-        "1fa99"
+        "coins.jpg"
        ],
        "examples": [
         [
@@ -14715,7 +14709,7 @@ window.COURSE = {
        "german": "etwas zum Essen",
        "english": "something to eat",
        "pic": [
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -14733,7 +14727,7 @@ window.COURSE = {
        "german": "etwas zum Trinken",
        "english": "something to drink",
        "pic": [
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -14751,7 +14745,7 @@ window.COURSE = {
        "german": "ein Glas Wein",
        "english": "a glass of wine",
        "pic": [
-        "1f377"
+        "wine.jpg"
        ],
        "examples": [
         [
@@ -14844,7 +14838,7 @@ window.COURSE = {
        "german": "Können wir bitte die Rechnung bekommen?",
        "english": "Can we have the bill, please?",
        "pic": [
-        "1f9fe"
+        "bill.jpg"
        ],
        "examples": [
         [
@@ -14862,7 +14856,7 @@ window.COURSE = {
        "german": "Zahlen Sie mit Karte oder Bargeld?",
        "english": "Are you paying by card or in cash?",
        "pic": [
-        "1f4b3"
+        "credit-card.jpg"
        ],
        "examples": [
         [
@@ -14880,7 +14874,7 @@ window.COURSE = {
        "german": "Stimmt so.",
        "english": "Keep the change.",
        "pic": [
-        "1fa99"
+        "coins.jpg"
        ],
        "examples": [
         [
@@ -14980,7 +14974,7 @@ window.COURSE = {
        "german": "Ich mag Kaffee.",
        "english": "I like coffee.",
        "pic": [
-        "2615"
+        "coffee.jpg"
        ],
        "examples": [
         [
@@ -14998,7 +14992,7 @@ window.COURSE = {
        "german": "Ich mag keinen Fisch.",
        "english": "I don't like fish.",
        "pic": [
-        "1f41f"
+        "fish.jpg"
        ],
        "examples": [
         [
@@ -15167,7 +15161,7 @@ window.COURSE = {
        "german": "das Abendessen",
        "english": "the dinner (n.)",
        "pic": [
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -15190,7 +15184,7 @@ window.COURSE = {
        "german": "das Müsli",
        "english": "the muesli (n.)",
        "pic": [
-        "1f963"
+        "muesli.jpg"
        ],
        "examples": [
         [
@@ -15213,8 +15207,7 @@ window.COURSE = {
        "german": "die Marmelade",
        "english": "the jam (f.)",
        "pic": [
-        "1f353",
-        "1fad9"
+        "jam.jpg"
        ],
        "examples": [
         [
@@ -15237,7 +15230,7 @@ window.COURSE = {
        "german": "der Honig",
        "english": "the honey (m.)",
        "pic": [
-        "1f36f"
+        "honey.jpg"
        ],
        "examples": [
         [
@@ -15260,7 +15253,7 @@ window.COURSE = {
        "german": "die Butter",
        "english": "the butter (f.)",
        "pic": [
-        "1f9c8"
+        "butter.jpg"
        ],
        "examples": [
         [
@@ -15283,7 +15276,7 @@ window.COURSE = {
        "german": "die Suppe",
        "english": "the soup (f.)",
        "pic": [
-        "1f372"
+        "soup.jpg"
        ],
        "examples": [
         [
@@ -15306,7 +15299,7 @@ window.COURSE = {
        "german": "der Salat",
        "english": "the salad (m.)",
        "pic": [
-        "1f957"
+        "salad.jpg"
        ],
        "examples": [
         [
@@ -15329,7 +15322,7 @@ window.COURSE = {
        "german": "die Nudeln",
        "english": "the pasta, noodles (pl.)",
        "pic": [
-        "1f35d"
+        "pasta.jpg"
        ],
        "examples": [
         [
@@ -15352,7 +15345,7 @@ window.COURSE = {
        "german": "das Eis",
        "english": "the ice cream (n.)",
        "pic": [
-        "1f366"
+        "ice-cream.jpg"
        ],
        "examples": [
         [
@@ -15375,7 +15368,7 @@ window.COURSE = {
        "german": "die Tasse",
        "english": "the cup (f.)",
        "pic": [
-        "2615"
+        "cup.jpg"
        ],
        "examples": [
         [
@@ -15398,7 +15391,7 @@ window.COURSE = {
        "german": "eine Tasse Kaffee",
        "english": "a cup of coffee",
        "pic": [
-        "2615"
+        "coffee.jpg"
        ],
        "examples": [
         [
@@ -15440,9 +15433,9 @@ window.COURSE = {
        "german": "der Apfelkuchen",
        "english": "the apple cake (m.)",
        "pic": [
-        "1f34e",
+        "apple.jpg",
         "+",
-        "1f370"
+        "cake.jpg"
        ],
        "examples": [
         [
@@ -15465,9 +15458,9 @@ window.COURSE = {
        "german": "der Apfelsaft",
        "english": "the apple juice (m.)",
        "pic": [
-        "1f34e",
+        "apple.jpg",
         "+",
-        "1f9c3"
+        "juice.jpg"
        ],
        "examples": [
         [
@@ -15490,9 +15483,9 @@ window.COURSE = {
        "german": "der Schokoladenkuchen",
        "english": "the chocolate cake (m.)",
        "pic": [
-        "1f36b",
+        "chocolate.jpg",
         "+",
-        "1f370"
+        "cake.jpg"
        ],
        "examples": [
         [
@@ -15515,9 +15508,9 @@ window.COURSE = {
        "german": "die Kartoffelsuppe",
        "english": "the potato soup (f.)",
        "pic": [
-        "1f954",
+        "potato.jpg",
         "+",
-        "1f372"
+        "soup.jpg"
        ],
        "examples": [
         [
@@ -15540,9 +15533,9 @@ window.COURSE = {
        "german": "die Tomatensuppe",
        "english": "the tomato soup (f.)",
        "pic": [
-        "1f345",
+        "tomato.jpg",
         "+",
-        "1f372"
+        "soup.jpg"
        ],
        "examples": [
         [
@@ -15565,9 +15558,9 @@ window.COURSE = {
        "german": "das Käsebrot",
        "english": "the cheese sandwich (n.)",
        "pic": [
-        "1f9c0",
+        "cheese.jpg",
         "+",
-        "1f35e"
+        "bread.jpg"
        ],
        "examples": [
         [
@@ -15590,9 +15583,9 @@ window.COURSE = {
        "german": "der Obstsalat",
        "english": "the fruit salad (m.)",
        "pic": [
-        "1f353",
+        "strawberry.jpg",
         "+",
-        "1f957"
+        "salad.jpg"
        ],
        "examples": [
         [
@@ -15615,7 +15608,7 @@ window.COURSE = {
        "german": "die Kaffeetasse",
        "english": "the coffee cup (f.)",
        "pic": [
-        "2615"
+        "cup.jpg"
        ],
        "examples": [
         [
@@ -17262,7 +17255,7 @@ window.COURSE = {
        "german": "die Wohnung",
        "english": "the apartment / the flat (f.)",
        "pic": [
-        "1f3e2"
+        "flat.jpg"
        ],
        "examples": [
         [
@@ -17285,7 +17278,7 @@ window.COURSE = {
        "german": "das Haus",
        "english": "the house (n.)",
        "pic": [
-        "1f3e0"
+        "house.jpg"
        ],
        "examples": [
         [
@@ -17308,7 +17301,7 @@ window.COURSE = {
        "german": "das Zimmer",
        "english": "the room (n.)",
        "pic": [
-        "1f6aa"
+        "room.jpg"
        ],
        "examples": [
         [
@@ -17331,7 +17324,7 @@ window.COURSE = {
        "german": "das Wohnzimmer",
        "english": "the living room (n.)",
        "pic": [
-        "1f6cb"
+        "sofa.jpg"
        ],
        "examples": [
         [
@@ -17354,7 +17347,7 @@ window.COURSE = {
        "german": "das Schlafzimmer",
        "english": "the bedroom (n.)",
        "pic": [
-        "1f6cf"
+        "bed.jpg"
        ],
        "examples": [
         [
@@ -17400,7 +17393,7 @@ window.COURSE = {
        "german": "das Arbeitszimmer",
        "english": "the study / the home office (n.)",
        "pic": [
-        "1f5a5"
+        "study-room.jpg"
        ],
        "examples": [
         [
@@ -17446,7 +17439,7 @@ window.COURSE = {
        "german": "das Badezimmer",
        "english": "the bathroom (n.)",
        "pic": [
-        "1f6c1"
+        "bathtub.jpg"
        ],
        "examples": [
         [
@@ -17469,7 +17462,7 @@ window.COURSE = {
        "german": "das Bad",
        "english": "the bathroom (n.)",
        "pic": [
-        "1f6c1"
+        "bathtub.jpg"
        ],
        "examples": [
         [
@@ -17617,7 +17610,7 @@ window.COURSE = {
        "german": "Entschuldigung, wo ist das Badezimmer?",
        "english": "Excuse me, where is the bathroom?",
        "pic": [
-        "1f6c1"
+        "bathtub.jpg"
        ],
        "examples": [
         [
@@ -17697,7 +17690,7 @@ window.COURSE = {
        "german": "schön",
        "english": "beautiful / nice",
        "pic": [
-        "1f338"
+        "flowers.jpg"
        ],
        "examples": [
         [
@@ -17741,7 +17734,7 @@ window.COURSE = {
        "german": "dunkel",
        "english": "dark",
        "pic": [
-        "1f311"
+        "darkness.jpg"
        ],
        "examples": [
         [
@@ -17763,7 +17756,7 @@ window.COURSE = {
        "german": "hell",
        "english": "bright / light",
        "pic": [
-        "1f4a1"
+        "bright.jpg"
        ],
        "examples": [
         [
@@ -17785,7 +17778,7 @@ window.COURSE = {
        "german": "alt",
        "english": "old",
        "pic": [
-        "1f474"
+        "old-man.jpg"
        ],
        "examples": [
         [
@@ -17829,7 +17822,7 @@ window.COURSE = {
        "german": "klein",
        "english": "small",
        "pic": [
-        "1f42d"
+        "mouse-animal.jpg"
        ],
        "examples": [
         [
@@ -17851,7 +17844,7 @@ window.COURSE = {
        "german": "groß",
        "english": "big / large",
        "pic": [
-        "1f418"
+        "elephant.jpg"
        ],
        "examples": [
         [
@@ -17913,7 +17906,7 @@ window.COURSE = {
        "german": "Das Auto ist nicht neu.",
        "english": "The car is not new.",
        "pic": [
-        "1f697"
+        "old-car.jpg"
        ],
        "examples": [
         [
@@ -18162,7 +18155,7 @@ window.COURSE = {
        "german": "der Garten",
        "english": "the garden (m.)",
        "pic": [
-        "1f3e1"
+        "garden.jpg"
        ],
        "examples": [
         [
@@ -18205,7 +18198,7 @@ window.COURSE = {
        "german": "die Garage",
        "english": "the garage (f.)",
        "pic": [
-        "1f697"
+        "garage.jpg"
        ],
        "examples": [
         [
@@ -18465,7 +18458,7 @@ window.COURSE = {
        "german": "das Sofa",
        "english": "the sofa (n.)",
        "pic": [
-        "1f6cb"
+        "sofa.jpg"
        ],
        "examples": [
         [
@@ -18488,7 +18481,7 @@ window.COURSE = {
        "german": "die Couch",
        "english": "the couch (f.)",
        "pic": [
-        "1f6cb"
+        "sofa.jpg"
        ],
        "examples": [
         [
@@ -18551,7 +18544,7 @@ window.COURSE = {
        "german": "der Stuhl",
        "english": "the chair (m.)",
        "pic": [
-        "1fa91"
+        "chair.jpg"
        ],
        "examples": [
         [
@@ -18574,7 +18567,7 @@ window.COURSE = {
        "german": "das Bett",
        "english": "the bed (n.)",
        "pic": [
-        "1f6cf"
+        "bed.jpg"
        ],
        "examples": [
         [
@@ -18597,7 +18590,7 @@ window.COURSE = {
        "german": "der Fernseher",
        "english": "the TV (m.)",
        "pic": [
-        "1f4fa"
+        "television.jpg"
        ],
        "examples": [
         [
@@ -18620,7 +18613,7 @@ window.COURSE = {
        "german": "die Lampe",
        "english": "the lamp (f.)",
        "pic": [
-        "1f4a1"
+        "lamp.jpg"
        ],
        "examples": [
         [
@@ -18734,7 +18727,7 @@ window.COURSE = {
        "german": "Es gefällt mir.",
        "english": "I like it.",
        "pic": [
-        "1f44d"
+        "thumbs-up.jpg"
        ],
        "examples": [
         [
@@ -18752,7 +18745,7 @@ window.COURSE = {
        "german": "Es gefällt mir sehr.",
        "english": "I like it a lot.",
        "pic": [
-        "1f44d"
+        "thumbs-up.jpg"
        ],
        "examples": [
         [
@@ -18770,7 +18763,7 @@ window.COURSE = {
        "german": "Es gefällt mir sehr gut.",
        "english": "I like it very much.",
        "pic": [
-        "1f44d"
+        "thumbs-up.jpg"
        ],
        "examples": [
         [
@@ -18788,7 +18781,7 @@ window.COURSE = {
        "german": "Es gefällt mir nicht.",
        "english": "I don't like it.",
        "pic": [
-        "1f44e"
+        "thumbs-down.jpg"
        ],
        "examples": [
         [
@@ -18806,7 +18799,7 @@ window.COURSE = {
        "german": "Es gefällt mir nicht so gut.",
        "english": "I don't like it that much.",
        "pic": [
-        "1f44e"
+        "thumbs-down.jpg"
        ],
        "examples": [
         [
@@ -18824,7 +18817,7 @@ window.COURSE = {
        "german": "Es gefällt mir überhaupt nicht.",
        "english": "I don't like it at all.",
        "pic": [
-        "1f44e"
+        "thumbs-down.jpg"
        ],
        "examples": [
         [
@@ -18908,7 +18901,7 @@ window.COURSE = {
        "german": "die Spüle",
        "english": "the kitchen sink (f.)",
        "pic": [
-        "1f6b0"
+        "sink.jpg"
        ],
        "examples": [
         [
@@ -18951,7 +18944,7 @@ window.COURSE = {
        "german": "die Dusche",
        "english": "the shower (f.)",
        "pic": [
-        "1f6bf"
+        "shower.jpg"
        ],
        "examples": [
         [
@@ -18974,7 +18967,7 @@ window.COURSE = {
        "german": "die Badewanne",
        "english": "the bathtub (f.)",
        "pic": [
-        "1f6c1"
+        "bathtub.jpg"
        ],
        "examples": [
         [
@@ -19040,7 +19033,7 @@ window.COURSE = {
        "german": "die Toilette",
        "english": "the toilet (f.)",
        "pic": [
-        "1f6bd"
+        "toilet.jpg"
        ],
        "examples": [
         [
@@ -19069,7 +19062,7 @@ window.COURSE = {
        "german": "weiß",
        "english": "white",
        "pic": [
-        "26aa"
+        "#ffffff"
        ],
        "examples": [
         [
@@ -19091,7 +19084,7 @@ window.COURSE = {
        "german": "schwarz",
        "english": "black",
        "pic": [
-        "26ab"
+        "#212121"
        ],
        "examples": [
         [
@@ -19113,7 +19106,7 @@ window.COURSE = {
        "german": "blau",
        "english": "blue",
        "pic": [
-        "1f535"
+        "#1e63c4"
        ],
        "examples": [
         [
@@ -19135,7 +19128,7 @@ window.COURSE = {
        "german": "rot",
        "english": "red",
        "pic": [
-        "1f534"
+        "#d32f2f"
        ],
        "examples": [
         [
@@ -19157,7 +19150,7 @@ window.COURSE = {
        "german": "gelb",
        "english": "yellow",
        "pic": [
-        "1f7e1"
+        "#fbc02d"
        ],
        "examples": [
         [
@@ -19179,7 +19172,7 @@ window.COURSE = {
        "german": "grün",
        "english": "green",
        "pic": [
-        "1f7e2"
+        "#2e7d32"
        ],
        "examples": [
         [
@@ -19201,7 +19194,7 @@ window.COURSE = {
        "german": "orange",
        "english": "orange",
        "pic": [
-        "1f7e0"
+        "#ef6c00"
        ],
        "examples": [
         [
@@ -19223,7 +19216,7 @@ window.COURSE = {
        "german": "braun",
        "english": "brown",
        "pic": [
-        "1f7e4"
+        "#6d4c41"
        ],
        "examples": [
         [
@@ -19245,7 +19238,7 @@ window.COURSE = {
        "german": "lila",
        "english": "purple",
        "pic": [
-        "1f7e3"
+        "#7b1fa2"
        ],
        "examples": [
         [
@@ -19663,7 +19656,7 @@ window.COURSE = {
        "german": "der Kugelschreiber",
        "english": "the pen (m.)",
        "pic": [
-        "1f58a"
+        "pen.jpg"
        ],
        "examples": [
         [
@@ -19686,7 +19679,7 @@ window.COURSE = {
        "german": "der Kuli",
        "english": "the pen (m., short form)",
        "pic": [
-        "1f58a"
+        "pen.jpg"
        ],
        "examples": [
         [
@@ -19709,7 +19702,7 @@ window.COURSE = {
        "german": "der Bleistift",
        "english": "the pencil (m.)",
        "pic": [
-        "270f"
+        "pencil.jpg"
        ],
        "examples": [
         [
@@ -19732,7 +19725,7 @@ window.COURSE = {
        "german": "die Brille",
        "english": "the glasses (f.)",
        "pic": [
-        "1f453"
+        "glasses.jpg"
        ],
        "examples": [
         [
@@ -19755,7 +19748,7 @@ window.COURSE = {
        "german": "das Heft",
        "english": "the exercise book (n.)",
        "pic": [
-        "1f4d3"
+        "notebook.jpg"
        ],
        "examples": [
         [
@@ -19778,7 +19771,7 @@ window.COURSE = {
        "german": "die Kamera",
        "english": "the camera (f.)",
        "pic": [
-        "1f4f7"
+        "camera.jpg"
        ],
        "examples": [
         [
@@ -19801,7 +19794,7 @@ window.COURSE = {
        "german": "die Kette",
        "english": "the necklace (f.)",
        "pic": [
-        "1f4ff"
+        "necklace.jpg"
        ],
        "examples": [
         [
@@ -19824,7 +19817,7 @@ window.COURSE = {
        "german": "der Schlüssel",
        "english": "the key (m.)",
        "pic": [
-        "1f511"
+        "key.jpg"
        ],
        "examples": [
         [
@@ -19847,7 +19840,7 @@ window.COURSE = {
        "german": "die Tasche",
        "english": "the bag (f.)",
        "pic": [
-        "1f45c"
+        "handbag.jpg"
        ],
        "examples": [
         [
@@ -19870,7 +19863,7 @@ window.COURSE = {
        "german": "das Handy",
        "english": "the mobile phone (n.)",
        "pic": [
-        "1f4f1"
+        "mobile-phone.jpg"
        ],
        "examples": [
         [
@@ -19933,7 +19926,7 @@ window.COURSE = {
        "german": "der Regenschirm",
        "english": "the umbrella (m.)",
        "pic": [
-        "2602"
+        "umbrella.jpg"
        ],
        "examples": [
         [
@@ -19971,7 +19964,7 @@ window.COURSE = {
        "german": "Das ist ein Schlüssel.",
        "english": "That is a key.",
        "pic": [
-        "1f511"
+        "key.jpg"
        ],
        "examples": [
         [
@@ -19995,7 +19988,7 @@ window.COURSE = {
        "german": "das Holz",
        "english": "the wood (n.)",
        "pic": [
-        "1fab5"
+        "wood.jpg"
        ],
        "examples": [
         [
@@ -20038,7 +20031,7 @@ window.COURSE = {
        "german": "das Papier",
        "english": "the paper (n.)",
        "pic": [
-        "1f4c4"
+        "paper.jpg"
        ],
        "examples": [
         [
@@ -20061,7 +20054,7 @@ window.COURSE = {
        "german": "das Metall",
        "english": "the metal (n.)",
        "pic": [
-        "1f529"
+        "metal.jpg"
        ],
        "examples": [
         [
@@ -20104,7 +20097,7 @@ window.COURSE = {
        "german": "der Stoff",
        "english": "the fabric (m.)",
        "pic": [
-        "1f9f5"
+        "fabric.jpg"
        ],
        "examples": [
         [
@@ -20147,7 +20140,7 @@ window.COURSE = {
        "german": "aus Holz",
        "english": "made of wood",
        "pic": [
-        "1fab5"
+        "wood.jpg"
        ],
        "examples": [
         [
@@ -20180,7 +20173,7 @@ window.COURSE = {
        "german": "Die Tasche ist aus Leder.",
        "english": "The bag is made of leather.",
        "pic": [
-        "1f45c"
+        "handbag.jpg"
        ],
        "examples": [
         [
@@ -20264,7 +20257,7 @@ window.COURSE = {
        "german": "Kein Problem.",
        "english": "No problem.",
        "pic": [
-        "1f44c"
+        "ok-gesture.jpg"
        ],
        "examples": [
         [
@@ -20282,7 +20275,7 @@ window.COURSE = {
        "german": "Sehr gern.",
        "english": "My pleasure.",
        "pic": [
-        "1f60a"
+        "smile.jpg"
        ],
        "examples": [
         [
@@ -20427,7 +20420,7 @@ window.COURSE = {
        "german": "das Sonderangebot",
        "english": "the special offer (n.)",
        "pic": [
-        "1f3f7"
+        "price-tag.jpg"
        ],
        "examples": [
         [
@@ -20526,7 +20519,7 @@ window.COURSE = {
        "german": "Schau mal!",
        "english": "Look!",
        "pic": [
-        "1f440"
+        "eyes.jpg"
        ],
        "examples": [
         [
@@ -20544,7 +20537,7 @@ window.COURSE = {
        "german": "Wie findest du das Sofa?",
        "english": "What do you think of the sofa?",
        "pic": [
-        "1f6cb"
+        "sofa.jpg"
        ],
        "examples": [
         [
@@ -20592,7 +20585,7 @@ window.COURSE = {
        "german": "Wie viel kostet der Stuhl?",
        "english": "How much is the chair?",
        "pic": [
-        "1fa91"
+        "chair.jpg"
        ],
        "examples": [
         [
@@ -20610,7 +20603,7 @@ window.COURSE = {
        "german": "Er kostet 59 Euro.",
        "english": "It costs 59 euros.",
        "pic": [
-        "1f4b6"
+        "euro.jpg"
        ],
        "examples": [
         [
@@ -22044,7 +22037,7 @@ window.COURSE = {
        "german": "die Zähne",
        "english": "the teeth (pl.)",
        "pic": [
-        "1f9b7"
+        "teeth.jpg"
        ],
        "examples": [
         [
@@ -22067,7 +22060,7 @@ window.COURSE = {
        "german": "die Arbeit",
        "english": "the work / the job (f.)",
        "pic": [
-        "1f4bc"
+        "work.jpg"
        ],
        "examples": [
         [
@@ -22090,7 +22083,7 @@ window.COURSE = {
        "german": "arbeiten",
        "english": "to work",
        "pic": [
-        "1f4bc"
+        "work.jpg"
        ],
        "examples": [
         [
@@ -22112,7 +22105,7 @@ window.COURSE = {
        "german": "aufräumen",
        "english": "to tidy up",
        "pic": [
-        "1f9f9"
+        "tidying.jpg"
        ],
        "examples": [
         [
@@ -22134,7 +22127,7 @@ window.COURSE = {
        "german": "das Mittagessen",
        "english": "the lunch (n.)",
        "pic": [
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -22177,7 +22170,7 @@ window.COURSE = {
        "german": "fernsehen",
        "english": "to watch TV",
        "pic": [
-        "1f4fa"
+        "television.jpg"
        ],
        "examples": [
         [
@@ -22199,7 +22192,7 @@ window.COURSE = {
        "german": "trinken",
        "english": "to drink",
        "pic": [
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -22221,7 +22214,7 @@ window.COURSE = {
        "german": "spielen",
        "english": "to play",
        "pic": [
-        "1f3b2"
+        "board-game.jpg"
        ],
        "examples": [
         [
@@ -22243,7 +22236,7 @@ window.COURSE = {
        "german": "das Computerspiel",
        "english": "the computer game (n.)",
        "pic": [
-        "1f3ae"
+        "video-game.jpg"
        ],
        "examples": [
         [
@@ -22266,7 +22259,7 @@ window.COURSE = {
        "german": "schlafen",
        "english": "to sleep",
        "pic": [
-        "1f634"
+        "sleep.jpg"
        ],
        "examples": [
         [
@@ -22306,7 +22299,7 @@ window.COURSE = {
        "german": "sich die Zähne putzen",
        "english": "to brush one's teeth",
        "pic": [
-        "1faa5"
+        "toothbrush.jpg"
        ],
        "examples": [
         [
@@ -22342,7 +22335,7 @@ window.COURSE = {
        "german": "zur Arbeit fahren",
        "english": "to go to work (by car or bus)",
        "pic": [
-        "1f68c"
+        "bus.jpg"
        ],
        "examples": [
         [
@@ -22360,7 +22353,7 @@ window.COURSE = {
        "german": "nach Hause kommen",
        "english": "to come home",
        "pic": [
-        "1f3e0"
+        "house.jpg"
        ],
        "examples": [
         [
@@ -23015,7 +23008,7 @@ window.COURSE = {
        "german": "anrufen",
        "english": "to call (on the phone)",
        "pic": [
-        "1f4de"
+        "telephone-call.jpg"
        ],
        "examples": [
         [
@@ -23059,7 +23052,7 @@ window.COURSE = {
        "german": "einkaufen",
        "english": "to shop",
        "pic": [
-        "1f6cd"
+        "shopping.jpg"
        ],
        "examples": [
         [
@@ -23179,7 +23172,7 @@ window.COURSE = {
        "german": "Kochst du gerne?",
        "english": "Do you like cooking?",
        "pic": [
-        "1f373"
+        "cooking.jpg"
        ],
        "examples": [
         [
@@ -23197,7 +23190,7 @@ window.COURSE = {
        "german": "Kaufst du gerne ein?",
        "english": "Do you like shopping?",
        "pic": [
-        "1f6cd"
+        "shopping.jpg"
        ],
        "examples": [
         [
@@ -23215,7 +23208,7 @@ window.COURSE = {
        "german": "Er spielt gerne Gitarre.",
        "english": "He likes playing the guitar.",
        "pic": [
-        "1f3b8"
+        "guitar.jpg"
        ],
        "examples": [
         [
@@ -23233,7 +23226,7 @@ window.COURSE = {
        "german": "Ich mache nicht gerne Kuchen.",
        "english": "I don't like making cakes.",
        "pic": [
-        "1f370"
+        "cake.jpg"
        ],
        "examples": [
         [
@@ -23497,7 +23490,7 @@ window.COURSE = {
        "german": "der Frühling",
        "english": "spring",
        "pic": [
-        "1f337"
+        "spring.jpg"
        ],
        "examples": [
         [
@@ -23520,7 +23513,7 @@ window.COURSE = {
        "german": "der Sommer",
        "english": "summer",
        "pic": [
-        "1f33b"
+        "summer.jpg"
        ],
        "examples": [
         [
@@ -23543,7 +23536,7 @@ window.COURSE = {
        "german": "der Herbst",
        "english": "autumn / fall",
        "pic": [
-        "1f342"
+        "autumn.jpg"
        ],
        "examples": [
         [
@@ -23566,7 +23559,7 @@ window.COURSE = {
        "german": "der Winter",
        "english": "winter",
        "pic": [
-        "26c4"
+        "winter.jpg"
        ],
        "examples": [
         [
@@ -23589,7 +23582,7 @@ window.COURSE = {
        "german": "die Monate",
        "english": "the months (pl.)",
        "pic": [
-        "1f4c5"
+        "calendar.jpg"
        ],
        "examples": [
         [
@@ -23612,8 +23605,7 @@ window.COURSE = {
        "german": "die Jahreszeiten",
        "english": "the seasons (pl.)",
        "pic": [
-        "1f337",
-        "1f342"
+        "seasons.jpg"
        ],
        "examples": [
         [
@@ -23683,7 +23675,7 @@ window.COURSE = {
        "german": "die Zeit",
        "english": "the time (f.)",
        "pic": [
-        "23f3"
+        "hourglass.jpg"
        ],
        "examples": [
         [
@@ -23706,7 +23698,7 @@ window.COURSE = {
        "german": "der Geburtstag",
        "english": "the birthday (m.)",
        "pic": [
-        "1f382"
+        "birthday-cake.jpg"
        ],
        "examples": [
         [
@@ -23795,7 +23787,7 @@ window.COURSE = {
        "german": "Zeit haben",
        "english": "to have time",
        "pic": [
-        "23f3"
+        "hourglass.jpg"
        ],
        "examples": [
         [
@@ -23828,7 +23820,7 @@ window.COURSE = {
        "german": "eine Party machen",
        "english": "to throw a party",
        "pic": [
-        "1f389"
+        "party.jpg"
        ],
        "examples": [
         [
@@ -23864,7 +23856,7 @@ window.COURSE = {
        "german": "Bis Samstag!",
        "english": "See you on Saturday!",
        "pic": [
-        "1f44b"
+        "wave.jpg"
        ],
        "examples": [
         [
@@ -23907,7 +23899,7 @@ window.COURSE = {
        "german": "waschen",
        "english": "to wash (du wäschst)",
        "pic": [
-        "1f9fc"
+        "washing.jpg"
        ],
        "examples": [
         [
@@ -23929,7 +23921,7 @@ window.COURSE = {
        "german": "fahren",
        "english": "to drive / to go (du fährst)",
        "pic": [
-        "1f697"
+        "car.jpg"
        ],
        "examples": [
         [
@@ -23989,7 +23981,7 @@ window.COURSE = {
        "german": "geben",
        "english": "to give (du gibst)",
        "pic": [
-        "1f381"
+        "gift.jpg"
        ],
        "examples": [
         [
@@ -24030,7 +24022,7 @@ window.COURSE = {
        "german": "lesen",
        "english": "to read (du liest)",
        "pic": [
-        "1f4d6"
+        "book.jpg"
        ],
        "examples": [
         [
@@ -24052,7 +24044,7 @@ window.COURSE = {
        "german": "sehen",
        "english": "to see (du siehst)",
        "pic": [
-        "1f440"
+        "eyes.jpg"
        ],
        "examples": [
         [
@@ -24143,7 +24135,7 @@ window.COURSE = {
        "german": "am Morgen",
        "english": "in the morning",
        "pic": [
-        "1f305"
+        "sunrise.jpg"
        ],
        "examples": [
         [
@@ -24191,7 +24183,7 @@ window.COURSE = {
        "german": "am Abend",
        "english": "in the evening",
        "pic": [
-        "1f306"
+        "evening.jpg"
        ],
        "examples": [
         [
@@ -24209,7 +24201,7 @@ window.COURSE = {
        "german": "in der Nacht",
        "english": "at night",
        "pic": [
-        "1f319"
+        "moon.jpg"
        ],
        "examples": [
         [
@@ -24227,7 +24219,7 @@ window.COURSE = {
        "german": "heute Abend",
        "english": "this evening",
        "pic": [
-        "1f306"
+        "evening.jpg"
        ],
        "examples": [
         [
@@ -24245,7 +24237,7 @@ window.COURSE = {
        "german": "morgen früh",
        "english": "tomorrow morning",
        "pic": [
-        "1f305"
+        "sunrise.jpg"
        ],
        "examples": [
         [
@@ -24304,7 +24296,7 @@ window.COURSE = {
        "german": "das Kino",
        "english": "the cinema (n.)",
        "pic": [
-        "1f3ac"
+        "cinema.jpg"
        ],
        "examples": [
         [
@@ -24327,7 +24319,7 @@ window.COURSE = {
        "german": "das Museum",
        "english": "the museum (n.)",
        "pic": [
-        "1f3db"
+        "museum.jpg"
        ],
        "examples": [
         [
@@ -24396,7 +24388,7 @@ window.COURSE = {
        "german": "das Konzert",
        "english": "the concert (n.)",
        "pic": [
-        "1f3b6"
+        "concert.jpg"
        ],
        "examples": [
         [
@@ -24419,7 +24411,7 @@ window.COURSE = {
        "german": "das Restaurant",
        "english": "the restaurant (n.)",
        "pic": [
-        "1f37d"
+        "restaurant.jpg"
        ],
        "examples": [
         [
@@ -24442,7 +24434,7 @@ window.COURSE = {
        "german": "das Fitnessstudio",
        "english": "the gym (n.)",
        "pic": [
-        "1f3cb"
+        "gym.jpg"
        ],
        "examples": [
         [
@@ -24465,7 +24457,7 @@ window.COURSE = {
        "german": "die Bar",
        "english": "the bar (f.)",
        "pic": [
-        "1f378"
+        "bar.jpg"
        ],
        "examples": [
         [
@@ -24488,7 +24480,7 @@ window.COURSE = {
        "german": "ins Kino gehen",
        "english": "to go to the cinema",
        "pic": [
-        "1f3ac"
+        "cinema.jpg"
        ],
        "examples": [
         [
@@ -24506,7 +24498,7 @@ window.COURSE = {
        "german": "ins Konzert gehen",
        "english": "to go to a concert",
        "pic": [
-        "1f3b6"
+        "concert.jpg"
        ],
        "examples": [
         [
@@ -24524,7 +24516,7 @@ window.COURSE = {
        "german": "spazieren gehen",
        "english": "to go for a walk",
        "pic": [
-        "1f6b6"
+        "walking.jpg"
        ],
        "examples": [
         [
@@ -24548,7 +24540,7 @@ window.COURSE = {
        "german": "Hast du am Samstag Zeit?",
        "english": "Are you free on Saturday?",
        "pic": [
-        "1f4c5"
+        "calendar.jpg"
        ],
        "examples": [
         [
@@ -24566,7 +24558,7 @@ window.COURSE = {
        "german": "Gehen wir ins Kino?",
        "english": "Shall we go to the cinema?",
        "pic": [
-        "1f37f"
+        "popcorn.jpg"
        ],
        "examples": [
         [
@@ -24584,7 +24576,7 @@ window.COURSE = {
        "german": "Lust auf Kaffee?",
        "english": "Fancy a coffee?",
        "pic": [
-        "2615"
+        "coffee.jpg"
        ],
        "examples": [
         [
@@ -24620,7 +24612,7 @@ window.COURSE = {
        "german": "Ja, gern.",
        "english": "Yes, I'd like to.",
        "pic": [
-        "1f44d"
+        "thumbs-up.jpg"
        ],
        "examples": [
         [
@@ -24656,7 +24648,7 @@ window.COURSE = {
        "german": "Tut mir leid, ich kann leider nicht.",
        "english": "Sorry, I can't.",
        "pic": [
-        "1f614"
+        "sad.jpg"
        ],
        "examples": [
         [
@@ -24722,7 +24714,7 @@ window.COURSE = {
        "german": "Bis dann!",
        "english": "See you then!",
        "pic": [
-        "1f44b"
+        "wave.jpg"
        ],
        "examples": [
         [
@@ -24856,7 +24848,7 @@ window.COURSE = {
        "german": "Weißt du, wo das Kino ist?",
        "english": "Do you know where the cinema is?",
        "pic": [
-        "1f3ac"
+        "cinema.jpg"
        ],
        "examples": [
         [
@@ -26461,7 +26453,7 @@ window.COURSE = {
        "german": "das Wetter",
        "english": "the weather (n.)",
        "pic": [
-        "1f326"
+        "weather.jpg"
        ],
        "examples": [
         [
@@ -26484,7 +26476,7 @@ window.COURSE = {
        "german": "der Regen",
        "english": "the rain (m.)",
        "pic": [
-        "1f327"
+        "rain.jpg"
        ],
        "examples": [
         [
@@ -26507,7 +26499,7 @@ window.COURSE = {
        "german": "der Schnee",
        "english": "the snow (m.)",
        "pic": [
-        "2744"
+        "snow.jpg"
        ],
        "examples": [
         [
@@ -26530,7 +26522,7 @@ window.COURSE = {
        "german": "die Sonne",
        "english": "the sun (f.)",
        "pic": [
-        "2600"
+        "sun.jpg"
        ],
        "examples": [
         [
@@ -26553,7 +26545,7 @@ window.COURSE = {
        "german": "warm",
        "english": "warm",
        "pic": [
-        "1f324"
+        "warm.jpg"
        ],
        "examples": [
         [
@@ -26619,7 +26611,7 @@ window.COURSE = {
        "german": "es regnet",
        "english": "it's raining",
        "pic": [
-        "1f327"
+        "rain.jpg"
        ],
        "examples": [
         [
@@ -26637,7 +26629,7 @@ window.COURSE = {
        "german": "es schneit",
        "english": "it's snowing",
        "pic": [
-        "1f328"
+        "snowfall.jpg"
        ],
        "examples": [
         [
@@ -26655,7 +26647,7 @@ window.COURSE = {
        "german": "die Sonne scheint",
        "english": "the sun is shining",
        "pic": [
-        "2600"
+        "sun.jpg"
        ],
        "examples": [
         [
@@ -26674,7 +26666,7 @@ window.COURSE = {
        "german": "es ist sonnig",
        "english": "it's sunny",
        "pic": [
-        "2600"
+        "sun.jpg"
        ],
        "examples": [
         [
@@ -26692,7 +26684,7 @@ window.COURSE = {
        "german": "Wie ist das Wetter?",
        "english": "What is the weather like?",
        "pic": [
-        "1f326"
+        "weather.jpg"
        ],
        "examples": [
         [
@@ -26710,7 +26702,7 @@ window.COURSE = {
        "german": "Es ist 20 Grad.",
        "english": "It's 20 degrees.",
        "pic": [
-        "1f321"
+        "thermometer.jpg"
        ],
        "examples": [
         [
@@ -26734,7 +26726,7 @@ window.COURSE = {
        "german": "die Wolke",
        "english": "the cloud (f.)",
        "pic": [
-        "2601"
+        "cloud.jpg"
        ],
        "examples": [
         [
@@ -26757,7 +26749,7 @@ window.COURSE = {
        "german": "wolkig",
        "english": "cloudy",
        "pic": [
-        "2601"
+        "cloud.jpg"
        ],
        "examples": [
         [
@@ -26779,7 +26771,7 @@ window.COURSE = {
        "german": "der Wind",
        "english": "the wind (m.)",
        "pic": [
-        "1f4a8"
+        "wind.jpg"
        ],
        "examples": [
         [
@@ -26802,7 +26794,7 @@ window.COURSE = {
        "german": "windig",
        "english": "windy",
        "pic": [
-        "1f4a8"
+        "wind.jpg"
        ],
        "examples": [
         [
@@ -26824,7 +26816,7 @@ window.COURSE = {
        "german": "der Nebel",
        "english": "the fog (m.)",
        "pic": [
-        "1f32b"
+        "fog.jpg"
        ],
        "examples": [
         [
@@ -26847,7 +26839,7 @@ window.COURSE = {
        "german": "das Eis",
        "english": "the ice (n.)",
        "pic": [
-        "1f366"
+        "ice-cream.jpg"
        ],
        "examples": [
         [
@@ -26870,7 +26862,7 @@ window.COURSE = {
        "german": "das Gewitter",
        "english": "the thunderstorm (n.)",
        "pic": [
-        "26c8"
+        "thunderstorm.jpg"
        ],
        "examples": [
         [
@@ -26893,7 +26885,7 @@ window.COURSE = {
        "german": "die Temperatur",
        "english": "the temperature (f.)",
        "pic": [
-        "1f321"
+        "thermometer.jpg"
        ],
        "examples": [
         [
@@ -26916,7 +26908,7 @@ window.COURSE = {
        "german": "das Grad",
        "english": "the degree (n.)",
        "pic": [
-        "1f321"
+        "thermometer.jpg"
        ],
        "examples": [
         [
@@ -27037,7 +27029,7 @@ window.COURSE = {
        "german": "der Urlaub",
        "english": "the holiday / the vacation (m.)",
        "pic": [
-        "1f3d6"
+        "beach.jpg"
        ],
        "examples": [
         [
@@ -27079,7 +27071,7 @@ window.COURSE = {
        "german": "das Zelt",
        "english": "the tent (n.)",
        "pic": [
-        "26fa"
+        "tent.jpg"
        ],
        "examples": [
         [
@@ -27102,7 +27094,7 @@ window.COURSE = {
        "german": "das Meer",
        "english": "the sea (n.)",
        "pic": [
-        "1f30a"
+        "sea.jpg"
        ],
        "examples": [
         [
@@ -27125,7 +27117,7 @@ window.COURSE = {
        "german": "die Küste",
        "english": "the coast (f.)",
        "pic": [
-        "1f3dd"
+        "coast.jpg"
        ],
        "examples": [
         [
@@ -27148,7 +27140,7 @@ window.COURSE = {
        "german": "schwimmen",
        "english": "to swim",
        "pic": [
-        "1f3ca"
+        "swimming.jpg"
        ],
        "examples": [
         [
@@ -27170,7 +27162,7 @@ window.COURSE = {
        "german": "schnorcheln",
        "english": "to snorkel",
        "pic": [
-        "1f93f"
+        "snorkelling.jpg"
        ],
        "examples": [
         [
@@ -27192,7 +27184,7 @@ window.COURSE = {
        "german": "tauchen",
        "english": "to dive",
        "pic": [
-        "1f93f"
+        "snorkelling.jpg"
        ],
        "examples": [
         [
@@ -27214,7 +27206,7 @@ window.COURSE = {
        "german": "das Skifahren",
        "english": "skiing (n.)",
        "pic": [
-        "26f7"
+        "skiing.jpg"
        ],
        "examples": [
         [
@@ -27237,7 +27229,7 @@ window.COURSE = {
        "german": "das Schlittschuhlaufen",
        "english": "ice skating (n.)",
        "pic": [
-        "26f8"
+        "ice-skating.jpg"
        ],
        "examples": [
         [
@@ -27260,7 +27252,7 @@ window.COURSE = {
        "german": "die Natur",
        "english": "nature (f.)",
        "pic": [
-        "1f3de"
+        "nature.jpg"
        ],
        "examples": [
         [
@@ -27283,7 +27275,7 @@ window.COURSE = {
        "german": "wandern",
        "english": "to hike",
        "pic": [
-        "1f97e"
+        "hiking.jpg"
        ],
        "examples": [
         [
@@ -27305,7 +27297,7 @@ window.COURSE = {
        "german": "Urlaub machen",
        "english": "to go on holiday",
        "pic": [
-        "1f3d6"
+        "beach.jpg"
        ],
        "examples": [
         [
@@ -27329,7 +27321,7 @@ window.COURSE = {
        "german": "lesen",
        "english": "to read",
        "pic": [
-        "1f4d6"
+        "book.jpg"
        ],
        "examples": [
         [
@@ -27351,7 +27343,7 @@ window.COURSE = {
        "german": "tanzen",
        "english": "to dance",
        "pic": [
-        "1f483"
+        "dancing.jpg"
        ],
        "examples": [
         [
@@ -27373,7 +27365,7 @@ window.COURSE = {
        "german": "reisen",
        "english": "to travel",
        "pic": [
-        "1f9f3"
+        "suitcase.jpg"
        ],
        "examples": [
         [
@@ -27395,7 +27387,7 @@ window.COURSE = {
        "german": "kochen",
        "english": "to cook",
        "pic": [
-        "1f373"
+        "cooking.jpg"
        ],
        "examples": [
         [
@@ -27417,7 +27409,7 @@ window.COURSE = {
        "german": "joggen",
        "english": "to jog",
        "pic": [
-        "1f3c3"
+        "running.jpg"
        ],
        "examples": [
         [
@@ -27461,7 +27453,7 @@ window.COURSE = {
        "german": "die Fotografie",
        "english": "photography (f.)",
        "pic": [
-        "1f4f8"
+        "camera.jpg"
        ],
        "examples": [
         [
@@ -27484,7 +27476,7 @@ window.COURSE = {
        "german": "Fahrrad fahren",
        "english": "to ride a bike",
        "pic": [
-        "1f6b4"
+        "cycling.jpg"
        ],
        "examples": [
         [
@@ -27502,7 +27494,7 @@ window.COURSE = {
        "german": "Freunde treffen",
        "english": "to meet friends",
        "pic": [
-        "1f9d1-200d-1f91d-200d-1f9d1"
+        "friends.jpg"
        ],
        "examples": [
         [
@@ -27520,7 +27512,7 @@ window.COURSE = {
        "german": "Computerspiele spielen",
        "english": "to play computer games",
        "pic": [
-        "1f3ae"
+        "video-game.jpg"
        ],
        "examples": [
         [
@@ -27538,7 +27530,7 @@ window.COURSE = {
        "german": "Musik hören",
        "english": "to listen to music",
        "pic": [
-        "1f3a7"
+        "headphones.jpg"
        ],
        "examples": [
         [
@@ -27556,7 +27548,7 @@ window.COURSE = {
        "german": "Musik machen",
        "english": "to make music",
        "pic": [
-        "1f3b6"
+        "concert.jpg"
        ],
        "examples": [
         [
@@ -27574,7 +27566,7 @@ window.COURSE = {
        "german": "Fußball spielen",
        "english": "to play football",
        "pic": [
-        "26bd"
+        "football.jpg"
        ],
        "examples": [
         [
@@ -27610,7 +27602,7 @@ window.COURSE = {
        "german": "Handball spielen",
        "english": "to play handball",
        "pic": [
-        "1f93e"
+        "handball.jpg"
        ],
        "examples": [
         [
@@ -27714,7 +27706,7 @@ window.COURSE = {
        "german": "die Tennisschuhe",
        "english": "the trainers / the tennis shoes (pl.)",
        "pic": [
-        "1f45f"
+        "trainers.jpg"
        ],
        "examples": [
         [
@@ -27737,7 +27729,7 @@ window.COURSE = {
        "german": "das Fahrrad",
        "english": "the bicycle (n.)",
        "pic": [
-        "1f6b2"
+        "bicycle.jpg"
        ],
        "examples": [
         [
@@ -27780,7 +27772,7 @@ window.COURSE = {
        "german": "das Schwimmbad",
        "english": "the swimming pool (n.)",
        "pic": [
-        "1f3ca"
+        "swimming.jpg"
        ],
        "examples": [
         [
@@ -27849,7 +27841,7 @@ window.COURSE = {
        "german": "die Jacke",
        "english": "the jacket (f.)",
        "pic": [
-        "1f9e5"
+        "jacket.jpg"
        ],
        "examples": [
         [
@@ -27872,7 +27864,7 @@ window.COURSE = {
        "german": "die Mütze",
        "english": "the hat / the cap (f.)",
        "pic": [
-        "1f9e2"
+        "cap.jpg"
        ],
        "examples": [
         [
@@ -27939,9 +27931,9 @@ window.COURSE = {
        "german": "der Lieblingsfilm",
        "english": "the favourite film (m.)",
        "pic": [
-        "2764",
+        "heart.jpg",
         "+",
-        "1f3ac"
+        "cinema.jpg"
        ],
        "examples": [
         [
@@ -27964,9 +27956,9 @@ window.COURSE = {
        "german": "das Lieblingsbuch",
        "english": "the favourite book (n.)",
        "pic": [
-        "2764",
+        "heart.jpg",
         "+",
-        "1f4d6"
+        "book.jpg"
        ],
        "examples": [
         [
@@ -27989,7 +27981,7 @@ window.COURSE = {
        "german": "die Lieblingsmusik",
        "english": "the favourite music (f.)",
        "pic": [
-        "2764",
+        "heart.jpg",
         "+",
         "1f3b5"
        ],
@@ -28014,7 +28006,7 @@ window.COURSE = {
        "german": "das Lieblingslied",
        "english": "the favourite song (n.)",
        "pic": [
-        "2764",
+        "heart.jpg",
         "+",
         "1f3b5"
        ],
@@ -28039,9 +28031,9 @@ window.COURSE = {
        "german": "das Lieblingsessen",
        "english": "the favourite food (n.)",
        "pic": [
-        "2764",
+        "heart.jpg",
         "+",
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -28064,9 +28056,9 @@ window.COURSE = {
        "german": "das Lieblingsgetränk",
        "english": "the favourite drink (n.)",
        "pic": [
-        "2764",
+        "heart.jpg",
         "+",
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -28089,7 +28081,7 @@ window.COURSE = {
        "german": "die Lieblingsfarbe",
        "english": "the favourite colour (f.)",
        "pic": [
-        "2764",
+        "heart.jpg",
         "+",
         "1f3a8"
        ],
@@ -28186,7 +28178,7 @@ window.COURSE = {
        "german": "kompliziert",
        "english": "complicated",
        "pic": [
-        "1f9e9"
+        "puzzle.jpg"
        ],
        "examples": [
         [
@@ -28303,7 +28295,7 @@ window.COURSE = {
        "german": "langweilig",
        "english": "boring",
        "pic": [
-        "1f971"
+        "yawn.jpg"
        ],
        "examples": [
         [
@@ -28363,7 +28355,7 @@ window.COURSE = {
        "german": "freundlich",
        "english": "friendly",
        "pic": [
-        "1f60a"
+        "smile.jpg"
        ],
        "examples": [
         [
@@ -28385,7 +28377,7 @@ window.COURSE = {
        "german": "nett",
        "english": "nice / kind",
        "pic": [
-        "1f60a"
+        "smile.jpg"
        ],
        "examples": [
         [
@@ -28820,7 +28812,7 @@ window.COURSE = {
        "german": "Du kannst toll tanzen!",
        "english": "You dance really well!",
        "pic": [
-        "1f483"
+        "dancing.jpg"
        ],
        "examples": [
         [
@@ -28838,7 +28830,7 @@ window.COURSE = {
        "german": "Sie können super kochen!",
        "english": "You are a great cook! (formal)",
        "pic": [
-        "1f469-200d-1f373"
+        "cook-woman.jpg"
        ],
        "examples": [
         [
@@ -28910,7 +28902,7 @@ window.COURSE = {
        "german": "Ich finde das lustig.",
        "english": "I think that is funny.",
        "pic": [
-        "1f602"
+        "laughing.jpg"
        ],
        "examples": [
         [
@@ -28964,7 +28956,7 @@ window.COURSE = {
        "german": "Das macht Spaß.",
        "english": "That is fun.",
        "pic": [
-        "1f604"
+        "laughing.jpg"
        ],
        "examples": [
         [
@@ -29007,7 +28999,7 @@ window.COURSE = {
        "german": "singen",
        "english": "to sing",
        "pic": [
-        "1f3a4"
+        "singing.jpg"
        ],
        "examples": [
         [
@@ -29029,7 +29021,7 @@ window.COURSE = {
        "german": "backen",
        "english": "to bake",
        "pic": [
-        "1f9c1"
+        "baking.jpg"
        ],
        "examples": [
         [
@@ -29051,7 +29043,7 @@ window.COURSE = {
        "german": "reiten",
        "english": "to ride (a horse)",
        "pic": [
-        "1f3c7"
+        "riding.jpg"
        ],
        "examples": [
         [
@@ -29073,7 +29065,7 @@ window.COURSE = {
        "german": "fotografieren",
        "english": "to take photos",
        "pic": [
-        "1f4f8"
+        "photographer.jpg"
        ],
        "examples": [
         [
@@ -29095,7 +29087,7 @@ window.COURSE = {
        "german": "Schach spielen",
        "english": "to play chess",
        "pic": [
-        "265f"
+        "chess.jpg"
        ],
        "examples": [
         [
@@ -29113,7 +29105,7 @@ window.COURSE = {
        "german": "Ski fahren",
        "english": "to ski",
        "pic": [
-        "26f7"
+        "skiing.jpg"
        ],
        "examples": [
         [
@@ -29131,7 +29123,7 @@ window.COURSE = {
        "german": "Rad fahren",
        "english": "to cycle",
        "pic": [
-        "1f6b4"
+        "cycling.jpg"
        ],
        "examples": [
         [
@@ -29182,7 +29174,7 @@ window.COURSE = {
        "german": "Mein Hobby ist Lesen.",
        "english": "My hobby is reading.",
        "pic": [
-        "1f4da"
+        "books.jpg"
        ],
        "examples": [
         [
@@ -29200,7 +29192,7 @@ window.COURSE = {
        "german": "Ich lese gern.",
        "english": "I like reading.",
        "pic": [
-        "1f4da"
+        "books.jpg"
        ],
        "examples": [
         [
@@ -30207,7 +30199,7 @@ window.COURSE = {
        "german": "der Lehrer",
        "english": "the teacher (m.)",
        "pic": [
-        "1f468-200d-1f3eb"
+        "teacher-man.jpg"
        ],
        "examples": [
         [
@@ -30276,7 +30268,7 @@ window.COURSE = {
        "german": "die Ingenieurin",
        "english": "the engineer (f.)",
        "pic": [
-        "1f477-200d-2640-fe0f"
+        "engineer-woman.jpg"
        ],
        "examples": [
         [
@@ -30299,7 +30291,7 @@ window.COURSE = {
        "german": "der Verkäufer",
        "english": "the sales assistant (m.)",
        "pic": [
-        "1f6cd"
+        "shop-assistant.jpg"
        ],
        "examples": [
         [
@@ -30322,7 +30314,7 @@ window.COURSE = {
        "german": "die Verkäuferin",
        "english": "the sales assistant (f.)",
        "pic": [
-        "1f6cd"
+        "shop-assistant.jpg"
        ],
        "examples": [
         [
@@ -30368,7 +30360,7 @@ window.COURSE = {
        "german": "die Kellnerin",
        "english": "the waitress",
        "pic": [
-        "1f37d"
+        "waitress.jpg"
        ],
        "examples": [
         [
@@ -30391,7 +30383,7 @@ window.COURSE = {
        "german": "der Programmierer",
        "english": "the programmer (m.)",
        "pic": [
-        "1f468-200d-1f4bb"
+        "programmer-man.jpg"
        ],
        "examples": [
         [
@@ -30460,7 +30452,7 @@ window.COURSE = {
        "german": "die Polizistin",
        "english": "the police officer (f.)",
        "pic": [
-        "1f46e-200d-2640-fe0f"
+        "police-woman.jpg"
        ],
        "examples": [
         [
@@ -30483,7 +30475,7 @@ window.COURSE = {
        "german": "der Elektriker",
        "english": "the electrician (m.)",
        "pic": [
-        "1f50c"
+        "electrician.jpg"
        ],
        "examples": [
         [
@@ -30506,7 +30498,7 @@ window.COURSE = {
        "german": "die Elektrikerin",
        "english": "the electrician (f.)",
        "pic": [
-        "1f50c"
+        "electrician.jpg"
        ],
        "examples": [
         [
@@ -30529,7 +30521,7 @@ window.COURSE = {
        "german": "der Journalist",
        "english": "the journalist (m.)",
        "pic": [
-        "1f4f0"
+        "journalist.jpg"
        ],
        "examples": [
         [
@@ -30552,7 +30544,7 @@ window.COURSE = {
        "german": "die Journalistin",
        "english": "the journalist (f.)",
        "pic": [
-        "1f4f0"
+        "journalist.jpg"
        ],
        "examples": [
         [
@@ -30621,7 +30613,7 @@ window.COURSE = {
        "german": "der Arzt",
        "english": "the doctor (m.)",
        "pic": [
-        "1f468-200d-2695-fe0f"
+        "doctor-man.jpg"
        ],
        "examples": [
         [
@@ -30644,7 +30636,7 @@ window.COURSE = {
        "german": "die Ärztin",
        "english": "the doctor (f.)",
        "pic": [
-        "1f469-200d-2695-fe0f"
+        "doctor-woman.jpg"
        ],
        "examples": [
         [
@@ -30667,7 +30659,7 @@ window.COURSE = {
        "german": "der Krankenpfleger",
        "english": "the nurse (m.)",
        "pic": [
-        "1f3e5"
+        "nurse.jpg"
        ],
        "examples": [
         [
@@ -30690,7 +30682,7 @@ window.COURSE = {
        "german": "die Krankenschwester",
        "english": "the nurse (f.)",
        "pic": [
-        "1f3e5"
+        "nurse.jpg"
        ],
        "examples": [
         [
@@ -30713,7 +30705,7 @@ window.COURSE = {
        "german": "der Tierarzt",
        "english": "the vet (m.)",
        "pic": [
-        "1f43e"
+        "vet.jpg"
        ],
        "examples": [
         [
@@ -30736,7 +30728,7 @@ window.COURSE = {
        "german": "die Tierärztin",
        "english": "the vet (f.)",
        "pic": [
-        "1f43e"
+        "vet.jpg"
        ],
        "examples": [
         [
@@ -30759,7 +30751,7 @@ window.COURSE = {
        "german": "der Zahnarzt",
        "english": "the dentist (m.)",
        "pic": [
-        "1f9b7"
+        "dentist.jpg"
        ],
        "examples": [
         [
@@ -30782,7 +30774,7 @@ window.COURSE = {
        "german": "die Zahnärztin",
        "english": "the dentist (f.)",
        "pic": [
-        "1f9b7"
+        "dentist.jpg"
        ],
        "examples": [
         [
@@ -30828,7 +30820,7 @@ window.COURSE = {
        "german": "die Geschäftsfrau",
        "english": "the businesswoman",
        "pic": [
-        "1f469-200d-1f4bc"
+        "businesswoman.jpg"
        ],
        "examples": [
         [
@@ -30851,7 +30843,7 @@ window.COURSE = {
        "german": "der Anwalt",
        "english": "the lawyer (m.)",
        "pic": [
-        "2696"
+        "lawyer.jpg"
        ],
        "examples": [
         [
@@ -30874,7 +30866,7 @@ window.COURSE = {
        "german": "die Anwältin",
        "english": "the lawyer (f.)",
        "pic": [
-        "2696"
+        "lawyer.jpg"
        ],
        "examples": [
         [
@@ -30897,7 +30889,7 @@ window.COURSE = {
        "german": "der Friseur",
        "english": "the hairdresser (m.)",
        "pic": [
-        "1f488"
+        "hairdresser.jpg"
        ],
        "examples": [
         [
@@ -30920,7 +30912,7 @@ window.COURSE = {
        "german": "die Friseurin",
        "english": "the hairdresser (f.)",
        "pic": [
-        "1f488"
+        "hairdresser.jpg"
        ],
        "examples": [
         [
@@ -30943,7 +30935,7 @@ window.COURSE = {
        "german": "der Koch",
        "english": "the cook / the chef (m.)",
        "pic": [
-        "1f468-200d-1f373"
+        "cook-man.jpg"
        ],
        "examples": [
         [
@@ -30966,7 +30958,7 @@ window.COURSE = {
        "german": "die Köchin",
        "english": "the cook / the chef (f.)",
        "pic": [
-        "1f469-200d-1f373"
+        "cook-woman.jpg"
        ],
        "examples": [
         [
@@ -31050,7 +31042,7 @@ window.COURSE = {
        "german": "Gitarre spielen",
        "english": "to play the guitar",
        "pic": [
-        "1f3b8"
+        "guitar.jpg"
        ],
        "examples": [
         [
@@ -31068,7 +31060,7 @@ window.COURSE = {
        "german": "Skateboard fahren",
        "english": "to skateboard",
        "pic": [
-        "1f6f9"
+        "skateboarding.jpg"
        ],
        "examples": [
         [
@@ -31086,7 +31078,7 @@ window.COURSE = {
        "german": "Ski laufen",
        "english": "to ski",
        "pic": [
-        "26f7"
+        "skiing.jpg"
        ],
        "examples": [
         [
@@ -31134,7 +31126,7 @@ window.COURSE = {
        "german": "Sie kann sehr gut tanzen.",
        "english": "She can dance very well.",
        "pic": [
-        "1f483"
+        "dancing.jpg"
        ],
        "examples": [
         [
@@ -31845,7 +31837,7 @@ window.COURSE = {
        "german": "gut",
        "english": "good / well",
        "pic": [
-        "1f642"
+        "smile.jpg"
        ],
        "examples": [
         [
@@ -32019,7 +32011,7 @@ window.COURSE = {
        "german": "das Hörverstehen",
        "english": "listening comprehension (n.)",
        "pic": [
-        "1f442"
+        "headphones.jpg"
        ],
        "examples": [
         [
@@ -32042,7 +32034,7 @@ window.COURSE = {
        "german": "die Aussprache",
        "english": "the pronunciation (f.)",
        "pic": [
-        "1f5e3"
+        "conversation.jpg"
        ],
        "examples": [
         [
@@ -32157,7 +32149,7 @@ window.COURSE = {
        "german": "der Anhang",
        "english": "the attachment (m.)",
        "pic": [
-        "1f4ce"
+        "paper-clip.jpg"
        ],
        "examples": [
         [
@@ -32224,7 +32216,7 @@ window.COURSE = {
        "german": "schreiben",
        "english": "to write",
        "pic": [
-        "270d"
+        "writing.jpg"
        ],
        "examples": [
         [
@@ -32468,7 +32460,7 @@ window.COURSE = {
        "german": "hat gegessen",
        "english": "has eaten / ate",
        "pic": [
-        "1f37d"
+        "meal.jpg"
        ],
        "examples": [
         [
@@ -32534,7 +32526,7 @@ window.COURSE = {
        "german": "hat geschrieben",
        "english": "has written / wrote",
        "pic": [
-        "270d"
+        "writing.jpg"
        ],
        "examples": [
         [
@@ -32552,7 +32544,7 @@ window.COURSE = {
        "german": "hat gesprochen",
        "english": "has spoken / spoke",
        "pic": [
-        "1f5e3"
+        "conversation.jpg"
        ],
        "examples": [
         [
@@ -32570,7 +32562,7 @@ window.COURSE = {
        "german": "hat getroffen",
        "english": "has met / met",
        "pic": [
-        "1f91d"
+        "handshake.jpg"
        ],
        "examples": [
         [
@@ -32588,7 +32580,7 @@ window.COURSE = {
        "german": "hat getrunken",
        "english": "has drunk / drank",
        "pic": [
-        "1f964"
+        "drinking-glass.jpg"
        ],
        "examples": [
         [
@@ -32627,7 +32619,7 @@ window.COURSE = {
        "german": "ist gegangen",
        "english": "has gone / went",
        "pic": [
-        "1f6b6"
+        "walking.jpg"
        ],
        "examples": [
         [
@@ -32645,7 +32637,7 @@ window.COURSE = {
        "german": "ist gefahren",
        "english": "has driven / drove",
        "pic": [
-        "1f697"
+        "car.jpg"
        ],
        "examples": [
         [
@@ -32663,7 +32655,7 @@ window.COURSE = {
        "german": "ist gereist",
        "english": "has travelled / travelled",
        "pic": [
-        "1f9f3"
+        "suitcase.jpg"
        ],
        "examples": [
         [
@@ -32702,7 +32694,7 @@ window.COURSE = {
        "german": "der Student",
        "english": "the student (m.)",
        "pic": [
-        "1f468-200d-1f393"
+        "student-man.jpg"
        ],
        "examples": [
         [
@@ -32748,7 +32740,7 @@ window.COURSE = {
        "german": "der Rentner",
        "english": "the pensioner (m.)",
        "pic": [
-        "1f474"
+        "old-man.jpg"
        ],
        "examples": [
         [
@@ -32771,7 +32763,7 @@ window.COURSE = {
        "german": "die Rentnerin",
        "english": "the pensioner (f.)",
        "pic": [
-        "1f475"
+        "old-woman.jpg"
        ],
        "examples": [
         [
@@ -32842,7 +32834,7 @@ window.COURSE = {
        "german": "Ich arbeite als Krankenpfleger.",
        "english": "I work as a nurse.",
        "pic": [
-        "1f3e5"
+        "nurse.jpg"
        ],
        "examples": [
         [
@@ -32860,7 +32852,7 @@ window.COURSE = {
        "german": "Ich arbeite bei Ethiopian Airlines.",
        "english": "I work for Ethiopian Airlines.",
        "pic": [
-        "2708"
+        "ethiopian-airlines.jpg"
        ],
        "examples": [
         [
@@ -32878,7 +32870,7 @@ window.COURSE = {
        "german": "Ich studiere Medizin.",
        "english": "I study medicine.",
        "pic": [
-        "1fa7a"
+        "stethoscope.jpg"
        ],
        "examples": [
         [
@@ -32947,7 +32939,7 @@ window.COURSE = {
        "german": "der Computer",
        "english": "the computer (m.)",
        "pic": [
-        "1f5a5"
+        "computer.jpg"
        ],
        "examples": [
         [
@@ -32970,7 +32962,7 @@ window.COURSE = {
        "german": "der Laptop",
        "english": "the laptop (m.)",
        "pic": [
-        "1f4bb"
+        "laptop.jpg"
        ],
        "examples": [
         [
@@ -33016,7 +33008,7 @@ window.COURSE = {
        "german": "die Maus",
        "english": "the mouse (f.)",
        "pic": [
-        "1f5b1"
+        "computer-mouse.jpg"
        ],
        "examples": [
         [
@@ -33039,7 +33031,7 @@ window.COURSE = {
        "german": "die Tastatur",
        "english": "the keyboard (f.)",
        "pic": [
-        "2328"
+        "keyboard.jpg"
        ],
        "examples": [
         [
@@ -33062,7 +33054,7 @@ window.COURSE = {
        "german": "der Bildschirm",
        "english": "the screen (m.)",
        "pic": [
-        "1f5a5"
+        "monitor.jpg"
        ],
        "examples": [
         [
@@ -33108,7 +33100,7 @@ window.COURSE = {
        "german": "die Nachricht",
        "english": "the message (f.)",
        "pic": [
-        "1f4ac"
+        "text-message.jpg"
        ],
        "examples": [
         [
@@ -33131,7 +33123,7 @@ window.COURSE = {
        "german": "der Termin",
        "english": "the appointment (m.)",
        "pic": [
-        "1f4c5"
+        "calendar.jpg"
        ],
        "examples": [
         [
@@ -33154,7 +33146,7 @@ window.COURSE = {
        "german": "der Kalender",
        "english": "the calendar (m.)",
        "pic": [
-        "1f4c5"
+        "calendar.jpg"
        ],
        "examples": [
         [
@@ -33177,7 +33169,7 @@ window.COURSE = {
        "german": "der Stift",
        "english": "the pen (m.)",
        "pic": [
-        "1f58a"
+        "pen.jpg"
        ],
        "examples": [
         [
@@ -33220,7 +33212,7 @@ window.COURSE = {
        "german": "das WLAN",
        "english": "the Wi-Fi (n.)",
        "pic": [
-        "1f4f6"
+        "router.jpg"
        ],
        "examples": [
         [
@@ -33266,7 +33258,7 @@ window.COURSE = {
        "german": "Ich brauche einen Stift.",
        "english": "I need a pen.",
        "pic": [
-        "1f58a"
+        "pen.jpg"
        ],
        "examples": [
         [
@@ -33290,7 +33282,7 @@ window.COURSE = {
        "german": "telefonieren",
        "english": "to make a phone call",
        "pic": [
-        "1f4de"
+        "telephone-call.jpg"
        ],
        "examples": [
         [
@@ -33372,7 +33364,7 @@ window.COURSE = {
        "german": "Einen Moment, bitte.",
        "english": "One moment, please.",
        "pic": [
-        "23f3"
+        "hourglass.jpg"
        ],
        "examples": [
         [
@@ -33405,7 +33397,7 @@ window.COURSE = {
        "german": "Auf Wiederhören!",
        "english": "Goodbye! (on the phone)",
        "pic": [
-        "1f4de"
+        "telephone-call.jpg"
        ],
        "examples": [
         [
@@ -34897,7 +34889,7 @@ window.COURSE = {
        "german": "der Bus",
        "english": "the bus (m.)",
        "pic": [
-        "1f68c"
+        "bus.jpg"
        ],
        "examples": [
         [
@@ -34920,7 +34912,7 @@ window.COURSE = {
        "german": "der Zug",
        "english": "the train (m.)",
        "pic": [
-        "1f686"
+        "train.jpg"
        ],
        "examples": [
         [
@@ -34943,7 +34935,7 @@ window.COURSE = {
        "german": "die U-Bahn",
        "english": "the underground (f.)",
        "pic": [
-        "1f687"
+        "u-bahn.jpg"
        ],
        "examples": [
         [
@@ -34966,7 +34958,7 @@ window.COURSE = {
        "german": "die S-Bahn",
        "english": "the suburban train (f.)",
        "pic": [
-        "1f686"
+        "train.jpg"
        ],
        "examples": [
         [
@@ -34989,7 +34981,7 @@ window.COURSE = {
        "german": "die Straßenbahn",
        "english": "the tram (f.)",
        "pic": [
-        "1f68b"
+        "tram.jpg"
        ],
        "examples": [
         [
@@ -35012,7 +35004,7 @@ window.COURSE = {
        "german": "das Taxi",
        "english": "the taxi (n.)",
        "pic": [
-        "1f695"
+        "taxi.jpg"
        ],
        "examples": [
         [
@@ -35035,7 +35027,7 @@ window.COURSE = {
        "german": "das Auto",
        "english": "the car (n.)",
        "pic": [
-        "1f697"
+        "car.jpg"
        ],
        "examples": [
         [
@@ -35058,7 +35050,7 @@ window.COURSE = {
        "german": "das Fahrrad",
        "english": "the bicycle (n.)",
        "pic": [
-        "1f6b2"
+        "bicycle.jpg"
        ],
        "examples": [
         [
@@ -35081,7 +35073,7 @@ window.COURSE = {
        "german": "das Flugzeug",
        "english": "the plane (n.)",
        "pic": [
-        "2708"
+        "airplane.jpg"
        ],
        "examples": [
         [
@@ -35104,7 +35096,7 @@ window.COURSE = {
        "german": "mit dem Bus",
        "english": "by bus",
        "pic": [
-        "1f68c"
+        "bus.jpg"
        ],
        "examples": [
         [
@@ -35122,7 +35114,7 @@ window.COURSE = {
        "german": "mit dem Zug",
        "english": "by train",
        "pic": [
-        "1f686"
+        "train.jpg"
        ],
        "examples": [
         [
@@ -35140,7 +35132,7 @@ window.COURSE = {
        "german": "mit der U-Bahn",
        "english": "by underground",
        "pic": [
-        "1f687"
+        "u-bahn.jpg"
        ],
        "examples": [
         [
@@ -35158,7 +35150,7 @@ window.COURSE = {
        "german": "zu Fuß",
        "english": "on foot",
        "pic": [
-        "1f6b6"
+        "walking.jpg"
        ],
        "examples": [
         [
@@ -35182,7 +35174,7 @@ window.COURSE = {
        "german": "der Bahnhof",
        "english": "the station (m.)",
        "pic": [
-        "1f689"
+        "station.jpg"
        ],
        "examples": [
         [
@@ -35205,7 +35197,7 @@ window.COURSE = {
        "german": "der Hauptbahnhof",
        "english": "the main station (m.)",
        "pic": [
-        "1f689"
+        "station.jpg"
        ],
        "examples": [
         [
@@ -35228,7 +35220,7 @@ window.COURSE = {
        "german": "der Flughafen",
        "english": "the airport (m.)",
        "pic": [
-        "1f6eb"
+        "takeoff.jpg"
        ],
        "examples": [
         [
@@ -35251,7 +35243,7 @@ window.COURSE = {
        "german": "die Haltestelle",
        "english": "the stop (f.)",
        "pic": [
-        "1f68f"
+        "bus-stop.jpg"
        ],
        "examples": [
         [
@@ -35274,7 +35266,7 @@ window.COURSE = {
        "german": "das Gleis",
        "english": "the track (n.)",
        "pic": [
-        "1f6e4"
+        "track.jpg"
        ],
        "examples": [
         [
@@ -35320,7 +35312,7 @@ window.COURSE = {
        "german": "die Fahrkarte",
        "english": "the ticket (f.)",
        "pic": [
-        "1f3ab"
+        "ticket.jpg"
        ],
        "examples": [
         [
@@ -35343,7 +35335,7 @@ window.COURSE = {
        "german": "der Flug",
        "english": "the flight (m.)",
        "pic": [
-        "2708"
+        "airplane.jpg"
        ],
        "examples": [
         [
@@ -35409,7 +35401,7 @@ window.COURSE = {
        "german": "die Abfahrt",
        "english": "the departure (f.)",
        "pic": [
-        "1f6eb"
+        "takeoff.jpg"
        ],
        "examples": [
         [
@@ -35432,7 +35424,7 @@ window.COURSE = {
        "german": "die Ankunft",
        "english": "the arrival (f.)",
        "pic": [
-        "1f6ec"
+        "landing.jpg"
        ],
        "examples": [
         [
@@ -35461,7 +35453,7 @@ window.COURSE = {
        "german": "das Gepäck",
        "english": "the luggage (n.)",
        "pic": [
-        "1f9f3"
+        "suitcase.jpg"
        ],
        "examples": [
         [
@@ -35484,7 +35476,7 @@ window.COURSE = {
        "german": "der Koffer",
        "english": "the suitcase (m.)",
        "pic": [
-        "1f9f3"
+        "suitcase.jpg"
        ],
        "examples": [
         [
@@ -35507,7 +35499,7 @@ window.COURSE = {
        "german": "der Rucksack",
        "english": "the backpack (m.)",
        "pic": [
-        "1f392"
+        "backpack.jpg"
        ],
        "examples": [
         [
@@ -35530,7 +35522,7 @@ window.COURSE = {
        "german": "der Pass",
        "english": "the passport (m.)",
        "pic": [
-        "1f6c2"
+        "passport.jpg"
        ],
        "examples": [
         [
@@ -35553,7 +35545,7 @@ window.COURSE = {
        "german": "das Visum",
        "english": "the visa (n.)",
        "pic": [
-        "1f6c2"
+        "passport.jpg"
        ],
        "examples": [
         [
@@ -35576,7 +35568,7 @@ window.COURSE = {
        "german": "der Akku",
        "english": "the battery (m.)",
        "pic": [
-        "1f50b"
+        "battery.jpg"
        ],
        "examples": [
         [
@@ -35666,7 +35658,7 @@ window.COURSE = {
        "german": "abfliegen",
        "english": "to fly out, take off",
        "pic": [
-        "1f6eb"
+        "takeoff.jpg"
        ],
        "examples": [
         [
@@ -35764,7 +35756,7 @@ window.COURSE = {
        "german": "fliegen",
        "english": "to fly",
        "pic": [
-        "2708"
+        "airplane.jpg"
        ],
        "examples": [
         [
@@ -35786,7 +35778,7 @@ window.COURSE = {
        "german": "landen",
        "english": "to land",
        "pic": [
-        "1f6ec"
+        "landing.jpg"
        ],
        "examples": [
         [
@@ -35829,7 +35821,7 @@ window.COURSE = {
        "german": "Wann kommst du an?",
        "english": "When do you arrive?",
        "pic": [
-        "1f6ec"
+        "landing.jpg"
        ],
        "examples": [
         [
@@ -35847,7 +35839,7 @@ window.COURSE = {
        "german": "Wann fliegst du ab?",
        "english": "When does your flight leave?",
        "pic": [
-        "1f6eb"
+        "takeoff.jpg"
        ],
        "examples": [
         [
@@ -35865,7 +35857,7 @@ window.COURSE = {
        "german": "Kannst du mich abholen?",
        "english": "Can you pick me up?",
        "pic": [
-        "1f697"
+        "airport-pickup.jpg"
        ],
        "examples": [
         [
@@ -35883,7 +35875,7 @@ window.COURSE = {
        "german": "Natürlich hole ich dich ab.",
        "english": "Of course I will pick you up.",
        "pic": [
-        "1f697"
+        "airport-pickup.jpg"
        ],
        "examples": [
         [
@@ -35919,7 +35911,7 @@ window.COURSE = {
        "german": "Ich freue mich auf dich!",
        "english": "I'm looking forward to seeing you!",
        "pic": [
-        "1f917"
+        "hug.jpg"
        ],
        "examples": [
         [
@@ -35952,7 +35944,7 @@ window.COURSE = {
        "german": "Alles klar!",
        "english": "All right!",
        "pic": [
-        "1f44c"
+        "ok-gesture.jpg"
        ],
        "examples": [
         [
@@ -35985,7 +35977,7 @@ window.COURSE = {
        "german": "Gute Reise!",
        "english": "Have a good trip!",
        "pic": [
-        "1f9f3"
+        "suitcase.jpg"
        ],
        "examples": [
         [
@@ -36009,7 +36001,7 @@ window.COURSE = {
        "german": "Achtung!",
        "english": "Attention!",
        "pic": [
-        "26a0"
+        "warning-sign.jpg"
        ],
        "examples": [
         [
@@ -36027,7 +36019,7 @@ window.COURSE = {
        "german": "Bitte Vorsicht!",
        "english": "Please be careful!",
        "pic": [
-        "26a0"
+        "warning-sign.jpg"
        ],
        "examples": [
         [
@@ -36045,7 +36037,7 @@ window.COURSE = {
        "german": "Der Zug fährt von Gleis 4 ab.",
        "english": "The train departs from platform 4.",
        "pic": [
-        "1f686"
+        "train.jpg"
        ],
        "examples": [
         [
@@ -36078,7 +36070,7 @@ window.COURSE = {
        "german": "Das Flugzeug landet um 6:40 Uhr.",
        "english": "The plane lands at 6:40.",
        "pic": [
-        "1f6ec",
+        "landing.jpg",
         "clock-0640"
        ],
        "examples": [
@@ -37134,7 +37126,7 @@ window.COURSE = {
        "german": "Ich habe gearbeitet.",
        "english": "I worked.",
        "pic": [
-        "1f4bc"
+        "work.jpg"
        ],
        "examples": [
         [
@@ -37152,7 +37144,7 @@ window.COURSE = {
        "german": "Ich habe eingekauft.",
        "english": "I went shopping.",
        "pic": [
-        "1f6cd"
+        "shopping.jpg"
        ],
        "examples": [
         [
@@ -37170,7 +37162,7 @@ window.COURSE = {
        "german": "Ich habe gekocht.",
        "english": "I cooked.",
        "pic": [
-        "1f373"
+        "cooking.jpg"
        ],
        "examples": [
         [
@@ -37188,7 +37180,7 @@ window.COURSE = {
        "german": "Ich habe Kaffee getrunken.",
        "english": "I drank coffee.",
        "pic": [
-        "2615"
+        "coffee.jpg"
        ],
        "examples": [
         [
@@ -37206,7 +37198,7 @@ window.COURSE = {
        "german": "Ich habe ein Buch gelesen.",
        "english": "I read a book.",
        "pic": [
-        "1f4d6"
+        "book.jpg"
        ],
        "examples": [
         [
@@ -37224,7 +37216,7 @@ window.COURSE = {
        "german": "Ich habe ferngesehen.",
        "english": "I watched TV.",
        "pic": [
-        "1f4fa"
+        "television.jpg"
        ],
        "examples": [
         [
@@ -37242,7 +37234,7 @@ window.COURSE = {
        "german": "Ich habe aufgeräumt.",
        "english": "I tidied up.",
        "pic": [
-        "1f9f9"
+        "tidying.jpg"
        ],
        "examples": [
         [
@@ -37260,7 +37252,7 @@ window.COURSE = {
        "german": "Ich habe lange geschlafen.",
        "english": "I slept in.",
        "pic": [
-        "1f634"
+        "sleep.jpg"
        ],
        "examples": [
         [
@@ -37278,7 +37270,7 @@ window.COURSE = {
        "german": "Ich habe telefoniert.",
        "english": "I was on the phone.",
        "pic": [
-        "1f4de"
+        "telephone-call.jpg"
        ],
        "examples": [
         [
@@ -37296,7 +37288,7 @@ window.COURSE = {
        "german": "Ich habe fotografiert.",
        "english": "I took photos.",
        "pic": [
-        "1f4f8"
+        "photographer.jpg"
        ],
        "examples": [
         [
@@ -37314,7 +37306,7 @@ window.COURSE = {
        "german": "Ich habe Freunde getroffen.",
        "english": "I met friends.",
        "pic": [
-        "1f9d1-200d-1f91d-200d-1f9d1"
+        "friends.jpg"
        ],
        "examples": [
         [
@@ -37338,7 +37330,7 @@ window.COURSE = {
        "german": "Ich bin nach Hause gegangen.",
        "english": "I went home.",
        "pic": [
-        "1f3e0"
+        "house.jpg"
        ],
        "examples": [
         [
@@ -37356,7 +37348,7 @@ window.COURSE = {
        "german": "Ich bin nach Hawassa gefahren.",
        "english": "I went to Hawassa.",
        "pic": [
-        "1f68c"
+        "bus.jpg"
        ],
        "examples": [
         [
@@ -37374,7 +37366,7 @@ window.COURSE = {
        "german": "Ich bin nach Rom geflogen.",
        "english": "I flew to Rome.",
        "pic": [
-        "2708"
+        "airplane.jpg"
        ],
        "examples": [
         [
@@ -37407,7 +37399,7 @@ window.COURSE = {
        "german": "Ich bin zu Hause geblieben.",
        "english": "I stayed at home.",
        "pic": [
-        "1f3e0"
+        "house.jpg"
        ],
        "examples": [
         [
@@ -37425,7 +37417,7 @@ window.COURSE = {
        "german": "Ich bin gelaufen.",
        "english": "I ran.",
        "pic": [
-        "1f3c3"
+        "running.jpg"
        ],
        "examples": [
         [
@@ -37614,7 +37606,7 @@ window.COURSE = {
        "german": "Ich hatte Glück mit dem Wetter.",
        "english": "I was lucky with the weather.",
        "pic": [
-        "1f340"
+        "clover.jpg"
        ],
        "examples": [
         [
@@ -37632,7 +37624,7 @@ window.COURSE = {
        "german": "Wir hatten viel Spaß.",
        "english": "We had a lot of fun.",
        "pic": [
-        "1f604"
+        "laughing.jpg"
        ],
        "examples": [
         [
@@ -37656,7 +37648,7 @@ window.COURSE = {
        "german": "die Öffnungszeiten",
        "english": "the opening hours (pl.)",
        "pic": [
-        "1f558"
+        "opening-hours.jpg"
        ],
        "examples": [
         [
@@ -37679,7 +37671,7 @@ window.COURSE = {
        "german": "geöffnet",
        "english": "open",
        "pic": [
-        "1f513"
+        "open-sign.jpg"
        ],
        "examples": [
         [
@@ -37701,7 +37693,7 @@ window.COURSE = {
        "german": "geschlossen",
        "english": "closed",
        "pic": [
-        "1f512"
+        "closed-sign.jpg"
        ],
        "examples": [
         [
@@ -37723,7 +37715,7 @@ window.COURSE = {
        "german": "die Praxis",
        "english": "the doctor's surgery (f.)",
        "pic": [
-        "1fa7a"
+        "doctors-surgery.jpg"
        ],
        "examples": [
         [
@@ -37865,7 +37857,7 @@ window.COURSE = {
        "german": "das Fest",
        "english": "the festival (n.)",
        "pic": [
-        "1f389"
+        "party.jpg"
        ],
        "examples": [
         [
@@ -37888,7 +37880,7 @@ window.COURSE = {
        "german": "feiern",
        "english": "to celebrate",
        "pic": [
-        "1f973"
+        "party.jpg"
        ],
        "examples": [
         [
@@ -37910,7 +37902,7 @@ window.COURSE = {
        "german": "Weihnachten",
        "english": "Christmas",
        "pic": [
-        "1f384"
+        "christmas.jpg"
        ],
        "examples": [
         [
@@ -37932,7 +37924,7 @@ window.COURSE = {
        "german": "Silvester",
        "english": "New Year's Eve",
        "pic": [
-        "1f386"
+        "fireworks.jpg"
        ],
        "examples": [
         [
@@ -37954,7 +37946,7 @@ window.COURSE = {
        "german": "Ostern",
        "english": "Easter",
        "pic": [
-        "1f423"
+        "easter.jpg"
        ],
        "examples": [
         [
@@ -37976,7 +37968,7 @@ window.COURSE = {
        "german": "das Neujahr",
        "english": "New Year's Day (n.)",
        "pic": [
-        "1f38a"
+        "fireworks.jpg"
        ],
        "examples": [
         [
@@ -37999,7 +37991,7 @@ window.COURSE = {
        "german": "Wann hast du Geburtstag?",
        "english": "When is your birthday?",
        "pic": [
-        "1f382"
+        "birthday-cake.jpg"
        ],
        "examples": [
         [
@@ -38017,7 +38009,7 @@ window.COURSE = {
        "german": "Ich habe im März Geburtstag.",
        "english": "My birthday is in March.",
        "pic": [
-        "1f382"
+        "birthday-cake.jpg"
        ],
        "examples": [
         [
@@ -38035,7 +38027,7 @@ window.COURSE = {
        "german": "nach Deutschland",
        "english": "to Germany",
        "pic": [
-        "1f1e9-1f1ea"
+        "flag-de.jpg"
        ],
        "examples": [
         [
@@ -38053,7 +38045,7 @@ window.COURSE = {
        "german": "in die Schweiz",
        "english": "to Switzerland",
        "pic": [
-        "1f1e8-1f1ed"
+        "flag-ch.jpg"
        ],
        "examples": [
         [
@@ -38071,7 +38063,7 @@ window.COURSE = {
        "german": "eine Reise machen",
        "english": "to go on a trip",
        "pic": [
-        "1f9f3"
+        "suitcase.jpg"
        ],
        "examples": [
         [
@@ -38089,7 +38081,7 @@ window.COURSE = {
        "german": "Freunde besuchen",
        "english": "to visit friends",
        "pic": [
-        "1f9d1-200d-1f91d-200d-1f9d1"
+        "friends.jpg"
        ],
        "examples": [
         [
@@ -39496,6 +39488,1856 @@ window.COURSE = {
    "level": "A1"
   }
  ],
+ "photos": {
+  "addis.jpg": {
+   "author": "DaneyWiki",
+   "file": "AddisView.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:AddisView.jpg"
+  },
+  "airplane.jpg": {
+   "author": "Aminul Islam Shifat",
+   "file": "Ethiopian Airlines Boeing 787 8.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopian_Airlines_Boeing_787_8.jpg"
+  },
+  "airport-pickup.jpg": {
+   "author": "Dragfyre",
+   "file": "DAD Arrivals 2012.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:DAD_Arrivals_2012.JPG"
+  },
+  "alone.jpg": {
+   "author": "Rodrigo Paredes from Ciudad Autónoma de Buenos Aires, Argentina",
+   "file": "Alone (21451900688).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Alone_(21451900688).jpg"
+  },
+  "alphabet.jpg": {
+   "author": "Mary Mark Ockerbloom",
+   "file": "Alphabet Blocks.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Alphabet_Blocks.jpg"
+  },
+  "apple.jpg": {
+   "author": "Lestat (Jan Mehlich)",
+   "file": "Jabłko - owoc.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Jab%C5%82ko_-_owoc.JPG"
+  },
+  "aunt.jpg": {
+   "author": "Fawzi Demmane",
+   "file": "Portrait of a Tunisian Woman from Djerid.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Tunisian_Woman_from_Djerid.jpg"
+  },
+  "autumn.jpg": {
+   "author": "Stephen Craven",
+   "file": "Autumn leaves by Kirkstall Road - geograph.org.uk - 7023682.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Autumn_leaves_by_Kirkstall_Road_-_geograph.org.uk_-_7023682.jpg"
+  },
+  "backpack.jpg": {
+   "author": "Matti Blume",
+   "file": "Fjallraven, OutDoor 2018, Friedrichshafen (1X7A0438).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fjallraven,_OutDoor_2018,_Friedrichshafen_(1X7A0438).jpg"
+  },
+  "baking.jpg": {
+   "author": "Mack Male from Edmonton, AB, Canada",
+   "file": "Baking the cupcakes (450381197).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Baking_the_cupcakes_(450381197).jpg"
+  },
+  "banana.jpg": {
+   "author": "Wilfredor",
+   "file": "Bunch of bananas on sale.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Bunch_of_bananas_on_sale.jpg"
+  },
+  "bar.jpg": {
+   "author": "Own work",
+   "file": "Casa Classic Cocktail Bar & Jazz Club by Roland Barrera.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Casa_Classic_Cocktail_Bar_%26_Jazz_Club_by_Roland_Barrera.jpg"
+  },
+  "bathtub.jpg": {
+   "author": "L.M.Arias",
+   "file": "1rm60rt0t rtbcwh.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:1rm60rt0t_rtbcwh.jpg"
+  },
+  "battery.jpg": {
+   "author": "Donald Trung Quoc Don (Chữ Hán: 徵國單)",
+   "file": "Samsung smartphone battery, Hillegersberg, Rotterdam (2022) 08.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Samsung_smartphone_battery,_Hillegersberg,_Rotterdam_(2022)_08.jpg"
+  },
+  "beach.jpg": {
+   "author": "Niklas Schiffler (Grmpf)",
+   "file": "Ethiopia - Lake Langano.jpg",
+   "license": "CC BY 2.5",
+   "license_url": "https://creativecommons.org/licenses/by/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopia_-_Lake_Langano.jpg"
+  },
+  "bed.jpg": {
+   "author": "Juanejacome",
+   "file": "Imagerrrrrr.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Imagerrrrrr.jpg"
+  },
+  "beer.jpg": {
+   "author": "Adam S. Keck",
+   "file": "Von Trapp beer glass with beer 2021 001.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Von_Trapp_beer_glass_with_beer_2021_001.jpg"
+  },
+  "bell-pepper.jpg": {
+   "author": "Nikodem Nijaki",
+   "file": "Capsicum annuum fruits IMGP0049.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Capsicum_annuum_fruits_IMGP0049.jpg"
+  },
+  "bicycle.jpg": {
+   "author": "DeFacto",
+   "file": "Raleigh lady's loop frame bicycle 1930s.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Raleigh_lady%27s_loop_frame_bicycle_1930s.jpg"
+  },
+  "bill.jpg": {
+   "author": "Sakurakat",
+   "file": "Bill Vishwanand 2026-01-28.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Bill_Vishwanand_2026-01-28.jpg"
+  },
+  "birthday-cake.jpg": {
+   "author": "Peachyeung316",
+   "file": "Chestnut Cream Cake with Happy Birthday Joy and Happiness sign.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chestnut_Cream_Cake_with_Happy_Birthday_Joy_and_Happiness_sign.jpg"
+  },
+  "board-game.jpg": {
+   "author": "Bill Branson (Photographer)",
+   "file": "Family playing a board game (3).jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Family_playing_a_board_game_(3).jpg"
+  },
+  "book.jpg": {
+   "author": "Shixart1985",
+   "file": "Child reading a book while sitting on a soft surface.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Child_reading_a_book_while_sitting_on_a_soft_surface.jpg"
+  },
+  "books.jpg": {
+   "author": "Roman Eisele",
+   "file": "Part of a bookshelf containing books by ancient philosophers (1.1).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Part_of_a_bookshelf_containing_books_by_ancient_philosophers_(1.1).jpg"
+  },
+  "boy.jpg": {
+   "author": "Tim & Annette Gulick from Metepec, Mexico, Mexico",
+   "file": "Young boy in front of his home-Lalibela.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Young_boy_in_front_of_his_home-Lalibela.jpg"
+  },
+  "bread.jpg": {
+   "author": "Cookbychoice",
+   "file": "MulMul Dabo.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:MulMul_Dabo.jpg"
+  },
+  "bride.jpg": {
+   "author": "Rod Waddington from Kergunyah, Australia",
+   "file": "Traditional Bride, Ethiopia (15017623960).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Traditional_Bride,_Ethiopia_(15017623960).jpg"
+  },
+  "bright.jpg": {
+   "author": "Federal Bureau of Investigation",
+   "file": "EFTA00003020-Beach-House - Bright sunlit room with large windows overlooking the ocean featuring a white sofa computer desk and a view of the sea.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:EFTA00003020-Beach-House_-_Bright_sunlit_room_with_large_windows_overlooking_the_ocean_featuring_a_white_sofa_computer_desk_and_a_view_of_the_sea.jpg"
+  },
+  "bus-stop.jpg": {
+   "author": "Suikotei",
+   "file": "Seibu Bus A4-719 at Kiyose Station South Exit.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Seibu_Bus_A4-719_at_Kiyose_Station_South_Exit.jpg"
+  },
+  "bus.jpg": {
+   "author": "MB-one",
+   "file": "Katamaran bus, Friedrichshafen (P1130455).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Katamaran_bus,_Friedrichshafen_(P1130455).jpg"
+  },
+  "businesswoman.jpg": {
+   "author": "Melchisedek ABAKA",
+   "file": "A businesswoman signing contracts.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_businesswoman_signing_contracts.jpg"
+  },
+  "butter.jpg": {
+   "author": "Jacek Halicki",
+   "file": "2023 Masło w maselniczce.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2023_Mas%C5%82o_w_maselniczce.jpg"
+  },
+  "cake.jpg": {
+   "author": "Diego Delso",
+   "file": "Babka, Múnich, Alemania, 2013-04-01, DD 01.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Babka,_M%C3%BAnich,_Alemania,_2013-04-01,_DD_01.JPG"
+  },
+  "calendar.jpg": {
+   "author": "Berthold Werner",
+   "file": "Einstellbarer Wandkalender mit Werbung für Fewa BW 2026-07-14 16-54-04 N.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Einstellbarer_Wandkalender_mit_Werbung_f%C3%BCr_Fewa_BW_2026-07-14_16-54-04_N.jpg"
+  },
+  "camera.jpg": {
+   "author": "Joydeep",
+   "file": "Sony Cybershot DSC W210.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sony_Cybershot_DSC_W210.jpg"
+  },
+  "cap.jpg": {
+   "author": "Robert Lender from Vienna, Austria, postprocessed by Rosso Robot (cropped, colors enhanced).",
+   "file": "Blue knit-cap beanie by RobertLender.jpeg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Blue_knit-cap_beanie_by_RobertLender.jpeg"
+  },
+  "car.jpg": {
+   "author": "Artaxerxes",
+   "file": "Volkswagen Golf GTI parked downtown Montpelier VT October 2016.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_GTI_parked_downtown_Montpelier_VT_October_2016.jpg"
+  },
+  "cash.jpg": {
+   "author": "BrayLockBoy",
+   "file": "20 and 50 Euro banknote straps delivered by G4S.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:20_and_50_Euro_banknote_straps_delivered_by_G4S.jpg"
+  },
+  "chair.jpg": {
+   "author": "Tamorlan",
+   "file": "Silla-Abuelo.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Silla-Abuelo.jpg"
+  },
+  "cheese.jpg": {
+   "author": "Yann Forget",
+   "file": "Belper Mürggel B, WikiCheese Lausanne.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Belper_M%C3%BCrggel_B,_WikiCheese_Lausanne.jpg"
+  },
+  "chess.jpg": {
+   "author": "Jorge Royan",
+   "file": "Paris - Playing chess at the Jardins du Luxembourg - 2966.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Paris_-_Playing_chess_at_the_Jardins_du_Luxembourg_-_2966.jpg"
+  },
+  "child.jpg": {
+   "author": "Kidus Sirak",
+   "file": "The Innocent Gaze - Borana, Ethiopia.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Innocent_Gaze_-_Borana,_Ethiopia.jpg"
+  },
+  "children.jpg": {
+   "author": "Jade0905",
+   "file": "Brother and sister fetching water.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Brother_and_sister_fetching_water.jpg"
+  },
+  "chocolate.jpg": {
+   "author": "Lynnereal",
+   "file": "Three Bars (1).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Three_Bars_(1).jpg"
+  },
+  "christmas.jpg": {
+   "author": "William Warby",
+   "file": "A1 Christmas Tree photo.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A1_Christmas_Tree_photo.jpg"
+  },
+  "cinema.jpg": {
+   "author": "Wolfmann",
+   "file": "4DX seats in cinema (motion and environmental effects synced with the on-screen action) bench rows in a movie theater hall Kinostoler kinosal Kilden kino Tønsberg, Norway 2023 IMG 7849.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:4DX_seats_in_cinema_(motion_and_environmental_effects_synced_with_the_on-screen_action)_bench_rows_in_a_movie_theater_hall_Kinostoler_kinosal_Kilden_kino_T%C3%B8nsberg,_Norway_2023_IMG_7849.jpg"
+  },
+  "city.jpg": {
+   "author": "ምቅ37382",
+   "file": "Addis abeba meskele square (cropped).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Addis_abeba_meskele_square_(cropped).jpg"
+  },
+  "closed-sign.jpg": {
+   "author": "burts",
+   "file": "Konditorei Werner Schild geschlossen.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Konditorei_Werner_Schild_geschlossen.jpg"
+  },
+  "cloud.jpg": {
+   "author": "Colin Kranz",
+   "file": "Cumulus - visualization.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cumulus_-_visualization.jpg"
+  },
+  "clover.jpg": {
+   "author": "Phyzome under the GFDL.",
+   "file": "Four-leaf clover.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Four-leaf_clover.jpg"
+  },
+  "coast.jpg": {
+   "author": "Vyacheslav Argenberg",
+   "file": "Olkhon Island, Capes, cliffs at sunset, Lake Baikal, Russia.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Olkhon_Island,_Capes,_cliffs_at_sunset,_Lake_Baikal,_Russia.jpg"
+  },
+  "coffee.jpg": {
+   "author": "ProtoplasmaKid",
+   "file": "Coffee ceremony of Ethiopia and Eritrea 4.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Coffee_ceremony_of_Ethiopia_and_Eritrea_4.jpg"
+  },
+  "coins.jpg": {
+   "author": "Kritzolina",
+   "file": "Paid bill for coffee.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Paid_bill_for_coffee.jpg"
+  },
+  "computer-mouse.jpg": {
+   "author": "Raysonho @ Open Grid Scheduler / Grid Engine",
+   "file": "ComputerMouseCloseup3.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:ComputerMouseCloseup3.jpg"
+  },
+  "computer.jpg": {
+   "author": "Love Krittaya",
+   "file": "Acer Veriton found in Chiang Mai University 20070917.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Acer_Veriton_found_in_Chiang_Mai_University_20070917.jpg"
+  },
+  "concert.jpg": {
+   "author": "PattayaPatrol",
+   "file": "DSC 6184 A large crowd gathers on the beachfront at night colorful stage lights and city high-rises glowing in the background as people enjoy an outdoor concert or festival.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:DSC_6184_A_large_crowd_gathers_on_the_beachfront_at_night_colorful_stage_lights_and_city_high-rises_glowing_in_the_background_as_people_enjoy_an_outdoor_concert_or_festival.jpg"
+  },
+  "conversation.jpg": {
+   "author": "Fulani215",
+   "file": "People talking with okada man.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:People_talking_with_okada_man.jpg"
+  },
+  "cook-man.jpg": {
+   "author": "Official Navy Page from United States of America MC3 Nick C. Scott/U.S. Navy",
+   "file": "Flickr - Official U.S. Navy Imagery - Sailors cook dinner.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Flickr_-_Official_U.S._Navy_Imagery_-_Sailors_cook_dinner.jpg"
+  },
+  "cook-woman.jpg": {
+   "author": "Charliefleurene",
+   "file": "Ethiopia Gheralta WomanCookingInjera.JPG",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopia_Gheralta_WomanCookingInjera.JPG"
+  },
+  "cooking.jpg": {
+   "author": "Rod Waddington from Kergunyah, Australia",
+   "file": "Breaking Eggs, Adigrat (11816191596).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Breaking_Eggs,_Adigrat_(11816191596).jpg"
+  },
+  "couple.jpg": {
+   "author": "DAGMAWI ETHIOPIA",
+   "file": "Wedding photograph, embrace, studio, Ethiopia (December 2016).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wedding_photograph,_embrace,_studio,_Ethiopia_(December_2016).jpg"
+  },
+  "credit-card.jpg": {
+   "author": "Lotus Head from Johannesburg, Gauteng, South Africa",
+   "file": "Credit-cards.jpg",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Credit-cards.jpg"
+  },
+  "cucumber.jpg": {
+   "author": "Photo taken by Muu-karhu",
+   "file": "Kurkkuja.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Kurkkuja.jpg"
+  },
+  "cup.jpg": {
+   "author": "Adam S. Keck",
+   "file": "Coffee mug on table.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Coffee_mug_on_table.jpg"
+  },
+  "cycling.jpg": {
+   "author": "Wilfredor",
+   "file": "Cyclist crossing a street, Quebec City.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Cyclist_crossing_a_street,_Quebec_City.jpg"
+  },
+  "dancing.jpg": {
+   "author": "Ermell",
+   "file": "Beijing Rock´n Roll dancers 1320182-PSD.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Beijing_Rock%C2%B4n_Roll_dancers_1320182-PSD.jpg"
+  },
+  "darkness.jpg": {
+   "author": "Kristian Pikner",
+   "file": "Virmalised 15.09.2017 - Aurora Borealis 15.09.2017 copy.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Virmalised_15.09.2017_-_Aurora_Borealis_15.09.2017_copy.jpg"
+  },
+  "dentist.jpg": {
+   "author": "U.S. Navy Photo by Tom Watanabe",
+   "file": "US Navy 040227-N-0000W-057 Navy Dental Officer Lt. Raul Barrientos, right, a native of El Salvador, provides care to a patient at U.S. Naval Dental Center (USNDC) Far East.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:US_Navy_040227-N-0000W-057_Navy_Dental_Officer_Lt._Raul_Barrientos,_right,_a_native_of_El_Salvador,_provides_care_to_a_patient_at_U.S._Naval_Dental_Center_(USNDC)_Far_East.jpg"
+  },
+  "dessert.jpg": {
+   "author": "McKARSHEI BOLAMZI",
+   "file": "HK 尖沙咀東 TST East 麼地道 69 Mody Road 帝苑酒店 Royal Garden Hotel 雅苑座 The Greenery Restaurant buffet diner food dessert breads cookies pudding jelly cakes November 2022 Px3 19.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:HK_%E5%B0%96%E6%B2%99%E5%92%80%E6%9D%B1_TST_East_%E9%BA%BC%E5%9C%B0%E9%81%93_69_Mody_Road_%E5%B8%9D%E8%8B%91%E9%85%92%E5%BA%97_Royal_Garden_Hotel_%E9%9B%85%E8%8B%91%E5%BA%A7_The_Greenery_Restaurant_buffet_diner_food_dessert_breads_cookies_pudding_jelly_cakes_November_2022_Px3_19.jpg"
+  },
+  "doctor-man.jpg": {
+   "author": "Unknown photographer",
+   "file": "Doctor examines patient with stethoscope (2).jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Doctor_examines_patient_with_stethoscope_(2).jpg"
+  },
+  "doctor-woman.jpg": {
+   "author": "DFID - UK Department for International Development",
+   "file": "Bracing for a short, sharp jab.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bracing_for_a_short,_sharp_jab.jpg"
+  },
+  "doctors-surgery.jpg": {
+   "author": "Harrison Keely",
+   "file": "A waiting room at a medical healthcare clinic, doctor's office, hospital.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_waiting_room_at_a_medical_healthcare_clinic,_doctor%27s_office,_hospital.jpg"
+  },
+  "door.jpg": {
+   "author": "Agnes Monkelbaan",
+   "file": "Houten deur van een woonhuis in Guarda. 20-09-2019. (actm.).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Houten_deur_van_een_woonhuis_in_Guarda._20-09-2019._(actm.).jpg"
+  },
+  "drinking-glass.jpg": {
+   "author": "Kristiaan from Haarlem, The Netherlands",
+   "file": "Woman drinking water.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Woman_drinking_water.jpg"
+  },
+  "ear.jpg": {
+   "author": "צולם על ידי he:משתמש:אנדר-ויק",
+   "file": "Closeup of a human ear.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Closeup_of_a_human_ear.jpg"
+  },
+  "easter.jpg": {
+   "author": "Ikonact",
+   "file": "Bg-easter-eggs.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Bg-easter-eggs.jpg"
+  },
+  "egg.jpg": {
+   "author": "Silver Spoon",
+   "file": "Eierdoos.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Eierdoos.jpg"
+  },
+  "electrician.jpg": {
+   "author": "photo taken by flickr user editor B",
+   "file": "Electrician Working.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Electrician_Working.jpg"
+  },
+  "elephant.jpg": {
+   "author": "Giles Laurent",
+   "file": "178 Male African bush elephant in Etosha National Park Photo by Giles Laurent.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  "engineer-woman.jpg": {
+   "author": "OLUWATOBILOBA",
+   "file": "Female Civil Engineer.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Female_Civil_Engineer.jpg"
+  },
+  "ethiopian-airlines.jpg": {
+   "author": "LLBG Spotter",
+   "file": "Ethiopian Airlines ET-AVJ takeoff from TLV (46461974574).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopian_Airlines_ET-AVJ_takeoff_from_TLV_(46461974574).jpg"
+  },
+  "euro.jpg": {
+   "author": "Friedrich Haag",
+   "file": "One stands out 002 2025 01 01.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:One_stands_out_002_2025_01_01.jpg"
+  },
+  "evening.jpg": {
+   "author": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+   "file": "17 Bristol UK - College Green square Christmas decorations with evening Christmas lights, British city.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:17_Bristol_UK_-_College_Green_square_Christmas_decorations_with_evening_Christmas_lights,_British_city.jpg"
+  },
+  "eyes.jpg": {
+   "author": "che (Please credit as \"Petr Novák, Wikipedia\" in case you use this outside Wikimedia projects.)",
+   "file": "Eye iris.jpg",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Eye_iris.jpg"
+  },
+  "fabric.jpg": {
+   "author": "Daniel Aufgang",
+   "file": "Rolls of fabric of multiple colors (181099191).jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Rolls_of_fabric_of_multiple_colors_(181099191).jpg"
+  },
+  "fireworks.jpg": {
+   "author": "Kropsoq",
+   "file": "2007 Nagaoka Festival 004 Edit.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:2007_Nagaoka_Festival_004_Edit.jpg"
+  },
+  "fish.jpg": {
+   "author": "Salwa Farwaneh Dameh",
+   "file": "The Fish Market, Kuwait.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Fish_Market,_Kuwait.jpg"
+  },
+  "flag-at.jpg": {
+   "author": "Tadeusz Mieczyński",
+   "file": "SFC Vikersund 2012 Team Austria sunday.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:SFC_Vikersund_2012_Team_Austria_sunday.jpg"
+  },
+  "flag-ch.jpg": {
+   "author": "Acediscovery",
+   "file": "Swiss-flag-Lake-Geneva.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Swiss-flag-Lake-Geneva.jpg"
+  },
+  "flag-de.jpg": {
+   "author": "chriscom",
+   "file": "Truly German.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Truly_German.jpg"
+  },
+  "flag-es.jpg": {
+   "author": "Supermac1961",
+   "file": "Spanish Flag flying in Murcia, Spain.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Spanish_Flag_flying_in_Murcia,_Spain.jpg"
+  },
+  "flag-fr.jpg": {
+   "author": "Christopher Macsurak",
+   "file": "French Flag Flying.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:French_Flag_Flying.jpg"
+  },
+  "flag-it.jpg": {
+   "author": "Roc0ast3r",
+   "file": "Flag of Italy at the Museum of Flight in Seattle (2024) - 0561.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Italy_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0561.jpg"
+  },
+  "flag-ke.jpg": {
+   "author": "Rich Bowen from Lexington, KY, USA",
+   "file": "Kenya flag.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kenya_flag.jpg"
+  },
+  "flag-tr.jpg": {
+   "author": "Kurmanbek",
+   "file": "Turkish flag waving in the sky.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Turkish_flag_waving_in_the_sky.jpg"
+  },
+  "flag-us.jpg": {
+   "author": "Noah Wulf",
+   "file": "American Flag Waving on a Flag Pole.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:American_Flag_Waving_on_a_Flag_Pole.jpg"
+  },
+  "flat.jpg": {
+   "author": "Berlin Brewer",
+   "file": "Hanseatenweg 6.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hanseatenweg_6.jpg"
+  },
+  "flowers.jpg": {
+   "author": "Laitche",
+   "file": "Cherry blossoms (Somei Yoshino), Nagai Botanical Garden, April 2026 -1488.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cherry_blossoms_(Somei_Yoshino),_Nagai_Botanical_Garden,_April_2026_-1488.jpg"
+  },
+  "fog.jpg": {
+   "author": "W.carter",
+   "file": "Forested hills in Lysekil in fog - B&W.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Forested_hills_in_Lysekil_in_fog_-_B%26W.jpg"
+  },
+  "football.jpg": {
+   "author": "Ericjohnsonvik",
+   "file": "Soccer game in Ethiopia.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Soccer_game_in_Ethiopia.jpg"
+  },
+  "friends.jpg": {
+   "author": "Rod Waddington from Kergunyah, Australia",
+   "file": "Three Friends, Addis (15166406435).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Three_Friends,_Addis_(15166406435).jpg"
+  },
+  "garage.jpg": {
+   "author": "Myotus",
+   "file": "Christie House Museum-garage-front.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Christie_House_Museum-garage-front.jpg"
+  },
+  "garden.jpg": {
+   "author": "Michael Garlick",
+   "file": "Torpoint, Antony House and Garden, Yew-hedged lawn - geograph.org.uk - 7875048.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Torpoint,_Antony_House_and_Garden,_Yew-hedged_lawn_-_geograph.org.uk_-_7875048.jpg"
+  },
+  "gift.jpg": {
+   "author": "Friedrich Haag",
+   "file": "Verschenken 004 2019 03 22.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Verschenken_004_2019_03_22.jpg"
+  },
+  "girl.jpg": {
+   "author": "Fofyfo",
+   "file": "Smile of an ethiopian girl.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Smile_of_an_ethiopian_girl.jpg"
+  },
+  "glasses.jpg": {
+   "author": "Jacek Halicki",
+   "file": "2023 Okulary korekcyjne.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2023_Okulary_korekcyjne.jpg"
+  },
+  "globe.jpg": {
+   "author": "Forest, Joseph (1865-1942). Cartographe",
+   "file": "Globe terrestre - Dressé par J. Forest, Géographe - btv1b10061789v (01 of 14).jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Globe_terrestre_-_Dress%C3%A9_par_J._Forest,_G%C3%A9ographe_-_btv1b10061789v_(01_of_14).jpg"
+  },
+  "groom.jpg": {
+   "author": "Elias Tesfaye (Shagiz Adonay)",
+   "file": "Harari Groom.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Harari_Groom.jpg"
+  },
+  "guitar.jpg": {
+   "author": "Nataev",
+   "file": "Close up of an acoustic guitar being played.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Close_up_of_an_acoustic_guitar_being_played.jpg"
+  },
+  "gym.jpg": {
+   "author": "R. Henrik Nilsson",
+   "file": "Health club in Gothenburg Sweden in March 2025.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Health_club_in_Gothenburg_Sweden_in_March_2025.jpg"
+  },
+  "hairdresser.jpg": {
+   "author": "cotterillmike",
+   "file": "Barber shop (27000174750).jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Barber_shop_(27000174750).jpg"
+  },
+  "handbag.jpg": {
+   "author": "ALHASSAN MOHAMED NURIDEEN",
+   "file": "A handbag.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_handbag.jpg"
+  },
+  "handball.jpg": {
+   "author": "Eileen Sandá",
+   "file": "VB-VIF Faroese Handball Match November 2011.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:VB-VIF_Faroese_Handball_Match_November_2011.JPG"
+  },
+  "handshake.jpg": {
+   "author": "amtec_photos",
+   "file": "Handshake - Men - 37969911295.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Handshake_-_Men_-_37969911295.jpg"
+  },
+  "hare.jpg": {
+   "author": "caroline legg",
+   "file": "European Brown Hare (50341079472).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:European_Brown_Hare_(50341079472).jpg"
+  },
+  "headphones.jpg": {
+   "author": "No machine-readable author provided. PJ assumed (based on copyright claims).",
+   "file": "Headphones 1.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Headphones_1.jpg"
+  },
+  "heart.jpg": {
+   "author": "Leon Brocard",
+   "file": "Two left hands forming a heart shape.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Two_left_hands_forming_a_heart_shape.jpg"
+  },
+  "hiking.jpg": {
+   "author": "Jakub Hałun",
+   "file": "Hiking trail on Námafjall Mountain, Iceland, 20240716 1130 1348.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hiking_trail_on_N%C3%A1mafjall_Mountain,_Iceland,_20240716_1130_1348.jpg"
+  },
+  "honey.jpg": {
+   "author": "Elias Mulugeta Hordofa",
+   "file": "Organic Honey Ethiopia.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Organic_Honey_Ethiopia.jpg"
+  },
+  "hourglass.jpg": {
+   "author": "User:S Sepp",
+   "file": "Wooden hourglass 3.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Wooden_hourglass_3.jpg"
+  },
+  "house.jpg": {
+   "author": "BrendelSignature at en.wikipedia",
+   "file": "Ranch style home in Salinas, California.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Ranch_style_home_in_Salinas,_California.JPG"
+  },
+  "houses.jpg": {
+   "author": "Jaggery",
+   "file": "Row of houses, Glebelands, Johnston - geograph.org.uk - 4834101.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Row_of_houses,_Glebelands,_Johnston_-_geograph.org.uk_-_4834101.jpg"
+  },
+  "hug.jpg": {
+   "author": "Rhoda Baer (Photographer)",
+   "file": "Couple hugging and smiling.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Couple_hugging_and_smiling.jpg"
+  },
+  "ice-cream.jpg": {
+   "author": "Andy Li",
+   "file": "It's time to have ice cream on the beach.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:It%27s_time_to_have_ice_cream_on_the_beach.jpg"
+  },
+  "ice-skating.jpg": {
+   "author": "Dori",
+   "file": "Red Arrow Park ice rink 1292.jpg",
+   "license": "CC BY-SA 3.0 us",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Red_Arrow_Park_ice_rink_1292.jpg"
+  },
+  "jacket.jpg": {
+   "author": "Ingolfson",
+   "file": "Windbreaker Jacket, Hood Outside.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Windbreaker_Jacket,_Hood_Outside.jpg"
+  },
+  "jam.jpg": {
+   "author": "Nurken",
+   "file": "Jam jar, Kazakhstan.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Jam_jar,_Kazakhstan.jpg"
+  },
+  "journalist.jpg": {
+   "author": "Apdency",
+   "file": "Interview Telegraaf TV.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Interview_Telegraaf_TV.jpg"
+  },
+  "juice.jpg": {
+   "author": "Nshemeire Addah",
+   "file": "Orange juice in a glass.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Orange_juice_in_a_glass.jpg"
+  },
+  "key.jpg": {
+   "author": "D4m1en",
+   "file": "Vachette Radial NT key.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vachette_Radial_NT_key.jpg"
+  },
+  "keyboard.jpg": {
+   "author": "Friedrich Haag",
+   "file": "Die Regeln brechen 004 2022 12 15.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Die_Regeln_brechen_004_2022_12_15.jpg"
+  },
+  "lamp.jpg": {
+   "author": "LoMit",
+   "file": "Lamp with a lampshade illuminated by sunlight.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lamp_with_a_lampshade_illuminated_by_sunlight.jpg"
+  },
+  "landing.jpg": {
+   "author": "Acroterion",
+   "file": "United Boeing 737-700 N23708 BWI MD1.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:United_Boeing_737-700_N23708_BWI_MD1.jpg"
+  },
+  "laptop.jpg": {
+   "author": "Batorry",
+   "file": "Samsung QX-511 (2).JPG",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Samsung_QX-511_(2).JPG"
+  },
+  "laughing.jpg": {
+   "author": "LCTTD",
+   "file": "Killian Couppey.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Killian_Couppey.jpg"
+  },
+  "lawyer.jpg": {
+   "author": "Giles Laurent",
+   "file": "1001 Swiss lawyer standing in front of the Federal Supreme Court of Switzerland Photo by Giles Laurent.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:1001_Swiss_lawyer_standing_in_front_of_the_Federal_Supreme_Court_of_Switzerland_Photo_by_Giles_Laurent.jpg"
+  },
+  "man.jpg": {
+   "author": "Steve Evans from Citizen of the World",
+   "file": "Ethiopian man in window.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopian_man_in_window.jpg"
+  },
+  "meal.jpg": {
+   "author": "PeggyIdog00d",
+   "file": "Ethiopian meal called Injera with veggies and meat.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopian_meal_called_Injera_with_veggies_and_meat.jpg"
+  },
+  "meat.jpg": {
+   "author": "Jen Arrr",
+   "file": "Raw Meat (6737753521).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Raw_Meat_(6737753521).jpg"
+  },
+  "metal.jpg": {
+   "author": "Eugen Nosko",
+   "file": "Fotothek df n-08 0000801.jpg",
+   "license": "CC BY-SA 3.0 de",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Fotothek_df_n-08_0000801.jpg"
+  },
+  "milk.jpg": {
+   "author": "NIAID",
+   "file": "Glass of Milk (33657535532).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Glass_of_Milk_(33657535532).jpg"
+  },
+  "mobile-phone.jpg": {
+   "author": "Nebiyu.s",
+   "file": "Women on a phone meeting.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Women_on_a_phone_meeting.jpg"
+  },
+  "monitor.jpg": {
+   "author": "No machine-readable author provided. Brian France assumed (based on copyright claims).",
+   "file": "Ecran plat wikipedia.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Ecran_plat_wikipedia.jpg"
+  },
+  "moon.jpg": {
+   "author": "Sudora",
+   "file": "Pournami.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Pournami.jpg"
+  },
+  "mother.jpg": {
+   "author": "USAID Ethiopia from Addis Ababa, Ethiopia",
+   "file": "Mother and Child at a Health Post (9502313746).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mother_and_Child_at_a_Health_Post_(9502313746).jpg"
+  },
+  "mouse-animal.jpg": {
+   "author": "Dion Art",
+   "file": "Домовая мышь (Mus musculus), Москва.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%BC%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D1%8B%D1%88%D1%8C_(Mus_musculus),_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0.jpg"
+  },
+  "muesli.jpg": {
+   "author": "Markus Kuhn at en.wikipedia",
+   "file": "Fresh-muesli.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Fresh-muesli.jpg"
+  },
+  "museum.jpg": {
+   "author": "Myotus",
+   "file": "Gallery-01-Plank Museum and Visitor Center.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gallery-01-Plank_Museum_and_Visitor_Center.jpg"
+  },
+  "nature.jpg": {
+   "author": "A. Davey from Where I Live Now: Pacific Northwest",
+   "file": "Simien Mountains Landscape, Ethiopia (2466923746).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Simien_Mountains_Landscape,_Ethiopia_(2466923746).jpg"
+  },
+  "necklace.jpg": {
+   "author": "Rama pour Wikimédia France",
+   "file": "Neolithic talc necklace - PRE.2009.0.237.1.IMG 1833-black.jpg",
+   "license": "CC BY-SA 2.0 fr",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Neolithic_talc_necklace_-_PRE.2009.0.237.1.IMG_1833-black.jpg"
+  },
+  "notebook.jpg": {
+   "author": "utroja0",
+   "file": "Notebooks-rainbow.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Notebooks-rainbow.jpg"
+  },
+  "nurse.jpg": {
+   "author": "Yonat945",
+   "file": "Nurses at Work.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nurses_at_Work.jpg"
+  },
+  "ok-gesture.jpg": {
+   "author": "Unknown author",
+   "file": "OK Sign.jpg",
+   "license": "CC BY 2.5",
+   "license_url": "https://creativecommons.org/licenses/by/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:OK_Sign.jpg"
+  },
+  "old-car.jpg": {
+   "author": "Chris Olszewski",
+   "file": "Old rusty car in Yaraka, Queensland, 2024, 01.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Old_rusty_car_in_Yaraka,_Queensland,_2024,_01.jpg"
+  },
+  "old-man.jpg": {
+   "author": "Steve Evans from Citizen of the World",
+   "file": "Ethiopian man portrait.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopian_man_portrait.jpg"
+  },
+  "old-woman.jpg": {
+   "author": "Ferdinand Reus",
+   "file": "Elderly Gambian woman face portrait.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Elderly_Gambian_woman_face_portrait.jpg"
+  },
+  "onion.jpg": {
+   "author": "Colin",
+   "file": "Mixed onions.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mixed_onions.jpg"
+  },
+  "open-sign.jpg": {
+   "author": "ElLutzo",
+   "file": "Hudetz-Turm Oeffnungszeiten.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hudetz-Turm_Oeffnungszeiten.jpg"
+  },
+  "opening-hours.jpg": {
+   "author": "Johann Jaritz",
+   "file": "Villach Sankt Martin Friedhof Tafel mit Öffnungszeiten 20082019 7002.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Villach_Sankt_Martin_Friedhof_Tafel_mit_%C3%96ffnungszeiten_20082019_7002.jpg"
+  },
+  "orange-fruit.jpg": {
+   "author": "Ivar Leidus",
+   "file": "Oranges - whole-halved-segment.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Oranges_-_whole-halved-segment.jpg"
+  },
+  "paper-clip.jpg": {
+   "author": "Dietmar Rabich",
+   "file": "Büroklammern -- 2021 -- 6481.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:B%C3%BCroklammern_--_2021_--_6481.jpg"
+  },
+  "paper.jpg": {
+   "author": "Rfc1394",
+   "file": "Paper 450x450.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Paper_450x450.jpg"
+  },
+  "party.jpg": {
+   "author": "Yonas.aster",
+   "file": "Ethiopian Epiphany Celebration - Gathering.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopian_Epiphany_Celebration_-_Gathering.jpg"
+  },
+  "passport.jpg": {
+   "author": "Horizon206",
+   "file": "Four Different Passports.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Four_Different_Passports.jpg"
+  },
+  "pasta.jpg": {
+   "author": "The original uploader was Noblige at English Wikipedia.",
+   "file": "Spaghetti bolognese.jpg",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Spaghetti_bolognese.jpg"
+  },
+  "pear.jpg": {
+   "author": "Rhododendrites",
+   "file": "D'anjou pear.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:D%27anjou_pear.jpg"
+  },
+  "pen.jpg": {
+   "author": "Trounce",
+   "file": "03-BICcristal2008-03-26.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:03-BICcristal2008-03-26.jpg"
+  },
+  "pencil.jpg": {
+   "author": "Ole Palnatoke Andersen",
+   "file": "2014-01-16-Hittegods (12009261426).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2014-01-16-Hittegods_(12009261426).jpg"
+  },
+  "photographer.jpg": {
+   "author": "Shixart1985",
+   "file": "Close-up of a woman taking a picture with a camera.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_woman_taking_a_picture_with_a_camera.jpg"
+  },
+  "police-woman.jpg": {
+   "author": "Stefan Müller (climate stuff, 1 Mio views) from Germany",
+   "file": "Amelie Meyer, Wirtschaftsmathematikerin, für Performance geschminkt, spricht mit Polizistin (51992665110).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Amelie_Meyer,_Wirtschaftsmathematikerin,_f%C3%BCr_Performance_geschminkt,_spricht_mit_Polizistin_(51992665110).jpg"
+  },
+  "popcorn.jpg": {
+   "author": "DracoEssentialis",
+   "file": "Fancy ass 5.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fancy_ass_5.jpg"
+  },
+  "potato.jpg": {
+   "author": "Scott Bauer, USDA ARS",
+   "file": "Patates.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Patates.jpg"
+  },
+  "price-tag.jpg": {
+   "author": "Dietmar Rabich",
+   "file": "Münster, Wochenmarkt -- 2015 -- 7410.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_Wochenmarkt_--_2015_--_7410.jpg"
+  },
+  "programmer-man.jpg": {
+   "author": "Dcyclone",
+   "file": "Nigerian Programmers at Work.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nigerian_Programmers_at_Work.jpg"
+  },
+  "puzzle.jpg": {
+   "author": "Scouten",
+   "file": "Jigsaw puzzle 01 by Scouten.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Jigsaw_puzzle_01_by_Scouten.jpg"
+  },
+  "rain.jpg": {
+   "author": "Ed Yourdon from New York City, USA",
+   "file": "Happy man in a rainy day.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Happy_man_in_a_rainy_day.jpg"
+  },
+  "restaurant.jpg": {
+   "author": "Adam Jones from Kelowna, BC, Canada",
+   "file": "Che Bar and Restaurant - Piazza District - Addis Ababa - Ethiopia (8744259296).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Che_Bar_and_Restaurant_-_Piazza_District_-_Addis_Ababa_-_Ethiopia_(8744259296).jpg"
+  },
+  "rice.jpg": {
+   "author": "Douglas Perkins",
+   "file": "A bowl of rice.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:A_bowl_of_rice.jpg"
+  },
+  "riding.jpg": {
+   "author": "rkosiba",
+   "file": "Horse riding in Texas - 2025 - DSC 0398.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Horse_riding_in_Texas_-_2025_-_DSC_0398.jpg"
+  },
+  "room.jpg": {
+   "author": "Wilfredor",
+   "file": "Living room of a typical rural house in northeast Brazil.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Living_room_of_a_typical_rural_house_in_northeast_Brazil.jpg"
+  },
+  "router.jpg": {
+   "author": "Evan-Amos",
+   "file": "Linksys-Wireless-G-Router.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Linksys-Wireless-G-Router.jpg"
+  },
+  "running.jpg": {
+   "author": "Bob Ramsak",
+   "file": "Emebt Etea of Ethiopia at the 2012 World Half Marathon Championships in Kavarna, Bulgaria.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Emebt_Etea_of_Ethiopia_at_the_2012_World_Half_Marathon_Championships_in_Kavarna,_Bulgaria.jpg"
+  },
+  "sad.jpg": {
+   "author": "Jiri Hodan",
+   "file": "Sad Woman.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Sad_Woman.jpg"
+  },
+  "salad.jpg": {
+   "author": "Friedrich Haag",
+   "file": "2015 06 07 001 Salatteller.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2015_06_07_001_Salatteller.jpg"
+  },
+  "sausage.jpg": {
+   "author": "Dietmar Rabich",
+   "file": "Dülmen, Bürgerfest 2013 -- 2013 -- 3139.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_B%C3%BCrgerfest_2013_--_2013_--_3139.jpg"
+  },
+  "scale.jpg": {
+   "author": "Jacek Halicki",
+   "file": "2023 Elektroniczna waga kuchenna.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2023_Elektroniczna_waga_kuchenna.jpg"
+  },
+  "school.jpg": {
+   "author": "USAID in Africa",
+   "file": "Students learning to read, Ethiopia (25856182358).jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Students_learning_to_read,_Ethiopia_(25856182358).jpg"
+  },
+  "sea.jpg": {
+   "author": "Radomianin",
+   "file": "Baltic Sea view from Schmiedeberg hill in Rerik, 2025-06-23.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Baltic_Sea_view_from_Schmiedeberg_hill_in_Rerik,_2025-06-23.jpg"
+  },
+  "seasons.jpg": {
+   "author": "\"Four Seasons - Longbridge Road\" by joiseyshowaa is licensed with CC BY-SA 2.0",
+   "file": "\"Four Seasons - Longbridge Road\".png",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%22Four_Seasons_-_Longbridge_Road%22.png"
+  },
+  "shop-assistant.jpg": {
+   "author": "Sofoneas A.",
+   "file": "Coalpot Sales.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Coalpot_Sales.jpg"
+  },
+  "shop.jpg": {
+   "author": "Joe Mabel",
+   "file": "Seattle Pine storefronts 02.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Seattle_Pine_storefronts_02.jpg"
+  },
+  "shopping.jpg": {
+   "author": "Diego Delso",
+   "file": "Addis Mercato, Adís Abeba, Etiopía, 2024-01-19, DD 26.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Addis_Mercato,_Ad%C3%ADs_Abeba,_Etiop%C3%ADa,_2024-01-19,_DD_26.jpg"
+  },
+  "shower.jpg": {
+   "author": "Unknown author",
+   "file": "Showerhead.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Showerhead.JPG"
+  },
+  "singing.jpg": {
+   "author": "Jean-jacques BARBET",
+   "file": "Etenesh Wassié.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Etenesh_Wassi%C3%A9.jpg"
+  },
+  "sink.jpg": {
+   "author": "Fazimoto",
+   "file": "Kitchen Sink Fazimoto.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kitchen_Sink_Fazimoto.jpg"
+  },
+  "skateboarding.jpg": {
+   "author": "Almonroth",
+   "file": "Skateboarding kickflip.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Skateboarding_kickflip.jpg"
+  },
+  "skiing.jpg": {
+   "author": "svensmail from Stockholm, Sweden",
+   "file": "Branäs skiing (3403036968).jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Bran%C3%A4s_skiing_(3403036968).jpg"
+  },
+  "sleep.jpg": {
+   "author": "LunaEatsTuna",
+   "file": "Man sleeping with framed picture.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Man_sleeping_with_framed_picture.jpg"
+  },
+  "smile.jpg": {
+   "author": "Rod Waddington from Kergunyah, Australia",
+   "file": "Harari Man, Ethiopia (9084520314).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Harari_Man,_Ethiopia_(9084520314).jpg"
+  },
+  "snorkelling.jpg": {
+   "author": "Artur Malinowski - @flickr: https://www.flickr.com/photos/am1974/",
+   "file": "Crystal blue ksamil.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Crystal_blue_ksamil.jpg"
+  },
+  "snow.jpg": {
+   "author": "W.carter",
+   "file": "New snow on young oaks in Tuntorp.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:New_snow_on_young_oaks_in_Tuntorp.jpg"
+  },
+  "snowfall.jpg": {
+   "author": "kim traynor",
+   "file": "Hailes Street after snowfall - geograph.org.uk - 1648168.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hailes_Street_after_snowfall_-_geograph.org.uk_-_1648168.jpg"
+  },
+  "sofa.jpg": {
+   "author": "Shixart1985",
+   "file": "Cozy living room setup with a warm sofa, coffee cup, and an open book in a softly lit environment.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cozy_living_room_setup_with_a_warm_sofa,_coffee_cup,_and_an_open_book_in_a_softly_lit_environment.jpg"
+  },
+  "soup.jpg": {
+   "author": "Photographer: Peggy Greb, Original uploader: Fredrik",
+   "file": "Vegetable beef barley soup.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Vegetable_beef_barley_soup.jpg"
+  },
+  "spring.jpg": {
+   "author": "ForestWander",
+   "file": "Plum-tree-spring-blossom - West Virginia - ForestWander.jpg",
+   "license": "CC BY-SA 3.0 us",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Plum-tree-spring-blossom_-_West_Virginia_-_ForestWander.jpg"
+  },
+  "station.jpg": {
+   "author": "Ermell",
+   "file": "Antwerpen Bahnhof Halle-20140323-RM-103319.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Antwerpen_Bahnhof_Halle-20140323-RM-103319.jpg"
+  },
+  "stethoscope.jpg": {
+   "author": "Jacek Halicki",
+   "file": "2023 Stetoskop.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2023_Stetoskop.jpg"
+  },
+  "strawberry.jpg": {
+   "author": "Ivar Leidus",
+   "file": "Garden strawberry (Fragaria × ananassa) single2.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Garden_strawberry_(Fragaria_%C3%97_ananassa)_single2.jpg"
+  },
+  "street.jpg": {
+   "author": "Radosław Botev",
+   "file": "Cunningham Street, Addis Ababa (1).jpg",
+   "license": "CC BY 3.0 pl",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/pl/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Cunningham_Street,_Addis_Ababa_(1).jpg"
+  },
+  "student-man.jpg": {
+   "author": "Adam Jones from Kelowna, BC, Canada",
+   "file": "Students at Addis Ababa University - Addis Ababa - Ethiopia (8667490197).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Students_at_Addis_Ababa_University_-_Addis_Ababa_-_Ethiopia_(8667490197).jpg"
+  },
+  "study-room.jpg": {
+   "author": "Infrogmation of New Orleans",
+   "file": "Big Desk Home Office Carrollton New Orleans.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Big_Desk_Home_Office_Carrollton_New_Orleans.jpg"
+  },
+  "suitcase.jpg": {
+   "author": "Sandrine Z",
+   "file": "Belber Striped Suitcase.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Belber_Striped_Suitcase.jpg"
+  },
+  "summer.jpg": {
+   "author": "Emilrex",
+   "file": "Sunflower field Summer 2023 July.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sunflower_field_Summer_2023_July.jpg"
+  },
+  "sun.jpg": {
+   "author": "عبد الرحمان عبد الله",
+   "file": "Shining sun in blue sky of desert with sand cover elgolea city.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Shining_sun_in_blue_sky_of_desert_with_sand_cover_elgolea_city.jpg"
+  },
+  "sunrise.jpg": {
+   "author": "Ivankazaryan",
+   "file": "Cappadociasunrise.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cappadociasunrise.jpg"
+  },
+  "supermarket.jpg": {
+   "author": "Rob",
+   "file": "Scheck In - (1).jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Scheck_In_-_(1).jpg"
+  },
+  "swimming.jpg": {
+   "author": "Tommy Wong",
+   "file": "Girl with swimming board.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Girl_with_swimming_board.jpg"
+  },
+  "takeoff.jpg": {
+   "author": "Alf van Beem",
+   "file": "EC-LAB - Airbus A320-214 - Vueling takeoff from Schiphol pic1.JPG",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:EC-LAB_-_Airbus_A320-214_-_Vueling_takeoff_from_Schiphol_pic1.JPG"
+  },
+  "taxi.jpg": {
+   "author": "Radosław Botev, copyright holder: Fundacja Kontroli Społecznej \"Nomos\"",
+   "file": "Minibus taxi in Addis Ababa.jpg",
+   "license": "CC BY 3.0 pl",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/pl/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Minibus_taxi_in_Addis_Ababa.jpg"
+  },
+  "tea.jpg": {
+   "author": "Jubair1985",
+   "file": "Red Tea.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Red_Tea.jpg"
+  },
+  "teacher-man.jpg": {
+   "author": "African Hope",
+   "file": "Enseignant ivoirien en zone rurale 11.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Enseignant_ivoirien_en_zone_rurale_11.jpg"
+  },
+  "teeth.jpg": {
+   "author": "David Shankbone",
+   "file": "Teeth by David Shankbone.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Teeth_by_David_Shankbone.jpg"
+  },
+  "telephone-call.jpg": {
+   "author": "Rod Waddington from Kergunyah, Australia",
+   "file": "Street Candid, Afar (52592660621).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Street_Candid,_Afar_(52592660621).jpg"
+  },
+  "telephone.jpg": {
+   "author": "Berthold Werner",
+   "file": "Telefon BW 2012-02-18 13-44-32.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Telefon_BW_2012-02-18_13-44-32.JPG"
+  },
+  "television.jpg": {
+   "author": "Ekrem Canli",
+   "file": "Maqma LCD 2.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Maqma_LCD_2.jpg"
+  },
+  "tent.jpg": {
+   "author": "Vyacheslav Argenberg",
+   "file": "Zagedan Ridge, Camping tent, Caucasus Mountains.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Zagedan_Ridge,_Camping_tent,_Caucasus_Mountains.jpg"
+  },
+  "text-message.jpg": {
+   "author": "Kristin Hardwick",
+   "file": "Woman texting on a smartphone.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Woman_texting_on_a_smartphone.jpg"
+  },
+  "thermometer.jpg": {
+   "author": "Michael Sailstorfer",
+   "file": "2014-07-24 Außenthermometer (2012) von Michael Sailstorfer IMG 5656.jpg",
+   "license": "CC BY-SA 3.0 de",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:2014-07-24_Au%C3%9Fenthermometer_(2012)_von_Michael_Sailstorfer_IMG_5656.jpg"
+  },
+  "thumbs-down.jpg": {
+   "author": "Pinerineks",
+   "file": "Jempol Ngadep Bawah (cropped).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Jempol_Ngadep_Bawah_(cropped).jpg"
+  },
+  "thumbs-up.jpg": {
+   "author": "Alexis Lours",
+   "file": "Hitchhiker's thumb.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hitchhiker%27s_thumb.jpg"
+  },
+  "thunderstorm.jpg": {
+   "author": "Mathias Krumbholz",
+   "file": "Lightning Pritzerbe 01 (MK).jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lightning_Pritzerbe_01_(MK).jpg"
+  },
+  "ticket.jpg": {
+   "author": "Eweht",
+   "file": "Salzburg - 24-Stunden-Fahrkarte - September 2012.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Salzburg_-_24-Stunden-Fahrkarte_-_September_2012.jpg"
+  },
+  "tidying.jpg": {
+   "author": "Beendy234",
+   "file": "Sweeping the floor.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sweeping_the_floor.jpg"
+  },
+  "toast-cheers.jpg": {
+   "author": "Benreis",
+   "file": "3 beer glasses toast.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:3_beer_glasses_toast.jpg"
+  },
+  "toilet.jpg": {
+   "author": "Acabashi",
+   "file": "London Museum Docklands toilet cubicle Tower Hamlets London England 02.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:London_Museum_Docklands_toilet_cubicle_Tower_Hamlets_London_England_02.jpg"
+  },
+  "tomato.jpg": {
+   "author": "Softeis",
+   "file": "Tomato je.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Tomato_je.jpg"
+  },
+  "toothbrush.jpg": {
+   "author": "Cedars Grove",
+   "file": "A boy brushing.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_boy_brushing.jpg"
+  },
+  "tortoise.jpg": {
+   "author": "Charles J. Sharp",
+   "file": "Tunisian tortoise (Testudo graeca nabeulensis) male Cap Bon 2.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tunisian_tortoise_(Testudo_graeca_nabeulensis)_male_Cap_Bon_2.jpg"
+  },
+  "track.jpg": {
+   "author": "Mouryan",
+   "file": "Sahasrakund railway station with railway tracks visible.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sahasrakund_railway_station_with_railway_tracks_visible.jpg"
+  },
+  "train.jpg": {
+   "author": "Reinhold Möller Ermell",
+   "file": "ICE Klasse 412 in Fulda-20250525-RM-154349.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:ICE_Klasse_412_in_Fulda-20250525-RM-154349.jpg"
+  },
+  "trainers.jpg": {
+   "author": "Sherwin",
+   "file": "North Star sneakers (2).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:North_Star_sneakers_(2).jpg"
+  },
+  "tram.jpg": {
+   "author": "Turtlewong",
+   "file": "Addis Ababa Light Rail vehicle, March 2015.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Addis_Ababa_Light_Rail_vehicle,_March_2015.jpg"
+  },
+  "u-bahn.jpg": {
+   "author": "Pudelek (Marcin Szala)",
+   "file": "Berlin Hauptbahnhof U-bahn - train type F.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Berlin_Hauptbahnhof_U-bahn_-_train_type_F.jpg"
+  },
+  "umbrella.jpg": {
+   "author": "Vovogov90",
+   "file": "Walking alone in the Rain with Umbrella.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Walking_alone_in_the_Rain_with_Umbrella.jpg"
+  },
+  "uncle.jpg": {
+   "author": "Rod Waddington",
+   "file": "Man in Adigrat, Ethiopia (18130899626).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Man_in_Adigrat,_Ethiopia_(18130899626).jpg"
+  },
+  "vet.jpg": {
+   "author": "Veterinarian Pet Alliance",
+   "file": "Stethoscope examination of a white dog in Newark, New Jersey.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Stethoscope_examination_of_a_white_dog_in_Newark,_New_Jersey.jpg"
+  },
+  "video-game.jpg": {
+   "author": "Tom Hodgins",
+   "file": "Playing video games, 2011.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Playing_video_games,_2011.jpg"
+  },
+  "waitress.jpg": {
+   "author": "David Stanley from Nanaimo, Canada",
+   "file": "Agere Maryam Waitress (11641692213).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Agere_Maryam_Waitress_(11641692213).jpg"
+  },
+  "walking.jpg": {
+   "author": "ProtoplasmaKid",
+   "file": "Calles de Adís Abeba - 2022 - 04.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Calles_de_Ad%C3%ADs_Abeba_-_2022_-_04.jpg"
+  },
+  "warm.jpg": {
+   "author": "Rick Obst",
+   "file": "Enjoying a sunny summer day at Fern Ridge Reservoir.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Enjoying_a_sunny_summer_day_at_Fern_Ridge_Reservoir.jpg"
+  },
+  "warning-sign.jpg": {
+   "author": "Dietmar Rabich",
+   "file": "Dülmen, Overbergschule, Verkehrsschild -- 2013 -- 0659.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Overbergschule,_Verkehrsschild_--_2013_--_0659.jpg"
+  },
+  "washing.jpg": {
+   "author": "Davyimage",
+   "file": "Washing hand with soap in prevention of covid-19.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Washing_hand_with_soap_in_prevention_of_covid-19.jpg"
+  },
+  "water.jpg": {
+   "author": "Shixart1985",
+   "file": "Woman with a glass of water sits at a table in a relaxed cafe setting.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Woman_with_a_glass_of_water_sits_at_a_table_in_a_relaxed_cafe_setting.jpg"
+  },
+  "wave.jpg": {
+   "author": "Paramanu Sarkar",
+   "file": "Shepherd from Rajasthan 03.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Shepherd_from_Rajasthan_03.jpg"
+  },
+  "weather.jpg": {
+   "author": "Sabina Bajracharya",
+   "file": "The Sun, Clouds And The Sky. 38.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Sun,_Clouds_And_The_Sky._38.jpg"
+  },
+  "wedding-rings.jpg": {
+   "author": "CLW at English Wikipedia",
+   "file": "Weddingring.JPG",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Weddingring.JPG"
+  },
+  "wind.jpg": {
+   "author": "Lou Fernando",
+   "file": "Wind blowing on green.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wind_blowing_on_green.jpg"
+  },
+  "wine.jpg": {
+   "author": "André Karwath aka Aka",
+   "file": "Red Wine Glass.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Red_Wine_Glass.jpg"
+  },
+  "winter.jpg": {
+   "author": "Psy guy",
+   "file": "Snow Scene at Shipka Pass 1.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Snow_Scene_at_Shipka_Pass_1.JPG"
+  },
+  "woman.jpg": {
+   "author": "Rod Waddington from Kergunyah, Australia",
+   "file": "Addis Girl, Ethiopia (14978197187).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Addis_Girl,_Ethiopia_(14978197187).jpg"
+  },
+  "wood.jpg": {
+   "author": "Mobius",
+   "file": "Stack of firewood.jpg",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Stack_of_firewood.jpg"
+  },
+  "work.jpg": {
+   "author": "www.Pixel.la Free Stock Photos",
+   "file": "Hands-desk-office-working (24326654535).jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Hands-desk-office-working_(24326654535).jpg"
+  },
+  "writing.jpg": {
+   "author": "Kristin Hardwick",
+   "file": "Woman writing on a notebook with a pen.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Woman_writing_on_a_notebook_with_a_pen.jpg"
+  },
+  "yawn.jpg": {
+   "author": "Wheeler Cowperthwaite",
+   "file": "Yawning woman.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Yawning_woman.jpg"
+  }
+ },
  "topics": [
   {
    "title": "Articles: der, die, das",

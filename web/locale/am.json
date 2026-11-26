@@ -217,7 +217,15 @@
     "Why start today, not “one day”?": "ለምን “አንድ ቀን” ሳይሆን ዛሬ ይጀምሩ?",
     "Will ZemaLearn give me a certificate or a visa?": "ZemaLearn ሰርተፊኬት ወይም ቪዛ ይሰጠኛል?",
     "Winter semester 2024/25, including a record 116,600 first-year students from abroad.": "የ2024/25 የክረምት ሴሚስተር፤ ከውጭ የመጡ ሪከርድ 116,600 የመጀመሪያ ዓመት ተማሪዎችን ጨምሮ።",
-    "Word pictures:": "የቃላት ሥዕሎች፦",
+    "Word photos come from Wikimedia Commons.": "የቃላቱ ፎቶዎች ከዊኪሚዲያ ኮመንስ የተገኙ ናቸው።",
+    "See who took each photo": "እያንዳንዱን ፎቶ ማን እንዳነሳው ይመልከቱ",
+    "Icons:": "አዶዎች፦",
+    "Photo credits": "የፎቶ ምንጮች",
+    "Back to the course": "ወደ ትምህርቱ ይመለሱ",
+    "Who took each photo in the vocabulary, and the licence that lets us use it.": "በቃላት ዝርዝሩ ውስጥ ያለውን እያንዳንዱን ፎቶ ማን እንዳነሳው፣ እና እንድንጠቀምበት የሚፈቅደው ፈቃድ።",
+    "Every photo comes from Wikimedia Commons. Press a photo's name to see the original.": "ሁሉም ፎቶዎች ከዊኪሚዲያ ኮመንስ የተገኙ ናቸው። ዋናውን ለማየት የፎቶውን ስም ይጫኑ።",
+    "We cropped each photo to a square and made it smaller.": "እያንዳንዱን ፎቶ በካሬ ቅርጽ ቆርጠን አሳንሰነዋል።",
+    "Where no photo fits a word, it shows an icon:": "ፎቶ ለማይገጥመው ቃል አዶ ይታያል፦",
     "Words learned in this unit": "በዚህ ክፍል የተማሯቸው ቃላት",
     "Works on your phone": "በስልክዎ ይሠራል",
     "Yes. The whole A1.1 course (a Start unit and Units 1–9) is free to use. A free account saves your progress so you can continue on any device.": "አዎ። ሙሉው የA1.1 ኮርስ (የመግቢያ ክፍልና ክፍል 1–9) ነፃ ነው። ነፃ መለያ እድገትዎን ስለሚያስቀምጥ በማንኛውም መሣሪያ መቀጠል ይችላሉ።",
@@ -403,7 +411,6 @@
     "Germany": "ጀርመን",
     "Getting around": "መንቀሳቀስ",
     "Go back to the lesson for the rule and the examples, then return here.": "ደንቡንና ምሳሌዎቹን ለማየት ወደ ትምህርቱ ይመለሱ፤ ከዚያም ወደዚህ ይምጡ።",
-    "Go to {unit}": "ወደ {unit} ይሂዱ",
     "Goal reached: struck off": "ግቡ ተደርሷል፦ ቀኑ ተሰርዟል",
     "Going out": "ወደ ውጭ መውጣት",
     "Going shopping": "ለግብይት መሄድ",
@@ -602,7 +609,6 @@
     "Show": "አሳይ",
     "Show answer": "መልሱን ይመልከቱ",
     "Show question": "ጥያቄውን ይመልከቱ",
-    "Show where I am": "ያለሁበትን አሳይ",
     "Sign in": "ይግቡ",
     "Skills: what you can do": "ችሎታ፦ ምን ማድረግ ይችላሉ",
     "Small word": "ትንሽ ቃል",
@@ -775,8 +781,6 @@
     "Your streak": "ተከታታይ ቀናትዎ",
     "Your turn · {n} of 3": "የእርስዎ ተራ · {n} / 3",
     "Your wording is different, so the AI is checking the meaning…": "አገላለጽዎ የተለየ ስለሆነ AI ትርጉሙን እያረጋገጠ ነው…",
-    "Zoom in": "አጉላ",
-    "Zoom out": "አሳንስ",
     "about {n} min": "{n} ደቂቃ ገደማ",
     "accuracy": "ትክክለኛነት",
     "ae/oe/ue/ss works, but try the ä ö ü ß keys.": "ae/oe/ue/ss ይቀበላል፤ ግን የä ö ü ß ቁልፎችን ይሞክሩ።",
@@ -820,7 +824,6 @@
     "she": "እሷ",
     "sprechen: e changes to i": "sprechen፦ e ወደ i ይቀየራል",
     "still learning": "ገና እየተማርኩ ነው",
-    "stop {n} of {total}": "ጣቢያ {n} / {total}",
     "the Netherlands": "ኔዘርላንድስ",
     "the UAE": "የተባበሩት አረብ ኤምሬቶች",
     "the United States": "አሜሪካ",
@@ -883,7 +886,8 @@
     "No, continue": "አይ፣ ይቀጥሉ",
     "Yes, start again": "አዎ፣ እንደገና ይጀምሩ",
     "Do the same words again": "ተመሳሳዮቹን ቃላት እንደገና ይለማመዱ",
-    "Start again from the first word": "ከመጀመሪያው ቃል እንደገና ይጀምሩ"
+    "Start again from the first word": "ከመጀመሪያው ቃል እንደገና ይጀምሩ",
+    "Photo: {credit}": "ፎቶ፦ {credit}"
   },
   "app": {
     "1 change": "1 ለውጥ",
@@ -968,7 +972,6 @@
     "Open the website, signed in": "ድረ ገጹን ገብተው ይክፈቱ",
     "Page {n} of {total}": "ገጽ {n} ከ{total}",
     "Phone": "ስልክ",
-    "Photo: {credit}": "ፎቶ፦ {credit}",
     "Pick a daily goal": "የዕለት ግብ ይምረጡ",
     "Practise all words again": "ሁሉንም ቃላት እንደገና ይለማመዱ",
     "Practise every word of the unit at once.": "የክፍሉን ቃላት ሁሉ በአንድ ጊዜ ይለማመዱ።",
@@ -1035,6 +1038,7 @@
     "{time} · not on days you have practised · tap to change the time": "{time} · በተለማመዱባቸው ቀናት አይደለም · ሰዓቱን ለመቀየር ይንኩ",
     "{title}, {done} of {total} learned": "{title}፣ {done} ከ{total} ተምረዋል",
     "{xp} XP to level {n}": "ወደ ደረጃ {n} {xp} XP ቀርቷል",
-    "Copy": "ቅዳ"
+    "Copy": "ቅዳ",
+    "Show where I am": "ያለሁበትን አሳይ"
   }
 }

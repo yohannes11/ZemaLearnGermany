@@ -446,6 +446,7 @@ class _WordPagesState extends State<WordPages> {
                             Txt(T('Learned'), role: TextRole.label, colour: c.green),
                           ]),
                         WordPicture(codes: word.pic, size: 84),
+                        if (course.photoCredits(word).isNotEmpty) PhotoCredits(word),
                         GermanWord(word, role: TextRole.german, align: TextAlign.center),
                         if (nounGender(word) case final gender?) GenderTag(gender),
                         ListenButton(word.german, size: 56),
