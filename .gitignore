@@ -33,3 +33,4 @@ media/
 
 # Source PDFs (11percent material, copyrighted) — kept locally, not published
 *.pdf
+web/static/audio-new/

@@ -351,6 +351,14 @@
     <div class="search-results" id="search-results" aria-live="polite"></div>
   </dialog>
 
+  <dialog id="photo-viewer" class="photo-viewer" aria-label="{% t "Enlarged photo" %}" onclick="if (event.target === this) this.close()">
+    <figure class="pv-figure">
+      <div class="pv-frame"><img id="pv-img" alt=""></div>
+      <figcaption id="pv-caption"></figcaption>
+    </figure>
+    <button class="btn pv-close" type="button" onclick="document.getElementById('photo-viewer').close()"><svg class="icon"><use href="#i-close"/></svg>{% t "Close" %}</button>
+  </dialog>
+
   <dialog id="settings" aria-labelledby="settings-title">
     <div class="dialog-head">
       <h2 id="settings-title">{% t "Settings" %}</h2>
@@ -362,8 +370,9 @@
       <div class="setting">
         <label for="voice-select">{% t "Voice" %}</label>
         <select class="select" id="voice-select" onchange="setVoice(this.value)">
-          <option value="katja">{% t "Katja (female)" %}</option>
-          <option value="conrad">{% t "Conrad (male)" %}</option>
+          <option value="mix">{% t "Woman and man, in turn" %}</option>
+          <option value="katja">{% t "Woman (Selam)" %}</option>
+          <option value="conrad">{% t "Man (Dawit)" %}</option>
         </select>
       </div>
       <div class="setting">
@@ -384,6 +393,14 @@
         <div class="segmented" role="group" aria-label="{% t "Appearance" %}">
           <button class="theme-btn" data-theme="light" onclick="setTheme('light')">{% t "Light" %}</button>
           <button class="theme-btn" data-theme="dark" onclick="setTheme('dark')">{% t "Dark" %}</button>
+        </div>
+      </div>
+      <div class="setting">
+        <span class="setting-label">{% t "Picture size" %}</span>
+        <div class="segmented" role="group" aria-label="{% t "Picture size" %}">
+          <button class="pic-size-btn" data-size="small" onclick="setPicSize('small')">{% t "Small" %}</button>
+          <button class="pic-size-btn" data-size="medium" onclick="setPicSize('medium')">{% t "Medium" %}</button>
+          <button class="pic-size-btn" data-size="large" onclick="setPicSize('large')">{% t "Large" %}</button>
         </div>
       </div>
       <div class="setting">

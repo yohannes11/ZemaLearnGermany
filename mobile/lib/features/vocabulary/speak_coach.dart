@@ -76,7 +76,7 @@ class _SpeakCoachState extends State<SpeakCoach> {
     _tap = null;
     _listen.fillRange(0, _sayTimes, _Dot.none);
     _say.fillRange(0, _sayTimes, _Dot.none);
-    _bubble('Los geht’s!', T("Hi, I'm {name}. I'll say it three times, then it's your turn.", {'name': coachName()}));
+    _bubble('Los geht’s!', T("Hi, I'm {name}. I'll say it three times, then it's your turn.", {'name': coachName(widget.scope.words[_index].german)}));
   }
 
   void _bubble(String de, String en) {
@@ -244,7 +244,7 @@ class _SpeakCoachState extends State<SpeakCoach> {
     final c = context.c;
     final words = widget.scope.words;
     final word = words[_index];
-    final female = settings.voice == Voice.katja;
+    final female = audio.voiceFor(word.german) != Voice.conrad;
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -275,7 +275,7 @@ class _SpeakCoachState extends State<SpeakCoach> {
                         padding: const EdgeInsets.all(Space.md),
                         decoration: BoxDecoration(color: c.surface, borderRadius: BorderRadius.circular(Radii.lg), border: Border.all(color: c.border)),
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                          Txt(coachName(), role: TextRole.overline, colour: c.brand),
+                          Txt(coachName(word.german), role: TextRole.overline, colour: c.brand),
                           Txt(_bubbleDe, role: TextRole.heading),
                           if (_bubbleEn.isNotEmpty) Txt(_bubbleEn, role: TextRole.caption, colour: c.muted),
                         ]),
@@ -285,7 +285,7 @@ class _SpeakCoachState extends State<SpeakCoach> {
                 ]),
                 AppCard(
                   child: Column(children: gapped([
-                    WordPicture(codes: word.pic, size: 64),
+                    WordPicture(codes: word.pic, size: 110, word: word.german, zoom: true),
                     GermanWord(word, role: TextRole.german, align: TextAlign.center),
                     Txt(course.meaning(word), colour: c.muted, align: TextAlign.center),
                   ], Space.sm)),

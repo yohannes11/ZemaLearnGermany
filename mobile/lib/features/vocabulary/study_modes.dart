@@ -445,7 +445,8 @@ class _WordPagesState extends State<WordPages> {
                             const SizedBox(width: Space.xs),
                             Txt(T('Learned'), role: TextRole.label, colour: c.green),
                           ]),
-                        WordPicture(codes: word.pic, size: 84),
+                        WordPicture(codes: word.pic, size: (MediaQuery.sizeOf(context).width * 0.5).clamp(140.0, 240.0), word: word.german, zoom: true),
+                        if (course.photoCredits(word).isNotEmpty) EnlargePhotoButton(word),
                         if (course.photoCredits(word).isNotEmpty) PhotoCredits(word),
                         GermanWord(word, role: TextRole.german, align: TextAlign.center),
                         if (nounGender(word) case final gender?) GenderTag(gender),
@@ -453,7 +454,7 @@ class _WordPagesState extends State<WordPages> {
                         Txt(course.meaning(word), role: TextRole.title, colour: c.brand, align: TextAlign.center),
                         ExampleList(word: word),
                         AppButton(
-                          label: T('Say it with {name}', {'name': coachName()}),
+                          label: T('Say it with {name}', {'name': coachName(word.german)}),
                           kind: ButtonKind.ghost,
                           icon: Icons.mic_none_rounded,
                           onPressed: () => context.push('/session/speak/${widget.scope.key}?from=$_index'),
@@ -476,5 +477,5 @@ class _WordPagesState extends State<WordPages> {
   }
 }
 
-/// The coach matches the chosen voice: Selam (Katja) or Dawit (Conrad).
-String coachName() => settings.voice == Voice.katja ? T('Selam') : T('Dawit');
+/// The coach matches the voice saying the word: Selam (the woman) or Dawit (the man).
+String coachName(String german) => audio.voiceFor(german) == Voice.conrad ? T('Dawit') : T('Selam');

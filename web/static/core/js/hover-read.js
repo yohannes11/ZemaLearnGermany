@@ -101,9 +101,13 @@
 
   // The human recording when there is one (the voice and speed chosen in the course's settings), else the
   // browser's German voice.
-  let clips = null, audio = null;
+  let clips = null, men = null, audio = null;
   const recordings = () =>
-    (clips = clips || fetch(`${AUDIO_BASE}manifest.json`, { cache: 'no-cache' }).then(r => r.json()).catch(() => ({})));
+    (clips = clips || Promise.all([
+      fetch(`${AUDIO_BASE}manifest.json`, { cache: 'no-cache' }).then(r => r.json()).catch(() => ({})),
+      // With both voices: the clips the man says, the same choice as the course (course.js voiceFor).
+      fetch(`${AUDIO_BASE}mix.json`, { cache: 'no-cache' }).then(r => r.json()).then(m => { men = new Set(m.conrad); }).catch(() => {}),
+    ]).then(([ids]) => ids));
 
   function stopSpeaking() {
     if (audio) audio.pause();
@@ -124,7 +128,9 @@
     recordings().then(ids => {
       const id = ids[text];
       if (!id) return speakWithBrowser(text);
-      audio = new Audio(`${AUDIO_BASE}${saved('book-voice', 'katja')}/${saved('book-pace', 'normal')}/${id}.mp3`);
+      let voice = saved('book-voice', 'mix');
+      if (voice === 'mix') voice = (men ? men.has(id) : parseInt(id.slice(-1), 16) % 2 === 1) ? 'conrad' : 'katja';
+      audio = new Audio(`${AUDIO_BASE}${voice}/${saved('book-pace', 'normal')}/${id}.mp3`);
       audio.play().catch(() => speakWithBrowser(text));
     });
   }

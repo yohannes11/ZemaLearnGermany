@@ -74,6 +74,10 @@ deploy/                 gunicorn systemd service and nginx site
 .venv/bin/python tools/course_content.py        # writes static/course/js/course-data.js
 .venv/bin/python tools/gen_course_audio.py      # records audio for any new phrases
 ```
+To change a voice or a speed (`VOICES`, `SPEEDS` in the script), record everything again:
+`tools/gen_course_audio.py --fresh` fills `static/audio-new/` while the site keeps its clips, and `--swap` moves it
+in once every clip is there. The voice service can change the voice behind a name without notice, so never mix
+clips recorded months apart. `static/audio/mix.json` lists the clips the man says when a learner picks both voices.
 
 **Import data from the pre-Django server** (its `usage.db`), into an empty database:
 ```bash

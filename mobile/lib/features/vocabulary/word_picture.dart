@@ -14,14 +14,31 @@ import '../../ui/theme.dart';
 /// A word's picture: photos (compound words show their parts, joined by +), a flat swatch for a colour, or a
 /// clock. Photos are kept on disk once seen. Decorative for screen readers: the text carries the meaning.
 class WordPicture extends StatelessWidget {
-  const WordPicture({super.key, required this.codes, required this.size});
+  const WordPicture({super.key, required this.codes, required this.size, this.word, this.zoom = false});
 
   final List<String> codes;
+
+  /// The size of one picture; a compound's parts shrink so the whole row fits the width it is given.
   final double size;
+
+  /// With [zoom], tapping a photo opens it whole (see [showPhoto]); [word] is its caption.
+  final String? word;
+  final bool zoom;
 
   @override
   Widget build(BuildContext context) {
     if (codes.isEmpty) return const SizedBox.shrink();
+    return LayoutBuilder(builder: (context, box) {
+      // Pictures stay square; a row wider than the space shrinks every part alike, so nothing is cut off.
+      final parts = codes.where((code) => code != '+').length;
+      final pluses = codes.length - parts;
+      final room = box.maxWidth.isFinite ? box.maxWidth : double.infinity;
+      final fitted = ((room - (codes.length - 1) * 6 - pluses * size * 0.3) / parts).clamp(24.0, size);
+      return _row(context, fitted);
+    });
+  }
+
+  Widget _row(BuildContext context, double size) {
     final c = context.c;
     final radius = BorderRadius.circular(size * 0.14);
     return ExcludeSemantics(
@@ -51,9 +68,12 @@ class WordPicture extends StatelessWidget {
                   duration: const Duration(milliseconds: 150),
                   child: switch (snap.data) {
                     null => const SizedBox.shrink(),
-                    final data when code.contains('.') => ClipRRect(
-                        borderRadius: radius,
-                        child: Image.memory(data, width: size, height: size, fit: BoxFit.cover, gaplessPlayback: true),
+                    final data when code.contains('.') => GestureDetector(
+                        onTap: zoom ? () => showPhoto(context, code, word ?? '') : null,
+                        child: ClipRRect(
+                          borderRadius: radius,
+                          child: Image.memory(data, width: size, height: size, fit: BoxFit.cover, gaplessPlayback: true),
+                        ),
                       ),
                     final data => SvgPicture.memory(data, width: size, height: size),
                   },
@@ -65,6 +85,65 @@ class WordPicture extends StatelessWidget {
     );
   }
 }
+
+/// "Enlarge photo": the word's first photo, whole.
+class EnlargePhotoButton extends StatelessWidget {
+  const EnlargePhotoButton(this.word, {super.key});
+
+  final Word word;
+
+  @override
+  Widget build(BuildContext context) {
+    final name = word.pic.where((code) => code.endsWith('.jpg')).firstOrNull;
+    if (name == null) return const SizedBox.shrink();
+    return AppButton(
+      label: T('Enlarge photo'),
+      kind: ButtonKind.ghost,
+      icon: Icons.zoom_in_rounded,
+      onPressed: () => showPhoto(context, name, word.german),
+    );
+  }
+}
+
+/// The whole photo in its own shape, over the screen: pinch or double-tap to zoom, "Close" to go back.
+Future<void> showPhoto(BuildContext context, String name, String caption) => showDialog<void>(
+      context: context,
+      barrierColor: const Color(0xD10B1712),
+      builder: (context) {
+        final c = context.c;
+        final credit = course.bundle?.photos[name];
+        return Dialog(
+          insetPadding: const EdgeInsets.all(Space.md),
+          backgroundColor: c.surface,
+          child: Padding(
+            padding: const EdgeInsets.all(Space.sm),
+            child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+              Flexible(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(Radii.md),
+                  child: InteractiveViewer(
+                    maxScale: 5,
+                    child: FutureBuilder<Uint8List?>(
+                      // The whole photo; the square one while it loads or if it can't be had.
+                      future: Pictures.instance.bytes('full/$name').then((d) => d ?? Pictures.instance.bytes(name)),
+                      builder: (context, snap) => snap.data == null
+                          ? const AspectRatio(aspectRatio: 1, child: Center(child: CircularProgressIndicator()))
+                          : Image.memory(snap.data!, fit: BoxFit.contain),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: Space.sm),
+              Txt(caption, role: TextRole.title),
+              if (credit != null)
+                Txt(T('Photo: {credit}', {'credit': '${credit.author}, ${credit.license}'}), role: TextRole.caption, colour: c.subtle),
+              const SizedBox(height: Space.sm),
+              AppButton(label: T('Close'), kind: ButtonKind.secondary, icon: Icons.close_rounded, onPressed: () => Navigator.pop(context)),
+            ]),
+          ),
+        );
+      },
+    );
 
 /// Who took the photos of a word and their licence, under its picture; tapping opens the photo on Wikimedia Commons.
 class PhotoCredits extends StatelessWidget {

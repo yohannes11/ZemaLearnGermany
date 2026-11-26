@@ -2,7 +2,9 @@ import 'package:flutter/foundation.dart';
 
 import 'storage.dart';
 
-enum Voice { katja, conrad }
+/// Who says the German: [mix] gives each phrase the woman (Selam, [katja]) or the man (Dawit, [conrad]), about half
+/// each. The names are the folders on the server, kept so installed builds still find their clips.
+enum Voice { mix, katja, conrad }
 
 enum Speed { slow, normal, natural }
 
@@ -16,7 +18,7 @@ class Settings extends ChangeNotifier {
   /// Days whose strikeout this device has already animated, so each strike draws itself once (newest last).
   List<String> struck = [];
 
-  Voice voice = Voice.katja;
+  Voice voice = Voice.mix;
   Speed speed = Speed.normal;
   Appearance appearance = Appearance.system;
 
@@ -34,7 +36,7 @@ class Settings extends ChangeNotifier {
     final saved = Storage.instance.read<Map<String, dynamic>>('settings', {});
     onboarded = saved['onboarded'] as bool? ?? false;
     struck = [...?(saved['struck'] as List?)?.cast<String>()];
-    voice = Voice.values.asNameMap()[saved['voice']] ?? Voice.katja;
+    voice = Voice.values.asNameMap()[saved['voice']] ?? Voice.mix;
     speed = Speed.values.asNameMap()[saved['speed']] ?? Speed.normal;
     appearance = Appearance.values.asNameMap()[saved['appearance']] ?? Appearance.system;
     cardDirection = saved['cardDirection'] as String? ?? 'de-en';

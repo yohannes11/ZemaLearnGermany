@@ -38,7 +38,7 @@
     "Close chapters": "ዝርዝሩን ይዝጉ",
     "Close settings": "ቅንብሮችን ይዝጉ",
     "Coming next": "በቀጣይ የሚመጣ",
-    "Conrad (male)": "ኮንራድ (ወንድ)",
+    "Man (Dawit)": "ወንድ (ዳዊት)",
     "Container cranes loading ships at the port of Hamburg": "በሃምቡርግ ወደብ መርከቦችን የሚጭኑ የኮንቴነር ክሬኖች",
     "Continue as @{name}": "እንደ @{name} ይቀጥሉ",
     "Continue as {name}": "እንደ {name} ይቀጥሉ",
@@ -104,7 +104,8 @@
     "It depends on how much time you practise. The levels build on each other, and university programmes often ask for B2 or C1, so starting early gives you time. In this course, learning 10 words a day covers all 1,156 words of A1.1 in about 17 weeks.": "በሚለማመዱበት ጊዜ መጠን ይወሰናል። ደረጃዎቹ እርስ በርስ ይገነባባሉ፤ የዩኒቨርሲቲ ፕሮግራሞችም ብዙ ጊዜ B2 ወይም C1 ይጠይቃሉ፤ ስለዚህ ቀደም ብሎ መጀመር ጊዜ ይሰጥዎታል። በዚህ ኮርስ በቀን 10 ቃላት በመማር የA1.1ን 1,156 ቃላት በሙሉ በ17 ሳምንት ገደማ ይጨርሳሉ።",
     "It depends on the route. The EU Blue Card has no legal German requirement, but vocational training requires B1, nursing requires B1 or B2 depending on the state, and most workplaces and daily life run in German.": "እንደ መንገዱ ይወሰናል። የአውሮፓ ኅብረት ብሉ ካርድ በሕግ ጀርመንኛ አይጠይቅም፤ ነገር ግን የሙያ ሥልጠና B1፣ ነርሲንግ ደግሞ እንደ ክፍለ ግዛቱ B1 ወይም B2 ይጠይቃል። አብዛኛው የሥራ ቦታና የዕለት ተዕለት ሕይወትም በጀርመንኛ ነው።",
     "Journey": "ጉዞ",
-    "Katja (female)": "ካትያ (ሴት)",
+    "Woman (Selam)": "ሴት (ሰላም)",
+    "Woman and man, in turn": "ሴትና ወንድ፣ በየተራ",
     "Learn": "መማር",
     "Learn German A1.1 step by step: vocabulary, grammar, listening and speaking practice.": "ጀርመንኛ A1.1 ደረጃ በደረጃ ይማሩ፦ ቃላት፣ ሰዋስው፣ የማዳመጥና የመናገር ልምምድ።",
     "Learn German for free with a course made for Ethiopian learners. See what German can open for you: tuition-free study, careers in Germany's skilled professions and a new life, with facts from official sources.": "ለኢትዮጵያ ተማሪዎች በተዘጋጀ ኮርስ ጀርመንኛን በነፃ ይማሩ። ጀርመንኛ ምን ሊከፍትልዎ እንደሚችል ይመልከቱ፦ ያለ ክፍያ ትምህርት፣ በጀርመን በሚፈለጉ ሙያዎች ሥራና አዲስ ሕይወት፤ ከይፋዊ ምንጮች በተገኙ እውነታዎች።",
@@ -289,7 +290,12 @@
     "sentence": "ዓረፍተ ነገር",
     "verb": "ግሥ",
     "{form} is a form of {word}": "{form} የ{word} አንድ ቅርጽ ነው",
-    "Point beside the sentence to hear all of it.": "ሙሉውን ዓረፍተ ነገር ለመስማት ከዓረፍተ ነገሩ አጠገብ ያመልክቱ።"
+    "Point beside the sentence to hear all of it.": "ሙሉውን ዓረፍተ ነገር ለመስማት ከዓረፍተ ነገሩ አጠገብ ያመልክቱ።",
+    "Picture size": "የሥዕል መጠን",
+    "Small": "ትንሽ",
+    "Medium": "መካከለኛ",
+    "Large": "ትልቅ",
+    "Enlarged photo": "የተሰፋ ፎቶ"
   },
   "course": {
     "1 mistake": "1 ስህተት",
@@ -887,7 +893,8 @@
     "Yes, start again": "አዎ፣ እንደገና ይጀምሩ",
     "Do the same words again": "ተመሳሳዮቹን ቃላት እንደገና ይለማመዱ",
     "Start again from the first word": "ከመጀመሪያው ቃል እንደገና ይጀምሩ",
-    "Photo: {credit}": "ፎቶ፦ {credit}"
+    "Photo: {credit}": "ፎቶ፦ {credit}",
+    "Enlarge photo": "ፎቶውን አስፋ"
   },
   "app": {
     "1 change": "1 ለውጥ",
@@ -906,6 +913,7 @@
     "All caught up": "ሁሉም ተከልሷል",
     "best score {n}": "ምርጥ ውጤት {n}",
     "best {n}": "ምርጥ {n}",
+    "Both": "ሁለቱም",
     "Cancel": "ይቅር",
     "Card {n} of {total}": "ካርድ {n} ከ{total}",
     "completed": "ተጠናቋል",

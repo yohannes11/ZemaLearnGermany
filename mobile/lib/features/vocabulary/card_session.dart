@@ -204,7 +204,7 @@ class _Face extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(mainAxisSize: MainAxisSize.min, children: gapped([
             Txt(german ? T('German') : T('English'), role: TextRole.overline, colour: c.muted),
-            if (!german || !back) WordPicture(codes: word.pic, size: 72),
+            if (!german || !back) WordPicture(codes: word.pic, size: 120),
             german ? GermanWord(word, role: TextRole.german, align: TextAlign.center) : Txt(course.meaning(word), role: TextRole.title, align: TextAlign.center),
             if (back)
               german

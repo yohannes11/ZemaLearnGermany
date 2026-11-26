@@ -1,7 +1,9 @@
 """Download the vocabulary photos (tools/word_pictures.py) from Wikimedia Commons into static/course/pics/,
 and the Twemoji icons used where no photo fits the word.
 
-Each photo is cropped square and resized to SIZE pixels, saved as static/course/pics/<key>.jpg, and its credit
+Each photo is saved twice: cropped square to SIZE pixels as static/course/pics/<key>.jpg (the picture beside
+the word), and whole, in its own shape, up to FULL pixels on its long side as static/course/pics/full/<key>.jpg
+(what "Enlarge photo" shows). Its credit
 (author, licence, Commons page) is written to tools/word_photos.json, which course_content.py puts in the
 course data so the site and the app can show it. Only freely licensed photos are accepted: public domain,
 CC0, CC BY and CC BY-SA (never NC or ND). The icons are Twemoji (jdecked/twemoji, CC BY 4.0, credited under the
@@ -24,7 +26,8 @@ from pathlib import Path
 from PIL import Image, ImageOps
 from word_pictures import PHOTOS, PICTURES
 
-SIZE = 320  # pixels; the largest picture on the site is 104 CSS pixels, so this is sharp on 3x screens
+SIZE = 480  # pixels; pictures are shown up to 240 CSS pixels wide, so this is sharp on 2x screens
+FULL = 1024  # pixels on the long side, for the enlarged photo
 API = 'https://commons.wikimedia.org/w/api.php'
 AGENT = 'ZemaLearn-word-pictures/1.0 (language course; tools/fetch_word_pictures.py)'
 HERE = Path(__file__).resolve().parent
@@ -60,7 +63,7 @@ def file_infos(names):
     found = {}
     for i in range(0, len(names), 50):
         query = {'action': 'query', 'format': 'json', 'titles': '|'.join(f'File:{n}' for n in names[i:i + 50]),
-                 'prop': 'imageinfo', 'iiprop': 'url|extmetadata|size', 'iiurlwidth': 500}  # a standard, cached size
+                 'prop': 'imageinfo', 'iiprop': 'url|extmetadata|size', 'iiurlwidth': 1024}  # a standard, cached size
         data = json.loads(get(f'{API}?{urllib.parse.urlencode(query)}'))['query']
         renamed = {n['to']: n['from'] for n in data.get('normalized', [])}
         for page in data['pages'].values():
@@ -88,6 +91,20 @@ def credit(name, info):
     }
 
 
+def image_url(info):
+    """A resized copy, never the original upload: Commons limits downloads of originals far more strictly. A
+    photo narrower than the size asked for comes back as its original, so ask for the largest of Commons'
+    standard sizes below its width instead."""
+    url = info.get('thumburl') or info['url']
+    if '/thumb/' in url:
+        return url
+    width = next((w for w in (960, 500, 330, 250) if w < info.get('width', 0)), None)
+    if not width:
+        return url
+    head, name = info['url'].split('?')[0].rsplit('/', 1)
+    return f"{head.replace('/commons/', '/commons/thumb/', 1)}/{name}/{width}px-{name}"
+
+
 def square(data, focus):
     """Crop to a square around `focus` (0 = top or left edge, 0.5 = middle, 1 = bottom or right) and resize."""
     image = ImageOps.exif_transpose(Image.open(io.BytesIO(data))).convert('RGB')
@@ -95,9 +112,19 @@ def square(data, focus):
     side = min(w, h)
     x = round((w - side) * (focus if w > h else 0.5))
     y = round((h - side) * (focus if h > w else 0.5))
-    image = image.crop((x, y, x + side, y + side)).resize((SIZE, SIZE), Image.LANCZOS)
+    return jpeg(image.crop((x, y, x + side, y + side)).resize((SIZE, SIZE), Image.LANCZOS))
+
+
+def whole(data):
+    """The whole photo in its own shape, its long side at most FULL pixels."""
+    image = ImageOps.exif_transpose(Image.open(io.BytesIO(data))).convert('RGB')
+    image.thumbnail((FULL, FULL), Image.LANCZOS)
+    return jpeg(image, quality=76)
+
+
+def jpeg(image, quality=80):
     out = io.BytesIO()
-    image.save(out, 'JPEG', quality=80, optimize=True, progressive=True)
+    image.save(out, 'JPEG', quality=quality, optimize=True, progressive=True)
     return out.getvalue()
 
 
@@ -118,17 +145,23 @@ def icons():
     return used
 
 
+def size_of(path):
+    with Image.open(path) as image:
+        return image.width
+
+
 def save(credits):
     CREDITS.write_text(json.dumps(credits, ensure_ascii=False, indent=1, sort_keys=True) + '\n', encoding='utf-8')
 
 
 def main(only=()):
     credits = json.loads(CREDITS.read_text(encoding='utf-8')) if CREDITS.exists() else {}
-    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / 'full').mkdir(parents=True, exist_ok=True)
     todo = {}
     for key, source in sorted(PHOTOS.items()):
         name, focus = source if isinstance(source, tuple) else (source, 0.5)
-        done = (OUT / f'{key}.jpg').exists() and credits.get(key, {}).get('file') == name
+        small, full = OUT / f'{key}.jpg', OUT / 'full' / f'{key}.jpg'
+        done = small.exists() and full.exists() and size_of(small) == SIZE and credits.get(key, {}).get('file') == name
         if (not only or key in only) and not (done and credits[key].get('focus', 0.5) == focus):
             todo[key] = (name, focus)
     infos = file_infos(sorted({name for name, _ in todo.values()}))
@@ -139,7 +172,9 @@ def main(only=()):
         try:
             info = infos.get(name.replace('_', ' ')) or infos[name]
             entry = credit(name, info)
-            (OUT / f'{key}.jpg').write_bytes(square(get(info.get('thumburl') or info['url']), focus))
+            data = get(image_url(info))
+            (OUT / f'{key}.jpg').write_bytes(square(data, focus))
+            (OUT / 'full' / f'{key}.jpg').write_bytes(whole(data))
         except Exception as error:  # report every failure at the end
             return key, None, f'{key}: {name}: {error}'
         if focus != 0.5:
@@ -157,6 +192,7 @@ def main(only=()):
     for key in sorted(set(credits) - set(PHOTOS)):  # photos no longer used
         del credits[key]
         (OUT / f'{key}.jpg').unlink(missing_ok=True)
+        (OUT / 'full' / f'{key}.jpg').unlink(missing_ok=True)
     save(credits)
     if not only:
         print(f'{len(icons())} icons')

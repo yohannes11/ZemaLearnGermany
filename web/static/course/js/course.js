@@ -127,7 +127,8 @@ function picImage(name) {
   return img;
 }
 
-function wordPicture(item, className) {
+// `zoom`: pressing a photo opens it whole (only where a press means nothing else: not in flashcards or exercises).
+function wordPicture(item, className, zoom = false) {
   if (!item.pic) return null;
   const box = el('span', `word-pic ${className}`);
   box.setAttribute('aria-hidden', 'true');
@@ -138,9 +139,53 @@ function wordPicture(item, className) {
       swatch.style.background = name;
       return box.appendChild(swatch);
     }
-    box.appendChild(picImage(name));
+    const img = picImage(name);
+    if (zoom && photoCredit(name)) {
+      img.classList.add('zoomable');
+      img.addEventListener('click', e => { e.stopPropagation(); openPhoto(name, item.german); });
+    }
+    box.appendChild(img);
   });
   return box;
+}
+
+// "Enlarge photo": a labelled button under a word's picture, for the first photo (each photo can be pressed too).
+function enlargeButton(item) {
+  const name = (item.pic || []).find(photoCredit);
+  if (!name) return null;
+  const btn = el('button', 'btn btn-ghost enlarge-btn');
+  btn.type = 'button';
+  btn.innerHTML = `${icon('search')}<span>${T('Enlarge photo')}</span>`;
+  btn.onclick = e => { e.stopPropagation(); openPhoto(name, item.german); };
+  return btn;
+}
+
+// The whole photo, in its own shape, as large as the screen allows; pinch or the browser's zoom for more.
+function openPhoto(name, german) {
+  const viewer = document.getElementById('photo-viewer');
+  const img = document.getElementById('pv-img');
+  const credit = photoCredit(name);
+  img.src = `${APP.picBase}full/${name}`;
+  img.onerror = () => { img.onerror = null; img.src = `${APP.picBase}${name}`; }; // the square picture if the whole one is missing
+  img.alt = german;
+  const caption = document.getElementById('pv-caption');
+  caption.replaceChildren(el('b', '', german));
+  caption.firstChild.lang = 'de';
+  if (credit) {
+    const link = el('a', '', creditText(credit));
+    link.href = credit.page;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    caption.appendChild(link);
+  }
+  viewer.showModal();
+}
+
+// Picture size (Settings): scales every word picture on the site.
+function setPicSize(size) {
+  store.set('pic-size', size);
+  document.documentElement.dataset.picSize = size;
+  document.querySelectorAll('.pic-size-btn').forEach(b => b.classList.toggle('active', b.dataset.size === size));
 }
 
 // Who took each photo of a word, and under which licence, linked to the photo's page on Wikimedia Commons.
@@ -260,11 +305,17 @@ function redoBar(restart, hasProgress = () => true) {
 
 /* ---------------- Audio ---------------- */
 
-let currentVoice = 'katja';
+// 'mix' (the default), 'katja' (the woman, Selam) or 'conrad' (the man, Dawit); the folder names stay as they were
+// so installed apps keep finding their clips.
+let currentVoice = 'mix';
 let clipIds = {};
 let currentAudio = null;
 // Always fetch a fresh manifest: a cached copy from before new units were added would send them to the browser voice.
-const clipsReady = fetch(`${APP.audioBase}manifest.json`, { cache: 'no-store' }).then(r => r.json()).then(m => { clipIds = m; }).catch(() => {});
+let mixMen = null; // with both voices: the clips the man says (mix.json); the woman says the rest
+const clipsReady = Promise.all([
+  fetch(`${APP.audioBase}manifest.json`, { cache: 'no-store' }).then(r => r.json()).then(m => { clipIds = m; }).catch(() => {}),
+  fetch(`${APP.audioBase}mix.json`, { cache: 'no-store' }).then(r => r.json()).then(m => { mixMen = new Set(m.conrad); }).catch(() => {}),
+]);
 
 // Neural recordings live in <audioBase><voice>/<speed>/<id>.mp3; the browser voice is only a fallback.
 async function speak(text) {
@@ -273,8 +324,20 @@ async function speak(text) {
   await clipsReady;
   const id = clipIds[text];
   if (!id) return speakWithBrowser(text);
-  currentAudio = new Audio(`${APP.audioBase}${currentVoice}/${currentSpeed}/${id}.mp3`);
+  currentAudio = new Audio(`${APP.audioBase}${voiceFor(text)}/${currentSpeed}/${id}.mp3`);
   currentAudio.play().catch(() => speakWithBrowser(text));
+}
+
+// With both voices, each phrase always has the same one; the woman and the man take turns through the course.
+function voiceFor(text) {
+  if (currentVoice !== 'mix') return currentVoice;
+  return isMan(clipIds[text], mixMen) ? 'conrad' : 'katja';
+}
+
+// Also in hover-read.js and the app (audio.dart): mix.json, or without it the clip id's last digit.
+function isMan(id, men) {
+  if (!id) return false;
+  return men ? men.has(id) : parseInt(id.slice(-1), 16) % 2 === 1;
 }
 
 function speakWithBrowser(text) {
@@ -293,7 +356,7 @@ function setSpeed(speed) {
 function setVoice(voice) {
   currentVoice = voice;
   store.set('book-voice', voice);
-  applyCoachLook();
+  applyCoachLook(coachText);
 }
 
 function setTheme(theme) {
@@ -1878,7 +1941,7 @@ function renderWordPage(direction) {
           <div class="wv-word"></div>
           <div class="wv-listen"></div>
           <div class="wv-meaning"></div>
-          <button class="btn btn-ghost" type="button" id="wv-speak">${icon('mic')}${T('Say it with {name}', { name: COACH[currentVoice].name })}</button>
+          <button class="btn btn-ghost" type="button" id="wv-speak">${icon('mic')}${T('Say it with {name}', { name: coachFor(item.german).name })}</button>
         </div>
         <button class="wv-arrow wv-arrow-prev" type="button" id="wv-prev" ${learnIndex === 0 ? 'disabled' : ''}>
           <span class="wv-arrow-disc">${icon('chev-left')}</span><span class="wv-arrow-label">${T('Previous')}</span>
@@ -1893,8 +1956,10 @@ function renderWordPage(direction) {
   const gender = showGermanWord(content.querySelector('.wv-word'), item);
   if (gender) content.querySelector('.wv-word').after(genderTag(gender));
   content.querySelector('.wv-word').lang = 'de'; // long compounds break at German syllables, not mid-letter
-  const picture = wordPicture(item, 'wv-pic');
+  const picture = wordPicture(item, 'wv-pic', true);
   if (picture) content.querySelector('.wv-word').before(picture);
+  const enlarge = enlargeButton(item);
+  if (enlarge) content.querySelector('.wv-word').before(enlarge);
   const credits = photoCredits(item);
   if (credits) content.querySelector('.word-page').appendChild(credits);
   const listen = listenButton(item.german);
@@ -1907,6 +1972,7 @@ function renderWordPage(direction) {
     goTo({ mode: 'speak' });
     startSpeakSession();
   };
+  clipsReady.then(() => applyCoachLook(item.german)); // names whoever says this word
   document.getElementById('wv-prev').onclick = () => moveWord(-1);
   document.getElementById('wv-next').onclick = () => moveWord(1);
 }
@@ -2044,7 +2110,7 @@ function vocabCard(item, index) {
   }
   card.querySelector('.vc-text').textContent = meaning(item);
   card.querySelector('.vc-word').lang = 'de'; // lets long compounds hyphenate at German syllables
-  const picture = wordPicture(item, 'vc-pic');
+  const picture = wordPicture(item, 'vc-pic', true);
   if (picture) card.querySelector('.vc-top').before(picture); // own row: the word keeps the full width
   card.querySelector('.vc-top').appendChild(listenButton(item.german));
   const examples = exampleList(item);
@@ -2954,8 +3020,10 @@ function treeSummary(pins) {
 
 /* ---------------- Speak ---------------- */
 
-// The coach matches the chosen voice: Selam (Katja) or Dawit (Conrad).
+// The coach matches the voice saying the word: Selam (the woman) or Dawit (the man).
 const COACH = { katja: { name: T('Selam'), look: 'female' }, conrad: { name: T('Dawit'), look: 'male' } };
+const coachFor = text => COACH[voiceFor(text)] || COACH.katja;
+let coachText = '';
 const SAY_TIMES = 3;
 const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 let speakIndex = 0;
@@ -2971,15 +3039,16 @@ let manualResolve = null;
 const wait = ms => new Promise(r => setTimeout(r, ms));
 const coachEl = () => document.getElementById('coach');
 
-function applyCoachLook() {
+function applyCoachLook(text = coachText) {
+  coachText = text;
+  const btn = document.getElementById('wv-speak');
+  if (btn) btn.lastChild.textContent = T('Say it with {name}', { name: coachFor(text).name });
   const coach = coachEl();
   if (!coach) return;
-  const { name, look } = COACH[currentVoice] || COACH.katja;
+  const { name, look } = coachFor(text);
   coach.classList.toggle('female', look === 'female');
   coach.classList.toggle('male', look === 'male');
   document.getElementById('coach-name').textContent = name;
-  const btn = document.getElementById('wv-speak');
-  if (btn) btn.lastChild.textContent = T('Say it with {name}', { name });
 }
 
 function setPose(pose) {
@@ -3036,7 +3105,7 @@ async function playClip(text, speed = currentSpeed, onAudio) {
       tts.speak(u);
       return;
     }
-    const audio = new Audio(`${APP.audioBase}${currentVoice}/${speed}/${id}.mp3`);
+    const audio = new Audio(`${APP.audioBase}${voiceFor(text)}/${speed}/${id}.mp3`);
     currentAudio = audio;
     onAudio?.(audio);
     audio.onended = audio.onerror = audio.onpause = () => resolve();
@@ -3141,12 +3210,13 @@ function showSpeakWord() {
   document.getElementById('sp-pos').textContent = T('Word {n} of {total}', { n: speakIndex + 1, total: words.length });
   document.getElementById('sp-fill').style.width = Math.round((speakIndex + 1) / words.length * 100) + '%';
   showGermanWord(document.getElementById('sp-word'), item);
-  document.getElementById('sp-pic').replaceChildren(...[wordPicture(item, '')].filter(Boolean));
+  document.getElementById('sp-pic').replaceChildren(...[wordPicture(item, '', true)].filter(Boolean));
   document.getElementById('sp-meaning').textContent = meaning(item);
   document.getElementById('sp-heard').textContent = '';
   ['listen', 'say'].forEach(row => [0, 1, 2].forEach(i => markDot(row, i, '')));
   setPose('rest');
-  bubble('Los geht’s!', T("Hi, I'm {name}. I'll say it three times, then it's your turn.", { name: COACH[currentVoice].name }));
+  applyCoachLook(item.german);
+  bubble('Los geht’s!', T("Hi, I'm {name}. I'll say it three times, then it's your turn.", { name: coachFor(item.german).name }));
   setSpeakActions('idle');
   const prev = document.getElementById('sp-prev');
   const next = document.getElementById('sp-next');
@@ -4067,7 +4137,8 @@ function openAccountFromLink() {
 
 (function start() {
   setTheme(store.get('app-theme', 'light'));
-  currentVoice = store.get('book-voice', 'katja');
+  setPicSize(store.get('pic-size', 'medium'));
+  currentVoice = store.get('book-voice', 'mix');
   document.getElementById('voice-select').value = currentVoice;
   applyCoachLook();
   setSpeed(store.get('book-pace', 'normal'));

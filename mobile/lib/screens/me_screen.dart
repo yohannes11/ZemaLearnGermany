@@ -123,7 +123,7 @@ class _MeScreenState extends State<MeScreen> {
                   Segmented<Voice>(
                     label: T('Voice'),
                     value: settings.voice,
-                    options: [(Voice.katja, T('Selam')), (Voice.conrad, T('Dawit'))],
+                    options: [(Voice.mix, T('Both')), (Voice.katja, T('Selam')), (Voice.conrad, T('Dawit'))],
                     onChanged: (v) => settings.update(() => settings.voice = v),
                   ),
                 ),

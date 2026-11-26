@@ -1,10 +1,12 @@
 """German texts pointing reads (static/core/js/hover-read.js) that get a human recording:
 tools/gen_course_audio.py records them, and the tests check that none is missing.
 
-Pointing reads the word under the pointer, or the whole sentence when pointing beside it. These are the short
-texts (up to six words, read whole as sentences) and every word of the longer ones. Anything else without a
-recording (a long sentence, a word of a short one) is read by the browser's German voice. German texts are the course's words, examples, readings, glossaries and table forms,
-the <em class="de"> phrases in lessons and in course.js, and the lang="de" text of the landing page.
+Pointing reads the word under the pointer (with its article, "den Kaffee"), or the sentence beside it. So
+every German text is recorded whole, each sentence of a longer text on its own, every word of two letters or
+more, and every article with the noun after it. German texts are the course's words, examples, readings,
+glossaries and table forms, the <em class="de"> phrases in lessons and in course.js, and the lang="de" text of
+the landing page. Only a selection the learner makes by hand (any run of words) can still need the browser's
+German voice.
 """
 
 import re
@@ -13,8 +15,18 @@ from pathlib import Path
 from course_am_strings import looks_english
 
 ROOT = Path(__file__).resolve().parent.parent
-WHOLE = 6
-WORD = re.compile(r"[A-Za-zÄÖÜäöüß-]+")
+WORD = re.compile(r"[A-Za-zÄÖÜäöüßé-]+")
+# One sentence of a longer text, as hover-read.js cuts it (SENTENCE there).
+SENTENCE = re.compile(r'[^.!?…]+(?:[.!?…]+[")»“”]*|$)')
+# Words read together with the noun after them (DETERMINER in hover-read.js).
+DETERMINER = (
+    "der die das den dem des ein eine einen einem einer eines kein keine keinen keinem keiner keines mein meine "
+    "meinen meinem meiner dein deine deinen deinem deiner sein seine seinen seinem seiner ihr ihre ihren ihrem "
+    "ihrer unser unsere unseren unserem unserer euer eure euren eurem eurer"
+)
+ARTICLE_NOUN = re.compile(
+    rf"\b(?:{'|'.join(w for d in DETERMINER.split() for w in (d, d.capitalize()))})\s+[A-ZÄÖÜ][A-Za-zÄÖÜäöüß-]*"
+)
 EM_DE = re.compile(r'<em class="de">(.*?)</em>')
 LANDING_DE = re.compile(r'lang="de"[^>]*>([^<{]+)<')
 
@@ -46,13 +58,16 @@ def german_texts(course):
 
 
 def hover_texts(course):
-    """What pointing can read aloud: short German texts whole, and each word of the longer ones."""
+    """What pointing can read aloud: every German text whole, each of its sentences, its words, and its
+    article + noun pairs."""
     found = set()
     for text in map(clean, german_texts(course)):
         if not text:
             continue
-        if len(text.split(" ")) <= WHOLE:
-            found.add(text)
-        else:
-            found.update(word for word in WORD.findall(text) if len(word) >= 2)
+        found.add(text)
+        sentences = [clean(part) for part in SENTENCE.findall(text) if part.strip()]
+        if len(sentences) > 1:
+            found.update(sentences)
+        found.update(word for word in WORD.findall(text) if len(word) >= 2)
+        found.update(clean(pair) for pair in ARTICLE_NOUN.findall(text))
     return sorted(found)

@@ -187,7 +187,7 @@ class _WordRowState extends State<WordRow> {
               height: 44,
               decoration: BoxDecoration(color: c.surface2, borderRadius: BorderRadius.circular(Radii.md)),
               alignment: Alignment.center,
-              child: word.pic.isNotEmpty ? WordPicture(codes: word.pic.take(1).toList(), size: 28) : Icon(Icons.abc_rounded, color: c.subtle),
+              child: word.pic.isNotEmpty ? WordPicture(codes: word.pic.take(1).toList(), size: 40) : Icon(Icons.abc_rounded, color: c.subtle),
             ),
             const SizedBox(width: Space.md),
             Expanded(

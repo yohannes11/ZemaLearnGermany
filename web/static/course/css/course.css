@@ -2411,22 +2411,57 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
    Word pictures: photos from Wikimedia Commons (credited under each word and on /learn/photos/), a flat
    swatch for a colour, a clock for a time. Compounds show "apple + cake".
    ------------------------------------------------------------------ */
-.word-pic { --pic: 56px; display: inline-flex; flex: none; align-items: center; justify-content: center; gap: 8px; }
-.word-pic img { display: block; width: var(--pic); height: var(--pic); user-select: none; }
-.word-pic img.photo { object-fit: cover; border-radius: var(--radius); background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--border); }
-.word-pic .swatch { display: block; width: var(--pic); height: var(--pic); border-radius: var(--radius); }
+/* Sizes grow with the screen (clamp: smallest, preferred, largest) and with the Picture size setting
+   (--pic-scale on <html>). Pictures are squares and keep their shape; a compound's parts wrap onto a second
+   line rather than squeeze. */
+:root { --pic-scale: 1; }
+:root[data-pic-size="small"] { --pic-scale: 0.75; }
+:root[data-pic-size="large"] { --pic-scale: 1.3; }
+.word-pic { --pic: 56px; display: inline-flex; flex: none; flex-wrap: wrap; justify-items: center; align-items: center; justify-content: center; gap: 8px; max-width: 100%; }
+.word-pic img { display: block; width: calc(var(--pic) * var(--pic-scale)); max-width: 100%; height: auto; aspect-ratio: 1; user-select: none; }
+.word-pic img.photo { object-fit: cover; border-radius: var(--radius-lg); background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--border); }
+.word-pic img.zoomable { cursor: zoom-in; transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease); }
+.word-pic img.zoomable:hover { transform: scale(1.02); box-shadow: 0 0 0 2px var(--brand); }
+.word-pic .swatch { display: block; width: calc(var(--pic) * var(--pic-scale)); max-width: 100%; aspect-ratio: 1; border-radius: var(--radius-lg); }
 .word-pic .swatch.light { box-shadow: inset 0 0 0 1px var(--border-strong); }
 .photo-credit { margin: 12px 0 0; font-size: var(--fs-xs); color: var(--subtle); text-align: center; overflow-wrap: anywhere; }
 .photo-credit a { color: inherit; }
-.word-pic-plus { font-size: calc(var(--pic) * 0.42); font-weight: 700; line-height: 1; color: var(--subtle); }
+.word-pic-plus { font-size: calc(var(--pic) * var(--pic-scale) * 0.3); font-weight: 700; line-height: 1; color: var(--subtle); }
 
-.wv-pic { --pic: 104px; animation: pic-in 0.45s cubic-bezier(0.2, 0.7, 0.2, 1.2) both; }
-.vc-pic { --pic: 40px; justify-content: flex-start; margin-bottom: 8px; }
+.wv-pic { --pic: clamp(150px, 42vw, 240px); animation: pic-in 0.45s cubic-bezier(0.2, 0.7, 0.2, 1.2) both; }
+/* A compound stays on one row ("apple + cake"): its parts share the width and may shrink to fit. */
+.word-pic:has(.word-pic-plus) { flex-wrap: nowrap; }
+.word-pic:has(.word-pic-plus) > :is(img, .swatch) { min-width: 0; flex: 0 1 auto; }
+.wv-pic:has(.word-pic-plus) { --pic: clamp(96px, 30vw, 180px); }
+.enlarge-btn { align-self: center; min-height: 40px; margin-top: -4px; font-size: var(--fs-sm); }
+.vc-pic { --pic: 72px; justify-content: flex-start; margin-bottom: 8px; }
 .vc-word { hyphens: auto; }
-.fc-pic { --pic: 72px; }
+.fc-pic { --pic: clamp(110px, 30vw, 160px); }
 .sp-pic:empty { display: none; }
 .sp-pic { margin-bottom: 8px; }
-.sp-pic .word-pic { --pic: 64px; }
+.sp-pic .word-pic { --pic: clamp(110px, 30vw, 160px); }
+
+/* "Enlarge photo": the whole photo in its own shape, as large as the screen allows. On phones it can be
+   pinched to zoom further. */
+.photo-viewer {
+  width: min(96vw, 1100px);
+  max-width: none;
+  max-height: 96vh;
+  padding: 12px;
+  border: 0;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-lg);
+}
+.photo-viewer::backdrop { background: rgba(11, 23, 18, 0.82); }
+.pv-figure { margin: 0; display: grid; gap: 8px; }
+.pv-frame { display: grid; place-items: center; overflow: auto; touch-action: pinch-zoom; border-radius: var(--radius); background: var(--surface-2); }
+.pv-frame img { display: block; max-width: 100%; max-height: calc(96vh - 130px); width: auto; height: auto; object-fit: contain; }
+.pv-figure figcaption { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; font-size: var(--fs-sm); }
+.pv-figure figcaption b { font-family: var(--display); font-size: var(--fs-lg); }
+.pv-figure figcaption a { color: var(--subtle); font-size: var(--fs-xs); overflow-wrap: anywhere; }
+.pv-close { display: flex; width: 100%; justify-content: center; min-height: 48px; margin-top: 10px; font-size: var(--fs-base); }
 
 @keyframes pic-in {
   from { opacity: 0; transform: scale(0.7) rotate(-6deg); }
@@ -2437,9 +2472,7 @@ dialog.sheet .onpage-link { display: flex; align-items: center; min-height: 44px
 .pic-credit a { color: inherit; }
 
 @media (max-width: 640px) {
-  .wv-pic { --pic: 84px; }
-  .vc-pic { --pic: 36px; }
-  .fc-pic { --pic: 60px; }
+  .vc-pic { --pic: 60px; }
 }
 
 /* ------------------------------------------------------------------

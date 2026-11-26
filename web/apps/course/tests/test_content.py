@@ -50,6 +50,7 @@ def spoken_texts(course):
     for unit in course["units"]:
         for section in unit["sections"]:
             yield from (word["german"] for word in section["words"])
+            yield from (de for word in section["words"] for de, _ in word.get("examples", []))
         for lesson in unit["grammar"]:
             for block in lesson.get("blocks", []):
                 yield from (de for de, _ in block.get("examples", []))
@@ -268,15 +269,31 @@ class CourseContentTests(SimpleTestCase):
         manifest = json.loads((STATIC / "audio" / "manifest.json").read_text(encoding="utf-8"))
         missing = sorted({text for text in spoken_texts(self.course) if text not in manifest})
         self.assertEqual(missing, [], "run tools/gen_course_audio.py")
-        for clip in {manifest[text] for text in spoken_texts(self.course)}:
-            self.assertTrue((STATIC / "audio" / "katja" / "normal" / f"{clip}.mp3").exists(), clip)
 
-    def test_everything_pointing_reads_has_a_human_recording(self):
-        """Short German texts and the words of longer ones have human recordings; only whole sentences
-        without one are read by the browser's German voice."""
+    def test_everything_pointing_reads_has_a_recording(self):
+        """Every text the pointing dictionary reads (whole texts, their sentences and words) has a recording, so the
+        browser's robotic voice is never needed."""
         manifest = json.loads((STATIC / "audio" / "manifest.json").read_text(encoding="utf-8"))
         missing = [text for text in hover_texts(self.course) if text not in manifest]
         self.assertEqual(missing, [], "run tools/gen_course_audio.py")
+
+    def test_every_recording_is_there_in_both_voices_and_all_speeds(self):
+        manifest = json.loads((STATIC / "audio" / "manifest.json").read_text(encoding="utf-8"))
+        clips = {manifest[t] for t in [*spoken_texts(self.course), *hover_texts(self.course)] if t in manifest}
+        missing = [
+            f"{voice}/{speed}/{clip}"
+            for clip in sorted(clips) for voice in ("katja", "conrad") for speed in ("slow", "normal", "natural")
+            if not (path := STATIC / "audio" / voice / speed / f"{clip}.mp3").is_file() or not path.stat().st_size
+        ]
+        self.assertEqual(missing[:5], [], f"{len(missing)} clips missing or empty: run tools/gen_course_audio.py")
+
+    def test_both_voices_take_turns(self):
+        """mix.json names the clips the man says when a learner picks both voices: about half, of real clips."""
+        manifest = json.loads((STATIC / "audio" / "manifest.json").read_text(encoding="utf-8"))
+        men = json.loads((STATIC / "audio" / "mix.json").read_text(encoding="utf-8"))["conrad"]
+        clips = set(manifest.values())
+        self.assertLessEqual(set(men), clips)
+        self.assertLess(abs(len(men) - len(clips) / 2), 2)
 
     def test_landing_page_figures_match_the_course(self):
         from apps.landing.content import COURSE_FACTS
